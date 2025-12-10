@@ -1,0 +1,41 @@
+{
+  "short_name": "OrigenLab",
+  "name": "OrigenLab - Directorio B2B México",
+  "description": "El directorio B2B líder en México. Encuentra proveedores, fabricantes y distribuidores certificados.",
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?utm_source=pwa",
+  "background_color": "#FFFFFF",
+  "theme_color": "#003366",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "es-MX",
+  "dir": "ltr",
+  "categories": ["business", "productivity"],
+  "screenshots": [
+    {
+      "src": "img/screenshot-desktop.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "platform": "wide"
+    },
+    {
+      "src": "img/screenshot-mobile.jpg",
+      "sizes": "750x1334",
+      "type": "image/jpeg",
+      "platform": "narrow"
+    }
+  ]
+}

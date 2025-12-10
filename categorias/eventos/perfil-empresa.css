@@ -1,0 +1,626 @@
+/**
+ * PERFIL DE EMPRESA - Diseño Profesional
+ * Estilo compacto inspirado en Páginas Amarillas
+ */
+
+/* ===================================
+   HERO COMPACTO
+   =================================== */
+.perfil-hero {
+  background: linear-gradient(135deg, #f8f9fb 0%, #ffffff 100%);
+  padding: var(--space-lg) 0;
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.perfil-hero-grid {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: var(--space-lg);
+  align-items: stretch;
+}
+
+.perfil-imagen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-divider);
+}
+
+.perfil-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.perfil-header-info h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: 0 0 6px 0;
+  letter-spacing: -0.01em;
+}
+
+.perfil-website {
+  font-size: 14px;
+  color: var(--color-accent);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.perfil-website:hover {
+  text-decoration: underline;
+}
+
+.perfil-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.perfil-rating .stars {
+  color: #fbbf24;
+  letter-spacing: 2px;
+}
+
+.perfil-descripcion-corta {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  margin-bottom: 16px;
+}
+
+/* Quick Stats - Más compactas */
+.perfil-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.stat-box {
+  text-align: center;
+  padding: 12px;
+  background: white;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-divider);
+}
+
+.stat-box-number {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.stat-box-label {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Botones CTA */
+.perfil-ctas {
+  display: flex;
+  gap: 10px;
+}
+
+.perfil-ctas .btn-contact {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+/* ===================================
+   LAYOUT CON SIDEBAR
+   =================================== */
+.perfil-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.perfil-main-content {
+  min-width: 0;
+}
+
+.perfil-sidebar {
+  position: sticky;
+  top: 88px;
+}
+
+/* ===================================
+   SECCIONES PRINCIPALES
+   =================================== */
+.perfil-section {
+  padding: var(--space-lg) 0;
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.perfil-section:last-of-type {
+  border-bottom: none;
+}
+
+.perfil-section.compact {
+  padding: var(--space-md) 0;
+}
+
+.perfil-section-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: 0 0 var(--space-md) 0;
+  letter-spacing: -0.01em;
+}
+
+.perfil-section-subtitle {
+  font-size: 15px;
+  color: var(--color-text-secondary);
+  margin: -12px 0 var(--space-md) 0;
+}
+
+/* ===================================
+   GRID DE SERVICIOS
+   =================================== */
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.servicio-card {
+  background: white;
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  transition: all 0.2s ease;
+}
+
+.servicio-card:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.servicio-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  color: var(--color-accent);
+}
+
+.servicio-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.servicio-titulo {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: 0 0 6px 0;
+}
+
+.servicio-descripcion {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* ===================================
+   SOBRE LA EMPRESA
+   =================================== */
+.sobre-contenido {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-text-primary);
+  columns: 2;
+  column-gap: var(--space-xl);
+}
+
+.sobre-contenido p {
+  margin-bottom: 16px;
+  break-inside: avoid;
+}
+
+.sobre-contenido strong {
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.porque-elegirnos-titulo {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: var(--space-md) 0 var(--space-md) 0;
+  column-span: all;
+}
+
+.razones-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  column-span: all;
+}
+
+.razon-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.razon-check {
+  color: var(--color-accent);
+  flex-shrink: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.razon-texto {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+}
+
+.razon-texto strong {
+  font-weight: 600;
+}
+
+/* ===================================
+   INFO COMPACTA (Cobertura + Contacto)
+   =================================== */
+.info-compacta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  background: white;
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-divider);
+}
+
+.info-compacta-columna h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--color-accent);
+}
+
+.info-compacta-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.info-compacta-lista li {
+  padding-left: 16px;
+  position: relative;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--color-text-primary);
+}
+
+.info-compacta-lista li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: bold;
+}
+
+/* ===================================
+   CONTACTO COMPACTO
+   =================================== */
+.contacto-item-compacto {
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+.contacto-item-compacto strong {
+  display: block;
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+.contacto-item-compacto a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.contacto-item-compacto a:hover {
+  text-decoration: underline;
+}
+
+/* ===================================
+   SIDEBAR
+   =================================== */
+.sidebar-widget {
+  background: white;
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.sidebar-widget-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: 0 0 var(--space-sm) 0;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--color-accent);
+}
+
+.empresa-relacionada {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--color-divider);
+  text-decoration: none;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.empresa-relacionada:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.empresa-relacionada:hover {
+  transform: translateX(4px);
+}
+
+.empresa-relacionada-nombre {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 4px;
+}
+
+.empresa-relacionada-desc {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+}
+
+.articulo-relacionado {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--color-divider);
+  text-decoration: none;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.articulo-relacionado:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.articulo-relacionado:hover .articulo-titulo {
+  color: var(--color-accent);
+}
+
+.articulo-titulo {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 4px;
+  line-height: 1.3;
+  transition: color 0.2s ease;
+}
+
+.articulo-fecha {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+}
+
+/* ===================================
+   FAQ COMPACTO
+   =================================== */
+.faq-compacto {
+  display: grid;
+  gap: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-item-compacto {
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-md);
+  background: white;
+  overflow: hidden;
+}
+
+.faq-pregunta {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  padding: 16px 20px;
+  cursor: pointer;
+  display: block;
+  margin: 0;
+}
+
+.faq-pregunta::-webkit-details-marker {
+  display: none;
+}
+
+.faq-pregunta::after {
+  content: '+';
+  float: right;
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--color-accent);
+}
+
+.faq-item-compacto[open] .faq-pregunta::after {
+  content: '−';
+}
+
+.faq-respuesta {
+  padding: 0 20px 16px 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+.faq-respuesta p {
+  margin: 0;
+}
+
+/* ===================================
+   CTA SECTION
+   =================================== */
+.cta-section {
+  background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+  padding: var(--space-xl) 0;
+  text-align: center;
+  color: white;
+}
+
+.cta-section h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  color: white;
+}
+
+.cta-section p {
+  font-size: 16px;
+  margin: 0 0 var(--space-lg) 0;
+  opacity: 0.95;
+}
+
+.cta-botones {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.cta-btn-primary {
+  background: white;
+  color: #0066cc;
+  padding: 12px 28px;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.cta-btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cta-btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 28px;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.cta-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ===================================
+   RESPONSIVE
+   =================================== */
+@media (max-width: 1200px) {
+  .perfil-layout {
+    grid-template-columns: 1fr 280px;
+    gap: var(--space-lg);
+  }
+
+  .info-compacta-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .perfil-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .perfil-sidebar {
+    position: relative;
+    top: 0;
+  }
+
+  .servicios-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .perfil-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .razones-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sobre-contenido {
+    columns: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .perfil-hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .perfil-imagen {
+    max-width: 100%;
+    min-height: 240px;
+  }
+
+  .servicios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-compacta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .razones-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .perfil-ctas {
+    flex-direction: column;
+  }
+
+  .perfil-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

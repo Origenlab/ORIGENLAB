@@ -1,0 +1,97 @@
+# robots.txt para OrigenLab
+# Directorio B2B de Empresas en México
+# https://www.robotstxt.org/
+
+# Permitir acceso a todos los bots de búsqueda
+User-agent: *
+Allow: /
+
+# Bloquear acceso a archivos y directorios sensibles
+Disallow: /js/
+Disallow: /css/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /.env
+Disallow: /config/
+Disallow: /private/
+
+# Permitir explícitamente contenido importante
+Allow: /categorias/
+Allow: /categorias/eventos/
+Allow: /img/
+
+# Bloquear URLs con parámetros de sesión
+Disallow: /*?session=
+Disallow: /*?sid=
+Disallow: /*?token=
+
+# Bots específicos - Configuración optimizada
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Googlebot para imágenes
+User-agent: Googlebot-Image
+Allow: /img/
+Allow: /categorias/eventos/*.webp
+Allow: /categorias/eventos/*.jpg
+Allow: /categorias/eventos/*.png
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Baiduspider (China)
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+# Yandex (Rusia)
+User-agent: Yandex
+Allow: /
+Crawl-delay: 1
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Facebook
+User-agent: Facebookexternalhit
+Allow: /
+
+# Twitter
+User-agent: Twitterbot
+Allow: /
+
+# LinkedIn
+User-agent: LinkedInBot
+Allow: /
+
+# WhatsApp
+User-agent: WhatsApp
+Allow: /
+
+# Bloquear bots maliciosos y scrapers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+# Sitemap
+Sitemap: https://origenlab.com/sitemap.xml
+
+# Host preferido (sin www)
+Host: origenlab.com

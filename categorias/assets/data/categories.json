@@ -1,0 +1,175 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Eventos",
+      "slug": "eventos",
+      "companyCount": 350,
+      "featured": true,
+      "trending": true,
+      "keywords": ["eventos", "organización", "catering", "congresos", "bodas"]
+    },
+    {
+      "id": 2,
+      "name": "Manufactura",
+      "slug": "manufactura",
+      "companyCount": 12450,
+      "featured": false,
+      "trending": true,
+      "keywords": ["manufactura", "fabricación", "producción", "industria"]
+    },
+    {
+      "id": 3,
+      "name": "Tecnología",
+      "slug": "tecnologia",
+      "companyCount": 8320,
+      "featured": false,
+      "trending": true,
+      "keywords": ["tecnología", "software", "hardware", "IT", "desarrollo"]
+    },
+    {
+      "id": 4,
+      "name": "Logística y Transporte",
+      "slug": "logistica",
+      "companyCount": 5890,
+      "featured": false,
+      "trending": false,
+      "keywords": ["logística", "transporte", "envíos", "almacenaje", "distribución"]
+    },
+    {
+      "id": 5,
+      "name": "Construcción",
+      "slug": "construccion",
+      "companyCount": 7120,
+      "featured": false,
+      "trending": false,
+      "keywords": ["construcción", "obra", "infraestructura", "edificación"]
+    },
+    {
+      "id": 6,
+      "name": "Alimentos y Bebidas",
+      "slug": "alimentos",
+      "companyCount": 6540,
+      "featured": false,
+      "trending": false,
+      "keywords": ["alimentos", "bebidas", "comida", "restaurantes", "catering"]
+    },
+    {
+      "id": 7,
+      "name": "Salud y Farmacéutica",
+      "slug": "salud",
+      "companyCount": 4230,
+      "featured": false,
+      "trending": false,
+      "keywords": ["salud", "farmacia", "medicamentos", "hospitales", "clínicas"]
+    },
+    {
+      "id": 8,
+      "name": "Energía y Sustentabilidad",
+      "slug": "energia",
+      "companyCount": 3280,
+      "featured": false,
+      "trending": false,
+      "keywords": ["energía", "sustentabilidad", "renovables", "solar", "eólica"]
+    },
+    {
+      "id": 9,
+      "name": "Educación y Capacitación",
+      "slug": "educacion",
+      "companyCount": 2890,
+      "featured": false,
+      "trending": false,
+      "keywords": ["educación", "capacitación", "cursos", "talleres", "formación"]
+    },
+    {
+      "id": 10,
+      "name": "Marketing y Publicidad",
+      "slug": "marketing",
+      "companyCount": 3450,
+      "featured": false,
+      "trending": false,
+      "keywords": ["marketing", "publicidad", "branding", "digital", "redes sociales"]
+    },
+    {
+      "id": 11,
+      "name": "Servicios Financieros",
+      "slug": "financieros",
+      "companyCount": 2340,
+      "featured": false,
+      "trending": false,
+      "keywords": ["finanzas", "bancario", "seguros", "inversiones", "crédito"]
+    },
+    {
+      "id": 12,
+      "name": "Servicios Legales",
+      "slug": "legales",
+      "companyCount": 1980,
+      "featured": false,
+      "trending": false,
+      "keywords": ["legal", "abogados", "jurídico", "notaría", "consultoría legal"]
+    },
+    {
+      "id": 13,
+      "name": "Recursos Humanos",
+      "slug": "humanos",
+      "companyCount": 2560,
+      "featured": false,
+      "trending": false,
+      "keywords": ["recursos humanos", "RRHH", "reclutamiento", "nómina", "capacitación"]
+    },
+    {
+      "id": 14,
+      "name": "Consultoría Empresarial",
+      "slug": "consultoria",
+      "companyCount": 3120,
+      "featured": false,
+      "trending": false,
+      "keywords": ["consultoría", "asesoría", "estrategia", "negocios", "gestión"]
+    },
+    {
+      "id": 15,
+      "name": "Sector Inmobiliario",
+      "slug": "inmobiliario",
+      "companyCount": 4780,
+      "featured": false,
+      "trending": false,
+      "keywords": ["inmobiliario", "bienes raíces", "propiedades", "renta", "venta"]
+    },
+    {
+      "id": 16,
+      "name": "Telecomunicaciones",
+      "slug": "telecomunicaciones",
+      "companyCount": 1890,
+      "featured": false,
+      "trending": false,
+      "keywords": ["telecomunicaciones", "internet", "telefonía", "conectividad", "fibra óptica"]
+    },
+    {
+      "id": 17,
+      "name": "Seguridad Privada",
+      "slug": "seguridad-privada",
+      "companyCount": 250,
+      "featured": true,
+      "trending": false,
+      "keywords": ["seguridad", "seguridad privada", "vigilancia", "escoltas", "monitoreo", "guardias", "cámaras", "control accesos", "alarmas"]
+    },
+    {
+      "id": 18,
+      "name": "Servicios de Limpieza",
+      "slug": "limpieza",
+      "companyCount": 3670,
+      "featured": false,
+      "trending": false,
+      "keywords": ["limpieza", "mantenimiento", "aseo", "sanitización", "fumigación"]
+    },
+    {
+      "id": 19,
+      "name": "Fiestas Infantiles",
+      "slug": "fiestas-infantiles",
+      "companyCount": 120,
+      "featured": true,
+      "trending": true,
+      "keywords": ["fiestas infantiles", "inflables", "animación", "piñatas", "cumpleaños", "eventos niños"]
+    }
+  ]
+}
