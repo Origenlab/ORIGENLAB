@@ -1,5 +1,5 @@
 {
-  "name": "OrigenLab - Seguridad Privada Reseñas Generator v4.4",
+  "name": "OrigenLab - Seguridad Privada Reseñas Generator v4.5",
   "nodes": [
     {
       "parameters": {
@@ -178,7 +178,7 @@
         "owner": "ORIGENLAB",
         "repository": "origenlab",
         "filePath": "blog.html",
-        "fileContent": "={{ $json.blogHtmlActualizado }}",
+        "fileContent": "={{ String($json.blogHtmlActualizado) }}",
         "commitMessage": "=feat(blog): agregar card reseña {{ $json.datosArticulo.empresaNombre }}",
         "additionalParameters": {
           "branch": "main",
@@ -423,5 +423,5 @@
   ],
   "triggerCount": 2,
   "updatedAt": "2024-12-27T00:00:00.000Z",
-  "versionId": "4.4"
+  "versionId": "4.5"
 }
