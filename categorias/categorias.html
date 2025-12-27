@@ -7,8 +7,8 @@
 
   <!-- SEO Meta Tags -->
   <title>Categorías de Empresas en México | OrigenLab - Directorio B2B por Sector Industrial</title>
-  <meta name="description" content="Explora +18 categorías industriales en OrigenLab: Eventos, Manufactura, Tecnología, Construcción, Logística y más. Encuentra proveedores certificados por sector en todo México.">
-  <meta name="keywords" content="categorías B2B México, industrias méxico, proveedores por sector, empresas eventos méxico, manufactura cdmx, tecnología méxico, construcción proveedores">
+  <meta name="description" content="Explora nuestras categorías en OrigenLab: Eventos Corporativos, Fiestas Infantiles, Seguridad Privada y Equipo Contra Incendios. Encuentra proveedores certificados en México.">
+  <meta name="keywords" content="categorías B2B México, eventos corporativos cdmx, fiestas infantiles méxico, seguridad privada empresas, equipo contra incendios, proveedores certificados">
   <meta name="author" content="OrigenLab">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://origenlab.com/categorias/">
@@ -46,15 +46,14 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="../css/minimal-global.css">
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="assets/css/categorias-minimal.css">
 
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "Categorías Industriales - OrigenLab",
-    "description": "Directorio completo de categorías industriales en México",
+    "name": "Categorías de Empresas - OrigenLab",
+    "description": "Directorio de categorías de empresas en México: Eventos, Fiestas Infantiles, Seguridad Privada y Equipo Contra Incendios",
     "url": "https://origenlab.com/categorias/",
     "breadcrumb": {
       "@type": "BreadcrumbList",
@@ -72,12 +71,12 @@
     },
     "mainEntity": {
       "@type": "ItemList",
-      "numberOfItems": 19,
+      "numberOfItems": 4,
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
-          "name": "Eventos",
+          "name": "Eventos Corporativos",
           "url": "https://origenlab.com/categorias/eventos.html"
         },
         {
@@ -85,6 +84,18 @@
           "position": 2,
           "name": "Fiestas Infantiles",
           "url": "https://origenlab.com/categorias/fiestas-infantiles.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Seguridad Privada",
+          "url": "https://origenlab.com/categorias/seguridad-privada.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Equipo Contra Incendios",
+          "url": "https://origenlab.com/categorias/equipo-contra-incendios.html"
         }
       ]
     }
@@ -125,140 +136,95 @@
     <div class="container">
       <h1 class="hero-minimal-title">Categorías</h1>
       <p class="hero-minimal-subtitle">
-        Encuentra empresas especializadas en cada industria. Conecta con más de 55,000 proveedores certificados en México.
+        Encuentra empresas especializadas en cada industria. Conecta con proveedores verificados en México.
       </p>
-
-      <!-- Search Bar -->
-      <div class="search-minimal">
-        <input
-          type="search"
-          class="search-minimal-input"
-          placeholder="Buscar categoría..."
-          aria-label="Buscar categorías"
-          autocomplete="off"
-          id="category-search"
-        >
-      </div>
     </div>
   </section>
 
-  <!-- Categories Grid - Minimal Design -->
-  <section class="categories-minimal">
+  <!-- Categories Grid -->
+  <section class="section-minimal" id="categorias">
     <div class="container">
+      <div class="section-minimal-header">
+        <h2 class="section-minimal-title">Todas las Categorías</h2>
+        <p class="section-minimal-subtitle">Explora nuestro directorio de empresas por industria</p>
+      </div>
 
-      <!-- Layout con Sidebar -->
-      <div class="categorias-layout-with-sidebar">
+      <div class="categories-grid">
 
-        <!-- Main Content -->
-        <div class="categorias-main-content">
-          <!-- Header -->
-          <div class="categories-minimal-header">
-            <h2 class="categories-minimal-title">Todas las categorías</h2>
-            <p class="categories-minimal-count" id="results-count">19 categorías disponibles</p>
-          </div>
-
-          <!-- Grid -->
-          <div class="category-grid-minimal" id="categories-grid">
-            <!-- Loading State -->
-            <div class="loading-minimal" id="loading-state">
-              <div class="spinner-minimal"></div>
-              <p class="loading-minimal-text">Cargando categorías...</p>
+        <!-- Category Card - EVENTOS -->
+        <a href="eventos.html" class="category-card category-card--eventos">
+          <div class="category-card-image">
+            <div class="category-card-placeholder">
+              <svg class="category-card-placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
             </div>
           </div>
-
-          <!-- No Results State -->
-          <div class="no-results-minimal hidden" id="no-results">
-            <svg class="no-results-minimal-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <circle cx="11" cy="11" r="8"></circle>
-              <path d="M21 21l-4.35-4.35"></path>
-            </svg>
-            <h3 class="no-results-minimal-title">No se encontraron categorías</h3>
-            <p class="no-results-minimal-text">Intenta con otro término de búsqueda</p>
+          <div class="category-card-content">
+            <div class="category-card-header">
+              <h3 class="category-card-title">Eventos Corporativos</h3>
+              <span class="category-card-badge">43 empresas</span>
+            </div>
+            <p class="category-card-description">Renta de iluminación profesional, sistemas de audio y sonido, mobiliario para eventos, producción audiovisual, escenarios, tarimas, carpas industriales, pantallas LED, proyección y servicios integrales para congresos, convenciones y eventos empresariales en CDMX y área metropolitana.</p>
+            <span class="category-card-btn">Eventos</span>
           </div>
-        </div>
+        </a>
 
-        <!-- Sidebar -->
-        <aside class="categorias-sidebar">
-
-          <!-- Categorías Populares -->
-          <div class="sidebar-widget">
-            <h3 class="sidebar-widget-title">Categorías Populares</h3>
-
-            <a href="eventos.html" class="categoria-sidebar-item">
-              <div class="categoria-sidebar-nombre">Eventos</div>
-              <div class="categoria-sidebar-count">500+ empresas</div>
-            </a>
-
-            <a href="fiestas-infantiles.html" class="categoria-sidebar-item">
-              <div class="categoria-sidebar-nombre">Fiestas Infantiles</div>
-              <div class="categoria-sidebar-count">120+ empresas</div>
-            </a>
-
-            <a href="#" class="categoria-sidebar-item">
-              <div class="categoria-sidebar-nombre">Manufactura</div>
-              <div class="categoria-sidebar-count">350+ empresas</div>
-            </a>
-
-            <a href="#" class="categoria-sidebar-item">
-              <div class="categoria-sidebar-nombre">Tecnología</div>
-              <div class="categoria-sidebar-count">280+ empresas</div>
-            </a>
-
-            <a href="#" class="categoria-sidebar-item">
-              <div class="categoria-sidebar-nombre">Construcción</div>
-              <div class="categoria-sidebar-count">420+ empresas</div>
-            </a>
-
+        <!-- Category Card - FIESTAS INFANTILES -->
+        <a href="fiestas-infantiles.html" class="category-card category-card--fiestas">
+          <div class="category-card-image">
+            <div class="category-card-placeholder">
+              <svg class="category-card-placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"></path>
+              </svg>
+            </div>
           </div>
-
-          <!-- Empresas Destacadas -->
-          <div class="sidebar-widget">
-            <h3 class="sidebar-widget-title">Empresas Destacadas</h3>
-
-            <a href="eventos/redeil.html" class="empresa-relacionada">
-              <div class="empresa-relacionada-nombre">Redeil</div>
-              <div class="empresa-relacionada-desc">⭐ 4.9 • Iluminación LED - CDMX</div>
-            </a>
-
-            <a href="eventos/renta-sonido-iluminacion.html" class="empresa-relacionada">
-              <div class="empresa-relacionada-nombre">Renta de Sonido e Iluminación</div>
-              <div class="empresa-relacionada-desc">⭐ 4.7 • Audio profesional - CDMX</div>
-            </a>
-
-            <a href="eventos/eventech.html" class="empresa-relacionada">
-              <div class="empresa-relacionada-nombre">Eventech</div>
-              <div class="empresa-relacionada-desc">⭐ 4.6 • Equipo audiovisual - CDMX</div>
-            </a>
-
+          <div class="category-card-content">
+            <div class="category-card-header">
+              <h3 class="category-card-title">Fiestas Infantiles</h3>
+              <span class="category-card-badge">12 empresas</span>
+            </div>
+            <p class="category-card-description">Renta de inflables y brincolines, animadores profesionales, shows infantiles, mesas de dulces personalizadas, decoración temática, payasos, magos, personajes, piñatas, candy bar, catering infantil y organización integral de fiestas y cumpleaños para niños en Ciudad de México.</p>
+            <span class="category-card-btn">Fiestas Infantiles</span>
           </div>
+        </a>
 
-          <!-- Artículos del Blog -->
-          <div class="sidebar-widget">
-            <h3 class="sidebar-widget-title">Artículos Recientes</h3>
-
-            <a href="#" class="articulo-relacionado">
-              <div class="articulo-titulo">Cómo elegir el proveedor ideal para tu negocio B2B</div>
-              <div class="articulo-fecha">15 Enero 2025</div>
-            </a>
-
-            <a href="#" class="articulo-relacionado">
-              <div class="articulo-titulo">Tendencias en manufactura 2025: Industria 4.0 en México</div>
-              <div class="articulo-fecha">10 Enero 2025</div>
-            </a>
-
-            <a href="#" class="articulo-relacionado">
-              <div class="articulo-titulo">Guía completa para evaluar proveedores industriales</div>
-              <div class="articulo-fecha">8 Enero 2025</div>
-            </a>
-
-            <a href="#" class="articulo-relacionado">
-              <div class="articulo-titulo">Networking B2B: Estrategias efectivas en México</div>
-              <div class="articulo-fecha">5 Enero 2025</div>
-            </a>
-
+        <!-- Category Card - SEGURIDAD PRIVADA -->
+        <a href="seguridad-privada.html" class="category-card category-card--seguridad">
+          <div class="category-card-image">
+            <img src="../img/seguridad-privada/equipo-seguridad-privada-uniforme.webp" alt="Seguridad Privada - Servicios de vigilancia y protección en México" loading="lazy">
           </div>
+          <div class="category-card-content">
+            <div class="category-card-header">
+              <h3 class="category-card-title">Seguridad Privada</h3>
+              <span class="category-card-badge">8 empresas</span>
+            </div>
+            <p class="category-card-description">Servicios de vigilancia intramuros, guardias de seguridad capacitados, escoltas ejecutivos, monitoreo CCTV 24/7, control de acceso vehicular y peatonal, protección patrimonial, seguridad para eventos, custodia de valores y sistemas de alarma para empresas, residenciales e industrias en México.</p>
+            <span class="category-card-btn">Seguridad Privada</span>
+          </div>
+        </a>
 
-        </aside>
+        <!-- Category Card - EQUIPO CONTRA INCENDIOS -->
+        <a href="equipo-contra-incendios.html" class="category-card category-card--incendios">
+          <div class="category-card-image">
+            <div class="category-card-placeholder">
+              <svg class="category-card-placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="category-card-content">
+            <div class="category-card-header">
+              <h3 class="category-card-title">Equipo Contra Incendios</h3>
+              <span class="category-card-badge">6 empresas</span>
+            </div>
+            <p class="category-card-description">Venta y recarga de extintores, sistemas de detección de humo y calor, rociadores automáticos, gabinetes contra incendio, señalización de emergencia, capacitación brigadas, planes de contingencia, mantenimiento preventivo certificado y cumplimiento normativo NOM para industrias, comercios y edificios.</p>
+            <span class="category-card-btn">Equipo Contra Incendios</span>
+          </div>
+        </a>
 
       </div>
 
@@ -298,11 +264,10 @@
         <div class="footer-column">
           <h3 class="footer-column-title">Categorías</h3>
           <ul class="footer-links">
-            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="eventos.html">Eventos Corporativos</a></li>
             <li><a href="fiestas-infantiles.html">Fiestas Infantiles</a></li>
-            <li><a href="../index.html#companies-section">Manufactura</a></li>
-            <li><a href="../index.html#companies-section">Tecnología</a></li>
-            <li><a href="categorias.html">Ver todas</a></li>
+            <li><a href="seguridad-privada.html">Seguridad Privada</a></li>
+            <li><a href="equipo-contra-incendios.html">Equipo Contra Incendios</a></li>
           </ul>
         </div>
 
@@ -362,6 +327,5 @@
 
   <!-- Scripts -->
   <script src="../js/app.js"></script>
-  <script src="assets/js/categorias-minimal.js"></script>
 </body>
 </html>

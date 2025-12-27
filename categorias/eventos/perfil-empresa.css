@@ -389,7 +389,7 @@
 }
 
 .empresa-relacionada:hover {
-  transform: translateX(4px);
+  color: var(--color-accent);
 }
 
 .empresa-relacionada-nombre {
@@ -550,6 +550,59 @@
 
 .cta-btn-secondary:hover {
   background: rgba(255, 255, 255, 0.1);
+}
+
+/* ===================================
+   GALERÍA DE IMÁGENES
+   =================================== */
+.galeria-section {
+  margin-top: var(--space-lg);
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.galeria-item {
+  position: relative;
+  aspect-ratio: 4/3;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.galeria-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.galeria-item-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  z-index: 2;
+  background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.5) 100%);
+}
+
+/* Galería responsive */
+@media (max-width: 768px) {
+  .galeria-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .galeria-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ===================================

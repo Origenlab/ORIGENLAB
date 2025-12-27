@@ -845,5 +845,156 @@ open categorias/[categoria]/[empresa].html
 
 ---
 
+# PARTE IV: ESTILOS CSS Y DIRECTRICES DE DISEÑO
+
+## DIRECTRIZ: SIN ANIMACIONES EN IMÁGENES Y CARDS
+
+**Fecha:** 27 Diciembre 2025
+**Status:** Implementado ✅
+
+### Política de Animaciones
+
+Las imágenes y cards del sitio **NO deben tener animaciones ni transiciones de hover**. Esto incluye:
+
+- ❌ Sin `transform: scale()` en hover
+- ❌ Sin `transform: translateY()` en hover
+- ❌ Sin `transition` para efectos visuales de movimiento
+- ❌ Sin animaciones de fade o deslizamiento
+
+### Archivos Modificados
+
+#### 1. `/css/minimal-global.css`
+
+**Category Cards - Sin animaciones:**
+
+```css
+/* CORRECTO - Sin animaciones */
+.category-card {
+  background: var(--color-card-bg, #fff);
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--color-divider, #e5e7eb);
+  /* SIN transition */
+}
+
+.category-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: var(--color-accent, #6366f1);
+  /* SIN transform */
+}
+
+.category-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* SIN transition */
+}
+
+/* SIN regla para .category-card:hover .category-card-image img */
+
+.category-card-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* SIN transition */
+}
+
+/* SIN regla para .category-card:hover .category-card-placeholder */
+
+.category-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-accent, #6366f1);
+  /* SIN transition de gap */
+}
+
+/* SIN regla para .category-card:hover .category-card-link */
+```
+
+#### 2. `/categorias/eventos/perfil-empresa.css`
+
+**Galería de Imágenes - Sin animaciones:**
+
+```css
+/* CORRECTO - Sin animaciones */
+.galeria-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* SIN transition */
+}
+
+/* SIN regla para .galeria-item:hover img */
+/* SIN regla para .galeria-item::after con transition */
+/* SIN regla para .galeria-item:hover::after */
+
+.galeria-item-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  z-index: 2;
+  background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.5) 100%);
+  /* Caption siempre visible, SIN animación de slide */
+}
+
+/* SIN regla para .galeria-item:hover .galeria-item-caption */
+```
+
+**Empresas Relacionadas - Sin animaciones:**
+
+```css
+/* CORRECTO - Sin animaciones */
+.empresa-relacionada:hover {
+  color: var(--color-accent);
+  /* SIN transform: translateX() */
+}
+```
+
+### Reglas para Nuevos Componentes
+
+Al crear nuevos componentes CSS:
+
+1. **NO agregar** propiedades `transition` para efectos visuales
+2. **NO agregar** `transform` en estados `:hover`
+3. **NO agregar** `@keyframes` para animaciones de UI
+4. Los cambios de hover deben ser solo de color (`color`, `background-color`, `border-color`)
+5. Los cambios de sombra (`box-shadow`) en hover están permitidos
+
+### Ejemplo de Hover Permitido
+
+```css
+/* ✅ PERMITIDO - Solo cambios de color y sombra */
+.elemento:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ❌ PROHIBIDO - Animaciones y transformaciones */
+.elemento {
+  transition: all 0.3s ease;
+}
+.elemento:hover {
+  transform: translateY(-4px);
+  transform: scale(1.05);
+}
+```
+
+---
+
 **© 2025 OrigenLab - Sistema de Gestión de Empresas v5.0**
 **Professional Edition - Production Ready ✅**
