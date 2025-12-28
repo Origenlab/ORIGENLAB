@@ -2,6 +2,24 @@
   "version": "3.0",
   "articulos": [
     {
+      "id": "guia-seguridad-privada-condominios-seguridad-condominios-seprico",
+      "titulo": "Servicios de Seguridad Privada para Condominios en CDMX: Guía Com",
+      "slug": "guia-seguridad-privada-condominios-seguridad-condominios-seprico",
+      "categoria": "seguridad-privada",
+      "categoriaNombre": "Seguridad Privada",
+      "extracto": "Descubre cómo proteger tu condominio con SEPRICO. Servicios de vigilancia y control de acceso en CDMX. ¡Asegura tu patrimonio hoy!",
+      "imagen": "img/seguridad-privada/guardia-acceso-condominio-pluma.webp",
+      "tiempoLectura": 25,
+      "destacado": false,
+      "n8n": true,
+      "version": "8.9",
+      "empresa": "SEPRICO",
+      "empresaSlug": "seguridad-condominios-seprico",
+      "keywords": "seguridad privada Mexico, vigilancia condominios, guardias certificados SSC, seprico",
+      "contenidoLength": 9494,
+      "faqCount": 2
+    },
+    {
       "id": "guia-seguridad-privada-condominios-seguridad-eventos-profesional",
       "titulo": "Guía Completa de Seguridad Privada para Eventos en Mexico",
       "slug": "guia-seguridad-privada-condominios-seguridad-eventos-profesional",
