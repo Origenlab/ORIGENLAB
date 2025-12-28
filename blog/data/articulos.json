@@ -1,20 +1,24 @@
 {
-  "version": "1.0",
-  "lastUpdated": "2025-12-28T02:03:43.704Z",
+  "version": "2.0",
+  "lastUpdated": "2025-12-28T02:19:42.713Z",
   "articulos": [
     {
-      "id": "podiumex-resena-1766887414597",
-      "titulo": "Renta de Podiums en CDMX: Podiumex",
-      "slug": "podiumex-resena-1766887414597",
-      "categoria": "eventos",
-      "categoriaNombre": "Eventos Corporativos",
-      "extracto": "Descubre por qué Podiumex es líder en renta de podiums en CDMX. Servicios destacados y testimonios.",
-      "imagen": "img/eventos/renta-de-cabezas-moviles.webp",
-      "tiempoLectura": 12,
+      "id": "seguridadprivadamx-resena-completa-seguridad-inteligente",
+      "titulo": "Seguridad Privada en CDMX: Análisis Completo",
+      "slug": "seguridadprivadamx-resena-completa-seguridad-inteligente",
+      "categoria": "seguridad-privada",
+      "categoriaNombre": "Seguridad Privada",
+      "extracto": "Explora los servicios de seguridad privada en CDMX con tecnología propia y certificaciones. Descubre cómo proteger tu espacio.",
+      "imagen": "img/seguridad-privada/centro-monitoreo-cctv-camaras.webp",
+      "tiempoLectura": 15,
       "destacado": false,
       "fecha": "2025-12-28",
       "n8n": true,
-      "empresa": "Podiumex"
+      "version": "7.0",
+      "empresa": "SeguridadPrivadaMX",
+      "empresaSlug": "seguridad-condominios-inteligente",
+      "keywords": "seguridad privada México, empresas de seguridad privada CDMX, vigilancia 24/7, guardias de seguridad certificados, seguridad inteligente, control de accesos, cámaras HD, reportes en tiempo real",
+      "contenidoLength": 7190
     }
   ]
 }
