@@ -1,24 +1,23 @@
 {
-  "version": "2.0",
-  "lastUpdated": "2025-12-28T02:19:42.713Z",
+  "version": "3.0",
   "articulos": [
     {
-      "id": "seguridadprivadamx-resena-completa-seguridad-inteligente",
-      "titulo": "Seguridad Privada en CDMX: Análisis Completo",
-      "slug": "seguridadprivadamx-resena-completa-seguridad-inteligente",
+      "id": "seguridad-para-eventos-analisis-ejecutivo-seguridad-privada-mexico",
+      "titulo": "Análisis Estratégico de Seguridad para Eventos",
+      "slug": "seguridad-para-eventos-analisis-ejecutivo-seguridad-privada-mexico",
       "categoria": "seguridad-privada",
       "categoriaNombre": "Seguridad Privada",
-      "extracto": "Explora los servicios de seguridad privada en CDMX con tecnología propia y certificaciones. Descubre cómo proteger tu espacio.",
-      "imagen": "img/seguridad-privada/centro-monitoreo-cctv-camaras.webp",
-      "tiempoLectura": 15,
+      "extracto": "Explora la seguridad privada en México con Seguridad para Eventos. Vigilancia y control profesional.",
+      "imagen": "img/seguridad-privada/personal-femenino-seguridad-eventos.webp",
+      "tiempoLectura": 18,
       "destacado": false,
-      "fecha": "2025-12-28",
       "n8n": true,
-      "version": "7.0",
-      "empresa": "SeguridadPrivadaMX",
-      "empresaSlug": "seguridad-condominios-inteligente",
-      "keywords": "seguridad privada México, empresas de seguridad privada CDMX, vigilancia 24/7, guardias de seguridad certificados, seguridad inteligente, control de accesos, cámaras HD, reportes en tiempo real",
-      "contenidoLength": 7190
+      "version": "8.1",
+      "empresa": "Seguridad para Eventos",
+      "empresaSlug": "seguridad-eventos-profesional",
+      "keywords": "seguridad privada México, empresas seguridad CDMX, vigilancia profesional",
+      "contenidoLength": 9025,
+      "faqCount": 6
     }
   ]
 }
