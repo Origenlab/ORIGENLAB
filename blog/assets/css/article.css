@@ -460,3 +460,173 @@
     height: 60px;
   }
 }
+
+/* ========================================
+   FAQ ACCORDION - Preguntas Frecuentes
+   ======================================== */
+
+.faq-accordion {
+  margin: var(--space-xl) 0;
+}
+
+.faq-item {
+  background: var(--color-surface);
+  border: 2px solid var(--color-divider);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-md);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  border-color: var(--color-accent);
+}
+
+.faq-item.active {
+  border-color: var(--color-accent);
+  box-shadow: 0 4px 20px rgba(0, 51, 102, 0.1);
+}
+
+.faq-question {
+  width: 100%;
+  padding: var(--space-lg);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-md);
+  text-align: left;
+  transition: background 0.3s ease;
+}
+
+.faq-question:hover {
+  background: rgba(0, 51, 102, 0.03);
+}
+
+.faq-question span {
+  flex: 1;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.5;
+}
+
+.faq-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: var(--color-accent);
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 1000px;
+  padding: 0 var(--space-lg) var(--space-lg) var(--space-lg);
+}
+
+.faq-answer p {
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Responsive FAQ */
+@media (max-width: 768px) {
+  .faq-question {
+    padding: var(--space-md);
+  }
+
+  .faq-question span {
+    font-size: 16px;
+  }
+
+  .faq-item.active .faq-answer {
+    padding: 0 var(--space-md) var(--space-md) var(--space-md);
+  }
+}
+
+/* ========================================
+   ARTICLE IMAGES - Imágenes en contenido
+   ======================================== */
+
+.article-image {
+  margin: var(--space-xl) 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.article-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.article-image:hover img {
+  transform: scale(1.02);
+}
+
+.article-image figcaption {
+  padding: var(--space-md);
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  text-align: center;
+  font-style: italic;
+  border-top: 1px solid var(--color-divider);
+}
+
+/* ========================================
+   BLOCKQUOTE - Testimonios
+   ======================================== */
+
+.article-quote {
+  background: var(--color-surface);
+  border-left: 4px solid var(--color-accent);
+  padding: var(--space-lg);
+  margin: var(--space-xl) 0;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.article-quote p {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.7;
+  color: var(--color-text-primary);
+  margin: 0 0 var(--space-md) 0;
+}
+
+.article-quote cite {
+  display: block;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+/* ========================================
+   HEADING HIERARCHY - H5
+   ======================================== */
+
+.article-content h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: var(--space-md) 0 var(--space-sm) 0;
+  color: var(--color-text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}

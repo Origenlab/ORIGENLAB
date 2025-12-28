@@ -1,0 +1,199 @@
+{
+  "name": "OrigenLab - Blog Generator v8.4 FINAL",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [{"field": "days", "triggerAtHour": 9, "daysInterval": 2}]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [480, 300],
+      "id": "schedule-trigger",
+      "name": "Cada 2 Días 9AM"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [480, 480],
+      "id": "manual-trigger",
+      "name": "Ejecución Manual"
+    },
+    {
+      "parameters": {
+        "jsCode": "// ORIGENLAB BLOG GENERATOR v8.4 FINAL\n\nconst empresas = [\n  {\n    id: 'origins-private-security',\n    nombre: 'ORIGINS Private Security',\n    slugPerfil: 'seguridad-condominios-cdmx',\n    especialidad: 'Seguridad para Condominios',\n    ubicacion: 'CDMX y Estado de México',\n    telefono: '+52-55-3025-5580',\n    experiencia: '15+ años',\n    rating: 4.9,\n    resenas: 245,\n    servicios: ['Guardias certificados SSC', 'Central de monitoreo 24/7', 'Tecnología GPS', 'Respuesta en 3 minutos', 'Control de accesos', 'Rondines fotográficos', 'Escoltas ejecutivos'],\n    diferenciadores: ['Respuesta garantizada en 3 minutos', 'Guardias 100% certificados SSC', 'Central de monitoreo propia', 'Tecnología GPS para rondines'],\n    certificaciones: ['SSC', 'NOM-001', 'ISO 9001'],\n    cobertura: ['CDMX', 'Estado de México', 'Querétaro']\n  },\n  {\n    id: 'seprico',\n    nombre: 'SEPRICO',\n    slugPerfil: 'seguridad-condominios-seprico',\n    especialidad: 'Seguridad Especializada para Condominios',\n    ubicacion: 'CDMX - Polanco',\n    telefono: '+52-56-3628-2480',\n    experiencia: '10+ años',\n    rating: 4.8,\n    resenas: 428,\n    servicios: ['Vigilancia 24/7', 'Control biométrico', 'Monitoreo electrónico', 'Cámaras HD', 'Alarma perimetral', 'Gestión de visitantes', 'Rondines programados'],\n    diferenciadores: ['Evaluación de seguridad gratuita', '200+ condominios protegidos', 'Control biométrico avanzado', 'Ubicación en Polanco'],\n    certificaciones: ['SSC', 'CONOCER'],\n    cobertura: ['CDMX', 'Estado de México']\n  },\n  {\n    id: 'seguridad-eventos',\n    nombre: 'Seguridad para Eventos',\n    slugPerfil: 'seguridad-eventos-profesional',\n    especialidad: 'Seguridad Integral para Eventos Masivos',\n    ubicacion: 'CDMX - Santa Fe',\n    telefono: '+52-55-1234-5600',\n    experiencia: '15+ años',\n    rating: 4.9,\n    resenas: 615,\n    servicios: ['Control de acceso eventos', 'Vigilancia perimetral', 'Seguridad VIP', 'Gestión de multitudes', 'Coordinación autoridades', 'Planes evacuación', 'Personal femenino'],\n    diferenciadores: ['5,000+ eventos realizados', 'Especialistas en conciertos', 'Coordinación con Protección Civil', 'Equipo de respuesta rápida'],\n    certificaciones: ['SSC', 'Protección Civil', 'NOM-002'],\n    cobertura: ['Nacional']\n  },\n  {\n    id: 'seguridadprivadamx',\n    nombre: 'SeguridadPrivadaMX',\n    slugPerfil: 'seguridad-condominios-inteligente',\n    especialidad: 'Seguridad Inteligente con Tecnología Propia',\n    ubicacion: 'CDMX - Benito Juárez',\n    telefono: '+52-55-1234-5678',\n    experiencia: '12+ años',\n    rating: 4.9,\n    resenas: 312,\n    servicios: ['App móvil residentes', 'Cámaras HD remotas', 'Control accesos inteligente', 'Guardias certificados', 'Reportes tiempo real', 'Visitas digitales', 'Precios transparentes'],\n    diferenciadores: ['Tecnología 100% propia', 'App móvil control', 'Cotización en 4 horas', 'Precios publicados'],\n    certificaciones: ['SSC', 'ISO 27001', 'CONOCER'],\n    cobertura: ['CDMX', 'Estado de México', 'Guadalajara']\n  }\n];\n\nconst imagenesPorTema = {\n  condominios: [\n    {archivo: 'control-acceso-residencial-caseta.webp', alt: 'Control de acceso residencial con caseta de vigilancia en condominio'},\n    {archivo: 'guardia-caseta-entrada-residencial.webp', alt: 'Guardia de seguridad en caseta de entrada residencial'},\n    {archivo: 'vigilante-fraccionamiento-residencial.webp', alt: 'Vigilante profesional en fraccionamiento residencial'},\n    {archivo: 'caseta-moderna-control-acceso.webp', alt: 'Caseta moderna de control de acceso con tecnología'},\n    {archivo: 'guardia-acceso-condominio-pluma.webp', alt: 'Guardia controlando acceso vehicular en condominio'}\n  ],\n  tecnologia: [\n    {archivo: 'monitoreo-camaras-vigilancia-24hrs.webp', alt: 'Centro de monitoreo de cámaras de vigilancia 24 horas'},\n    {archivo: 'central-monitoreo-seguridad-remota.webp', alt: 'Central de monitoreo de seguridad remota profesional'},\n    {archivo: 'operador-videovigilancia-monitores.webp', alt: 'Operador de videovigilancia monitoreando pantallas'},\n    {archivo: 'centro-monitoreo-cctv-camaras.webp', alt: 'Centro de monitoreo CCTV con múltiples cámaras'}\n  ],\n  eventos: [\n    {archivo: 'seguridad-eventos-alfombra-roja.webp', alt: 'Personal de seguridad en evento de alfombra roja'},\n    {archivo: 'staff-seguridad-evento-corporativo.webp', alt: 'Staff de seguridad en evento corporativo'},\n    {archivo: 'equipo-seguridad-gala-convenciones.webp', alt: 'Equipo de seguridad para galas y convenciones'},\n    {archivo: 'personal-femenino-seguridad-eventos.webp', alt: 'Personal femenino de seguridad en eventos'}\n  ]\n};\n\nconst empresa = empresas[Math.floor(Math.random() * empresas.length)];\n\nlet tema = 'condominios';\nif (empresa.especialidad.includes('Eventos')) tema = 'eventos';\nelse if (empresa.especialidad.includes('Inteligente')) tema = 'tecnologia';\n\nconst imgs = imagenesPorTema[tema].sort(() => Math.random() - 0.5).slice(0, 4);\n\nconst slug = empresa.nombre.toLowerCase().replace(/[^a-z0-9\\s]/g, '').replace(/\\s+/g, '-') + '-seguridad-privada-mexico';\n\nreturn {\n  empresa,\n  slug: slug.substring(0, 80),\n  img1: imgs[0],\n  img2: imgs[1],\n  img3: imgs[2],\n  img4: imgs[3] || imgs[0]\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [720, 380],
+      "id": "selector",
+      "name": "Seleccionar Empresa"
+    },
+    {
+      "parameters": {
+        "jsCode": "const d = $input.first().json;\nconst e = d.empresa;\n\nconst prompt = `Eres un DIRECTOR EDITORIAL experto en SEO para seguridad privada en México. Genera un artículo PREMIUM de 3,500+ palabras.\n\n═══════════════════════════════════════════════════════════════════\n                         EMPRESA\n═══════════════════════════════════════════════════════════════════\n• Nombre: ${e.nombre}\n• Especialidad: ${e.especialidad}\n• Ubicación: ${e.ubicacion}\n• Experiencia: ${e.experiencia}\n• Rating: ${e.rating}/5.0 (${e.resenas} reseñas)\n• Teléfono: ${e.telefono}\n• Servicios: ${e.servicios.join(', ')}\n• Diferenciadores: ${e.diferenciadores.join(', ')}\n• Certificaciones: ${e.certificaciones.join(', ')}\n• Cobertura: ${e.cobertura.join(', ')}\n\n═══════════════════════════════════════════════════════════════════\n                    IMÁGENES (USAR EXACTAMENTE)\n═══════════════════════════════════════════════════════════════════\nINCLUIR ESTAS 3 IMÁGENES en el contenido:\n\n1. Después de \"Panorama del Sector\":\n<figure class=\"article-image\"><img src=\"../img/seguridad-privada/${d.img2.archivo}\" alt=\"${d.img2.alt}\" loading=\"lazy\"><figcaption>Servicios profesionales de seguridad privada</figcaption></figure>\n\n2. Después de \"Portafolio de Servicios\":\n<figure class=\"article-image\"><img src=\"../img/seguridad-privada/${d.img3.archivo}\" alt=\"${d.img3.alt}\" loading=\"lazy\"><figcaption>Soluciones integrales de vigilancia</figcaption></figure>\n\n3. Después de \"Metodología\":\n<figure class=\"article-image\"><img src=\"../img/seguridad-privada/${d.img4.archivo}\" alt=\"${d.img4.alt}\" loading=\"lazy\"><figcaption>Tecnología y personal capacitado</figcaption></figure>\n\n═══════════════════════════════════════════════════════════════════\n                    REQUISITOS OBLIGATORIOS\n═══════════════════════════════════════════════════════════════════\n1. JERARQUÍA H2→H3→H4→H5 sin saltar niveles\n2. Párrafos de 120-180 palabras cada uno\n3. 100% atemporal (sin años ni fechas)\n4. Keywords SEO: seguridad privada México, vigilancia CDMX, guardias certificados\n5. 6 FAQs con preguntas SEO y respuestas de 80+ palabras\n\n═══════════════════════════════════════════════════════════════════\n                    ESTRUCTURA HTML\n═══════════════════════════════════════════════════════════════════\n<p class=\"article-lead\">Párrafo de apertura impactante de 150+ palabras...</p>\n\n<section class=\"article-section\" id=\"panorama-seguridad\">\n  <h2>Panorama del Sector de Seguridad Privada en México</h2>\n  <p>Párrafo extenso de 150+ palabras...</p>\n  <h3>Evolución del Mercado</h3>\n  <p>...</p>\n  <h4>Factores de Crecimiento</h4>\n  <p>...</p>\n</section>\n\n<!-- IMAGEN 1 AQUÍ -->\n\n<section class=\"article-section\" id=\"perfil-${e.slugPerfil}\">\n  <h2>Perfil Empresarial: ${e.nombre}</h2>\n  ...\n</section>\n\n<section class=\"article-section\" id=\"portafolio-servicios\">\n  <h2>Portafolio de Servicios de Seguridad</h2>\n  ...\n  <div class=\"article-tip\"><h4>Recomendación</h4><p>Consejo de 80+ palabras...</p></div>\n</section>\n\n<!-- IMAGEN 2 AQUÍ -->\n\n<section class=\"article-section\" id=\"diferenciadores\">\n  <h2>Diferenciadores y Ventaja Competitiva</h2>\n  ...\n  <div class=\"article-highlight\"><h4>Dato Clave</h4><p>Estadística relevante...</p></div>\n</section>\n\n<section class=\"article-section\" id=\"metodologia\">\n  <h2>Metodología de Implementación</h2>\n  ...\n</section>\n\n<!-- IMAGEN 3 AQUÍ -->\n\n<section class=\"article-section\" id=\"testimonios\">\n  <h2>Casos de Éxito y Testimonios</h2>\n  <blockquote class=\"article-quote\"><p>\"Testimonio de 60+ palabras...\"</p><cite>— Nombre, Cargo, Empresa</cite></blockquote>\n</section>\n\n<section class=\"article-section\" id=\"cobertura\">\n  <h2>Cobertura Geográfica</h2>\n  ...\n</section>\n\n<section class=\"article-section\" id=\"contratacion\">\n  <h2>Proceso de Contratación</h2>\n  ...\n</section>\n\n<section class=\"article-section\" id=\"preguntas-frecuentes\">\n  <h2>Preguntas Frecuentes sobre Seguridad Privada</h2>\n  \n  <div class=\"faq-accordion\">\n    <div class=\"faq-item\">\n      <button class=\"faq-question\" type=\"button\" aria-expanded=\"false\">\n        <span>¿Cuáles son los requisitos para contratar seguridad privada en México?</span>\n        <svg class=\"faq-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M6 9l6 6 6-6\"/></svg>\n      </button>\n      <div class=\"faq-answer\">\n        <p>Respuesta completa de 80+ palabras explicando los requisitos legales, permisos y consideraciones importantes para contratar servicios de seguridad privada en México...</p>\n      </div>\n    </div>\n    <!-- Repetir para 6 FAQs con preguntas SEO diferentes -->\n  </div>\n</section>\n\n<section class=\"article-section\" id=\"conclusion\">\n  <h2>Conclusión: ¿Por Qué Elegir ${e.nombre}?</h2>\n  <p>Síntesis de 150+ palabras...</p>\n  <p>Ver perfil: <a href=\"../categorias/seguridad-privada/${e.slugPerfil}.html\" class=\"article-link\">${e.nombre}</a></p>\n</section>\n\n═══════════════════════════════════════════════════════════════════\n                    RESPUESTA JSON\n═══════════════════════════════════════════════════════════════════\n{\n  \"titulo\": \"Título SEO 55-60 chars con keyword (SIN AÑOS)\",\n  \"tituloCorto\": \"Breadcrumb máx 25 chars\",\n  \"metaDescripcion\": \"155-160 chars exactos con keyword y CTA\",\n  \"keywords\": \"seguridad privada México, ${e.nombre.toLowerCase()}, vigilancia CDMX, guardias certificados\",\n  \"tiempoLectura\": 22,\n  \"subtitulo\": \"Subtítulo complementario\",\n  \"imagenAlt\": \"${d.img1.alt}\",\n  \"tocItems\": [\n    {\"id\": \"panorama-seguridad\", \"titulo\": \"Panorama del Sector\"},\n    {\"id\": \"perfil-${e.slugPerfil}\", \"titulo\": \"Perfil de ${e.nombre}\"},\n    {\"id\": \"portafolio-servicios\", \"titulo\": \"Portafolio de Servicios\"},\n    {\"id\": \"diferenciadores\", \"titulo\": \"Diferenciadores\"},\n    {\"id\": \"metodologia\", \"titulo\": \"Metodología\"},\n    {\"id\": \"testimonios\", \"titulo\": \"Testimonios\"},\n    {\"id\": \"cobertura\", \"titulo\": \"Cobertura\"},\n    {\"id\": \"contratacion\", \"titulo\": \"Contratación\"},\n    {\"id\": \"preguntas-frecuentes\", \"titulo\": \"Preguntas Frecuentes\"},\n    {\"id\": \"conclusion\", \"titulo\": \"Conclusión\"}\n  ],\n  \"faqs\": [\n    {\"pregunta\": \"¿Cuáles son los requisitos...?\", \"respuesta\": \"Respuesta completa...\"},\n    {\"pregunta\": \"¿Cómo verificar certificación...?\", \"respuesta\": \"...\"},\n    {\"pregunta\": \"¿Qué incluye el servicio...?\", \"respuesta\": \"...\"},\n    {\"pregunta\": \"¿Cuál es el costo...?\", \"respuesta\": \"...\"},\n    {\"pregunta\": \"¿Qué diferencia a ${e.nombre}...?\", \"respuesta\": \"...\"},\n    {\"pregunta\": \"¿Cómo se capacita el personal...?\", \"respuesta\": \"...\"}\n  ],\n  \"contenido\": \"<p class='article-lead'>...</p>... TODO EL HTML CON LAS 3 IMÁGENES\"\n}`;\n\nreturn { prompt, ...d };"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [940, 380],
+      "id": "prompt",
+      "name": "Construir Prompt"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.openai.com/v1/chat/completions",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "openAiApi",
+        "sendHeaders": true,
+        "headerParameters": {"parameters": [{"name": "Content-Type", "value": "application/json"}]},
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"gpt-4o\",\n  \"messages\": [\n    {\"role\": \"system\", \"content\": \"Eres un Director Editorial experto en SEO para seguridad privada en México. Creas artículos de 3,500+ palabras con párrafos extensos, jerarquía H2-H5 correcta, y 6 FAQs con preguntas SEO. NUNCA usas fechas ni años. Respondes en JSON válido.\"},\n    {\"role\": \"user\", \"content\": {{ JSON.stringify($json.prompt) }}}\n  ],\n  \"temperature\": 0.7,\n  \"max_tokens\": 14000,\n  \"response_format\": {\"type\": \"json_object\"}\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1160, 380],
+      "id": "openai",
+      "name": "OpenAI GPT-4o",
+      "credentials": {"openAiApi": {"id": "YOUR_OPENAI_CREDENTIAL_ID", "name": "OpenAI API"}}
+    },
+    {
+      "parameters": {
+        "jsCode": "const response = $input.first().json;\nconst datos = $('Construir Prompt').first().json;\n\ntry {\n  const art = JSON.parse(response.choices[0].message.content);\n  \n  if (!art.titulo || !art.contenido) throw new Error('Campos faltantes');\n  if (art.contenido.length < 5000) throw new Error('Contenido corto: ' + art.contenido.length);\n\n  return {\n    valido: true,\n    titulo: art.titulo.substring(0, 60),\n    tituloCorto: art.tituloCorto || art.titulo.substring(0, 25),\n    metaDescripcion: art.metaDescripcion.substring(0, 160),\n    keywords: art.keywords,\n    tiempoLectura: art.tiempoLectura || 20,\n    subtitulo: art.subtitulo,\n    imagenAlt: art.imagenAlt || datos.img1.alt,\n    tocItems: art.tocItems || [],\n    faqs: art.faqs || [],\n    contenidoHTML: art.contenido,\n    contenidoLength: art.contenido.length,\n    slug: datos.slug,\n    empresa: datos.empresa,\n    img1: datos.img1,\n    img2: datos.img2,\n    img3: datos.img3\n  };\n} catch (e) {\n  return { valido: false, error: e.message, raw: response.choices?.[0]?.message?.content?.substring(0, 500) };\n}"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1380, 380],
+      "id": "validar",
+      "name": "Validar"
+    },
+    {
+      "parameters": {
+        "conditions": {"boolean": [{"value1": "={{ $json.valido }}", "value2": true}]}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [1600, 380],
+      "id": "check",
+      "name": "¿OK?"
+    },
+    {
+      "parameters": {
+        "jsCode": "const a = $input.first().json;\nconst e = a.empresa;\n\nconst tocHTML = a.tocItems.map(t => `<li><a href=\"#${t.id}\">${t.titulo}</a></li>`).join('\\n              ');\n\nconst faqSchema = a.faqs.map(f => `{\"@type\":\"Question\",\"name\":\"${f.pregunta.replace(/\"/g,'\\\\\"')}\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"${f.respuesta.replace(/\"/g,'\\\\\"').substring(0,300)}\"}}`).join(',');\n\nconst imgPath = `img/seguridad-privada/${a.img1.archivo}`;\n\nconst html = `<!DOCTYPE html>\n<html lang=\"es-MX\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>${a.titulo} | OrigenLab</title>\n  <meta name=\"description\" content=\"${a.metaDescripcion}\">\n  <meta name=\"keywords\" content=\"${a.keywords}\">\n  <meta name=\"robots\" content=\"index, follow\">\n  <meta property=\"og:type\" content=\"article\">\n  <meta property=\"og:url\" content=\"https://origenlab.com/blog/${a.slug}.html\">\n  <meta property=\"og:title\" content=\"${a.titulo}\">\n  <meta property=\"og:description\" content=\"${a.metaDescripcion}\">\n  <meta property=\"og:image\" content=\"https://origenlab.com/${imgPath}\">\n  <link rel=\"canonical\" href=\"https://origenlab.com/blog/${a.slug}.html\">\n  <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n  <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n  <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap\" rel=\"stylesheet\">\n  <link rel=\"stylesheet\" href=\"../css/minimal-global.css\">\n  <link rel=\"stylesheet\" href=\"../css/style.css\">\n  <link rel=\"stylesheet\" href=\"../css/cta-global.css\">\n  <link rel=\"stylesheet\" href=\"assets/css/blog.css\">\n  <link rel=\"stylesheet\" href=\"assets/css/article.css\">\n  <script type=\"application/ld+json\">\n  {\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"${a.titulo}\",\"description\":\"${a.metaDescripcion}\",\"image\":\"https://origenlab.com/${imgPath}\",\"author\":{\"@type\":\"Organization\",\"name\":\"OrigenLab\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"OrigenLab\"}}\n  </script>\n  <script type=\"application/ld+json\">\n  {\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[${faqSchema}]}\n  </script>\n</head>\n<body>\n\n  <header class=\"header\">\n    <div class=\"container\">\n      <div class=\"nav-wrapper\">\n        <a href=\"../index.html\" class=\"logo\"><img src=\"../img/origenlab.webp\" alt=\"OrigenLab\" width=\"180\" height=\"40\"></a>\n        <nav>\n          <a href=\"../categorias/categorias.html\" class=\"nav-link\">Categorías</a>\n          <a href=\"../blog.html\" class=\"nav-link active\">Blog</a>\n        </nav>\n      </div>\n    </div>\n  </header>\n\n  <div class=\"breadcrumbs-wrapper\">\n    <div class=\"container\">\n      <nav aria-label=\"Breadcrumb\" class=\"breadcrumbs\">\n        <ol>\n          <li><a href=\"../index.html\">Inicio</a></li>\n          <li><a href=\"../blog.html\">Blog</a></li>\n          <li><a href=\"../categorias/seguridad-privada.html\">Seguridad Privada</a></li>\n          <li aria-current=\"page\">${a.tituloCorto}</li>\n        </ol>\n      </nav>\n    </div>\n  </div>\n\n  <article class=\"article-container\">\n    <div class=\"container\" style=\"max-width: 1400px; padding: var(--space-xl) var(--space-md);\">\n\n      <header class=\"article-header\">\n        <div class=\"article-header-image\">\n          <figure class=\"article-featured-image\">\n            <img src=\"../${imgPath}\" alt=\"${a.imagenAlt}\" loading=\"eager\" width=\"800\" height=\"450\">\n          </figure>\n        </div>\n        <div class=\"article-header-content\">\n          <div class=\"article-category-badge\"><a href=\"../categorias/seguridad-privada.html\">Seguridad Privada</a></div>\n          <h1 class=\"article-title\">${a.titulo}</h1>\n          <p class=\"article-subtitle\">${a.subtitulo}</p>\n          <div class=\"article-meta-info\">\n            <span class=\"article-reading-time\">⏱ ${a.tiempoLectura} min de lectura</span>\n          </div>\n        </div>\n      </header>\n\n      <div class=\"article-layout\">\n        <div class=\"article-content\">\n          <nav class=\"article-toc\">\n            <h2>Contenido del Artículo</h2>\n            <ol>\n              ${tocHTML}\n            </ol>\n          </nav>\n\n          ${a.contenidoHTML}\n\n          <div class=\"article-cta\">\n            <h3>¿Buscas Seguridad Privada Profesional?</h3>\n            <p>Conoce a ${e.nombre} y obtén una cotización personalizada</p>\n            <a href=\"../categorias/seguridad-privada/${e.slugPerfil}.html\" class=\"btn-primary\">Ver Perfil de ${e.nombre}</a>\n          </div>\n        </div>\n\n        <aside class=\"article-sidebar\">\n          <div class=\"sidebar-widget sidebar-empresa\">\n            <h3 class=\"sidebar-widget-title\">Empresa Destacada</h3>\n            <div class=\"empresa-card-mini\">\n              <h4>${e.nombre}</h4>\n              <div class=\"empresa-rating\">⭐ ${e.rating}/5 (${e.resenas} reseñas)</div>\n              <p>${e.especialidad}</p>\n              <a href=\"../categorias/seguridad-privada/${e.slugPerfil}.html\" class=\"btn-primary\" style=\"width:100%;text-align:center;margin-top:1rem;\">Ver Perfil</a>\n            </div>\n          </div>\n          <div class=\"sidebar-widget\">\n            <h3 class=\"sidebar-widget-title\">Más Empresas</h3>\n            <a href=\"../categorias/seguridad-privada.html\" class=\"btn-secondary\" style=\"width:100%;text-align:center;\">Ver Todas</a>\n          </div>\n        </aside>\n      </div>\n\n    </div>\n  </article>\n\n  <section class=\"cta-section\">\n    <div class=\"container\" style=\"max-width: 800px;\">\n      <h2>¿Necesitas Seguridad Privada en México?</h2>\n      <p>Encuentra proveedores verificados y certificados</p>\n      <div class=\"cta-botones\">\n        <a href=\"../categorias/seguridad-privada.html\" class=\"btn-primary\">Ver Empresas</a>\n        <a href=\"../blog.html\" class=\"btn-secondary\">Más Artículos</a>\n      </div>\n    </div>\n  </section>\n\n  <footer class=\"footer\" role=\"contentinfo\">\n    <div class=\"container\">\n      <div class=\"footer-main\">\n        <div class=\"footer-column footer-brand\">\n          <div class=\"footer-logo\"><a href=\"../index.html\"><img src=\"../img/origenlab.webp\" alt=\"OrigenLab\" width=\"160\" height=\"36\" style=\"object-fit:contain;filter:brightness(0) invert(1);\"></a></div>\n          <p class=\"footer-tagline\">Donde los Negocios Mexicanos se Conectan</p>\n          <div class=\"footer-social\">\n            <a href=\"https://linkedin.com/company/origenlab\" target=\"_blank\" rel=\"noopener\" class=\"social-link\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z\"/></svg></a>\n            <a href=\"https://twitter.com/origenlab_mx\" target=\"_blank\" rel=\"noopener\" class=\"social-link\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z\"/></svg></a>\n            <a href=\"https://facebook.com/origenlab\" target=\"_blank\" rel=\"noopener\" class=\"social-link\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z\"/></svg></a>\n          </div>\n        </div>\n        <div class=\"footer-column\"><h3 class=\"footer-column-title\">Categorías</h3><ul class=\"footer-links\"><li><a href=\"../categorias/eventos.html\">Eventos Corporativos</a></li><li><a href=\"../categorias/fiestas-infantiles.html\">Fiestas Infantiles</a></li><li><a href=\"../categorias/seguridad-privada.html\">Seguridad Privada</a></li><li><a href=\"../categorias/equipo-contra-incendios.html\">Equipo Contra Incendios</a></li></ul></div>\n        <div class=\"footer-column\"><h3 class=\"footer-column-title\">Empresa</h3><ul class=\"footer-links\"><li><a href=\"../index.html#por-que-origenlab\">Acerca de OrigenLab</a></li><li><a href=\"../index.html#registrar-empresa\">Contacto</a></li><li><a href=\"../blog.html\">Blog</a></li><li><a href=\"../index.html#recursos\">Trabaja con Nosotros</a></li></ul></div>\n        <div class=\"footer-column\"><h3 class=\"footer-column-title\">Para Empresas</h3><ul class=\"footer-links\"><li><a href=\"../index.html#registrar-empresa\">Registrar Empresa</a></li><li><a href=\"../index.html#planes-premium\">Planes Premium</a></li><li><a href=\"../index.html#recursos\">Soluciones B2B</a></li><li><a href=\"../index.html#recursos\">API Empresarial</a></li></ul></div>\n        <div class=\"footer-column\"><h3 class=\"footer-column-title\">Recursos</h3><ul class=\"footer-links\"><li><a href=\"../index.html#recursos\">Centro de Ayuda</a></li><li><a href=\"../index.html#por-que-origenlab\">Guías B2B</a></li><li><a href=\"../index.html#registrar-empresa\">Webinars</a></li><li><a href=\"../index.html#recursos\">Reportes</a></li></ul></div>\n        <div class=\"footer-column\"><h3 class=\"footer-column-title\">Legal</h3><ul class=\"footer-links\"><li><a href=\"../index.html#recursos\">Aviso de Privacidad</a></li><li><a href=\"../index.html#recursos\">Términos y Condiciones</a></li><li><a href=\"../index.html#recursos\">Política de Cookies</a></li><li><a href=\"../index.html#recursos\">Cumplimiento</a></li></ul></div>\n      </div>\n      <div class=\"footer-bottom\">\n        <p class=\"footer-copyright\">&copy; OrigenLab. Todos los derechos reservados. Hecho con <span class=\"heart\">♥</span> en México.</p>\n        <div class=\"footer-certifications\"><span class=\"footer-cert\">🔒 SSL Seguro</span><span class=\"footer-cert\">✓ Datos Verificados SAT</span><span class=\"footer-cert\">🇲🇽 100% Mexicano</span></div>\n      </div>\n    </div>\n  </footer>\n\n  <script>\n    // FAQ Accordion functionality\n    document.querySelectorAll('.faq-question').forEach(btn => {\n      btn.addEventListener('click', () => {\n        const item = btn.parentElement;\n        const isActive = item.classList.contains('active');\n        // Close all\n        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));\n        // Open clicked if wasn't active\n        if (!isActive) item.classList.add('active');\n        // Update aria\n        btn.setAttribute('aria-expanded', !isActive);\n      });\n    });\n  </script>\n\n</body>\n</html>`;\n\nreturn {\n  html,\n  ruta: `blog/${a.slug}.html`,\n  titulo: a.titulo,\n  extracto: a.metaDescripcion,\n  tiempoLectura: a.tiempoLectura,\n  slug: a.slug,\n  imgPrincipal: a.img1.archivo,\n  empresaNombre: e.nombre,\n  empresaSlug: e.slugPerfil,\n  keywords: a.keywords,\n  contenidoLength: a.contenidoLength,\n  faqCount: a.faqs.length\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1840, 280],
+      "id": "html",
+      "name": "Construir HTML"
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "operation": "create",
+        "owner": "Origenlab",
+        "repository": "ORIGENLAB",
+        "filePath": "={{ $json.ruta }}",
+        "fileContent": "={{ $json.html }}",
+        "commitMessage": "=feat(blog): ${$json.empresaNombre} - ${$json.titulo}",
+        "additionalParameters": {"branch": "main"}
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1,
+      "position": [2060, 280],
+      "id": "github1",
+      "name": "GitHub Subir",
+      "credentials": {"githubApi": {"id": "YOUR_GITHUB_CREDENTIAL_ID", "name": "GitHub API"}}
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "operation": "get",
+        "owner": "Origenlab",
+        "repository": "ORIGENLAB",
+        "filePath": "blog/data/articulos.json"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1,
+      "position": [2280, 280],
+      "id": "github2",
+      "name": "GitHub Get JSON",
+      "credentials": {"githubApi": {"id": "YOUR_GITHUB_CREDENTIAL_ID", "name": "GitHub API"}}
+    },
+    {
+      "parameters": {
+        "jsCode": "const art = $('Construir HTML').first().json;\nconst file = $input.first().json;\nlet data;\ntry {\n  data = JSON.parse(Buffer.from(file.content.replace(/\\n/g,''), 'base64').toString('utf-8'));\n} catch { data = {version:'3.0',articulos:[]}; }\n\nconst nuevo = {\n  id: art.slug,\n  titulo: art.titulo,\n  slug: art.slug,\n  categoria: 'seguridad-privada',\n  categoriaNombre: 'Seguridad Privada',\n  extracto: art.extracto,\n  imagen: `img/seguridad-privada/${art.imgPrincipal}`,\n  tiempoLectura: art.tiempoLectura,\n  destacado: false,\n  n8n: true,\n  version: '8.4',\n  empresa: art.empresaNombre,\n  empresaSlug: art.empresaSlug,\n  keywords: art.keywords,\n  contenidoLength: art.contenidoLength,\n  faqCount: art.faqCount\n};\n\nconst idx = data.articulos.findIndex(a => a.id === nuevo.id);\nif (idx >= 0) data.articulos[idx] = nuevo;\nelse data.articulos.unshift(nuevo);\n\nreturn {\n  json: JSON.stringify(data, null, 2),\n  sha: file.sha,\n  art,\n  total: data.articulos.length\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2500, 280],
+      "id": "updatejson",
+      "name": "Update JSON"
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "operation": "edit",
+        "owner": "Origenlab",
+        "repository": "ORIGENLAB",
+        "filePath": "blog/data/articulos.json",
+        "fileContent": "={{ $json.json }}",
+        "commitMessage": "=feat(blog): update articulos.json",
+        "additionalParameters": {"branch": "main", "sha": "={{ $json.sha }}"}
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1,
+      "position": [2720, 280],
+      "id": "github3",
+      "name": "GitHub Update JSON",
+      "credentials": {"githubApi": {"id": "YOUR_GITHUB_CREDENTIAL_ID", "name": "GitHub API"}}
+    },
+    {
+      "parameters": {
+        "chatId": "={{$env.TELEGRAM_CHAT_ID || '772938445'}}",
+        "text": "=🎯 *ARTÍCULO v8.4*\\n\\n🏢 {{ $json.art.empresaNombre }}\\n📝 {{ $json.art.titulo }}\\n\\n📊 Contenido: {{ $json.art.contenidoLength }} chars\\n❓ FAQs: {{ $json.art.faqCount }}\\n📚 Total: {{ $json.total }}\\n\\n🔗 https://origenlab.com/blog/{{ $json.art.slug }}.html\\n\\n✅ Publicado",
+        "additionalFields": {"parse_mode": "Markdown"}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [2940, 280],
+      "id": "telegram",
+      "name": "Telegram",
+      "credentials": {"telegramApi": {"id": "YOUR_TELEGRAM_CREDENTIAL_ID", "name": "Telegram Bot"}}
+    },
+    {
+      "parameters": {
+        "chatId": "={{$env.TELEGRAM_CHAT_ID || '772938445'}}",
+        "text": "=❌ ERROR v8.4\\n\\n{{ $json.error }}\\n\\n{{ $json.raw }}",
+        "additionalFields": {"parse_mode": "Markdown"}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [1840, 500],
+      "id": "telegram-error",
+      "name": "Error",
+      "credentials": {"telegramApi": {"id": "YOUR_TELEGRAM_CREDENTIAL_ID", "name": "Telegram Bot"}}
+    }
+  ],
+  "connections": {
+    "Cada 2 Días 9AM": {"main": [[{"node": "Seleccionar Empresa", "type": "main", "index": 0}]]},
+    "Ejecución Manual": {"main": [[{"node": "Seleccionar Empresa", "type": "main", "index": 0}]]},
+    "Seleccionar Empresa": {"main": [[{"node": "Construir Prompt", "type": "main", "index": 0}]]},
+    "Construir Prompt": {"main": [[{"node": "OpenAI GPT-4o", "type": "main", "index": 0}]]},
+    "OpenAI GPT-4o": {"main": [[{"node": "Validar", "type": "main", "index": 0}]]},
+    "Validar": {"main": [[{"node": "¿OK?", "type": "main", "index": 0}]]},
+    "¿OK?": {"main": [[{"node": "Construir HTML", "type": "main", "index": 0}], [{"node": "Error", "type": "main", "index": 0}]]},
+    "Construir HTML": {"main": [[{"node": "GitHub Subir", "type": "main", "index": 0}]]},
+    "GitHub Subir": {"main": [[{"node": "GitHub Get JSON", "type": "main", "index": 0}]]},
+    "GitHub Get JSON": {"main": [[{"node": "Update JSON", "type": "main", "index": 0}]]},
+    "Update JSON": {"main": [[{"node": "GitHub Update JSON", "type": "main", "index": 0}]]},
+    "GitHub Update JSON": {"main": [[{"node": "Telegram", "type": "main", "index": 0}]]}
+  },
+  "settings": {"executionOrder": "v1"},
+  "tags": [{"name": "blog"}, {"name": "v8.4"}, {"name": "final"}],
+  "versionId": "8.4"
+}
