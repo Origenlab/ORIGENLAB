@@ -2,6 +2,23 @@
   "version": "3.0",
   "articulos": [
     {
+      "id": "guia-seguridad-privada-condominios-seguridad-condominios-cdmx",
+      "titulo": "Servicios de Seguridad Privada para Condominios en CDMX y Estado ",
+      "slug": "guia-seguridad-privada-condominios-seguridad-condominios-cdmx",
+      "categoria": "seguridad-privada",
+      "categoriaNombre": "Seguridad Privada",
+      "extracto": "Descubre como proteger tu condominio con seguridad privada profesional y guardias certificados. Contacta a ORIGINS Private Security.",
+      "imagen": "img/seguridad-privada/caseta-moderna-control-acceso.webp",
+      "tiempoLectura": 25,
+      "destacado": false,
+      "n8n": true,
+      "version": "8.9",
+      "empresa": "ORIGINS Private Security",
+      "empresaSlug": "seguridad-condominios-cdmx",
+      "keywords": "seguridad privada Mexico, vigilancia condominios, guardias certificados SSC, origins private security",
+      "contenidoLength": 6596
+    },
+    {
       "id": "guia-seguridad-privada-condominios-seguridad-condominios-seprico",
       "titulo": "Servicios de Seguridad Privada para Condominios en CDMX: Guía Com",
       "slug": "guia-seguridad-privada-condominios-seguridad-condominios-seprico",
