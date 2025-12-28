@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>{{TITULO}} | OrigenLab</title>
+  <meta name="description" content="{{META_DESCRIPCION}}">
+  <meta name="keywords" content="{{KEYWORDS}}">
+  <meta name="author" content="OrigenLab">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://origenlab.com/blog/{{SLUG}}.html">
+  <meta property="og:title" content="{{TITULO}} | OrigenLab">
+  <meta property="og:description" content="{{META_DESCRIPCION}}">
+  <meta property="og:image" content="https://origenlab.com/{{IMAGEN}}">
+  <meta property="og:locale" content="es_MX">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://origenlab.com/blog/{{SLUG}}.html">
+  <meta name="twitter:title" content="{{TITULO}}">
+  <meta name="twitter:description" content="{{META_DESCRIPCION}}">
+  <meta name="twitter:image" content="https://origenlab.com/{{IMAGEN}}">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://origenlab.com/blog/{{SLUG}}.html">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets - ORDEN CRÍTICO -->
+  <link rel="stylesheet" href="../css/minimal-global.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/cta-global.css">
+  <link rel="stylesheet" href="assets/css/blog.css">
+  <link rel="stylesheet" href="assets/css/article.css">
+
+  <!-- Schema.org Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{TITULO}}",
+    "description": "{{META_DESCRIPCION}}",
+    "image": "https://origenlab.com/{{IMAGEN}}",
+    "author": {
+      "@type": "Organization",
+      "name": "OrigenLab"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "OrigenLab",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://origenlab.com/img/origenlab.webp"
+      }
+    },
+    "inLanguage": "es-MX",
+    "articleSection": "{{CATEGORIA_NOMBRE}}",
+    "keywords": "{{KEYWORDS}}"
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="../index.html" class="logo">
+          <img src="../img/origenlab.webp" alt="OrigenLab" width="180" height="40">
+        </a>
+        <nav>
+          <a href="../categorias/categorias.html" class="nav-link">Categorías</a>
+          <a href="../blog.html" class="nav-link active">Blog</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="breadcrumbs-wrapper">
+    <div class="container">
+      <nav aria-label="Breadcrumb" class="breadcrumbs">
+        <ol>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../categorias/{{CATEGORIA}}.html">{{CATEGORIA_NOMBRE}}</a></li>
+          <li aria-current="page">{{TITULO_CORTO}}</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Article Hero -->
+  <article class="article-container">
+    <div class="container" style="max-width: 1400px; padding: var(--space-xl) var(--space-md);">
+
+      <!-- Article Header - 2 Column Hero -->
+      <header class="article-header">
+        <!-- Left Column: Featured Image -->
+        <div class="article-header-image">
+          <figure class="article-featured-image">
+            <img src="../{{IMAGEN}}" alt="{{IMAGEN_ALT}}" loading="lazy">
+          </figure>
+        </div>
+
+        <!-- Right Column: Title + Intro -->
+        <div class="article-header-content">
+          <div class="article-category-badge">
+            <a href="../categorias/{{CATEGORIA}}.html">{{CATEGORIA_NOMBRE}}</a>
+          </div>
+          <h1 class="article-title">{{TITULO}}</h1>
+          <p class="article-subtitle">{{SUBTITULO}}</p>
+          <div class="article-meta-info">
+            <span class="article-reading-time">⏱ {{TIEMPO_LECTURA}} min lectura</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Article Layout: Content + Sidebar -->
+      <div class="article-layout">
+
+        <!-- Main Content -->
+        <div class="article-content">
+
+          <!-- Tabla de Contenidos -->
+          <nav class="article-toc">
+            <h2>Contenido del artículo</h2>
+            <ol>
+              {{TOC_ITEMS}}
+            </ol>
+          </nav>
+
+          <!-- CONTENIDO DEL ARTÍCULO -->
+          {{CONTENIDO}}
+
+          <!-- CTA EN EL ARTÍCULO -->
+          <div class="article-cta">
+            <h3>¿Buscas {{SERVICIO_CTA}}?</h3>
+            <p>Encuentra proveedores verificados de {{CATEGORIA_NOMBRE}} en nuestro directorio</p>
+            <a href="../categorias/{{CATEGORIA}}.html" class="btn-primary">Ver Proveedores Verificados</a>
+          </div>
+
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="article-sidebar">
+
+          <!-- Proveedores Verificados -->
+          <div class="sidebar-widget">
+            <h3 class="sidebar-widget-title">Proveedores Verificados</h3>
+            <a href="../categorias/{{CATEGORIA}}.html" class="btn-primary" style="width: 100%; text-align: center;">Ver Empresas de {{CATEGORIA_NOMBRE}}</a>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="sidebar-widget sidebar-newsletter">
+            <h3 class="sidebar-widget-title">Newsletter</h3>
+            <p class="newsletter-description">Recibe las mejores guías de {{CATEGORIA_NOMBRE}} cada semana</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="tu@email.com" class="newsletter-input" required>
+              <button type="submit" class="newsletter-btn">Suscribirme</button>
+            </form>
+            <p class="newsletter-privacy">Sin spam. Cancela cuando quieras.</p>
+          </div>
+
+        </aside>
+
+      </div>
+
+    </div>
+  </article>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container" style="max-width: 800px;">
+      <h2>¿Necesitas servicios de {{CATEGORIA_NOMBRE}}?</h2>
+      <p>Encuentra proveedores verificados con las mejores referencias en México</p>
+      <div class="cta-botones">
+        <a href="../categorias/{{CATEGORIA}}.html" class="btn-primary">Ver Proveedores</a>
+        <a href="../blog.html" class="btn-secondary">Más Artículos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-column footer-brand">
+          <div class="footer-logo">
+            <a href="../index.html">
+              <img src="../img/origenlab.webp" alt="OrigenLab" width="160" height="36" style="object-fit: contain; filter: brightness(0) invert(1);">
+            </a>
+          </div>
+          <p class="footer-tagline">Donde los Negocios Mexicanos se Conectan</p>
+          <div class="footer-social">
+            <a href="https://linkedin.com/company/origenlab" target="_blank" rel="noopener" aria-label="Síguenos en LinkedIn" class="social-link">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com/origenlab_mx" target="_blank" rel="noopener" aria-label="Síguenos en Twitter" class="social-link">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a href="https://facebook.com/origenlab" target="_blank" rel="noopener" aria-label="Síguenos en Facebook" class="social-link">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-column-title">Categorías</h3>
+          <ul class="footer-links">
+            <li><a href="../categorias/eventos.html">Eventos Corporativos</a></li>
+            <li><a href="../categorias/fiestas-infantiles.html">Fiestas Infantiles</a></li>
+            <li><a href="../categorias/seguridad-privada.html">Seguridad Privada</a></li>
+            <li><a href="../categorias/equipo-contra-incendios.html">Equipo Contra Incendios</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-column-title">Empresa</h3>
+          <ul class="footer-links">
+            <li><a href="../index.html#por-que-origenlab">Acerca de OrigenLab</a></li>
+            <li><a href="../index.html#registrar-empresa">Contacto</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../index.html#recursos">Trabaja con Nosotros</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-column-title">Para Empresas</h3>
+          <ul class="footer-links">
+            <li><a href="../index.html#registrar-empresa">Registrar Empresa</a></li>
+            <li><a href="../index.html#planes-premium">Planes Premium</a></li>
+            <li><a href="../index.html#recursos">Soluciones B2B</a></li>
+            <li><a href="../index.html#recursos">API Empresarial</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-column-title">Recursos</h3>
+          <ul class="footer-links">
+            <li><a href="../index.html#recursos">Centro de Ayuda</a></li>
+            <li><a href="../index.html#por-que-origenlab">Guías B2B</a></li>
+            <li><a href="../index.html#registrar-empresa">Webinars</a></li>
+            <li><a href="../index.html#recursos">Reportes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-column-title">Legal</h3>
+          <ul class="footer-links">
+            <li><a href="../index.html#recursos">Aviso de Privacidad</a></li>
+            <li><a href="../index.html#recursos">Términos y Condiciones</a></li>
+            <li><a href="../index.html#recursos">Política de Cookies</a></li>
+            <li><a href="../index.html#recursos">Cumplimiento</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; 2025 OrigenLab. Todos los derechos reservados. Hecho con <span class="heart">♥</span> en México.
+        </p>
+        <div class="footer-certifications">
+          <span class="footer-cert">🔒 SSL Seguro</span>
+          <span class="footer-cert">✓ Datos Verificados SAT</span>
+          <span class="footer-cert">🇲🇽 100% Mexicano</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

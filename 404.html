@@ -1,62 +1,195 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es-MX">
 
 <head>
-  <meta charset="utf-8">
-  <title>Page Not Found</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página No Encontrada | OrigenLab</title>
+  <meta name="description" content="Lo sentimos, la página que buscas no existe. Regresa al inicio de OrigenLab.">
+  <meta name="robots" content="noindex, follow">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
     * {
-      line-height: 1.2;
       margin: 0;
-    }
-
-    html {
-      color: #888;
-      display: table;
-      font-family: sans-serif;
-      height: 100%;
-      text-align: center;
-      width: 100%;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     body {
-      display: table-cell;
-      vertical-align: middle;
-      margin: 2em auto;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 600px;
+    }
+
+    .logo {
+      margin-bottom: 2rem;
+    }
+
+    .logo img {
+      width: 180px;
+      height: auto;
+    }
+
+    .error-code {
+      font-size: 8rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+      margin-bottom: 1rem;
     }
 
     h1 {
-      color: #555;
-      font-size: 2em;
-      font-weight: 400;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #fff;
     }
 
     p {
-      margin: 0 auto;
-      width: 280px;
+      font-size: 1.1rem;
+      color: #a0a0a0;
+      margin-bottom: 2rem;
+      line-height: 1.6;
     }
 
-    @media only screen and (max-width: 280px) {
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
-      body,
-      p {
-        width: 95%;
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.875rem 1.75rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .categories {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .categories h3 {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+    }
+
+    .category-links {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .category-links a {
+      color: #a0a0a0;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+    }
+
+    .category-links a:hover {
+      color: #667eea;
+    }
+
+    @media (max-width: 480px) {
+      .error-code {
+        font-size: 5rem;
       }
 
       h1 {
-        font-size: 1.5em;
-        margin: 0 0 0.3em;
+        font-size: 1.5rem;
       }
 
+      .buttons {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+        justify-content: center;
+      }
     }
   </style>
 </head>
 
 <body>
-  <h1>Page Not Found</h1>
-  <p>Sorry, but the page you were trying to view does not exist.</p>
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="img/origenlab.webp" alt="OrigenLab" width="180" height="40">
+    </a>
+
+    <div class="error-code">404</div>
+
+    <h1>Página No Encontrada</h1>
+
+    <p>Lo sentimos, la página que buscas no existe o ha sido movida. Pero no te preocupes, puedes explorar nuestras categorías o regresar al inicio.</p>
+
+    <div class="buttons">
+      <a href="index.html" class="btn btn-primary">Ir al Inicio</a>
+      <a href="categorias/categorias.html" class="btn btn-secondary">Ver Categorías</a>
+    </div>
+
+    <div class="categories">
+      <h3>Explora Nuestras Categorías</h3>
+      <div class="category-links">
+        <a href="categorias/eventos.html">Eventos Corporativos</a>
+        <a href="categorias/fiestas-infantiles.html">Fiestas Infantiles</a>
+        <a href="categorias/seguridad-privada.html">Seguridad Privada</a>
+        <a href="categorias/equipo-contra-incendios.html">Equipo Contra Incendios</a>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
-<!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->

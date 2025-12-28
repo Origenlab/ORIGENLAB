@@ -403,7 +403,9 @@ Este es el estándar de oro que DEBE replicarse exactamente en estructura, estil
   </section>
 ```
 
-### 6. FOOTER (Estructura Estándar)
+### 6. FOOTER (Estructura Estándar - Homologada con index.html)
+
+**⚠️ IMPORTANTE:** Este footer debe ser IDÉNTICO en todos los artículos. Contiene 6 columnas + redes sociales.
 
 ```html
   <!-- Footer -->
@@ -439,11 +441,10 @@ Este es el estándar de oro que DEBE replicarse exactamente en estructura, estil
         <div class="footer-column">
           <h3 class="footer-column-title">Categorías</h3>
           <ul class="footer-links">
-            <li><a href="../categorias/eventos.html">Eventos</a></li>
+            <li><a href="../categorias/eventos.html">Eventos Corporativos</a></li>
             <li><a href="../categorias/fiestas-infantiles.html">Fiestas Infantiles</a></li>
-            <li><a href="../index.html#companies-section">Manufactura</a></li>
-            <li><a href="../index.html#companies-section">Tecnología</a></li>
-            <li><a href="../categorias/categorias.html">Ver todas</a></li>
+            <li><a href="../categorias/seguridad-privada.html">Seguridad Privada</a></li>
+            <li><a href="../categorias/equipo-contra-incendios.html">Equipo Contra Incendios</a></li>
           </ul>
         </div>
 
@@ -464,6 +465,16 @@ Este es el estándar de oro que DEBE replicarse exactamente en estructura, estil
             <li><a href="../index.html#planes-premium">Planes Premium</a></li>
             <li><a href="../index.html#recursos">Soluciones B2B</a></li>
             <li><a href="../index.html#recursos">API Empresarial</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-column-title">Recursos</h3>
+          <ul class="footer-links">
+            <li><a href="../index.html#recursos">Centro de Ayuda</a></li>
+            <li><a href="../index.html#por-que-origenlab">Guías B2B</a></li>
+            <li><a href="../index.html#registrar-empresa">Webinars</a></li>
+            <li><a href="../index.html#recursos">Reportes</a></li>
           </ul>
         </div>
 
@@ -495,6 +506,14 @@ Este es el estándar de oro que DEBE replicarse exactamente en estructura, estil
 
 </html>
 ```
+
+**Estructura del Footer (6 columnas):**
+1. **Brand** - Logo, tagline, redes sociales (LinkedIn, Twitter, Facebook)
+2. **Categorías** - Eventos Corporativos, Fiestas Infantiles, Seguridad Privada, Equipo Contra Incendios
+3. **Empresa** - Acerca de, Contacto, Blog, Trabaja con Nosotros
+4. **Para Empresas** - Registrar, Planes Premium, Soluciones B2B, API
+5. **Recursos** - Centro de Ayuda, Guías B2B, Webinars, Reportes
+6. **Legal** - Aviso de Privacidad, Términos, Cookies, Cumplimiento
 
 ---
 
@@ -1416,9 +1435,16 @@ Ubicación: Líneas ~316-356 de blog.html
     </li>
 
     <li>
-      <a href="categorias/manufactura.html" class="blog-category-item">
-        <span class="category-name">Manufactura</span>
-        <span class="category-count">28</span>
+      <a href="categorias/seguridad-privada.html" class="blog-category-item">
+        <span class="category-name">Seguridad Privada</span>
+        <span class="category-count">3</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="categorias/equipo-contra-incendios.html" class="blog-category-item">
+        <span class="category-name">Equipo Contra Incendios</span>
+        <span class="category-count">2</span>
       </a>
     </li>
 ```
@@ -1932,12 +1958,14 @@ Línea 3+: Detalles específicos:
 - **CSS de blog:** `/blog/assets/css/blog.css`
 
 ### Categorías Disponibles
-- Eventos: `/categorias/eventos.html`
+- Eventos Corporativos: `/categorias/eventos.html`
 - Fiestas Infantiles: `/categorias/fiestas-infantiles.html`
-- [Agregar más según se creen]
+- Seguridad Privada: `/categorias/seguridad-privada.html`
+- Equipo Contra Incendios: `/categorias/equipo-contra-incendios.html`
 
 ### Empresas Verificadas Disponibles
-**Eventos:**
+
+**Eventos Corporativos:**
 - Redeil: `/categorias/eventos/redeil.html` (Audio e Iluminación LED)
 - Podiumex: `/categorias/eventos/podiumex.html` (Podiums Profesionales)
 - Eventech: `/categorias/eventos/eventech.html` (Equipo Audiovisual)
@@ -1946,14 +1974,33 @@ Línea 3+: Detalles específicos:
 - Bolas Disco: `/categorias/eventos/bolas-disco.html`
 - Renta Iluminación: `/categorias/eventos/renta-iluminacion.html`
 - Renta Sonido e Iluminación: `/categorias/eventos/renta-sonido-iluminacion.html`
+- Renta Bocinas Eventos: `/categorias/eventos/renta-bocinas-eventos.html`
 
 **Fiestas Infantiles:**
 - Mesas de Dulces: `/categorias/fiestas-infantiles/mesas-de-dulces.html`
-- Inflables para Fiestas: `/categorias/fiestas-infantiles/inflables-para-fiestas.html`
+- Inflables para Fiestas (INFLAPY): `/categorias/fiestas-infantiles/inflables-para-fiestas.html`
+- Renta de Inflables CDMX: `/categorias/fiestas-infantiles/renta-de-inflables-cdmx.html`
+- Decoración Globos Deglob: `/categorias/fiestas-infantiles/decoracion-globos-deglob.html`
+- Renta Inflables Inflablee: `/categorias/fiestas-infantiles/renta-inflables-inflablee.html`
+- Renta Brincolines Brincolins: `/categorias/fiestas-infantiles/renta-brincolines-brincolins.html`
+
+**Seguridad Privada:**
+- Seguridad Condominios CDMX: `/categorias/seguridad-privada/seguridad-condominios-cdmx.html`
+- Seguridad Condominios Inteligente: `/categorias/seguridad-privada/seguridad-condominios-inteligente.html`
+- Seguridad Condominios Seprico: `/categorias/seguridad-privada/seguridad-condominios-seprico.html`
+- Seguridad Eventos Profesional: `/categorias/seguridad-privada/seguridad-eventos-profesional.html`
+
+**Equipo Contra Incendios:**
+- Gama de México: `/categorias/equipo-contra-incendios/gama-de-mexico.html`
+- MESECI: `/categorias/equipo-contra-incendios/meseci.html`
+- Bombero MX: `/categorias/equipo-contra-incendios/bombero-mx.html`
+- LGA Contra Incendios: `/categorias/equipo-contra-incendios/lga-contra-incendios.html`
+- Proyecto Red: `/categorias/equipo-contra-incendios/proyecto-red.html`
+- Manext: `/categorias/equipo-contra-incendios/manext.html`
 
 ### Guías de Keywords por Categoría
 
-**Eventos:**
+**Eventos Corporativos:**
 ```
 Primary: eventos corporativos México, organización eventos CDMX
 Secondary: proveedores eventos, audio profesional eventos, iluminación LED eventos
@@ -1963,8 +2010,22 @@ Long-tail: cómo organizar evento corporativo exitoso CDMX, mejores proveedores 
 **Fiestas Infantiles:**
 ```
 Primary: fiestas infantiles CDMX, organización fiestas niños México
-Secondary: inflables para fiestas, mesas de dulces, animación infantil
+Secondary: inflables para fiestas, mesas de dulces, animación infantil, brincolines
 Long-tail: cómo organizar fiesta infantil perfecta CDMX, mejores inflables para fiestas México
+```
+
+**Seguridad Privada:**
+```
+Primary: seguridad privada México, empresas seguridad CDMX
+Secondary: seguridad condominios, vigilancia residencial, guardias de seguridad
+Long-tail: mejores empresas seguridad para condominios CDMX, seguridad eventos corporativos México
+```
+
+**Equipo Contra Incendios:**
+```
+Primary: equipo contra incendios México, extintores CDMX
+Secondary: sistemas contra incendio, mantenimiento extintores, protección contra incendios
+Long-tail: mejores proveedores equipo contra incendios México, mantenimiento sistemas contra incendio CDMX
 ```
 
 ---

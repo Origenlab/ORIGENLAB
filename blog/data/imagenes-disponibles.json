@@ -1,0 +1,372 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2025-01-27",
+  "descripcion": "Catálogo de imágenes disponibles para artículos generados por n8n. Las rutas son relativas desde la raíz del sitio.",
+  "categorias": {
+    "eventos": {
+      "nombre": "Eventos Corporativos",
+      "rutaBase": "img/eventos/",
+      "imagenes": [
+        {
+          "archivo": "renta-de-cabezas-moviles.webp",
+          "alt": "Cabezas móviles iluminación eventos",
+          "tema": "iluminación"
+        },
+        {
+          "archivo": "renta-de-luces-neon.webp",
+          "alt": "Luces neón para eventos",
+          "tema": "iluminación"
+        },
+        {
+          "archivo": "lucen-negras-para-fiestas.webp",
+          "alt": "Luces negras UV para fiestas",
+          "tema": "iluminación"
+        },
+        {
+          "archivo": "renta-de-luces-laser.webp",
+          "alt": "Luces láser profesionales",
+          "tema": "iluminación"
+        },
+        {
+          "archivo": "luces-city-color.webp",
+          "alt": "City color iluminación arquitectónica",
+          "tema": "iluminación"
+        },
+        {
+          "archivo": "renta-de-luces-skytracker-luces-antiaereas.webp",
+          "alt": "Sky tracker luces antiaéreas",
+          "tema": "iluminación"
+        },
+        {
+          "archivo": "luces-arquitectonicas.webp",
+          "alt": "Iluminación arquitectónica LED",
+          "tema": "iluminación"
+        },
+        {
+          "archivo": "luces-cascadas-led.webp",
+          "alt": "Cascadas LED efectos especiales",
+          "tema": "iluminación"
+        },
+        {
+          "archivo": "proyeccion-de-gobo.webp",
+          "alt": "Proyección gobo personalizada",
+          "tema": "iluminación"
+        },
+        {
+          "archivo": "seguidor-de-luz.webp",
+          "alt": "Seguidor de luz spotlight",
+          "tema": "iluminación"
+        }
+      ],
+      "podiums": [
+        {
+          "archivo": "podiums/podium-de-acrilico.webp",
+          "alt": "Podium de acrílico transparente",
+          "tema": "podiums"
+        },
+        {
+          "archivo": "podiums/podium-de-madera.webp",
+          "alt": "Podium de madera ejecutivo",
+          "tema": "podiums"
+        },
+        {
+          "archivo": "podiums/acrilico-negro.webp",
+          "alt": "Podium acrílico negro elegante",
+          "tema": "podiums"
+        },
+        {
+          "archivo": "podiums/madera-con-acrilico.webp",
+          "alt": "Podium madera con acrílico",
+          "tema": "podiums"
+        }
+      ],
+      "empresas": [
+        {
+          "archivo": "empresas/redeil.webp",
+          "alt": "Redeil audio e iluminación",
+          "tema": "empresas"
+        },
+        {
+          "archivo": "empresas/podiumex.webp",
+          "alt": "Podiumex renta de podiums",
+          "tema": "empresas"
+        },
+        {
+          "archivo": "empresas/bolas-disco.webp",
+          "alt": "Bolas disco eventos",
+          "tema": "empresas"
+        },
+        {
+          "archivo": "empresas/renta-de-iluminacion.webp",
+          "alt": "Renta de iluminación profesional",
+          "tema": "empresas"
+        },
+        {
+          "archivo": "empresas/renta-de-sonido-e-iluminacion.webp",
+          "alt": "Renta sonido e iluminación",
+          "tema": "empresas"
+        },
+        {
+          "archivo": "empresas/sonido-para-eventos.webp",
+          "alt": "Sonido profesional para eventos",
+          "tema": "empresas"
+        }
+      ]
+    },
+    "seguridad-privada": {
+      "nombre": "Seguridad Privada",
+      "rutaBase": "img/seguridad-privada/",
+      "imagenes": [
+        {
+          "archivo": "control-acceso-residencial-caseta.webp",
+          "alt": "Control de acceso residencial caseta",
+          "tema": "condominios"
+        },
+        {
+          "archivo": "guardia-caseta-entrada-residencial.webp",
+          "alt": "Guardia caseta entrada residencial",
+          "tema": "condominios"
+        },
+        {
+          "archivo": "vigilante-fraccionamiento-residencial.webp",
+          "alt": "Vigilante fraccionamiento residencial",
+          "tema": "condominios"
+        },
+        {
+          "archivo": "guardia-intramuros-residencial.webp",
+          "alt": "Guardia intramuros residencial",
+          "tema": "condominios"
+        },
+        {
+          "archivo": "seguridad-perimetral-fraccionamiento.webp",
+          "alt": "Seguridad perimetral fraccionamiento",
+          "tema": "condominios"
+        },
+        {
+          "archivo": "patrulla-nocturna-fraccionamiento.webp",
+          "alt": "Patrulla nocturna fraccionamiento",
+          "tema": "condominios"
+        },
+        {
+          "archivo": "caseta-moderna-control-acceso.webp",
+          "alt": "Caseta moderna control de acceso",
+          "tema": "condominios"
+        },
+        {
+          "archivo": "guardia-acceso-condominio-pluma.webp",
+          "alt": "Guardia acceso condominio pluma",
+          "tema": "condominios"
+        },
+        {
+          "archivo": "rondin-nocturno-residencial-casa.webp",
+          "alt": "Rondín nocturno residencial",
+          "tema": "condominios"
+        },
+        {
+          "archivo": "monitoreo-camaras-vigilancia-24hrs.webp",
+          "alt": "Monitoreo cámaras vigilancia 24hrs",
+          "tema": "tecnología"
+        },
+        {
+          "archivo": "central-monitoreo-seguridad-remota.webp",
+          "alt": "Central monitoreo seguridad remota",
+          "tema": "tecnología"
+        },
+        {
+          "archivo": "operador-monitoreo-alarmas-central.webp",
+          "alt": "Operador monitoreo alarmas central",
+          "tema": "tecnología"
+        },
+        {
+          "archivo": "operador-videovigilancia-monitores.webp",
+          "alt": "Operador videovigilancia monitores",
+          "tema": "tecnología"
+        },
+        {
+          "archivo": "centro-comando-videovigilancia-gps.webp",
+          "alt": "Centro comando videovigilancia GPS",
+          "tema": "tecnología"
+        },
+        {
+          "archivo": "seguridad-eventos-alfombra-roja.webp",
+          "alt": "Seguridad eventos alfombra roja",
+          "tema": "eventos"
+        },
+        {
+          "archivo": "staff-seguridad-evento-corporativo.webp",
+          "alt": "Staff seguridad evento corporativo",
+          "tema": "eventos"
+        },
+        {
+          "archivo": "vigilancia-eventos-sociales-gala.webp",
+          "alt": "Vigilancia eventos sociales gala",
+          "tema": "eventos"
+        },
+        {
+          "archivo": "equipo-seguridad-gala-convenciones.webp",
+          "alt": "Equipo seguridad gala convenciones",
+          "tema": "eventos"
+        },
+        {
+          "archivo": "personal-femenino-seguridad-eventos.webp",
+          "alt": "Personal femenino seguridad eventos",
+          "tema": "eventos"
+        },
+        {
+          "archivo": "seguridad-corporativa-lobby-recepcion.webp",
+          "alt": "Seguridad corporativa lobby recepción",
+          "tema": "corporativo"
+        },
+        {
+          "archivo": "vigilancia-entrada-edificio-corporativo.webp",
+          "alt": "Vigilancia entrada edificio corporativo",
+          "tema": "corporativo"
+        },
+        {
+          "archivo": "guardia-seguridad-torre-corporativa.webp",
+          "alt": "Guardia seguridad torre corporativa",
+          "tema": "corporativo"
+        },
+        {
+          "archivo": "guardias-seguridad-corporativa-edificio.webp",
+          "alt": "Guardias seguridad corporativa edificio",
+          "tema": "corporativo"
+        },
+        {
+          "archivo": "vigilante-edificio-oficinas.webp",
+          "alt": "Vigilante edificio oficinas",
+          "tema": "corporativo"
+        },
+        {
+          "archivo": "escoltas-ejecutivos-empresariales.webp",
+          "alt": "Escoltas ejecutivos empresariales",
+          "tema": "ejecutivo"
+        },
+        {
+          "archivo": "escolta-ejecutivo-proteccion-vip.webp",
+          "alt": "Escolta ejecutivo protección VIP",
+          "tema": "ejecutivo"
+        },
+        {
+          "archivo": "proteccion-ejecutivos-traslados.webp",
+          "alt": "Protección ejecutivos traslados",
+          "tema": "ejecutivo"
+        },
+        {
+          "archivo": "guardaespaldas-proteccion-personal.webp",
+          "alt": "Guardaespaldas protección personal",
+          "tema": "ejecutivo"
+        },
+        {
+          "archivo": "seguridad-ejecutiva-guardaespaldas.webp",
+          "alt": "Seguridad ejecutiva guardaespaldas",
+          "tema": "ejecutivo"
+        }
+      ]
+    },
+    "equipo-contra-incendios": {
+      "nombre": "Equipo Contra Incendios",
+      "rutaBase": "img/equipo-contra-incendios/",
+      "imagenes": [
+        {
+          "archivo": "guia-equipos-contra-incendios.webp",
+          "alt": "Guía equipos contra incendios",
+          "tema": "general"
+        },
+        {
+          "archivo": "analisis-riesgos-incendio.webp",
+          "alt": "Análisis riesgos incendio industrial",
+          "tema": "general"
+        }
+      ],
+      "empresas": [
+        {
+          "archivo": "empresas/extintores-premium.webp",
+          "alt": "Extintores premium México",
+          "tema": "empresas"
+        },
+        {
+          "archivo": "empresas/fire-protection-mx.webp",
+          "alt": "Fire Protection MX",
+          "tema": "empresas"
+        },
+        {
+          "archivo": "empresas/segurimax.webp",
+          "alt": "Segurimax extintores",
+          "tema": "empresas"
+        },
+        {
+          "archivo": "empresas/profire-industrial.webp",
+          "alt": "Profire Industrial",
+          "tema": "empresas"
+        },
+        {
+          "archivo": "empresas/senalizacion-total.webp",
+          "alt": "Señalización Total",
+          "tema": "empresas"
+        },
+        {
+          "archivo": "empresas/fire-safety-training.webp",
+          "alt": "Fire Safety Training",
+          "tema": "empresas"
+        },
+        {
+          "archivo": "empresas/gabinetes-mangueras.webp",
+          "alt": "Gabinetes y mangueras",
+          "tema": "empresas"
+        },
+        {
+          "archivo": "empresas/extintores-del-valle.webp",
+          "alt": "Extintores del Valle",
+          "tema": "empresas"
+        },
+        {
+          "archivo": "empresas/sci-queretaro.webp",
+          "alt": "SCI Querétaro",
+          "tema": "empresas"
+        },
+        {
+          "archivo": "empresas/gama-de-mexico.webp",
+          "alt": "Gama de México",
+          "tema": "empresas"
+        },
+        {
+          "archivo": "empresas/meseci.webp",
+          "alt": "MESECI extintores",
+          "tema": "empresas"
+        },
+        {
+          "archivo": "empresas/bombero-mx.webp",
+          "alt": "Bombero MX",
+          "tema": "empresas"
+        },
+        {
+          "archivo": "empresas/lga-contra-incendios.webp",
+          "alt": "LGA Contra Incendios",
+          "tema": "empresas"
+        },
+        {
+          "archivo": "empresas/proyecto-red.webp",
+          "alt": "Proyecto Red",
+          "tema": "empresas"
+        },
+        {
+          "archivo": "empresas/manext.webp",
+          "alt": "Manext extintores",
+          "tema": "empresas"
+        }
+      ]
+    },
+    "fiestas-infantiles": {
+      "nombre": "Fiestas Infantiles",
+      "rutaBase": "img/fiestas-infantiles/",
+      "imagenes": [],
+      "nota": "Usar imágenes de eventos como alternativa temporal"
+    }
+  },
+  "instrucciones": {
+    "uso": "El workflow de n8n debe seleccionar una imagen de la categoría correspondiente al artículo",
+    "ruta": "Concatenar rutaBase + archivo para obtener la ruta completa",
+    "ejemplo": "img/seguridad-privada/control-acceso-residencial-caseta.webp"
+  }
+}
