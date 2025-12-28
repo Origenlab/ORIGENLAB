@@ -2,6 +2,24 @@
   "version": "3.0",
   "articulos": [
     {
+      "id": "seprico-seguridad-privada-mexico",
+      "titulo": "SEPRICO: Seguridad Privada en Condominios de CDMX",
+      "slug": "seprico-seguridad-privada-mexico",
+      "categoria": "seguridad-privada",
+      "categoriaNombre": "Seguridad Privada",
+      "extracto": "Descubre por qué SEPRICO es líder en seguridad privada para condominios en CDMX con servicios integrales y tecnología avanzada.",
+      "imagen": "img/seguridad-privada/caseta-moderna-control-acceso.webp",
+      "tiempoLectura": 25,
+      "destacado": false,
+      "n8n": true,
+      "version": "8.9",
+      "empresa": "SEPRICO",
+      "empresaSlug": "seguridad-condominios-seprico",
+      "keywords": "seguridad privada Mexico, seprico, vigilancia profesional, guardias certificados",
+      "contenidoLength": 30896,
+      "faqCount": 1
+    },
+    {
       "id": "seguridadprivadamx-seguridad-privada-mexico",
       "titulo": "Seguridad Privada en México: Innovación y Eficiencia",
       "slug": "seguridadprivadamx-seguridad-privada-mexico",
