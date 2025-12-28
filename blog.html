@@ -674,6 +674,59 @@
     </div>
   </footer>
 
+  <!-- Sistema Dinámico de Artículos -->
+  <script>
+    // Cargar artículos nuevos desde JSON
+    (async function loadDynamicArticles() {
+      try {
+        const response = await fetch('blog/data/articulos.json?v=' + Date.now());
+        if (!response.ok) return;
+
+        const data = await response.json();
+        const grid = document.querySelector('.articles-grid');
+        if (!grid || !data.articulos) return;
+
+        // Filtrar solo artículos de seguridad-privada generados por n8n (tienen flag n8n: true)
+        const n8nArticles = data.articulos.filter(a => a.n8n === true);
+
+        // Insertar al inicio del grid
+        n8nArticles.forEach(article => {
+          // Verificar si ya existe para evitar duplicados
+          if (document.querySelector(`[href="blog/${article.slug}.html"]`)) return;
+
+          const card = document.createElement('article');
+          card.className = 'article-card';
+          card.innerHTML = `
+            <div class="article-card-image">
+              <img src="${article.imagen}" alt="${article.titulo}" loading="lazy">
+            </div>
+            <div class="article-card-content">
+              <div class="article-meta">
+                <a href="categorias/${article.categoria}.html" class="article-category">${article.categoriaNombre}</a>
+                <span class="article-reading-time">${article.tiempoLectura} min</span>
+              </div>
+              <h3 class="article-card-title">
+                <a href="blog/${article.slug}.html">${article.titulo}</a>
+              </h3>
+              <p class="article-card-excerpt">${article.extracto}</p>
+              <div class="article-card-footer">
+                <a href="blog/${article.slug}.html" class="article-link">Leer más →</a>
+              </div>
+            </div>
+          `;
+          grid.insertBefore(card, grid.firstChild);
+        });
+
+        // Re-inicializar paginación si hay nuevos artículos
+        if (n8nArticles.length > 0 && typeof showPage === 'function') {
+          showPage(1);
+        }
+      } catch (e) {
+        console.log('No se pudieron cargar artículos dinámicos');
+      }
+    })();
+  </script>
+
   <!-- Blog Pagination Script -->
   <script>
     // Configuración de paginación

@@ -1,0 +1,54 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2024-12-27T00:00:00.000Z",
+  "articulos": [
+    {
+      "id": "guia-eventos-corporativos",
+      "titulo": "Guía Completa para Organizar Eventos Corporativos Exitosos",
+      "slug": "guia-eventos-corporativos",
+      "categoria": "eventos",
+      "categoriaNombre": "Eventos",
+      "extracto": "Descubre las estrategias clave, tendencias emergentes y mejores prácticas para planificar eventos corporativos que dejen huella.",
+      "imagen": "img/eventos/renta-de-cabezas-moviles.webp",
+      "tiempoLectura": 12,
+      "destacado": true,
+      "fecha": "2024-12-01"
+    },
+    {
+      "id": "analisis-riesgos-incendio",
+      "titulo": "Análisis de Riesgos de Incendio para Empresas Industriales",
+      "slug": "analisis-riesgos-incendio-empresas-industriales",
+      "categoria": "equipo-contra-incendios",
+      "categoriaNombre": "Equipo Contra Incendios",
+      "extracto": "Metodología profesional para identificar y mitigar riesgos de incendio en instalaciones industriales de México.",
+      "imagen": "img/equipo-contra-incendios/analisis-riesgos-incendio.webp",
+      "tiempoLectura": 15,
+      "destacado": false,
+      "fecha": "2024-12-10"
+    },
+    {
+      "id": "guia-equipos-contra-incendios",
+      "titulo": "Guía de Equipos Contra Incendios para Empresas en México",
+      "slug": "guia-equipos-contra-incendios-empresas-mexico",
+      "categoria": "equipo-contra-incendios",
+      "categoriaNombre": "Equipo Contra Incendios",
+      "extracto": "Todo lo que necesitas saber sobre extintores, sistemas de supresión y normativas NOM para proteger tu empresa.",
+      "imagen": "img/equipo-contra-incendios/guia-extintores-empresas.webp",
+      "tiempoLectura": 14,
+      "destacado": false,
+      "fecha": "2024-12-15"
+    },
+    {
+      "id": "mejores-empresas-seguridad-condominios",
+      "titulo": "Mejores Empresas de Seguridad para Condominios en México",
+      "slug": "mejores-empresas-seguridad-condominios-mexico",
+      "categoria": "seguridad-privada",
+      "categoriaNombre": "Seguridad Privada",
+      "extracto": "Comparativa de las empresas líderes en seguridad para condominios con certificaciones, precios y servicios.",
+      "imagen": "img/seguridad-privada/control-acceso-residencial-caseta.webp",
+      "tiempoLectura": 12,
+      "destacado": false,
+      "fecha": "2024-12-20"
+    }
+  ]
+}
