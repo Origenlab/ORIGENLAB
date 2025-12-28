@@ -2,21 +2,21 @@
   "version": "3.0",
   "articulos": [
     {
-      "id": "seguridad-para-eventos-analisis-ejecutivo-seguridad-privada-mexico",
-      "titulo": "Análisis Estratégico de Seguridad para Eventos",
-      "slug": "seguridad-para-eventos-analisis-ejecutivo-seguridad-privada-mexico",
+      "id": "origins-private-security-seguridad-privada-mexico",
+      "titulo": "Seguridad Privada en México: Confianza y Eficiencia con ORIG",
+      "slug": "origins-private-security-seguridad-privada-mexico",
       "categoria": "seguridad-privada",
       "categoriaNombre": "Seguridad Privada",
-      "extracto": "Explora la seguridad privada en México con Seguridad para Eventos. Vigilancia y control profesional.",
-      "imagen": "img/seguridad-privada/personal-femenino-seguridad-eventos.webp",
-      "tiempoLectura": 18,
+      "extracto": "Descubre cómo ORIGINS garantiza seguridad privada en México con guardias certificados y tecnología avanzada. ¡Contrata hoy!",
+      "imagen": "img/seguridad-privada/control-acceso-residencial-caseta.webp",
+      "tiempoLectura": 22,
       "destacado": false,
       "n8n": true,
-      "version": "8.1",
-      "empresa": "Seguridad para Eventos",
-      "empresaSlug": "seguridad-eventos-profesional",
-      "keywords": "seguridad privada México, empresas seguridad CDMX, vigilancia profesional",
-      "contenidoLength": 9025,
+      "version": "8.4",
+      "empresa": "ORIGINS Private Security",
+      "empresaSlug": "seguridad-condominios-cdmx",
+      "keywords": "seguridad privada México, origins private security, vigilancia CDMX, guardias certificados",
+      "contenidoLength": 14578,
       "faqCount": 6
     }
   ]
