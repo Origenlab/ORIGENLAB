@@ -1,54 +1,20 @@
 {
   "version": "1.0",
-  "lastUpdated": "2024-12-27T00:00:00.000Z",
+  "lastUpdated": "2025-12-28T02:03:43.704Z",
   "articulos": [
     {
-      "id": "guia-eventos-corporativos",
-      "titulo": "Guía Completa para Organizar Eventos Corporativos Exitosos",
-      "slug": "guia-eventos-corporativos",
+      "id": "podiumex-resena-1766887414597",
+      "titulo": "Renta de Podiums en CDMX: Podiumex",
+      "slug": "podiumex-resena-1766887414597",
       "categoria": "eventos",
-      "categoriaNombre": "Eventos",
-      "extracto": "Descubre las estrategias clave, tendencias emergentes y mejores prácticas para planificar eventos corporativos que dejen huella.",
+      "categoriaNombre": "Eventos Corporativos",
+      "extracto": "Descubre por qué Podiumex es líder en renta de podiums en CDMX. Servicios destacados y testimonios.",
       "imagen": "img/eventos/renta-de-cabezas-moviles.webp",
       "tiempoLectura": 12,
-      "destacado": true,
-      "fecha": "2024-12-01"
-    },
-    {
-      "id": "analisis-riesgos-incendio",
-      "titulo": "Análisis de Riesgos de Incendio para Empresas Industriales",
-      "slug": "analisis-riesgos-incendio-empresas-industriales",
-      "categoria": "equipo-contra-incendios",
-      "categoriaNombre": "Equipo Contra Incendios",
-      "extracto": "Metodología profesional para identificar y mitigar riesgos de incendio en instalaciones industriales de México.",
-      "imagen": "img/equipo-contra-incendios/analisis-riesgos-incendio.webp",
-      "tiempoLectura": 15,
       "destacado": false,
-      "fecha": "2024-12-10"
-    },
-    {
-      "id": "guia-equipos-contra-incendios",
-      "titulo": "Guía de Equipos Contra Incendios para Empresas en México",
-      "slug": "guia-equipos-contra-incendios-empresas-mexico",
-      "categoria": "equipo-contra-incendios",
-      "categoriaNombre": "Equipo Contra Incendios",
-      "extracto": "Todo lo que necesitas saber sobre extintores, sistemas de supresión y normativas NOM para proteger tu empresa.",
-      "imagen": "img/equipo-contra-incendios/guia-extintores-empresas.webp",
-      "tiempoLectura": 14,
-      "destacado": false,
-      "fecha": "2024-12-15"
-    },
-    {
-      "id": "mejores-empresas-seguridad-condominios",
-      "titulo": "Mejores Empresas de Seguridad para Condominios en México",
-      "slug": "mejores-empresas-seguridad-condominios-mexico",
-      "categoria": "seguridad-privada",
-      "categoriaNombre": "Seguridad Privada",
-      "extracto": "Comparativa de las empresas líderes en seguridad para condominios con certificaciones, precios y servicios.",
-      "imagen": "img/seguridad-privada/control-acceso-residencial-caseta.webp",
-      "tiempoLectura": 12,
-      "destacado": false,
-      "fecha": "2024-12-20"
+      "fecha": "2025-12-28",
+      "n8n": true,
+      "empresa": "Podiumex"
     }
   ]
 }
