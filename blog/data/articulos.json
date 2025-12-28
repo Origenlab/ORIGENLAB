@@ -2,6 +2,24 @@
   "version": "3.0",
   "articulos": [
     {
+      "id": "guia-seguridad-privada-condominios-seguridad-eventos-profesional",
+      "titulo": "Guía Completa de Seguridad Privada para Eventos en Mexico",
+      "slug": "guia-seguridad-privada-condominios-seguridad-eventos-profesional",
+      "categoria": "seguridad-privada",
+      "categoriaNombre": "Seguridad Privada",
+      "extracto": "Descubre cómo garantizar la seguridad en eventos masivos en México. Seguridad para Eventos ofrece soluciones certificadas. ¡Infórmate ahora!",
+      "imagen": "img/seguridad-privada/staff-seguridad-evento-corporativo.webp",
+      "tiempoLectura": 25,
+      "destacado": false,
+      "n8n": true,
+      "version": "8.9",
+      "empresa": "Seguridad para Eventos",
+      "empresaSlug": "seguridad-eventos-profesional",
+      "keywords": "seguridad privada Mexico, vigilancia condominios, guardias certificados SSC, seguridad para eventos",
+      "contenidoLength": 8798,
+      "faqCount": 2
+    },
+    {
       "id": "seprico-seguridad-privada-mexico",
       "titulo": "Protección Residencial: Seguridad Privada Especializada en C",
       "slug": "seprico-seguridad-privada-mexico",
