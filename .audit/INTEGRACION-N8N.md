@@ -1,17 +1,36 @@
-# Integración n8n - OrigenLab Blog v7.0
+# Integración n8n - OrigenLab Blog v8.1
 
 ## Visión General
 
 Sistema de generación automática de artículos SEO profesionales para el blog de OrigenLab, especializado en el sector de seguridad privada en México.
 
+## Cambios en v8.1 (ACTUAL)
+
+| Aspecto | v8.0 (anterior) | v8.1 (actual) |
+|---------|-----------------|---------------|
+| Imágenes | GPT inventaba nombres | Solo imagen principal del sistema |
+| Contenido | Incluía `<img>` inventadas | Limpieza automática de `<img>` |
+| Validación | Básica | Elimina cualquier `<img>` o `<figure>` |
+| Prompt | No especificaba | Prohibición explícita de imágenes |
+
+## Cambios en v8.0
+
+| Aspecto | v7.0 (anterior) | v8.0 |
+|---------|-----------------|------|
+| Contenido | ~2,000 palabras | 2,500+ palabras ejecutivo |
+| Temporal | Con fechas | 100% atemporal (evergreen) |
+| FAQs | Estáticas | Accordion interactivo |
+| Tono | Profesional | Ejecutivo premium |
+| Footer | Con año | Sin año |
+
 ## Cambios en v7.0
 
-| Aspecto | v6.0 (anterior) | v7.0 (actual) |
-|---------|-----------------|---------------|
+| Aspecto | v6.0 (anterior) | v7.0 |
+|---------|-----------------|------|
 | Contenido | Básico, ~500 palabras | Profesional, ~2,000+ palabras |
 | SEO | Meta tags básicos | Schema.org, FAQ, Breadcrumbs |
 | URLs | Con timestamps numéricos | Solo texto SEO-friendly |
-| Imágenes | Genéricas | 60+ imágenes organizadas por tema |
+| Imágenes | Genéricas | 61 imágenes organizadas por tema |
 | Empresas | Datos simulados | 4 empresas reales verificadas |
 | Prompt | Básico | Instrucciones SEO detalladas |
 
