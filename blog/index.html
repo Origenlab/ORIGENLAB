@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | OrigenLab</title>
+  <meta name="description" content="Artículos sobre diseño web, rendimiento, conversión y estrategia digital para empresas mexicanas. Sin tecnicismos — directo al punto.">
+  <link rel="canonical" href="https://origenlab.mx/blog/">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://origenlab.mx/blog/">
+  <meta property="og:title" content="Blog OrigenLab — diseño, rendimiento y estrategia digital">
+  <meta property="og:description" content="Artículos sobre construcción web, conversión y decisiones tecnológicas para empresas mexicanas.">
+  <meta property="og:image" content="https://origenlab.mx/og-image.jpg">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="OrigenLab">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog · OrigenLab">
+  <meta name="twitter:description" content="Lecturas concretas para quien toma decisiones sobre su presencia digital.">
+  <meta name="twitter:image" content="https://origenlab.mx/og-image.jpg">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <!-- Schema.org -->
+  
+  <!-- Fuentes: preconnect + direct link para evitar render-blocking -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../_astro/BaseLayout.xeR8R953.css?v20260421a">
+  <link rel="stylesheet" href="../_astro/premium-dark.css?v20260421a">
+  <script src="../_astro/ol-header.js?v20260421a" defer></script>
+  <style>
+    /* ============================================================
+       PAGE HERO — ol-page-hero
+       ============================================================ */
+    .ol-page-hero {
+      background: #08080E;
+      padding: 6rem 0 5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .ol-page-hero::before {
+      content: '';
+      position: absolute;
+      top: -20%; left: -10%;
+      width: 60%; height: 120%;
+      background: radial-gradient(ellipse at center, rgba(201,168,76,0.06) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .ol-page-hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.2), transparent);
+    }
+    .ol-page-hero-inner {
+      width: 90%;
+      max-width: 1600px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    .ol-page-hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    @media (max-width: 860px) {
+      .ol-page-hero-grid { grid-template-columns: 1fr; gap: 2rem; }
+    }
+    .ol-page-hero-title {
+      font-size: clamp(2.8rem, 5vw, 4.5rem);
+      font-weight: 900;
+      color: #F0F0F5;
+      letter-spacing: -0.035em;
+      line-height: 1.04;
+      margin: 0 0 1.5rem;
+    }
+    .ol-page-hero-sub {
+      font-size: 1.0625rem;
+      color: rgba(240,240,245,0.5);
+      line-height: 1.75;
+      margin: 0;
+    }
+    .ol-page-hero-right {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      padding-top: 0.25rem;
+    }
+    .ol-page-hero-copy {
+      font-size: 15px;
+      color: rgba(240,240,245,0.48);
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    /* ============================================================
+       BLOG SECTION — layout principal
+       ============================================================ */
+    .ol-blog-section {
+      background: #08080E;
+      padding: 6rem 0;
+      position: relative;
+    }
+    .ol-blog-section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.07), transparent);
+    }
+    .ol-blog-inner {
+      width: 90%;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+
+    /* Contenedor: main (2/3) + sidebar (1/3) */
+    .ol-blog-layout {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 3rem;
+      align-items: start;
+    }
+    @media (max-width: 1100px) {
+      .ol-blog-layout { grid-template-columns: 1fr; }
+    }
+
+    /* ---- FILTROS DE CATEGORÍA ---- */
+    .ol-blog-filters {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+    .ol-blog-filter {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.09);
+      border-radius: 999px;
+      padding: 0.4rem 1.1rem;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: rgba(240,240,245,0.55);
+      cursor: pointer;
+      letter-spacing: 0.02em;
+      user-select: none;
+    }
+    .ol-blog-filter:hover {
+      background: rgba(255,255,255,0.07);
+      color: rgba(240,240,245,0.8);
+    }
+    .ol-blog-filter.active {
+      background: rgba(201,168,76,0.12);
+      border-color: rgba(201,168,76,0.35);
+      color: #C9A84C;
+    }
+
+    /* ---- TARJETA DESTACADA (featured) ---- */
+    .ol-blog-featured {
+      background: #0C0C18;
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 14px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      margin-bottom: 2rem;
+      text-decoration: none;
+    }
+    @media (max-width: 780px) {
+      .ol-blog-featured { grid-template-columns: 1fr; }
+    }
+    .ol-blog-featured-img {
+      position: relative;
+      background: linear-gradient(135deg, #0D0D1E, #14142A, #0A0A18);
+      min-height: 260px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .ol-blog-featured-img::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 40% 50%, rgba(201,168,76,0.08) 0%, transparent 65%);
+    }
+    /* Patrón cuadrícula sutil */
+    .ol-blog-featured-img::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    .ol-blog-featured-img-label {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+      opacity: 0.5;
+    }
+    .ol-blog-featured-img-label svg { color: #C9A84C; }
+    .ol-blog-featured-img-label span {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(201,168,76,0.7);
+    }
+    .ol-blog-featured-body {
+      padding: 2.25rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .ol-blog-featured-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      width: fit-content;
+    }
+    .ol-blog-cat {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.2);
+      color: #C9A84C;
+    }
+    .ol-blog-cat.rendimiento  { background: rgba(99,102,241,0.1);  border-color: rgba(99,102,241,0.2);  color: #818CF8; }
+    .ol-blog-cat.tecnologia   { background: rgba(14,165,233,0.1);  border-color: rgba(14,165,233,0.2);  color: #38BDF8; }
+    .ol-blog-cat.diseno       { background: rgba(236,72,153,0.1);  border-color: rgba(236,72,153,0.2);  color: #F472B6; }
+    .ol-blog-cat.ecommerce    { background: rgba(16,185,129,0.1);  border-color: rgba(16,185,129,0.2);  color: #34D399; }
+    .ol-blog-cat.estrategia   { background: rgba(245,158,11,0.1);  border-color: rgba(245,158,11,0.2);  color: #FBBF24; }
+
+    .ol-blog-featured-meta {
+      font-size: 11.5px;
+      color: rgba(240,240,245,0.35);
+      font-weight: 500;
+    }
+    .ol-blog-featured-title {
+      font-size: clamp(1.25rem, 2vw, 1.65rem);
+      font-weight: 800;
+      color: #F0F0F5;
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+      margin: 0;
+    }
+    .ol-blog-featured-excerpt {
+      font-size: 14px;
+      color: rgba(240,240,245,0.5);
+      line-height: 1.7;
+      margin: 0;
+    }
+    .ol-blog-featured-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 13px;
+      font-weight: 600;
+      color: #C9A84C;
+      text-decoration: none;
+      margin-top: 0.25rem;
+      width: fit-content;
+    }
+    .ol-blog-featured-pin {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(201,168,76,0.6);
+    }
+
+    /* ---- GRID DE ARTÍCULOS ---- */
+    .ol-blog-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+    @media (max-width: 700px) {
+      .ol-blog-grid { grid-template-columns: 1fr; }
+    }
+
+    /* Tarjeta regular */
+    .ol-blog-card {
+      background: #0C0C18;
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+    }
+    .ol-blog-card-thumb {
+      position: relative;
+      height: 150px;
+      background: linear-gradient(135deg, #0D0D1E, #141428, #0A0A18);
+      overflow: hidden;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ol-blog-card-thumb::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 50%, rgba(201,168,76,0.05) 0%, transparent 70%);
+    }
+    .ol-blog-card-thumb::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(201,168,76,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201,168,76,0.03) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+    .ol-blog-card-thumb-num {
+      position: relative;
+      z-index: 1;
+      font-size: 3rem;
+      font-weight: 900;
+      color: rgba(201,168,76,0.08);
+      letter-spacing: -0.05em;
+      line-height: 1;
+      user-select: none;
+    }
+    .ol-blog-card-body {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      flex: 1;
+    }
+    .ol-blog-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+    .ol-blog-card-meta {
+      font-size: 11px;
+      color: rgba(240,240,245,0.3);
+      font-weight: 500;
+    }
+    .ol-blog-card-title {
+      font-size: 0.9375rem;
+      font-weight: 700;
+      color: #F0F0F5;
+      letter-spacing: -0.02em;
+      line-height: 1.3;
+      margin: 0;
+    }
+    .ol-blog-card:hover .ol-blog-card-title { color: #C9A84C; }
+    .ol-blog-card-excerpt {
+      font-size: 13px;
+      color: rgba(240,240,245,0.45);
+      line-height: 1.65;
+      margin: 0;
+      flex: 1;
+    }
+    .ol-blog-card-link {
+      font-size: 12px;
+      font-weight: 600;
+      color: rgba(201,168,76,0.7);
+      margin-top: 0.25rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    /* ============================================================
+       SIDEBAR — ol-sb-*
+       ============================================================ */
+    .ol-blog-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      position: sticky;
+      top: 120px;
+    }
+    @media (max-width: 1100px) {
+      .ol-blog-sidebar { position: static; }
+    }
+
+    /* Widget base */
+    .ol-sb-widget {
+      background: #0C0C18;
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .ol-sb-title {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(240,240,245,0.35);
+      margin: 0 0 1.1rem;
+    }
+
+    /* Widget CTA principal */
+    .ol-sb-cta {
+      background: rgba(201,168,76,0.05);
+      border-color: rgba(201,168,76,0.18);
+      text-align: center;
+      padding: 1.75rem 1.5rem;
+    }
+    .ol-sb-cta-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      color: #C9A84C;
+    }
+    .ol-sb-cta-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #F0F0F5;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.45rem;
+      line-height: 1.3;
+    }
+    .ol-sb-cta-sub {
+      font-size: 12.5px;
+      color: rgba(240,240,245,0.45);
+      line-height: 1.6;
+      margin: 0 0 1.25rem;
+    }
+    .ol-sb-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      width: 100%;
+      padding: 0.75rem 1rem;
+      background: #C9A84C;
+      border: none;
+      border-radius: 7px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #08080E;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .ol-sb-cta-btn:hover { background: #D4B45C; transform: translateY(-1px); }
+    .ol-sb-cta-wa {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      font-size: 11.5px;
+      color: #25D366;
+      text-decoration: none;
+      margin-top: 0.75rem;
+      font-weight: 600;
+    }
+    .ol-sb-cta-wa:hover { opacity: 0.8; }
+
+    /* Widget Categorías */
+    .ol-sb-cats {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .ol-sb-cat-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      cursor: pointer;
+      text-decoration: none;
+      
+    }
+    .ol-sb-cat-item:last-child { border-bottom: none; }
+    .ol-sb-cat-name {
+      font-size: 13.5px;
+      color: rgba(240,240,245,0.65);
+      font-weight: 500;
+      
+    }
+    .ol-sb-cat-item:hover .ol-sb-cat-name { color: #C9A84C; }
+    .ol-sb-cat-count {
+      font-size: 11px;
+      font-weight: 700;
+      color: rgba(240,240,245,0.25);
+      background: rgba(255,255,255,0.04);
+      border-radius: 999px;
+      padding: 0.15rem 0.55rem;
+    }
+
+    /* Widget Servicios */
+    .ol-sb-services {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .ol-sb-svc-link {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      padding: 0.65rem 0.75rem;
+      border-radius: 8px;
+      text-decoration: none;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+    .ol-sb-svc-link:hover {
+      background: rgba(201,168,76,0.06);
+      border-color: rgba(201,168,76,0.15);
+    }
+    .ol-sb-svc-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 6px;
+      background: rgba(201,168,76,0.08);
+      border: 1px solid rgba(201,168,76,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(201,168,76,0.7);
+      flex-shrink: 0;
+    }
+    .ol-sb-svc-text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+    }
+    .ol-sb-svc-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: rgba(240,240,245,0.75);
+      line-height: 1.2;
+    }
+    .ol-sb-svc-link:hover .ol-sb-svc-name { color: #C9A84C; }
+    .ol-sb-svc-sub {
+      font-size: 11px;
+      color: rgba(240,240,245,0.3);
+    }
+    .ol-sb-svc-all {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      font-size: 12px;
+      font-weight: 600;
+      color: rgba(201,168,76,0.6);
+      text-decoration: none;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+      border-radius: 6px;
+      border: 1px solid rgba(201,168,76,0.12);
+    }
+    .ol-sb-svc-all:hover { background: rgba(201,168,76,0.06); color: #C9A84C; }
+
+    /* Widget Recientes */
+    .ol-sb-recent {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .ol-sb-recent-item {
+      display: flex;
+      gap: 0.75rem;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      text-decoration: none;
+      align-items: flex-start;
+    }
+    .ol-sb-recent-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .ol-sb-recent-item:first-child { padding-top: 0; }
+    .ol-sb-recent-num {
+      font-size: 11px;
+      font-weight: 800;
+      color: rgba(201,168,76,0.3);
+      min-width: 18px;
+      margin-top: 2px;
+    }
+    .ol-sb-recent-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+    .ol-sb-recent-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: rgba(240,240,245,0.65);
+      line-height: 1.35;
+      
+    }
+    .ol-sb-recent-item:hover .ol-sb-recent-title { color: #C9A84C; }
+    .ol-sb-recent-meta {
+      font-size: 11px;
+      color: rgba(240,240,245,0.28);
+    }
+
+    /* Widget Explorar sitio */
+    .ol-sb-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .ol-sb-nav-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      text-decoration: none;
+      font-size: 13.5px;
+      font-weight: 500;
+      color: rgba(240,240,245,0.55);
+      
+    }
+    .ol-sb-nav-link:last-child { border-bottom: none; }
+    .ol-sb-nav-link:hover { color: #C9A84C; }
+    .ol-sb-nav-arrow {
+      font-size: 11px;
+      color: rgba(201,168,76,0.35);
+      
+    }
+    .ol-sb-nav-link:hover .ol-sb-nav-arrow { color: #C9A84C; }
+
+    /* Widget Tags */
+    .ol-sb-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .ol-sb-tag {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 999px;
+      font-size: 11px;
+      color: rgba(240,240,245,0.4);
+      padding: 0.2rem 0.65rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .ol-sb-tag:hover {
+      background: rgba(201,168,76,0.08);
+      border-color: rgba(201,168,76,0.2);
+      color: #C9A84C;
+    }
+
+    /* ============================================================
+       CTA BOTTOM — antes del quicknav
+       ============================================================ */
+    .ol-blog-cta-band {
+      background: #04040A;
+      padding: 5rem 0;
+      position: relative;
+    }
+    .ol-blog-cta-band::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.2), transparent);
+    }
+    .ol-blog-cta-band-inner {
+      width: 90%;
+      max-width: 1600px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 3rem;
+      align-items: center;
+    }
+    @media (max-width: 760px) {
+      .ol-blog-cta-band-inner { grid-template-columns: 1fr; gap: 2rem; }
+    }
+    .ol-blog-cta-band-label {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(201,168,76,0.6);
+      margin: 0 0 0.75rem;
+    }
+    .ol-blog-cta-band-title {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 800;
+      color: #F0F0F5;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin: 0 0 0.75rem;
+    }
+    .ol-blog-cta-band-sub {
+      font-size: 15px;
+      color: rgba(240,240,245,0.48);
+      line-height: 1.7;
+      margin: 0;
+      max-width: 60ch;
+    }
+    .ol-blog-cta-band-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      flex-shrink: 0;
+    }
+    .ol-blog-cta-band-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.9rem 1.75rem;
+      background: #C9A84C;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #08080E;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .ol-blog-cta-band-btn:hover { background: #D4B45C; transform: translateY(-1px); }
+    .ol-blog-cta-band-wa {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: #25D366;
+      text-decoration: none;
+    }
+    .ol-blog-cta-band-wa:hover { opacity: 0.8; }
+  </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.mx/#organization","name":"OrigenLab","url":"https://origenlab.mx","logo":"https://origenlab.mx/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"Blog","@id":"https://origenlab.mx/blog/#blog","url":"https://origenlab.mx/blog/","name":"Blog — OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.mx/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.mx/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://origenlab.mx/blog/"}]}]}</script></head>
+<body>
+
+<a class="ol-skip-link" href="#main">Saltar al contenido</a>
+<!-- ============================================================
+     TOPBAR
+     ============================================================ -->
+<div class="ol-topbar">
+  <div class="ol-topbar-inner">
+    <div class="ol-topbar-left">
+      <a href="mailto:hola@origenlab.mx" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        hola@origenlab.mx
+      </a>
+      <span class="ol-topbar-sep"></span>
+      <a href="tel:+525547868402" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +52 55 4786 8402
+      </a>
+    </div>
+    <div class="ol-topbar-center">
+      <span class="ol-topbar-promo">
+        <span class="ol-topbar-dot"></span>
+        Respuesta garantizada en menos de 24 horas &nbsp;·&nbsp; Ciudad de México
+      </span>
+    </div>
+    <div class="ol-topbar-right">
+      <a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web" target="_blank" rel="noopener noreferrer" class="ol-topbar-wa">
+        <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="ol-header" id="ol-header">
+  <div class="ol-header-inner">
+    <a href="../index.html" class="ol-header-logo">
+      <img src="../img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
+    </a>
+    <nav class="ol-nav" aria-label="Navegación principal">
+      <ul class="ol-nav-list">
+        <li><a href="../index.html" class="ol-nav-link">Inicio</a></li>
+        <li class="ol-has-dropdown">
+          <a href="../servicios/index.html" class="ol-nav-link">
+            Servicios
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="../servicios/desarrollo-web/index.html" class="ol-dropdown-link">Desarrollo Web</a></li>
+              <li><a href="../servicios/tiendas-en-linea/index.html" class="ol-dropdown-link">Tiendas en Línea</a></li>
+              <li><a href="../servicios/landing-pages/index.html" class="ol-dropdown-link">Landing Pages</a></li>
+              <li><a href="../servicios/rediseno-web/index.html" class="ol-dropdown-link">Rediseño Web</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="../portafolio/index.html" class="ol-nav-link">Portafolio</a></li>
+        <li><a href="../nosotros/index.html" class="ol-nav-link">Nosotros</a></li>
+        <li><a href="index.html" class="ol-nav-link active">Blog</a></li>
+        <li><a href="../contacto/index.html" class="ol-nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="../cotizar/index.html" class="ol-header-cta">Cotizar proyecto →</a>
+    <button class="ol-menu-toggle" id="ol-menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile overlay -->
+<div class="ol-mobile-overlay" id="ol-mobile-overlay"></div>
+
+<!-- Mobile panel -->
+<nav class="ol-mobile-panel" id="ol-mobile-panel" aria-label="Menú móvil">
+  <div class="ol-mobile-header">
+    <a href="../index.html" class="ol-mobile-logo">
+      <img src="../img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
+    </a>
+    <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú">
+      <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <ul class="ol-mobile-nav">
+    <li><a href="../index.html" class="ol-mobile-link">Inicio</a></li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Servicios</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="../servicios/desarrollo-web/index.html" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
+        <li><a href="../servicios/tiendas-en-linea/index.html" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
+        <li><a href="../servicios/landing-pages/index.html" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
+        <li><a href="../servicios/rediseno-web/index.html" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
+      </ul>
+    </li>
+    <li><a href="../portafolio/index.html" class="ol-mobile-link">Portafolio</a></li>
+    <li><a href="../nosotros/index.html" class="ol-mobile-link">Nosotros</a></li>
+    <li><a href="index.html" class="ol-mobile-link active">Blog</a></li>
+    <li><a href="../contacto/index.html" class="ol-mobile-link">Contacto</a></li>
+  </ul>
+  <div class="ol-mobile-footer">
+    <a href="../cotizar/index.html" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a>
+  </div>
+</nav>
+
+<!-- ============================================================
+     MAIN
+     ============================================================ -->
+<!-- ============================================================
+     BREADCRUMB — ol-bc
+     ============================================================ -->
+<nav class="ol-bc-wrap" aria-label="Migas de pan">
+  <div class="ol-bc">
+    <ol class="ol-bc-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="../index.html" itemprop="item" class="ol-bc-home"><span itemprop="name">Inicio</span></a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item ol-bc-current" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name">Blog</span>
+        <meta itemprop="position" content="2" />
+      </li>
+    </ol>
+  </div>
+</nav>
+<!-- ======= END BREADCRUMB ======= -->
+<main id="main">
+
+  <!-- PAGE HERO -->
+  <section class="ol-page-hero">
+    <div class="ol-page-hero-inner">
+      <div class="ol-page-hero-grid">
+
+        <div class="ol-page-hero-left">
+          <span class="ol-eyebrow">Blog</span>
+          <h1 class="ol-page-hero-title">Ideas que ayudan<br>a tu negocio a crecer.</h1>
+          <p class="ol-page-hero-sub">Artículos sobre diseño web, rendimiento, conversión y estrategia digital — escritos para dueños de negocio, no para programadores.</p>
+        </div>
+
+        <div class="ol-page-hero-right">
+          <p class="ol-page-hero-copy">Publicamos contenido práctico y directo sobre los temas que más impactan en el éxito digital de una empresa mexicana. Sin tecnicismos innecesarios, sin relleno — solo lo que necesitas saber para tomar mejores decisiones sobre tu presencia en internet.</p>
+          <p class="ol-page-hero-copy">Cada artículo está basado en proyectos reales que hemos construido para empresas en México. Lo que publicamos es lo que aplicamos — no teoría genérica de un manual extranjero.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK NAV TOP (con íconos) -->
+  <div class="ol-quicknav">
+    <div class="ol-quicknav-inner">
+
+      <a href="../servicios/desarrollo-web/index.html" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Desarrollo Web</span>
+          <span class="ol-qn-sub">Sitios corporativos</span>
+        </span>
+      </a>
+
+      <a href="../servicios/tiendas-en-linea/index.html" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Tiendas en Línea</span>
+          <span class="ol-qn-sub">E-commerce · Pagos MX</span>
+        </span>
+      </a>
+
+      <a href="../servicios/landing-pages/index.html" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Landing Pages</span>
+          <span class="ol-qn-sub">Alta conversión</span>
+        </span>
+      </a>
+
+      <a href="../servicios/rediseno-web/index.html" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Rediseño Web</span>
+          <span class="ol-qn-sub">Moderniza tu sitio</span>
+        </span>
+      </a>
+
+      <a href="../portafolio/index.html" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Portafolio</span>
+          <span class="ol-qn-sub">Proyectos realizados</span>
+        </span>
+      </a>
+
+      <a href="../nosotros/index.html" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Nosotros</span>
+          <span class="ol-qn-sub">Equipo &amp; proceso</span>
+        </span>
+      </a>
+
+      <a href="../cotizar/index.html" class="ol-qn-item ol-qn-cta">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Cotizar Proyecto</span>
+          <span class="ol-qn-sub">Respuesta en 24 h</span>
+        </span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- ============================================================
+       BLOG — layout principal con sidebar
+       ============================================================ -->
+  <section class="ol-blog-section">
+    <div class="ol-blog-inner">
+
+      <div class="ol-blog-layout">
+
+        <!-- ===================== MAIN ===================== -->
+        <div class="ol-blog-main">
+
+          <!-- Filtros de categoría -->
+          <div class="ol-blog-filters" role="group" aria-label="Filtrar por categoría">
+            <button class="ol-blog-filter active" data-cat="todos">Todos</button>
+            <button class="ol-blog-filter" data-cat="diseno">Diseño Web</button>
+            <button class="ol-blog-filter" data-cat="rendimiento">Rendimiento</button>
+            <button class="ol-blog-filter" data-cat="estrategia">Estrategia</button>
+            <button class="ol-blog-filter" data-cat="ecommerce">E-commerce</button>
+            <button class="ol-blog-filter" data-cat="tecnologia">Tecnología</button>
+          </div>
+
+          <!-- Artículo destacado -->
+          <a href="por-que-tu-sitio-lento-cuesta-clientes/index.html" class="ol-blog-featured" data-cat="rendimiento">
+            <div class="ol-blog-featured-img">
+              <div class="ol-blog-featured-img-label">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                <span>Imagen próximamente</span>
+              </div>
+            </div>
+            <div class="ol-blog-featured-body">
+              <div class="ol-blog-featured-badge">
+                <span class="ol-blog-featured-pin">
+                  <svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  Destacado
+                </span>
+                <span class="ol-blog-cat rendimiento">Rendimiento</span>
+              </div>
+              <p class="ol-blog-featured-meta">6 min de lectura</p>
+              <h2 class="ol-blog-featured-title">Por qué tu sitio web lento te está costando clientes cada día</h2>
+              <p class="ol-blog-featured-excerpt">El 53% de los visitantes abandona un sitio que tarda más de 3 segundos en cargar. Si tu sitio está en WordPress sin optimizar, o en un hosting compartido barato, es probable que estés perdiendo prospectos sin siquiera saberlo. Aquí te explicamos exactamente qué pasa y cómo medirlo.</p>
+              <span class="ol-blog-featured-link">Leer artículo <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </div>
+          </a>
+
+          <!-- Grid de artículos -->
+          <div class="ol-blog-grid" id="ol-blog-grid">
+
+            <!-- 01 -->
+            <a href="astro-vs-wordpress-cual-elegir/index.html" class="ol-blog-card" data-cat="tecnologia">
+              <div class="ol-blog-card-thumb">
+                <span class="ol-blog-card-thumb-num">01</span>
+              </div>
+              <div class="ol-blog-card-body">
+                <div class="ol-blog-card-top">
+                  <span class="ol-blog-cat tecnologia">Tecnología</span>
+                  <span class="ol-blog-card-meta">8 min de lectura</span>
+                </div>
+                <h3 class="ol-blog-card-title">Astro vs WordPress: cuál elegir para tu empresa en México</h3>
+                <p class="ol-blog-card-excerpt">WordPress parece la opción obvia pero rara vez es la correcta. Comparamos velocidad, mantenimiento, costo y seguridad con datos reales de proyectos mexicanos.</p>
+                <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+              </div>
+            </a>
+
+            <!-- 02 -->
+            <a href="5-errores-sitios-web-pymes-mexico/index.html" class="ol-blog-card" data-cat="diseno">
+              <div class="ol-blog-card-thumb">
+                <span class="ol-blog-card-thumb-num">02</span>
+              </div>
+              <div class="ol-blog-card-body">
+                <div class="ol-blog-card-top">
+                  <span class="ol-blog-cat diseno">Diseño Web</span>
+                  <span class="ol-blog-card-meta">5 min de lectura</span>
+                </div>
+                <h3 class="ol-blog-card-title">5 errores que cometen las pymes mexicanas en su sitio web</h3>
+                <p class="ol-blog-card-excerpt">Errores que vemos en el 80% de los sitios que llegan a nosotros para rediseño: desde CTAs invisibles hasta formularios que no convierten. Chécalos antes de perder más prospectos.</p>
+                <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+              </div>
+            </a>
+
+            <!-- 03 -->
+            <a href="landing-page-vs-sitio-corporativo/index.html" class="ol-blog-card" data-cat="estrategia">
+              <div class="ol-blog-card-thumb">
+                <span class="ol-blog-card-thumb-num">03</span>
+              </div>
+              <div class="ol-blog-card-body">
+                <div class="ol-blog-card-top">
+                  <span class="ol-blog-cat estrategia">Estrategia</span>
+                  <span class="ol-blog-card-meta">4 min de lectura</span>
+                </div>
+                <h3 class="ol-blog-card-title">Landing page vs sitio corporativo: ¿qué necesita tu negocio?</h3>
+                <p class="ol-blog-card-excerpt">No son lo mismo y confundirlos puede costarte dinero. Te explicamos cuándo necesitas cada uno, con ejemplos reales de empresas mexicanas que hemos asesorado.</p>
+                <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+              </div>
+            </a>
+
+            <!-- 04 -->
+            <a href="como-medir-resultados-sitio-web/index.html" class="ol-blog-card" data-cat="estrategia">
+              <div class="ol-blog-card-thumb">
+                <span class="ol-blog-card-thumb-num">04</span>
+              </div>
+              <div class="ol-blog-card-body">
+                <div class="ol-blog-card-top">
+                  <span class="ol-blog-cat estrategia">Estrategia</span>
+                  <span class="ol-blog-card-meta">5 min de lectura</span>
+                </div>
+                <h3 class="ol-blog-card-title">Cómo saber si tu sitio web está generando resultados reales</h3>
+                <p class="ol-blog-card-excerpt">Tener visitas no es lo mismo que tener clientes. Estas son las métricas que realmente importan — y cómo interpretarlas sin necesidad de ser analista de datos.</p>
+                <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+              </div>
+            </a>
+
+            <!-- 05 -->
+            <a href="core-web-vitals-que-son/index.html" class="ol-blog-card" data-cat="rendimiento">
+              <div class="ol-blog-card-thumb">
+                <span class="ol-blog-card-thumb-num">05</span>
+              </div>
+              <div class="ol-blog-card-body">
+                <div class="ol-blog-card-top">
+                  <span class="ol-blog-cat rendimiento">Rendimiento</span>
+                  <span class="ol-blog-card-meta">6 min de lectura</span>
+                </div>
+                <h3 class="ol-blog-card-title">Core Web Vitals: qué son y cómo afectan a tu negocio en México</h3>
+                <p class="ol-blog-card-excerpt">Google mide la experiencia de usuario con métricas técnicas muy concretas. Si tu sitio las falla, pierdes visibilidad y prospectos. Aquí te explicamos qué miden y qué puedes hacer.</p>
+                <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+              </div>
+            </a>
+
+            <!-- 06 -->
+            <a href="mercado-pago-vs-stripe-ecommerce-mexico/index.html" class="ol-blog-card" data-cat="ecommerce">
+              <div class="ol-blog-card-thumb">
+                <span class="ol-blog-card-thumb-num">06</span>
+              </div>
+              <div class="ol-blog-card-body">
+                <div class="ol-blog-card-top">
+                  <span class="ol-blog-cat ecommerce">E-commerce</span>
+                  <span class="ol-blog-card-meta">5 min de lectura</span>
+                </div>
+                <h3 class="ol-blog-card-title">Mercado Pago vs Stripe: cuál integrar en tu tienda en línea mexicana</h3>
+                <p class="ol-blog-card-excerpt">Comisiones, conversión, soporte local y UX para el comprador mexicano — comparamos las dos opciones más comunes para que tomes la mejor decisión para tu e-commerce.</p>
+                <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+              </div>
+            </a>
+
+            <!-- 07 -->
+            <a href="rediseno-web-cuando-es-momento/index.html" class="ol-blog-card" data-cat="diseno">
+              <div class="ol-blog-card-thumb">
+                <span class="ol-blog-card-thumb-num">07</span>
+              </div>
+              <div class="ol-blog-card-body">
+                <div class="ol-blog-card-top">
+                  <span class="ol-blog-cat diseno">Diseño Web</span>
+                  <span class="ol-blog-card-meta">4 min de lectura</span>
+                </div>
+                <h3 class="ol-blog-card-title">Rediseño web: cuándo es el momento de renovar tu sitio</h3>
+                <p class="ol-blog-card-excerpt">No siempre es obvio. Estos son las señales concretas que indican que tu sitio está frenando a tu empresa — y cuándo tiene sentido invertir en un rediseño completo vs ajustes menores.</p>
+                <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+              </div>
+            </a>
+
+            <!-- 08 -->
+            <a href="cuanto-cuesta-sitio-web-mexico-2026/index.html" class="ol-blog-card" data-cat="estrategia">
+              <div class="ol-blog-card-thumb">
+                <span class="ol-blog-card-thumb-num">08</span>
+              </div>
+              <div class="ol-blog-card-body">
+                <div class="ol-blog-card-top">
+                  <span class="ol-blog-cat estrategia">Estrategia</span>
+                  <span class="ol-blog-card-meta">5 min de lectura</span>
+                </div>
+                <h3 class="ol-blog-card-title">¿Cuánto cuesta un sitio web profesional en México en 2026?</h3>
+                <p class="ol-blog-card-excerpt">Rangos de precios reales: freelancer, agencia y soluciones DIY. Qué incluye cada opción, por qué el precio bajo puede costarte más a largo plazo y qué deberías pedir en tu cotización.</p>
+                <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+              </div>
+            </a>
+
+          </div>
+          <!-- /ol-blog-grid -->
+
+        </div>
+        <!-- /ol-blog-main -->
+
+        <!-- ===================== SIDEBAR ===================== -->
+        <aside class="ol-blog-sidebar" aria-label="Navegación y recursos">
+
+          <!-- Widget 1: CTA cotizar -->
+          <div class="ol-sb-widget ol-sb-cta">
+            <div class="ol-sb-cta-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            </div>
+            <p class="ol-sb-cta-title">¿Tu empresa necesita<br>un sitio web?</p>
+            <p class="ol-sb-cta-sub">Cuéntanos tu proyecto y te respondemos con una propuesta en menos de 24 horas.</p>
+            <a href="../cotizar/index.html" class="ol-sb-cta-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              Cotizar mi proyecto
+            </a>
+            <a href="https://wa.me/525547868402?text=Hola%2C%20leí%20el%20blog%20y%20me%20interesa%20un%20proyecto%20web" target="_blank" rel="noopener noreferrer" class="ol-sb-cta-wa">
+              <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+              O escríbenos por WhatsApp
+            </a>
+          </div>
+
+          <!-- Widget 2: Categorías -->
+          <div class="ol-sb-widget">
+            <p class="ol-sb-title">Categorías</p>
+            <ul class="ol-sb-cats">
+              <li>
+                <a href="#" class="ol-sb-cat-item" data-filter="todos">
+                  <span class="ol-sb-cat-name">Todos los artículos</span>
+                  <span class="ol-sb-cat-count">9</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="ol-sb-cat-item" data-filter="diseno">
+                  <span class="ol-sb-cat-name">Diseño Web</span>
+                  <span class="ol-sb-cat-count">2</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="ol-sb-cat-item" data-filter="rendimiento">
+                  <span class="ol-sb-cat-name">Rendimiento</span>
+                  <span class="ol-sb-cat-count">2</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="ol-sb-cat-item" data-filter="estrategia">
+                  <span class="ol-sb-cat-name">Estrategia</span>
+                  <span class="ol-sb-cat-count">3</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="ol-sb-cat-item" data-filter="ecommerce">
+                  <span class="ol-sb-cat-name">E-commerce</span>
+                  <span class="ol-sb-cat-count">1</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="ol-sb-cat-item" data-filter="tecnologia">
+                  <span class="ol-sb-cat-name">Tecnología</span>
+                  <span class="ol-sb-cat-count">1</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Widget 3: Nuestros Servicios (internal nav) -->
+          <div class="ol-sb-widget">
+            <p class="ol-sb-title">Nuestros Servicios</p>
+            <div class="ol-sb-services">
+              <a href="../servicios/desarrollo-web/index.html" class="ol-sb-svc-link">
+                <div class="ol-sb-svc-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                </div>
+                <div class="ol-sb-svc-text">
+                  <span class="ol-sb-svc-name">Desarrollo Web</span>
+                  <span class="ol-sb-svc-sub">Sitios corporativos a medida</span>
+                </div>
+              </a>
+              <a href="../servicios/tiendas-en-linea/index.html" class="ol-sb-svc-link">
+                <div class="ol-sb-svc-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                </div>
+                <div class="ol-sb-svc-text">
+                  <span class="ol-sb-svc-name">Tiendas en Línea</span>
+                  <span class="ol-sb-svc-sub">E-commerce con Mercado Pago</span>
+                </div>
+              </a>
+              <a href="../servicios/landing-pages/index.html" class="ol-sb-svc-link">
+                <div class="ol-sb-svc-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                </div>
+                <div class="ol-sb-svc-text">
+                  <span class="ol-sb-svc-name">Landing Pages</span>
+                  <span class="ol-sb-svc-sub">Alta conversión desde día 1</span>
+                </div>
+              </a>
+              <a href="../servicios/rediseno-web/index.html" class="ol-sb-svc-link">
+                <div class="ol-sb-svc-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                </div>
+                <div class="ol-sb-svc-text">
+                  <span class="ol-sb-svc-name">Rediseño Web</span>
+                  <span class="ol-sb-svc-sub">Moderniza tu sitio actual</span>
+                </div>
+              </a>
+              <a href="../servicios/index.html" class="ol-sb-svc-all">
+                Ver todos los servicios
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Widget 4: Artículos recientes -->
+          <div class="ol-sb-widget">
+            <p class="ol-sb-title">Artículos recientes</p>
+            <div class="ol-sb-recent">
+              <a href="por-que-tu-sitio-lento-cuesta-clientes/index.html" class="ol-sb-recent-item">
+                <span class="ol-sb-recent-num">01</span>
+                <div class="ol-sb-recent-info">
+                  <span class="ol-sb-recent-title">Por qué tu sitio lento te está costando clientes</span>
+                  <span class="ol-sb-recent-meta">Rendimiento</span>
+                </div>
+              </a>
+              <a href="astro-vs-wordpress-cual-elegir/index.html" class="ol-sb-recent-item">
+                <span class="ol-sb-recent-num">02</span>
+                <div class="ol-sb-recent-info">
+                  <span class="ol-sb-recent-title">Astro vs WordPress: cuál elegir para tu empresa</span>
+                  <span class="ol-sb-recent-meta">Tecnología</span>
+                </div>
+              </a>
+              <a href="5-errores-sitios-web-pymes-mexico/index.html" class="ol-sb-recent-item">
+                <span class="ol-sb-recent-num">03</span>
+                <div class="ol-sb-recent-info">
+                  <span class="ol-sb-recent-title">5 errores en sitios web de pymes mexicanas</span>
+                  <span class="ol-sb-recent-meta">Diseño Web</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Widget 5: Explorar el sitio -->
+          <div class="ol-sb-widget">
+            <p class="ol-sb-title">Explorar el sitio</p>
+            <nav class="ol-sb-nav" aria-label="Navegación interna">
+              <a href="../portafolio/index.html" class="ol-sb-nav-link">
+                Portafolio de proyectos
+                <span class="ol-sb-nav-arrow">→</span>
+              </a>
+              <a href="../nosotros/index.html" class="ol-sb-nav-link">
+                Quiénes somos
+                <span class="ol-sb-nav-arrow">→</span>
+              </a>
+              <a href="../servicios/index.html" class="ol-sb-nav-link">
+                Nuestros servicios
+                <span class="ol-sb-nav-arrow">→</span>
+              </a>
+              <a href="../contacto/index.html" class="ol-sb-nav-link">
+                Contacto
+                <span class="ol-sb-nav-arrow">→</span>
+              </a>
+              <a href="../cotizar/index.html" class="ol-sb-nav-link" style="color:#C9A84C;">
+                Cotizar proyecto →
+                <span class="ol-sb-nav-arrow" style="color:#C9A84C;">★</span>
+              </a>
+            </nav>
+          </div>
+
+          <!-- Widget 6: Tags -->
+          <div class="ol-sb-widget">
+            <p class="ol-sb-title">Temas</p>
+            <div class="ol-sb-tags">
+              <a href="#" class="ol-sb-tag" data-filter="rendimiento">Velocidad</a>
+              <a href="#" class="ol-sb-tag" data-filter="diseno">Diseño UX</a>
+              <a href="#" class="ol-sb-tag" data-filter="tecnologia">Astro</a>
+              <a href="#" class="ol-sb-tag" data-filter="tecnologia">Next.js</a>
+              <a href="#" class="ol-sb-tag" data-filter="ecommerce">E-commerce</a>
+              <a href="#" class="ol-sb-tag" data-filter="estrategia">Conversión</a>
+              <a href="#" class="ol-sb-tag" data-filter="diseno">Landing Page</a>
+              <a href="#" class="ol-sb-tag" data-filter="diseno">Rediseño</a>
+              <a href="#" class="ol-sb-tag" data-filter="estrategia">PYMES México</a>
+              <a href="#" class="ol-sb-tag" data-filter="ecommerce">Mercado Pago</a>
+              <a href="#" class="ol-sb-tag" data-filter="rendimiento">Core Web Vitals</a>
+            </div>
+          </div>
+
+        </aside>
+        <!-- /ol-blog-sidebar -->
+
+      </div>
+      <!-- /ol-blog-layout -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA BAND — antes del quicknav bottom
+       ============================================================ -->
+  <section class="ol-blog-cta-band">
+    <div class="ol-blog-cta-band-inner">
+      <div>
+        <p class="ol-blog-cta-band-label">¿Listo para actuar?</p>
+        <h2 class="ol-blog-cta-band-title">Lo que lees aquí lo aplicamos<br>en cada proyecto.</h2>
+        <p class="ol-blog-cta-band-sub">Si un artículo te hizo preguntarte cómo se aplica todo esto en tu negocio, la respuesta más rápida es una conversación directa. Sin compromiso, sin ventas de presión — solo claridad sobre lo que necesitas.</p>
+      </div>
+      <div class="ol-blog-cta-band-actions">
+        <a href="../cotizar/index.html" class="ol-blog-cta-band-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          Cotizar mi proyecto
+        </a>
+        <a href="https://wa.me/525547868402?text=Hola%2C%20vi%20el%20blog%20de%20OrigenLab%20y%20quiero%20platicar%20sobre%20mi%20proyecto" target="_blank" rel="noopener noreferrer" class="ol-blog-cta-band-wa">
+          <svg width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+          Escribirnos por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICKNAV BOTTOM (sin íconos) -->
+  <div class="ol-quicknav">
+    <div class="ol-quicknav-inner">
+      <a href="../servicios/desarrollo-web/index.html" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Sitios Corporativos</span>
+          <span class="ol-qn-sub">Diseño a medida</span>
+        </div>
+      </a>
+      <a href="../servicios/tiendas-en-linea/index.html" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Tienda en Línea</span>
+          <span class="ol-qn-sub">Vende desde el día uno</span>
+        </div>
+      </a>
+      <a href="../servicios/landing-pages/index.html" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Landing Pages</span>
+          <span class="ol-qn-sub">Más leads, más ventas</span>
+        </div>
+      </a>
+      <a href="../servicios/rediseno-web/index.html" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Rediseño Web</span>
+          <span class="ol-qn-sub">Actualiza tu presencia</span>
+        </div>
+      </a>
+      <a href="../portafolio/index.html" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Portafolio</span>
+          <span class="ol-qn-sub">Proyectos realizados</span>
+        </div>
+      </a>
+      <a href="../nosotros/index.html" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Nosotros</span>
+          <span class="ol-qn-sub">Quiénes somos</span>
+        </div>
+      </a>
+      <a href="../cotizar/index.html" class="ol-qn-item ol-qn-cta">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Iniciar Proyecto</span>
+          <span class="ol-qn-sub">Respuesta en 24 h</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="ol-footer">
+  <div class="ol-footer-top">
+    <a href="../index.html" class="ol-footer-logo">
+      Origen<span class="ol-footer-logo-dot">.</span>Lab
+    </a>
+    <p class="ol-footer-tagline">
+      Agencia de desarrollo web en México.<br>
+      Creamos sitios que generan resultados.
+    </p>
+    <ul class="ol-footer-contact-list">
+      <li>
+        <a href="mailto:hola@origenlab.mx" class="ol-fcl-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          hola@origenlab.mx
+        </a>
+      </li>
+      <li>
+        <a href="tel:+525547868402" class="ol-fcl-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +52 55 4786 8402
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/525547868402" target="_blank" rel="noopener noreferrer" class="ol-fcl-item ol-fcl-wa">
+          <svg width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+          WhatsApp
+        </a>
+      </li>
+      <li>
+        <span class="ol-fcl-item ol-fcl-static">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Ciudad de México, MX
+        </span>
+      </li>
+    </ul>
+  </div>
+  <div class="ol-footer-links">
+    <div>
+      <p class="ol-footer-col-title">Servicios</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="../servicios/desarrollo-web/index.html">Desarrollo Web</a></li>
+        <li><a href="../servicios/tiendas-en-linea/index.html">Tiendas en Línea</a></li>
+        <li><a href="../servicios/landing-pages/index.html">Landing Pages</a></li>
+        <li><a href="../servicios/rediseno-web/index.html">Rediseño Web</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Empresa</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="../nosotros/index.html">Nosotros</a></li>
+        <li><a href="../portafolio/index.html">Portafolio</a></li>
+        <li><a href="index.html">Blog</a></li>
+        <li><a href="../cotizar/index.html">Cotizar proyecto</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Contacto</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="../contacto/index.html">Formulario de contacto</a></li>
+        <li><a href="mailto:hola@origenlab.mx">hola@origenlab.mx</a></li>
+        <li><a href="tel:+525547868402">+52 55 4786 8402</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Legal</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="../aviso-de-privacidad/index.html">Aviso de privacidad</a></li>
+        <li><a href="../terminos/index.html">Términos de servicio</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ol-footer-bottom">
+    <p class="ol-footer-copy">© 2026 OrigenLab. Todos los derechos reservados.</p>
+    <div class="ol-footer-legal">
+      <a href="../aviso-de-privacidad/index.html">Privacidad</a>
+      <a href="../terminos/index.html">Términos</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WA Bubble -->
+<a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web.%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" class="wa-bubble" aria-label="Contáctanos por WhatsApp">
+  <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff">
+    <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 0 0 2.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0 0 16.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"></path>
+  </svg>
+</a>
+
+<!-- ============================================================
+     SCRIPTS
+     ============================================================ -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+    /* ---- Header + mobile menu ---- */
+    var toggle   = document.getElementById('ol-menu-toggle');
+    var panel    = document.getElementById('ol-mobile-panel');
+    var overlay  = document.getElementById('ol-mobile-overlay');
+    var closeBtn = document.getElementById('ol-mobile-close');
+    var header   = document.getElementById('ol-header');
+
+    function openMenu() {
+      toggle.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+      panel.classList.add('open');
+      overlay.classList.add('visible');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      panel.classList.remove('open');
+      overlay.classList.remove('visible');
+      document.body.style.overflow = '';
+    }
+
+    if (toggle)   toggle.addEventListener('click', function () { panel.classList.contains('open') ? closeMenu() : openMenu(); });
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    if (overlay)  overlay.addEventListener('click', closeMenu);
+
+    var mobileLinks = panel ? panel.querySelectorAll('a') : [];
+    for (var i = 0; i < mobileLinks.length; i++) mobileLinks[i].addEventListener('click', closeMenu);
+
+    var subToggles = document.querySelectorAll('[data-submenu]');
+    for (var j = 0; j < subToggles.length; j++) {
+      subToggles[j].addEventListener('click', function () {
+        this.classList.toggle('expanded');
+        var sub = this.nextElementSibling;
+        if (sub) sub.classList.toggle('open');
+      });
+    }
+
+    window.addEventListener('scroll', function () {
+      header.classList.toggle('scrolled', window.pageYOffset > 10);
+    }, { passive: true });
+
+    /* ---- Filtros de categoría ---- */
+    var filterBtns  = document.querySelectorAll('.ol-blog-filter');
+    var cards       = document.querySelectorAll('#ol-blog-grid .ol-blog-card');
+    var featured    = document.querySelector('.ol-blog-featured');
+    var sbCatItems  = document.querySelectorAll('.ol-sb-cat-item');
+    var sbTags      = document.querySelectorAll('.ol-sb-tag');
+
+    function applyFilter(cat) {
+      /* Botones de filtro */
+      filterBtns.forEach(function(b) { b.classList.toggle('active', b.getAttribute('data-cat') === cat); });
+
+      /* Featured: mostrar si cat = todos o coincide */
+      if (featured) {
+        var featCat = featured.getAttribute('data-cat');
+        featured.style.display = (cat === 'todos' || cat === featCat) ? '' : 'none';
+      }
+
+      /* Cards del grid */
+      var visible = 0;
+      cards.forEach(function(c) {
+        var match = cat === 'todos' || c.getAttribute('data-cat') === cat;
+        c.style.display = match ? '' : 'none';
+        if (match) visible++;
+      });
+    }
+
+    filterBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() { applyFilter(this.getAttribute('data-cat')); });
+    });
+
+    /* Categorías del sidebar también filtran */
+    sbCatItems.forEach(function(item) {
+      item.addEventListener('click', function(e) {
+        e.preventDefault();
+        applyFilter(this.getAttribute('data-filter'));
+        /* scroll suave al top de los artículos */
+        document.querySelector('.ol-blog-filters').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    /* Tags del sidebar también filtran */
+    sbTags.forEach(function(tag) {
+      tag.addEventListener('click', function(e) {
+        e.preventDefault();
+        applyFilter(this.getAttribute('data-filter'));
+        document.querySelector('.ol-blog-filters').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+  });
+</script>
+
+</body>
+</html>
