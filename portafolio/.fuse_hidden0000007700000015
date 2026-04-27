@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio | OrigenLab</title>
+  <meta name="description" content="Proyectos reales construidos por OrigenLab: sitios corporativos, tiendas en línea y landing pages con resultados medibles para empresas mexicanas.">
+  <link rel="canonical" href="https://origenlab.mx/portafolio/">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://origenlab.mx/portafolio/">
+  <meta property="og:title" content="Portafolio OrigenLab — proyectos reales en México">
+  <meta property="og:description" content="Sitios corporativos, tiendas en línea y landings construidas para clientes mexicanos.">
+  <meta property="og:image" content="https://origenlab.mx/og-image.jpg">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="OrigenLab">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Portafolio · OrigenLab">
+  <meta name="twitter:description" content="Proyectos reales con resultados medibles. No son mockups.">
+  <meta name="twitter:image" content="https://origenlab.mx/og-image.jpg">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <!-- Schema.org -->
+  
+  <!-- Fuentes: preconnect + direct link para evitar render-blocking -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../_astro/BaseLayout.xeR8R953.css?v20260426c">
+  <link rel="stylesheet" href="../_astro/premium-dark.css?v20260426c">
+  <script src="../_astro/ol-header.js?v20260426d" defer></script>
+  <!-- ALL COMPONENTS BELOW ARE IN premium-dark.css — NO INLINE CSS NEEDED
+       .ol-page-hero, .ol-portfolio-section, .ol-proj-*, .ol-showcase-*
+       ============================================================ -->
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.mx/#organization","name":"OrigenLab","url":"https://origenlab.mx","logo":"https://origenlab.mx/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"CollectionPage","@id":"https://origenlab.mx/portafolio/#page","url":"https://origenlab.mx/portafolio/","name":"Portafolio — OrigenLab","inLanguage":"es-MX"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.mx/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.mx/portafolio/"}]}]}</script></head>
+<body>
+
+<a class="ol-skip-link" href="#main">Saltar al contenido</a>
+<div class="ol-topbar">
+  <div class="ol-topbar-inner">
+    <div class="ol-topbar-left">
+      <a href="mailto:hola@origenlab.mx" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        hola@origenlab.mx
+      </a>
+      <span class="ol-topbar-sep"></span>
+      <a href="tel:+525547868402" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        +52 55 4786 8402
+      </a>
+    </div>
+    <div class="ol-topbar-center">
+      <span class="ol-topbar-promo">
+        <span class="ol-topbar-dot"></span>
+        Atención personalizada  ·  Ciudad de México
+      </span>
+    </div>
+    <div class="ol-topbar-right">
+      <a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web" target="_blank" rel="noopener noreferrer" class="ol-topbar-wa">
+        <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor">
+          <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+<header class="ol-header" id="ol-header">
+  <div class="ol-header-inner">
+    <a href="/" class="ol-header-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
+    </a>
+    <nav class="ol-nav" aria-label="Navegación principal">
+      <ul class="ol-nav-list">
+        <li><a href="/" class="ol-nav-link">Inicio</a></li>
+        <li class="ol-has-dropdown">
+          <a href="/servicios/" class="ol-nav-link">
+            Servicios
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/servicios/desarrollo-web/" class="ol-dropdown-link">Desarrollo Web</a></li>
+              <li><a href="/servicios/tiendas-en-linea/" class="ol-dropdown-link">Tiendas en Línea</a></li>
+              <li><a href="/servicios/landing-pages/" class="ol-dropdown-link">Landing Pages</a></li>
+              <li><a href="/servicios/rediseno-web/" class="ol-dropdown-link">Rediseño Web</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="ol-has-dropdown">
+          <a href="/portafolio/" class="ol-nav-link active">
+            Portafolio
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link">Equipos Contra Incendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link ol-dropdown-sub">— Gama de México</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link ol-dropdown-sub">— MESECI</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link ol-dropdown-sub">— LGA Contraincendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-dropdown-link ol-dropdown-sub">— MANEXT</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-dropdown-link ol-dropdown-sub">— BOMBERO.MX</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="/nosotros/" class="ol-nav-link">Nosotros</a></li>
+        <li><a href="/blog/" class="ol-nav-link">Blog</a></li>
+        <li><a href="/contacto/" class="ol-nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="/cotizar/" class="ol-header-cta">Cotizar proyecto →</a>
+    <button class="ol-menu-toggle" id="ol-menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+    </button>
+  </div>
+</header>
+<div class="ol-mobile-overlay" id="ol-mobile-overlay"></div>
+<nav class="ol-mobile-panel" id="ol-mobile-panel" aria-label="Menú móvil">
+  <div class="ol-mobile-header">
+    <a href="/" class="ol-mobile-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
+    </a>
+    <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú">
+      <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <ul class="ol-mobile-nav">
+    <li><a href="/" class="ol-mobile-link">Inicio</a></li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Servicios</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/servicios/desarrollo-web/" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Portafolio</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/portafolio/" class="ol-mobile-link ol-mobile-sublink">Todo el Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/" class="ol-mobile-link ol-mobile-sublink">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Gama de México</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MESECI</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— LGA Contraincendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MANEXT</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— BOMBERO.MX</a></li>
+      </ul>
+    </li>
+    <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
+    <li><a href="/blog/" class="ol-mobile-link">Blog</a></li>
+    <li><a href="/contacto/" class="ol-mobile-link">Contacto</a></li>
+  </ul>
+  <div class="ol-mobile-footer">
+    <a href="/cotizar/" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a>
+  </div>
+</nav>
+
+<!-- ============================================================
+     MAIN
+     ============================================================ -->
+<!-- ============================================================
+     BREADCRUMB — ol-bc
+     ============================================================ -->
+<nav class="ol-bc-wrap" aria-label="Migas de pan">
+  <div class="ol-bc">
+    <ol class="ol-bc-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/" itemprop="item" class="ol-bc-home"><span itemprop="name">Inicio</span></a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item ol-bc-current" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name">Portafolio</span>
+        <meta itemprop="position" content="2" />
+      </li>
+    </ol>
+  </div>
+</nav>
+<!-- ======= END BREADCRUMB ======= -->
+<main id="main">
+
+  <!-- PAGE HERO -->
+  <section class="ol-page-hero">
+    <div class="ol-page-hero-inner">
+      <div class="ol-page-hero-grid">
+
+        <div class="ol-page-hero-left">
+          <span class="ol-eyebrow">Trabajo realizado</span>
+          <h1 class="ol-page-hero-title">Proyectos reales.<br>Resultados concretos.</h1>
+          <p class="ol-page-hero-sub">Cada proyecto tiene un origen: un negocio con objetivos claros y un sitio que tenía que trabajar por él. Esto es lo que hemos construido.</p>
+        </div>
+
+        <div class="ol-page-hero-right">
+          <p class="ol-page-hero-copy">No mostramos maquetas ni conceptos genéricos. Cada proyecto en este portafolio es un sitio funcional, entregado y en operación. Detrás de cada uno hay una estrategia, un proceso de diseño y decisiones técnicas concretas orientadas a resultados.</p>
+          <p class="ol-page-hero-copy">Trabajamos con empresas de distintos sectores — manufactura, eventos, servicios, entretenimiento — con el mismo nivel de atención y detalle en cada caso. El objetivo siempre es el mismo: un sitio que le funcione de verdad al negocio.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK NAV TOP -->
+  <div class="ol-quicknav">
+    <div class="ol-quicknav-inner">
+
+      <a href="/servicios/desarrollo-web/" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Desarrollo Web</span>
+          <span class="ol-qn-sub">Sitios corporativos</span>
+        </span>
+      </a>
+
+      <a href="/servicios/tiendas-en-linea/" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Tiendas en Línea</span>
+          <span class="ol-qn-sub">E-commerce · Pagos MX</span>
+        </span>
+      </a>
+
+      <a href="/servicios/landing-pages/" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Landing Pages</span>
+          <span class="ol-qn-sub">Alta conversión</span>
+        </span>
+      </a>
+
+      <a href="/servicios/rediseno-web/" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Rediseño Web</span>
+          <span class="ol-qn-sub">Moderniza tu sitio</span>
+        </span>
+      </a>
+
+      <a href="/portafolio/" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Portafolio</span>
+          <span class="ol-qn-sub">Proyectos realizados</span>
+        </span>
+      </a>
+
+      <a href="/nosotros/" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Nosotros</span>
+          <span class="ol-qn-sub">Equipo &amp; proceso</span>
+        </span>
+      </a>
+
+      <a href="/cotizar/" class="ol-qn-item ol-qn-cta">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Cotizar Proyecto</span>
+          <span class="ol-qn-sub">Solicitar propuesta</span>
+        </span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- PORTAFOLIO — GRID DE PROYECTOS -->
+  <section class="ol-portfolio-section">
+    <div class="ol-portfolio-inner">
+
+      <!-- Encabezado 2 columnas -->
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Proyectos</span>
+          <h2 class="ol-section-title">Sitios que construimos<br>para empresas reales.</h2>
+          <p class="ol-section-sub">Proyectos entregados, funcionando y generando resultados para negocios en México.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Cada proyecto que mostramos aquí pasó por nuestro proceso completo: descubrimiento, estrategia visual, desarrollo, pruebas y lanzamiento. No subcontratamos. No usamos plantillas. Cada sitio es construido desde cero con el negocio y su audiencia en mente.</p>
+          <p class="ol-sh-copy">Los resultados que ves — páginas indexadas, contactos generados, catálogos funcionales — son los mismos que el cliente experimenta hoy. Eso es lo que entregamos.</p>
+        </div>
+      </div>
+
+      <!-- Grid de proyectos -->
+      <div class="ol-proj-grid">
+
+        <!-- 01 CADECA -->
+        <div class="ol-proj-card" style="--proj-accent: #E05800;">
+          <div class="ol-proj-thumb">
+            <img src="../img/portafolio/cadeca-1.avif" alt="CADECA — Sitio corporativo B2B" width="600" height="338" loading="lazy">
+            <span class="ol-proj-badge" style="color:#E05800;">127 páginas indexadas</span>
+          </div>
+          <div class="ol-proj-body">
+            <span class="ol-proj-cat">Sitio Corporativo B2B</span>
+            <h3 class="ol-proj-name">CADECA</h3>
+            <p class="ol-proj-desc">Sitio completo para fabricante de cajas de cartón en CDMX. 127 páginas, catálogo de 30+ SKUs, zonas de cobertura y cotizador integrado.</p>
+            <div class="ol-proj-tags">
+              <span class="ol-proj-tag">Astro</span>
+              <span class="ol-proj-tag">B2B</span>
+              <span class="ol-proj-tag">Catálogo</span>
+              <span class="ol-proj-tag">Cotizador</span>
+            </div>
+            <a href="https://cajas-de-carton.com" class="ol-proj-link" target="_blank" rel="noopener noreferrer">Ver sitio →</a>
+          </div>
+        </div>
+
+        <!-- 02 REDEIL -->
+        <div class="ol-proj-card" style="--proj-accent: #7C3AED;">
+          <div class="ol-proj-thumb">
+            <img src="../img/portafolio/redeil-2.avif" alt="REDEIL — Sitio de servicios con cotizador" width="600" height="338" loading="lazy">
+            <span class="ol-proj-badge" style="color:#7C3AED;">+contactos desde semana 1</span>
+          </div>
+          <div class="ol-proj-body">
+            <span class="ol-proj-cat">Sitio de Servicios + Cotizador</span>
+            <h3 class="ol-proj-name">REDEIL</h3>
+            <p class="ol-proj-desc">Rediseño web para empresa líder en renta de iluminación para eventos en CDMX. Catálogo de equipos, galería y cotizador por WhatsApp.</p>
+            <div class="ol-proj-tags">
+              <span class="ol-proj-tag">Astro</span>
+              <span class="ol-proj-tag">Rediseño</span>
+              <span class="ol-proj-tag">Cotizador</span>
+              <span class="ol-proj-tag">Eventos</span>
+            </div>
+            <a href="https://rentadeiluminacion.com" class="ol-proj-link" target="_blank" rel="noopener noreferrer">Ver sitio →</a>
+          </div>
+        </div>
+
+        <!-- 03 BRINCOLINS -->
+        <div class="ol-proj-card" style="--proj-accent: #F59E0B;">
+          <div class="ol-proj-thumb">
+            <img src="../img/portafolio/brincolins-1.avif" alt="BRINCOLINS — Directorio de inflables" width="600" height="338" loading="lazy">
+            <span class="ol-proj-badge" style="color:#F59E0B;">Presencia local CDMX + EdoMex</span>
+          </div>
+          <div class="ol-proj-body">
+            <span class="ol-proj-cat">Directorio + Reservas</span>
+            <h3 class="ol-proj-name">BRINCOLINS</h3>
+            <p class="ol-proj-desc">Directorio de renta de inflables para fiestas en CDMX y Estado de México. 14 inflables con páginas individuales y cotizador integrado.</p>
+            <div class="ol-proj-tags">
+              <span class="ol-proj-tag">Astro</span>
+              <span class="ol-proj-tag">Directorio</span>
+              <span class="ol-proj-tag">Entretenimiento</span>
+              <span class="ol-proj-tag">Presencia local</span>
+            </div>
+            <a href="https://brincolins.com" class="ol-proj-link" target="_blank" rel="noopener noreferrer">Ver sitio →</a>
+          </div>
+        </div>
+
+        <!-- 04 Gama de México -->
+        <a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-proj-card" style="--proj-accent: #C0392B; text-decoration: none;">
+          <div class="ol-proj-thumb ol-proj-thumb-img" style="height: 220px; overflow: hidden; position: relative; background: #0A0A12;">
+            <img src="../img/equipos-contra-incendios/gamademexico/gamademexico-01.webp" alt="Gama de México — sitio corporativo de equipos contra incendios" width="1543" height="854" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit: cover; object-position: top center; display: block;">
+            <span class="ol-proj-badge" style="color:#C0392B;">Caso de estudio · Ver detalle</span>
+          </div>
+          <div class="ol-proj-body">
+            <span class="ol-proj-cat">Sitio Corporativo · Distribución Industrial</span>
+            <h3 class="ol-proj-name">Gama de México</h3>
+            <p class="ol-proj-desc">Sitio corporativo para distribuidor autorizado de Elkhart Brass en México. Catálogo técnico de monitores, boquillas, mangueras y válvulas certificadas UL/FM, con cobertura en CDMX, Querétaro y el Bajío.</p>
+            <div class="ol-proj-tags">
+              <span class="ol-proj-tag">Corporativo</span>
+              <span class="ol-proj-tag">B2B Industrial</span>
+              <span class="ol-proj-tag">Catálogo técnico</span>
+              <span class="ol-proj-tag">Multi-sucursal</span>
+            </div>
+            <span class="ol-proj-link" style="color:#C0392B;">Ver caso completo →</span>
+          </div>
+        </a>
+
+        <!-- 05 Eventech -->
+        <div class="ol-proj-card" style="--proj-accent: #10B981;">
+          <div class="ol-proj-thumb">
+            <div class="ol-proj-thumb-placeholder">
+              <span class="ol-proj-thumb-initial" style="--proj-accent: #10B981;">E</span>
+            </div>
+            <span class="ol-proj-badge" style="color:#10B981;">Catálogo digital completo</span>
+          </div>
+          <div class="ol-proj-body">
+            <span class="ol-proj-cat">Catálogo de Servicios</span>
+            <h3 class="ol-proj-name">Eventech</h3>
+            <p class="ol-proj-desc">Sitio web para empresa de renta de equipo para eventos con catálogo completo de productos, galería y sistema de cotización vía WhatsApp.</p>
+            <div class="ol-proj-tags">
+              <span class="ol-proj-tag">Astro</span>
+              <span class="ol-proj-tag">Catálogo</span>
+              <span class="ol-proj-tag">Eventos</span>
+            </div>
+            <a href="https://eventech.mx" class="ol-proj-link" target="_blank" rel="noopener noreferrer">Ver sitio →</a>
+          </div>
+        </div>
+
+        <!-- 06 CTA Card -->
+        <a href="/cotizar/" class="ol-proj-card ol-proj-card-cta">
+          <div class="ol-proj-cta-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+          </div>
+          <p class="ol-proj-cta-title">Tu empresa, aquí</p>
+          <p class="ol-proj-cta-sub">¿Tu negocio necesita presencia digital profesional?</p>
+          <span class="ol-proj-cta-btn">Cotizar proyecto →</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWCASE — Detalle 2 columnas por proyecto destacado -->
+  <section class="ol-showcase">
+    <div class="ol-showcase-inner">
+
+      <!-- Encabezado -->
+      <div class="ol-sh" style="margin-bottom: 2rem;">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Proyectos destacados</span>
+          <h2 class="ol-section-title">Un vistazo a<br>cómo trabajamos.</h2>
+          <p class="ol-section-sub">Tres proyectos, tres sectores distintos, un mismo estándar de entrega.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Más allá del diseño, cada proyecto refleja una metodología: entendemos primero el negocio, luego diseñamos y construimos. El resultado es un sitio que no solo se ve bien, sino que responde a objetivos reales.</p>
+          <p class="ol-sh-copy">Los tres proyectos a continuación muestran nuestra capacidad para resolver problemas muy distintos con la misma calidad de ejecución.</p>
+        </div>
+      </div>
+
+      <!-- 01 CADECA -->
+      <div class="ol-showcase-block">
+        <div class="ol-showcase-img">
+          <img src="../img/portafolio/cadeca-1.avif" alt="CADECA — Sitio B2B completo" width="1200" height="675" loading="lazy" decoding="async">
+        </div>
+        <div class="ol-showcase-info">
+          <p class="ol-showcase-num">01 — CADECA · Fabricante de cajas de cartón</p>
+          <h3 class="ol-showcase-title">127 páginas. Un catálogo B2B que vende.</h3>
+          <p class="ol-showcase-desc">CADECA necesitaba mucho más que una presencia básica: un sitio capaz de mostrar 30+ SKUs de productos con especificaciones técnicas, zonas de cobertura interactivas y un formulario de cotización que convirtiera visitantes en prospectos reales para su equipo de ventas.</p>
+          <ul class="ol-showcase-list">
+            <li>127 páginas indexadas con arquitectura de contenido estructurada</li>
+            <li>Catálogo de 30+ productos con fichas técnicas individuales</li>
+            <li>Mapa de zonas de cobertura en CDMX y Estado de México</li>
+            <li>Cotizador integrado con envío directo a WhatsApp y correo</li>
+            <li>Diseño B2B optimizado para credibilidad y conversión industrial</li>
+            <li>Velocidad de carga &lt; 1.5 s en móvil — construido con Astro</li>
+          </ul>
+          <a href="https://cajas-de-carton.com" class="ol-showcase-cta" target="_blank" rel="noopener noreferrer">Ver sitio en vivo →</a>
+        </div>
+      </div>
+
+      <!-- 02 REDEIL -->
+      <div class="ol-showcase-block">
+        <div class="ol-showcase-img">
+          <img src="../img/portafolio/redeil-2.avif" alt="REDEIL — Renta de iluminación para eventos" width="1200" height="675" loading="lazy" decoding="async">
+        </div>
+        <div class="ol-showcase-info">
+          <p class="ol-showcase-num">02 — REDEIL · Renta de iluminación para eventos</p>
+          <h3 class="ol-showcase-title">Rediseño que generó contactos desde la primera semana.</h3>
+          <p class="ol-showcase-desc">REDEIL tenía presencia digital, pero su sitio anterior no reflejaba el nivel de sus proyectos ni facilitaba el contacto con clientes potenciales. El rediseño completo se enfocó en mostrar su catálogo de equipos, su galería de eventos reales y en capturar leads de forma directa e inmediata.</p>
+          <ul class="ol-showcase-list">
+            <li>Rediseño visual completo alineado a la identidad de la marca</li>
+            <li>Catálogo de equipos de iluminación con fichas por categoría</li>
+            <li>Galería de eventos realizados con fotografía profesional</li>
+            <li>Sistema de cotización por WhatsApp integrado al flujo del sitio</li>
+            <li>Diseño responsivo optimizado para captación en móvil</li>
+            <li>Incremento real en solicitudes desde el día del lanzamiento</li>
+          </ul>
+          <a href="https://rentadeiluminacion.com" class="ol-showcase-cta" target="_blank" rel="noopener noreferrer">Ver sitio en vivo →</a>
+        </div>
+      </div>
+
+      <!-- 03 BRINCOLINS -->
+      <div class="ol-showcase-block">
+        <div class="ol-showcase-img">
+          <img src="../img/portafolio/brincolins-1.avif" alt="BRINCOLINS — Directorio de inflables CDMX" width="1200" height="675" loading="lazy" decoding="async">
+        </div>
+        <div class="ol-showcase-info">
+          <p class="ol-showcase-num">03 — BRINCOLINS · Directorio de inflables para fiestas</p>
+          <h3 class="ol-showcase-title">Un directorio local que conecta rentas con familias.</h3>
+          <p class="ol-showcase-desc">BRINCOLINS es un proyecto que combina directorio, catálogo de productos y captación de prospectos para el sector de entretenimiento infantil. Cada inflable tiene su propia página con descripción, precios, disponibilidad por zona y formulario de reserva, todo optimizado para búsquedas locales en CDMX y Estado de México.</p>
+          <ul class="ol-showcase-list">
+            <li>14 páginas individuales de inflables con información detallada</li>
+            <li>Directorio de proveedores locales por municipio y alcaldía</li>
+            <li>Cotizador y formulario de reserva integrado por unidad</li>
+            <li>Arquitectura de contenido geolocalizada para presencia local</li>
+            <li>Diseño amigable y visualmente atractivo para audiencia familiar</li>
+            <li>Construido con Astro — carga ultrarrápida en móvil</li>
+          </ul>
+          <a href="https://brincolins.com" class="ol-showcase-cta" target="_blank" rel="noopener noreferrer">Ver sitio en vivo →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FAQ + FORMULARIO WHATSAPP
+       ============================================================ -->
+  <style>
+  /* ---- FAQ Section ---- */
+  .ol-faq-section {
+    background: var(--bg-alt, #0D0D16);
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .ol-faq-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(201,168,76,0.3) 50%, transparent 100%);
+  }
+  .ol-faq-inner {
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  .ol-faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+  @media (max-width: 900px) {
+    .ol-faq-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  }
+  .ol-faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .ol-faq-col-label {
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(240,240,245,0.35);
+    margin-bottom: 1.25rem;
+  }
+  .ol-faq-item {
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+  .ol-faq-item:first-of-type { border-top: 1px solid rgba(255,255,255,0.07); }
+  .ol-faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 1.15rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    cursor: pointer;
+    text-align: left;
+    color: #F0F0F5;
+    font-size: 0.95rem;
+    font-weight: 500;
+    font-family: 'Inter', -apple-system, sans-serif;
+    line-height: 1.4;
+  }
+  .ol-faq-question:hover { color: #C9A84C; }
+  .ol-faq-question.active { color: #C9A84C; }
+  .ol-faq-icon {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ol-faq-question.active .ol-faq-icon {
+    border-color: #C9A84C;
+    background: rgba(201,168,76,0.12);
+    transform: rotate(45deg);
+  }
+  .ol-faq-icon svg { display: block; }
+  .ol-faq-answer {
+    max-height: 0;
+    overflow: hidden;
+  }
+  .ol-faq-answer-inner {
+    padding: 0 0 1.25rem;
+    font-size: 0.9rem;
+    color: rgba(240,240,245,0.6);
+    line-height: 1.7;
+    margin: 0;
+  }
+  .ol-faq-form-wrap {
+    background: #131320;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 2.25rem;
+    position: sticky;
+    top: 120px;
+  }
+  .ol-faq-form-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #25D366;
+    background: rgba(37,211,102,0.1);
+    border: 1px solid rgba(37,211,102,0.2);
+    border-radius: 980px;
+    padding: 0.35rem 0.85rem;
+    margin-bottom: 1.25rem;
+  }
+  .ol-faq-form-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #F0F0F5;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.45rem;
+    line-height: 1.25;
+  }
+  .ol-faq-form-sub {
+    font-size: 0.875rem;
+    color: rgba(240,240,245,0.5);
+    line-height: 1.55;
+    margin: 0 0 1.75rem;
+  }
+  .ol-faq-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .ol-faq-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .ol-faq-field label {
+    font-size: 11.5px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: rgba(240,240,245,0.45);
+  }
+  .ol-faq-field input,
+  .ol-faq-field select,
+  .ol-faq-field textarea {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    padding: 0.7rem 0.9rem;
+    font-size: 0.9rem;
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: #F0F0F5;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .ol-faq-field input::placeholder,
+  .ol-faq-field textarea::placeholder { color: rgba(240,240,245,0.25); }
+  .ol-faq-field select option { background: #131320; color: #F0F0F5; }
+  .ol-faq-field input:focus,
+  .ol-faq-field select:focus,
+  .ol-faq-field textarea:focus {
+    border-color: rgba(201,168,76,0.45);
+    background: rgba(201,168,76,0.04);
+  }
+  .ol-faq-field textarea { resize: vertical; min-height: 90px; }
+  .ol-faq-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 560px) { .ol-faq-form-row { grid-template-columns: 1fr; } }
+  .ol-faq-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    width: 100%;
+    padding: 0.85rem 1.5rem;
+    background: #25D366;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .ol-faq-submit:hover { background: #1ebe5a; transform: translateY(-1px); }
+  .ol-faq-form-note {
+    font-size: 11px;
+    color: rgba(240,240,245,0.3);
+    text-align: center;
+    margin-top: 0.65rem;
+    line-height: 1.5;
+  }
+  </style>
+
+  <section class="ol-faq-section">
+    <div class="ol-faq-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Preguntas Frecuentes</span>
+          <h2 class="ol-section-title">Lo que nos preguntan<br>antes de arrancar</h2>
+          <p class="ol-section-sub">Dudas comunes sobre proyectos, tiempos, tecnología y proceso. Si no encuentras tu respuesta, escríbenos directo.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Contratar desarrollo web es una decisión importante. Por eso reunimos aquí las preguntas que más nos hacen cuando alguien está evaluando trabajar con nosotros — sobre cómo trabajamos, qué incluye cada proyecto y qué pueden esperar del proceso completo.</p>
+          <p class="ol-sh-copy">Si tienes una pregunta que no está aquí, escríbenos. Respondemos de manera personalizada y sin compromiso. Preferimos una conversación real a una respuesta genérica.</p>
+        </div>
+      </div>
+
+      <div class="ol-faq-grid">
+
+        <!-- Columna izquierda: Acordeón FAQ -->
+        <div>
+          <p class="ol-faq-col-label">Preguntas frecuentes</p>
+          <div class="ol-faq-list" id="ol-faq-list-prt">
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="p0">
+                ¿Pueden mostrarme más proyectos antes de contratar?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-p0">
+                <p class="ol-faq-answer-inner">Sí. El portafolio aquí mostrado representa una selección de proyectos. Si buscas algo específico — por sector, tipo de sitio o funcionalidad — cuéntanoslo y con gusto compartimos referentes más alineados a tu caso antes de dar cualquier paso.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="p1">
+                ¿Trabajan con empresas de cualquier industria?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-p1">
+                <p class="ol-faq-answer-inner">Sí. Hemos trabajado con manufactura, eventos, entretenimiento, servicios profesionales, retail y más. El proceso de descubrimiento que hacemos al inicio de cada proyecto nos permite entender cualquier sector y diseñar con propósito para esa audiencia específica.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="p2">
+                ¿Cómo manejan los tiempos de entrega?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-p2">
+                <p class="ol-faq-answer-inner">Los tiempos dependen del alcance del proyecto. Trabajamos con calendario comprometido por escrito desde el inicio y con entregas iterativas en entorno de pruebas para que veas el avance real durante todo el proceso — sin sorpresas.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="p3">
+                ¿Qué información necesitan para empezar?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-p3">
+                <p class="ol-faq-answer-inner">Para la primera conversación solo necesitamos entender tu negocio, tu objetivo y lo que esperas del sitio. A partir de ahí hacemos el descubrimiento completo: audiencia, competencia, estructura, contenido y diseño. No es necesario que llegues con todo resuelto.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="p4">
+                ¿Qué tecnología usan para construir los sitios?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-p4">
+                <p class="ol-faq-answer-inner">Usamos principalmente Astro y Next.js, tecnologías de alto rendimiento que permiten sitios ultrarrápidos, bien estructurados y fáciles de mantener. La elección depende de cada proyecto — siempre recomendamos la tecnología que mejor se adapta al caso, no la que nos resulte más cómoda.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="p5">
+                ¿Qué pasa después del lanzamiento?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-p5">
+                <p class="ol-faq-answer-inner">Todo proyecto incluye un período de ajustes post-entrega. Para el largo plazo ofrecemos planes de mantenimiento mensual que cubren actualizaciones, correcciones y mejoras continuas. Nos interesa crecer contigo en el tiempo, no solo entregar y desaparecer.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="p6">
+                ¿Pueden hacer sitios con funcionalidades muy específicas?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-p6">
+                <p class="ol-faq-answer-inner">Sí. Desde cotizadores complejos y directorios con filtros, hasta integraciones con CRM, sistemas de reservas y catálogos técnicos. Si tienes un requerimiento muy específico, cuéntanoslo — analizamos la viabilidad técnica antes de comprometer tiempos o costos.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="p7">
+                ¿Cómo se cotiza un proyecto como los del portafolio?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-p7">
+                <p class="ol-faq-answer-inner">El costo varía según alcance, número de páginas, funcionalidades y nivel de diseño. Cada cotización se construye a la medida según las necesidades reales de tu proyecto. Siempre entregamos propuesta detallada y por escrito, sin cargos ocultos, antes de comenzar.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Columna derecha: Formulario WhatsApp -->
+        <div>
+          <div class="ol-faq-form-wrap">
+            <span class="ol-faq-form-badge">
+              <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+              Contáctanos por WhatsApp
+            </span>
+            <h3 class="ol-faq-form-title">¿Listo para empezar<br>tu proyecto?</h3>
+            <p class="ol-faq-form-sub">Cuéntanos brevemente qué necesitas y te respondemos con una propuesta clara, por escrito y sin compromiso.</p>
+
+            <form class="ol-faq-form" id="ol-wa-form-prt" novalidate>
+              <div class="ol-faq-form-row">
+                <div class="ol-faq-field">
+                  <label for="prt-nombre">Tu nombre</label>
+                  <input type="text" id="prt-nombre" placeholder="Ej. Carlos García" autocomplete="given-name">
+                </div>
+                <div class="ol-faq-field">
+                  <label for="prt-empresa">Empresa / Negocio</label>
+                  <input type="text" id="prt-empresa" placeholder="Nombre de tu empresa">
+                </div>
+              </div>
+              <div class="ol-faq-field">
+                <label for="prt-tipo">Tipo de proyecto</label>
+                <select id="prt-tipo">
+                  <option value="" disabled selected>Selecciona una opción</option>
+                  <option value="Sitio web corporativo">Sitio web corporativo</option>
+                  <option value="Tienda en línea / E-commerce">Tienda en línea / E-commerce</option>
+                  <option value="Landing page">Landing page</option>
+                  <option value="Rediseño de sitio existente">Rediseño de sitio existente</option>
+                  <option value="Directorio o catálogo">Directorio o catálogo</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+              <div class="ol-faq-field">
+                <label for="prt-mensaje">¿Qué necesitas?</label>
+                <textarea id="prt-mensaje" placeholder="Describe brevemente tu proyecto o la duda que tienes..."></textarea>
+              </div>
+              <button type="submit" class="ol-faq-submit">
+                <svg width="17" height="17" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+                Enviar por WhatsApp
+              </button>
+              <p class="ol-faq-form-note">Al enviar, se abrirá WhatsApp con tu mensaje listo. Respondemos en menos de 24 h.</p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+  (function() {
+    var btns = document.querySelectorAll('#ol-faq-list-prt .ol-faq-question');
+    btns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var idx = btn.getAttribute('data-faq');
+        var answer = document.getElementById('faq-ans-' + idx);
+        var isOpen = btn.classList.contains('active');
+        btns.forEach(function(b) {
+          b.classList.remove('active');
+          var a = document.getElementById('faq-ans-' + b.getAttribute('data-faq'));
+          if (a) a.style.maxHeight = null;
+        });
+        if (!isOpen && answer) {
+          btn.classList.add('active');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+    document.getElementById('ol-wa-form-prt').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var nombre  = document.getElementById('prt-nombre').value.trim();
+      var empresa = document.getElementById('prt-empresa').value.trim();
+      var tipo    = document.getElementById('prt-tipo').value;
+      var mensaje = document.getElementById('prt-mensaje').value.trim();
+      var partes  = ['Hola OrigenLab, me contacto desde su portafolio.'];
+      if (nombre)  partes.push('*Nombre:* ' + nombre);
+      if (empresa) partes.push('*Empresa:* ' + empresa);
+      if (tipo)    partes.push('*Tipo de proyecto:* ' + tipo);
+      if (mensaje) partes.push('*Descripción:* ' + mensaje);
+      partes.push('Me gustaría recibir más información. ¡Gracias!');
+      var url = 'https://wa.me/525547868402?text=' + encodeURIComponent(partes.join('\n'));
+      window.open(url, '_blank', 'noopener,noreferrer');
+    });
+  })();
+  </script>
+
+  <!-- QUICKNAV BOTTOM -->
+  <div class="ol-quicknav">
+    <div class="ol-quicknav-inner">
+      <a href="/servicios/desarrollo-web/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Sitios Corporativos</span>
+          <span class="ol-qn-sub">Diseño a medida</span>
+        </div>
+      </a>
+      <a href="/servicios/tiendas-en-linea/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Tienda en Línea</span>
+          <span class="ol-qn-sub">Vende desde el día uno</span>
+        </div>
+      </a>
+      <a href="/servicios/landing-pages/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Landing Pages</span>
+          <span class="ol-qn-sub">Más leads, más ventas</span>
+        </div>
+      </a>
+      <a href="/servicios/rediseno-web/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Rediseño Web</span>
+          <span class="ol-qn-sub">Actualiza tu presencia</span>
+        </div>
+      </a>
+      <a href="/nosotros/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Nosotros</span>
+          <span class="ol-qn-sub">Quiénes somos</span>
+        </div>
+      </a>
+      <a href="/contacto/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Contacto</span>
+          <span class="ol-qn-sub">Escríbenos directo</span>
+        </div>
+      </a>
+      <a href="/cotizar/" class="ol-qn-item ol-qn-cta">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Iniciar Proyecto</span>
+          <span class="ol-qn-sub">Solicitar propuesta</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="ol-footer">
+  <div class="ol-footer-top">
+    <a href="/" class="ol-footer-logo">
+      Origen<span class="ol-footer-logo-dot">.</span>Lab
+    </a>
+    <p class="ol-footer-tagline">
+      Agencia de desarrollo web en México.<br>
+      Creamos sitios que generan resultados.
+    </p>
+    <ul class="ol-footer-contact-list">
+      <li>
+        <a href="mailto:hola@origenlab.mx" class="ol-fcl-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          hola@origenlab.mx
+        </a>
+      </li>
+      <li>
+        <a href="tel:+525547868402" class="ol-fcl-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +52 55 4786 8402
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/525547868402" target="_blank" rel="noopener noreferrer" class="ol-fcl-item ol-fcl-wa">
+          <svg width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+          WhatsApp
+        </a>
+      </li>
+      <li>
+        <span class="ol-fcl-item ol-fcl-static">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Ciudad de México, MX
+        </span>
+      </li>
+    </ul>
+  </div>
+  <div class="ol-footer-links">
+    <div>
+      <p class="ol-footer-col-title">Servicios</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/servicios/desarrollo-web/">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/">Rediseño Web</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Empresa</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/nosotros/">Nosotros</a></li>
+        <li><a href="/portafolio/">Portafolio</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/cotizar/">Cotizar proyecto</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Contacto</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/contacto/">Formulario de contacto</a></li>
+        <li><a href="mailto:hola@origenlab.mx">hola@origenlab.mx</a></li>
+        <li><a href="tel:+525547868402">+52 55 4786 8402</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Legal</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/aviso-de-privacidad/">Aviso de privacidad</a></li>
+        <li><a href="/terminos/">Términos de servicio</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ol-footer-bottom">
+    <p class="ol-footer-copy">© 2026 OrigenLab. Todos los derechos reservados.</p>
+    <div class="ol-footer-legal">
+      <a href="/aviso-de-privacidad/">Privacidad</a>
+      <a href="/terminos/">Términos</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WA Bubble -->
+<a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web.%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" class="wa-bubble" aria-label="Contáctanos por WhatsApp">
+  <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff">
+    <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 0 0 2.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0 0 16.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"></path>
+  </svg>
+</a>
+
+<!-- ============================================================
+     SCRIPTS
+     ============================================================ -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var toggle   = document.getElementById('ol-menu-toggle');
+    var panel    = document.getElementById('ol-mobile-panel');
+    var overlay  = document.getElementById('ol-mobile-overlay');
+    var closeBtn = document.getElementById('ol-mobile-close');
+    var header   = document.getElementById('ol-header');
+
+    function openMenu() {
+      toggle.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+      panel.classList.add('open');
+      overlay.classList.add('visible');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      panel.classList.remove('open');
+      overlay.classList.remove('visible');
+      document.body.style.overflow = '';
+    }
+
+    if (toggle)   toggle.addEventListener('click', function () { panel.classList.contains('open') ? closeMenu() : openMenu(); });
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    if (overlay)  overlay.addEventListener('click', closeMenu);
+
+    var mobileLinks = panel ? panel.querySelectorAll('a') : [];
+    for (var i = 0; i < mobileLinks.length; i++) mobileLinks[i].addEventListener('click', closeMenu);
+
+    var subToggles = document.querySelectorAll('[data-submenu]');
+    for (var j = 0; j < subToggles.length; j++) {
+      subToggles[j].addEventListener('click', function () {
+        this.classList.toggle('expanded');
+        var sub = this.nextElementSibling;
+        if (sub) sub.classList.toggle('open');
+      });
+    }
+
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 10) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    }, { passive: true });
+  });
+</script>
+
+</body>
+</html>

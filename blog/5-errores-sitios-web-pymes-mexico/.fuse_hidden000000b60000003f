@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5 errores que cometen las pymes mexicanas en su sitio web | Blog OrigenLab</title>
+  <meta name="description" content="Los errores más comunes en sitios web de empresas mexicanas y cómo evitarlos. Desde CTAs invisibles hasta formularios que nadie completa.">
+  <link rel="canonical" href="https://origenlab.mx/blog/5-errores-sitios-web-pymes-mexico/">
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://origenlab.mx/blog/5-errores-sitios-web-pymes-mexico/">
+  <meta property="og:title" content="5 errores que cometen las pymes mexicanas en su sitio web">
+  <meta property="og:description" content="Los errores más comunes en sitios web de empresas mexicanas y cómo evitarlos.">
+  <meta property="og:image" content="https://origenlab.mx/og-image.jpg">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="OrigenLab">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="5 errores en sitios web de pymes mexicanas">
+  <meta name="twitter:description" content="Los errores más comunes y cómo evitarlos.">
+  <meta name="twitter:image" content="https://origenlab.mx/og-image.jpg">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <!-- Schema.org Article -->
+  
+  <!-- Fuentes: preconnect + direct link para evitar render-blocking -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../_astro/BaseLayout.xeR8R953.css?v20260426c">
+  <link rel="stylesheet" href="../../_astro/premium-dark.css?v20260426c">
+  <script src="../../_astro/ol-header.js?v20260426d" defer></script>
+  <!-- Componentes en _astro/premium-dark.css -->
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.mx/#organization","name":"OrigenLab","url":"https://origenlab.mx","logo":"https://origenlab.mx/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"BlogPosting","@id":"https://origenlab.mx/blog/5-errores-sitios-web-pymes-mexico/#blogposting","mainEntityOfPage":"https://origenlab.mx/blog/5-errores-sitios-web-pymes-mexico/","headline":"5 errores que cometen las pymes mexicanas en su sitio web","description":"Los errores más comunes en sitios web de empresas mexicanas y cómo evitarlos para no perder clientes.","image":"https://origenlab.mx/og-image.jpg","url":"https://origenlab.mx/blog/5-errores-sitios-web-pymes-mexico/","datePublished":"2026-03-12","dateModified":"2026-04-21","inLanguage":"es-MX","author":{"@type":"Organization","name":"OrigenLab","url":"https://origenlab.mx"},"publisher":{"@type":"Organization","name":"OrigenLab","logo":{"@type":"ImageObject","url":"https://origenlab.mx/logo.svg"}}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.mx/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://origenlab.mx/blog/"},{"@type":"ListItem","position":3,"name":"5 errores que cometen las pymes mexicanas en su sitio web","item":"https://origenlab.mx/blog/5-errores-sitios-web-pymes-mexico/"}]}]}</script></head>
+<body>
+
+<a class="ol-skip-link" href="#main">Saltar al contenido</a>
+<div class="ol-topbar">
+  <div class="ol-topbar-inner">
+    <div class="ol-topbar-left">
+      <a href="mailto:hola@origenlab.mx" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        hola@origenlab.mx
+      </a>
+      <span class="ol-topbar-sep"></span>
+      <a href="tel:+525547868402" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        +52 55 4786 8402
+      </a>
+    </div>
+    <div class="ol-topbar-center">
+      <span class="ol-topbar-promo">
+        <span class="ol-topbar-dot"></span>
+        Atención personalizada  ·  Ciudad de México
+      </span>
+    </div>
+    <div class="ol-topbar-right">
+      <a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web" target="_blank" rel="noopener noreferrer" class="ol-topbar-wa">
+        <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor">
+          <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+<header class="ol-header" id="ol-header">
+  <div class="ol-header-inner">
+    <a href="/" class="ol-header-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
+    </a>
+    <nav class="ol-nav" aria-label="Navegación principal">
+      <ul class="ol-nav-list">
+        <li><a href="/" class="ol-nav-link">Inicio</a></li>
+        <li class="ol-has-dropdown">
+          <a href="/servicios/" class="ol-nav-link">
+            Servicios
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/servicios/desarrollo-web/" class="ol-dropdown-link">Desarrollo Web</a></li>
+              <li><a href="/servicios/tiendas-en-linea/" class="ol-dropdown-link">Tiendas en Línea</a></li>
+              <li><a href="/servicios/landing-pages/" class="ol-dropdown-link">Landing Pages</a></li>
+              <li><a href="/servicios/rediseno-web/" class="ol-dropdown-link">Rediseño Web</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="ol-has-dropdown">
+          <a href="/portafolio/" class="ol-nav-link">
+            Portafolio
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link">Equipos Contra Incendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link ol-dropdown-sub">— Gama de México</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link ol-dropdown-sub">— MESECI</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link ol-dropdown-sub">— LGA Contraincendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-dropdown-link ol-dropdown-sub">— MANEXT</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-dropdown-link ol-dropdown-sub">— BOMBERO.MX</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="/nosotros/" class="ol-nav-link">Nosotros</a></li>
+        <li><a href="/blog/" class="ol-nav-link active">Blog</a></li>
+        <li><a href="/contacto/" class="ol-nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="/cotizar/" class="ol-header-cta">Cotizar proyecto →</a>
+    <button class="ol-menu-toggle" id="ol-menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+    </button>
+  </div>
+</header>
+<div class="ol-mobile-overlay" id="ol-mobile-overlay"></div>
+<nav class="ol-mobile-panel" id="ol-mobile-panel" aria-label="Menú móvil">
+  <div class="ol-mobile-header">
+    <a href="/" class="ol-mobile-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
+    </a>
+    <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú">
+      <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <ul class="ol-mobile-nav">
+    <li><a href="/" class="ol-mobile-link">Inicio</a></li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Servicios</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/servicios/desarrollo-web/" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Portafolio</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/portafolio/" class="ol-mobile-link ol-mobile-sublink">Todo el Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/" class="ol-mobile-link ol-mobile-sublink">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Gama de México</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MESECI</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— LGA Contraincendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MANEXT</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— BOMBERO.MX</a></li>
+      </ul>
+    </li>
+    <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
+    <li><a href="/blog/" class="ol-mobile-link active">Blog</a></li>
+    <li><a href="/contacto/" class="ol-mobile-link">Contacto</a></li>
+  </ul>
+  <div class="ol-mobile-footer">
+    <a href="/cotizar/" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- ARTICLE HERO -->
+  <nav class="ol-bc-wrap" aria-label="Migas de pan">
+  <div class="ol-bc">
+    <ol class="ol-bc-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/" itemprop="item" class="ol-bc-home"><span itemprop="name">Inicio</span></a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item ol-bc-item-mid" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/blog/" itemprop="item"><span itemprop="name">Blog</span></a>
+        <meta itemprop="position" content="2" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item ol-bc-current" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name">5 errores comunes en sitios web de PyMEs en México</span>
+        <meta itemprop="position" content="3" />
+      </li>
+    </ol>
+  </div>
+</nav>
+<section class="ol-article-hero">
+    <div class="ol-article-hero-inner">
+      <div class="ol-article-breadcrumb">
+        <a href="/">Inicio</a>
+        <span>/</span>
+        <a href="/blog/">Blog</a>
+        <span>/</span>
+        <span>Diseño Web</span>
+      </div>
+      <span class="ol-article-cat diseno">Diseño Web</span>
+      <h1 class="ol-article-title">5 errores que cometen las pymes mexicanas en su sitio web</h1>
+      <p class="ol-article-excerpt">Errores que vemos en el 80% de los sitios que llegan a nosotros para rediseño: desde CTAs invisibles hasta formularios que no convierten. Chécalos antes de perder más prospectos.</p>
+      <div class="ol-article-meta">
+        <span>5 min de lectura</span>
+        <span class="ol-article-meta-sep">·</span>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLE CONTENT -->
+  <section class="ol-article-section">
+    <div class="ol-article-inner">
+      <div class="ol-article-layout">
+
+        <!-- LEFT: Article Body -->
+        <article class="ol-article-body">
+
+          <h2>El 80% de los sitios que rediseñamos cometen los mismos 5 errores</h2>
+          <p>No son errores de presupuesto. Puedes tener $20,000 invertidos y seguir cometiendo estos. Son errores de criterio — de no entender cómo se comporta el usuario en realidad.</p>
+          <p>Hemos auditado más de 200 sitios web mexicanos. Acá están los 5 errores que aparecen en el 80% de ellos. Y lo mejor: ninguno requiere presupuesto millonario para arreglarse.</p>
+
+          <h2>Error 1: No tener un llamado a la acción claro</h2>
+          <p>Tu hero dice: <strong>"Bienvenido a nuestra empresa. Somos líderes en el mercado con más de 15 años de experiencia."</strong></p>
+          <p>¿Cuál es el problema? El usuario no sabe qué hacer. No hay claridad sobre qué quieres que haga, por qué debería hacerlo, ni cómo hacerlo.</p>
+          <p>El hero debería decir:</p>
+          <blockquote>
+            <p>"Servicios contables para pymes: impuestos, nómina, auditoría. Respuesta en 24 horas. Contáctanos hoy."</p>
+          </blockquote>
+          <p>Y un botón grande: "Agendar consulta gratis". Eso es claro. El usuario sabe exactamente qué espera y qué debe hacer.</p>
+
+          <h2>Error 2: Formularios que piden demasiado</h2>
+          <p>Vemos constantemente formularios con 8-12 campos:</p>
+          <ul>
+            <li>Nombre completo</li>
+            <li>Empresa</li>
+            <li>Correo</li>
+            <li>Teléfono</li>
+            <li>Puesto</li>
+            <li>Tamaño de empresa</li>
+            <li>Presupuesto</li>
+            <li>Mensaje</li>
+            <li>¿Cuál es tu reto principal?</li>
+          </ul>
+          <p><strong>Cada campo adicional reduce conversión aproximadamente 10%.</strong></p>
+          <p>Si tu tasa de conversión es del 2% con 12 campos, bajará a 0.2% con 4 campos. Pero la diferencia es que con 4 campos llenarán 10x más gente.</p>
+          <p>La solución: <strong>Nombre, correo, mensaje (máximo 3 campos)</strong>. Todo lo demás lo preguntas después, cuando ya tienes el lead.</p>
+
+          <h2>Error 3: Texto corporativo que no dice nada</h2>
+          <p>Tu sección de "¿Por qué elegirnos?" dice:</p>
+          <blockquote>
+            <p>"Somos una empresa con compromiso con la excelencia. Nuestro equipo de profesionales altamente capacitados ofrece soluciones innovadoras para tu negocio."</p>
+          </blockquote>
+          <p>¿Qué entiende el usuario? Nada. Todos dicen lo mismo.</p>
+          <p><strong>Escribe copy que conecte con el problema del cliente, no con tu ego:</strong></p>
+          <blockquote>
+            <p>"No queremos nuevos clientes cada mes. Queremos clientes que no se vayan. Por eso hacemos auditorías profundas antes de proponer soluciones. Si la solución no es costo-efectiva para ti, te lo decimos."</p>
+          </blockquote>
+          <p>Eso es diferente. Eso dice algo. Eso conecta.</p>
+
+          <h2>Error 4: Diseño que no funciona en celular</h2>
+          <p>En México, <strong>el 75% del tráfico web es desde celular</strong>. Y vemos sitios donde:</p>
+          <ul>
+            <li>El menú hamburguesa no se abre</li>
+            <li>Los botones son demasiado pequeños para hacer click con el dedo</li>
+            <li>El texto se sale de la pantalla</li>
+            <li>Las imágenes son tan grandes que cargan lentamente en 4G</li>
+            <li>Los formularios tienen campos gigantes que no caben</li>
+          </ul>
+          <p>Solución: <strong>Abre tu sitio desde un celular real (no emulador). Con una conexión 4G real (no WiFi). Luego navega como lo haría un usuario.</strong> Si algo no funciona, lo sabes inmediatamente.</p>
+
+          <h2>Error 5: Ignorar completamente la velocidad</h2>
+          <p>Un sitio que tarda 6 segundos en cargar desde celular con 4G es un fracaso. No porque sea técnicamente "incorrecto" — sino porque los usuarios se van.</p>
+          <p>Las causas más comunes que vemos:</p>
+          <ul>
+            <li><strong>Imágenes sin comprimir</strong> — una foto de 5MB que debería ser 200KB</li>
+            <li><strong>Hosted videos no optimizados</strong> — YouTube incrustado bloquea toda la página</li>
+            <li><strong>Plugins WordPress innecesarios</strong> — 30 plugins, 15 no se usan</li>
+            <li><strong>Hosting compartido saturado</strong> — $5/mes con 1000 sitios en el mismo servidor</li>
+          </ul>
+
+          <div class="ol-article-highlight">
+            <h3>Lo más importante</h3>
+            <p>Estos 5 errores no requieren presupuesto millonario. Requieren criterio. Requieren un equipo que entienda que el sitio web no existe para ti — existe para tu cliente. Cada decisión debe responder: ¿esto ayuda al usuario o lo confunde?</p>
+          </div>
+
+          <h2>Cómo saber si tu sitio tiene estos problemas</h2>
+          <p><strong>Google PageSpeed Insights</strong> te dirá sobre velocidad. <strong>Hotjar (plan gratuito)</strong> te mostrará mapas de calor de dónde hace click la gente. <strong>Prueba tu sitio en celular con 4G real</strong> desde un café con WiFi público.</p>
+          <p>Si algo se ve roto, carga lento, o es confuso — tus usuarios sienten lo mismo. Probablemente peor.</p>
+
+          <div class="ol-article-cta-inline">
+            <h3>¿Quieres una revisión honesta?</h3>
+            <p>Hacemos auditoría visual y técnica sin costo para empresas en México. Te diremos exactamente qué está roto y qué funcionó.</p>
+            <a href="/cotizar/" class="ol-btn ol-btn-primary">Solicitar revisión gratuita</a>
+          </div>
+
+        </article>
+
+        <!-- RIGHT: Sidebar -->
+        <aside class="ol-article-sidebar">
+
+          <!-- CTA Widget -->
+          <div class="ol-as-widget ol-as-cta">
+            <p class="ol-as-cta-title">¿Necesitas un sitio web profesional?</p>
+            <p class="ol-as-cta-desc">Cotiza tu proyecto sin compromiso. Te respondemos personalmente.</p>
+            <a href="/cotizar/" class="ol-btn ol-btn-primary" style="display:block;text-align:center;width:100%;box-sizing:border-box;">Cotizar ahora</a>
+          </div>
+
+          <!-- TOC Widget -->
+          <div class="ol-as-widget">
+            <p class="ol-as-title">En este artículo</p>
+            <a href="#" class="ol-as-toc-link">Error 1: Sin CTA claro</a>
+            <a href="#" class="ol-as-toc-link">Error 2: Formularios extensos</a>
+            <a href="#" class="ol-as-toc-link">Error 3: Copy corporativo</a>
+            <a href="#" class="ol-as-toc-link">Error 4: Mal diseño móvil</a>
+            <a href="#" class="ol-as-toc-link">Error 5: Velocidad ignorada</a>
+          </div>
+
+          <!-- Services Widget -->
+          <div class="ol-as-widget">
+            <p class="ol-as-title">Nuestros Servicios</p>
+            <a href="/servicios/desarrollo-web/" class="ol-as-nav-link">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+              Desarrollo Web
+            </a>
+            <a href="/servicios/landing-pages/" class="ol-as-nav-link">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              Landing Pages
+            </a>
+            <a href="/servicios/tiendas-en-linea/" class="ol-as-nav-link">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+              Tiendas en Línea
+            </a>
+            <a href="/servicios/rediseno-web/" class="ol-as-nav-link">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+              Rediseño Web
+            </a>
+          </div>
+
+          <!-- Related Articles Widget -->
+          <div class="ol-as-widget">
+            <p class="ol-as-title">Artículos relacionados</p>
+            <a href="/blog/rediseno-web-cuando-es-momento/" class="ol-as-related-item">
+              <span class="ol-as-related-num">01</span>
+              <span class="ol-as-related-title">Rediseño web: cuándo es el momento</span>
+            </a>
+            <a href="/blog/por-que-tu-sitio-lento-cuesta-clientes/" class="ol-as-related-item">
+              <span class="ol-as-related-num">02</span>
+              <span class="ol-as-related-title">Por qué tu sitio lento cuesta clientes</span>
+            </a>
+            <a href="/blog/astro-vs-wordpress-cual-elegir/" class="ol-as-related-item">
+              <span class="ol-as-related-num">03</span>
+              <span class="ol-as-related-title">Astro vs WordPress: cuál elegir</span>
+            </a>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+
+<section class="ol-related" aria-labelledby="related-title">
+  <div class="ol-related-inner">
+    <p class="ol-related-eyebrow">Te puede interesar</p>
+    <h2 id="related-title" class="ol-related-title">Más artículos relacionados</h2>
+    <div class="ol-related-grid">
+      <a href="/blog/rediseno-web-cuando-es-momento/" class="ol-related-card">
+        <span class="ol-related-cat">Estrategia</span>
+        <h3 class="ol-related-card-title">Rediseño web: cuándo es el momento</h3>
+        <p class="ol-related-card-desc">Señales claras de que tu sitio actual ya te está costando más de lo que aporta.</p>
+        <span class="ol-related-card-arrow">Leer artículo →</span>
+      </a>
+      <a href="/blog/core-web-vitals-que-son/" class="ol-related-card">
+        <span class="ol-related-cat">Rendimiento</span>
+        <h3 class="ol-related-card-title">Core Web Vitals: qué son</h3>
+        <p class="ol-related-card-desc">LCP, CLS e INP explicados con impacto directo en tu negocio.</p>
+        <span class="ol-related-card-arrow">Leer artículo →</span>
+      </a>
+      <a href="/blog/como-medir-resultados-sitio-web/" class="ol-related-card">
+        <span class="ol-related-cat">Estrategia</span>
+        <h3 class="ol-related-card-title">Cómo medir resultados de tu sitio web</h3>
+        <p class="ol-related-card-desc">Métricas reales que importan: GA4, Search Console y conversiones.</p>
+        <span class="ol-related-card-arrow">Leer artículo →</span>
+      </a>
+    </div>
+  </div>
+</section>
+<footer class="ol-footer">
+  <div class="ol-footer-top">
+    <a href="/" class="ol-footer-logo">
+      Origen<span class="ol-footer-logo-dot">.</span>Lab
+    </a>
+    <p class="ol-footer-tagline">
+      Agencia de desarrollo web en México.<br>
+      Creamos sitios que generan resultados.
+    </p>
+    <ul class="ol-footer-contact-list">
+      <li>
+        <a href="mailto:hola@origenlab.mx" class="ol-fcl-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          hola@origenlab.mx
+        </a>
+      </li>
+      <li>
+        <a href="tel:+525547868402" class="ol-fcl-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +52 55 4786 8402
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/525547868402" target="_blank" rel="noopener noreferrer" class="ol-fcl-item ol-fcl-wa">
+          <svg width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+          WhatsApp
+        </a>
+      </li>
+      <li>
+        <span class="ol-fcl-item ol-fcl-static">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Ciudad de México, MX
+        </span>
+      </li>
+    </ul>
+  </div>
+  <div class="ol-footer-links">
+    <div>
+      <p class="ol-footer-col-title">Servicios</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/servicios/desarrollo-web/">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/">Rediseño Web</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Empresa</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/nosotros/">Nosotros</a></li>
+        <li><a href="/portafolio/">Portafolio</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/cotizar/">Cotizar proyecto</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Contacto</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/contacto/">Formulario de contacto</a></li>
+        <li><a href="mailto:hola@origenlab.mx">hola@origenlab.mx</a></li>
+        <li><a href="tel:+525547868402">+52 55 4786 8402</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Legal</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/aviso-de-privacidad/">Aviso de privacidad</a></li>
+        <li><a href="/terminos/">Términos de servicio</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ol-footer-bottom">
+    <p class="ol-footer-copy">© 2026 OrigenLab. Todos los derechos reservados.</p>
+    <div class="ol-footer-legal">
+      <a href="/aviso-de-privacidad/">Privacidad</a>
+      <a href="/terminos/">Términos</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WA Bubble -->
+<a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web.%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" class="wa-bubble" aria-label="Contáctanos por WhatsApp">
+  <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 0 0 2.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0 0 16.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+</a>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var toggle   = document.getElementById('ol-menu-toggle');
+  var panel    = document.getElementById('ol-mobile-panel');
+  var overlay  = document.getElementById('ol-mobile-overlay');
+  var closeBtn = document.getElementById('ol-mobile-close');
+  var header   = document.getElementById('ol-header');
+
+  function openMenu() { toggle.classList.add('open'); toggle.setAttribute('aria-expanded','true'); panel.classList.add('open'); overlay.classList.add('visible'); document.body.style.overflow='hidden'; }
+  function closeMenu() { toggle.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); panel.classList.remove('open'); overlay.classList.remove('visible'); document.body.style.overflow=''; }
+
+  if (toggle) toggle.addEventListener('click', function(){ panel.classList.contains('open') ? closeMenu() : openMenu(); });
+  if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+  if (overlay) overlay.addEventListener('click', closeMenu);
+
+  var mobileLinks = panel ? panel.querySelectorAll('a') : [];
+  for (var i=0; i<mobileLinks.length; i++) mobileLinks[i].addEventListener('click', closeMenu);
+
+  var subToggles = document.querySelectorAll('[data-submenu]');
+  for (var j=0; j<subToggles.length; j++) {
+    subToggles[j].addEventListener('click', function(){ this.classList.toggle('expanded'); var sub=this.nextElementSibling; if(sub) sub.classList.toggle('open'); });
+  }
+
+  window.addEventListener('scroll', function(){ header.classList.toggle('scrolled', window.pageYOffset > 10); }, { passive: true });
+});
+</script>
+
+</body>
+</html>

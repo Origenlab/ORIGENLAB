@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caso · Gama de México — Sitio Corporativo · Distribución Industrial | OrigenLab</title>
+  <meta name="description" content="Caso de estudio del sitio corporativo de Gama de México, distribuidor autorizado de Elkhart Brass en México. Catálogo técnico de monitores, boquillas, mangueras y válvulas certificadas UL/FM, con cobertura en CDMX, Querétaro y el Bajío.">
+  <link rel="canonical" href="https://origenlab.mx/portafolio/equipos-contra-incendios/gama-de-mexico/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://origenlab.mx/portafolio/equipos-contra-incendios/gama-de-mexico/">
+  <meta property="og:title" content="Caso · Gama de México — Sitio Corporativo · Distribución Industrial | OrigenLab">
+  <meta property="og:description" content="Cómo construimos el sitio corporativo de Gama de México: arquitectura, diseño, catálogo técnico y conversión B2B para distribución autorizada en México.">
+  <meta property="og:image" content="https://origenlab.mx/img/equipos-contra-incendios/gamademexico/gamademexico-01.webp">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="OrigenLab">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Caso · Gama de México — Sitio Corporativo · Distribución Industrial | OrigenLab">
+  <meta name="twitter:description" content="Sitio corporativo B2B para distribuidor autorizado de Elkhart Brass en México.">
+  <meta name="twitter:image" content="https://origenlab.mx/img/equipos-contra-incendios/gamademexico/gamademexico-01.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../../../favicon.svg">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+
+  <!-- CSS aprobado del sitio -->
+  <link rel="stylesheet" href="../../../_astro/BaseLayout.xeR8R953.css?v20260426c">
+  <link rel="stylesheet" href="../../../_astro/premium-dark.css?v20260426c">
+  <script src="../../../_astro/ol-header.js?v20260426d" defer></script>
+
+  <style>
+    /* ============================================================
+       L4 — CASO · GAMA DE MÉXICO
+       Componentes en _astro/premium-dark.css. Aquí: SOLO acentos.
+       Acento: rojo industrial #C0392B (Elkhart family).
+       Doc: /_docs/COMPONENTS.md y /_docs/LAYOUTS.md (sección L4)
+       ============================================================ */
+    :root {
+      --case-accent: #C0392B;
+      --case-accent-soft: rgba(192,57,43,0.12);
+      --case-accent-line: rgba(192,57,43,0.28);
+    }
+    /* Hero hereda el acento del caso */
+    .hero { --hero-accent: var(--case-accent); --hero-accent-soft: var(--case-accent-soft); --hero-accent-line: var(--case-accent-line); }
+    .hero::before { background: radial-gradient(ellipse at center, rgba(192,57,43,0.08) 0%, transparent 65%); }
+  </style>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.mx/#organization","name":"OrigenLab","url":"https://origenlab.mx","logo":"https://origenlab.mx/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.mx/#website","url":"https://origenlab.mx/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.mx/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.mx/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.mx/portafolio/"},{"@type":"ListItem","position":3,"name":"Equipos Contra Incendios","item":"https://origenlab.mx/portafolio/equipos-contra-incendios/"},{"@type":"ListItem","position":4,"name":"Gama de México","item":"https://origenlab.mx/portafolio/equipos-contra-incendios/gama-de-mexico/"}]},{"@type":"CreativeWork","@id":"https://origenlab.mx/portafolio/equipos-contra-incendios/gama-de-mexico/#case","name":"Gama de México — Sitio Corporativo · Distribución Industrial","headline":"Sitio corporativo para distribuidor autorizado de Elkhart Brass en México","description":"Caso de estudio del sitio corporativo de Gama de México. Distribución autorizada de Elkhart Brass en México: monitores, boquillas, mangueras y válvulas certificadas UL/FM, con cobertura en CDMX, Querétaro y el corredor del Bajío.","inLanguage":"es-MX","image":"https://origenlab.mx/img/equipos-contra-incendios/gamademexico/gamademexico-01.webp","author":{"@id":"https://origenlab.mx/#organization"},"publisher":{"@id":"https://origenlab.mx/#organization"},"about":{"@type":"Organization","name":"Gama de México","url":"https://gamademexico.com/"},"keywords":["distribución industrial","equipos contra incendios","Elkhart Brass","catálogo técnico","B2B","UL/FM"]}]}</script>
+</head>
+<body>
+
+<a class="ol-skip-link" href="#main">Saltar al contenido</a>
+
+<div class="ol-topbar">
+  <div class="ol-topbar-inner">
+    <div class="ol-topbar-left">
+      <a href="mailto:hola@origenlab.mx" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        hola@origenlab.mx
+      </a>
+      <span class="ol-topbar-sep"></span>
+      <a href="tel:+525547868402" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        +52 55 4786 8402
+      </a>
+    </div>
+    <div class="ol-topbar-center">
+      <span class="ol-topbar-promo">
+        <span class="ol-topbar-dot"></span>
+        Atención personalizada  ·  Ciudad de México
+      </span>
+    </div>
+    <div class="ol-topbar-right">
+      <a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web" target="_blank" rel="noopener noreferrer" class="ol-topbar-wa">
+        <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor">
+          <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+<header class="ol-header" id="ol-header">
+  <div class="ol-header-inner">
+    <a href="/" class="ol-header-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
+    </a>
+    <nav class="ol-nav" aria-label="Navegación principal">
+      <ul class="ol-nav-list">
+        <li><a href="/" class="ol-nav-link">Inicio</a></li>
+        <li class="ol-has-dropdown">
+          <a href="/servicios/" class="ol-nav-link">
+            Servicios
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/servicios/desarrollo-web/" class="ol-dropdown-link">Desarrollo Web</a></li>
+              <li><a href="/servicios/tiendas-en-linea/" class="ol-dropdown-link">Tiendas en Línea</a></li>
+              <li><a href="/servicios/landing-pages/" class="ol-dropdown-link">Landing Pages</a></li>
+              <li><a href="/servicios/rediseno-web/" class="ol-dropdown-link">Rediseño Web</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="ol-has-dropdown">
+          <a href="/portafolio/" class="ol-nav-link active">
+            Portafolio
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link">Equipos Contra Incendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link ol-dropdown-sub">— Gama de México</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link ol-dropdown-sub">— MESECI</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link ol-dropdown-sub">— LGA Contraincendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-dropdown-link ol-dropdown-sub">— MANEXT</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-dropdown-link ol-dropdown-sub">— BOMBERO.MX</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="/nosotros/" class="ol-nav-link">Nosotros</a></li>
+        <li><a href="/blog/" class="ol-nav-link">Blog</a></li>
+        <li><a href="/contacto/" class="ol-nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="/cotizar/" class="ol-header-cta">Cotizar proyecto →</a>
+    <button class="ol-menu-toggle" id="ol-menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+    </button>
+  </div>
+</header>
+<div class="ol-mobile-overlay" id="ol-mobile-overlay"></div>
+<nav class="ol-mobile-panel" id="ol-mobile-panel" aria-label="Menú móvil">
+  <div class="ol-mobile-header">
+    <a href="/" class="ol-mobile-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
+    </a>
+    <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú">
+      <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <ul class="ol-mobile-nav">
+    <li><a href="/" class="ol-mobile-link">Inicio</a></li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Servicios</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/servicios/desarrollo-web/" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Portafolio</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/portafolio/" class="ol-mobile-link ol-mobile-sublink">Todo el Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/" class="ol-mobile-link ol-mobile-sublink">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Gama de México</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MESECI</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— LGA Contraincendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MANEXT</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— BOMBERO.MX</a></li>
+      </ul>
+    </li>
+    <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
+    <li><a href="/blog/" class="ol-mobile-link">Blog</a></li>
+    <li><a href="/contacto/" class="ol-mobile-link">Contacto</a></li>
+  </ul>
+  <div class="ol-mobile-footer">
+    <a href="/cotizar/" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a>
+  </div>
+</nav>
+
+<!-- ============================================================
+     BREADCRUMB
+     ============================================================ -->
+<nav class="ol-bc-wrap" aria-label="Migas de pan">
+  <div class="ol-bc">
+    <ol class="ol-bc-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/" itemprop="item" class="ol-bc-home"><span itemprop="name">Inicio</span></a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/portafolio/" itemprop="item"><span itemprop="name">Portafolio</span></a>
+        <meta itemprop="position" content="2" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/portafolio/equipos-contra-incendios/" itemprop="item"><span itemprop="name">Equipos Contra Incendios</span></a>
+        <meta itemprop="position" content="3" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item ol-bc-current" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name">Gama de México</span>
+        <meta itemprop="position" content="4" />
+      </li>
+    </ol>
+  </div>
+</nav>
+
+<!-- ============================================================
+     MAIN
+     ============================================================ -->
+<main id="main">
+
+  <!-- ============== HERO (componente compartido .hero) ============== -->
+  <section class="hero">
+    <div class="container hero__inner">
+
+      <div class="hero__col1">
+        <span class="hero__eyebrow">Caso de estudio · Distribución Industrial</span>
+        <h1 class="hero__title">Gama de México<br>Sitio corporativo<br>de alta autoridad.</h1>
+        <p class="hero__sub">Distribuidor autorizado de Elkhart Brass en México — catálogo técnico de monitores, boquillas, mangueras y válvulas certificadas UL/FM, con cobertura en CDMX, Querétaro y el Bajío.</p>
+        <div class="hero__ctas">
+          <a href="https://gamademexico.com/" target="_blank" rel="noopener noreferrer" class="ol-btn-primary">
+            Visitar el sitio
+            <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+          </a>
+          <a href="#construccion" class="ol-btn-ghost">
+            Cómo se construyó
+            <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__col2">
+        <p class="hero__p1">Plataforma comercial B2B diseñada para que arquitectos, integradores, corporativos industriales y gobierno encuentren equipos contra incendios certificados UL/FM con claridad técnica y confianza institucional. Cada sección refuerza el valor de la distribución autorizada de Elkhart Brass en México y guía al visitante calificado hacia la solicitud de cotización.</p>
+        <p class="hero__p2">Arquitectura de contenidos, jerarquía visual y redacción técnica construidas con criterio de posicionamiento estratégico para búsquedas reales del mercado mexicano: equipos contra incendios, distribuidor Elkhart Brass, monitores industriales, boquillas UL/FM y protección contra incendios en CDMX, Querétaro y Bajío. Sitio rápido, indexable y profesional.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== CASE SHELL: SIDEBAR + CONTENT ============== -->
+  <section class="ol-case-shell" id="construccion">
+    <div class="ol-case-inner">
+      <div class="ol-case-grid">
+
+        <!-- ============ SIDEBAR ============ -->
+        <aside class="ol-case-sidebar" aria-label="Información del proyecto">
+
+          <div class="ol-side-card">
+            <p class="ol-side-eyebrow">Datos del proyecto</p>
+            <ul class="ol-side-meta">
+              <li><dt>Cliente</dt><dd>Gama de México</dd></li>
+              <li><dt>Sector</dt><dd>Equipos contra incendios · Distribución industrial</dd></li>
+              <li><dt>Tipo de sitio</dt><dd>Corporativo B2B · Catálogo técnico</dd></li>
+              <li><dt>Modelo de negocio</dt><dd>Distribución autorizada de marca internacional</dd></li>
+              <li><dt>Marca distribuida</dt><dd>Elkhart Brass (USA)</dd></li>
+              <li><dt>Cobertura</dt><dd>CDMX · Querétaro · Bajío</dd></li>
+              <li><dt>Sitio en vivo</dt><dd><a href="https://gamademexico.com/" target="_blank" rel="noopener noreferrer">gamademexico.com →</a></dd></li>
+            </ul>
+          </div>
+
+          <div class="ol-side-card">
+            <p class="ol-side-eyebrow">Stack y entregables</p>
+            <div>
+              <span class="ol-case-spec-tag">Astro</span>
+              <span class="ol-case-spec-tag">HTML5 / CSS3</span>
+              <span class="ol-case-spec-tag">Inter</span>
+              <span class="ol-case-spec-tag">Schema.org</span>
+              <span class="ol-case-spec-tag">WhatsApp Lead</span>
+              <span class="ol-case-spec-tag">Formularios B2B</span>
+              <span class="ol-case-spec-tag">Hosting CDN</span>
+              <span class="ol-case-spec-tag">Responsivo</span>
+              <span class="ol-case-spec-tag">Multi-sucursal</span>
+            </div>
+          </div>
+
+          <nav class="ol-side-card" aria-label="Índice del caso">
+            <p class="ol-side-eyebrow">Índice del caso</p>
+            <ul class="ol-side-toc" id="ol-case-toc">
+              <li><a href="#contexto"><span class="num">01</span>Contexto del cliente</a></li>
+              <li><a href="#reto"><span class="num">02</span>El reto</a></li>
+              <li><a href="#arquitectura"><span class="num">03</span>Arquitectura del sitio</a></li>
+              <li><a href="#diseno"><span class="num">04</span>Diseño y sistema visual</a></li>
+              <li><a href="#catalogo"><span class="num">05</span>Catálogo técnico</a></li>
+              <li><a href="#conversion"><span class="num">06</span>Conversión B2B</a></li>
+              <li><a href="#tecnologia"><span class="num">07</span>Tecnología y rendimiento</a></li>
+              <li><a href="#proceso"><span class="num">08</span>Proceso de trabajo</a></li>
+              <li><a href="#galeria"><span class="num">09</span>Galería del sitio</a></li>
+              <li><a href="#resultado"><span class="num">10</span>Resultado entregado</a></li>
+            </ul>
+          </nav>
+
+          <div class="ol-side-cta">
+            <h3 class="ol-side-cta-title">¿Un proyecto similar?</h3>
+            <p class="ol-side-cta-desc">Si tu empresa distribuye, integra o vende equipos contra incendios y necesitas un sitio profesional, podemos construirlo contigo.</p>
+            <a href="/cotizar/" class="ol-side-cta-btn">
+              Cotizar mi proyecto
+              <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+            <a href="https://wa.me/525547868402?text=Hola%2C%20vi%20el%20caso%20de%20Gama%20de%20M%C3%A9xico%20y%20me%20interesa%20un%20proyecto%20similar." target="_blank" rel="noopener noreferrer" class="ol-side-cta-link">o escribir por WhatsApp →</a>
+          </div>
+
+        </aside>
+
+        <!-- ============ CONTENT BODY ============ -->
+        <article class="ol-case-body">
+
+          <!-- 01 CONTEXTO -->
+          <section class="ol-case-section" id="contexto">
+            <span class="ol-case-eyebrow">01 · Contexto del cliente</span>
+            <h2 class="ol-case-h2">Distribuidor autorizado de Elkhart Brass en México.</h2>
+            <p class="ol-case-lead">Gama de México es el distribuidor autorizado en México de Elkhart Brass — fabricante estadounidense con más de un siglo de trayectoria en boquillas, monitores, válvulas y accesorios para protección contra incendios bajo certificación UL/FM.</p>
+            <p class="ol-case-p">El cliente atiende a un comprador corporativo muy específico: <strong>plantas industriales, refinerías, terminales logísticas, complejos petroquímicos, brigadas internas de respuesta y oficiales de seguridad</strong> que necesitan equipo certificado bajo norma internacional, con respaldo técnico documentado y disponibilidad real en territorio mexicano.</p>
+            <p class="ol-case-p">Su operación cubre Ciudad de México, Querétaro y el corredor industrial del Bajío — zonas donde se concentra una porción importante del consumo industrial nacional de equipo contra incendios. Antes de este proyecto, la presencia digital de Gama de México no reflejaba ni la solidez de la marca distribuida, ni la profundidad técnica de su catálogo, ni la seriedad operativa de la empresa.</p>
+
+            <div class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <img src="../../../img/equipos-contra-incendios/gamademexico/gamademexico-02.webp" alt="Gama de México — sección de marca y respaldo institucional" width="1543" height="854" loading="lazy" decoding="async">
+              </div>
+              <p class="ol-case-figure-caption">Sección institucional: marca distribuida, certificaciones y respaldo internacional comunicados desde el primer scroll.</p>
+            </div>
+          </section>
+
+          <!-- 02 RETO -->
+          <section class="ol-case-section" id="reto">
+            <span class="ol-case-eyebrow">02 · El reto</span>
+            <h2 class="ol-case-h2">Comunicar respaldo internacional con presencia mexicana.</h2>
+            <p class="ol-case-p">El comprador del sector de equipos contra incendios no llega al sitio buscando inspiración. Llega buscando respuestas concretas: <strong>¿es distribución autorizada o reventa?</strong>, <strong>¿el equipo está certificado UL/FM?</strong>, <strong>¿hay existencia en México?</strong>, <strong>¿con quién hablo para una cotización formal?</strong>.</p>
+            <p class="ol-case-p">El reto del proyecto fue diseñar un sitio que respondiera a esas cuatro preguntas en menos de quince segundos de navegación, sin perder formalidad institucional y manteniendo un tono adecuado al perfil corporativo del comprador.</p>
+
+            <div class="ol-case-cards">
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.5v5c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11V6.5L12 2z"/><path d="M9 12l2 2 4-4"/></svg>
+                </div>
+                <h4>Autoridad de marca</h4>
+                <p>Comunicar de inmediato la relación de distribución autorizada con Elkhart Brass — no como un eslogan, sino como parte de la jerarquía visual del sitio.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></svg>
+                </div>
+                <h4>Catálogo técnico</h4>
+                <p>Estructurar familias de producto (monitores, boquillas, válvulas, mangueras) con fichas precisas y filtros por aplicación industrial.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <h4>Cobertura geográfica</h4>
+                <p>Hacer evidente la presencia operativa en CDMX, Querétaro y el Bajío para validar capacidad de entrega ante áreas de compras corporativas.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                </div>
+                <h4>Canal directo</h4>
+                <p>Abrir un canal de cotización corporativa con campos B2B (empresa, RFC, responsable técnico) y un acceso paralelo por WhatsApp para consultas rápidas.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 03 ARQUITECTURA -->
+          <section class="ol-case-section" id="arquitectura">
+            <span class="ol-case-eyebrow">03 · Arquitectura del sitio</span>
+            <h2 class="ol-case-h2">Estructura pensada para el comprador técnico.</h2>
+            <p class="ol-case-p">Antes de diseñar una sola pantalla, el equipo definió una arquitectura de información que resuelve el recorrido típico del comprador corporativo: <strong>llega buscando un producto específico, valida que sea distribución autorizada, confirma certificación, ubica si hay cobertura en su zona y abre canal con el equipo comercial</strong>.</p>
+
+            <div class="ol-case-arch">
+              <div class="ol-arch-step">
+                <p class="num">CAPA 01</p>
+                <h4>Home corporativa</h4>
+                <p>Encabezado con marca distribuida, propuesta de valor, certificaciones y acceso directo al catálogo y al contacto comercial.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">CAPA 02</p>
+                <h4>Familias de producto</h4>
+                <p>Cada familia (monitores, boquillas, válvulas, mangueras, accesorios) tiene su propia sección con explicación, aplicaciones y modelos.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">CAPA 03</p>
+                <h4>Ficha de producto</h4>
+                <p>Página dedicada a cada modelo con especificación técnica, certificaciones, aplicaciones recomendadas y CTA de cotización formal.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">CAPA 04</p>
+                <h4>Quiénes somos</h4>
+                <p>Sección institucional que explica el rol de distribuidor autorizado, la operación en México y los principios técnicos de la empresa.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">CAPA 05</p>
+                <h4>Cobertura</h4>
+                <p>Mapa narrativo de zonas de operación —CDMX, Querétaro y Bajío— para que el comprador valide rango logístico antes de cotizar.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">CAPA 06</p>
+                <h4>Contacto B2B</h4>
+                <p>Formulario corporativo con campos relevantes para cotización formal, atención por correo y acceso paralelo por WhatsApp.</p>
+              </div>
+            </div>
+
+            <div class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <img src="../../../img/equipos-contra-incendios/gamademexico/gamademexico-03.webp" alt="Gama de México — sección de catálogo de productos por familia" width="1543" height="854" loading="lazy" decoding="async">
+              </div>
+              <p class="ol-case-figure-caption">Catálogo organizado por familia de producto: monitores, boquillas, válvulas y mangueras certificadas.</p>
+            </div>
+          </section>
+
+          <!-- 04 DISEÑO -->
+          <section class="ol-case-section" id="diseno">
+            <span class="ol-case-eyebrow">04 · Diseño y sistema visual</span>
+            <h2 class="ol-case-h2">Identidad seria, sin recurrir a clichés industriales.</h2>
+            <p class="ol-case-p">El diseño parte de una premisa simple: <strong>el comprador corporativo no se convence con flamas, alarmas ni cromados estridentes</strong>. Se convence con tipografía limpia, jerarquía clara, espacios generosos y producto bien fotografiado. La paleta usa rojos saturados sólo donde aporta señalización (acentos, CTA, llamadas a la acción), sobre una base neutral oscura que prioriza lectura y respeto al producto.</p>
+            <p class="ol-case-p">Cada componente del sistema —encabezados, tarjetas de producto, badges de certificación, formularios de contacto, secciones institucionales— se diseñó con el mismo lenguaje, garantizando consistencia entre la home, el catálogo y las fichas individuales.</p>
+
+            <div class="ol-case-cards">
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                </div>
+                <h4>Tipografía Inter</h4>
+                <p>Familia geométrica neutral con excelente legibilidad en pantallas y soporte completo para datos técnicos, números y unidades.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="10.5" r="2.5"/><circle cx="8.5" cy="7.5" r="2.5"/><circle cx="6.5" cy="12.5" r="2.5"/><path d="M12 22a10 10 0 1 1 9.96-9.13.5.5 0 0 1-.5.54H17a3 3 0 0 0-3 3v.5a2 2 0 0 1-2 2"/></svg>
+                </div>
+                <h4>Paleta industrial</h4>
+                <p>Rojos saturados como acento de marca y señalización, fondos oscuros para presentar producto, contrastes altos para datos técnicos.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                </div>
+                <h4>Sistema de tarjetas</h4>
+                <p>Componente único de tarjeta de producto, reutilizable en home, listados de familia y resultados de búsqueda — coherencia total.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <h4>Badges de certificación</h4>
+                <p>Componente específico para destacar UL, FM y otras normas en cada ficha — refuerza credibilidad sin saturar la jerarquía visual.</p>
+              </div>
+            </div>
+
+            <div class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <img src="../../../img/equipos-contra-incendios/gamademexico/gamademexico-04.webp" alt="Gama de México — sistema visual de fichas técnicas" width="1543" height="854" loading="lazy" decoding="async">
+              </div>
+              <p class="ol-case-figure-caption">Sistema de tarjetas y badges de certificación aplicado de forma consistente en todo el catálogo.</p>
+            </div>
+          </section>
+
+          <!-- 05 CATÁLOGO -->
+          <section class="ol-case-section" id="catalogo">
+            <span class="ol-case-eyebrow">05 · Catálogo técnico</span>
+            <h2 class="ol-case-h2">Producto técnico presentado con la profundidad que el comprador necesita.</h2>
+            <p class="ol-case-p">El núcleo del sitio es el catálogo. Cada modelo distribuido está documentado con la información que el comprador necesita para validar especificación, cumplimiento y aplicación. La estructura de cada ficha sigue siempre el mismo patrón, lo que permite al comprador comparar modelos sin tener que reaprender la página cada vez.</p>
+
+            <ul class="ol-case-list">
+              <li><strong>Especificación técnica:</strong> capacidad de flujo, presión de operación, materiales de construcción, conexión, peso y dimensiones por modelo.</li>
+              <li><strong>Certificaciones aplicables:</strong> badges UL, FM y normas específicas según la línea de producto, mostradas en jerarquía superior de la ficha.</li>
+              <li><strong>Aplicaciones recomendadas:</strong> entornos donde el modelo es especialmente útil (terminales, refinerías, plantas industriales, edificios, brigadas internas).</li>
+              <li><strong>Imagen de producto:</strong> foto principal aislada sobre fondo neutro, con vistas adicionales cuando aportan claridad técnica.</li>
+              <li><strong>Documentación descargable:</strong> espacio reservado para hoja técnica, ficha del fabricante o documento PDF de referencia cuando aplica.</li>
+              <li><strong>CTA contextual:</strong> botón "Solicitar cotización para este modelo" que precarga el modelo en el formulario de contacto B2B.</li>
+            </ul>
+
+            <div class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <img src="../../../img/equipos-contra-incendios/gamademexico/gamademexico-05.webp" alt="Gama de México — ejemplo de ficha de producto con especificación técnica" width="1543" height="854" loading="lazy" decoding="async">
+              </div>
+              <p class="ol-case-figure-caption">Ficha de producto con especificación, certificaciones, aplicaciones y CTA contextual de cotización.</p>
+            </div>
+          </section>
+
+          <!-- 06 CONVERSIÓN -->
+          <section class="ol-case-section" id="conversion">
+            <span class="ol-case-eyebrow">06 · Conversión B2B</span>
+            <h2 class="ol-case-h2">Un canal directo entre el comprador y el equipo comercial.</h2>
+            <p class="ol-case-p">Un sitio corporativo del sector industrial no se mide por carrito de compra ni por checkout: se mide por <strong>calidad de los prospectos que llegan al equipo comercial</strong>. Por eso el sitio de Gama de México integra un sistema de conversión pensado en B2B desde la primera pantalla.</p>
+
+            <div class="ol-case-cards">
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="14" x2="15" y2="14"/></svg>
+                </div>
+                <h4>Formulario corporativo</h4>
+                <p>Campos relevantes para venta industrial: empresa, RFC, contacto técnico, modelos de interés, cantidades estimadas y zona de entrega.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg>
+                </div>
+                <h4>WhatsApp paralelo</h4>
+                <p>Acceso directo por WhatsApp para consultas rápidas — el botón persistente acompaña al usuario en todo el recorrido sin invadir el contenido.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <h4>Línea telefónica visible</h4>
+                <p>Teléfono comercial siempre disponible en topbar, header y footer — el comprador industrial todavía levanta el teléfono cuando el proyecto es serio.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </div>
+                <h4>Correo institucional</h4>
+                <p>Correo corporativo expuesto sin ofuscamiento, listo para que las áreas de compras envíen requisición directa con orden y especificación.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 07 TECNOLOGÍA -->
+          <section class="ol-case-section" id="tecnologia">
+            <span class="ol-case-eyebrow">07 · Tecnología y rendimiento</span>
+            <h2 class="ol-case-h2">Velocidad extrema, sin frameworks pesados.</h2>
+            <p class="ol-case-p">El sitio se construyó sobre una base ligera y moderna, priorizando <strong>tiempos de carga, estabilidad visual y eficiencia en redes industriales</strong> —donde muchas veces el comprador navega desde una conexión corporativa restrictiva o desde un dispositivo móvil en planta—. La arquitectura técnica favorece HTML estático servido desde CDN, con interactividad selectiva sólo donde aporta valor.</p>
+
+            <div class="ol-case-spec">
+              <dl>
+                <div class="ol-case-spec-row">
+                  <dt>Generador</dt>
+                  <dd>Astro · arquitectura estática-primero, hidratación selectiva, salida HTML pura para máximo rendimiento.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Estilo</dt>
+                  <dd>CSS3 con design tokens propios — variables CSS para colores, tipografía, espaciado y radios. Sin frameworks visuales pesados.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Tipografía</dt>
+                  <dd>Inter (300–900) cargada vía Google Fonts con preconnect — render no bloqueante.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Imágenes</dt>
+                  <dd>WebP responsivo con dimensiones explícitas, <code>loading="lazy"</code> y <code>decoding="async"</code> para evitar layout shift.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Datos estructurados</dt>
+                  <dd>Schema.org en JSON-LD: Organization, WebSite, BreadcrumbList y CollectionPage según corresponde a cada plantilla.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Accesibilidad</dt>
+                  <dd>Skip-link a contenido, ARIA labels en navegación, contraste alto en texto, foco visible en componentes interactivos.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Responsivo</dt>
+                  <dd>Layout fluido desde 360 px; menú móvil con overlay, dropdowns colapsables y CTAs adaptados al pulgar.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Hosting</dt>
+                  <dd>CDN global con HTTPS, compresión Brotli, caché agresivo en estáticos y dominio propio bajo certificado válido.</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <img src="../../../img/equipos-contra-incendios/gamademexico/gamademexico-06.webp" alt="Gama de México — vista responsiva del sitio en distintos dispositivos" width="1543" height="854" loading="lazy" decoding="async">
+              </div>
+              <p class="ol-case-figure-caption">Comportamiento responsivo: desktop, tablet y móvil compartiendo sistema de componentes.</p>
+            </div>
+          </section>
+
+          <!-- 08 PROCESO -->
+          <section class="ol-case-section" id="proceso">
+            <span class="ol-case-eyebrow">08 · Proceso de trabajo</span>
+            <h2 class="ol-case-h2">De la conversación inicial al sitio entregado.</h2>
+            <p class="ol-case-p">El proyecto siguió la metodología estándar de OrigenLab: descubrimiento → estrategia → diseño → desarrollo → pruebas → lanzamiento → acompañamiento. Cada etapa se documenta con entregables específicos para que el cliente sepa siempre qué espera y qué recibe.</p>
+
+            <div class="ol-case-arch">
+              <div class="ol-arch-step">
+                <p class="num">FASE 01</p>
+                <h4>Descubrimiento</h4>
+                <p>Sesión inicial con el equipo comercial y técnico de Gama de México: producto distribuido, perfil de comprador, ciclos de venta y referencias de la industria.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">FASE 02</p>
+                <h4>Estrategia</h4>
+                <p>Mapa de contenidos, arquitectura de información, definición de plantillas, jerarquía de mensajes y estrategia de conversión B2B.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">FASE 03</p>
+                <h4>Diseño visual</h4>
+                <p>Sistema de design tokens, componentes base (header, tarjetas, fichas, formularios) y prototipos de las plantillas principales para validación.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">FASE 04</p>
+                <h4>Desarrollo</h4>
+                <p>Construcción modular sobre Astro con componentes reutilizables, integración del catálogo, formularios B2B y datos estructurados.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">FASE 05</p>
+                <h4>Pruebas</h4>
+                <p>Auditoría técnica, validación responsiva, revisión de accesibilidad, pruebas cruzadas en navegadores y verificación de formularios.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">FASE 06</p>
+                <h4>Lanzamiento</h4>
+                <p>Configuración de dominio, certificado SSL, despliegue en CDN y entrega de credenciales, junto con acompañamiento al equipo del cliente.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 09 GALERÍA -->
+          <section class="ol-case-section" id="galeria">
+            <span class="ol-case-eyebrow">09 · Galería del sitio</span>
+            <h2 class="ol-case-h2">Pantallas y secciones del sitio en operación.</h2>
+            <p class="ol-case-p">Una recorrida por las pantallas principales del sitio: home, catálogo, sección institucional, ficha de producto y módulo de contacto B2B — todas construidas con el mismo sistema de componentes y la misma jerarquía visual.</p>
+
+            <div class="ol-case-gallery">
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <img src="../../../img/equipos-contra-incendios/gamademexico/gamademexico-01.webp" alt="Gama de México — pantalla 01: hero principal" width="1543" height="854" loading="lazy" decoding="async">
+                </div>
+                <figcaption class="ol-case-figure-caption">01 · Hero principal con propuesta de valor y acceso al catálogo.</figcaption>
+              </figure>
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <img src="../../../img/equipos-contra-incendios/gamademexico/gamademexico-02.webp" alt="Gama de México — pantalla 02: sección institucional" width="1543" height="854" loading="lazy" decoding="async">
+                </div>
+                <figcaption class="ol-case-figure-caption">02 · Sección institucional con respaldo de marca distribuida.</figcaption>
+              </figure>
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <img src="../../../img/equipos-contra-incendios/gamademexico/gamademexico-03.webp" alt="Gama de México — pantalla 03: catálogo por familia" width="1543" height="854" loading="lazy" decoding="async">
+                </div>
+                <figcaption class="ol-case-figure-caption">03 · Catálogo organizado por familia de producto.</figcaption>
+              </figure>
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <img src="../../../img/equipos-contra-incendios/gamademexico/gamademexico-04.webp" alt="Gama de México — pantalla 04: tarjetas y badges de certificación" width="1543" height="854" loading="lazy" decoding="async">
+                </div>
+                <figcaption class="ol-case-figure-caption">04 · Sistema de tarjetas con badges de certificación.</figcaption>
+              </figure>
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <img src="../../../img/equipos-contra-incendios/gamademexico/gamademexico-05.webp" alt="Gama de México — pantalla 05: ficha técnica de producto" width="1543" height="854" loading="lazy" decoding="async">
+                </div>
+                <figcaption class="ol-case-figure-caption">05 · Ficha técnica de producto con especificación y CTA contextual.</figcaption>
+              </figure>
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <img src="../../../img/equipos-contra-incendios/gamademexico/gamademexico-06.webp" alt="Gama de México — pantalla 06: comportamiento responsivo" width="1543" height="854" loading="lazy" decoding="async">
+                </div>
+                <figcaption class="ol-case-figure-caption">06 · Comportamiento responsivo en distintos dispositivos.</figcaption>
+              </figure>
+            </div>
+
+            <figure class="ol-case-figure" style="margin-top:1.25rem;">
+              <div class="ol-case-figure-frame">
+                <img src="../../../img/equipos-contra-incendios/gamademexico/gamademexico-07.webp" alt="Gama de México — pantalla 07: módulo de contacto y cobertura" width="1543" height="854" loading="lazy" decoding="async">
+              </div>
+              <figcaption class="ol-case-figure-caption">07 · Módulo de contacto B2B con formulario corporativo y zona de cobertura.</figcaption>
+            </figure>
+          </section>
+
+          <!-- 10 RESULTADO -->
+          <section class="ol-case-section" id="resultado">
+            <span class="ol-case-eyebrow">10 · Resultado entregado</span>
+            <h2 class="ol-case-h2">Una presencia digital al nivel de la marca distribuida.</h2>
+            <p class="ol-case-p">El resultado es un sitio que <strong>comunica autoridad desde el primer scroll</strong>, presenta el catálogo con la profundidad técnica que el comprador corporativo necesita y abre canales de cotización sin fricción. La identidad visual y el tono editorial reflejan, finalmente, el peso de la marca distribuida y la seriedad operativa del equipo de Gama de México.</p>
+            <ul class="ol-case-list">
+              <li><strong>Sitio corporativo en operación</strong> bajo dominio propio, certificado SSL, hosting CDN y dominio gestionado.</li>
+              <li><strong>Sistema de componentes reutilizable</strong> que permite ampliar familias y modelos sin rehacer el diseño.</li>
+              <li><strong>Catálogo técnico estructurado</strong> con plantilla de ficha consistente para todos los modelos distribuidos.</li>
+              <li><strong>Formulario corporativo B2B</strong> con campos relevantes y enrutado al equipo comercial.</li>
+              <li><strong>Canal paralelo por WhatsApp y teléfono</strong> visibles en todas las pantallas del sitio.</li>
+              <li><strong>Datos estructurados Schema.org</strong> para que motores y agregadores entiendan correctamente la naturaleza del sitio.</li>
+              <li><strong>Documentación entregable</strong> al equipo del cliente para mantener y crecer el sitio en el tiempo.</li>
+            </ul>
+          </section>
+
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CTA HERO — invitar a iniciar proyecto ============== -->
+  <section class="ol-cta-hero">
+    <div class="ol-cta-hero-inner">
+      <div class="ol-cta-hero-card">
+
+        <div class="ol-cta-hero-left">
+          <p class="ol-cta-hero-eyebrow">Iniciar proyecto</p>
+          <h2 class="ol-cta-hero-title">¿Tu empresa de equipos contra incendios necesita un sitio al nivel de su operación?</h2>
+          <p class="ol-cta-hero-blurb">Si distribuyes marca internacional, integras sistemas, vendes equipo personal o das servicios técnicos en el sector — podemos construir contigo un sitio profesional, técnico y orientado a conversión. Sin plantillas, sin atajos, hecho para tu comprador.</p>
+          <div class="ol-cta-hero-actions">
+            <a href="/cotizar/" class="ol-btn-primary">
+              Cotizar proyecto
+              <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+            <a href="https://wa.me/525547868402?text=Hola%2C%20vi%20el%20caso%20de%20Gama%20de%20M%C3%A9xico%20y%20quiero%20un%20proyecto%20similar." target="_blank" rel="noopener noreferrer" class="ol-btn-ghost">
+              <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg>
+              Hablar por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="ol-cta-hero-right">
+          <div class="ol-cta-hero-promises">
+            <p class="ol-cta-hero-promises-title">Lo que recibes con OrigenLab</p>
+            <ul class="ol-cta-hero-promises-list">
+              <li>Descubrimiento técnico antes de cualquier propuesta visual</li>
+              <li>Diseño y desarrollo a medida — sin plantillas ni atajos</li>
+              <li>Catálogo técnico estructurado con fichas y aplicaciones</li>
+              <li>Formularios B2B, WhatsApp y CRM integrados al flujo</li>
+              <li>Estructura escalable para crecer con tu operación</li>
+              <li>Acompañamiento post-entrega con tu equipo</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ — componente compartido (.ol-faq-*) en premium-dark.css -->
+  <section class="ol-faq-section">
+    <div class="ol-faq-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Preguntas Frecuentes</span>
+          <h2 class="ol-section-title">Todo lo que necesitas saber<br>antes de empezar</h2>
+          <p class="ol-section-sub">Resolvemos las dudas más comunes sobre nuestros proyectos web. ¿No encuentras tu respuesta? Escríbenos directo.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Sabemos que contratar una agencia de desarrollo web implica una decisión importante. Por eso reunimos aquí las preguntas que más nos hacen antes de arrancar un proyecto — sobre costos, tiempos, procesos y lo que incluye cada entrega. Queremos que llegues a la primera llamada con claridad, no con dudas.</p>
+          <p class="ol-sh-copy">Si tu pregunta no está aquí, escríbenos directo. Respondemos de manera personalizada y sin compromiso. Cada proyecto es distinto y preferimos una conversación real a una respuesta genérica.</p>
+        </div>
+      </div>
+
+      <div class="ol-faq-grid">
+
+        <!-- Columna izquierda: Acordeón FAQ -->
+        <div>
+          <p class="ol-faq-col-label">Preguntas frecuentes</p>
+          <div class="ol-faq-list" id="ol-faq-list">
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="0">
+                ¿Cuánto cuesta un sitio web profesional?
+                <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-0">
+                <p class="ol-faq-answer-inner">El costo depende del alcance, funcionalidad y diseño de cada proyecto. Cada cotización se construye a la medida según pantallas, integraciones, complejidad de catálogo y nivel de personalización. Siempre entregamos una propuesta detallada y por escrito, sin cargos ocultos, antes de comenzar.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="1">
+                ¿Cuánto tiempo tarda en estar listo mi sitio web?
+                <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-1">
+                <p class="ol-faq-answer-inner">Los plazos varían según la complejidad de cada proyecto. Trabajamos con calendario comprometido por escrito desde el inicio, con entregas iterativas en entorno de pruebas para ver el avance real durante todo el proyecto.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="2">
+                ¿Trabajan con empresas fuera de Ciudad de México?
+                <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-2">
+                <p class="ol-faq-answer-inner">Sí. Trabajamos con clientes en todo México — Monterrey, Guadalajara, Puebla y muchas otras ciudades — así como proyectos para empresas en Estados Unidos y Latinoamérica. Todo el proceso se gestiona de forma remota, ágil y completamente en línea.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="3">
+                ¿Qué incluye el precio del sitio web?
+                <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-3">
+                <p class="ol-faq-answer-inner">Nuestras propuestas incluyen diseño personalizado, desarrollo front-end y back-end, versión responsiva (móvil y desktop), integración de formularios de contacto, optimización de velocidad y entrega de archivos finales. El dominio y hosting pueden incluirse según el plan elegido.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="4">
+                ¿Puedo ver avances antes de pagar el total?
+                <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-4">
+                <p class="ol-faq-answer-inner">Sí, claro. Nuestro proceso incluye etapas de revisión con prototipos y diseños visuales antes del desarrollo final. Tú apruebas cada fase antes de avanzar, lo que garantiza que el resultado final sea exactamente lo que esperabas.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="5">
+                ¿Qué pasa si necesito cambios después de entregar el sitio?
+                <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-5">
+                <p class="ol-faq-answer-inner">Todos nuestros proyectos incluyen un periodo de ajustes post-entrega. Para cambios posteriores ofrecemos planes de mantenimiento mensual o cotizaciones por proyecto. Nos mantenemos disponibles para crecer contigo en el tiempo.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="6">
+                ¿Necesito tener dominio y hosting propios?
+                <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-6">
+                <p class="ol-faq-answer-inner">No necesariamente. Podemos asesorarte en la elección del dominio y hosting ideales para tu proyecto, o trabajar con los que ya tienes. También ofrecemos gestión completa de infraestructura para que tú no te preocupes por aspectos técnicos.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="7">
+                ¿Hacen tiendas en línea y e-commerce?
+                <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-7">
+                <p class="ol-faq-answer-inner">Sí — hacemos e-commerce todo el tiempo. Desarrollamos tiendas en línea con catálogo de productos, carrito de compras, pasarelas de pago (OXXO, tarjeta, transferencia) y panel de administración para que gestiones tu inventario fácilmente.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Columna derecha: Formulario WhatsApp -->
+        <div>
+          <div class="ol-faq-form-wrap">
+            <span class="ol-faq-form-badge">
+              <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+              Contáctanos por WhatsApp
+            </span>
+            <h3 class="ol-faq-form-title">¿Listo para empezar<br>tu proyecto?</h3>
+            <p class="ol-faq-form-sub">Cuéntanos brevemente qué necesitas y te respondemos con una propuesta clara, por escrito y sin compromiso.</p>
+
+            <form class="ol-faq-form" id="ol-wa-form" novalidate>
+              <div class="ol-faq-form-row">
+                <div class="ol-faq-field">
+                  <label for="faq-nombre">Tu nombre</label>
+                  <input type="text" id="faq-nombre" placeholder="Ej. Carlos García" autocomplete="given-name">
+                </div>
+                <div class="ol-faq-field">
+                  <label for="faq-empresa">Empresa / Negocio</label>
+                  <input type="text" id="faq-empresa" placeholder="Nombre de tu empresa">
+                </div>
+              </div>
+              <div class="ol-faq-field">
+                <label for="faq-tipo">Tipo de proyecto</label>
+                <select id="faq-tipo">
+                  <option value="" disabled selected>Selecciona una opción</option>
+                  <option value="Sitio web corporativo">Sitio web corporativo</option>
+                  <option value="Tienda en línea / E-commerce">Tienda en línea / E-commerce</option>
+                  <option value="Landing page">Landing page</option>
+                  <option value="Rediseño de sitio existente">Rediseño de sitio existente</option>
+                  <option value="Portafolio profesional">Portafolio profesional</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+              <div class="ol-faq-field">
+                <label for="faq-mensaje">¿Qué necesitas?</label>
+                <textarea id="faq-mensaje" placeholder="Describe brevemente tu proyecto o la duda que tienes..."></textarea>
+              </div>
+              <button type="submit" class="ol-faq-submit">
+                <svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+                Enviar por WhatsApp
+              </button>
+              <p class="ol-faq-form-note">Al enviar, se abrirá WhatsApp con tu mensaje listo. Respondemos en menos de 24 h.</p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+  (function() {
+    /* FAQ toggle se maneja en ol-header.js (universal). Solo el form WhatsApp aquí. */
+    var waForm = document.getElementById('ol-wa-form');
+    if (waForm) waForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var nombre = document.getElementById('faq-nombre').value.trim();
+      var empresa = document.getElementById('faq-empresa').value.trim();
+      var tipo = document.getElementById('faq-tipo').value;
+      var mensaje = document.getElementById('faq-mensaje').value.trim();
+      var partes = ['Hola OrigenLab, me contacto desde el caso de estudio de Gama de México.'];
+      if (nombre) partes.push('*Nombre:* ' + nombre);
+      if (empresa) partes.push('*Empresa:* ' + empresa);
+      if (tipo) partes.push('*Tipo de proyecto:* ' + tipo);
+      if (mensaje) partes.push('*Descripción:* ' + mensaje);
+      partes.push('Me gustaría recibir más información. ¡Gracias!');
+      var url = 'https://wa.me/525547868402?text=' + encodeURIComponent(partes.join('\n'));
+      window.open(url, '_blank', 'noopener,noreferrer');
+    });
+  })();
+  </script>
+
+  <!-- ============== NEXT CASE NAV ============== -->
+  <section class="ol-case-next">
+    <div class="ol-case-next-inner">
+      <a href="/portafolio/equipos-contra-incendios/manext/" class="ol-case-next-card">
+        <p class="ol-case-next-eyebrow">Caso siguiente →</p>
+        <p class="ol-case-next-title">MANEXT · Servicios certificados de mantenimiento de extintores</p>
+        <span class="ol-case-next-link">Ver caso completo →</span>
+      </a>
+      <a href="/portafolio/equipos-contra-incendios/" class="ol-case-next-card">
+        <p class="ol-case-next-eyebrow">Volver al sector</p>
+        <p class="ol-case-next-title">Más empresas del sector contra incendios</p>
+        <span class="ol-case-next-link">Ir al portafolio del sector →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============== QUICKNAV BOTTOM ============== -->
+  <div class="ol-quicknav">
+    <div class="ol-quicknav-inner">
+      <a href="/portafolio/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Todo el Portafolio</span>
+          <span class="ol-qn-sub">Más casos por sector</span>
+        </div>
+      </a>
+      <a href="/portafolio/equipos-contra-incendios/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Equipos Contra Incendios</span>
+          <span class="ol-qn-sub">Otros casos del sector</span>
+        </div>
+      </a>
+      <a href="/servicios/desarrollo-web/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Sitios Corporativos</span>
+          <span class="ol-qn-sub">Diseño a medida</span>
+        </div>
+      </a>
+      <a href="/servicios/tiendas-en-linea/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Tienda en Línea</span>
+          <span class="ol-qn-sub">E-commerce profesional</span>
+        </div>
+      </a>
+      <a href="/nosotros/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Nosotros</span>
+          <span class="ol-qn-sub">Quiénes somos</span>
+        </div>
+      </a>
+      <a href="/contacto/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Contacto</span>
+          <span class="ol-qn-sub">Escríbenos directo</span>
+        </div>
+      </a>
+      <a href="/cotizar/" class="ol-qn-item ol-qn-cta">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Iniciar Proyecto</span>
+          <span class="ol-qn-sub">Solicitar propuesta</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="ol-footer">
+  <div class="ol-footer-top">
+    <a href="/" class="ol-footer-logo">
+      Origen<span class="ol-footer-logo-dot">.</span>Lab
+    </a>
+    <p class="ol-footer-tagline">
+      Agencia de desarrollo web en México.<br>
+      Creamos sitios que generan resultados.
+    </p>
+    <ul class="ol-footer-contact-list">
+      <li>
+        <a href="mailto:hola@origenlab.mx" class="ol-fcl-item">
+          <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          hola@origenlab.mx
+        </a>
+      </li>
+      <li>
+        <a href="tel:+525547868402" class="ol-fcl-item">
+          <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +52 55 4786 8402
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/525547868402" target="_blank" rel="noopener noreferrer" class="ol-fcl-item ol-fcl-wa">
+          <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg>
+          WhatsApp
+        </a>
+      </li>
+      <li>
+        <span class="ol-fcl-item ol-fcl-static">
+          <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Ciudad de México, MX
+        </span>
+      </li>
+    </ul>
+  </div>
+  <div class="ol-footer-links">
+    <div>
+      <p class="ol-footer-col-title">Servicios</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/servicios/desarrollo-web/">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/">Rediseño Web</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Empresa</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/nosotros/">Nosotros</a></li>
+        <li><a href="/portafolio/">Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/">Equipos Contra Incendios</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Contacto</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/contacto/">Formulario de contacto</a></li>
+        <li><a href="mailto:hola@origenlab.mx">hola@origenlab.mx</a></li>
+        <li><a href="tel:+525547868402">+52 55 4786 8402</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Legal</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/aviso-de-privacidad/">Aviso de privacidad</a></li>
+        <li><a href="/terminos/">Términos de servicio</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ol-footer-bottom">
+    <p class="ol-footer-copy">© 2026 OrigenLab. Todos los derechos reservados.</p>
+    <div class="ol-footer-legal">
+      <a href="/aviso-de-privacidad/">Privacidad</a>
+      <a href="/terminos/">Términos</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WA Bubble -->
+<a href="https://wa.me/525547868402?text=Hola%2C%20vi%20el%20caso%20de%20Gama%20de%20M%C3%A9xico%20y%20me%20interesa%20un%20proyecto%20similar." target="_blank" rel="noopener noreferrer" class="wa-bubble" aria-label="Contáctanos por WhatsApp">
+  <svg aria-hidden="true" focusable="false" viewBox="0 0 32 32" width="26" height="26" fill="#fff">
+    <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 0 0 2.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0 0 16.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"></path>
+  </svg>
+</a>
+
+<!-- ============================================================
+     SCRIPTS — header móvil + scroll + TOC activo
+     ============================================================ -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var toggle   = document.getElementById('ol-menu-toggle');
+    var panel    = document.getElementById('ol-mobile-panel');
+    var overlay  = document.getElementById('ol-mobile-overlay');
+    var closeBtn = document.getElementById('ol-mobile-close');
+    var header   = document.getElementById('ol-header');
+
+    function openMenu() {
+      toggle.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+      panel.classList.add('open');
+      overlay.classList.add('visible');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      panel.classList.remove('open');
+      overlay.classList.remove('visible');
+      document.body.style.overflow = '';
+    }
+
+    if (toggle)   toggle.addEventListener('click', function () { panel.classList.contains('open') ? closeMenu() : openMenu(); });
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    if (overlay)  overlay.addEventListener('click', closeMenu);
+
+    var mobileLinks = panel ? panel.querySelectorAll('a') : [];
+    for (var i = 0; i < mobileLinks.length; i++) mobileLinks[i].addEventListener('click', closeMenu);
+
+    var subToggles = document.querySelectorAll('[data-submenu]');
+    for (var j = 0; j < subToggles.length; j++) {
+      subToggles[j].addEventListener('click', function () {
+        this.classList.toggle('expanded');
+        var sub = this.nextElementSibling;
+        if (sub) sub.classList.toggle('open');
+      });
+    }
+
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 10) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    }, { passive: true });
+
+    /* ---- TOC activo según sección visible ---- */
+    var tocLinks = document.querySelectorAll('#ol-case-toc a');
+    var sections = [];
+    tocLinks.forEach(function(link){
+      var id = link.getAttribute('href').slice(1);
+      var sec = document.getElementById(id);
+      if (sec) sections.push({ id: id, el: sec, link: link });
+    });
+
+    function setActive() {
+      var top = window.scrollY + 140;
+      var current = null;
+      sections.forEach(function(s){
+        if (s.el.offsetTop <= top) current = s;
+      });
+      tocLinks.forEach(function(l){ l.classList.remove('active'); });
+      if (current) current.link.classList.add('active');
+    }
+    if (sections.length) {
+      setActive();
+      window.addEventListener('scroll', setActive, { passive: true });
+    }
+
+    /* ---- Smooth scroll para anchors internos ---- */
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      a.addEventListener('click', function(e){
+        var hash = a.getAttribute('href');
+        if (hash.length > 1) {
+          var target = document.getElementById(hash.slice(1));
+          if (target) {
+            e.preventDefault();
+            window.scrollTo({ top: target.offsetTop - 100, behavior: 'smooth' });
+            history.replaceState(null, '', hash);
+          }
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

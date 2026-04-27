@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="author" content="OrigenLab">
+  <meta name="theme-color" content="#08080E">
+  <title>Desarrollo Web Profesional en México | OrigenLab</title>
+  <meta name="description" content="Desarrollo web a medida en México con Astro, Next.js y React. Sitios corporativos rápidos, diseño propio y código limpio — un solo equipo de principio a fin.">
+  <link rel="canonical" href="https://origenlab.mx/servicios/desarrollo-web/">
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://origenlab.mx/servicios/desarrollo-web/">
+  <meta property="og:title" content="Desarrollo Web Profesional en México | OrigenLab">
+  <meta property="og:description" content="Sitios corporativos a medida con Astro y Next.js. Diseño propio, velocidad real y código limpio.">
+  <meta property="og:image" content="https://origenlab.mx/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="OrigenLab — Desarrollo web profesional en México">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="OrigenLab">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Desarrollo Web Profesional | OrigenLab">
+  <meta name="twitter:description" content="Sitios corporativos a medida con Astro y Next.js. Diseño propio, velocidad real y código limpio.">
+  <meta name="twitter:image" content="https://origenlab.mx/og-image.jpg">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+
+  <!-- Fuentes: preconnect + direct link para evitar render-blocking -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../_astro/BaseLayout.xeR8R953.css?v20260426c">
+  <link rel="stylesheet" href="../../_astro/premium-dark.css?v20260426c">
+  <script src="../../_astro/ol-header.js?v20260426d" defer></script>
+
+  
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.mx/#organization","name":"OrigenLab","url":"https://origenlab.mx","logo":"https://origenlab.mx/logo.svg","description":"Agencia mexicana de desarrollo web. Sitios corporativos, e-commerce, landing pages y rediseño a medida.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressRegion":"CDMX","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","email":"hola@origenlab.mx","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.mx/#website","url":"https://origenlab.mx/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.mx/#organization"}},{"@type":"WebPage","@id":"https://origenlab.mx/servicios/desarrollo-web/#webpage","url":"https://origenlab.mx/servicios/desarrollo-web/","name":"Desarrollo Web Profesional en México | OrigenLab","inLanguage":"es-MX","isPartOf":{"@id":"https://origenlab.mx/#website"},"about":{"@id":"https://origenlab.mx/servicios/desarrollo-web/#service"},"breadcrumb":{"@id":"https://origenlab.mx/servicios/desarrollo-web/#breadcrumb"}},{"@type":"Service","@id":"https://origenlab.mx/servicios/desarrollo-web/#service","serviceType":"Desarrollo Web","name":"Desarrollo Web Profesional","description":"Desarrollo de sitios web corporativos a medida con Astro, Next.js y React. Diseño único, rendimiento real y código limpio para empresas en México.","provider":{"@id":"https://origenlab.mx/#organization"},"areaServed":[{"@type":"Country","name":"México"},{"@type":"City","name":"Ciudad de México"},{"@type":"City","name":"Monterrey"},{"@type":"City","name":"Guadalajara"}],"audience":{"@type":"BusinessAudience","name":"Empresas y marcas en México"},"category":"Desarrollo de software / Sitios web corporativos","url":"https://origenlab.mx/servicios/desarrollo-web/","isRelatedTo":[{"@id":"https://origenlab.mx/servicios/landing-pages/#service"},{"@id":"https://origenlab.mx/servicios/rediseno-web/#service"}],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Tipos de proyectos","itemListElement":[{"@type":"OfferCatalog","name":"Sitios corporativos a medida"},{"@type":"OfferCatalog","name":"Portafolios y micrositios"},{"@type":"OfferCatalog","name":"Integración con CRM y formularios avanzados"},{"@type":"OfferCatalog","name":"Optimización de Core Web Vitals"}]}},{"@type":"BreadcrumbList","@id":"https://origenlab.mx/servicios/desarrollo-web/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.mx/"},{"@type":"ListItem","position":2,"name":"Servicios","item":"https://origenlab.mx/servicios/"},{"@type":"ListItem","position":3,"name":"Desarrollo Web","item":"https://origenlab.mx/servicios/desarrollo-web/"}]},{"@type":"FAQPage","@id":"https://origenlab.mx/servicios/desarrollo-web/#faq","mainEntity":[{"@type":"Question","name":"¿En qué tecnologías desarrollan?","acceptedAnswer":{"@type":"Answer","text":"Trabajamos principalmente con Astro, Next.js, React y TypeScript. Para sitios corporativos usamos Astro por su rendimiento estático; para proyectos con interactividad avanzada o contenido dinámico, Next.js. La elección se define en la auditoría inicial según el tipo de proyecto."}},{"@type":"Question","name":"¿Yo puedo editar el contenido después?","acceptedAnswer":{"@type":"Answer","text":"Sí. Cuando tu sitio necesita actualizaciones frecuentes conectamos un CMS headless — Sanity, Strapi o Storyblok — para que tu equipo edite desde un panel sencillo, sin tocar código y sin afectar el rendimiento del sitio."}},{"@type":"Question","name":"¿Qué incluye un proyecto de desarrollo web?","acceptedAnswer":{"@type":"Answer","text":"Diseño a medida, desarrollo front-end y back-end, versión responsiva (móvil, tablet y desktop), formularios de contacto, integración con WhatsApp, configuración de hosting y dominio, y acompañamiento post-entrega. La propuesta detalla cada entregable por escrito antes de arrancar."}},{"@type":"Question","name":"¿Cómo es el proceso de pago?","acceptedAnswer":{"@type":"Answer","text":"Trabajamos con esquema de parcialidades: al firmar la propuesta y contra entrega antes de pasar el sitio a producción. En proyectos largos definimos hitos intermedios. Aceptamos transferencia bancaria y emitimos factura CFDI 4.0."}},{"@type":"Question","name":"¿Trabajan con clientes fuera de Ciudad de México?","acceptedAnswer":{"@type":"Answer","text":"Sí. Tenemos clientes en Monterrey, Guadalajara, Querétaro, Mérida y proyectos remotos en Estados Unidos y Latinoamérica. Todo el proceso se gestiona 100% remoto, con sesiones por videollamada y seguimiento por WhatsApp o el canal que prefieras."}},{"@type":"Question","name":"¿Qué pasa después de la entrega?","acceptedAnswer":{"@type":"Answer","text":"Entregamos el sitio funcionando en producción, el código fuente en tu repositorio y un manual breve de uso. Incluimos un periodo de soporte post-entrega para ajustes finos. Puedes continuar con un plan de mantenimiento mensual o cotización por proyecto."}},{"@type":"Question","name":"¿Pueden conectar el sitio con mi CRM o herramientas existentes?","acceptedAnswer":{"@type":"Answer","text":"Sí. Integramos formularios, eventos y automatizaciones con HubSpot, Pipedrive, Zoho, Notion, Airtable, Google Sheets, Mailchimp o el CRM que ya uses. Si tu herramienta expone una API, podemos conectarla."}},{"@type":"Question","name":"¿Por qué no usan WordPress o un constructor visual?","acceptedAnswer":{"@type":"Answer","text":"Los page builders introducen código extra innecesario, lentitud y mantenimiento constante por actualizaciones de plugins. Construyendo a medida con Astro o Next.js logramos sitios más rápidos, más seguros, con diseño único y sin dependencias frágiles a terceros."}}]}]}</script>
+  
+
+  <style>
+    /* L3 desarrollo-web — page-level overrides (minimal) */
+    /* Component classes: .ol-page-hero*, .ol-overview*, .ol-features*, .ol-stack*, 
+       .ol-types*, .ol-svc-process*, .ol-showcase*, .ol-faq-* viven en premium-dark.css */
+  </style>
+
+</head>
+<body>
+
+<a class="ol-skip-link" href="#main">Saltar al contenido</a>
+
+<div class="ol-topbar">
+  <div class="ol-topbar-inner">
+    <div class="ol-topbar-left">
+      <a href="mailto:hola@origenlab.mx" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        hola@origenlab.mx
+      </a>
+      <span class="ol-topbar-sep"></span>
+      <a href="tel:+525547868402" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        +52 55 4786 8402
+      </a>
+    </div>
+    <div class="ol-topbar-center">
+      <span class="ol-topbar-promo">
+        <span class="ol-topbar-dot"></span>
+        Atención personalizada  ·  Ciudad de México
+      </span>
+    </div>
+    <div class="ol-topbar-right">
+      <a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web" target="_blank" rel="noopener noreferrer" class="ol-topbar-wa">
+        <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor">
+          <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+<header class="ol-header" id="ol-header">
+  <div class="ol-header-inner">
+    <a href="/" class="ol-header-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
+    </a>
+    <nav class="ol-nav" aria-label="Navegación principal">
+      <ul class="ol-nav-list">
+        <li><a href="/" class="ol-nav-link">Inicio</a></li>
+        <li class="ol-has-dropdown">
+          <a href="/servicios/" class="ol-nav-link active">
+            Servicios
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/servicios/desarrollo-web/" class="ol-dropdown-link">Desarrollo Web</a></li>
+              <li><a href="/servicios/tiendas-en-linea/" class="ol-dropdown-link">Tiendas en Línea</a></li>
+              <li><a href="/servicios/landing-pages/" class="ol-dropdown-link">Landing Pages</a></li>
+              <li><a href="/servicios/rediseno-web/" class="ol-dropdown-link">Rediseño Web</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="ol-has-dropdown">
+          <a href="/portafolio/" class="ol-nav-link">
+            Portafolio
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link">Equipos Contra Incendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link ol-dropdown-sub">— Gama de México</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link ol-dropdown-sub">— MESECI</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link ol-dropdown-sub">— LGA Contraincendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-dropdown-link ol-dropdown-sub">— MANEXT</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-dropdown-link ol-dropdown-sub">— BOMBERO.MX</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-dropdown-link ol-dropdown-sub">— ProyectoRed</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="/nosotros/" class="ol-nav-link">Nosotros</a></li>
+        <li><a href="/blog/" class="ol-nav-link">Blog</a></li>
+        <li><a href="/contacto/" class="ol-nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="/cotizar/" class="ol-header-cta">Cotizar proyecto →</a>
+    <button class="ol-menu-toggle" id="ol-menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+    </button>
+  </div>
+</header>
+<div class="ol-mobile-overlay" id="ol-mobile-overlay"></div>
+<nav class="ol-mobile-panel" id="ol-mobile-panel" aria-label="Menú móvil">
+  <div class="ol-mobile-header">
+    <a href="/" class="ol-mobile-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
+    </a>
+    <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú">
+      <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <ul class="ol-mobile-nav">
+    <li><a href="/" class="ol-mobile-link">Inicio</a></li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Servicios</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/servicios/desarrollo-web/" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Portafolio</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/portafolio/" class="ol-mobile-link ol-mobile-sublink">Todo el Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/" class="ol-mobile-link ol-mobile-sublink">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Gama de México</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MESECI</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— LGA Contraincendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MANEXT</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— BOMBERO.MX</a></li>
+      </ul>
+    </li>
+    <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
+    <li><a href="/blog/" class="ol-mobile-link">Blog</a></li>
+    <li><a href="/contacto/" class="ol-mobile-link">Contacto</a></li>
+  </ul>
+  <div class="ol-mobile-footer">
+    <a href="/cotizar/" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a>
+  </div>
+</nav>
+
+<!-- ============================================================
+     BREADCRUMB
+     ============================================================ -->
+<nav class="ol-bc-wrap" aria-label="Migas de pan">
+  <div class="ol-bc">
+    <ol class="ol-bc-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/" itemprop="item" class="ol-bc-home"><span itemprop="name">Inicio</span></a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/servicios/" itemprop="item"><span itemprop="name">Servicios</span></a>
+        <meta itemprop="position" content="2" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item ol-bc-current" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name">Desarrollo Web</span>
+        <meta itemprop="position" content="3" />
+      </li>
+    </ol>
+  </div>
+</nav>
+
+<!-- ============================================================
+     MAIN
+     ============================================================ -->
+<main id="main">
+
+  <!-- ============== PAGE HERO ============== -->
+  <section class="ol-page-hero">
+    <div class="ol-page-hero-inner">
+      <div class="ol-page-hero-grid">
+
+        <div class="ol-page-hero-left">
+          <span class="ol-eyebrow">Servicio · Desarrollo Web</span>
+          <h1 class="ol-page-hero-title">Sitios corporativos hechos para cargar rápido y convertir.</h1>
+          <p class="ol-page-hero-sub">Diseñamos y desarrollamos sitios web a medida con tecnologías modernas — Astro, Next.js, React — para empresas mexicanas que necesitan una presencia digital sólida, rápida y pensada para resultados reales.</p>
+        </div>
+
+        <div class="ol-page-hero-right">
+          <p class="ol-page-hero-copy">No usamos plantillas, page builders ni temas genéricos. Cada proyecto se diseña desde cero: sistema visual propio, componentes escritos a mano y arquitectura técnica elegida en función de tu negocio, no de lo que esté de moda.</p>
+          <p class="ol-page-hero-copy">El resultado es un sitio que carga en menos de un segundo, se ve impecable en cualquier dispositivo y comunica con precisión quirúrgica lo que tu empresa necesita transmitir. Cada proyecto se entrega con el código fuente, manual de uso y soporte post-lanzamiento incluido.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== QUICK NAV TOP ============== -->
+  <div class="ol-quicknav">
+    <div class="ol-quicknav-inner">
+
+      <a href="/servicios/desarrollo-web/" class="ol-qn-item" aria-current="page">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Desarrollo Web</span>
+          <span class="ol-qn-sub">Sitios corporativos</span>
+        </span>
+      </a>
+
+      <a href="/servicios/tiendas-en-linea/" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Tiendas en Línea</span>
+          <span class="ol-qn-sub">E-commerce · Pagos MX</span>
+        </span>
+      </a>
+
+      <a href="/servicios/landing-pages/" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Landing Pages</span>
+          <span class="ol-qn-sub">Alta conversión</span>
+        </span>
+      </a>
+
+      <a href="/servicios/rediseno-web/" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Rediseño Web</span>
+          <span class="ol-qn-sub">Moderniza tu sitio</span>
+        </span>
+      </a>
+
+      <a href="/portafolio/" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Portafolio</span>
+          <span class="ol-qn-sub">Proyectos realizados</span>
+        </span>
+      </a>
+
+      <a href="/nosotros/" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Nosotros</span>
+          <span class="ol-qn-sub">Equipo &amp; proceso</span>
+        </span>
+      </a>
+
+      <a href="/cotizar/" class="ol-qn-item ol-qn-cta">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Cotizar Proyecto</span>
+          <span class="ol-qn-sub">Solicitar propuesta</span>
+        </span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- ============== OVERVIEW — imagen real + intro ============== -->
+  <section class="ol-overview">
+    <div class="ol-overview-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Qué hacemos</span>
+          <h2 class="ol-section-title">Código limpio, diseño propio,<br>velocidad real.</h2>
+          <p class="ol-section-sub">No construimos sitios genéricos. Construimos plataformas a la medida de cada empresa, pensadas para durar años y escalar con el negocio.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Nuestro equipo combina diseño editorial con ingeniería moderna. Cada proyecto pasa por una fase de descubrimiento real, donde entendemos tu sector, tu voz de marca y los objetivos que tienes que cumplir antes de abrir el editor de código.</p>
+          <p class="ol-sh-copy">El resultado es un sitio que se nota: tiempos de carga por debajo del segundo, microinteracciones con propósito, tipografía cuidada al detalle y un sistema de componentes que tu equipo puede mantener en el tiempo.</p>
+        </div>
+      </div>
+
+      <div class="ol-overview-grid" style="margin-top:4rem;">
+        <div class="ol-overview-img">
+          <img src="../../img/servicios/desarrollo-web.avif" alt="Desarrollo web profesional — OrigenLab" width="1200" height="900" loading="lazy" decoding="async">
+        </div>
+        <div class="ol-overview-text">
+          <span class="ol-eyebrow">Sitios que trabajan por tu negocio</span>
+          <h3 class="ol-overview-title">Diseño y tecnología pensados juntos, desde el primer día.</h3>
+          <p>Un sitio web profesional no es solo una página bonita. Es un activo digital que tiene que cargar en menos de un segundo, verse impecable en cualquier dispositivo, comunicar con claridad lo que haces y, sobre todo, <strong>convertir visitas en conversaciones reales</strong> con tu equipo comercial.</p>
+          <p>En OrigenLab no usamos page builders ni temas comprados. Diseñamos cada interfaz desde cero, escribimos cada componente a mano y elegimos la tecnología en función del proyecto: Astro cuando buscamos máxima velocidad, Next.js cuando hace falta interactividad, contenido dinámico o integraciones complejas.</p>
+          <p>Lo que recibes al final es un sitio que se siente <strong>sólido, rápido y propio</strong> — no plantilla.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== FEATURES ============== -->
+  <section class="ol-features">
+    <div class="ol-features-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Lo que entregamos</span>
+          <h2 class="ol-section-title">Cada proyecto incluye,<br>sin extras escondidos.</h2>
+          <p class="ol-section-sub">Trabajamos con alcance claro y completo. Estos son los pilares que vienen siempre — no son opcionales, son la línea base de un sitio que vale lo que cuesta.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Nuestra propuesta se presenta por escrito con todo el alcance detallado antes de arrancar: pantallas, funcionalidades, integraciones, calendario y entregables. Lo que ves en la propuesta es exactamente lo que recibes.</p>
+          <p class="ol-sh-copy">No cobramos por &quot;integraciones básicas&quot; ni por &quot;versión móvil&quot;. Todo eso está incluido. Los únicos costos adicionales son las funcionalidades que se definan como extensión en la fase de descubrimiento.</p>
+        </div>
+      </div>
+
+      <div class="ol-features-grid" style="margin-top:4rem;">
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Velocidad real, medida</h3>
+          <p class="ol-feature-desc">Sitios estáticos o híbridos que cargan en menos de 1 segundo. Imágenes en AVIF/WebP, fuentes optimizadas y JavaScript mínimo — donde de verdad hace falta.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Diseño 100% responsivo</h3>
+          <p class="ol-feature-desc">Cada componente se prueba en móvil, tablet y desktop. Sin scroll horizontal, sin tipografías rotas, sin imágenes borrosas en pantallas Retina.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Microinteracciones con propósito</h3>
+          <p class="ol-feature-desc">Animaciones suaves que hacen que el sitio se sienta vivo y profesional, sin saturar ni distraer del contenido o de la acción principal.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Formularios que sí llegan</h3>
+          <p class="ol-feature-desc">Contacto, cotización y captación con notificaciones a correo o CRM, validación cuidada y protección anti-spam — listo para producción.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Integración con WhatsApp</h3>
+          <p class="ol-feature-desc">Botón flotante, links pre-rellenados y formularios que abren conversaciones directas. La vía más rápida para convertir visitantes en leads caliente.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Código limpio y entregable</h3>
+          <p class="ol-feature-desc">Repositorio Git, estructura ordenada y documentación clara. Tu equipo o el siguiente desarrollador puede continuar el proyecto sin reescribir nada.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7v10l10 5 10-5V7z"/><polyline points="2 7 12 12 22 7"/><line x1="12" y1="22" x2="12" y2="12"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Hosting y dominio listos</h3>
+          <p class="ol-feature-desc">Configuramos hosting de alto rendimiento (Vercel, Netlify, Cloudflare), dominio, certificado SSL y correos corporativos. Tú solo te ocupas del negocio.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Acompañamiento post-entrega</h3>
+          <p class="ol-feature-desc">Soporte post-entrega incluido, manual de uso y la opción de continuar juntos a través de planes de mantenimiento con cambios menores y nuevas secciones.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== STACK TECNOLÓGICO ============== -->
+  <section class="ol-stack">
+    <div class="ol-stack-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Stack tecnológico</span>
+          <h2 class="ol-section-title">La tecnología correcta<br>para cada proyecto.</h2>
+          <p class="ol-section-sub">No usamos siempre lo mismo &quot;porque sí&quot;. Elegimos cada herramienta en función del tipo de proyecto, del equipo que lo va a mantener y de los objetivos comerciales.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Nuestro stack base cubre el 95% de los proyectos. Para los casos más específicos — integraciones con ERPs internos, headless commerce o experiencias muy interactivas — definimos el stack en la fase de descubrimiento, antes de comprometernos con una arquitectura.</p>
+          <p class="ol-sh-copy">Todas estas tecnologías tienen comunidades sólidas, documentación excelente y un futuro de mantenimiento a largo plazo — que es lo que realmente importa al pensar en un sitio corporativo.</p>
+        </div>
+      </div>
+
+      <div class="ol-stack-grid" style="margin-top:4rem;">
+        <div class="ol-stack-item"><p class="ol-stack-cat">Framework</p><h3 class="ol-stack-tech">Astro</h3><p class="ol-stack-desc">Sitios corporativos ultra-rápidos con mínimo JavaScript.</p></div>
+        <div class="ol-stack-item"><p class="ol-stack-cat">Framework</p><h3 class="ol-stack-tech">Next.js</h3><p class="ol-stack-desc">Proyectos con interactividad, SSR y contenido dinámico.</p></div>
+        <div class="ol-stack-item"><p class="ol-stack-cat">UI library</p><h3 class="ol-stack-tech">React</h3><p class="ol-stack-desc">Componentes reutilizables y experiencias ricas.</p></div>
+        <div class="ol-stack-item"><p class="ol-stack-cat">Lenguaje</p><h3 class="ol-stack-tech">TypeScript</h3><p class="ol-stack-desc">Código con tipos — menos bugs, más mantenibilidad.</p></div>
+        <div class="ol-stack-item"><p class="ol-stack-cat">Estilos</p><h3 class="ol-stack-tech">CSS moderno</h3><p class="ol-stack-desc">Grid, variables y container queries, sin frameworks pesados.</p></div>
+        <div class="ol-stack-item"><p class="ol-stack-cat">Hosting</p><h3 class="ol-stack-tech">Vercel · Cloudflare</h3><p class="ol-stack-desc">Deploys instantáneos, edge global y SSL automático.</p></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== TIPOS DE PROYECTO ============== -->
+  <section class="ol-types">
+    <div class="ol-types-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Para quién es</span>
+          <h2 class="ol-section-title">Proyectos en los que<br>trabajamos habitualmente.</h2>
+          <p class="ol-section-sub">El desarrollo web a medida tiene sentido cuando lo que estás construyendo importa: tu marca, tu producto, tu primera impresión digital.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Trabajamos con empresas mexicanas en sectores tan distintos como gastronomía, servicios profesionales, retail, manufactura y consultoría. Lo que todos tienen en común es una necesidad clara de un sitio que realmente represente el nivel del negocio.</p>
+          <p class="ol-sh-copy">Si tu proyecto no cae exactamente en alguna de estas categorías, escríbenos. Prácticamente cualquier tipo de sitio corporativo entra dentro de nuestro scope.</p>
+        </div>
+      </div>
+
+      <div class="ol-types-grid" style="margin-top:4rem;">
+
+        <article class="ol-type-card">
+          <p class="ol-type-num">01</p>
+          <h3 class="ol-type-title">Sitios corporativos</h3>
+          <p class="ol-type-desc">El sitio institucional de empresas medianas y grandes que quieren proyectar seriedad, claridad y autoridad en su sector. De 5 a 12 secciones bien estructuradas.</p>
+          <div class="ol-type-meta"><span>Pantallas</span><strong>5 — 12</strong></div>
+        </article>
+
+        <article class="ol-type-card">
+          <p class="ol-type-num">02</p>
+          <h3 class="ol-type-title">Sitios institucionales</h3>
+          <p class="ol-type-desc">Para despachos, consultoras, instituciones educativas o asociaciones que necesitan transmitir confianza con diseño cuidado y un flujo de información impecable.</p>
+          <div class="ol-type-meta"><span>Pantallas</span><strong>4 — 10</strong></div>
+        </article>
+
+        <article class="ol-type-card">
+          <p class="ol-type-num">03</p>
+          <h3 class="ol-type-title">Plataformas de servicios</h3>
+          <p class="ol-type-desc">Sitios donde cada servicio tiene su propia landing — perfectos para agencias, estudios, despachos profesionales o equipos B2B con varias líneas de negocio.</p>
+          <div class="ol-type-meta"><span>Pantallas</span><strong>8 — 20</strong></div>
+        </article>
+
+        <article class="ol-type-card">
+          <p class="ol-type-num">04</p>
+          <h3 class="ol-type-title">Portafolios profesionales</h3>
+          <p class="ol-type-desc">Para arquitectos, diseñadores, fotógrafos, productoras o creativos que necesitan que el sitio sea, en sí mismo, una pieza de su trabajo.</p>
+          <div class="ol-type-meta"><span>Pantallas</span><strong>4 — 8</strong></div>
+        </article>
+
+        <article class="ol-type-card">
+          <p class="ol-type-num">05</p>
+          <h3 class="ol-type-title">Sitios de producto</h3>
+          <p class="ol-type-desc">Empresas con un único producto o servicio principal, donde toda la página debe conducir al usuario hacia la compra, demo o contratación.</p>
+          <div class="ol-type-meta"><span>Pantallas</span><strong>1 — 3</strong></div>
+        </article>
+
+        <article class="ol-type-card">
+          <p class="ol-type-num">06</p>
+          <h3 class="ol-type-title">Headless / a medida</h3>
+          <p class="ol-type-desc">Cuando necesitas un CMS desacoplado, integraciones con sistemas internos o experiencias específicas que ningún builder estándar puede resolver.</p>
+          <div class="ol-type-meta"><span>Pantallas</span><strong>A medida</strong></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== PROCESO 4 PASOS ============== -->
+  <section class="ol-svc-process">
+    <div class="ol-svc-process-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Cómo trabajamos</span>
+          <h2 class="ol-section-title">Un proceso claro,<br>sin sorpresas.</h2>
+          <p class="ol-section-sub">El cliente sabe qué pasa, qué sigue y cuándo. Cuatro fases bien definidas, calendario por escrito y entregables visibles en cada paso.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">No aceptamos proyectos sin una fase de descubrimiento real: medio cliente nuevo llega con ideas claras y medio llega con preguntas abiertas. Nuestro trabajo es hacerte las preguntas correctas antes de escribir una sola línea de código.</p>
+          <p class="ol-sh-copy">Tienes acceso al sitio en un entorno de pruebas durante el proyecto, para ver el avance real — no maquetas, no capturas de pantalla, el sitio funcionando y navegable.</p>
+        </div>
+      </div>
+
+      <div class="ol-svc-process-steps" style="margin-top:4rem;">
+
+        <div class="ol-svc-process-step">
+          <div class="ol-svc-process-num">1</div>
+          <h3 class="ol-svc-process-title">Descubrimiento</h3>
+          <p class="ol-svc-process-desc">Sesión inicial para entender tu negocio, objetivos, audiencia y referentes visuales. Definimos alcance, sitemap y mensajes clave por escrito.</p>
+        </div>
+
+        <div class="ol-svc-process-step">
+          <div class="ol-svc-process-num">2</div>
+          <h3 class="ol-svc-process-title">Diseño visual</h3>
+          <p class="ol-svc-process-desc">Sistema de diseño, prototipo navegable de las pantallas principales y revisión iterativa hasta dejar la dirección visual aprobada.</p>
+        </div>
+
+        <div class="ol-svc-process-step">
+          <div class="ol-svc-process-num">3</div>
+          <h3 class="ol-svc-process-title">Desarrollo</h3>
+          <p class="ol-svc-process-desc">Implementación a medida con el stack acordado. Entregas iterativas en entorno de pruebas — ves el avance real, no maquetas.</p>
+        </div>
+
+        <div class="ol-svc-process-step">
+          <div class="ol-svc-process-num">4</div>
+          <h3 class="ol-svc-process-title">Lanzamiento</h3>
+          <p class="ol-svc-process-desc">QA cruzado en navegadores y dispositivos, configuración de hosting/dominio, capacitación y go-live. Soporte post-entrega incluido.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== PROPUESTA ============== -->
+  
+
+  <!-- ============== SHOWCASE CROSS-SELL ============== -->
+  <section class="ol-showcase">
+    <div class="ol-showcase-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Otros servicios</span>
+          <h2 class="ol-section-title">¿Tu proyecto es<br>algo distinto?</h2>
+          <p class="ol-section-sub">Si tu caso cae en otra categoría, también podemos ayudarte. Cada servicio tiene su propia metodología y alcance, pero comparten el mismo nivel de cuidado.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Todos nuestros servicios comparten los mismos principios: diseño a medida, tecnología moderna, código limpio y una inversión clara sin sorpresas. Lo que cambia es el tipo de proyecto y el alcance de la entrega.</p>
+          <p class="ol-sh-copy">Si tienes dudas sobre cuál encaja mejor con lo que necesitas, podemos platicarlo por WhatsApp o en una llamada breve — y en unos minutos te indicamos cuál es el camino correcto.</p>
+        </div>
+      </div>
+
+      <div class="ol-showcase-block" style="padding-top:5rem;">
+        <div class="ol-showcase-img">
+          <div class="ol-showcase-img-label">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+            <span>Imagen próximamente</span>
+          </div>
+        </div>
+        <div class="ol-showcase-info">
+          <p class="ol-showcase-num">01 — Tiendas en Línea</p>
+          <h3 class="ol-showcase-title">E-commerce a medida con pagos mexicanos.</h3>
+          <p class="ol-showcase-desc">Tienda en línea completa: catálogo, carrito, checkout, pasarelas de pago mexicanas (Mercado Pago, OXXO Pay, Stripe) y panel de administración. Sobre Shopify, WooCommerce o stack a medida según el tamaño del proyecto.</p>
+          <ul class="ol-showcase-list">
+            <li>Catálogo con filtros, búsqueda y variantes de producto</li>
+            <li>Pasarelas de pago locales — Mercado Pago · OXXO · Stripe</li>
+            <li>Panel de administración de inventario y pedidos</li>
+            <li>Diseño de marca, no plantilla genérica</li>
+          </ul>
+          <a href="/servicios/tiendas-en-linea/" class="ol-showcase-cta">Ver Tiendas en Línea →</a>
+        </div>
+      </div>
+
+      <div class="ol-showcase-block">
+        <div class="ol-showcase-img">
+          <div class="ol-showcase-img-label">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            <span>Imagen próximamente</span>
+          </div>
+        </div>
+        <div class="ol-showcase-info">
+          <p class="ol-showcase-num">02 — Landing Pages</p>
+          <h3 class="ol-showcase-title">Páginas de aterrizaje de alta conversión.</h3>
+          <p class="ol-showcase-desc">Landings para campañas pagadas, lanzamientos o productos específicos. Diseño orientado a conversión, copy estratégico, integración con Google Ads y Meta.</p>
+          <ul class="ol-showcase-list">
+            <li>Estructura probada para maximizar conversión</li>
+            <li>Copy estratégico incluido en el proyecto</li>
+            <li>Integración con Google Ads, Meta Ads y píxeles</li>
+            <li>Velocidad de carga optimizada</li>
+          </ul>
+          <a href="/servicios/landing-pages/" class="ol-showcase-cta">Ver Landing Pages →</a>
+        </div>
+      </div>
+
+      <div class="ol-showcase-block">
+        <div class="ol-showcase-img">
+          <div class="ol-showcase-img-label">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            <span>Imagen próximamente</span>
+          </div>
+        </div>
+        <div class="ol-showcase-info">
+          <p class="ol-showcase-num">03 — Rediseño Web</p>
+          <h3 class="ol-showcase-title">Moderniza tu sitio sin perder lo que funciona.</h3>
+          <p class="ol-showcase-desc">¿Ya tienes un sitio que se siente lento, viejo o que no convierte? Lo rediseñamos a fondo respetando tu contenido, mejorando el rendimiento y actualizando el diseño sin perder lo que ya está dando resultados.</p>
+          <ul class="ol-showcase-list">
+            <li>Auditoría de diseño, velocidad, usabilidad y estructura</li>
+            <li>Rediseño visual completo alineado a identidad de marca</li>
+            <li>Migración de contenido existente sin pérdida de datos</li>
+            <li>Acompañamiento post-lanzamiento incluido</li>
+          </ul>
+          <a href="/servicios/rediseno-web/" class="ol-showcase-cta">Ver Rediseño Web →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== FAQ + FORM ============== -->
+  <section class="ol-faq-section">
+    <div class="ol-faq-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Preguntas Frecuentes</span>
+          <h2 class="ol-section-title">Todo lo que normalmente<br>nos preguntan.</h2>
+          <p class="ol-section-sub">Resolvemos las dudas más comunes sobre el servicio de desarrollo web. ¿No encuentras tu respuesta? Escríbenos directo por WhatsApp.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Sabemos que contratar una agencia implica una decisión importante. Por eso reunimos aquí las preguntas que más nos hacen antes de arrancar — sobre costos, tiempos, tecnologías y lo que incluye cada entrega.</p>
+          <p class="ol-sh-copy">Si tu pregunta no está aquí, escríbenos por WhatsApp. Te leemos personalmente y respondemos con propuestas claras y por escrito.</p>
+        </div>
+      </div>
+
+      <div class="ol-faq-grid">
+
+        <!-- Columna izquierda: Acordeón FAQ -->
+        <div>
+          <p class="ol-faq-col-label">Preguntas frecuentes</p>
+          <div class="ol-faq-list" id="ol-faq-list-dw">
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="dw1">
+                ¿En qué tecnologías desarrollan?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-dw1">
+                <p class="ol-faq-answer-inner">Trabajamos principalmente con Astro, Next.js, React y TypeScript — la elección depende del tipo de proyecto. Para sitios corporativos usamos Astro por su rendimiento; para proyectos con más interactividad o contenido dinámico, Next.js. Lo importante es que la tecnología tenga sentido para ti, no que sea la más moderna por moda.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="dw2">
+                ¿Yo puedo editar el contenido después?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-dw2">
+                <p class="ol-faq-answer-inner">Sí. Si tu sitio necesita actualizaciones frecuentes, conectamos un CMS headless (Sanity, Strapi o Storyblok según el caso) para que tu equipo pueda editar textos, imágenes y secciones desde un panel sencillo, sin tocar código.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="dw3">
+                ¿Qué incluye un proyecto de desarrollo web?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-dw3">
+                <p class="ol-faq-answer-inner">Sitio corporativo con diseño a medida, versión móvil, formulario de contacto, integración WhatsApp, hosting/dominio configurados y soporte post-entrega. Cada proyecto es único, así que tras la primera llamada te enviamos una cotización personalizada por escrito con alcance, entregables y stack recomendado.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="dw4">
+                ¿Cómo es el proceso de pago?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-dw4">
+                <p class="ol-faq-answer-inner">Dividimos el proyecto en dos pagos: 50% al firmar la propuesta para arrancar y 50% contra entrega antes de pasar el sitio a producción. En proyectos largos podemos definir hitos intermedios. Aceptamos transferencia, depósito y emitimos factura.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="dw5">
+                ¿Trabajan con clientes fuera de Ciudad de México?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-dw5">
+                <p class="ol-faq-answer-inner">Sí. Tenemos clientes en Monterrey, Guadalajara, Querétaro, Mérida y proyectos remotos en Estados Unidos y Latinoamérica. Todo el proceso es 100% remoto: videollamadas, entregables compartidos en línea y avances visibles en tiempo real.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="dw6">
+                ¿Qué pasa después de la entrega?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-dw6">
+                <p class="ol-faq-answer-inner">Te entregamos el sitio funcionando, el código en tu repositorio y un manual breve de uso. Incluimos soporte post-entrega para correcciones y ajustes menores. Si quieres seguir con nosotros, ofrecemos planes de mantenimiento con cambios menores, monitoreo y nuevas secciones bajo demanda.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="dw7">
+                ¿Pueden conectar el sitio con mi CRM o herramientas existentes?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-dw7">
+                <p class="ol-faq-answer-inner">Sí. Integramos los formularios y eventos del sitio con HubSpot, Pipedrive, Zoho, Notion, Airtable, Google Sheets o el CRM que ya uses. Si necesitas algo más específico (Salesforce, ERPs internos, sistemas a medida) lo evaluamos en la fase de descubrimiento.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="dw8">
+                ¿Por qué no usan WordPress o un constructor visual?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-dw8">
+                <p class="ol-faq-answer-inner">Para clientes que quieren un sitio profesional y bien diferenciado, los temas y page builders introducen lentitud, código extra innecesario y mantenimiento eterno por actualizaciones. Construyendo a medida con Astro o Next.js logramos sitios más rápidos, más seguros y con diseño realmente único — al mismo costo o menor a largo plazo.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Columna derecha: Formulario WhatsApp -->
+        <div>
+          <div class="ol-faq-form-wrap">
+            <span class="ol-faq-form-badge">
+              <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+              Contáctanos por WhatsApp
+            </span>
+            <h3 class="ol-faq-form-title">¿Listo para arrancar<br>tu sitio web?</h3>
+            <p class="ol-faq-form-sub">Cuéntanos brevemente qué necesitas y te respondemos con una propuesta clara, por escrito y sin compromiso.</p>
+
+            <form class="ol-faq-form" id="ol-wa-form-dw" novalidate>
+              <div class="ol-faq-form-row">
+                <div class="ol-faq-field">
+                  <label for="dw-nombre">Tu nombre</label>
+                  <input type="text" id="dw-nombre" placeholder="Ej. Carlos García" autocomplete="given-name">
+                </div>
+                <div class="ol-faq-field">
+                  <label for="dw-empresa">Empresa / Negocio</label>
+                  <input type="text" id="dw-empresa" placeholder="Nombre de tu empresa">
+                </div>
+              </div>
+              <div class="ol-faq-field">
+                <label for="dw-tipo">Tipo de sitio</label>
+                <select id="dw-tipo">
+                  <option value="" disabled selected>Selecciona una opción</option>
+                  <option value="Sitio corporativo">Sitio corporativo</option>
+                  <option value="Sitio institucional">Sitio institucional</option>
+                  <option value="Plataforma de servicios">Plataforma de servicios</option>
+                  <option value="Portafolio profesional">Portafolio profesional</option>
+                  <option value="Sitio de producto">Sitio de producto</option>
+                  <option value="Headless / a medida">Headless / a medida</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+              <div class="ol-faq-field">
+                <label for="dw-mensaje">¿Qué necesitas?</label>
+                <textarea id="dw-mensaje" placeholder="Describe brevemente tu proyecto: número de pantallas aproximado, funcionalidades, integraciones..."></textarea>
+              </div>
+              <button type="submit" class="ol-faq-submit">
+                <svg width="17" height="17" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+                Enviar por WhatsApp
+              </button>
+              <p class="ol-faq-form-note">Al enviar, se abrirá WhatsApp con tu mensaje listo. Te respondemos personalmente.</p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+  (function() {
+    var btns = document.querySelectorAll('#ol-faq-list-dw .ol-faq-question');
+    btns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var idx = btn.getAttribute('data-faq');
+        var answer = document.getElementById('faq-ans-' + idx);
+        var isOpen = btn.classList.contains('active');
+        btns.forEach(function(b) {
+          b.classList.remove('active');
+          var a = document.getElementById('faq-ans-' + b.getAttribute('data-faq'));
+          if (a) a.style.maxHeight = null;
+        });
+        if (!isOpen && answer) {
+          btn.classList.add('active');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+    var dwForm = document.getElementById('ol-wa-form-dw');
+    if (dwForm) {
+      dwForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var nombre  = document.getElementById('dw-nombre').value.trim();
+        var empresa = document.getElementById('dw-empresa').value.trim();
+        var tipo    = document.getElementById('dw-tipo').value;
+        var mensaje = document.getElementById('dw-mensaje').value.trim();
+        var partes  = ['Hola OrigenLab, me contacto desde la página de Desarrollo Web.'];
+        if (nombre)  partes.push('*Nombre:* ' + nombre);
+        if (empresa) partes.push('*Empresa:* ' + empresa);
+        if (tipo)    partes.push('*Tipo de sitio:* ' + tipo);
+        if (mensaje) partes.push('*Descripción:* ' + mensaje);
+        partes.push('Me gustaría recibir una propuesta. ¡Gracias!');
+        var url = 'https://wa.me/525547868402?text=' + encodeURIComponent(partes.join('\n'));
+        window.open(url, '_blank', 'noopener,noreferrer');
+      });
+    }
+  })();
+  </script>
+
+  <!-- ============== QUICK NAV BOTTOM ============== -->
+  <div class="ol-quicknav">
+    <div class="ol-quicknav-inner">
+      <a href="/servicios/desarrollo-web/" class="ol-qn-item" aria-current="page">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Desarrollo Web</span>
+          <span class="ol-qn-sub">Estás aquí</span>
+        </div>
+      </a>
+      <a href="/servicios/tiendas-en-linea/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Tienda en Línea</span>
+          <span class="ol-qn-sub">Vende desde el día uno</span>
+        </div>
+      </a>
+      <a href="/servicios/landing-pages/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Landing Pages</span>
+          <span class="ol-qn-sub">Más leads, más ventas</span>
+        </div>
+      </a>
+      <a href="/servicios/rediseno-web/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Rediseño Web</span>
+          <span class="ol-qn-sub">Actualiza tu presencia</span>
+        </div>
+      </a>
+      <a href="/portafolio/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Portafolio</span>
+          <span class="ol-qn-sub">Ve lo que construimos</span>
+        </div>
+      </a>
+      <a href="/nosotros/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Nosotros</span>
+          <span class="ol-qn-sub">Quiénes somos</span>
+        </div>
+      </a>
+      <a href="/cotizar/" class="ol-qn-item ol-qn-cta">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Iniciar Proyecto</span>
+          <span class="ol-qn-sub">Solicitar propuesta</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="ol-footer">
+  <div class="ol-footer-top">
+    <a href="/" class="ol-footer-logo">
+      Origen<span class="ol-footer-logo-dot">.</span>Lab
+    </a>
+    <p class="ol-footer-tagline">
+      Agencia de desarrollo web en México.<br>
+      Creamos sitios que generan resultados.
+    </p>
+    <ul class="ol-footer-contact-list">
+      <li>
+        <a href="mailto:hola@origenlab.mx" class="ol-fcl-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          hola@origenlab.mx
+        </a>
+      </li>
+      <li>
+        <a href="tel:+525547868402" class="ol-fcl-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +52 55 4786 8402
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/525547868402" target="_blank" rel="noopener noreferrer" class="ol-fcl-item ol-fcl-wa">
+          <svg width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+          WhatsApp
+        </a>
+      </li>
+      <li>
+        <span class="ol-fcl-item ol-fcl-static">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Ciudad de México, MX
+        </span>
+      </li>
+    </ul>
+  </div>
+  <div class="ol-footer-links">
+    <div>
+      <p class="ol-footer-col-title">Servicios</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/servicios/desarrollo-web/">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/">Rediseño Web</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Empresa</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/nosotros/">Nosotros</a></li>
+        <li><a href="/portafolio/">Portafolio</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/cotizar/">Cotizar proyecto</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Contacto</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/contacto/">Formulario de contacto</a></li>
+        <li><a href="mailto:hola@origenlab.mx">hola@origenlab.mx</a></li>
+        <li><a href="tel:+525547868402">+52 55 4786 8402</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Legal</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/aviso-de-privacidad/">Aviso de privacidad</a></li>
+        <li><a href="/terminos/">Términos de servicio</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ol-footer-bottom">
+    <p class="ol-footer-copy">© 2026 OrigenLab. Todos los derechos reservados.</p>
+    <div class="ol-footer-legal">
+      <a href="/aviso-de-privacidad/">Privacidad</a>
+      <a href="/terminos/">Términos</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WA Bubble -->
+<a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20de%20desarrollo%20web.%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" class="wa-bubble" aria-label="Contáctanos por WhatsApp">
+  <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff">
+    <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 0 0 2.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0 0 16.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"></path>
+  </svg>
+</a>
+
+<!-- ============================================================
+     SCRIPTS (menu)
+     ============================================================ -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var toggle   = document.getElementById('ol-menu-toggle');
+    var panel    = document.getElementById('ol-mobile-panel');
+    var overlay  = document.getElementById('ol-mobile-overlay');
+    var closeBtn = document.getElementById('ol-mobile-close');
+    var header   = document.getElementById('ol-header');
+
+    function openMenu() {
+      toggle.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+      panel.classList.add('open');
+      overlay.classList.add('visible');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      panel.classList.remove('open');
+      overlay.classList.remove('visible');
+      document.body.style.overflow = '';
+    }
+
+    if (toggle)   toggle.addEventListener('click', function () { panel.classList.contains('open') ? closeMenu() : openMenu(); });
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    if (overlay)  overlay.addEventListener('click', closeMenu);
+
+    var mobileLinks = panel ? panel.querySelectorAll('a') : [];
+    for (var i = 0; i < mobileLinks.length; i++) mobileLinks[i].addEventListener('click', closeMenu);
+
+    var subToggles = document.querySelectorAll('[data-submenu]');
+    for (var j = 0; j < subToggles.length; j++) {
+      subToggles[j].addEventListener('click', function () {
+        this.classList.toggle('expanded');
+        var sub = this.nextElementSibling;
+        if (sub) sub.classList.toggle('open');
+      });
+    }
+
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 10) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    }, { passive: true });
+  });
+</script>
+
+</body>
+</html>

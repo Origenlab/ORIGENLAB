@@ -23,239 +23,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
 
-  <link rel="stylesheet" href="../../_astro/BaseLayout.xeR8R953.css?v20260421a">
-  <link rel="stylesheet" href="../../_astro/premium-dark.css?v20260421a">
-  <script src="../../_astro/ol-header.js?v20260421a" defer></script>
-
-  <style>
-    /* ============================================================ READING PROGRESS BAR ============================================================ */
-    .ol-read-progress { position: fixed; top: 0; left: 0; width: 0%; height: 2px; background: linear-gradient(90deg, #C9A84C, #E0BB5D); z-index: 9999; transition: width 0.1s ease-out; box-shadow: 0 0 12px rgba(201,168,76,0.6); }
-
-    /* ============================================================ ARTICLE HERO ============================================================ */
-    .ol-art-hero { background: #08080E; padding: 5rem 0 4rem; position: relative; overflow: hidden; }
-    .ol-art-hero::before { content: ''; position: absolute; top: -30%; left: -10%; width: 70%; height: 140%; background: radial-gradient(ellipse at center, rgba(129,140,248,0.07) 0%, transparent 60%); pointer-events: none; }
-    .ol-art-hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(201,168,76,0.2), transparent); }
-    .ol-art-hero-inner { width: 90%; max-width: 1600px; margin: 0 auto; position: relative; z-index: 1; }
-    .ol-art-hero-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 4rem; align-items: center; }
-    @media (max-width: 1000px) { .ol-art-hero-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
-
-    .ol-art-breadcrumb { display: flex; align-items: center; gap: 0.5rem; font-size: 12.5px; color: rgba(240,240,245,0.35); margin-bottom: 1.5rem; }
-    .ol-art-breadcrumb a { color: rgba(240,240,245,0.5); text-decoration: none; transition: color 0.2s; }
-    .ol-art-breadcrumb a:hover { color: #C9A84C; }
-    .ol-art-breadcrumb span.sep { color: rgba(240,240,245,0.2); }
-    .ol-art-breadcrumb .current { color: rgba(240,240,245,0.45); }
-
-    .ol-art-badges { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
-    .ol-art-cat { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.3rem 0.85rem; border-radius: 999px; border: 1px solid; }
-    .ol-art-cat.rendimiento { background: rgba(99,102,241,0.1); border-color: rgba(99,102,241,0.3); color: #818CF8; }
-    .ol-art-cat.tecnologia  { background: rgba(14,165,233,0.1); border-color: rgba(14,165,233,0.3); color: #38BDF8; }
-    .ol-art-cat.diseno      { background: rgba(236,72,153,0.1); border-color: rgba(236,72,153,0.3); color: #F472B6; }
-    .ol-art-cat.ecommerce   { background: rgba(16,185,129,0.1); border-color: rgba(16,185,129,0.3); color: #34D399; }
-    .ol-art-cat.estrategia  { background: rgba(245,158,11,0.1); border-color: rgba(245,158,11,0.3); color: #FBBF24; }
-    .ol-art-readtime { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 12px; font-weight: 600; color: rgba(240,240,245,0.5); padding: 0.3rem 0.75rem; border-radius: 999px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); }
-
-    .ol-art-title { font-size: clamp(2.2rem, 4.5vw, 3.75rem); font-weight: 900; color: #F0F0F5; letter-spacing: -0.035em; line-height: 1.05; margin: 0 0 1.5rem; }
-    .ol-art-excerpt { font-size: 1.0625rem; color: rgba(240,240,245,0.55); line-height: 1.75; margin: 0 0 2rem; }
-    .ol-art-meta { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.06); }
-    .ol-art-meta-author { display: flex; align-items: center; gap: 0.75rem; }
-    .ol-art-meta-avatar { width: 38px; height: 38px; border-radius: 50%; background: linear-gradient(135deg, #C9A84C, #8B7236); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 800; color: #08080E; border: 1px solid rgba(201,168,76,0.3); }
-    .ol-art-meta-author-info { display: flex; flex-direction: column; gap: 2px; }
-    .ol-art-meta-author-name { font-size: 13px; font-weight: 700; color: rgba(240,240,245,0.85); }
-    .ol-art-meta-author-role { font-size: 11.5px; color: rgba(240,240,245,0.4); }
-    .ol-art-meta-sep { width: 1px; height: 24px; background: rgba(255,255,255,0.08); }
-    .ol-art-meta-item { font-size: 12.5px; color: rgba(240,240,245,0.45); display: inline-flex; align-items: center; gap: 0.35rem; }
-    .ol-art-meta-item svg { opacity: 0.5; }
-
-    .ol-art-hero-card { position: relative; background: linear-gradient(135deg, #0D0D1E, #14142A, #0A0A18); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; aspect-ratio: 4/3; overflow: hidden; display: flex; align-items: center; justify-content: center; }
-    .ol-art-hero-card::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 45%, rgba(129,140,248,0.15) 0%, transparent 65%); }
-    .ol-art-hero-card::after { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(201,168,76,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,0.05) 1px, transparent 1px); background-size: 32px 32px; mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%); }
-    .ol-art-hero-card-inner { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 1rem; text-align: center; padding: 2rem; }
-    .ol-art-hero-gauge { position: relative; width: 160px; height: 160px; display: flex; align-items: center; justify-content: center; }
-    .ol-art-hero-gauge svg { transform: rotate(-90deg); }
-    .ol-art-hero-gauge .gauge-bg { stroke: rgba(255,255,255,0.08); }
-    .ol-art-hero-gauge .gauge-fg { stroke: #818CF8; stroke-dasharray: 440; stroke-dashoffset: 207; filter: drop-shadow(0 0 8px rgba(129,140,248,0.4)); }
-    .ol-art-hero-gauge-value { position: absolute; display: flex; flex-direction: column; align-items: center; }
-    .ol-art-hero-gauge-value .num { font-size: 2.5rem; font-weight: 900; color: #F0F0F5; letter-spacing: -0.03em; line-height: 1; }
-    .ol-art-hero-gauge-value .unit { font-size: 11px; font-weight: 700; color: rgba(129,140,248,0.8); letter-spacing: 0.12em; text-transform: uppercase; margin-top: 0.35rem; }
-    .ol-art-hero-card-caption { font-size: 11.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(240,240,245,0.4); max-width: 260px; }
-
-    /* ============================================================ STATS BAND ============================================================ */
-    .ol-art-stats { background: #04040A; padding: 2.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
-    .ol-art-stats-inner { width: 90%; max-width: 1600px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
-    @media (max-width: 860px) { .ol-art-stats-inner { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; } }
-    .ol-art-stat { display: flex; flex-direction: column; gap: 0.25rem; padding-left: 1.25rem; border-left: 2px solid rgba(201,168,76,0.3); }
-    .ol-art-stat-num { font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 900; color: #F0F0F5; letter-spacing: -0.03em; line-height: 1; }
-    .ol-art-stat-num .accent { color: #C9A84C; }
-    .ol-art-stat-label { font-size: 11.5px; color: rgba(240,240,245,0.4); margin-top: 0.5rem; line-height: 1.4; }
-
-    /* ============================================================ ARTICLE LAYOUT ============================================================ */
-    .ol-art-section { background: #08080E; padding: 5rem 0 6rem; position: relative; }
-    .ol-art-inner { width: 90%; max-width: 1600px; margin: 0 auto; }
-    .ol-art-layout { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 3.5rem; align-items: start; }
-    @media (max-width: 1100px) { .ol-art-layout { grid-template-columns: 1fr; gap: 3rem; } }
-
-    /* ============================================================ ARTICLE BODY ============================================================ */
-    .ol-art-body { max-width: 760px; font-family: 'Inter', system-ui, sans-serif; }
-    .ol-art-body > h2 { font-size: clamp(1.5rem, 2.5vw, 1.875rem); font-weight: 800; color: #F0F0F5; letter-spacing: -0.025em; margin: 3.5rem 0 1.25rem; line-height: 1.2; scroll-margin-top: 110px; position: relative; }
-    .ol-art-body > h2::before { content: ''; position: absolute; left: -1.25rem; top: 0.5em; width: 4px; height: 1.1em; background: linear-gradient(180deg, #C9A84C, rgba(201,168,76,0.2)); border-radius: 2px; }
-    @media (max-width: 760px) { .ol-art-body > h2::before { display: none; } }
-    .ol-art-body > h2:first-child { margin-top: 0; }
-    .ol-art-body > h3 { font-size: 1.125rem; font-weight: 700; color: rgba(240,240,245,0.9); margin: 2rem 0 0.75rem; letter-spacing: -0.015em; }
-    .ol-art-body > p { font-size: 1.0625rem; color: rgba(240,240,245,0.72); line-height: 1.85; margin: 0 0 1.25rem; }
-    .ol-art-body > p.lead::first-letter { float: left; font-size: 3.75rem; font-weight: 900; color: #C9A84C; line-height: 0.9; padding: 0.3rem 0.75rem 0 0; letter-spacing: -0.04em; }
-    .ol-art-body strong { color: #F0F0F5; font-weight: 700; }
-    .ol-art-body a:not([class]) { color: #C9A84C; text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.3); transition: all 0.2s; }
-    .ol-art-body a:not([class]):hover { border-bottom-color: #C9A84C; color: #E0BB5D; }
-    .ol-art-body > ul, .ol-art-body > ol { margin: 0 0 1.5rem 0; padding: 0; list-style: none; }
-    .ol-art-body > ul > li, .ol-art-body > ol > li { position: relative; padding: 0.25rem 0 0.25rem 1.75rem; font-size: 1.0625rem; color: rgba(240,240,245,0.72); line-height: 1.8; margin-bottom: 0.5rem; }
-    .ol-art-body > ul > li::before { content: ''; position: absolute; left: 0; top: 0.85rem; width: 6px; height: 6px; border-radius: 50%; background: #C9A84C; box-shadow: 0 0 0 3px rgba(201,168,76,0.15); }
-    .ol-art-body > ol { counter-reset: li; }
-    .ol-art-body > ol > li { counter-increment: li; }
-    .ol-art-body > ol > li::before { content: counter(li); position: absolute; left: 0; top: 0.35rem; font-size: 11px; font-weight: 800; color: #C9A84C; background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.25); border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; }
-
-    .ol-art-body > blockquote { position: relative; margin: 2.5rem 0; padding: 1.75rem 1.75rem 1.75rem 3.5rem; background: linear-gradient(135deg, rgba(201,168,76,0.06), rgba(201,168,76,0.02)); border: 1px solid rgba(201,168,76,0.15); border-left: 3px solid #C9A84C; border-radius: 0 12px 12px 0; }
-    .ol-art-body > blockquote::before { content: '"'; position: absolute; left: 1rem; top: 0.25rem; font-size: 3.5rem; font-weight: 900; color: rgba(201,168,76,0.35); font-family: Georgia, serif; line-height: 1; }
-    .ol-art-body > blockquote p { margin: 0; font-size: 1.125rem; font-style: italic; color: rgba(240,240,245,0.85); line-height: 1.7; }
-
-    .ol-art-callout { display: grid; grid-template-columns: 44px 1fr; gap: 1rem; align-items: flex-start; margin: 2rem 0; padding: 1.5rem 1.75rem; background: #0C0C18; border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; }
-    .ol-art-callout-icon { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .ol-art-callout.info  { border-color: rgba(56,189,248,0.18); background: rgba(14,165,233,0.035); }
-    .ol-art-callout.info  .ol-art-callout-icon { background: rgba(14,165,233,0.12); color: #38BDF8; border: 1px solid rgba(14,165,233,0.25); }
-    .ol-art-callout.warn  { border-color: rgba(245,158,11,0.18); background: rgba(245,158,11,0.035); }
-    .ol-art-callout.warn  .ol-art-callout-icon { background: rgba(245,158,11,0.12); color: #FBBF24; border: 1px solid rgba(245,158,11,0.25); }
-    .ol-art-callout.success { border-color: rgba(16,185,129,0.18); background: rgba(16,185,129,0.035); }
-    .ol-art-callout.success .ol-art-callout-icon { background: rgba(16,185,129,0.12); color: #34D399; border: 1px solid rgba(16,185,129,0.25); }
-    .ol-art-callout-body h4 { margin: 0 0 0.5rem; font-size: 0.95rem; font-weight: 700; color: #F0F0F5; letter-spacing: -0.01em; }
-    .ol-art-callout-body p { margin: 0; font-size: 0.9375rem; color: rgba(240,240,245,0.65); line-height: 1.65; }
-
-    .ol-art-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 2.25rem 0; }
-    @media (max-width: 700px) { .ol-art-compare { grid-template-columns: 1fr; } }
-    .ol-art-compare-card { padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.07); background: #0C0C18; }
-    .ol-art-compare-card.bad  { border-color: rgba(248,113,113,0.2); background: linear-gradient(135deg, rgba(248,113,113,0.05), rgba(248,113,113,0.01)); }
-    .ol-art-compare-card.good { border-color: rgba(52,211,153,0.22); background: linear-gradient(135deg, rgba(52,211,153,0.06), rgba(52,211,153,0.01)); }
-    .ol-art-compare-card-head { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.9rem; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
-    .ol-art-compare-card.bad  .ol-art-compare-card-head { color: #F87171; }
-    .ol-art-compare-card.good .ol-art-compare-card-head { color: #34D399; }
-    .ol-art-compare-card h4 { margin: 0 0 0.5rem; font-size: 1rem; font-weight: 700; color: #F0F0F5; }
-    .ol-art-compare-card p { margin: 0; font-size: 0.875rem; color: rgba(240,240,245,0.6); line-height: 1.6; }
-    .ol-art-compare-card ul { list-style: none; padding: 0; margin: 0.75rem 0 0; }
-    .ol-art-compare-card ul li { position: relative; font-size: 0.8125rem; color: rgba(240,240,245,0.55); padding: 0.35rem 0 0.35rem 1.5rem; line-height: 1.55; }
-    .ol-art-compare-card.bad ul li::before { content: '\2715'; position: absolute; left: 0; top: 0.35rem; color: #F87171; font-weight: 700; font-size: 0.875rem; }
-    .ol-art-compare-card.good ul li::before { content: '\2713'; position: absolute; left: 0; top: 0.35rem; color: #34D399; font-weight: 700; font-size: 0.875rem; }
-
-    .ol-art-pullstat { display: grid; grid-template-columns: auto 1fr; gap: 1.5rem; align-items: center; margin: 2.5rem 0; padding: 2rem 2.25rem; background: linear-gradient(135deg, rgba(129,140,248,0.07), rgba(129,140,248,0.02)); border: 1px solid rgba(129,140,248,0.18); border-radius: 14px; }
-    @media (max-width: 600px) { .ol-art-pullstat { grid-template-columns: 1fr; gap: 1rem; text-align: center; } }
-    .ol-art-pullstat-num { font-size: clamp(3rem, 6vw, 4.5rem); font-weight: 900; color: #818CF8; letter-spacing: -0.04em; line-height: 0.95; text-shadow: 0 0 30px rgba(129,140,248,0.25); }
-    .ol-art-pullstat-body h4 { margin: 0 0 0.5rem; font-size: 1.125rem; font-weight: 800; color: #F0F0F5; letter-spacing: -0.02em; }
-    .ol-art-pullstat-body p { margin: 0; font-size: 0.9375rem; color: rgba(240,240,245,0.6); line-height: 1.65; }
-    .ol-art-pullstat-body cite { display: block; margin-top: 0.75rem; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(129,140,248,0.7); font-style: normal; }
-
-    .ol-art-cta-inline { margin: 3.5rem 0; padding: 2.25rem 2.5rem; background: radial-gradient(ellipse at 70% 30%, rgba(201,168,76,0.15) 0%, transparent 60%), #0C0C18; border: 1px solid rgba(201,168,76,0.25); border-radius: 16px; display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: center; }
-    @media (max-width: 700px) { .ol-art-cta-inline { grid-template-columns: 1fr; gap: 1.5rem; text-align: left; } }
-    .ol-art-cta-inline-label { font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(201,168,76,0.7); margin: 0 0 0.5rem; }
-    .ol-art-cta-inline h3 { margin: 0 0 0.5rem; font-size: 1.375rem; font-weight: 800; color: #F0F0F5; letter-spacing: -0.02em; line-height: 1.25; }
-    .ol-art-cta-inline p { margin: 0; font-size: 0.9375rem; color: rgba(240,240,245,0.6); line-height: 1.65; }
-    .ol-art-cta-inline-btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.85rem 1.5rem; background: #C9A84C; color: #08080E; font-size: 13.5px; font-weight: 700; text-decoration: none; border-radius: 8px; white-space: nowrap; transition: background 0.2s, transform 0.15s; }
-    .ol-art-cta-inline-btn:hover { background: #D4B45C; transform: translateY(-1px); }
-
-    .ol-art-share { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; margin: 3.5rem 0 2rem; padding: 1.5rem 0; border-top: 1px solid rgba(255,255,255,0.07); border-bottom: 1px solid rgba(255,255,255,0.07); }
-    .ol-art-share-label { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(240,240,245,0.4); margin-right: 0.5rem; }
-    .ol-art-share-btn { width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; color: rgba(240,240,245,0.55); text-decoration: none; transition: all 0.2s; }
-    .ol-art-share-btn:hover { background: rgba(201,168,76,0.1); border-color: rgba(201,168,76,0.3); color: #C9A84C; transform: translateY(-2px); }
-
-    .ol-art-author-card { display: grid; grid-template-columns: 64px 1fr auto; gap: 1.25rem; align-items: center; margin: 2rem 0 0; padding: 1.75rem; background: #0C0C18; border: 1px solid rgba(255,255,255,0.07); border-radius: 14px; }
-    @media (max-width: 600px) { .ol-art-author-card { grid-template-columns: 56px 1fr; gap: 1rem; } .ol-art-author-card-btn { grid-column: 1 / -1; text-align: center; } }
-    .ol-art-author-avatar { width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, #C9A84C, #8B7236); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; font-weight: 900; color: #08080E; border: 2px solid rgba(201,168,76,0.3); }
-    .ol-art-author-info .label { display: block; font-size: 10.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(201,168,76,0.65); margin-bottom: 0.3rem; }
-    .ol-art-author-info .name { display: block; font-size: 1rem; font-weight: 700; color: #F0F0F5; margin-bottom: 0.15rem; }
-    .ol-art-author-info .bio { font-size: 13px; color: rgba(240,240,245,0.5); line-height: 1.5; }
-    .ol-art-author-card-btn { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.65rem 1.1rem; border: 1px solid rgba(201,168,76,0.3); border-radius: 8px; font-size: 12.5px; font-weight: 700; color: #C9A84C; text-decoration: none; transition: all 0.2s; }
-    .ol-art-author-card-btn:hover { background: rgba(201,168,76,0.08); border-color: #C9A84C; }
-
-    /* ============================================================ SIDEBAR ============================================================ */
-    .ol-art-sidebar { display: flex; flex-direction: column; gap: 1.25rem; position: sticky; top: 110px; }
-    @media (max-width: 1100px) { .ol-art-sidebar { position: static; } }
-    .ol-sb-widget { background: #0C0C18; border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; padding: 1.5rem; }
-    .ol-sb-title { font-size: 10.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(240,240,245,0.35); margin: 0 0 1.1rem; }
-    .ol-sb-cta { background: rgba(201,168,76,0.05); border-color: rgba(201,168,76,0.18); text-align: center; padding: 1.75rem 1.5rem; }
-    .ol-sb-cta-icon { width: 44px; height: 44px; border-radius: 50%; background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.2); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: #C9A84C; }
-    .ol-sb-cta-title { font-size: 1rem; font-weight: 700; color: #F0F0F5; letter-spacing: -0.02em; margin: 0 0 0.45rem; line-height: 1.3; }
-    .ol-sb-cta-sub { font-size: 12.5px; color: rgba(240,240,245,0.45); line-height: 1.6; margin: 0 0 1.25rem; }
-    .ol-sb-cta-btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem; width: 100%; padding: 0.75rem 1rem; background: #C9A84C; border: none; border-radius: 7px; font-size: 13px; font-weight: 700; color: #08080E; text-decoration: none; transition: background 0.2s, transform 0.15s; }
-    .ol-sb-cta-btn:hover { background: #D4B45C; transform: translateY(-1px); }
-    .ol-sb-cta-wa { display: flex; align-items: center; justify-content: center; gap: 0.4rem; font-size: 11.5px; color: #25D366; text-decoration: none; margin-top: 0.75rem; font-weight: 600; }
-    .ol-sb-cta-wa:hover { opacity: 0.8; }
-
-    .ol-sb-toc { display: flex; flex-direction: column; gap: 0; }
-    .ol-sb-toc-link { position: relative; display: block; font-size: 12.5px; color: rgba(240,240,245,0.5); text-decoration: none; padding: 0.55rem 0 0.55rem 1rem; border-left: 2px solid rgba(255,255,255,0.06); line-height: 1.45; transition: all 0.2s; }
-    .ol-sb-toc-link:hover { color: rgba(240,240,245,0.85); border-left-color: rgba(201,168,76,0.4); }
-    .ol-sb-toc-link.active { color: #C9A84C; border-left-color: #C9A84C; background: linear-gradient(90deg, rgba(201,168,76,0.06), transparent); font-weight: 600; }
-
-    .ol-sb-services { display: flex; flex-direction: column; gap: 0.5rem; }
-    .ol-sb-svc-link { display: flex; align-items: center; gap: 0.65rem; padding: 0.65rem 0.75rem; border-radius: 8px; text-decoration: none; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); transition: all 0.2s; }
-    .ol-sb-svc-link:hover { background: rgba(201,168,76,0.06); border-color: rgba(201,168,76,0.15); }
-    .ol-sb-svc-icon { width: 30px; height: 30px; border-radius: 6px; background: rgba(201,168,76,0.08); border: 1px solid rgba(201,168,76,0.12); display: flex; align-items: center; justify-content: center; color: rgba(201,168,76,0.7); flex-shrink: 0; }
-    .ol-sb-svc-text { display: flex; flex-direction: column; gap: 0.1rem; }
-    .ol-sb-svc-name { font-size: 13px; font-weight: 600; color: rgba(240,240,245,0.75); line-height: 1.2; }
-    .ol-sb-svc-link:hover .ol-sb-svc-name { color: #C9A84C; }
-    .ol-sb-svc-sub { font-size: 11px; color: rgba(240,240,245,0.3); }
-
-    .ol-sb-related { display: flex; flex-direction: column; gap: 0; }
-    .ol-sb-related-item { display: flex; gap: 0.75rem; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); text-decoration: none; align-items: flex-start; transition: all 0.2s; }
-    .ol-sb-related-item:last-child { border-bottom: none; padding-bottom: 0; }
-    .ol-sb-related-item:first-child { padding-top: 0; }
-    .ol-sb-related-num { font-size: 11px; font-weight: 800; color: rgba(201,168,76,0.35); min-width: 18px; margin-top: 2px; }
-    .ol-sb-related-info { display: flex; flex-direction: column; gap: 0.2rem; }
-    .ol-sb-related-title { font-size: 13px; font-weight: 600; color: rgba(240,240,245,0.65); line-height: 1.35; transition: color 0.2s; }
-    .ol-sb-related-item:hover .ol-sb-related-title { color: #C9A84C; }
-    .ol-sb-related-meta { font-size: 11px; color: rgba(240,240,245,0.28); }
-
-    /* ============================================================ NEXT READ ============================================================ */
-    .ol-art-nextread { background: #0A0A14; padding: 5rem 0 4rem; border-top: 1px solid rgba(255,255,255,0.06); position: relative; }
-    .ol-art-nextread::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(201,168,76,0.15), transparent); }
-    .ol-art-nextread-inner { width: 90%; max-width: 1600px; margin: 0 auto; }
-    .ol-art-nextread-head { display: flex; align-items: end; justify-content: space-between; margin-bottom: 2.5rem; gap: 2rem; flex-wrap: wrap; }
-    .ol-art-nextread-label { font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(201,168,76,0.7); margin: 0 0 0.75rem; }
-    .ol-art-nextread-title { font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 800; color: #F0F0F5; letter-spacing: -0.025em; line-height: 1.15; margin: 0; }
-    .ol-art-nextread-all { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 13px; font-weight: 600; color: #C9A84C; text-decoration: none; padding-bottom: 0.25rem; border-bottom: 1px solid rgba(201,168,76,0.3); transition: all 0.2s; }
-    .ol-art-nextread-all:hover { border-bottom-color: #C9A84C; }
-    .ol-art-nextread-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-    @media (max-width: 900px) { .ol-art-nextread-grid { grid-template-columns: 1fr; } }
-    .ol-art-nextread-card { background: #0C0C18; border: 1px solid rgba(255,255,255,0.07); border-radius: 14px; overflow: hidden; text-decoration: none; display: flex; flex-direction: column; transition: all 0.25s; }
-    .ol-art-nextread-card:hover { border-color: rgba(201,168,76,0.25); transform: translateY(-3px); }
-    .ol-art-nextread-thumb { position: relative; background: linear-gradient(135deg, #0D0D1E, #14142A, #0A0A18); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-    .ol-art-nextread-thumb::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 50%, rgba(201,168,76,0.1) 0%, transparent 65%); }
-    .ol-art-nextread-thumb::after { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px); background-size: 28px 28px; }
-    .ol-art-nextread-num { position: relative; z-index: 1; font-size: 3rem; font-weight: 900; color: rgba(201,168,76,0.25); letter-spacing: -0.05em; }
-    .ol-art-nextread-body { padding: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; flex: 1; }
-    .ol-art-nextread-top { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; }
-    .ol-art-nextread-meta { font-size: 11px; color: rgba(240,240,245,0.3); }
-    .ol-art-nextread-h { font-size: 1rem; font-weight: 700; color: #F0F0F5; letter-spacing: -0.02em; line-height: 1.3; margin: 0; transition: color 0.2s; }
-    .ol-art-nextread-card:hover .ol-art-nextread-h { color: #C9A84C; }
-    .ol-art-nextread-excerpt { font-size: 13px; color: rgba(240,240,245,0.5); line-height: 1.6; margin: 0; flex: 1; }
-    .ol-art-nextread-link { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 12px; font-weight: 600; color: #C9A84C; margin-top: 0.25rem; }
-
-    .ol-blog-cat { font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 999px; background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.2); color: #C9A84C; }
-    .ol-blog-cat.rendimiento  { background: rgba(99,102,241,0.1);  border-color: rgba(99,102,241,0.2);  color: #818CF8; }
-    .ol-blog-cat.tecnologia   { background: rgba(14,165,233,0.1);  border-color: rgba(14,165,233,0.2);  color: #38BDF8; }
-    .ol-blog-cat.diseno       { background: rgba(236,72,153,0.1);  border-color: rgba(236,72,153,0.2);  color: #F472B6; }
-    .ol-blog-cat.ecommerce    { background: rgba(16,185,129,0.1);  border-color: rgba(16,185,129,0.2);  color: #34D399; }
-    .ol-blog-cat.estrategia   { background: rgba(245,158,11,0.1);  border-color: rgba(245,158,11,0.2);  color: #FBBF24; }
-
-    /* ============================================================ CTA BAND ============================================================ */
-    .ol-blog-cta-band { background: #04040A; padding: 5rem 0; position: relative; }
-    .ol-blog-cta-band::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(201,168,76,0.2), transparent); }
-    .ol-blog-cta-band-inner { width: 90%; max-width: 1600px; margin: 0 auto; display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: center; }
-    @media (max-width: 760px) { .ol-blog-cta-band-inner { grid-template-columns: 1fr; gap: 2rem; } }
-    .ol-blog-cta-band-label { font-size: 10.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(201,168,76,0.6); margin: 0 0 0.75rem; }
-    .ol-blog-cta-band-title { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; color: #F0F0F5; letter-spacing: -0.03em; line-height: 1.15; margin: 0 0 0.75rem; }
-    .ol-blog-cta-band-sub { font-size: 15px; color: rgba(240,240,245,0.48); line-height: 1.7; margin: 0; max-width: 60ch; }
-    .ol-blog-cta-band-actions { display: flex; flex-direction: column; gap: 0.75rem; flex-shrink: 0; }
-    .ol-blog-cta-band-btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.9rem 1.75rem; background: #C9A84C; border-radius: 8px; font-size: 14px; font-weight: 700; color: #08080E; text-decoration: none; white-space: nowrap; transition: background 0.2s, transform 0.15s; }
-    .ol-blog-cta-band-btn:hover { background: #D4B45C; transform: translateY(-1px); }
-    .ol-blog-cta-band-wa { display: flex; align-items: center; justify-content: center; gap: 0.4rem; font-size: 12.5px; font-weight: 600; color: #25D366; text-decoration: none; }
-    .ol-blog-cta-band-wa:hover { opacity: 0.8; }
-  </style>
+  <link rel="stylesheet" href="../../_astro/BaseLayout.xeR8R953.css?v20260426c">
+  <link rel="stylesheet" href="../../_astro/premium-dark.css?v20260426c">
+  <script src="../../_astro/ol-header.js?v20260426d" defer></script>
 
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.mx/#organization","name":"OrigenLab","url":"https://origenlab.mx","logo":"https://origenlab.mx/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"BlogPosting","@id":"https://origenlab.mx/blog/por-que-tu-sitio-lento-cuesta-clientes/#blogposting","mainEntityOfPage":"https://origenlab.mx/blog/por-que-tu-sitio-lento-cuesta-clientes/","headline":"Por qué tu sitio web lento te está costando clientes","description":"El 53% de los visitantes abandona sitios que tardan más de 3 segundos. Así afecta la velocidad tus ventas.","image":"https://origenlab.mx/og-image.jpg","url":"https://origenlab.mx/blog/por-que-tu-sitio-lento-cuesta-clientes/","datePublished":"2026-03-20","dateModified":"2026-04-21","inLanguage":"es-MX","author":{"@type":"Organization","name":"OrigenLab","url":"https://origenlab.mx"},"publisher":{"@type":"Organization","name":"OrigenLab","logo":{"@type":"ImageObject","url":"https://origenlab.mx/logo.svg"}}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.mx/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://origenlab.mx/blog/"},{"@type":"ListItem","position":3,"name":"Por qué tu sitio web lento te está costando clientes","item":"https://origenlab.mx/blog/por-que-tu-sitio-lento-cuesta-clientes/"}]}]}</script>
 </head>
@@ -265,64 +35,85 @@
 
 <a class="ol-skip-link" href="#main">Saltar al contenido</a>
 
-<!-- TOPBAR -->
 <div class="ol-topbar">
   <div class="ol-topbar-inner">
     <div class="ol-topbar-left">
       <a href="mailto:hola@origenlab.mx" class="ol-topbar-contact">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
         hola@origenlab.mx
       </a>
       <span class="ol-topbar-sep"></span>
       <a href="tel:+525547868402" class="ol-topbar-contact">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
         +52 55 4786 8402
       </a>
     </div>
     <div class="ol-topbar-center">
       <span class="ol-topbar-promo">
         <span class="ol-topbar-dot"></span>
-        Respuesta garantizada en menos de 24 horas &nbsp;·&nbsp; Ciudad de México
+        Atención personalizada  ·  Ciudad de México
       </span>
     </div>
     <div class="ol-topbar-right">
       <a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web" target="_blank" rel="noopener noreferrer" class="ol-topbar-wa">
-        <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+        <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor">
+          <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/>
+        </svg>
         WhatsApp
       </a>
     </div>
   </div>
 </div>
-
 <header class="ol-header" id="ol-header">
   <div class="ol-header-inner">
-    <a href="../../index.html" class="ol-header-logo">
-      <img src="../../img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
+    <a href="/" class="ol-header-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
     </a>
     <nav class="ol-nav" aria-label="Navegación principal">
       <ul class="ol-nav-list">
-        <li><a href="../../index.html" class="ol-nav-link">Inicio</a></li>
+        <li><a href="/" class="ol-nav-link">Inicio</a></li>
         <li class="ol-has-dropdown">
-          <a href="../../servicios/index.html" class="ol-nav-link">
+          <a href="/servicios/" class="ol-nav-link">
             Servicios
             <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
           <div class="ol-dropdown">
             <ul>
-              <li><a href="../../servicios/desarrollo-web/index.html" class="ol-dropdown-link">Desarrollo Web</a></li>
-              <li><a href="../../servicios/tiendas-en-linea/index.html" class="ol-dropdown-link">Tiendas en Línea</a></li>
-              <li><a href="../../servicios/landing-pages/index.html" class="ol-dropdown-link">Landing Pages</a></li>
-              <li><a href="../../servicios/rediseno-web/index.html" class="ol-dropdown-link">Rediseño Web</a></li>
+              <li><a href="/servicios/desarrollo-web/" class="ol-dropdown-link">Desarrollo Web</a></li>
+              <li><a href="/servicios/tiendas-en-linea/" class="ol-dropdown-link">Tiendas en Línea</a></li>
+              <li><a href="/servicios/landing-pages/" class="ol-dropdown-link">Landing Pages</a></li>
+              <li><a href="/servicios/rediseno-web/" class="ol-dropdown-link">Rediseño Web</a></li>
             </ul>
           </div>
         </li>
-        <li><a href="../../portafolio/index.html" class="ol-nav-link">Portafolio</a></li>
-        <li><a href="../../nosotros/index.html" class="ol-nav-link">Nosotros</a></li>
-        <li><a href="../index.html" class="ol-nav-link active">Blog</a></li>
-        <li><a href="../../contacto/index.html" class="ol-nav-link">Contacto</a></li>
+        <li class="ol-has-dropdown">
+          <a href="/portafolio/" class="ol-nav-link">
+            Portafolio
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link">Equipos Contra Incendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link ol-dropdown-sub">— Gama de México</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link ol-dropdown-sub">— MESECI</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link ol-dropdown-sub">— LGA Contraincendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-dropdown-link ol-dropdown-sub">— MANEXT</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-dropdown-link ol-dropdown-sub">— BOMBERO.MX</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-dropdown-link ol-dropdown-sub">— ProyectoRed</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="/nosotros/" class="ol-nav-link">Nosotros</a></li>
+        <li><a href="/blog/" class="ol-nav-link active">Blog</a></li>
+        <li><a href="/contacto/" class="ol-nav-link">Contacto</a></li>
       </ul>
     </nav>
-    <a href="../../cotizar/index.html" class="ol-header-cta">Cotizar proyecto →</a>
+    <a href="/cotizar/" class="ol-header-cta">Cotizar proyecto →</a>
     <button class="ol-menu-toggle" id="ol-menu-toggle" aria-label="Abrir menú" aria-expanded="false">
       <span class="ol-ham-line"></span>
       <span class="ol-ham-line"></span>
@@ -330,39 +121,76 @@
     </button>
   </div>
 </header>
-
 <div class="ol-mobile-overlay" id="ol-mobile-overlay"></div>
-
 <nav class="ol-mobile-panel" id="ol-mobile-panel" aria-label="Menú móvil">
   <div class="ol-mobile-header">
-    <a href="../../index.html" class="ol-mobile-logo">
-      <img src="../../img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
+    <a href="/" class="ol-mobile-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
     </a>
     <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú">
       <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
     </button>
   </div>
   <ul class="ol-mobile-nav">
-    <li><a href="../../index.html" class="ol-mobile-link">Inicio</a></li>
+    <li><a href="/" class="ol-mobile-link">Inicio</a></li>
     <li>
       <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
         <span>Servicios</span>
         <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
       <ul class="ol-mobile-submenu">
-        <li><a href="../../servicios/desarrollo-web/index.html" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
-        <li><a href="../../servicios/tiendas-en-linea/index.html" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
-        <li><a href="../../servicios/landing-pages/index.html" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
-        <li><a href="../../servicios/rediseno-web/index.html" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
+        <li><a href="/servicios/desarrollo-web/" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
       </ul>
     </li>
-    <li><a href="../../portafolio/index.html" class="ol-mobile-link">Portafolio</a></li>
-    <li><a href="../../nosotros/index.html" class="ol-mobile-link">Nosotros</a></li>
-    <li><a href="../index.html" class="ol-mobile-link active">Blog</a></li>
-    <li><a href="../../contacto/index.html" class="ol-mobile-link">Contacto</a></li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Portafolio</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/portafolio/" class="ol-mobile-link ol-mobile-sublink">Todo el Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/" class="ol-mobile-link ol-mobile-sublink">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Gama de México</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MESECI</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— LGA Contraincendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MANEXT</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— BOMBERO.MX</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— ProyectoRed</a></li>
+      </ul>
+    </li>
+    <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
+    <li><a href="/blog/" class="ol-mobile-link active">Blog</a></li>
+    <li><a href="/contacto/" class="ol-mobile-link">Contacto</a></li>
   </ul>
   <div class="ol-mobile-footer">
-    <a href="../../cotizar/index.html" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a>
+    <a href="/cotizar/" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a>
+  </div>
+</nav>
+
+<!-- ============================================================
+     BREADCRUMB
+     ============================================================ -->
+<nav class="ol-bc-wrap" aria-label="Migas de pan">
+  <div class="ol-bc">
+    <ol class="ol-bc-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/" itemprop="item" class="ol-bc-home"><span itemprop="name">Inicio</span></a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item ol-bc-item-mid" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/blog/" itemprop="item"><span itemprop="name">Blog</span></a>
+        <meta itemprop="position" content="2" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item ol-bc-current" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name">Por qué tu sitio web lento te está costando clientes</span>
+        <meta itemprop="position" content="3" />
+      </li>
+    </ol>
   </div>
 </nav>
 
@@ -373,14 +201,6 @@
     <div class="ol-art-hero-inner">
       <div class="ol-art-hero-grid">
         <div class="ol-art-hero-left">
-          <div class="ol-art-breadcrumb">
-            <a href="../../index.html">Inicio</a>
-            <span class="sep">/</span>
-            <a href="../index.html">Blog</a>
-            <span class="sep">/</span>
-            <span class="current">Rendimiento</span>
-          </div>
-
           <div class="ol-art-badges">
             <span class="ol-art-cat rendimiento">
               <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
@@ -394,7 +214,7 @@
 
           <h1 class="ol-art-title">Por qué tu sitio web lento te está costando clientes cada día</h1>
 
-          <p class="ol-art-excerpt">El 53% de los visitantes abandona un sitio que tarda más de 3 segundos en cargar. Si tu sitio está en WordPress sin optimizar, o en un hosting compartido barato, es probable que estés perdiendo prospectos sin siquiera saberlo. Aquí te explicamos exactamente qué pasa y cómo medirlo.</p>
+          <p class="ol-art-excerpt">El 53% de los visitantes abandona un sitio que tarda más de 3 segundos en cargar. Aquí te explicamos exactamente qué pasa y cómo medirlo.</p>
 
           <div class="ol-art-meta">
             <div class="ol-art-meta-author">
@@ -405,10 +225,7 @@
               </div>
             </div>
             <span class="ol-art-meta-sep"></span>
-            <span class="ol-art-meta-item">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-              21 de abril, 2026
-            </span>
+            
             <span class="ol-art-meta-item">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
               Guía práctica
@@ -417,21 +234,8 @@
         </div>
 
         <div class="ol-art-hero-right">
-          <div class="ol-art-hero-card" aria-hidden="true">
-            <div class="ol-art-hero-card-inner">
-              <div class="ol-art-hero-gauge">
-                <svg width="160" height="160" viewBox="0 0 160 160">
-                  <circle class="gauge-bg" cx="80" cy="80" r="70" fill="none" stroke-width="10"/>
-                  <circle class="gauge-fg" cx="80" cy="80" r="70" fill="none" stroke-width="10" stroke-linecap="round"/>
-                </svg>
-                <div class="ol-art-hero-gauge-value">
-                  <span class="num">53%</span>
-                  <span class="unit">rebote</span>
-                </div>
-              </div>
-              <span class="ol-art-hero-card-caption">Usuarios que abandonan sitios &gt;3s</span>
-            </div>
-          </div>
+          <p class="ol-art-hero-copy">Si tu sitio está en WordPress sin optimizar, o vive en un hosting compartido barato, es probable que estés perdiendo prospectos sin siquiera saberlo. La velocidad de carga no es un detalle técnico — es el primer filtro que decide si un visitante se queda o se va antes de ver tu propuesta.</p>
+          <p class="ol-art-hero-copy">En esta guía práctica te explicamos qué pasa exactamente cuando un sitio carga lento, cómo medirlo con herramientas gratuitas como PageSpeed Insights, y qué pasos concretos puedes tomar hoy para recuperar las conversiones que tu sitio actual está dejando en la mesa.</p>
         </div>
       </div>
     </div>
@@ -616,7 +420,7 @@
               <h3>¿Tu sitio tarda más de 3 segundos?</h3>
               <p>Hacemos auditoría técnica gratuita. Medimos velocidad real, identificamos cuellos de botella y te damos un plan de acción — sin compromiso de compra.</p>
             </div>
-            <a href="../../cotizar/index.html" class="ol-art-cta-inline-btn">
+            <a href="/cotizar/" class="ol-art-cta-inline-btn">
               Solicitar auditoría
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
@@ -648,7 +452,7 @@
               <span class="name">Equipo OrigenLab</span>
               <span class="bio">Agencia mexicana de desarrollo web. Construimos sitios rápidos, modernos y pensados para convertir — para empresas en CDMX, Monterrey y Guadalajara.</span>
             </div>
-            <a href="../../nosotros/index.html" class="ol-art-author-card-btn">
+            <a href="/nosotros/" class="ol-art-author-card-btn">
               Conocer al equipo
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
@@ -664,7 +468,7 @@
             </div>
             <p class="ol-sb-cta-title">¿Tu sitio carga<br>en más de 3 s?</p>
             <p class="ol-sb-cta-sub">Auditoría técnica gratuita. Te decimos exactamente qué está frenando tu sitio y cómo resolverlo.</p>
-            <a href="../../cotizar/index.html" class="ol-sb-cta-btn">
+            <a href="/cotizar/" class="ol-sb-cta-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               Solicitar auditoría
             </a>
@@ -689,7 +493,7 @@
           <div class="ol-sb-widget">
             <p class="ol-sb-title">Nuestros Servicios</p>
             <div class="ol-sb-services">
-              <a href="../../servicios/desarrollo-web/index.html" class="ol-sb-svc-link">
+              <a href="/servicios/desarrollo-web/" class="ol-sb-svc-link">
                 <div class="ol-sb-svc-icon">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
                 </div>
@@ -698,7 +502,7 @@
                   <span class="ol-sb-svc-sub">Sitios corporativos a medida</span>
                 </div>
               </a>
-              <a href="../../servicios/landing-pages/index.html" class="ol-sb-svc-link">
+              <a href="/servicios/landing-pages/" class="ol-sb-svc-link">
                 <div class="ol-sb-svc-icon">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
                 </div>
@@ -707,7 +511,7 @@
                   <span class="ol-sb-svc-sub">Alta conversión desde día 1</span>
                 </div>
               </a>
-              <a href="../../servicios/tiendas-en-linea/index.html" class="ol-sb-svc-link">
+              <a href="/servicios/tiendas-en-linea/" class="ol-sb-svc-link">
                 <div class="ol-sb-svc-icon">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
                 </div>
@@ -716,7 +520,7 @@
                   <span class="ol-sb-svc-sub">E-commerce con Mercado Pago</span>
                 </div>
               </a>
-              <a href="../../servicios/rediseno-web/index.html" class="ol-sb-svc-link">
+              <a href="/servicios/rediseno-web/" class="ol-sb-svc-link">
                 <div class="ol-sb-svc-icon">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
                 </div>
@@ -731,28 +535,28 @@
           <div class="ol-sb-widget">
             <p class="ol-sb-title">Seguir leyendo</p>
             <div class="ol-sb-related">
-              <a href="../astro-vs-wordpress-cual-elegir/index.html" class="ol-sb-related-item">
+              <a href="/blog/astro-vs-wordpress-cual-elegir/" class="ol-sb-related-item">
                 <span class="ol-sb-related-num">01</span>
                 <div class="ol-sb-related-info">
                   <span class="ol-sb-related-title">Astro vs WordPress: cuál elegir para tu empresa</span>
                   <span class="ol-sb-related-meta">Tecnología · 8 min</span>
                 </div>
               </a>
-              <a href="../core-web-vitals-que-son/index.html" class="ol-sb-related-item">
+              <a href="/blog/core-web-vitals-que-son/" class="ol-sb-related-item">
                 <span class="ol-sb-related-num">02</span>
                 <div class="ol-sb-related-info">
                   <span class="ol-sb-related-title">Core Web Vitals: qué son y cómo afectan tu negocio</span>
                   <span class="ol-sb-related-meta">Rendimiento · 6 min</span>
                 </div>
               </a>
-              <a href="../rediseno-web-cuando-es-momento/index.html" class="ol-sb-related-item">
+              <a href="/blog/rediseno-web-cuando-es-momento/" class="ol-sb-related-item">
                 <span class="ol-sb-related-num">03</span>
                 <div class="ol-sb-related-info">
                   <span class="ol-sb-related-title">Rediseño web: cuándo es el momento de renovar</span>
                   <span class="ol-sb-related-meta">Diseño Web · 4 min</span>
                 </div>
               </a>
-              <a href="../5-errores-sitios-web-pymes-mexico/index.html" class="ol-sb-related-item">
+              <a href="/blog/5-errores-sitios-web-pymes-mexico/" class="ol-sb-related-item">
                 <span class="ol-sb-related-num">04</span>
                 <div class="ol-sb-related-info">
                   <span class="ol-sb-related-title">5 errores en sitios web de pymes mexicanas</span>
@@ -776,14 +580,14 @@
           <p class="ol-art-nextread-label">Te puede interesar</p>
           <h2 class="ol-art-nextread-title">Sigue explorando el blog</h2>
         </div>
-        <a href="../index.html" class="ol-art-nextread-all">
+        <a href="/blog/" class="ol-art-nextread-all">
           Ver todos los artículos
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>
       <div class="ol-art-nextread-grid">
 
-        <a href="../astro-vs-wordpress-cual-elegir/index.html" class="ol-art-nextread-card">
+        <a href="/blog/astro-vs-wordpress-cual-elegir/" class="ol-art-nextread-card">
           <div class="ol-art-nextread-thumb"><span class="ol-art-nextread-num">01</span></div>
           <div class="ol-art-nextread-body">
             <div class="ol-art-nextread-top">
@@ -796,7 +600,7 @@
           </div>
         </a>
 
-        <a href="../core-web-vitals-que-son/index.html" class="ol-art-nextread-card">
+        <a href="/blog/core-web-vitals-que-son/" class="ol-art-nextread-card">
           <div class="ol-art-nextread-thumb"><span class="ol-art-nextread-num">02</span></div>
           <div class="ol-art-nextread-body">
             <div class="ol-art-nextread-top">
@@ -809,7 +613,7 @@
           </div>
         </a>
 
-        <a href="../rediseno-web-cuando-es-momento/index.html" class="ol-art-nextread-card">
+        <a href="/blog/rediseno-web-cuando-es-momento/" class="ol-art-nextread-card">
           <div class="ol-art-nextread-thumb"><span class="ol-art-nextread-num">03</span></div>
           <div class="ol-art-nextread-body">
             <div class="ol-art-nextread-top">
@@ -835,7 +639,7 @@
         <p class="ol-blog-cta-band-sub">Si este artículo te hizo preguntarte cómo se aplica en tu negocio, la respuesta más rápida es una conversación directa. Sin compromiso, sin ventas de presión — solo claridad sobre lo que necesitas.</p>
       </div>
       <div class="ol-blog-cta-band-actions">
-        <a href="../../cotizar/index.html" class="ol-blog-cta-band-btn">
+        <a href="/cotizar/" class="ol-blog-cta-band-btn">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           Cotizar mi proyecto
         </a>
@@ -850,26 +654,26 @@
   <!-- QUICKNAV BOTTOM -->
   <div class="ol-quicknav">
     <div class="ol-quicknav-inner">
-      <a href="../../servicios/desarrollo-web/index.html" class="ol-qn-item">
+      <a href="/servicios/desarrollo-web/" class="ol-qn-item">
         <div class="ol-qn-text"><span class="ol-qn-title">Sitios Corporativos</span><span class="ol-qn-sub">Diseño a medida</span></div>
       </a>
-      <a href="../../servicios/tiendas-en-linea/index.html" class="ol-qn-item">
+      <a href="/servicios/tiendas-en-linea/" class="ol-qn-item">
         <div class="ol-qn-text"><span class="ol-qn-title">Tienda en Línea</span><span class="ol-qn-sub">Vende desde el día uno</span></div>
       </a>
-      <a href="../../servicios/landing-pages/index.html" class="ol-qn-item">
+      <a href="/servicios/landing-pages/" class="ol-qn-item">
         <div class="ol-qn-text"><span class="ol-qn-title">Landing Pages</span><span class="ol-qn-sub">Más leads, más ventas</span></div>
       </a>
-      <a href="../../servicios/rediseno-web/index.html" class="ol-qn-item">
+      <a href="/servicios/rediseno-web/" class="ol-qn-item">
         <div class="ol-qn-text"><span class="ol-qn-title">Rediseño Web</span><span class="ol-qn-sub">Actualiza tu presencia</span></div>
       </a>
-      <a href="../../portafolio/index.html" class="ol-qn-item">
+      <a href="/portafolio/" class="ol-qn-item">
         <div class="ol-qn-text"><span class="ol-qn-title">Portafolio</span><span class="ol-qn-sub">Proyectos realizados</span></div>
       </a>
-      <a href="../../nosotros/index.html" class="ol-qn-item">
+      <a href="/nosotros/" class="ol-qn-item">
         <div class="ol-qn-text"><span class="ol-qn-title">Nosotros</span><span class="ol-qn-sub">Quiénes somos</span></div>
       </a>
-      <a href="../../cotizar/index.html" class="ol-qn-item ol-qn-cta">
-        <div class="ol-qn-text"><span class="ol-qn-title">Iniciar Proyecto</span><span class="ol-qn-sub">Respuesta en 24 h</span></div>
+      <a href="/cotizar/" class="ol-qn-item ol-qn-cta">
+        <div class="ol-qn-text"><span class="ol-qn-title">Iniciar Proyecto</span><span class="ol-qn-sub">Solicitar propuesta</span></div>
       </a>
     </div>
   </div>
@@ -878,7 +682,7 @@
 
 <footer class="ol-footer">
   <div class="ol-footer-top">
-    <a href="../../index.html" class="ol-footer-logo">
+    <a href="/" class="ol-footer-logo">
       Origen<span class="ol-footer-logo-dot">.</span>Lab
     </a>
     <p class="ol-footer-tagline">
@@ -916,25 +720,25 @@
     <div>
       <p class="ol-footer-col-title">Servicios</p>
       <ul class="ol-footer-col-list">
-        <li><a href="../../servicios/desarrollo-web/index.html">Desarrollo Web</a></li>
-        <li><a href="../../servicios/tiendas-en-linea/index.html">Tiendas en Línea</a></li>
-        <li><a href="../../servicios/landing-pages/index.html">Landing Pages</a></li>
-        <li><a href="../../servicios/rediseno-web/index.html">Rediseño Web</a></li>
+        <li><a href="/servicios/desarrollo-web/">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/">Rediseño Web</a></li>
       </ul>
     </div>
     <div>
       <p class="ol-footer-col-title">Empresa</p>
       <ul class="ol-footer-col-list">
-        <li><a href="../../nosotros/index.html">Nosotros</a></li>
-        <li><a href="../../portafolio/index.html">Portafolio</a></li>
-        <li><a href="../index.html">Blog</a></li>
-        <li><a href="../../cotizar/index.html">Cotizar proyecto</a></li>
+        <li><a href="/nosotros/">Nosotros</a></li>
+        <li><a href="/portafolio/">Portafolio</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/cotizar/">Cotizar proyecto</a></li>
       </ul>
     </div>
     <div>
       <p class="ol-footer-col-title">Contacto</p>
       <ul class="ol-footer-col-list">
-        <li><a href="../../contacto/index.html">Formulario de contacto</a></li>
+        <li><a href="/contacto/">Formulario de contacto</a></li>
         <li><a href="mailto:hola@origenlab.mx">hola@origenlab.mx</a></li>
         <li><a href="tel:+525547868402">+52 55 4786 8402</a></li>
       </ul>
@@ -942,16 +746,16 @@
     <div>
       <p class="ol-footer-col-title">Legal</p>
       <ul class="ol-footer-col-list">
-        <li><a href="../../aviso-de-privacidad/index.html">Aviso de privacidad</a></li>
-        <li><a href="../../terminos/index.html">Términos de servicio</a></li>
+        <li><a href="/aviso-de-privacidad/">Aviso de privacidad</a></li>
+        <li><a href="/terminos/">Términos de servicio</a></li>
       </ul>
     </div>
   </div>
   <div class="ol-footer-bottom">
     <p class="ol-footer-copy">© 2026 OrigenLab. Todos los derechos reservados.</p>
     <div class="ol-footer-legal">
-      <a href="../../aviso-de-privacidad/index.html">Privacidad</a>
-      <a href="../../terminos/index.html">Términos</a>
+      <a href="/aviso-de-privacidad/">Privacidad</a>
+      <a href="/terminos/">Términos</a>
     </div>
   </div>
 </footer>

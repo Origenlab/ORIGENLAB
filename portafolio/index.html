@@ -28,462 +28,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
   <!-- CSS -->
-  <link rel="stylesheet" href="../_astro/BaseLayout.xeR8R953.css?v20260421a">
-  <link rel="stylesheet" href="../_astro/premium-dark.css?v20260421a">
-  <script src="../_astro/ol-header.js?v20260421a" defer></script>
-  <style>
-    /* ============================================================
-       PAGE HERO — ol-page-hero
-       ============================================================ */
-    .ol-page-hero {
-      background: #08080E;
-      padding: 6rem 0 5rem;
-      position: relative;
-      overflow: hidden;
-    }
-    .ol-page-hero::before {
-      content: '';
-      position: absolute;
-      top: -20%; left: -10%;
-      width: 60%; height: 120%;
-      background: radial-gradient(ellipse at center, rgba(201,168,76,0.06) 0%, transparent 65%);
-      pointer-events: none;
-    }
-    .ol-page-hero::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.2), transparent);
-    }
-    .ol-page-hero-inner {
-      width: 90%;
-      max-width: 1600px;
-      margin: 0 auto;
-      position: relative;
-      z-index: 1;
-    }
-    .ol-page-hero-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-    }
-    @media (max-width: 860px) {
-      .ol-page-hero-grid { grid-template-columns: 1fr; gap: 2rem; }
-    }
-    .ol-page-hero-title {
-      font-size: clamp(2.8rem, 5vw, 4.5rem);
-      font-weight: 900;
-      color: #F0F0F5;
-      letter-spacing: -0.035em;
-      line-height: 1.04;
-      margin: 0 0 1.5rem;
-    }
-    .ol-page-hero-sub {
-      font-size: 1.0625rem;
-      color: rgba(240,240,245,0.5);
-      line-height: 1.75;
-      margin: 0;
-    }
-    .ol-page-hero-right {
-      display: flex;
-      flex-direction: column;
-      gap: 1.25rem;
-      padding-top: 0.25rem;
-    }
-    .ol-page-hero-copy {
-      font-size: 15px;
-      color: rgba(240,240,245,0.48);
-      line-height: 1.8;
-      margin: 0;
-    }
-
-    /* ============================================================
-       PORTAFOLIO — sección de tarjetas de proyectos
-       ============================================================ */
-    .ol-portfolio-section {
-      background: #04040A;
-      padding: 6rem 0;
-      position: relative;
-    }
-    .ol-portfolio-section::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.07), transparent);
-    }
-    .ol-portfolio-inner {
-      width: 90%;
-      max-width: 1600px;
-      margin: 0 auto;
-    }
-
-    /* Grid de proyectos */
-    .ol-proj-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-      margin-top: 3.5rem;
-    }
-    @media (max-width: 1100px) {
-      .ol-proj-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media (max-width: 640px) {
-      .ol-proj-grid { grid-template-columns: 1fr; }
-    }
-
-    .ol-proj-card {
-      background: #0C0C18;
-      border: 1px solid rgba(255,255,255,0.07);
-      border-radius: 14px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      text-decoration: none;
-    }
-    .ol-proj-card:hover {}
-
-    /* Thumbnail */
-    .ol-proj-thumb {
-      position: relative;
-      height: 210px;
-      overflow: hidden;
-      background: rgba(201,168,76,0.04);
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-    }
-    .ol-proj-thumb img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-    /* Placeholder cuando no hay imagen */
-    .ol-proj-thumb-placeholder {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .ol-proj-thumb-initial {
-      font-size: 4.5rem;
-      font-weight: 900;
-      font-family: 'Inter', -apple-system, sans-serif;
-      color: var(--proj-accent, #C9A84C);
-      opacity: 0.18;
-      letter-spacing: -0.05em;
-      line-height: 1;
-      user-select: none;
-    }
-
-    /* Badge de resultado */
-    .ol-proj-badge {
-      position: absolute;
-      bottom: 0.75rem;
-      left: 0.875rem;
-      background: rgba(0,0,0,0.72);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 999px;
-      font-size: 10.5px;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      padding: 0.3rem 0.8rem;
-      color: var(--proj-accent, #C9A84C);
-    }
-
-    /* Info del card */
-    .ol-proj-body {
-      padding: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-      flex: 1;
-    }
-    .ol-proj-cat {
-      font-size: 10.5px;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--proj-accent, #C9A84C);
-    }
-    .ol-proj-name {
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: #F0F0F5;
-      letter-spacing: -0.02em;
-      line-height: 1.2;
-      margin: 0;
-    }
-    .ol-proj-desc {
-      font-size: 0.875rem;
-      color: rgba(240,240,245,0.5);
-      line-height: 1.65;
-      margin: 0;
-      flex: 1;
-    }
-    .ol-proj-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-top: 0.25rem;
-    }
-    .ol-proj-tag {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.09);
-      border-radius: 999px;
-      font-size: 11px;
-      color: rgba(240,240,245,0.45);
-      padding: 0.2rem 0.65rem;
-    }
-    .ol-proj-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-      font-size: 12.5px;
-      font-weight: 600;
-      color: #C9A84C;
-      text-decoration: none;
-      margin-top: 0.5rem;
-      width: fit-content;
-    }
-    .ol-proj-link:hover {}
-
-    /* Card CTA — último slot */
-    .ol-proj-card-cta {
-      background: rgba(201,168,76,0.04);
-      border-color: rgba(201,168,76,0.15);
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      min-height: 320px;
-      text-decoration: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-    }
-    .ol-proj-card-cta:hover {
-      background: rgba(201,168,76,0.08);
-      border-color: rgba(201,168,76,0.3);
-      transform: translateY(-4px);
-      box-shadow: 0 24px 48px rgba(0,0,0,0.5);
-    }
-    .ol-proj-cta-icon {
-      width: 52px;
-      height: 52px;
-      border-radius: 50%;
-      background: rgba(201,168,76,0.1);
-      border: 1px solid rgba(201,168,76,0.2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 1.5rem;
-    }
-    .ol-proj-cta-icon svg {
-      color: #C9A84C;
-    }
-    .ol-proj-cta-title {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: #F0F0F5;
-      margin: 0 0 0.6rem;
-      letter-spacing: -0.02em;
-    }
-    .ol-proj-cta-sub {
-      font-size: 0.875rem;
-      color: rgba(240,240,245,0.4);
-      line-height: 1.6;
-      margin: 0 0 1.75rem;
-      max-width: 22ch;
-    }
-    .ol-proj-cta-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: rgba(201,168,76,0.1);
-      border: 1px solid rgba(201,168,76,0.3);
-      color: #C9A84C;
-      font-size: 13px;
-      font-weight: 600;
-      padding: 0.7rem 1.4rem;
-      border-radius: 6px;
-      text-decoration: none;
-    }
-    .ol-proj-card-cta:hover .ol-proj-cta-btn {
-      background: rgba(201,168,76,0.18);
-      border-color: rgba(201,168,76,0.5);
-    }
-
-    /* ============================================================
-       SHOWCASE — bloques 2 columnas por proyecto
-       ============================================================ */
-    .ol-showcase {
-      background: #08080E;
-      padding: 5rem 0 6rem;
-      position: relative;
-    }
-    .ol-showcase::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.15), transparent);
-    }
-    .ol-showcase-inner {
-      width: 90%;
-      max-width: 1600px;
-      margin: 0 auto;
-    }
-    .ol-showcase-block {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 5rem;
-      align-items: center;
-      padding: 5rem 0;
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-    }
-    .ol-showcase-block:last-child {
-      border-bottom: none;
-      padding-bottom: 0;
-    }
-    /* Imagen a la derecha en bloques pares */
-    .ol-showcase-block.reverse {
-      direction: rtl;
-    }
-    .ol-showcase-block.reverse > * {
-      direction: ltr;
-    }
-    .ol-showcase-img {
-      background: rgba(201,168,76,0.04);
-      border: 1px solid rgba(201,168,76,0.1);
-      border-radius: 12px;
-      aspect-ratio: 4 / 3;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .ol-showcase-img::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse at center, rgba(201,168,76,0.06) 0%, transparent 70%);
-    }
-    .ol-showcase-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      position: relative;
-      z-index: 1;
-    }
-    .ol-showcase-img-label {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.75rem;
-      position: relative;
-      z-index: 1;
-    }
-    .ol-showcase-img-label svg {
-      opacity: 0.25;
-      color: var(--gold, #C9A84C);
-    }
-    .ol-showcase-img-label span {
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: rgba(201,168,76,0.45);
-    }
-    .ol-showcase-info {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-    .ol-showcase-num {
-      font-size: 10.5px;
-      font-weight: 700;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: rgba(201,168,76,0.5);
-    }
-    .ol-showcase-title {
-      font-size: clamp(1.75rem, 3vw, 2.5rem);
-      font-weight: 800;
-      color: #F0F0F5;
-      letter-spacing: -0.025em;
-      line-height: 1.1;
-      margin: 0;
-    }
-    .ol-showcase-desc {
-      font-size: 1rem;
-      color: rgba(240,240,245,0.5);
-      line-height: 1.8;
-      margin: 0;
-    }
-    .ol-showcase-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 0.65rem;
-    }
-    .ol-showcase-list li {
-      font-size: 13.5px;
-      color: rgba(240,240,245,0.62);
-      line-height: 1.5;
-      padding-left: 1.25rem;
-      position: relative;
-    }
-    .ol-showcase-list li::before {
-      content: '→';
-      position: absolute;
-      left: 0;
-      color: rgba(201,168,76,0.6);
-      font-size: 11px;
-      top: 2px;
-    }
-    .ol-showcase-cta {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: rgba(201,168,76,0.08);
-      border: 1px solid rgba(201,168,76,0.25);
-      color: #C9A84C;
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      padding: 0.75rem 1.5rem;
-      border-radius: 6px;
-      text-decoration: none;
-      width: fit-content;
-    }
-    .ol-showcase-cta:hover {
-      background: rgba(201,168,76,0.14);
-      border-color: rgba(201,168,76,0.4);
-    }
-    @media (max-width: 900px) {
-      .ol-showcase-block,
-      .ol-showcase-block.reverse {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-        direction: ltr;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="../_astro/BaseLayout.xeR8R953.css?v20260426c">
+  <link rel="stylesheet" href="../_astro/premium-dark.css?v20260426c">
+  <script src="../_astro/ol-header.js?v20260426d" defer></script>
+  <!-- ALL COMPONENTS BELOW ARE IN premium-dark.css — NO INLINE CSS NEEDED
+       .ol-page-hero, .ol-portfolio-section, .ol-proj-*, .ol-showcase-*
+       ============================================================ -->
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.mx/#organization","name":"OrigenLab","url":"https://origenlab.mx","logo":"https://origenlab.mx/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"CollectionPage","@id":"https://origenlab.mx/portafolio/#page","url":"https://origenlab.mx/portafolio/","name":"Portafolio — OrigenLab","inLanguage":"es-MX"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.mx/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.mx/portafolio/"}]}]}</script></head>
 <body>
 
 <a class="ol-skip-link" href="#main">Saltar al contenido</a>
-<!-- ============================================================
-     TOPBAR
-     ============================================================ -->
 <div class="ol-topbar">
   <div class="ol-topbar-inner">
     <div class="ol-topbar-left">
@@ -504,7 +58,7 @@
     <div class="ol-topbar-center">
       <span class="ol-topbar-promo">
         <span class="ol-topbar-dot"></span>
-        Respuesta garantizada en menos de 24 horas &nbsp;·&nbsp; Ciudad de México
+        Atención personalizada  ·  Ciudad de México
       </span>
     </div>
     <div class="ol-topbar-right">
@@ -517,39 +71,52 @@
     </div>
   </div>
 </div>
-
-<!-- ============================================================
-     HEADER
-     ============================================================ -->
 <header class="ol-header" id="ol-header">
   <div class="ol-header-inner">
-    <a href="../index.html" class="ol-header-logo">
-      <img src="../img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
+    <a href="/" class="ol-header-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
     </a>
     <nav class="ol-nav" aria-label="Navegación principal">
       <ul class="ol-nav-list">
-        <li><a href="../index.html" class="ol-nav-link">Inicio</a></li>
+        <li><a href="/" class="ol-nav-link">Inicio</a></li>
         <li class="ol-has-dropdown">
-          <a href="../servicios/index.html" class="ol-nav-link">
+          <a href="/servicios/" class="ol-nav-link">
             Servicios
             <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
           <div class="ol-dropdown">
             <ul>
-              <li><a href="../servicios/desarrollo-web/index.html" class="ol-dropdown-link">Desarrollo Web</a></li>
-              <li><a href="../servicios/tiendas-en-linea/index.html" class="ol-dropdown-link">Tiendas en Línea</a></li>
-              <li><a href="../servicios/landing-pages/index.html" class="ol-dropdown-link">Landing Pages</a></li>
-              <li><a href="../servicios/rediseno-web/index.html" class="ol-dropdown-link">Rediseño Web</a></li>
+              <li><a href="/servicios/desarrollo-web/" class="ol-dropdown-link">Desarrollo Web</a></li>
+              <li><a href="/servicios/tiendas-en-linea/" class="ol-dropdown-link">Tiendas en Línea</a></li>
+              <li><a href="/servicios/landing-pages/" class="ol-dropdown-link">Landing Pages</a></li>
+              <li><a href="/servicios/rediseno-web/" class="ol-dropdown-link">Rediseño Web</a></li>
             </ul>
           </div>
         </li>
-        <li><a href="index.html" class="ol-nav-link active">Portafolio</a></li>
-        <li><a href="../nosotros/index.html" class="ol-nav-link">Nosotros</a></li>
-        <li><a href="../blog/index.html" class="ol-nav-link">Blog</a></li>
-        <li><a href="../contacto/index.html" class="ol-nav-link">Contacto</a></li>
+        <li class="ol-has-dropdown">
+          <a href="/portafolio/" class="ol-nav-link active">
+            Portafolio
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link">Equipos Contra Incendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link ol-dropdown-sub">— Gama de México</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link ol-dropdown-sub">— MESECI</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link ol-dropdown-sub">— LGA Contraincendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-dropdown-link ol-dropdown-sub">— MANEXT</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-dropdown-link ol-dropdown-sub">— BOMBERO.MX</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-dropdown-link ol-dropdown-sub">— ProyectoRed</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="/nosotros/" class="ol-nav-link">Nosotros</a></li>
+        <li><a href="/blog/" class="ol-nav-link">Blog</a></li>
+        <li><a href="/contacto/" class="ol-nav-link">Contacto</a></li>
       </ul>
     </nav>
-    <a href="../cotizar/index.html" class="ol-header-cta">Cotizar proyecto →</a>
+    <a href="/cotizar/" class="ol-header-cta">Cotizar proyecto →</a>
     <button class="ol-menu-toggle" id="ol-menu-toggle" aria-label="Abrir menú" aria-expanded="false">
       <span class="ol-ham-line"></span>
       <span class="ol-ham-line"></span>
@@ -557,41 +124,52 @@
     </button>
   </div>
 </header>
-
-<!-- Mobile overlay -->
 <div class="ol-mobile-overlay" id="ol-mobile-overlay"></div>
-
-<!-- Mobile panel -->
 <nav class="ol-mobile-panel" id="ol-mobile-panel" aria-label="Menú móvil">
   <div class="ol-mobile-header">
-    <a href="../index.html" class="ol-mobile-logo">
-      <img src="../img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
+    <a href="/" class="ol-mobile-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
     </a>
     <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú">
       <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
     </button>
   </div>
   <ul class="ol-mobile-nav">
-    <li><a href="../index.html" class="ol-mobile-link">Inicio</a></li>
+    <li><a href="/" class="ol-mobile-link">Inicio</a></li>
     <li>
       <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
         <span>Servicios</span>
         <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
       <ul class="ol-mobile-submenu">
-        <li><a href="../servicios/desarrollo-web/index.html" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
-        <li><a href="../servicios/tiendas-en-linea/index.html" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
-        <li><a href="../servicios/landing-pages/index.html" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
-        <li><a href="../servicios/rediseno-web/index.html" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
+        <li><a href="/servicios/desarrollo-web/" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
       </ul>
     </li>
-    <li><a href="index.html" class="ol-mobile-link active">Portafolio</a></li>
-    <li><a href="../nosotros/index.html" class="ol-mobile-link">Nosotros</a></li>
-    <li><a href="../blog/index.html" class="ol-mobile-link">Blog</a></li>
-    <li><a href="../contacto/index.html" class="ol-mobile-link">Contacto</a></li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Portafolio</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/portafolio/" class="ol-mobile-link ol-mobile-sublink">Todo el Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/" class="ol-mobile-link ol-mobile-sublink">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Gama de México</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MESECI</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— LGA Contraincendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MANEXT</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— BOMBERO.MX</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— ProyectoRed</a></li>
+      </ul>
+    </li>
+    <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
+    <li><a href="/blog/" class="ol-mobile-link">Blog</a></li>
+    <li><a href="/contacto/" class="ol-mobile-link">Contacto</a></li>
   </ul>
   <div class="ol-mobile-footer">
-    <a href="../cotizar/index.html" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a>
+    <a href="/cotizar/" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a>
   </div>
 </nav>
 
@@ -605,7 +183,7 @@
   <div class="ol-bc">
     <ol class="ol-bc-list" itemscope itemtype="https://schema.org/BreadcrumbList">
       <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <a href="../index.html" itemprop="item" class="ol-bc-home"><span itemprop="name">Inicio</span></a>
+        <a href="/" itemprop="item" class="ol-bc-home"><span itemprop="name">Inicio</span></a>
         <meta itemprop="position" content="1" />
       </li>
       <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
@@ -643,7 +221,7 @@
   <div class="ol-quicknav">
     <div class="ol-quicknav-inner">
 
-      <a href="../servicios/desarrollo-web/index.html" class="ol-qn-item">
+      <a href="/servicios/desarrollo-web/" class="ol-qn-item">
         <span class="ol-qn-icon">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
         </span>
@@ -653,7 +231,7 @@
         </span>
       </a>
 
-      <a href="../servicios/tiendas-en-linea/index.html" class="ol-qn-item">
+      <a href="/servicios/tiendas-en-linea/" class="ol-qn-item">
         <span class="ol-qn-icon">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
         </span>
@@ -663,7 +241,7 @@
         </span>
       </a>
 
-      <a href="../servicios/landing-pages/index.html" class="ol-qn-item">
+      <a href="/servicios/landing-pages/" class="ol-qn-item">
         <span class="ol-qn-icon">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
         </span>
@@ -673,7 +251,7 @@
         </span>
       </a>
 
-      <a href="../servicios/rediseno-web/index.html" class="ol-qn-item">
+      <a href="/servicios/rediseno-web/" class="ol-qn-item">
         <span class="ol-qn-icon">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
         </span>
@@ -683,7 +261,7 @@
         </span>
       </a>
 
-      <a href="index.html" class="ol-qn-item">
+      <a href="/portafolio/" class="ol-qn-item">
         <span class="ol-qn-icon">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
         </span>
@@ -693,7 +271,7 @@
         </span>
       </a>
 
-      <a href="../nosotros/index.html" class="ol-qn-item">
+      <a href="/nosotros/" class="ol-qn-item">
         <span class="ol-qn-icon">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
         </span>
@@ -703,13 +281,13 @@
         </span>
       </a>
 
-      <a href="../cotizar/index.html" class="ol-qn-item ol-qn-cta">
+      <a href="/cotizar/" class="ol-qn-item ol-qn-cta">
         <span class="ol-qn-icon">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
         </span>
         <span class="ol-qn-text">
           <span class="ol-qn-title">Cotizar Proyecto</span>
-          <span class="ol-qn-sub">Respuesta en 24 h</span>
+          <span class="ol-qn-sub">Solicitar propuesta</span>
         </span>
       </a>
 
@@ -797,24 +375,24 @@
         </div>
 
         <!-- 04 Gama de México -->
-        <div class="ol-proj-card" style="--proj-accent: #0EA5E9;">
-          <div class="ol-proj-thumb">
-            <div class="ol-proj-thumb-placeholder">
-              <span class="ol-proj-thumb-initial" style="--proj-accent: #0EA5E9;">G</span>
-            </div>
-            <span class="ol-proj-badge" style="color:#0EA5E9;">Presencia digital profesional</span>
+        <a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-proj-card" style="--proj-accent: #C0392B; text-decoration: none;">
+          <div class="ol-proj-thumb ol-proj-thumb-img" style="height: 220px; overflow: hidden; position: relative; background: #0A0A12;">
+            <img src="../img/equipos-contra-incendios/gamademexico/gamademexico-01.webp" alt="Gama de México — sitio corporativo de equipos contra incendios" width="1543" height="854" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit: cover; object-position: top center; display: block;">
+            <span class="ol-proj-badge" style="color:#C0392B;">Caso de estudio · Ver detalle</span>
           </div>
           <div class="ol-proj-body">
-            <span class="ol-proj-cat">Sitio Corporativo</span>
+            <span class="ol-proj-cat">Sitio Corporativo · Distribución Industrial</span>
             <h3 class="ol-proj-name">Gama de México</h3>
-            <p class="ol-proj-desc">Rediseño corporativo completo con enfoque en transmitir experiencia, confianza y captura de leads B2B para empresa establecida en México.</p>
+            <p class="ol-proj-desc">Sitio corporativo para distribuidor autorizado de Elkhart Brass en México. Catálogo técnico de monitores, boquillas, mangueras y válvulas certificadas UL/FM, con cobertura en CDMX, Querétaro y el Bajío.</p>
             <div class="ol-proj-tags">
-              <span class="ol-proj-tag">Desarrollo Web</span>
               <span class="ol-proj-tag">Corporativo</span>
-              <span class="ol-proj-tag">B2B</span>
+              <span class="ol-proj-tag">B2B Industrial</span>
+              <span class="ol-proj-tag">Catálogo técnico</span>
+              <span class="ol-proj-tag">Multi-sucursal</span>
             </div>
+            <span class="ol-proj-link" style="color:#C0392B;">Ver caso completo →</span>
           </div>
-        </div>
+        </a>
 
         <!-- 05 Eventech -->
         <div class="ol-proj-card" style="--proj-accent: #10B981;">
@@ -838,7 +416,7 @@
         </div>
 
         <!-- 06 CTA Card -->
-        <a href="../cotizar/index.html" class="ol-proj-card ol-proj-card-cta">
+        <a href="/cotizar/" class="ol-proj-card ol-proj-card-cta">
           <div class="ol-proj-cta-icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
           </div>
@@ -1148,7 +726,7 @@
         </div>
         <div class="ol-sh-right">
           <p class="ol-sh-copy">Contratar desarrollo web es una decisión importante. Por eso reunimos aquí las preguntas que más nos hacen cuando alguien está evaluando trabajar con nosotros — sobre cómo trabajamos, qué incluye cada proyecto y qué pueden esperar del proceso completo.</p>
-          <p class="ol-sh-copy">Si tienes una pregunta que no está aquí, escríbenos. Respondemos en menos de 24 horas y sin compromiso. Preferimos una conversación real a una respuesta genérica.</p>
+          <p class="ol-sh-copy">Si tienes una pregunta que no está aquí, escríbenos. Respondemos de manera personalizada y sin compromiso. Preferimos una conversación real a una respuesta genérica.</p>
         </div>
       </div>
 
@@ -1181,11 +759,11 @@
 
             <div class="ol-faq-item">
               <button class="ol-faq-question" data-faq="p2">
-                ¿Cuánto tiempo tarda en entregarse un proyecto?
+                ¿Cómo manejan los tiempos de entrega?
                 <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
               </button>
               <div class="ol-faq-answer" id="faq-ans-p2">
-                <p class="ol-faq-answer-inner">Los tiempos dependen del alcance: una landing page puede estar lista en 5–7 días hábiles, un sitio corporativo en 3–4 semanas y un e-commerce completo en 4–6 semanas. Siempre establecemos fechas de entrega comprometidas desde el inicio — sin sorpresas.</p>
+                <p class="ol-faq-answer-inner">Los tiempos dependen del alcance del proyecto. Trabajamos con calendario comprometido por escrito desde el inicio y con entregas iterativas en entorno de pruebas para que veas el avance real durante todo el proceso — sin sorpresas.</p>
               </div>
             </div>
 
@@ -1231,11 +809,11 @@
 
             <div class="ol-faq-item">
               <button class="ol-faq-question" data-faq="p7">
-                ¿Cuánto cuesta un proyecto como los del portafolio?
+                ¿Cómo se cotiza un proyecto como los del portafolio?
                 <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
               </button>
               <div class="ol-faq-answer" id="faq-ans-p7">
-                <p class="ol-faq-answer-inner">El costo varía según alcance, número de páginas, funcionalidades y nivel de diseño. Un sitio corporativo comienza desde $15,000 MXN; proyectos más complejos como directorios o e-commerce tienen un costo mayor. Siempre entregamos cotización detallada y sin cargos ocultos antes de comenzar.</p>
+                <p class="ol-faq-answer-inner">El costo varía según alcance, número de páginas, funcionalidades y nivel de diseño. Cada cotización se construye a la medida según las necesidades reales de tu proyecto. Siempre entregamos propuesta detallada y por escrito, sin cargos ocultos, antes de comenzar.</p>
               </div>
             </div>
 
@@ -1250,7 +828,7 @@
               Contáctanos por WhatsApp
             </span>
             <h3 class="ol-faq-form-title">¿Listo para empezar<br>tu proyecto?</h3>
-            <p class="ol-faq-form-sub">Cuéntanos brevemente qué necesitas y te respondemos en menos de 24 horas con una propuesta clara.</p>
+            <p class="ol-faq-form-sub">Cuéntanos brevemente qué necesitas y te respondemos con una propuesta clara, por escrito y sin compromiso.</p>
 
             <form class="ol-faq-form" id="ol-wa-form-prt" novalidate>
               <div class="ol-faq-form-row">
@@ -1332,46 +910,46 @@
   <!-- QUICKNAV BOTTOM -->
   <div class="ol-quicknav">
     <div class="ol-quicknav-inner">
-      <a href="../servicios/desarrollo-web/index.html" class="ol-qn-item">
+      <a href="/servicios/desarrollo-web/" class="ol-qn-item">
         <div class="ol-qn-text">
           <span class="ol-qn-title">Sitios Corporativos</span>
           <span class="ol-qn-sub">Diseño a medida</span>
         </div>
       </a>
-      <a href="../servicios/tiendas-en-linea/index.html" class="ol-qn-item">
+      <a href="/servicios/tiendas-en-linea/" class="ol-qn-item">
         <div class="ol-qn-text">
           <span class="ol-qn-title">Tienda en Línea</span>
           <span class="ol-qn-sub">Vende desde el día uno</span>
         </div>
       </a>
-      <a href="../servicios/landing-pages/index.html" class="ol-qn-item">
+      <a href="/servicios/landing-pages/" class="ol-qn-item">
         <div class="ol-qn-text">
           <span class="ol-qn-title">Landing Pages</span>
           <span class="ol-qn-sub">Más leads, más ventas</span>
         </div>
       </a>
-      <a href="../servicios/rediseno-web/index.html" class="ol-qn-item">
+      <a href="/servicios/rediseno-web/" class="ol-qn-item">
         <div class="ol-qn-text">
           <span class="ol-qn-title">Rediseño Web</span>
           <span class="ol-qn-sub">Actualiza tu presencia</span>
         </div>
       </a>
-      <a href="../nosotros/index.html" class="ol-qn-item">
+      <a href="/nosotros/" class="ol-qn-item">
         <div class="ol-qn-text">
           <span class="ol-qn-title">Nosotros</span>
           <span class="ol-qn-sub">Quiénes somos</span>
         </div>
       </a>
-      <a href="../contacto/index.html" class="ol-qn-item">
+      <a href="/contacto/" class="ol-qn-item">
         <div class="ol-qn-text">
           <span class="ol-qn-title">Contacto</span>
           <span class="ol-qn-sub">Escríbenos directo</span>
         </div>
       </a>
-      <a href="../cotizar/index.html" class="ol-qn-item ol-qn-cta">
+      <a href="/cotizar/" class="ol-qn-item ol-qn-cta">
         <div class="ol-qn-text">
           <span class="ol-qn-title">Iniciar Proyecto</span>
-          <span class="ol-qn-sub">Respuesta en 24 h</span>
+          <span class="ol-qn-sub">Solicitar propuesta</span>
         </div>
       </a>
     </div>
@@ -1384,7 +962,7 @@
      ============================================================ -->
 <footer class="ol-footer">
   <div class="ol-footer-top">
-    <a href="../index.html" class="ol-footer-logo">
+    <a href="/" class="ol-footer-logo">
       Origen<span class="ol-footer-logo-dot">.</span>Lab
     </a>
     <p class="ol-footer-tagline">
@@ -1422,25 +1000,25 @@
     <div>
       <p class="ol-footer-col-title">Servicios</p>
       <ul class="ol-footer-col-list">
-        <li><a href="../servicios/desarrollo-web/index.html">Desarrollo Web</a></li>
-        <li><a href="../servicios/tiendas-en-linea/index.html">Tiendas en Línea</a></li>
-        <li><a href="../servicios/landing-pages/index.html">Landing Pages</a></li>
-        <li><a href="../servicios/rediseno-web/index.html">Rediseño Web</a></li>
+        <li><a href="/servicios/desarrollo-web/">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/">Rediseño Web</a></li>
       </ul>
     </div>
     <div>
       <p class="ol-footer-col-title">Empresa</p>
       <ul class="ol-footer-col-list">
-        <li><a href="../nosotros/index.html">Nosotros</a></li>
-        <li><a href="index.html">Portafolio</a></li>
-        <li><a href="../blog/index.html">Blog</a></li>
-        <li><a href="../cotizar/index.html">Cotizar proyecto</a></li>
+        <li><a href="/nosotros/">Nosotros</a></li>
+        <li><a href="/portafolio/">Portafolio</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/cotizar/">Cotizar proyecto</a></li>
       </ul>
     </div>
     <div>
       <p class="ol-footer-col-title">Contacto</p>
       <ul class="ol-footer-col-list">
-        <li><a href="../contacto/index.html">Formulario de contacto</a></li>
+        <li><a href="/contacto/">Formulario de contacto</a></li>
         <li><a href="mailto:hola@origenlab.mx">hola@origenlab.mx</a></li>
         <li><a href="tel:+525547868402">+52 55 4786 8402</a></li>
       </ul>
@@ -1448,16 +1026,16 @@
     <div>
       <p class="ol-footer-col-title">Legal</p>
       <ul class="ol-footer-col-list">
-        <li><a href="../aviso-de-privacidad/index.html">Aviso de privacidad</a></li>
-        <li><a href="../terminos/index.html">Términos de servicio</a></li>
+        <li><a href="/aviso-de-privacidad/">Aviso de privacidad</a></li>
+        <li><a href="/terminos/">Términos de servicio</a></li>
       </ul>
     </div>
   </div>
   <div class="ol-footer-bottom">
     <p class="ol-footer-copy">© 2026 OrigenLab. Todos los derechos reservados.</p>
     <div class="ol-footer-legal">
-      <a href="../aviso-de-privacidad/index.html">Privacidad</a>
-      <a href="../terminos/index.html">Términos</a>
+      <a href="/aviso-de-privacidad/">Privacidad</a>
+      <a href="/terminos/">Términos</a>
     </div>
   </div>
 </footer>

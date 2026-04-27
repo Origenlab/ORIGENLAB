@@ -1,0 +1,1718 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio · Equipos Contra Incendios | OrigenLab</title>
+  <meta name="description" content="Sitios web profesionales que OrigenLab ha desarrollado para empresas líderes del sector de protección y equipos contra incendios en México: distribución, e-commerce, sistemas integrales y servicios técnicos certificados.">
+  <link rel="canonical" href="https://origenlab.mx/portafolio/equipos-contra-incendios/">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://origenlab.mx/portafolio/equipos-contra-incendios/">
+  <meta property="og:title" content="Portafolio · Equipos Contra Incendios | OrigenLab">
+  <meta property="og:description" content="Casos reales de empresas mexicanas líderes en protección contra incendios: Gama de México, MESECI, LGA, MANEXT, BOMBERO.MX y Proyecto Red.">
+  <meta property="og:image" content="https://origenlab.mx/og-image.jpg">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="OrigenLab">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Portafolio · Equipos Contra Incendios | OrigenLab">
+  <meta name="twitter:description" content="Sitios web para el sector de protección contra incendios — proyectos reales, en operación.">
+  <meta name="twitter:image" content="https://origenlab.mx/og-image.jpg">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+
+  <!-- Fuentes: preconnect + direct link para evitar render-blocking -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+  <!-- CSS aprobado del sitio -->
+  <link rel="stylesheet" href="../../_astro/BaseLayout.xeR8R953.css?v20260426c">
+  <link rel="stylesheet" href="../../_astro/premium-dark.css?v20260426c">
+  <script src="../../_astro/ol-header.js?v20260426d" defer></script>
+
+  <style>
+    /* ============================================================
+       L3 — PORTAFOLIO · EQUIPOS CONTRA INCENDIOS
+       Hereda de premium-dark.css (componentes globales aprobados):
+         ol-page-hero · ol-overview · ol-features · ol-feature-card
+         ol-portfolio-section · ol-proj-grid · ol-proj-card
+         ol-showcase · ol-showcase-block · ol-process · ol-process-step
+         ol-testimonials · ol-tc · ol-pricing · ol-faq-section
+       Aquí solo viven overrides específicos de la sub-sección.
+       ============================================================ */
+
+    /* ---- BROWSER MOCKUP — visual richer que el placeholder de inicial ---- */
+    .ol-mock {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #0A0A12 0%, #14141F 100%);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .ol-mock-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.65rem 0.9rem;
+      background: rgba(255,255,255,0.025);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .ol-mock-dots { display: flex; gap: 5px; }
+    .ol-mock-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.18);
+    }
+    .ol-mock-dot.r { background: rgba(255,90,90,0.55); }
+    .ol-mock-dot.y { background: rgba(255,200,80,0.55); }
+    .ol-mock-dot.g { background: rgba(120,210,140,0.55); }
+    .ol-mock-url {
+      flex: 1;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 999px;
+      padding: 0.2rem 0.7rem;
+      font-size: 10px;
+      color: rgba(240,240,245,0.5);
+      letter-spacing: 0.02em;
+      text-align: center;
+      font-family: 'SFMono-Regular', Menlo, Consolas, monospace;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .ol-mock-body {
+      flex: 1;
+      padding: 1.25rem 1.25rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .ol-mock-body::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at top right, var(--mock-glow, rgba(201,168,76,0.07)) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .ol-mock-tag {
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--proj-accent, #C9A84C);
+      opacity: 0.85;
+    }
+    .ol-mock-headline {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: rgba(240,240,245,0.92);
+      letter-spacing: -0.02em;
+      line-height: 1.18;
+      margin: 0;
+    }
+    .ol-mock-line {
+      height: 8px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 4px;
+      width: 100%;
+    }
+    .ol-mock-line.short { width: 70%; }
+    .ol-mock-line.short-2 { width: 50%; }
+    .ol-mock-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 6px;
+      margin-top: auto;
+    }
+    .ol-mock-tile {
+      aspect-ratio: 1.1 / 1;
+      background: linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%);
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 6px;
+      position: relative;
+    }
+    .ol-mock-tile::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 6px;
+      background: linear-gradient(135deg, var(--proj-accent, #C9A84C) 0%, transparent 80%);
+      opacity: 0.08;
+    }
+
+    /* Showcase — mockup más grande con varias secciones simuladas */
+    .ol-mock-large .ol-mock-body {
+      padding: 1.5rem 1.5rem 1.75rem;
+      gap: 1rem;
+    }
+    .ol-mock-large .ol-mock-headline { font-size: 1.4rem; }
+    .ol-mock-large .ol-mock-cards { grid-template-columns: 1fr 1fr 1fr 1fr; gap: 8px; }
+
+    /* CARD THUMB — placeholder de tarjeta (3-col grid)
+       Imagen captura 1280×960 (4:3). Card thumb es ancho > alto,
+       así que mostramos la parte superior (hero del cliente). */
+    .ol-portfolio-section .ol-proj-thumb {
+      height: 220px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      background: #0A0A12;
+    }
+    .ol-proj-thumb-img {
+      position: relative;
+      overflow: hidden;
+    }
+    .ol-proj-thumb-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top left;
+      display: block;
+      transition: transform 0.45s ease;
+    }
+    .ol-proj-card:hover .ol-proj-thumb-img img { transform: scale(1.025); }
+    .ol-proj-thumb-img::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 55%, rgba(8,8,14,0.75) 100%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* SHOWCASE IMAGE — placeholder grande (4:3)
+       Imagen captura 1280×960 (4:3) — calza perfecto sin recorte vertical.
+       Mostramos la imagen completa con un sutil reflejo de browser. */
+    .ol-showcase-img-real {
+      display: block;
+      cursor: pointer;
+      text-decoration: none;
+      background: #0A0A12;
+      position: relative;
+      overflow: hidden;
+    }
+    .ol-showcase-img-real img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top left;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    .ol-showcase-img-real:hover img { transform: scale(1.02); }
+    /* Sutil overlay degradado en la parte inferior para integrar la imagen al fondo */
+    .ol-showcase-img-real::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 70%, rgba(8,8,14,0.45) 100%);
+      pointer-events: none;
+      z-index: 1;
+    }
+    /* Indicador de "abrir sitio" sobre la imagen del showcase */
+    .ol-showcase-img-real::before {
+      content: 'Abrir ↗';
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 2;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,0.14);
+      color: rgba(240,240,245,0.9);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+    .ol-showcase-img-real:hover::before { opacity: 1; }
+
+    /* Hover (sin animaciones más allá de borders/bg suaves para mantener regla) */
+    .ol-proj-card[href]:hover { border-color: rgba(201,168,76,0.32); background: #0E0E1A; }
+    .ol-proj-card[href]:hover .ol-proj-link {
+      background: var(--proj-accent, #C9A84C);
+      border-color: var(--proj-accent, #C9A84C);
+      color: #08080E;
+    }
+
+    /* Showcase image full mockup */
+    .ol-showcase-img.ol-mock-frame {
+      background: transparent;
+      border: 1px solid rgba(201,168,76,0.18);
+      padding: 0;
+      overflow: hidden;
+    }
+    .ol-showcase-img.ol-mock-frame::before { display: none; }
+
+    /* Sector chip row — pequeña tira de tipos de cliente atendidos */
+    .ol-chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin-top: 2rem;
+      justify-content: flex-start;
+    }
+    .ol-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(201,168,76,0.06);
+      border: 1px solid rgba(201,168,76,0.18);
+      color: rgba(240,240,245,0.7);
+      font-size: 11.5px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 0.4rem 0.85rem;
+      border-radius: 999px;
+    }
+    .ol-chip svg { color: #C9A84C; opacity: 0.85; }
+
+    /* CTA hero (estilo ol-pricing pero adaptado a "iniciar proyecto") */
+    .ol-cta-hero {
+      background: #0D0D16;
+      padding: 6rem 0;
+      position: relative;
+    }
+    .ol-cta-hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.18), transparent);
+    }
+    .ol-cta-hero-inner {
+      width: 90%;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+    .ol-cta-hero-card {
+      background: linear-gradient(135deg, #0C0C18 0%, #12121F 100%);
+      border: 1px solid rgba(201,168,76,0.3);
+      border-radius: 18px;
+      padding: 3.5rem;
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .ol-cta-hero-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 60%;
+      height: 180%;
+      background: radial-gradient(ellipse at center, rgba(201,168,76,0.08) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .ol-cta-hero-left, .ol-cta-hero-right { position: relative; z-index: 1; }
+    .ol-cta-hero-eyebrow {
+      font-size: 10.5px;
+      color: #C9A84C;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin: 0 0 1.25rem;
+    }
+    .ol-cta-hero-title {
+      font-size: clamp(2rem, 3.5vw, 2.75rem);
+      font-weight: 900;
+      color: #F0F0F5;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin: 0 0 1.25rem;
+    }
+    .ol-cta-hero-blurb {
+      font-size: 15px;
+      color: rgba(240,240,245,0.62);
+      line-height: 1.78;
+      margin: 0 0 2rem;
+    }
+    .ol-cta-hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+    }
+    .ol-cta-hero-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #C9A84C;
+      color: #08080E;
+      padding: 0.95rem 1.75rem;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      letter-spacing: 0.01em;
+      transition: background 0.22s ease, transform 0.15s ease, box-shadow 0.22s ease;
+    }
+    .ol-cta-hero-btn:hover {
+      background: #E4C26B;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 28px rgba(201,168,76,0.35);
+    }
+    .ol-cta-hero-btn-ghost {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: rgba(240,240,245,0.85);
+    }
+    .ol-cta-hero-btn-ghost:hover {
+      background: rgba(255,255,255,0.07);
+      border-color: rgba(255,255,255,0.22);
+      box-shadow: none;
+    }
+    .ol-cta-hero-promises {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .ol-cta-hero-promises-title {
+      font-size: 10.5px;
+      color: rgba(240,240,245,0.45);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      margin: 0 0 0.5rem;
+    }
+    .ol-cta-hero-promises-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+    .ol-cta-hero-promises-list li {
+      font-size: 14px;
+      color: rgba(240,240,245,0.78);
+      display: flex;
+      align-items: flex-start;
+      gap: 0.7rem;
+      line-height: 1.55;
+    }
+    .ol-cta-hero-promises-list li::before {
+      content: '';
+      flex-shrink: 0;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: rgba(201,168,76,0.15);
+      border: 1px solid rgba(201,168,76,0.4);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C9A84C' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+      background-size: 11px;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: 1px;
+    }
+    @media (max-width: 900px) {
+      .ol-cta-hero-card { grid-template-columns: 1fr; gap: 2.5rem; padding: 2.5rem; }
+    }
+
+    /* FAQ form (verbatim L2 — necesario para sticky form WhatsApp) */
+    .ol-faq-section { background: var(--bg-alt, #0D0D16); padding: 6rem 0; position: relative; overflow: hidden; }
+    .ol-faq-section::before { content: ''; position: absolute; top:0; left:0; right:0; height: 1px; background: linear-gradient(90deg, transparent 0%, rgba(201,168,76,0.3) 50%, transparent 100%); }
+    .ol-faq-inner { width: 90%; max-width: 1600px; margin: 0 auto; }
+    .ol-faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+    @media (max-width: 900px) { .ol-faq-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
+    .ol-faq-list { display: flex; flex-direction: column; gap: 0; }
+    .ol-faq-col-label { font-size: 10.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(240,240,245,0.35); margin-bottom: 1.25rem; }
+    .ol-faq-item { border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .ol-faq-item:first-of-type { border-top: 1px solid rgba(255,255,255,0.07); }
+    .ol-faq-question { width: 100%; background: none; border: none; padding: 1.15rem 0; display: flex; align-items: center; justify-content: space-between; gap: 1rem; cursor: pointer; text-align: left; color: #F0F0F5; font-size: 0.95rem; font-weight: 500; font-family: 'Inter', -apple-system, sans-serif; line-height: 1.4; }
+    .ol-faq-question:hover { color: #C9A84C; }
+    .ol-faq-question.active { color: #C9A84C; }
+    .ol-faq-icon { flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.12); display: flex; align-items: center; justify-content: center; }
+    .ol-faq-question.active .ol-faq-icon { border-color: #C9A84C; background: rgba(201,168,76,0.12); transform: rotate(45deg); }
+    .ol-faq-icon svg { display: block; }
+    .ol-faq-answer { max-height: 0; overflow: hidden; }
+    .ol-faq-answer-inner { padding: 0 0 1.25rem; font-size: 0.9rem; color: rgba(240,240,245,0.6); line-height: 1.7; margin: 0; }
+    .ol-faq-form-wrap { background: #131320; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 2.25rem; position: sticky; top: 120px; }
+    .ol-faq-form-badge { display: inline-flex; align-items: center; gap: 0.45rem; font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #25D366; background: rgba(37,211,102,0.1); border: 1px solid rgba(37,211,102,0.2); border-radius: 980px; padding: 0.35rem 0.85rem; margin-bottom: 1.25rem; }
+    .ol-faq-form-title { font-size: 1.4rem; font-weight: 700; color: #F0F0F5; letter-spacing: -0.02em; margin: 0 0 0.45rem; line-height: 1.25; }
+    .ol-faq-form-sub { font-size: 0.875rem; color: rgba(240,240,245,0.5); line-height: 1.55; margin: 0 0 1.75rem; }
+    .ol-faq-form { display: flex; flex-direction: column; gap: 1rem; }
+    .ol-faq-field { display: flex; flex-direction: column; gap: 0.4rem; }
+    .ol-faq-field label { font-size: 11.5px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; color: rgba(240,240,245,0.45); }
+    .ol-faq-field input, .ol-faq-field select, .ol-faq-field textarea { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 0.7rem 0.9rem; font-size: 0.9rem; font-family: 'Inter', -apple-system, sans-serif; color: #F0F0F5; outline: none; width: 100%; box-sizing: border-box; }
+    .ol-faq-field input::placeholder, .ol-faq-field textarea::placeholder { color: rgba(240,240,245,0.25); }
+    .ol-faq-field select option { background: #131320; color: #F0F0F5; }
+    .ol-faq-field input:focus, .ol-faq-field select:focus, .ol-faq-field textarea:focus { border-color: rgba(201,168,76,0.45); background: rgba(201,168,76,0.04); }
+    .ol-faq-field textarea { resize: vertical; min-height: 90px; }
+    .ol-faq-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    @media (max-width: 560px) { .ol-faq-form-row { grid-template-columns: 1fr; } }
+    .ol-faq-submit { display: flex; align-items: center; justify-content: center; gap: 0.6rem; width: 100%; padding: 0.85rem 1.5rem; background: #25D366; border: none; border-radius: 8px; font-size: 0.95rem; font-weight: 600; font-family: 'Inter', -apple-system, sans-serif; color: #fff; cursor: pointer; margin-top: 0.5rem; transition: background 0.2s, transform 0.15s; }
+    .ol-faq-submit:hover { background: #1ebe5a; transform: translateY(-1px); }
+    .ol-faq-form-note { font-size: 11px; color: rgba(240,240,245,0.3); text-align: center; margin-top: 0.65rem; line-height: 1.5; }
+
+    /* =========================================================================
+       COMPONENTS BELOW ARE IN premium-dark.css — DO NOT DUPLICATE
+       .ol-page-hero, .ol-overview, .ol-portfolio-section, .ol-proj-*,
+       .ol-features, .ol-feature-card, .ol-showcase, .ol-showcase-*, .ol-process-l3
+       =========================================================================
+       PAGE-SPECIFIC OVERRIDES ONLY ABOVE
+       ========================================================================= */
+    .ol-process-l3-title { font-size: 1.0625rem; font-weight: 700; color: #F0F0F5; margin: 0 0 0.75rem; letter-spacing: -0.01em; }
+    .ol-process-l3-desc { font-size: 14px; color: rgba(240,240,245,0.5); line-height: 1.72; margin: 0; }
+    @media (max-width: 900px) { .ol-process-l3-steps { grid-template-columns: repeat(2, 1fr); gap: 3rem 1.5rem; } .ol-process-l3-steps::before { display: none; } }
+    @media (max-width: 520px) { .ol-process-l3-steps { grid-template-columns: 1fr; } .ol-process-l3-step { padding: 0; } }
+
+    /* Testimonials grid */
+    .ol-testimonials-l3 { background: #08080E; padding: 6rem 0; position: relative; }
+    .ol-testimonials-l3::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(201,168,76,0.15), transparent); }
+    .ol-testimonials-l3-inner { width: 90%; max-width: 1600px; margin: 0 auto; }
+    .ol-testimonials-l3-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 3.5rem; }
+    @media (max-width: 900px) { .ol-testimonials-l3-grid { grid-template-columns: 1fr; } }
+  </style>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.mx/#organization","name":"OrigenLab","url":"https://origenlab.mx","logo":"https://origenlab.mx/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"CollectionPage","@id":"https://origenlab.mx/portafolio/equipos-contra-incendios/#page","url":"https://origenlab.mx/portafolio/equipos-contra-incendios/","name":"Portafolio · Equipos Contra Incendios — OrigenLab","inLanguage":"es-MX","isPartOf":{"@type":"WebSite","@id":"https://origenlab.mx/#website","url":"https://origenlab.mx/","name":"OrigenLab"},"about":{"@type":"Thing","name":"Equipos contra incendios"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.mx/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.mx/portafolio/"},{"@type":"ListItem","position":3,"name":"Equipos Contra Incendios","item":"https://origenlab.mx/portafolio/equipos-contra-incendios/"}]},{"@type":"ItemList","name":"Proyectos · Equipos Contra Incendios","itemListElement":[{"@type":"ListItem","position":1,"name":"Gama de México","url":"https://gamademexico.com/"},{"@type":"ListItem","position":2,"name":"MESECI","url":"https://meseci.com.mx/"},{"@type":"ListItem","position":3,"name":"LGA Contraincendios","url":"https://lgacontraincendios.com/"},{"@type":"ListItem","position":4,"name":"MANEXT — Mantenimiento de Extintores","url":"https://mantenimientodeextintores.mx/"},{"@type":"ListItem","position":5,"name":"BOMBERO.MX","url":"https://bombero.mx/"},{"@type":"ListItem","position":6,"name":"Proyecto Red","url":"https://proyectored.com.mx/"}]}]}</script>
+</head>
+<body>
+
+<a class="ol-skip-link" href="#main">Saltar al contenido</a>
+
+<div class="ol-topbar">
+  <div class="ol-topbar-inner">
+    <div class="ol-topbar-left">
+      <a href="mailto:hola@origenlab.mx" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        hola@origenlab.mx
+      </a>
+      <span class="ol-topbar-sep"></span>
+      <a href="tel:+525547868402" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        +52 55 4786 8402
+      </a>
+    </div>
+    <div class="ol-topbar-center">
+      <span class="ol-topbar-promo">
+        <span class="ol-topbar-dot"></span>
+        Atención personalizada  ·  Ciudad de México
+      </span>
+    </div>
+    <div class="ol-topbar-right">
+      <a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web" target="_blank" rel="noopener noreferrer" class="ol-topbar-wa">
+        <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor">
+          <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+<header class="ol-header" id="ol-header">
+  <div class="ol-header-inner">
+    <a href="/" class="ol-header-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
+    </a>
+    <nav class="ol-nav" aria-label="Navegación principal">
+      <ul class="ol-nav-list">
+        <li><a href="/" class="ol-nav-link">Inicio</a></li>
+        <li class="ol-has-dropdown">
+          <a href="/servicios/" class="ol-nav-link">
+            Servicios
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/servicios/desarrollo-web/" class="ol-dropdown-link">Desarrollo Web</a></li>
+              <li><a href="/servicios/tiendas-en-linea/" class="ol-dropdown-link">Tiendas en Línea</a></li>
+              <li><a href="/servicios/landing-pages/" class="ol-dropdown-link">Landing Pages</a></li>
+              <li><a href="/servicios/rediseno-web/" class="ol-dropdown-link">Rediseño Web</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="ol-has-dropdown">
+          <a href="/portafolio/" class="ol-nav-link active">
+            Portafolio
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link">Equipos Contra Incendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link ol-dropdown-sub">— Gama de México</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link ol-dropdown-sub">— MESECI</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link ol-dropdown-sub">— LGA Contraincendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-dropdown-link ol-dropdown-sub">— MANEXT</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-dropdown-link ol-dropdown-sub">— BOMBERO.MX</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="/nosotros/" class="ol-nav-link">Nosotros</a></li>
+        <li><a href="/blog/" class="ol-nav-link">Blog</a></li>
+        <li><a href="/contacto/" class="ol-nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="/cotizar/" class="ol-header-cta">Cotizar proyecto →</a>
+    <button class="ol-menu-toggle" id="ol-menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+    </button>
+  </div>
+</header>
+<div class="ol-mobile-overlay" id="ol-mobile-overlay"></div>
+<nav class="ol-mobile-panel" id="ol-mobile-panel" aria-label="Menú móvil">
+  <div class="ol-mobile-header">
+    <a href="/" class="ol-mobile-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
+    </a>
+    <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú">
+      <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <ul class="ol-mobile-nav">
+    <li><a href="/" class="ol-mobile-link">Inicio</a></li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Servicios</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/servicios/desarrollo-web/" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Portafolio</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/portafolio/" class="ol-mobile-link ol-mobile-sublink">Todo el Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/" class="ol-mobile-link ol-mobile-sublink">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Gama de México</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MESECI</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— LGA Contraincendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MANEXT</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— BOMBERO.MX</a></li>
+      </ul>
+    </li>
+    <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
+    <li><a href="/blog/" class="ol-mobile-link">Blog</a></li>
+    <li><a href="/contacto/" class="ol-mobile-link">Contacto</a></li>
+  </ul>
+  <div class="ol-mobile-footer">
+    <a href="/cotizar/" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a>
+  </div>
+</nav>
+
+<!-- ============================================================
+     BREADCRUMB
+     ============================================================ -->
+<nav class="ol-bc-wrap" aria-label="Migas de pan">
+  <div class="ol-bc">
+    <ol class="ol-bc-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/" itemprop="item" class="ol-bc-home"><span itemprop="name">Inicio</span></a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/portafolio/" itemprop="item"><span itemprop="name">Portafolio</span></a>
+        <meta itemprop="position" content="2" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item ol-bc-current" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name">Equipos Contra Incendios</span>
+        <meta itemprop="position" content="3" />
+      </li>
+    </ol>
+  </div>
+</nav>
+
+<!-- ============================================================
+     MAIN
+     ============================================================ -->
+<main id="main">
+
+  <!-- ============== PAGE HERO ============== -->
+  <section class="ol-page-hero">
+    <div class="ol-page-hero-inner">
+      <div class="ol-page-hero-grid">
+
+        <div class="ol-page-hero-left">
+          <span class="ol-eyebrow">Portafolio · Sector Industrial</span>
+          <h1 class="ol-page-hero-title">Sitios web para empresas de equipos contra incendios.</h1>
+          <p class="ol-page-hero-sub">Una selección curada de proyectos que OrigenLab ha desarrollado para empresas mexicanas líderes en distribución, fabricación, integración y servicios técnicos del sector de protección contra incendios.</p>
+        </div>
+
+        <div class="ol-page-hero-right">
+          <p class="ol-page-hero-copy">El sector de equipos contra incendios tiene un comprador exigente: distribuidores, oficiales de seguridad industrial, jefes de mantenimiento, áreas de compras corporativas, plantas industriales y cuerpos de bomberos. Cada uno necesita información técnica clara, fichas precisas y un canal directo para cotizar sin fricción.</p>
+          <p class="ol-page-hero-copy">Cada uno de los proyectos a continuación fue diseñado y construido pensando en ese comprador profesional — catálogos estructurados, descripción precisa de productos y servicios, certificaciones bien comunicadas y formularios pensados para distribuidores y compradores corporativos.</p>
+
+          <div class="ol-chip-row">
+            <span class="ol-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Distribución autorizada
+            </span>
+            <span class="ol-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              E-commerce especializado
+            </span>
+            <span class="ol-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Sistemas integrales
+            </span>
+            <span class="ol-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Equipo NFPA para bomberos
+            </span>
+            <span class="ol-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Servicios técnicos certificados
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== QUICK NAV TOP ============== -->
+  <div class="ol-quicknav">
+    <div class="ol-quicknav-inner">
+
+      <a href="/portafolio/" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Todo el Portafolio</span>
+          <span class="ol-qn-sub">Ver proyectos completos</span>
+        </span>
+      </a>
+
+      <a href="/portafolio/equipos-contra-incendios/" class="ol-qn-item" aria-current="page">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Equipos Contra Incendios</span>
+          <span class="ol-qn-sub">Casos del sector</span>
+        </span>
+      </a>
+
+      <a href="/servicios/desarrollo-web/" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Desarrollo Web</span>
+          <span class="ol-qn-sub">Sitios corporativos</span>
+        </span>
+      </a>
+
+      <a href="/servicios/tiendas-en-linea/" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Tiendas en Línea</span>
+          <span class="ol-qn-sub">E-commerce · Pagos MX</span>
+        </span>
+      </a>
+
+      <a href="/servicios/landing-pages/" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Landing Pages</span>
+          <span class="ol-qn-sub">Alta conversión</span>
+        </span>
+      </a>
+
+      <a href="/contacto/" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Contacto</span>
+          <span class="ol-qn-sub">Escríbenos directo</span>
+        </span>
+      </a>
+
+      <a href="/cotizar/" class="ol-qn-item ol-qn-cta">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Cotizar Proyecto</span>
+          <span class="ol-qn-sub">Solicitar propuesta</span>
+        </span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- ============== SECTOR INTRO ============== -->
+  <section class="ol-overview">
+    <div class="ol-overview-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Especialización por sector</span>
+          <h2 class="ol-section-title">Comprendemos el negocio<br>de la protección contra incendios.</h2>
+          <p class="ol-section-sub">Hemos trabajado con empresas que comercializan extintores certificados, distribuyen marcas internacionales, integran sistemas hidráulicos, equipan a cuerpos de bomberos y operan servicios técnicos de mantenimiento bajo norma.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">No es un sector más. La compra de equipos contra incendios involucra cumplimiento normativo, especificaciones técnicas, certificaciones internacionales y, en muchos casos, decisiones que cruzan varias áreas de una empresa — seguridad industrial, compras, mantenimiento, ingeniería, recursos materiales.</p>
+          <p class="ol-sh-copy">Por eso cada sitio del portafolio está diseñado para resolver un problema real: presentar producto técnico con claridad, transmitir respaldo profesional desde la primera visita y abrir un canal directo de contacto con el equipo comercial sin pasos innecesarios.</p>
+        </div>
+      </div>
+
+      <div class="ol-overview-grid" style="margin-top:4rem;">
+        <div class="ol-overview-img ol-overview-img-real">
+          <img src="../../img/equipos-contra-incendios/_sector/sector-overview.webp" alt="Almacén industrial de equipos de protección contra incendios — extintores, mangueras, gabinetes y equipo NFPA organizados por familia" width="1200" height="900" loading="lazy" decoding="async">
+          <div class="ol-overview-img-tag">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"/></svg>
+            Sector · Protección Contra Incendios
+          </div>
+        </div>
+        <div class="ol-overview-text">
+          <span class="ol-eyebrow">Sitios pensados para el comprador técnico</span>
+          <h3 class="ol-overview-title">Diseño profesional, contenido técnico, conversión directa.</h3>
+          <p>Quien compra un extintor para una nave industrial, un sistema de detección para un centro comercial o el mantenimiento anual de extintores de una flotilla, <strong>no busca una página bonita</strong>. Busca confianza, claridad técnica y un canal directo para resolver dudas concretas.</p>
+          <p>Por eso los sitios que diseñamos para este sector se construyen alrededor del comprador profesional: catálogo técnico bien organizado, fichas de producto precisas, áreas claras de cobertura, contacto inmediato y una identidad visual que comunica seriedad sin recurrir a clichés industriales.</p>
+          <p>El resultado es un sitio que <strong>vende experiencia y respaldo</strong> — no solo productos.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== PORTAFOLIO — GRID DE 6 CLIENTES ============== -->
+  <section class="ol-portfolio-section">
+    <div class="ol-portfolio-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Proyectos del sector</span>
+          <h2 class="ol-section-title">Empresas mexicanas que<br>ya trabajan con nosotros.</h2>
+          <p class="ol-section-sub">Distribuidores autorizados, integradores, e-commerce especializado y empresas de servicios técnicos certificados — cada uno con un sitio en operación, atendiendo clientes reales en distintas plazas de la República.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Cada caso a continuación corresponde a una empresa real del sector de protección contra incendios. Son sitios que recibieron descubrimiento de negocio, estrategia comercial, diseño visual a medida y desarrollo técnico desde cero — sin plantillas, sin atajos y construidos para el comprador profesional.</p>
+          <p class="ol-sh-copy">Conjuntamente, estos proyectos cubren todo el espectro del sector: venta corporativa, distribución multimarca, e-commerce especializado, equipo para bomberos certificado NFPA, sistemas integrales y servicios técnicos de mantenimiento bajo NOM.</p>
+        </div>
+      </div>
+
+      <div class="ol-proj-grid">
+
+        <!-- 01 Gama de México — caso completo -->
+        <a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-proj-card" style="--proj-accent: #C0392B;">
+          <div class="ol-proj-thumb ol-proj-thumb-img">
+            <img src="../../img/equipos-contra-incendios/gamademexico/gamademexico-hero.webp" alt="Gama de México — sitio corporativo de equipos contra incendios" width="1280" height="960" loading="lazy" decoding="async">
+            <span class="ol-proj-badge">Caso de estudio · Ver detalle</span>
+          </div>
+          <div class="ol-proj-body">
+            <span class="ol-proj-cat">Sitio Corporativo · Distribución Industrial</span>
+            <h3 class="ol-proj-name">Gama de México</h3>
+            <p class="ol-proj-desc">Sitio corporativo para distribuidor autorizado de Elkhart Brass en México. Catálogo técnico de monitores, boquillas, mangueras y válvulas certificadas UL/FM, con cobertura en CDMX, Querétaro y el corredor del Bajío.</p>
+            <div class="ol-proj-tags">
+              <span class="ol-proj-tag">Corporativo</span>
+              <span class="ol-proj-tag">B2B Industrial</span>
+              <span class="ol-proj-tag">Catálogo técnico</span>
+              <span class="ol-proj-tag">Multi-sucursal</span>
+            </div>
+            <span class="ol-proj-link">Ver caso →</span>
+          </div>
+        </a>
+
+        <!-- 02 MESECI -->
+        <a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-proj-card" style="--proj-accent: #E67E22;">
+          <div class="ol-proj-thumb ol-proj-thumb-img">
+            <img src="../../img/equipos-contra-incendios/meseci/meseci-hero.webp" alt="MESECI — sitio corporativo de equipos contra incendios" width="1280" height="960" loading="lazy" decoding="async">
+            <span class="ol-proj-badge">Catálogo técnico extenso</span>
+          </div>
+          <div class="ol-proj-body">
+            <span class="ol-proj-cat">Sitio Corporativo · Equipo Contra Incendio</span>
+            <h3 class="ol-proj-name">MESECI</h3>
+            <p class="ol-proj-desc">Sitio corporativo para especialista en venta, instalación y mantenimiento de equipo contra incendios. Catálogo amplio de extintores, sistemas, gabinetes, hidrantes y equipo para bomberos bajo normas NOM y NFPA.</p>
+            <div class="ol-proj-tags">
+              <span class="ol-proj-tag">Corporativo</span>
+              <span class="ol-proj-tag">Catálogo técnico</span>
+              <span class="ol-proj-tag">Servicios integrales</span>
+              <span class="ol-proj-tag">Blog técnico</span>
+            </div>
+            <span class="ol-proj-link">Ver caso completo →</span>
+          </div>
+        </a>
+
+        <!-- 03 LGA Contraincendios -->
+        <a href="https://lgacontraincendios.com/" target="_blank" rel="noopener noreferrer" class="ol-proj-card" style="--proj-accent: #DC2626;">
+          <div class="ol-proj-thumb ol-proj-thumb-img">
+            <img src="../../img/equipos-contra-incendios/lgacontraincendios/lgacontraincendios-hero.webp" alt="LGA Contraincendios — sitio corporativo de equipos contra incendios" width="1280" height="960" loading="lazy" decoding="async">
+            <span class="ol-proj-badge">Tienda en línea · Querétaro</span>
+          </div>
+          <div class="ol-proj-body">
+            <span class="ol-proj-cat">E-commerce · Equipo Contra Incendios</span>
+            <h3 class="ol-proj-name">LGA Contraincendios</h3>
+            <p class="ol-proj-desc">Sitio de e-commerce para empresa establecida en Querétaro, dedicada a la venta de extintores certificados clases A, B, C, D y K, monitores, mangueras y equipo para bomberos para industria y comercio en México.</p>
+            <div class="ol-proj-tags">
+              <span class="ol-proj-tag">E-commerce</span>
+              <span class="ol-proj-tag">Catálogo técnico</span>
+              <span class="ol-proj-tag">Querétaro</span>
+              <span class="ol-proj-tag">Industrial</span>
+            </div>
+            <span class="ol-proj-link">Tienda</span>
+          </div>
+        </a>
+
+        <!-- 04 MANEXT -->
+        <a href="/portafolio/equipos-contra-incendios/manext/" class="ol-proj-card" style="--proj-accent: #B45309;">
+          <div class="ol-proj-thumb ol-proj-thumb-img">
+            <img src="../../img/equipos-contra-incendios/manext/manext-hero.webp" alt="MANEXT — sitio corporativo de servicios certificados de mantenimiento de extintores" width="1280" height="960" loading="lazy" decoding="async">
+            <span class="ol-proj-badge">Servicios certificados</span>
+          </div>
+          <div class="ol-proj-body">
+            <span class="ol-proj-cat">Sitio de Servicios · Mantenimiento</span>
+            <h3 class="ol-proj-name">MANEXT — Mantenimiento de Extintores</h3>
+            <p class="ol-proj-desc">Sitio corporativo para empresa de servicios técnicos especializada en recarga, mantenimiento preventivo, prueba hidrostática y capacitación. Cumplimiento NOM-154-SCFI y NOM-002-STPS, con cobertura en CDMX y ZMVM.</p>
+            <div class="ol-proj-tags">
+              <span class="ol-proj-tag">Servicios técnicos</span>
+              <span class="ol-proj-tag">NOM-154</span>
+              <span class="ol-proj-tag">B2B</span>
+              <span class="ol-proj-tag">CDMX · ZMVM</span>
+            </div>
+            <span class="ol-proj-link">Ver caso →</span>
+          </div>
+        </a>
+
+        <!-- 05 BOMBERO.MX -->
+        <a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-proj-card" style="--proj-accent: #B91C1C;">
+          <div class="ol-proj-thumb ol-proj-thumb-img">
+            <img src="../../img/equipos-contra-incendios/bombero/bombero-hero.webp" alt="BOMBERO.MX — sitio corporativo de distribución NFPA de equipo personal de protección" width="1280" height="960" loading="lazy" decoding="async">
+            <span class="ol-proj-badge">Alcance nacional</span>
+          </div>
+          <div class="ol-proj-body">
+            <span class="ol-proj-cat">Sitio Corporativo · Equipo para Bomberos</span>
+            <h3 class="ol-proj-name">BOMBERO.MX</h3>
+            <p class="ol-proj-desc">Sitio corporativo para distribuidor especializado de equipo personal de protección certificado NFPA — trajes estructurales, equipos autónomos de respiración, herramientas de rescate y accesorios de marcas MSA, Honeywell, Globe y Bullard — con cobertura en toda la República Mexicana.</p>
+            <div class="ol-proj-tags">
+              <span class="ol-proj-tag">Corporativo</span>
+              <span class="ol-proj-tag">NFPA</span>
+              <span class="ol-proj-tag">PPE</span>
+              <span class="ol-proj-tag">Alcance nacional</span>
+            </div>
+            <span class="ol-proj-link">Ver caso →</span>
+          </div>
+        </a>
+
+        <!-- 06 Proyecto Red -->
+        <a href="https://proyectored.com.mx/" target="_blank" rel="noopener noreferrer" class="ol-proj-card" style="--proj-accent: #7F1D1D;">
+          <div class="ol-proj-thumb ol-proj-thumb-img">
+            <img src="../../img/equipos-contra-incendios/proyectored/proyectored-hero.webp" alt="Proyecto Red — sitio corporativo de equipos contra incendios" width="1280" height="960" loading="lazy" decoding="async">
+            <span class="ol-proj-badge">Sistemas + instalación</span>
+          </div>
+          <div class="ol-proj-body">
+            <span class="ol-proj-cat">Sitio Corporativo · Sistemas Contra Incendio</span>
+            <h3 class="ol-proj-name">Proyecto Red</h3>
+            <p class="ol-proj-desc">Sitio corporativo para integrador especializado en venta, instalación y mantenimiento de sistemas contra incendio: rociadores, alarmas, detectores, paneles y redes hidráulicas para empresas, plantas industriales y edificios.</p>
+            <div class="ol-proj-tags">
+              <span class="ol-proj-tag">Corporativo</span>
+              <span class="ol-proj-tag">Sistemas integrales</span>
+              <span class="ol-proj-tag">B2B Industrial</span>
+              <span class="ol-proj-tag">Instalación</span>
+            </div>
+            <span class="ol-proj-link">Sistemas</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== INDUSTRY FEATURES — qué resolvemos en este sector ============== -->
+  <section class="ol-features">
+    <div class="ol-features-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Lo que resolvemos en el sector</span>
+          <h2 class="ol-section-title">Retos digitales propios<br>de la protección contra incendios.</h2>
+          <p class="ol-section-sub">Cada sitio del sector enfrenta los mismos desafíos: presentar producto técnico con claridad, transmitir respaldo profesional y abrir contacto comercial sin fricción.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Trabajar con seis empresas del sector nos ha dado un mapa muy claro de lo que sí funciona y lo que no en el comprador de equipos contra incendios. Sabemos qué tipo de comprador llega al sitio, cuáles son sus prioridades y cómo darle, en pocos segundos, lo que necesita para seguir avanzando hacia una cotización.</p>
+          <p class="ol-sh-copy">Por eso cada proyecto del sector se construye con un guion comercial detrás del diseño — desde la página de inicio, hasta la ficha técnica de cada producto, hasta el formulario de contacto.</p>
+        </div>
+      </div>
+
+      <div class="ol-features-grid">
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Catálogo técnico claro y navegable</h3>
+          <p class="ol-feature-desc">Estructura de productos por familia: extintores, sistemas, refacciones, equipos de detección, señalización. Cada producto con su ficha, especificaciones y aplicación, para que el comprador encuentre lo que busca sin pasos intermedios.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Servicios técnicos bien explicados</h3>
+          <p class="ol-feature-desc">Recarga, mantenimiento preventivo, prueba hidrostática, instalación de sistemas, capacitación y brigadas. Cada servicio con su descripción, alcance y diferenciador, presentado para distintos perfiles — industria, oficinas, comercio, residencial.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Cobertura geográfica visible</h3>
+          <p class="ol-feature-desc">Áreas de servicio por estado, ciudad o municipio, comunicadas con claridad para que el comprador sepa de inmediato si la empresa atiende su zona, sin tener que llamar para confirmar algo tan básico.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Certificaciones y respaldos visibles</h3>
+          <p class="ol-feature-desc">UL, FM, NFPA, NOM-154, NOM-002, NOM-100, marcas distribuidas, casos de clientes industriales y testimonios bien presentados — los elementos que le permiten al comprador confirmar que está en el lugar correcto.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Cotización sin fricción</h3>
+          <p class="ol-feature-desc">Formularios pensados para distribuidores y compradores corporativos, integración con WhatsApp, links de cotización rápida desde el catálogo y enrutamiento directo al equipo comercial — sin pasos intermedios.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Velocidad real en campo</h3>
+          <p class="ol-feature-desc">Mucho del comprador profesional consulta el sitio desde planta, bodega o instalación — donde la conexión no siempre es óptima. Construimos cada proyecto con tiempos de carga mínimos para que el sitio funcione siempre que lo necesite.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SHOWCASE — bloques destacados ============== -->
+  <section class="ol-showcase">
+    <div class="ol-showcase-inner">
+
+      <div class="ol-sh" style="margin-bottom: 2rem;">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Casos en detalle</span>
+          <h2 class="ol-section-title">Seis empresas, seis modelos<br>de negocio del sector.</h2>
+          <p class="ol-section-sub">Distribución industrial, e-commerce, equipo para bomberos, sistemas integrales y servicios técnicos — todo el espectro del sector resuelto con sitios reales en operación.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">El sector de protección contra incendios convive con varios modelos de negocio muy distintos entre sí: la distribución autorizada de marcas internacionales, la venta directa de catálogo certificado, los servicios técnicos especializados, la integración de sistemas y el suministro de equipo personal de protección para bomberos y brigadas.</p>
+          <p class="ol-sh-copy">A continuación mostramos los seis casos en detalle, todos desarrollados por OrigenLab y en operación atendiendo clientes reales en distintas plazas de la República Mexicana.</p>
+        </div>
+      </div>
+
+      <!-- 01 Gama de México -->
+      <div class="ol-showcase-block" style="--proj-accent: #C0392B;">
+        <a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-showcase-img ol-mock-frame ol-showcase-img-real">
+          <img src="../../img/equipos-contra-incendios/gamademexico/gamademexico-hero.webp" alt="Gama de México — hero del sitio: Equipos Contra Incendios en México" width="1280" height="960" loading="lazy" decoding="async">
+        </a>
+        <div class="ol-showcase-info">
+          <p class="ol-showcase-num">01 — Gama de México · Distribuidor autorizado Elkhart Brass</p>
+          <h3 class="ol-showcase-title">Un sitio corporativo a la altura de un distribuidor industrial.</h3>
+          <p class="ol-showcase-desc">Gama de México opera como distribuidor autorizado de Elkhart Brass en México y atiende clientes corporativos, plantas industriales y proyectos de gran calado en CDMX, Querétaro y todo el corredor del Bajío. El sitio tenía que comunicar el respaldo técnico, las certificaciones internacionales y la cobertura nacional con un nivel de seriedad acorde al perfil de comprador.</p>
+          <ul class="ol-showcase-list">
+            <li>Catálogo técnico de monitores, boquillas, mangueras y válvulas certificadas UL/FM</li>
+            <li>Comunicación clara del rol como distribuidor autorizado de Elkhart Brass</li>
+            <li>Áreas de cobertura por sucursal — Santa Fe (CDMX) y Querétaro (Bajío)</li>
+            <li>Páginas dedicadas a productos, marcas y servicios corporativos</li>
+            <li>Sección de cotización corporativa y suministro para mantenimiento</li>
+            <li>Diseño orientado a credibilidad ante compradores industriales y especificadores</li>
+          </ul>
+          <a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-showcase-cta">Ver caso</a>
+        </div>
+      </div>
+
+      <!-- 02 MESECI -->
+      <div class="ol-showcase-block" style="--proj-accent: #E67E22;">
+        <a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-showcase-img ol-mock-frame ol-showcase-img-real">
+          <img src="../../img/equipos-contra-incendios/meseci/meseci-hero.webp" alt="MESECI — caso de estudio" width="1280" height="960" loading="lazy" decoding="async">
+        </a>
+        <div class="ol-showcase-info">
+          <p class="ol-showcase-num">02 — MESECI · Especialista en equipo contra incendios</p>
+          <h3 class="ol-showcase-title">Catálogo extenso, normas claras, contacto directo.</h3>
+          <p class="ol-showcase-desc">MESECI es especialista en venta, instalación y mantenimiento de equipo contra incendios bajo normas NOM y NFPA. El sitio centraliza un catálogo amplio que cubre extintores, sistemas de rociadores, gabinetes, hidrantes, mangueras y equipo para bomberos, todo presentado con la claridad técnica que exige su comprador objetivo.</p>
+          <ul class="ol-showcase-list">
+            <li>Arquitectura de catálogo organizada por familia de producto</li>
+            <li>Páginas dedicadas a extintores, monitores, gabinetes, mangueras y tubería</li>
+            <li>Blog técnico con guías sobre normas NOM, NFPA y cumplimiento</li>
+            <li>Estructura preparada para venta, instalación y mantenimiento bajo un mismo contrato</li>
+            <li>Comunicación de cobertura en CDMX y Zona Metropolitana del Valle de México</li>
+            <li>Diseño técnico, sobrio y enfocado en el comprador profesional</li>
+          </ul>
+          <a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-showcase-cta">Extintores</a>
+        </div>
+      </div>
+
+      <!-- 03 LGA Contraincendios -->
+      <div class="ol-showcase-block" style="--proj-accent: #DC2626;">
+        <a href="https://lgacontraincendios.com/" target="_blank" rel="noopener noreferrer" class="ol-showcase-img ol-mock-frame ol-showcase-img-real">
+          <img src="../../img/equipos-contra-incendios/lgacontraincendios/lgacontraincendios-hero.webp" alt="LGA Contraincendios — sitio en vivo" width="1280" height="960" loading="lazy" decoding="async">
+        </a>
+        <div class="ol-showcase-info">
+          <p class="ol-showcase-num">03 — LGA Contraincendios · Venta en línea desde Querétaro</p>
+          <h3 class="ol-showcase-title">Una tienda en línea pensada para el comprador técnico.</h3>
+          <p class="ol-showcase-desc">LGA Contraincendios opera desde Querétaro con presencia consolidada en el sector. Su sitio combina identidad corporativa con e-commerce funcional: el comprador puede llegar desde una búsqueda específica, ubicar el extintor o equipo que necesita y avanzar hacia la cotización sin pasos intermedios.</p>
+          <ul class="ol-showcase-list">
+            <li>Catálogo en línea con extintores certificados clases A, B, C, D y K</li>
+            <li>Páginas individuales de productos con ficha técnica y aplicaciones</li>
+            <li>Secciones para monitores contra incendios, mangueras y equipo bomberos</li>
+            <li>Estructura preparada para venta a industria, comercio y residencial</li>
+            <li>Identidad visual que comunica trayectoria como empresa establecida</li>
+            <li>Optimización de velocidad y experiencia móvil para comprador en planta</li>
+          </ul>
+          <a href="https://lgacontraincendios.com/" class="ol-showcase-cta" target="_blank" rel="noopener noreferrer">Tienda</a>
+        </div>
+      </div>
+
+      <!-- 04 MANEXT -->
+      <div class="ol-showcase-block" style="--proj-accent: #B45309;">
+        <a href="/portafolio/equipos-contra-incendios/manext/" class="ol-showcase-img ol-mock-frame ol-showcase-img-real">
+          <img src="../../img/equipos-contra-incendios/manext/manext-hero.webp" alt="MANEXT — sitio corporativo de servicios certificados de mantenimiento de extintores" width="1280" height="960" loading="lazy" decoding="async">
+        </a>
+        <div class="ol-showcase-info">
+          <p class="ol-showcase-num">04 — MANEXT · Mantenimiento certificado en CDMX y ZMVM</p>
+          <h3 class="ol-showcase-title">Un sitio que comunica formalidad técnica y abre canal directo con el equipo comercial.</h3>
+          <p class="ol-showcase-desc">MANEXT — Mantenimiento de Extintores opera en un giro netamente técnico: recarga, mantenimiento preventivo, prueba hidrostática y capacitación bajo NOM-154-SCFI y NOM-002-STPS. El sitio tenía que transmitir formalidad operativa al responsable de seguridad corporativa, dejar clara la cobertura en el Valle de México y abrir canal directo con el equipo comercial sin fricción.</p>
+          <ul class="ol-showcase-list">
+            <li>Catálogo de servicios técnicos: recarga, mantenimiento, prueba hidrostática y capacitación</li>
+            <li>Cumplimiento normativo comunicado desde el primer scroll: NOM-154-SCFI y NOM-002-STPS</li>
+            <li>Trazabilidad documental: constancia, etiqueta de mantenimiento y hoja de vida del extintor</li>
+            <li>Cobertura en CDMX y Zona Metropolitana del Valle de México (ZMVM)</li>
+            <li>Formulario corporativo B2B y canal paralelo por WhatsApp y teléfono</li>
+            <li>Programa anual recurrente de mantenimiento orientado a relación de largo plazo</li>
+          </ul>
+          <a href="/portafolio/equipos-contra-incendios/manext/" class="ol-showcase-cta">Ver caso</a>
+        </div>
+      </div>
+
+      <!-- 05 BOMBERO.MX -->
+      <div class="ol-showcase-block" style="--proj-accent: #B91C1C;">
+        <a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-showcase-img ol-mock-frame ol-showcase-img-real">
+          <img src="../../img/equipos-contra-incendios/bombero/bombero-hero.webp" alt="BOMBERO.MX — sitio corporativo de distribución NFPA de equipo personal de protección" width="1280" height="960" loading="lazy" decoding="async">
+        </a>
+        <div class="ol-showcase-info">
+          <p class="ol-showcase-num">05 — BOMBERO.MX · Distribución NFPA con cobertura nacional</p>
+          <h3 class="ol-showcase-title">Un sitio nacional para el comprador profesional del sector seguridad.</h3>
+          <p class="ol-showcase-desc">BOMBERO.MX abastece a cuerpos de bomberos municipales y estatales, brigadas industriales en plantas y refinerías, y unidades de protección civil con equipo personal de protección certificado NFPA. Representa cuatro marcas Tier-1 globales — MSA, Honeywell, Globe y Bullard — con cobertura logística en las 32 entidades federativas. El sitio se construyó para soportar un catálogo extenso con ficha técnica precisa por producto y formularios diferenciados por perfil de comprador.</p>
+          <ul class="ol-showcase-list">
+            <li>Catálogo extenso organizado por familia de equipo y por marca distribuida</li>
+            <li>Páginas dedicadas a cada marca representada — MSA, Honeywell, Globe, Bullard</li>
+            <li>Trajes estructurales NFPA 1971, SCBA NFPA 1981, cascos, herramientas y accesorios</li>
+            <li>Fichas técnicas con certificación NFPA aplicable por unidad</li>
+            <li>Cobertura logística nacional en las 32 entidades federativas</li>
+            <li>Formularios B2B sectoriales: corporativo, licitación pública, requisición industrial</li>
+          </ul>
+          <a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-showcase-cta">Ver caso</a>
+        </div>
+      </div>
+
+      <!-- 06 Proyecto Red -->
+      <div class="ol-showcase-block" style="--proj-accent: #7F1D1D;">
+        <a href="https://proyectored.com.mx/" target="_blank" rel="noopener noreferrer" class="ol-showcase-img ol-mock-frame ol-showcase-img-real">
+          <img src="../../img/equipos-contra-incendios/proyectored/proyectored-hero.webp" alt="Proyecto Red — sitio en vivo" width="1280" height="960" loading="lazy" decoding="async">
+        </a>
+        <div class="ol-showcase-info">
+          <p class="ol-showcase-num">06 — Proyecto Red · Sistemas contra incendio para industria</p>
+          <h3 class="ol-showcase-title">Sitio integrador para venta, instalación y mantenimiento.</h3>
+          <p class="ol-showcase-desc">Proyecto Red trabaja directo con empresas, plantas industriales, restaurantes y edificios en CDMX y Estado de México. Su modelo combina venta de equipo, instalación de sistemas y mantenimiento certificado. El sitio tenía que ordenar todas estas líneas en una arquitectura clara y fácil de navegar para el comprador corporativo.</p>
+          <ul class="ol-showcase-list">
+            <li>Sección de sistemas contra incendio: alarmas, detectores, rociadores y paneles</li>
+            <li>Páginas para mangueras, herrajes, tomas siamesas e hidrantes NFPA</li>
+            <li>Catálogo con producto técnico y ficha por equipo</li>
+            <li>Comunicación clara de venta, instalación, mantenimiento y capacitación</li>
+            <li>Estructura preparada para industria, plantas, restaurantes y edificios</li>
+            <li>Sección de cobertura geográfica en CDMX, Estado de México y otras plazas</li>
+          </ul>
+          <a href="https://proyectored.com.mx/" class="ol-showcase-cta" target="_blank" rel="noopener noreferrer">Sistemas</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== PROCESO — 4 pasos para proyectos del sector ============== -->
+  <section class="ol-process-l3">
+    <div class="ol-process-l3-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Cómo trabajamos en este sector</span>
+          <h2 class="ol-section-title">Un proceso pensado<br>para empresas técnicas.</h2>
+          <p class="ol-section-sub">Los proyectos del sector de protección contra incendios requieren un proceso ordenado: descubrimiento técnico, arquitectura de catálogo, diseño orientado al comprador profesional y entrega medible.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Cada uno de los seis sitios del portafolio pasó por este mismo proceso. Es la forma en la que aseguramos que el resultado final no sea un sitio bonito pero genérico, sino una plataforma que entiende al comprador del sector y le da exactamente lo que busca para avanzar hacia una conversación comercial.</p>
+          <p class="ol-sh-copy">El proceso es transparente, con entregables visibles en cada etapa y validaciones por escrito antes de avanzar. Sin sorpresas, sin caja negra.</p>
+        </div>
+      </div>
+
+      <div class="ol-process-l3-steps">
+
+        <div class="ol-process-l3-step">
+          <div class="ol-process-l3-num">01</div>
+          <h3 class="ol-process-l3-title">Descubrimiento técnico</h3>
+          <p class="ol-process-l3-desc">Entendemos tu modelo de negocio, perfil de comprador, catálogo, certificaciones, cobertura y diferenciadores antes de tocar el editor de código. Sin este paso, no avanzamos.</p>
+        </div>
+
+        <div class="ol-process-l3-step">
+          <div class="ol-process-l3-num">02</div>
+          <h3 class="ol-process-l3-title">Arquitectura &amp; diseño</h3>
+          <p class="ol-process-l3-desc">Mapeo completo de catálogo, navegación y secciones técnicas. Prototipo visual aprobado por escrito antes de pasar a desarrollo. Cero sorpresas en el resultado final.</p>
+        </div>
+
+        <div class="ol-process-l3-step">
+          <div class="ol-process-l3-num">03</div>
+          <h3 class="ol-process-l3-title">Desarrollo a medida</h3>
+          <p class="ol-process-l3-desc">Código limpio, optimizado y documentado. Catálogo, fichas técnicas, formularios B2B, integración con WhatsApp y CRM. Construido para escalar con tu operación.</p>
+        </div>
+
+        <div class="ol-process-l3-step">
+          <div class="ol-process-l3-num">04</div>
+          <h3 class="ol-process-l3-title">Lanzamiento &amp; soporte</h3>
+          <p class="ol-process-l3-desc">Deploy profesional, capacitación sobre el panel, manual de uso y acompañamiento post-entrega. El sitio queda en operación y tu equipo lo controla desde el día uno.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== TESTIMONIALS — clientes reales del sector ============== -->
+  <section class="ol-testimonials-l3">
+    <div class="ol-testimonials-l3-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Lo que dicen nuestros clientes del sector</span>
+          <h2 class="ol-section-title">Testimonios reales,<br>de empresas reales.</h2>
+          <p class="ol-section-sub">Cuatro de las seis empresas del portafolio compartieron su opinión sobre trabajar con OrigenLab. Todos los testimonios provienen de clientes activos en el sector.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Los mejores indicadores de calidad no son los que nosotros mismos decimos — son los resultados que nuestros clientes reportan semanas después de lanzar. Estas opiniones son textuales y corresponden a empresas con sitio en operación, atendiendo compradores reales del sector industrial mexicano.</p>
+          <p class="ol-sh-copy">Cada testimonio enlaza al sitio en vivo del cliente, para que puedas verificar tú mismo el proyecto que respalda la opinión.</p>
+        </div>
+      </div>
+
+      <div class="ol-testimonials-l3-grid">
+
+        <div class="ol-tc">
+          <div class="ol-tc-quote">"</div>
+          <div class="ol-tc-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="ol-tc-text">Teníamos un catálogo amplio y necesitábamos que los clientes lo pudieran explorar rápido y sin fricciones. OrigenLab diseñó una estructura de navegación muy clara y el sitio carga en segundos — eso marca la diferencia cuando el cliente está comparando opciones.</p>
+          <div class="ol-tc-footer">
+            <div class="ol-tc-avatar">GM</div>
+            <div class="ol-tc-info">
+              <p class="ol-tc-name"><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(192,57,43,0.4);">Gama de México</a></p>
+              <p class="ol-tc-role">Distribución y Catálogo · <a href="https://gamademexico.com/" target="_blank" rel="noopener noreferrer" class="ol-tc-link">gamademexico.com</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ol-tc">
+          <div class="ol-tc-quote">"</div>
+          <div class="ol-tc-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="ol-tc-text">Abrimos nuestra tienda en línea con OrigenLab y en el primer mes ya teníamos pedidos. La integración con Mercado Pago funcionó desde el día uno y la gestión de productos de protección contra incendios es muy sencilla. Recomiendo su trabajo sin dudar.</p>
+          <div class="ol-tc-footer">
+            <div class="ol-tc-avatar">LG</div>
+            <div class="ol-tc-info">
+              <p class="ol-tc-name">LGA Contraincendios</p>
+              <p class="ol-tc-role">Equipos Contra Incendio · <a href="https://lgacontraincendios.com/" target="_blank" rel="noopener noreferrer" class="ol-tc-link">lgacontraincendios.com</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ol-tc">
+          <div class="ol-tc-quote">"</div>
+          <div class="ol-tc-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="ol-tc-text">Nuestro negocio es técnico y necesitábamos un sitio que transmitiera confianza y seriedad a empresas que buscan mantenimiento de extintores. OrigenLab entendió bien el giro — el sitio explica nuestros servicios con claridad, carga rápido y los clientes nos contactan directamente desde la página sin rodeos.</p>
+          <div class="ol-tc-footer">
+            <div class="ol-tc-avatar">ME</div>
+            <div class="ol-tc-info">
+              <p class="ol-tc-name"><a href="/portafolio/equipos-contra-incendios/manext/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(180,83,9,0.4);">MANEXT — Mantenimiento de Extintores</a></p>
+              <p class="ol-tc-role">Servicios técnicos certificados · <a href="https://mantenimientodeextintores.mx/" target="_blank" rel="noopener noreferrer" class="ol-tc-link">mantenimientodeextintores.mx</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ol-tc">
+          <div class="ol-tc-quote">"</div>
+          <div class="ol-tc-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="ol-tc-text">Como agencia necesitábamos un sitio que proyectara credibilidad y mostrara nuestro trabajo de forma clara. OrigenLab cumplió en tiempo, con un proceso ordenado y un resultado que hoy usamos como carta de presentación con cada nuevo cliente.</p>
+          <div class="ol-tc-footer">
+            <div class="ol-tc-avatar">PR</div>
+            <div class="ol-tc-info">
+              <p class="ol-tc-name">Proyecto Red</p>
+              <p class="ol-tc-role">Sistemas Contra Incendio · <a href="https://proyectored.com.mx/" target="_blank" rel="noopener noreferrer" class="ol-tc-link">proyectored.com.mx</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ol-tc">
+          <div class="ol-tc-quote">"</div>
+          <div class="ol-tc-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="ol-tc-text">Distribuimos cuatro marcas globales para un comprador muy técnico. OrigenLab construyó un sitio que comunica autoridad de marca y disponibilidad nacional sin caer en clichés del sector — el catálogo se ordenó por familia y por marca, los formularios distinguen al cliente municipal del industrial y la información técnica se presenta con la seriedad que el comprador profesional exige.</p>
+          <div class="ol-tc-footer">
+            <div class="ol-tc-avatar">BM</div>
+            <div class="ol-tc-info">
+              <p class="ol-tc-name"><a href="/portafolio/equipos-contra-incendios/bombero-mx/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(185,28,28,0.4);">BOMBERO.MX</a></p>
+              <p class="ol-tc-role">Distribución NFPA Nacional · <a href="https://bombero.mx/" target="_blank" rel="noopener noreferrer" class="ol-tc-link">bombero.mx</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CTA HERO — invitación a iniciar proyecto ============== -->
+  <section class="ol-cta-hero">
+    <div class="ol-cta-hero-inner">
+      <div class="ol-cta-hero-card">
+
+        <div class="ol-cta-hero-left">
+          <p class="ol-cta-hero-eyebrow">Iniciar proyecto</p>
+          <h2 class="ol-cta-hero-title">¿Tu empresa de equipos contra incendios necesita una presencia digital al nivel de tu operación?</h2>
+          <p class="ol-cta-hero-blurb">Si distribuyes, fabricas, integras sistemas, vendes equipo personal o das servicios técnicos en el sector — podemos construir contigo un sitio profesional, técnico y orientado a conversión. Sin plantillas, sin atajos, hecho para tu comprador.</p>
+          <div class="ol-cta-hero-actions">
+            <a href="/cotizar/" class="ol-cta-hero-btn">
+              Cotizar proyecto
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+            <a href="https://wa.me/525547868402?text=Hola%2C%20tengo%20una%20empresa%20de%20equipos%20contra%20incendios%20y%20me%20interesa%20un%20proyecto%20web." target="_blank" rel="noopener noreferrer" class="ol-cta-hero-btn ol-cta-hero-btn-ghost">
+              <svg width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg>
+              Hablar por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="ol-cta-hero-right">
+          <div class="ol-cta-hero-promises">
+            <p class="ol-cta-hero-promises-title">Lo que recibes con OrigenLab</p>
+            <ul class="ol-cta-hero-promises-list">
+              <li>Descubrimiento técnico antes de cualquier propuesta visual</li>
+              <li>Diseño y desarrollo a medida — sin plantillas ni atajos</li>
+              <li>Catálogo técnico estructurado con fichas y aplicaciones</li>
+              <li>Formularios B2B, WhatsApp y CRM integrados al flujo</li>
+              <li>Estructura escalable para crecer con tu operación</li>
+              <li>Acompañamiento post-entrega con tu equipo</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FAQ + WHATSAPP ============== -->
+  <section class="ol-faq-section">
+    <div class="ol-faq-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Preguntas Frecuentes</span>
+          <h2 class="ol-section-title">Lo que nos preguntan<br>las empresas del sector</h2>
+          <p class="ol-section-sub">Dudas comunes de empresas distribuidoras, integradoras, e-commerce y de servicios técnicos que están evaluando un proyecto digital.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">El sector de equipos contra incendios tiene preguntas particulares que no aparecen en cualquier proyecto: integración con catálogos extensos, manejo de fichas técnicas, certificaciones, áreas de cobertura, perfiles de comprador corporativo y formas de contacto profesional.</p>
+          <p class="ol-sh-copy">Aquí reunimos las que más nos hacen las empresas del sector cuando evalúan trabajar con nosotros — si tu pregunta no está, escríbenos directo y la respondemos por WhatsApp o correo.</p>
+        </div>
+      </div>
+
+      <div class="ol-faq-grid">
+
+        <!-- Acordeón FAQ -->
+        <div>
+          <p class="ol-faq-col-label">Preguntas frecuentes</p>
+          <div class="ol-faq-list" id="ol-faq-list-eci">
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="e0">
+                ¿Trabajan con empresas que distribuyen muchas marcas?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-e0">
+                <p class="ol-faq-answer-inner">Sí. Tenemos casos como Gama de México (distribuidor autorizado Elkhart Brass) y BOMBERO.MX (MSA, Honeywell, Globe, Bullard). Construimos arquitecturas de catálogo escalables, con familias de producto, fichas técnicas y posibilidad de filtrado por marca, capacidad o tipo de agente extintor.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="e1">
+                ¿Pueden integrar pagos en línea para venta de equipos?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-e1">
+                <p class="ol-faq-answer-inner">Sí. Integramos Mercado Pago, Stripe y otras pasarelas utilizadas en México, con manejo de inventario, gestión de pedidos, facturación electrónica y notificaciones para el equipo comercial. Ya operamos sitios del sector con e-commerce funcional como LGA Contraincendios.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="e2">
+                ¿Cómo manejan las fichas técnicas y especificaciones?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-e2">
+                <p class="ol-faq-answer-inner">Cada producto recibe su propia página con ficha técnica completa: capacidad, agente extintor, certificaciones, dimensiones, peso, instrucciones de uso y aplicaciones recomendadas. Esto permite que el comprador llegue desde una búsqueda específica directo a la información que necesita.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="e3">
+                ¿El sitio puede mostrar zonas o áreas de cobertura?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-e3">
+                <p class="ol-faq-answer-inner">Sí. Para empresas de servicios técnicos —recarga, mantenimiento, instalación— construimos secciones específicas de cobertura por estado, ciudad o municipio. MANEXT y Proyecto Red son ejemplos en operación con cobertura claramente comunicada en CDMX y zona metropolitana.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="e4">
+                ¿Diseñan sitios pensados para compradores corporativos?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-e4">
+                <p class="ol-faq-answer-inner">Sí. Trabajamos con la lógica de venta B2B en mente: formularios de cotización con campos relevantes —empresa, RFC, volumen requerido, contacto técnico—, áreas de descarga de catálogos, comunicación clara de capacidades de la empresa y un tono profesional adecuado al comprador corporativo.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="e5">
+                ¿Pueden incluir certificaciones, normas o respaldos?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-e5">
+                <p class="ol-faq-answer-inner">Por supuesto. Las certificaciones (UL, FM, NFPA, NOM-154, NOM-002, NOM-100), marcas distribuidas y respaldos institucionales son elementos clave de credibilidad en el sector. Los presentamos en lugares estratégicos del sitio: hero, fichas de producto, pie de página y sección institucional.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="e6">
+                ¿Manejan integración con CRM o sistemas internos?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-e6">
+                <p class="ol-faq-answer-inner">Sí. Conectamos los formularios del sitio con HubSpot, Pipedrive, Zoho, Notion, Airtable, Google Sheets o el sistema interno que la empresa utilice para gestionar prospectos, cotizaciones y seguimiento comercial. Cada lead llega al lugar correcto, listo para atenderse.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="e7">
+                ¿Cómo se cotiza un proyecto para una empresa del sector?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-e7">
+                <p class="ol-faq-answer-inner">Hacemos un descubrimiento inicial para entender el modelo de negocio: si es venta directa, distribución, servicios técnicos, integración de sistemas o una combinación. A partir de ahí entregamos una propuesta detallada por escrito —alcance, entregables, calendario y costo— sin compromiso y sin cargos ocultos.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Formulario WhatsApp -->
+        <div>
+          <div class="ol-faq-form-wrap">
+            <span class="ol-faq-form-badge">
+              <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg>
+              Contáctanos por WhatsApp
+            </span>
+            <h3 class="ol-faq-form-title">¿Diriges una empresa<br>de equipos contra incendios?</h3>
+            <p class="ol-faq-form-sub">Cuéntanos brevemente qué necesitas y te respondemos con una propuesta clara, por escrito y sin compromiso.</p>
+
+            <form class="ol-faq-form" id="ol-wa-form-eci" novalidate>
+              <div class="ol-faq-form-row">
+                <div class="ol-faq-field">
+                  <label for="eci-nombre">Tu nombre</label>
+                  <input type="text" id="eci-nombre" placeholder="Ej. Carlos García" autocomplete="given-name">
+                </div>
+                <div class="ol-faq-field">
+                  <label for="eci-empresa">Empresa</label>
+                  <input type="text" id="eci-empresa" placeholder="Nombre de tu empresa">
+                </div>
+              </div>
+              <div class="ol-faq-field">
+                <label for="eci-tipo">Modelo de negocio</label>
+                <select id="eci-tipo">
+                  <option value="" disabled selected>Selecciona una opción</option>
+                  <option value="Distribución de equipo contra incendios">Distribución de equipo contra incendios</option>
+                  <option value="Venta directa / e-commerce">Venta directa / e-commerce</option>
+                  <option value="Sistemas integrales (rociadores, alarmas, detección)">Sistemas integrales (rociadores, alarmas, detección)</option>
+                  <option value="Equipo personal de protección (NFPA)">Equipo personal de protección (NFPA)</option>
+                  <option value="Mantenimiento y recarga de extintores">Mantenimiento y recarga de extintores</option>
+                  <option value="Capacitación y servicios técnicos">Capacitación y servicios técnicos</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+              <div class="ol-faq-field">
+                <label for="eci-mensaje">¿Qué necesitas?</label>
+                <textarea id="eci-mensaje" placeholder="Describe brevemente tu proyecto o la duda que tienes..."></textarea>
+              </div>
+              <button type="submit" class="ol-faq-submit">
+                <svg width="17" height="17" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg>
+                Enviar por WhatsApp
+              </button>
+              <p class="ol-faq-form-note">Al enviar, se abrirá WhatsApp con tu mensaje listo. Respondemos en menos de 24 h.</p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+  (function() {
+    var btns = document.querySelectorAll('#ol-faq-list-eci .ol-faq-question');
+    btns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var idx = btn.getAttribute('data-faq');
+        var answer = document.getElementById('faq-ans-' + idx);
+        var isOpen = btn.classList.contains('active');
+        btns.forEach(function(b) {
+          b.classList.remove('active');
+          var a = document.getElementById('faq-ans-' + b.getAttribute('data-faq'));
+          if (a) a.style.maxHeight = null;
+        });
+        if (!isOpen && answer) {
+          btn.classList.add('active');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+    document.getElementById('ol-wa-form-eci').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var nombre  = document.getElementById('eci-nombre').value.trim();
+      var empresa = document.getElementById('eci-empresa').value.trim();
+      var tipo    = document.getElementById('eci-tipo').value;
+      var mensaje = document.getElementById('eci-mensaje').value.trim();
+      var partes  = ['Hola OrigenLab, escribo desde el portafolio de Equipos Contra Incendios.'];
+      if (nombre)  partes.push('*Nombre:* ' + nombre);
+      if (empresa) partes.push('*Empresa:* ' + empresa);
+      if (tipo)    partes.push('*Modelo de negocio:* ' + tipo);
+      if (mensaje) partes.push('*Descripción:* ' + mensaje);
+      partes.push('Me gustaría recibir más información. ¡Gracias!');
+      var url = 'https://wa.me/525547868402?text=' + encodeURIComponent(partes.join('\n'));
+      window.open(url, '_blank', 'noopener,noreferrer');
+    });
+  })();
+  </script>
+
+  <!-- ============== QUICKNAV BOTTOM ============== -->
+  <div class="ol-quicknav">
+    <div class="ol-quicknav-inner">
+      <a href="/portafolio/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Todo el Portafolio</span>
+          <span class="ol-qn-sub">Más casos por sector</span>
+        </div>
+      </a>
+      <a href="/servicios/desarrollo-web/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Sitios Corporativos</span>
+          <span class="ol-qn-sub">Diseño a medida</span>
+        </div>
+      </a>
+      <a href="/servicios/tiendas-en-linea/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Tienda en Línea</span>
+          <span class="ol-qn-sub">E-commerce profesional</span>
+        </div>
+      </a>
+      <a href="/servicios/landing-pages/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Landing Pages</span>
+          <span class="ol-qn-sub">Captación directa</span>
+        </div>
+      </a>
+      <a href="/nosotros/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Nosotros</span>
+          <span class="ol-qn-sub">Quiénes somos</span>
+        </div>
+      </a>
+      <a href="/contacto/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Contacto</span>
+          <span class="ol-qn-sub">Escríbenos directo</span>
+        </div>
+      </a>
+      <a href="/cotizar/" class="ol-qn-item ol-qn-cta">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Iniciar Proyecto</span>
+          <span class="ol-qn-sub">Solicitar propuesta</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="ol-footer">
+  <div class="ol-footer-top">
+    <a href="/" class="ol-footer-logo">
+      Origen<span class="ol-footer-logo-dot">.</span>Lab
+    </a>
+    <p class="ol-footer-tagline">
+      Agencia de desarrollo web en México.<br>
+      Creamos sitios que generan resultados.
+    </p>
+    <ul class="ol-footer-contact-list">
+      <li>
+        <a href="mailto:hola@origenlab.mx" class="ol-fcl-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          hola@origenlab.mx
+        </a>
+      </li>
+      <li>
+        <a href="tel:+525547868402" class="ol-fcl-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +52 55 4786 8402
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/525547868402" target="_blank" rel="noopener noreferrer" class="ol-fcl-item ol-fcl-wa">
+          <svg width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg>
+          WhatsApp
+        </a>
+      </li>
+      <li>
+        <span class="ol-fcl-item ol-fcl-static">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Ciudad de México, MX
+        </span>
+      </li>
+    </ul>
+  </div>
+  <div class="ol-footer-links">
+    <div>
+      <p class="ol-footer-col-title">Servicios</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/servicios/desarrollo-web/">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/">Rediseño Web</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Empresa</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/nosotros/">Nosotros</a></li>
+        <li><a href="/portafolio/">Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/">Equipos Contra Incendios</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Contacto</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/contacto/">Formulario de contacto</a></li>
+        <li><a href="mailto:hola@origenlab.mx">hola@origenlab.mx</a></li>
+        <li><a href="tel:+525547868402">+52 55 4786 8402</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Legal</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/aviso-de-privacidad/">Aviso de privacidad</a></li>
+        <li><a href="/terminos/">Términos de servicio</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ol-footer-bottom">
+    <p class="ol-footer-copy">© 2026 OrigenLab. Todos los derechos reservados.</p>
+    <div class="ol-footer-legal">
+      <a href="/aviso-de-privacidad/">Privacidad</a>
+      <a href="/terminos/">Términos</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WA Bubble -->
+<a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web%20para%20mi%20empresa%20de%20equipos%20contra%20incendios." target="_blank" rel="noopener noreferrer" class="wa-bubble" aria-label="Contáctanos por WhatsApp">
+  <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff">
+    <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 0 0 2.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0 0 16.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"></path>
+  </svg>
+</a>
+
+<!-- ============================================================
+     SCRIPTS — header móvil + scroll
+     ============================================================ -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var toggle   = document.getElementById('ol-menu-toggle');
+    var panel    = document.getElementById('ol-mobile-panel');
+    var overlay  = document.getElementById('ol-mobile-overlay');
+    var closeBtn = document.getElementById('ol-mobile-close');
+    var header   = document.getElementById('ol-header');
+
+    function openMenu() {
+      toggle.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+      panel.classList.add('open');
+      overlay.classList.add('visible');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      panel.classList.remove('open');
+      overlay.classList.remove('visible');
+      document.body.style.overflow = '';
+    }
+
+    if (toggle)   toggle.addEventListener('click', function () { panel.classList.contains('open') ? closeMenu() : openMenu(); });
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    if (overlay)  overlay.addEventListener('click', closeMenu);
+
+    var mobileLinks = panel ? panel.querySelectorAll('a') : [];
+    for (var i = 0; i < mobileLinks.length; i++) mobileLinks[i].addEventListener('click', closeMenu);
+
+    var subToggles = document.querySelectorAll('[data-submenu]');
+    for (var j = 0; j < subToggles.length; j++) {
+      subToggles[j].addEventListener('click', function () {
+        this.classList.toggle('expanded');
+        var sub = this.nextElementSibling;
+        if (sub) sub.classList.toggle('open');
+      });
+    }
+
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 10) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    }, { passive: true });
+  });
+</script>
+
+</body>
+</html>

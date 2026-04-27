@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Por qué tu sitio web lento te está costando clientes | Blog OrigenLab</title>
+  <meta name="description" content="El 53% de los visitantes abandona sitios que tardan más de 3 segundos. Descubre cómo la velocidad impacta directamente en tus conversiones y qué puedes hacer hoy.">
+  <link rel="canonical" href="https://origenlab.mx/blog/por-que-tu-sitio-lento-cuesta-clientes/">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://origenlab.mx/blog/por-que-tu-sitio-lento-cuesta-clientes/">
+  <meta property="og:title" content="Por qué tu sitio web lento te está costando clientes">
+  <meta property="og:description" content="El 53% de los visitantes abandona sitios que tardan más de 3 segundos. Descubre el impacto en tus conversiones.">
+  <meta property="og:image" content="https://origenlab.mx/og-image.jpg">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="OrigenLab">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Por qué tu sitio web lento te está costando clientes">
+  <meta name="twitter:description" content="El 53% de los visitantes abandona sitios que tardan más de 3 segundos.">
+  <meta name="twitter:image" content="https://origenlab.mx/og-image.jpg">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+
+  <link rel="stylesheet" href="../../_astro/BaseLayout.xeR8R953.css?v20260426c">
+  <link rel="stylesheet" href="../../_astro/premium-dark.css?v20260426c">
+  <script src="../../_astro/ol-header.js?v20260426d" defer></script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.mx/#organization","name":"OrigenLab","url":"https://origenlab.mx","logo":"https://origenlab.mx/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"BlogPosting","@id":"https://origenlab.mx/blog/por-que-tu-sitio-lento-cuesta-clientes/#blogposting","mainEntityOfPage":"https://origenlab.mx/blog/por-que-tu-sitio-lento-cuesta-clientes/","headline":"Por qué tu sitio web lento te está costando clientes","description":"El 53% de los visitantes abandona sitios que tardan más de 3 segundos. Así afecta la velocidad tus ventas.","image":"https://origenlab.mx/og-image.jpg","url":"https://origenlab.mx/blog/por-que-tu-sitio-lento-cuesta-clientes/","datePublished":"2026-03-20","dateModified":"2026-04-21","inLanguage":"es-MX","author":{"@type":"Organization","name":"OrigenLab","url":"https://origenlab.mx"},"publisher":{"@type":"Organization","name":"OrigenLab","logo":{"@type":"ImageObject","url":"https://origenlab.mx/logo.svg"}}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.mx/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://origenlab.mx/blog/"},{"@type":"ListItem","position":3,"name":"Por qué tu sitio web lento te está costando clientes","item":"https://origenlab.mx/blog/por-que-tu-sitio-lento-cuesta-clientes/"}]}]}</script>
+</head>
+<body>
+
+<div class="ol-read-progress" id="ol-read-progress"></div>
+
+<a class="ol-skip-link" href="#main">Saltar al contenido</a>
+
+<div class="ol-topbar">
+  <div class="ol-topbar-inner">
+    <div class="ol-topbar-left">
+      <a href="mailto:hola@origenlab.mx" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        hola@origenlab.mx
+      </a>
+      <span class="ol-topbar-sep"></span>
+      <a href="tel:+525547868402" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        +52 55 4786 8402
+      </a>
+    </div>
+    <div class="ol-topbar-center">
+      <span class="ol-topbar-promo">
+        <span class="ol-topbar-dot"></span>
+        Atención personalizada  ·  Ciudad de México
+      </span>
+    </div>
+    <div class="ol-topbar-right">
+      <a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web" target="_blank" rel="noopener noreferrer" class="ol-topbar-wa">
+        <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor">
+          <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+<header class="ol-header" id="ol-header">
+  <div class="ol-header-inner">
+    <a href="/" class="ol-header-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
+    </a>
+    <nav class="ol-nav" aria-label="Navegación principal">
+      <ul class="ol-nav-list">
+        <li><a href="/" class="ol-nav-link">Inicio</a></li>
+        <li class="ol-has-dropdown">
+          <a href="/servicios/" class="ol-nav-link">
+            Servicios
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/servicios/desarrollo-web/" class="ol-dropdown-link">Desarrollo Web</a></li>
+              <li><a href="/servicios/tiendas-en-linea/" class="ol-dropdown-link">Tiendas en Línea</a></li>
+              <li><a href="/servicios/landing-pages/" class="ol-dropdown-link">Landing Pages</a></li>
+              <li><a href="/servicios/rediseno-web/" class="ol-dropdown-link">Rediseño Web</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="ol-has-dropdown">
+          <a href="/portafolio/" class="ol-nav-link">
+            Portafolio
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link">Equipos Contra Incendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link ol-dropdown-sub">— Gama de México</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link ol-dropdown-sub">— MESECI</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link ol-dropdown-sub">— LGA Contraincendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-dropdown-link ol-dropdown-sub">— MANEXT</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-dropdown-link ol-dropdown-sub">— BOMBERO.MX</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="/nosotros/" class="ol-nav-link">Nosotros</a></li>
+        <li><a href="/blog/" class="ol-nav-link active">Blog</a></li>
+        <li><a href="/contacto/" class="ol-nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="/cotizar/" class="ol-header-cta">Cotizar proyecto →</a>
+    <button class="ol-menu-toggle" id="ol-menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+    </button>
+  </div>
+</header>
+<div class="ol-mobile-overlay" id="ol-mobile-overlay"></div>
+<nav class="ol-mobile-panel" id="ol-mobile-panel" aria-label="Menú móvil">
+  <div class="ol-mobile-header">
+    <a href="/" class="ol-mobile-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
+    </a>
+    <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú">
+      <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <ul class="ol-mobile-nav">
+    <li><a href="/" class="ol-mobile-link">Inicio</a></li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Servicios</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/servicios/desarrollo-web/" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Portafolio</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/portafolio/" class="ol-mobile-link ol-mobile-sublink">Todo el Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/" class="ol-mobile-link ol-mobile-sublink">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Gama de México</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MESECI</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— LGA Contraincendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MANEXT</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— BOMBERO.MX</a></li>
+      </ul>
+    </li>
+    <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
+    <li><a href="/blog/" class="ol-mobile-link active">Blog</a></li>
+    <li><a href="/contacto/" class="ol-mobile-link">Contacto</a></li>
+  </ul>
+  <div class="ol-mobile-footer">
+    <a href="/cotizar/" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a>
+  </div>
+</nav>
+
+<!-- ============================================================
+     BREADCRUMB
+     ============================================================ -->
+<nav class="ol-bc-wrap" aria-label="Migas de pan">
+  <div class="ol-bc">
+    <ol class="ol-bc-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/" itemprop="item" class="ol-bc-home"><span itemprop="name">Inicio</span></a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item ol-bc-item-mid" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/blog/" itemprop="item"><span itemprop="name">Blog</span></a>
+        <meta itemprop="position" content="2" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item ol-bc-current" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name">Por qué tu sitio web lento te está costando clientes</span>
+        <meta itemprop="position" content="3" />
+      </li>
+    </ol>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- ARTICLE HERO -->
+  <section class="ol-art-hero">
+    <div class="ol-art-hero-inner">
+      <div class="ol-art-hero-grid">
+        <div class="ol-art-hero-left">
+          <div class="ol-art-badges">
+            <span class="ol-art-cat rendimiento">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              Rendimiento
+            </span>
+            <span class="ol-art-readtime">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              6 min de lectura
+            </span>
+          </div>
+
+          <h1 class="ol-art-title">Por qué tu sitio web lento te está costando clientes cada día</h1>
+
+          <p class="ol-art-excerpt">El 53% de los visitantes abandona un sitio que tarda más de 3 segundos en cargar. Aquí te explicamos exactamente qué pasa y cómo medirlo.</p>
+
+          <div class="ol-art-meta">
+            <div class="ol-art-meta-author">
+              <div class="ol-art-meta-avatar">OL</div>
+              <div class="ol-art-meta-author-info">
+                <span class="ol-art-meta-author-name">Equipo OrigenLab</span>
+                <span class="ol-art-meta-author-role">Desarrollo &amp; Rendimiento</span>
+              </div>
+            </div>
+            <span class="ol-art-meta-sep"></span>
+            
+            <span class="ol-art-meta-item">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+              Guía práctica
+            </span>
+          </div>
+        </div>
+
+        <div class="ol-art-hero-right">
+          <p class="ol-art-hero-copy">Si tu sitio está en WordPress sin optimizar, o vive en un hosting compartido barato, es probable que estés perdiendo prospectos sin siquiera saberlo. La velocidad de carga no es un detalle técnico — es el primer filtro que decide si un visitante se queda o se va antes de ver tu propuesta.</p>
+          <p class="ol-art-hero-copy">En esta guía práctica te explicamos qué pasa exactamente cuando un sitio carga lento, cómo medirlo con herramientas gratuitas como PageSpeed Insights, y qué pasos concretos puedes tomar hoy para recuperar las conversiones que tu sitio actual está dejando en la mesa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAND -->
+  <section class="ol-art-stats" aria-label="Datos clave">
+    <div class="ol-art-stats-inner">
+      <div class="ol-art-stat">
+        <span class="ol-art-stat-num"><span class="accent">53%</span></span>
+        <span class="ol-art-stat-label">Abandona sitios que tardan más de 3 segundos</span>
+      </div>
+      <div class="ol-art-stat">
+        <span class="ol-art-stat-num"><span class="accent">-1%</span></span>
+        <span class="ol-art-stat-label">Conversión perdida por cada 100 ms extra de latencia</span>
+      </div>
+      <div class="ol-art-stat">
+        <span class="ol-art-stat-num"><span class="accent">75%</span></span>
+        <span class="ol-art-stat-label">Del tráfico web en México viene de celular</span>
+      </div>
+      <div class="ol-art-stat">
+        <span class="ol-art-stat-num">&lt; <span class="accent">1s</span></span>
+        <span class="ol-art-stat-label">Lo que logran sitios bien construidos con Astro</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLE CONTENT -->
+  <section class="ol-art-section">
+    <div class="ol-art-inner">
+      <div class="ol-art-layout">
+
+        <article class="ol-art-body">
+
+          <h2 id="s1">El 53% de los usuarios no espera</h2>
+          <p class="lead">Hace poco Google publicó un estudio contundente: <strong>el 53% de los usuarios abandona un sitio web si tarda más de 3 segundos en cargar</strong>. Pero lo más alarmante viene después: cada 100 milisegundos adicionales de latencia se correlaciona con una <strong>reducción del 1% en las conversiones</strong>.</p>
+
+          <p>Eso significa que si tu sitio tarda 6 segundos en lugar de 3, pierdes aproximadamente 3% de tus conversiones solo por velocidad. En una empresa que genera 1,000 leads al mes, eso son 30 oportunidades perdidas que nunca recuperarás.</p>
+
+          <p>Amazon reportó algo similar hace años: cada segundo de latencia cuesta 1% de ventas. Stripe documentó que el 70% de los usuarios que abandona el carrito lo hace por problemas de rendimiento percibido.</p>
+
+          <div class="ol-art-pullstat">
+            <span class="ol-art-pullstat-num">53%</span>
+            <div class="ol-art-pullstat-body">
+              <h4>De tus visitantes se va antes de ver tu propuesta</h4>
+              <p>Estudios de Google confirman que más de la mitad del tráfico abandona sitios que tardan más de 3 segundos en cargar. Si tu sitio no es instantáneo, estás pagando tráfico que nunca convertirá.</p>
+              <cite>Fuente: Google / Think with Google</cite>
+            </div>
+          </div>
+
+          <h2 id="s2">WordPress sin optimizar: el culpable más frecuente</h2>
+          <p>El 43% del internet corre en WordPress. Es la plataforma más accesible para empresas pequeñas. Pero ahí está el problema: <strong>accesible no es lo mismo que rápido</strong>.</p>
+
+          <p>Un WordPress típico sin optimizar tiene estas características:</p>
+
+          <ul>
+            <li><strong>Plugins acumulados</strong> — de media, los sitios WordPress tienen 20-25 plugins instalados. Cada uno suma carga de servidor, código extra en el frontend, consultas a base de datos.</li>
+            <li><strong>Hosting compartido barato</strong> — $3 al mes no te da máquinas modernas. Compartes servidor con cientos de sitios más. Cuando uno se va loco con tráfico, todos sufren.</li>
+            <li><strong>Imágenes sin comprimir ni optimizar</strong> — una foto de celular es 3-5MB. Un sitio con 50 imágenes sin WebP ni lazy loading es una carga de 200MB+.</li>
+            <li><strong>CSS y JavaScript sin minificar</strong> — el código viaja en su forma "legible", no optimizada para tráfico.</li>
+            <li><strong>Sin CDN</strong> — si tu hosting está en EE.UU. y tu usuario está en México, el tiempo de ida y vuelta a la red es innecesariamente largo.</li>
+          </ul>
+
+          <p>Resultado: un WordPress típico tarda 5-7 segundos en cargar. Ya perdiste a la mayoría de tus usuarios.</p>
+
+          <div class="ol-art-compare">
+            <div class="ol-art-compare-card bad">
+              <div class="ol-art-compare-card-head">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                WordPress típico
+              </div>
+              <h4>5 — 7 s de carga</h4>
+              <ul>
+                <li>20+ plugins activos, muchos no se usan</li>
+                <li>Hosting compartido en EE.UU.</li>
+                <li>Imágenes de 3 MB sin WebP</li>
+                <li>Layout shift perceptible al scrollear</li>
+                <li>Cada visita consulta la base de datos</li>
+              </ul>
+            </div>
+            <div class="ol-art-compare-card good">
+              <div class="ol-art-compare-card-head">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                Astro / Next.js bien hecho
+              </div>
+              <h4>&lt; 1 s de carga</h4>
+              <ul>
+                <li>HTML estático servido por CDN</li>
+                <li>Sin base de datos en el camino</li>
+                <li>Imágenes en WebP con lazy loading</li>
+                <li>LCP, FID y CLS en verde</li>
+                <li>Mismo costo de hosting a largo plazo</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 id="s3">Cómo medir la velocidad real de tu sitio</h2>
+          <p>No confíes en tu percepción. Abre tu sitio desde tu oficina con tu conexión rápida y verás que carga al instante. Pero eso no es la realidad de tus clientes.</p>
+
+          <p><strong>Google PageSpeed Insights</strong> es gratuita y confiable. Ingresa tu URL y obtendrás:</p>
+
+          <ul>
+            <li><strong>LCP (Largest Contentful Paint)</strong> — cuánto tarda en cargar el elemento principal de la página. Debería ser menor a 2.5 segundos.</li>
+            <li><strong>FID (First Input Delay)</strong> — cuánto tarda la página en responder a la primera interacción del usuario. Debería ser menor a 100ms.</li>
+            <li><strong>CLS (Cumulative Layout Shift)</strong> — cuánto se mueven los elementos mientras carga. Debería ser menor a 0.1. Un score alto significa que el usuario hace click en un botón pero termina clickeando un anuncio.</li>
+          </ul>
+
+          <p>Estas métricas son lo que Google mide para posicionar tu sitio. Si las fallas, no solo pierdes clientes ahora — también pierdes visibilidad a futuro.</p>
+
+          <div class="ol-art-callout info">
+            <div class="ol-art-callout-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            </div>
+            <div class="ol-art-callout-body">
+              <h4>Mide con conexión 4G, no con tu WiFi de oficina</h4>
+              <p>PageSpeed Insights tiene modo "mobile" que simula una conexión 4G lenta. Ese es el número real que ven tus clientes — no el de tu fibra óptica.</p>
+            </div>
+          </div>
+
+          <h2 id="s4">Las causas más comunes en sitios mexicanos</h2>
+          <p>Hemos auditado más de 150 sitios en México. Los problemas recurrentes son:</p>
+
+          <ul>
+            <li><strong>Imágenes gigantes sin comprimir</strong> — fotos de producto de 5MB que se cargan en resolución completa en celular.</li>
+            <li><strong>Videos incrustados pesados</strong> — videos que cargan desde YouTube o Vimeo ralentizan la página incluso si el usuario nunca los ve.</li>
+            <li><strong>Fuentes personalizadas no optimizadas</strong> — Google Fonts sin estrategia de carga = 200-400ms de bloqueo.</li>
+            <li><strong>Plugins de "todo"</strong> — Elementor, Divi, WP Bakery cargan cantidades enormes de código innecesario.</li>
+            <li><strong>Hosting compartido saturado</strong> — GoDaddy, Bluehost con planes económicos. Funciona para hobbies, no para negocios.</li>
+          </ul>
+
+          <div class="ol-art-callout warn">
+            <div class="ol-art-callout-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <div class="ol-art-callout-body">
+              <h4>El builder visual es la trampa más común</h4>
+              <p>Elementor, Divi y similares pueden añadir 400 KB de JavaScript antes de que cargue una sola imagen. El 80% de los sitios lentos que revisamos usan uno de estos.</p>
+            </div>
+          </div>
+
+          <h2 id="s5">Qué pierdes exactamente</h2>
+          <p>Más allá del 3% de conversiones perdidas por cada segundo de latencia, hay impactos menos visibles pero igual de destructivos:</p>
+
+          <ul>
+            <li><strong>Posicionamiento en Google</strong> — desde 2021, la velocidad es un factor de ranking directo. Sitios lentos pierden posiciones año a año.</li>
+            <li><strong>Tráfico de celular</strong> — el 75% del tráfico web en México es desde celular. Las conexiones 4G son más lentas que fibra, y tu sitio lento se nota aún más.</li>
+            <li><strong>Percepción de marca</strong> — un sitio lento comunica que no importas, que no inviertes en tu presencia. Es la primera impresión de tu negocio.</li>
+            <li><strong>Costo de infraestructura</strong> — un sitio ineficiente necesita más servidor, más caché, más CDN para alcanzar velocidad aceptable. Terminas gastando más.</li>
+          </ul>
+
+          <blockquote>
+            <p>La velocidad no es un detalle técnico — es la primera promesa que tu sitio le hace al visitante. Si se rompe, el resto de tu mensaje ya no importa.</p>
+          </blockquote>
+
+          <h2 id="s6">La solución: no siempre es rediseñar completo</h2>
+          <p>Si tu sitio en WordPress funciona y genera leads, puede no ser necesario hacer un rediseño completo. Algunas mejoras tácticas podrían resolver el 80% del problema:</p>
+
+          <ul>
+            <li><strong>Cambiar a hosting mejor</strong> — Kinsta, WP Engine o Cloudways ofrecen hosting gestionado para WordPress. Más caro, pero incluye optimizaciones automáticas.</li>
+            <li><strong>Comprimir imágenes y convertir a WebP</strong> — reducir tamaño de activos un 70% sin perder calidad.</li>
+            <li><strong>Implementar un CDN</strong> — Cloudflare tiene plan gratuito. Sirve tu contenido desde servidores cerca de tus usuarios.</li>
+            <li><strong>Desactivar plugins innecesarios</strong> — muchos sitios tienen plugins instalados que no usan.</li>
+          </ul>
+
+          <p>Pero si el problema es estructural — si WordPress en sí es lento para lo que necesitas, o si el hosting ya no da más — entonces la verdadera solución es migrar a tecnología moderna.</p>
+
+          <p>En OrigenLab, cuando auditamos un sitio y el problema es la arquitectura, ofrecemos dos caminos: optimización táctica (que ayuda a corto plazo) o rediseño con Astro o Next.js (que resuelve el problema de raíz). La segunda es más cara adelante, pero cuesta menos a largo plazo en hosting, mantenimiento y conversiones recuperadas.</p>
+
+          <div class="ol-art-callout success">
+            <div class="ol-art-callout-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div class="ol-art-callout-body">
+              <h4>Sitios con Astro cargan en menos de 1 segundo por defecto</h4>
+              <p>No es magia — es que Astro genera HTML estático en build time. Sin PHP, sin base de datos consultándose en cada request. La velocidad es la consecuencia natural, no algo que optimizar después.</p>
+            </div>
+          </div>
+
+          <div class="ol-art-cta-inline">
+            <div>
+              <p class="ol-art-cta-inline-label">Siguiente paso</p>
+              <h3>¿Tu sitio tarda más de 3 segundos?</h3>
+              <p>Hacemos auditoría técnica gratuita. Medimos velocidad real, identificamos cuellos de botella y te damos un plan de acción — sin compromiso de compra.</p>
+            </div>
+            <a href="/cotizar/" class="ol-art-cta-inline-btn">
+              Solicitar auditoría
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="ol-art-share">
+            <span class="ol-art-share-label">Compartir</span>
+            <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Forigenlab.mx%2Fblog%2Fpor-que-tu-sitio-lento-cuesta-clientes%2F&text=Por%20qu%C3%A9%20tu%20sitio%20lento%20te%20est%C3%A1%20costando%20clientes" target="_blank" rel="noopener noreferrer" class="ol-art-share-btn" aria-label="Compartir en X/Twitter">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Forigenlab.mx%2Fblog%2Fpor-que-tu-sitio-lento-cuesta-clientes%2F" target="_blank" rel="noopener noreferrer" class="ol-art-share-btn" aria-label="Compartir en LinkedIn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Forigenlab.mx%2Fblog%2Fpor-que-tu-sitio-lento-cuesta-clientes%2F" target="_blank" rel="noopener noreferrer" class="ol-art-share-btn" aria-label="Compartir en Facebook">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://wa.me/?text=Por%20qu%C3%A9%20tu%20sitio%20lento%20te%20est%C3%A1%20costando%20clientes%20https%3A%2F%2Forigenlab.mx%2Fblog%2Fpor-que-tu-sitio-lento-cuesta-clientes%2F" target="_blank" rel="noopener noreferrer" class="ol-art-share-btn" aria-label="Compartir en WhatsApp">
+              <svg width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+            </a>
+            <a href="mailto:?subject=Por%20qu%C3%A9%20tu%20sitio%20lento%20te%20est%C3%A1%20costando%20clientes&body=Mira%20este%20art%C3%ADculo%3A%20https%3A%2F%2Forigenlab.mx%2Fblog%2Fpor-que-tu-sitio-lento-cuesta-clientes%2F" class="ol-art-share-btn" aria-label="Compartir por email">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
+          </div>
+
+          <div class="ol-art-author-card">
+            <div class="ol-art-author-avatar">OL</div>
+            <div class="ol-art-author-info">
+              <span class="label">Escrito por</span>
+              <span class="name">Equipo OrigenLab</span>
+              <span class="bio">Agencia mexicana de desarrollo web. Construimos sitios rápidos, modernos y pensados para convertir — para empresas en CDMX, Monterrey y Guadalajara.</span>
+            </div>
+            <a href="/nosotros/" class="ol-art-author-card-btn">
+              Conocer al equipo
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+        </article>
+
+        <aside class="ol-art-sidebar" aria-label="Navegación y recursos">
+
+          <div class="ol-sb-widget ol-sb-cta">
+            <div class="ol-sb-cta-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            </div>
+            <p class="ol-sb-cta-title">¿Tu sitio carga<br>en más de 3 s?</p>
+            <p class="ol-sb-cta-sub">Auditoría técnica gratuita. Te decimos exactamente qué está frenando tu sitio y cómo resolverlo.</p>
+            <a href="/cotizar/" class="ol-sb-cta-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              Solicitar auditoría
+            </a>
+            <a href="https://wa.me/525547868402?text=Hola%2C%20mi%20sitio%20est%C3%A1%20lento%20y%20quiero%20una%20auditor%C3%ADa" target="_blank" rel="noopener noreferrer" class="ol-sb-cta-wa">
+              <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+              O escríbenos por WhatsApp
+            </a>
+          </div>
+
+          <div class="ol-sb-widget">
+            <p class="ol-sb-title">En este artículo</p>
+            <nav class="ol-sb-toc" id="ol-sb-toc" aria-label="Índice del artículo">
+              <a href="#s1" class="ol-sb-toc-link" data-target="s1">El 53% de los usuarios no espera</a>
+              <a href="#s2" class="ol-sb-toc-link" data-target="s2">WordPress sin optimizar</a>
+              <a href="#s3" class="ol-sb-toc-link" data-target="s3">Cómo medir la velocidad real</a>
+              <a href="#s4" class="ol-sb-toc-link" data-target="s4">Causas comunes en México</a>
+              <a href="#s5" class="ol-sb-toc-link" data-target="s5">Qué pierdes exactamente</a>
+              <a href="#s6" class="ol-sb-toc-link" data-target="s6">La solución: tecnología moderna</a>
+            </nav>
+          </div>
+
+          <div class="ol-sb-widget">
+            <p class="ol-sb-title">Nuestros Servicios</p>
+            <div class="ol-sb-services">
+              <a href="/servicios/desarrollo-web/" class="ol-sb-svc-link">
+                <div class="ol-sb-svc-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                </div>
+                <div class="ol-sb-svc-text">
+                  <span class="ol-sb-svc-name">Desarrollo Web</span>
+                  <span class="ol-sb-svc-sub">Sitios corporativos a medida</span>
+                </div>
+              </a>
+              <a href="/servicios/landing-pages/" class="ol-sb-svc-link">
+                <div class="ol-sb-svc-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                </div>
+                <div class="ol-sb-svc-text">
+                  <span class="ol-sb-svc-name">Landing Pages</span>
+                  <span class="ol-sb-svc-sub">Alta conversión desde día 1</span>
+                </div>
+              </a>
+              <a href="/servicios/tiendas-en-linea/" class="ol-sb-svc-link">
+                <div class="ol-sb-svc-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                </div>
+                <div class="ol-sb-svc-text">
+                  <span class="ol-sb-svc-name">Tiendas en Línea</span>
+                  <span class="ol-sb-svc-sub">E-commerce con Mercado Pago</span>
+                </div>
+              </a>
+              <a href="/servicios/rediseno-web/" class="ol-sb-svc-link">
+                <div class="ol-sb-svc-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                </div>
+                <div class="ol-sb-svc-text">
+                  <span class="ol-sb-svc-name">Rediseño Web</span>
+                  <span class="ol-sb-svc-sub">Moderniza tu sitio actual</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="ol-sb-widget">
+            <p class="ol-sb-title">Seguir leyendo</p>
+            <div class="ol-sb-related">
+              <a href="/blog/astro-vs-wordpress-cual-elegir/" class="ol-sb-related-item">
+                <span class="ol-sb-related-num">01</span>
+                <div class="ol-sb-related-info">
+                  <span class="ol-sb-related-title">Astro vs WordPress: cuál elegir para tu empresa</span>
+                  <span class="ol-sb-related-meta">Tecnología · 8 min</span>
+                </div>
+              </a>
+              <a href="/blog/core-web-vitals-que-son/" class="ol-sb-related-item">
+                <span class="ol-sb-related-num">02</span>
+                <div class="ol-sb-related-info">
+                  <span class="ol-sb-related-title">Core Web Vitals: qué son y cómo afectan tu negocio</span>
+                  <span class="ol-sb-related-meta">Rendimiento · 6 min</span>
+                </div>
+              </a>
+              <a href="/blog/rediseno-web-cuando-es-momento/" class="ol-sb-related-item">
+                <span class="ol-sb-related-num">03</span>
+                <div class="ol-sb-related-info">
+                  <span class="ol-sb-related-title">Rediseño web: cuándo es el momento de renovar</span>
+                  <span class="ol-sb-related-meta">Diseño Web · 4 min</span>
+                </div>
+              </a>
+              <a href="/blog/5-errores-sitios-web-pymes-mexico/" class="ol-sb-related-item">
+                <span class="ol-sb-related-num">04</span>
+                <div class="ol-sb-related-info">
+                  <span class="ol-sb-related-title">5 errores en sitios web de pymes mexicanas</span>
+                  <span class="ol-sb-related-meta">Diseño Web · 5 min</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NEXT READ -->
+  <section class="ol-art-nextread" aria-label="Artículos relacionados">
+    <div class="ol-art-nextread-inner">
+      <div class="ol-art-nextread-head">
+        <div>
+          <p class="ol-art-nextread-label">Te puede interesar</p>
+          <h2 class="ol-art-nextread-title">Sigue explorando el blog</h2>
+        </div>
+        <a href="/blog/" class="ol-art-nextread-all">
+          Ver todos los artículos
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="ol-art-nextread-grid">
+
+        <a href="/blog/astro-vs-wordpress-cual-elegir/" class="ol-art-nextread-card">
+          <div class="ol-art-nextread-thumb"><span class="ol-art-nextread-num">01</span></div>
+          <div class="ol-art-nextread-body">
+            <div class="ol-art-nextread-top">
+              <span class="ol-blog-cat tecnologia">Tecnología</span>
+              <span class="ol-art-nextread-meta">8 min de lectura</span>
+            </div>
+            <h3 class="ol-art-nextread-h">Astro vs WordPress: cuál elegir para tu empresa en México</h3>
+            <p class="ol-art-nextread-excerpt">WordPress parece la opción obvia pero rara vez es la correcta. Comparamos velocidad, mantenimiento, costo y seguridad con datos reales.</p>
+            <span class="ol-art-nextread-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="/blog/core-web-vitals-que-son/" class="ol-art-nextread-card">
+          <div class="ol-art-nextread-thumb"><span class="ol-art-nextread-num">02</span></div>
+          <div class="ol-art-nextread-body">
+            <div class="ol-art-nextread-top">
+              <span class="ol-blog-cat rendimiento">Rendimiento</span>
+              <span class="ol-art-nextread-meta">6 min de lectura</span>
+            </div>
+            <h3 class="ol-art-nextread-h">Core Web Vitals: qué son y cómo afectan a tu negocio en México</h3>
+            <p class="ol-art-nextread-excerpt">Google mide la experiencia con métricas técnicas concretas. Si las fallas, pierdes visibilidad y prospectos. Te explicamos qué miden.</p>
+            <span class="ol-art-nextread-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="/blog/rediseno-web-cuando-es-momento/" class="ol-art-nextread-card">
+          <div class="ol-art-nextread-thumb"><span class="ol-art-nextread-num">03</span></div>
+          <div class="ol-art-nextread-body">
+            <div class="ol-art-nextread-top">
+              <span class="ol-blog-cat diseno">Diseño Web</span>
+              <span class="ol-art-nextread-meta">4 min de lectura</span>
+            </div>
+            <h3 class="ol-art-nextread-h">Rediseño web: cuándo es el momento de renovar tu sitio</h3>
+            <p class="ol-art-nextread-excerpt">Estas son las señales concretas que indican que tu sitio está frenando a tu empresa — y cuándo tiene sentido invertir en rediseño completo.</p>
+            <span class="ol-art-nextread-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="ol-blog-cta-band">
+    <div class="ol-blog-cta-band-inner">
+      <div>
+        <p class="ol-blog-cta-band-label">¿Listo para actuar?</p>
+        <h2 class="ol-blog-cta-band-title">Lo que lees aquí lo aplicamos<br>en cada proyecto.</h2>
+        <p class="ol-blog-cta-band-sub">Si este artículo te hizo preguntarte cómo se aplica en tu negocio, la respuesta más rápida es una conversación directa. Sin compromiso, sin ventas de presión — solo claridad sobre lo que necesitas.</p>
+      </div>
+      <div class="ol-blog-cta-band-actions">
+        <a href="/cotizar/" class="ol-blog-cta-band-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          Cotizar mi proyecto
+        </a>
+        <a href="https://wa.me/525547868402?text=Hola%2C%20vi%20el%20blog%20de%20OrigenLab%20y%20quiero%20platicar%20sobre%20mi%20proyecto" target="_blank" rel="noopener noreferrer" class="ol-blog-cta-band-wa">
+          <svg width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+          Escribirnos por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICKNAV BOTTOM -->
+  <div class="ol-quicknav">
+    <div class="ol-quicknav-inner">
+      <a href="/servicios/desarrollo-web/" class="ol-qn-item">
+        <div class="ol-qn-text"><span class="ol-qn-title">Sitios Corporativos</span><span class="ol-qn-sub">Diseño a medida</span></div>
+      </a>
+      <a href="/servicios/tiendas-en-linea/" class="ol-qn-item">
+        <div class="ol-qn-text"><span class="ol-qn-title">Tienda en Línea</span><span class="ol-qn-sub">Vende desde el día uno</span></div>
+      </a>
+      <a href="/servicios/landing-pages/" class="ol-qn-item">
+        <div class="ol-qn-text"><span class="ol-qn-title">Landing Pages</span><span class="ol-qn-sub">Más leads, más ventas</span></div>
+      </a>
+      <a href="/servicios/rediseno-web/" class="ol-qn-item">
+        <div class="ol-qn-text"><span class="ol-qn-title">Rediseño Web</span><span class="ol-qn-sub">Actualiza tu presencia</span></div>
+      </a>
+      <a href="/portafolio/" class="ol-qn-item">
+        <div class="ol-qn-text"><span class="ol-qn-title">Portafolio</span><span class="ol-qn-sub">Proyectos realizados</span></div>
+      </a>
+      <a href="/nosotros/" class="ol-qn-item">
+        <div class="ol-qn-text"><span class="ol-qn-title">Nosotros</span><span class="ol-qn-sub">Quiénes somos</span></div>
+      </a>
+      <a href="/cotizar/" class="ol-qn-item ol-qn-cta">
+        <div class="ol-qn-text"><span class="ol-qn-title">Iniciar Proyecto</span><span class="ol-qn-sub">Solicitar propuesta</span></div>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<footer class="ol-footer">
+  <div class="ol-footer-top">
+    <a href="/" class="ol-footer-logo">
+      Origen<span class="ol-footer-logo-dot">.</span>Lab
+    </a>
+    <p class="ol-footer-tagline">
+      Agencia de desarrollo web en México.<br>
+      Creamos sitios que generan resultados.
+    </p>
+    <ul class="ol-footer-contact-list">
+      <li>
+        <a href="mailto:hola@origenlab.mx" class="ol-fcl-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          hola@origenlab.mx
+        </a>
+      </li>
+      <li>
+        <a href="tel:+525547868402" class="ol-fcl-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +52 55 4786 8402
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/525547868402" target="_blank" rel="noopener noreferrer" class="ol-fcl-item ol-fcl-wa">
+          <svg width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+          WhatsApp
+        </a>
+      </li>
+      <li>
+        <span class="ol-fcl-item ol-fcl-static">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Ciudad de México, MX
+        </span>
+      </li>
+    </ul>
+  </div>
+  <div class="ol-footer-links">
+    <div>
+      <p class="ol-footer-col-title">Servicios</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/servicios/desarrollo-web/">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/">Rediseño Web</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Empresa</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/nosotros/">Nosotros</a></li>
+        <li><a href="/portafolio/">Portafolio</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/cotizar/">Cotizar proyecto</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Contacto</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/contacto/">Formulario de contacto</a></li>
+        <li><a href="mailto:hola@origenlab.mx">hola@origenlab.mx</a></li>
+        <li><a href="tel:+525547868402">+52 55 4786 8402</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Legal</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/aviso-de-privacidad/">Aviso de privacidad</a></li>
+        <li><a href="/terminos/">Términos de servicio</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ol-footer-bottom">
+    <p class="ol-footer-copy">© 2026 OrigenLab. Todos los derechos reservados.</p>
+    <div class="ol-footer-legal">
+      <a href="/aviso-de-privacidad/">Privacidad</a>
+      <a href="/terminos/">Términos</a>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web.%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" class="wa-bubble" aria-label="Contáctanos por WhatsApp">
+  <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 0 0 2.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0 0 16.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+</a>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var toggle   = document.getElementById('ol-menu-toggle');
+  var panel    = document.getElementById('ol-mobile-panel');
+  var overlay  = document.getElementById('ol-mobile-overlay');
+  var closeBtn = document.getElementById('ol-mobile-close');
+  var header   = document.getElementById('ol-header');
+
+  function openMenu() { toggle.classList.add('open'); toggle.setAttribute('aria-expanded','true'); panel.classList.add('open'); overlay.classList.add('visible'); document.body.style.overflow='hidden'; }
+  function closeMenu() { toggle.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); panel.classList.remove('open'); overlay.classList.remove('visible'); document.body.style.overflow=''; }
+
+  if (toggle) toggle.addEventListener('click', function(){ panel.classList.contains('open') ? closeMenu() : openMenu(); });
+  if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+  if (overlay) overlay.addEventListener('click', closeMenu);
+
+  var mobileLinks = panel ? panel.querySelectorAll('a') : [];
+  for (var i=0; i<mobileLinks.length; i++) mobileLinks[i].addEventListener('click', closeMenu);
+
+  var subToggles = document.querySelectorAll('[data-submenu]');
+  for (var j=0; j<subToggles.length; j++) {
+    subToggles[j].addEventListener('click', function(){ this.classList.toggle('expanded'); var sub=this.nextElementSibling; if(sub) sub.classList.toggle('open'); });
+  }
+
+  var progress = document.getElementById('ol-read-progress');
+  var tocLinks = document.querySelectorAll('#ol-sb-toc .ol-sb-toc-link');
+  var sections = [];
+  for (var k=0; k<tocLinks.length; k++) {
+    var id = tocLinks[k].getAttribute('data-target');
+    var el = document.getElementById(id);
+    if (el) sections.push({ id: id, el: el, link: tocLinks[k] });
+  }
+
+  function onScroll() {
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var pct = docHeight > 0 ? (window.pageYOffset / docHeight) * 100 : 0;
+    if (progress) progress.style.width = Math.min(100, Math.max(0, pct)) + '%';
+    if (header) header.classList.toggle('scrolled', window.pageYOffset > 10);
+    var activeIdx = -1;
+    for (var m=0; m<sections.length; m++) {
+      var rect = sections[m].el.getBoundingClientRect();
+      if (rect.top <= 140) activeIdx = m;
+    }
+    for (var n=0; n<sections.length; n++) {
+      sections[n].link.classList.toggle('active', n === activeIdx);
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  for (var p=0; p<tocLinks.length; p++) {
+    tocLinks[p].addEventListener('click', function(e) {
+      var target = this.getAttribute('data-target');
+      var el = document.getElementById(target);
+      if (el) {
+        e.preventDefault();
+        var y = el.getBoundingClientRect().top + window.pageYOffset - 100;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    });
+  }
+});
+</script>
+
+</body>
+</html>

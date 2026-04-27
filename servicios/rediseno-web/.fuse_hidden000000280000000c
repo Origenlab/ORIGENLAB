@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="author" content="OrigenLab">
+  <meta name="theme-color" content="#08080E">
+  <title>Rediseño Web Profesional en México | OrigenLab</title>
+  <meta name="description" content="Rediseño completo de sitios obsoletos en México. Auditoría a fondo, diseño a medida, migración sin downtime y rendimiento real — sin perder lo que ya funciona.">
+  <link rel="canonical" href="https://origenlab.mx/servicios/rediseno-web/">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://origenlab.mx/servicios/rediseno-web/">
+  <meta property="og:title" content="Rediseño Web Profesional | OrigenLab">
+  <meta property="og:description" content="Tu sitio actual, reinventado desde adentro. Auditoría, diseño a medida, migración sin downtime y velocidad real.">
+  <meta property="og:image" content="https://origenlab.mx/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="OrigenLab — Rediseño web profesional en México">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="OrigenLab">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rediseño Web Profesional | OrigenLab">
+  <meta name="twitter:description" content="Moderniza sin perder lo que funciona. Auditoría, diseño a medida y migración segura.">
+  <meta name="twitter:image" content="https://origenlab.mx/og-image.jpg">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="../../_astro/BaseLayout.xeR8R953.css?v20260421a">
+  <link rel="stylesheet" href="../../_astro/premium-dark.css?v20260421a">
+  <script src="../../_astro/ol-header.js?v20260421a" defer></script>
+
+  <style>
+    .ol-page-hero{background:#08080E;padding:6rem 0 5rem;position:relative;overflow:hidden}
+    .ol-page-hero::before{content:\'\';position:absolute;top:-20%;left:-10%;width:60%;height:120%;background:radial-gradient(ellipse at center,rgba(201,168,76,.06) 0%,transparent 65%);pointer-events:none}
+    .ol-page-hero::after{content:\'\';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.2),transparent)}
+    .ol-page-hero-inner{width:90%;max-width:1600px;margin:0 auto;position:relative;z-index:1}
+    .ol-page-hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+    @media(max-width:860px){.ol-page-hero-grid{grid-template-columns:1fr;gap:2rem}}
+    .ol-page-hero-title{font-size:clamp(2.8rem,5vw,4.5rem);font-weight:900;color:#F0F0F5;letter-spacing:-.035em;line-height:1.04;margin:0 0 1.5rem}
+    .ol-page-hero-sub{font-size:1.0625rem;color:rgba(240,240,245,.5);line-height:1.75;margin:0}
+    .ol-page-hero-right{display:flex;flex-direction:column;gap:1.25rem;padding-top:.25rem}
+    .ol-page-hero-copy{font-size:15px;color:rgba(240,240,245,.48);line-height:1.8;margin:0}
+    .ol-overview{background:#04040A;padding:6rem 0;position:relative}
+    .ol-overview::before{content:\'\';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.07),transparent)}
+    .ol-overview-inner{width:90%;max-width:1600px;margin:0 auto}
+    .ol-overview-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+    .ol-overview-img{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/3;background:#0C0C18;border:1px solid rgba(201,168,76,.12)}
+    .ol-overview-img img{width:100%;height:100%;object-fit:cover;display:block}
+    .ol-overview-img::after{content:\'\';position:absolute;inset:0;background:linear-gradient(135deg,rgba(201,168,76,.05) 0%,rgba(0,0,0,.25) 100%);pointer-events:none}
+    .ol-overview-text .ol-eyebrow{margin-bottom:1.5rem}
+    .ol-overview-title{font-size:clamp(1.9rem,3.5vw,2.8rem);font-weight:800;color:#F0F0F5;letter-spacing:-.025em;line-height:1.12;margin:0 0 1.5rem}
+    .ol-overview-text p{font-size:1rem;color:rgba(240,240,245,.58);line-height:1.8;margin:0 0 1.25rem}
+    .ol-overview-text p:last-child{margin-bottom:0}
+    .ol-overview-text strong{color:#F0F0F5;font-weight:600}
+    @media(max-width:900px){.ol-overview-grid{grid-template-columns:1fr;gap:2.5rem}.ol-overview-img{order:-1}}
+    .ol-features{background:#08080E;padding:6rem 0;position:relative}
+    .ol-features::before{content:\'\';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.15),transparent)}
+    .ol-features-inner{width:90%;max-width:1600px;margin:0 auto}
+    .ol-features-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+    .ol-feature-card{background:#0C0C18;border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:2rem}
+    .ol-feature-icon{width:44px;height:44px;border-radius:10px;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.25);display:flex;align-items:center;justify-content:center;color:#C9A84C;margin-bottom:1.25rem}
+    .ol-feature-title{font-size:1.0625rem;font-weight:700;color:#F0F0F5;letter-spacing:-.01em;margin:0 0 .5rem}
+    .ol-feature-desc{font-size:14px;color:rgba(240,240,245,.55);line-height:1.7;margin:0}
+    @media(max-width:1100px){.ol-features-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:560px){.ol-features-grid{grid-template-columns:1fr}}
+    .ol-stack{background:#0D0D16;padding:6rem 0;position:relative}
+    .ol-stack::before{content:\'\';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.07),transparent)}
+    .ol-stack-inner{width:90%;max-width:1600px;margin:0 auto}
+    .ol-stack-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:1rem}
+    .ol-stack-item{background:#0C0C18;border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:1.75rem 1.25rem;text-align:center}
+    .ol-stack-cat{font-size:10.5px;color:rgba(201,168,76,.85);text-transform:uppercase;letter-spacing:.14em;margin:0 0 .5rem;font-weight:700}
+    .ol-stack-tech{font-size:1rem;font-weight:700;color:#F0F0F5;margin:0 0 .4rem;letter-spacing:-.01em}
+    .ol-stack-desc{font-size:12.5px;color:rgba(240,240,245,.48);line-height:1.55;margin:0}
+    @media(max-width:1100px){.ol-stack-grid{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:560px){.ol-stack-grid{grid-template-columns:repeat(2,1fr)}}
+    .ol-types{background:#08080E;padding:6rem 0;position:relative}
+    .ol-types::before{content:\'\';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.07),transparent)}
+    .ol-types-inner{width:90%;max-width:1600px;margin:0 auto}
+    .ol-types-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+    .ol-type-card{background:#0C0C18;border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:2rem;display:flex;flex-direction:column;gap:1rem}
+    .ol-type-num{font-size:10.5px;color:rgba(201,168,76,.7);font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin:0}
+    .ol-type-title{font-size:1.125rem;font-weight:700;color:#F0F0F5;margin:0;letter-spacing:-.01em}
+    .ol-type-desc{font-size:14px;color:rgba(240,240,245,.55);line-height:1.7;margin:0;flex:1}
+    .ol-type-meta{font-size:12.5px;color:rgba(240,240,245,.48);padding-top:1rem;border-top:1px solid rgba(255,255,255,.06);display:flex;justify-content:space-between;gap:1rem}
+    .ol-type-meta strong{color:#C9A84C;font-weight:600}
+    @media(max-width:980px){.ol-types-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:640px){.ol-types-grid{grid-template-columns:1fr}}
+    .ol-svc-process{background:#04040A;padding:6rem 0;position:relative}
+    .ol-svc-process::before{content:\'\';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.15),transparent)}
+    .ol-svc-process-inner{width:90%;max-width:1600px;margin:0 auto}
+    .ol-svc-process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+    .ol-svc-process-steps::before{content:\'\';position:absolute;top:27px;left:calc(12.5% + 30px);right:calc(12.5% + 30px);height:1px;background:linear-gradient(90deg,rgba(201,168,76,.15),rgba(201,168,76,.35) 50%,rgba(201,168,76,.15))}
+    .ol-svc-process-step{padding:0 2rem;text-align:center;position:relative}
+    .ol-svc-process-num{width:56px;height:56px;background:#0C0C18;border:1px solid rgba(201,168,76,.28);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 2rem;font-size:17px;font-weight:800;color:#C9A84C;position:relative;z-index:1}
+    .ol-svc-process-title{font-size:1.0625rem;font-weight:700;color:#F0F0F5;margin:0 0 .75rem;letter-spacing:-.01em}
+    .ol-svc-process-desc{font-size:14px;color:rgba(240,240,245,.44);line-height:1.72;margin:0}
+    @media(max-width:900px){.ol-svc-process-steps{grid-template-columns:repeat(2,1fr);gap:3rem 1.5rem}.ol-svc-process-steps::before{display:none}}
+    @media(max-width:520px){.ol-svc-process-steps{grid-template-columns:1fr}.ol-svc-process-step{padding:0}}
+    .ol-pricing{background:#0D0D16;padding:6rem 0;position:relative}
+    .ol-pricing::before{content:\'\';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.18),transparent)}
+    .ol-pricing-inner{width:90%;max-width:1600px;margin:0 auto}
+    .ol-pricing-card{background:linear-gradient(135deg,#0C0C18 0%,#12121F 100%);border:1px solid rgba(201,168,76,.3);border-radius:18px;padding:3.5rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;position:relative;overflow:hidden}
+    .ol-pricing-card::before{content:\'\';position:absolute;top:-50%;right:-20%;width:60%;height:180%;background:radial-gradient(ellipse at center,rgba(201,168,76,.08) 0%,transparent 65%);pointer-events:none}
+    .ol-pricing-left,.ol-pricing-right{position:relative;z-index:1}
+    .ol-pricing-label{font-size:10.5px;color:#C9A84C;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin:0 0 1.25rem}
+    .ol-pricing-blurb{font-size:14.5px;color:rgba(240,240,245,.62);line-height:1.72;margin:0 0 2rem}
+    .ol-pricing-cta{display:inline-flex;align-items:center;gap:.5rem;background:#C9A84C;color:#08080E;padding:.95rem 1.75rem;border-radius:10px;font-weight:700;font-size:14px;text-decoration:none;letter-spacing:.01em;transition:background .22s ease,transform .15s ease,box-shadow .22s ease}
+    .ol-pricing-cta:hover{background:#E4C26B;transform:translateY(-1px);box-shadow:0 8px 28px rgba(201,168,76,.35)}
+    .ol-pricing-includes-title{font-size:10.5px;color:rgba(240,240,245,.45);font-weight:700;text-transform:uppercase;letter-spacing:.14em;margin:0 0 1.25rem}
+    .ol-pricing-includes-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:.75rem 1.5rem}
+    .ol-pricing-includes-list li{font-size:13.5px;color:rgba(240,240,245,.75);display:flex;align-items:flex-start;gap:.6rem;line-height:1.5}
+    .ol-pricing-includes-list li::before{content:\'\';flex-shrink:0;width:16px;height:16px;border-radius:50%;background:rgba(201,168,76,.15);border:1px solid rgba(201,168,76,.4);background-image:url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%23C9A84C\' stroke-width=\'3\' stroke-linecap=\'round\' stroke-linejoin=\'round\'%3E%3Cpolyline points=\'20 6 9 17 4 12\'/%3E%3C/svg%3E");background-size:10px;background-repeat:no-repeat;background-position:center;margin-top:2px}
+    @media(max-width:900px){.ol-pricing-card{grid-template-columns:1fr;gap:2.5rem;padding:2.5rem}.ol-pricing-includes-list{grid-template-columns:1fr}}
+    .ol-showcase{background:#08080E;padding:5rem 0 6rem;position:relative}
+    .ol-showcase::before{content:\'\';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.15),transparent)}
+    .ol-showcase-inner{width:90%;max-width:1600px;margin:0 auto}
+    .ol-showcase-block{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;padding:5rem 0;border-bottom:1px solid rgba(255,255,255,.05)}
+    .ol-showcase-block:last-child{border-bottom:none;padding-bottom:0}
+    .ol-showcase-img{background:rgba(201,168,76,.04);border:1px solid rgba(201,168,76,.1);border-radius:12px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+    .ol-showcase-img::before{content:\'\';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(201,168,76,.06) 0%,transparent 70%)}
+    .ol-showcase-img-label{display:flex;flex-direction:column;align-items:center;gap:.75rem;position:relative;z-index:1}
+    .ol-showcase-img-label svg{opacity:.25;color:#C9A84C}
+    .ol-showcase-img-label span{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(201,168,76,.45)}
+    .ol-showcase-info{display:flex;flex-direction:column;gap:1.5rem}
+    .ol-showcase-num{font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(201,168,76,.5);margin:0}
+    .ol-showcase-title{font-size:clamp(1.75rem,3vw,2.5rem);font-weight:800;color:#F0F0F5;letter-spacing:-.025em;line-height:1.1;margin:0}
+    .ol-showcase-desc{font-size:1rem;color:rgba(240,240,245,.5);line-height:1.8;margin:0}
+    .ol-showcase-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.65rem}
+    .ol-showcase-list li{font-size:13.5px;color:rgba(240,240,245,.62);line-height:1.5;padding-left:1.25rem;position:relative}
+    .ol-showcase-list li::before{content:\'→\';position:absolute;left:0;color:rgba(201,168,76,.6);font-size:11px;top:2px}
+    .ol-showcase-cta{display:inline-flex;align-items:center;gap:.5rem;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.25);color:#C9A84C;font-size:13px;font-weight:600;letter-spacing:.04em;padding:.75rem 1.5rem;border-radius:6px;text-decoration:none;width:fit-content}
+    .ol-showcase-cta:hover{background:rgba(201,168,76,.14);border-color:rgba(201,168,76,.4)}
+    @media(max-width:900px){.ol-showcase-block{grid-template-columns:1fr;gap:2.5rem}}
+    .ol-faq-section{background:var(--bg-alt,#0D0D16);padding:6rem 0;position:relative;overflow:hidden}
+    .ol-faq-section::before{content:\'\';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(201,168,76,.3) 50%,transparent 100%)}
+    .ol-faq-inner{width:90%;max-width:1600px;margin:0 auto}
+    .ol-faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+    @media(max-width:900px){.ol-faq-grid{grid-template-columns:1fr;gap:2.5rem}}
+    .ol-faq-list{display:flex;flex-direction:column;gap:0}
+    .ol-faq-col-label{font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(240,240,245,.35);margin-bottom:1.25rem}
+    .ol-faq-item{border-bottom:1px solid rgba(255,255,255,.07)}
+    .ol-faq-item:first-of-type{border-top:1px solid rgba(255,255,255,.07)}
+    .ol-faq-question{width:100%;background:none;border:none;padding:1.15rem 0;display:flex;align-items:center;justify-content:space-between;gap:1rem;cursor:pointer;text-align:left;color:#F0F0F5;font-size:.95rem;font-weight:500;font-family:\'Inter\',-apple-system,sans-serif;line-height:1.4}
+    .ol-faq-question:hover{color:#C9A84C}
+    .ol-faq-question.active{color:#C9A84C}
+    .ol-faq-icon{flex-shrink:0;width:22px;height:22px;border-radius:50%;border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center}
+    .ol-faq-question.active .ol-faq-icon{border-color:#C9A84C;background:rgba(201,168,76,.12);transform:rotate(45deg)}
+    .ol-faq-icon svg{display:block}
+    .ol-faq-answer{max-height:0;overflow:hidden}
+    .ol-faq-answer-inner{padding:0 0 1.25rem;font-size:.9rem;color:rgba(240,240,245,.6);line-height:1.7;margin:0}
+    .ol-faq-form-wrap{background:#131320;border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:2.25rem;position:sticky;top:120px}
+    .ol-faq-form-badge{display:inline-flex;align-items:center;gap:.45rem;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#25D366;background:rgba(37,211,102,.1);border:1px solid rgba(37,211,102,.2);border-radius:980px;padding:.35rem .85rem;margin-bottom:1.25rem}
+    .ol-faq-form-title{font-size:1.4rem;font-weight:700;color:#F0F0F5;letter-spacing:-.02em;margin:0 0 .45rem;line-height:1.25}
+    .ol-faq-form-sub{font-size:.875rem;color:rgba(240,240,245,.5);line-height:1.55;margin:0 0 1.75rem}
+    .ol-faq-form{display:flex;flex-direction:column;gap:1rem}
+    .ol-faq-field{display:flex;flex-direction:column;gap:.4rem}
+    .ol-faq-field label{font-size:11.5px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:rgba(240,240,245,.45)}
+    .ol-faq-field input,.ol-faq-field select,.ol-faq-field textarea{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:.7rem .9rem;font-size:.9rem;font-family:\'Inter\',-apple-system,sans-serif;color:#F0F0F5;outline:none;width:100%;box-sizing:border-box}
+    .ol-faq-field input::placeholder,.ol-faq-field textarea::placeholder{color:rgba(240,240,245,.25)}
+    .ol-faq-field select option{background:#131320;color:#F0F0F5}
+    .ol-faq-field input:focus,.ol-faq-field select:focus,.ol-faq-field textarea:focus{border-color:rgba(201,168,76,.45);background:rgba(201,168,76,.04)}
+    .ol-faq-field textarea{resize:vertical;min-height:90px}
+    .ol-faq-form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+    @media(max-width:560px){.ol-faq-form-row{grid-template-columns:1fr}}
+    .ol-faq-submit{display:flex;align-items:center;justify-content:center;gap:.6rem;width:100%;padding:.85rem 1.5rem;background:#25D366;border:none;border-radius:8px;font-size:.95rem;font-weight:600;font-family:\'Inter\',-apple-system,sans-serif;color:#fff;cursor:pointer;margin-top:.5rem;transition:background .2s,transform .15s}
+    .ol-faq-submit:hover{background:#1ebe5a;transform:translateY(-1px)}
+    .ol-faq-form-note{font-size:11px;color:rgba(240,240,245,.3);text-align:center;margin-top:.65rem;line-height:1.5}
+  </style>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.mx/#organization","name":"OrigenLab","url":"https://origenlab.mx","logo":"https://origenlab.mx/logo.svg","description":"Agencia mexicana de desarrollo web. Sitios corporativos, e-commerce, landing pages y rediseño a medida.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressRegion":"CDMX","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","email":"hola@origenlab.mx","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.mx/#website","url":"https://origenlab.mx/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.mx/#organization"}},{"@type":"WebPage","@id":"https://origenlab.mx/servicios/rediseno-web/#webpage","url":"https://origenlab.mx/servicios/rediseno-web/","name":"Rediseño Web Profesional en México | OrigenLab","inLanguage":"es-MX","isPartOf":{"@id":"https://origenlab.mx/#website"},"about":{"@id":"https://origenlab.mx/servicios/rediseno-web/#service"},"breadcrumb":{"@id":"https://origenlab.mx/servicios/rediseno-web/#breadcrumb"}},{"@type":"Service","@id":"https://origenlab.mx/servicios/rediseno-web/#service","serviceType":"Rediseño Web","name":"Rediseño Web Profesional","description":"Rediseño completo de sitios obsoletos. Auditoría a fondo, diseño a medida, migración sin downtime y preservación de la autoridad digital existente.","provider":{"@id":"https://origenlab.mx/#organization"},"areaServed":[{"@type":"Country","name":"México"},{"@type":"City","name":"Ciudad de México"},{"@type":"City","name":"Monterrey"},{"@type":"City","name":"Guadalajara"}],"audience":{"@type":"BusinessAudience","name":"Empresas con sitios obsoletos en México"},"category":"Rediseño y modernización de sitios web","url":"https://origenlab.mx/servicios/rediseno-web/","isRelatedTo":[{"@id":"https://origenlab.mx/servicios/desarrollo-web/#service"},{"@id":"https://origenlab.mx/servicios/tiendas-en-linea/#service"}],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Tipos de rediseño","itemListElement":[{"@type":"OfferCatalog","name":"Migración desde WordPress, Wix o Squarespace"},{"@type":"OfferCatalog","name":"Modernización de sitio corporativo"},{"@type":"OfferCatalog","name":"Rediseño con nueva identidad visual"},{"@type":"OfferCatalog","name":"Rediseño orientado a conversión y velocidad"}]}},{"@type":"BreadcrumbList","@id":"https://origenlab.mx/servicios/rediseno-web/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.mx/"},{"@type":"ListItem","position":2,"name":"Servicios","item":"https://origenlab.mx/servicios/"},{"@type":"ListItem","position":3,"name":"Rediseño Web","item":"https://origenlab.mx/servicios/rediseno-web/"}]},{"@type":"FAQPage","@id":"https://origenlab.mx/servicios/rediseno-web/#faq","mainEntity":[{"@type":"Question","name":"¿Cuándo conviene rediseñar en lugar de ajustar?","acceptedAnswer":{"@type":"Answer","text":"Cuando el problema es estructural: lentitud extrema, tecnología sin soporte, identidad visual obsoleta o conversión nula. Si el sitio está en WordPress con muchos plugins, en un constructor visual que ya llegó a su límite, o tiene deuda técnica que crece a cada cambio, un rediseño completo tiene mejor retorno que parchear sobre algo frágil."}},{"@type":"Question","name":"¿Conservo la autoridad digital del sitio actual al rediseñar?","acceptedAnswer":{"@type":"Answer","text":"Sí, cuando el proceso se hace correctamente. Entregamos un mapa completo de redirects 301 que preserva el historial de URLs del sitio anterior. La migración incluye verificación técnica para que el cambio sea transparente para los motores de búsqueda y no se pierda el trabajo previo."}},{"@type":"Question","name":"¿Mantienen el contenido actual del sitio?","acceptedAnswer":{"@type":"Answer","text":"Sí. Migramos el contenido que funciona: textos, imágenes, estructura de páginas y assets de marca. Lo que detectamos que perjudica la conversión o el rendimiento lo discutimos contigo antes de decidir qué conservar, qué renovar y qué eliminar."}},{"@type":"Question","name":"¿Pueden migrar desde WordPress, Wix o Squarespace?","acceptedAnswer":{"@type":"Answer","text":"Sí. Es uno de los casos más comunes que atendemos. Tenemos experiencia migrando desde WordPress, Wix, Squarespace, Webflow, Shopify y otros constructores. El proceso incluye exportar el contenido, estructurar la nueva arquitectura, configurar los redirects necesarios y hacer el switch sin tiempo de caída."}},{"@type":"Question","name":"¿Cuánto tiempo toma un rediseño completo?","acceptedAnswer":{"@type":"Answer","text":"Depende del alcance, el inventario de contenido y la complejidad del diseño nuevo. El tiempo exacto lo definimos en la auditoría inicial, una vez que entendemos el sitio actual, las páginas a migrar y el nivel de personalización requerido. Lo dejamos por escrito en la propuesta antes de arrancar."}},{"@type":"Question","name":"¿El rediseño incluye nueva identidad visual?","acceptedAnswer":{"@type":"Answer","text":"Si ya tienes brand guidelines, los respetamos y aplicamos al nuevo sitio. Si también necesitas renovar la identidad de marca — logo, paleta, tipografía o sistema visual — lo trabajamos dentro del mismo proyecto. Lo definimos en la primera reunión según tus objetivos y prioridades."}},{"@type":"Question","name":"¿Cómo es el proceso completo?","acceptedAnswer":{"@type":"Answer","text":"Auditoría del sitio actual, diseño nuevo con prototipo navegable, desarrollo en paralelo al sitio existente, validación en staging y lanzamiento sin interrumpir la operación. Después hay un período de soporte activo para ajustes finos y monitoreo de rendimiento."}},{"@type":"Question","name":"¿Cómo es el proceso de pago?","acceptedAnswer":{"@type":"Answer","text":"Dividimos el proyecto en dos pagos: 50% al firmar la propuesta para arrancar y 50% contra entrega antes del go-live. En proyectos grandes definimos hitos intermedios. Aceptamos transferencia bancaria y emitimos factura CFDI 4.0."}}]}]}</script>
+  <style>
+    /* L3 rediseno-web — page-level overrides (minimal) */
+    /* Component classes viven en premium-dark.css */
+  </style>
+</head>
+<body>
+<a class="ol-skip-link" href="#main">Saltar al contenido</a>
+<div class="ol-topbar">
+  <div class="ol-topbar-inner">
+    <div class="ol-topbar-left">
+      <a href="mailto:hola@origenlab.mx" class="ol-topbar-contact"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>hola@origenlab.mx</a>
+      <span class="ol-topbar-sep"></span>
+      <a href="tel:+525547868402" class="ol-topbar-contact"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+52 55 4786 8402</a>
+    </div>
+    <div class="ol-topbar-center"><span class="ol-topbar-promo"><span class="ol-topbar-dot"></span>Atención personalizada &nbsp;·&nbsp; Ciudad de México, México</span></div>
+    <div class="ol-topbar-right">
+      <a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20redisenio%20web" target="_blank" rel="noopener noreferrer" class="ol-topbar-wa"><svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<header class="ol-header" id="ol-header">
+  <div class="ol-header-inner">
+    <a href="/" class="ol-header-logo"><img src="../../img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async"></a>
+    <nav class="ol-nav" aria-label="Navegación principal">
+      <ul class="ol-nav-list">
+        <li><a href="/" class="ol-nav-link">Inicio</a></li>
+        <li class="ol-has-dropdown">
+          <a href="/servicios/" class="ol-nav-link active">Servicios<svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="ol-dropdown"><ul>
+            <li><a href="/servicios/desarrollo-web/" class="ol-dropdown-link">Desarrollo Web</a></li>
+            <li><a href="/servicios/tiendas-en-linea/" class="ol-dropdown-link">Tiendas en Línea</a></li>
+            <li><a href="/servicios/landing-pages/" class="ol-dropdown-link">Landing Pages</a></li>
+            <li><a href="/servicios/rediseno-web/" class="ol-dropdown-link ol-active">Rediseño Web</a></li>
+          </ul></div>
+        </li>
+        <li class="ol-has-dropdown">
+          <a href="/portafolio/" class="ol-nav-link">
+            Portafolio
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a></li>
+              <li class="ol-has-subdrop">
+                <a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link ol-dropdown-parent">Equipos Contra Incendios</a>
+                <div class="ol-subdrop">
+                  <ul>
+                    <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link">Gama de México</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="/nosotros/" class="ol-nav-link">Nosotros</a></li>
+        <li><a href="/blog/" class="ol-nav-link">Blog</a></li>
+        <li><a href="/contacto/" class="ol-nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="/cotizar/" class="ol-header-cta">Cotizar proyecto →</a>
+    <button class="ol-menu-toggle" id="ol-menu-toggle" aria-label="Abrir menú" aria-expanded="false"><span class="ol-ham-line"></span><span class="ol-ham-line"></span><span class="ol-ham-line"></span></button>
+  </div>
+</header>
+
+<div class="ol-mobile-overlay" id="ol-mobile-overlay"></div>
+<nav class="ol-mobile-panel" id="ol-mobile-panel" aria-label="Menú móvil">
+  <div class="ol-mobile-header">
+    <a href="/" class="ol-mobile-logo"><img src="../../img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async"></a>
+    <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú"><svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+  </div>
+  <ul class="ol-mobile-nav">
+    <li><a href="/" class="ol-mobile-link">Inicio</a></li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu><span>Servicios</span><svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/servicios/desarrollo-web/" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Portafolio</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/portafolio/" class="ol-mobile-link ol-mobile-sublink">Todo el Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/" class="ol-mobile-link ol-mobile-sublink">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">Gama de México</a></li>
+      </ul>
+    </li>
+    <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
+    <li><a href="/blog/" class="ol-mobile-link">Blog</a></li>
+    <li><a href="/contacto/" class="ol-mobile-link">Contacto</a></li>
+  </ul>
+  <div class="ol-mobile-footer"><a href="/cotizar/" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a></div>
+</nav>
+
+<nav class="ol-bc-wrap" aria-label="Migas de pan">
+  <div class="ol-bc">
+    <ol class="ol-bc-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/" itemprop="item" class="ol-bc-home"><span itemprop="name">Inicio</span></a><meta itemprop="position" content="1"/></li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/servicios/" itemprop="item"><span itemprop="name">Servicios</span></a><meta itemprop="position" content="2"/></li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item ol-bc-current" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name">Rediseño Web</span><meta itemprop="position" content="3"/></li>
+    </ol>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- PAGE HERO -->
+  <section class="ol-page-hero">
+    <div class="ol-page-hero-inner">
+      <div class="ol-page-hero-grid">
+        <div class="ol-page-hero-left">
+          <span class="ol-eyebrow">Servicio · Rediseño Web</span>
+          <h1 class="ol-page-hero-title">Tu sitio actual,<br>reinventado desde adentro.</h1>
+          <p class="ol-page-hero-sub">Modernizamos sitios obsoletos o que no convierten: auditoría completa, diseño a medida, migración sin downtime y velocidad real garantizada.</p>
+        </div>
+        <div class="ol-page-hero-right">
+          <p class="ol-page-hero-copy">Un rediseño bien hecho no es solo un nuevo visual. Revisamos la arquitectura de información, el rendimiento, la experiencia en móvil, los formularios, la velocidad de carga y la claridad del mensaje — todo lo que el visitante experimenta antes de tomar una decisión.</p>
+          <p class="ol-page-hero-copy">En OrigenLab comenzamos con una auditoría profunda del sitio existente, identificamos los puntos de fuga y construimos desde cero — o desde lo que sí funciona — para entregar un sitio que carga rápido, convierte mejor y representa tu marca con precisión.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK NAV TOP -->
+  <div class="ol-quicknav">
+    <div class="ol-quicknav-inner">
+      <a href="/servicios/desarrollo-web/" class="ol-qn-item"><span class="ol-qn-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span><span class="ol-qn-text"><span class="ol-qn-title">Desarrollo Web</span><span class="ol-qn-sub">Sitios corporativos</span></span></a>
+      <a href="/servicios/tiendas-en-linea/" class="ol-qn-item"><span class="ol-qn-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg></span><span class="ol-qn-text"><span class="ol-qn-title">Tiendas en Línea</span><span class="ol-qn-sub">E-commerce · Pagos MX</span></span></a>
+      <a href="/servicios/landing-pages/" class="ol-qn-item"><span class="ol-qn-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></span><span class="ol-qn-text"><span class="ol-qn-title">Landing Pages</span><span class="ol-qn-sub">Alta conversión</span></span></a>
+      <a href="/servicios/rediseno-web/" class="ol-qn-item" aria-current="page"><span class="ol-qn-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></span><span class="ol-qn-text"><span class="ol-qn-title">Rediseño Web</span><span class="ol-qn-sub">Estás aquí</span></span></a>
+      <a href="/portafolio/" class="ol-qn-item"><span class="ol-qn-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></span><span class="ol-qn-text"><span class="ol-qn-title">Portafolio</span><span class="ol-qn-sub">Proyectos realizados</span></span></a>
+      <a href="/nosotros/" class="ol-qn-item"><span class="ol-qn-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></span><span class="ol-qn-text"><span class="ol-qn-title">Nosotros</span><span class="ol-qn-sub">Equipo &amp; proceso</span></span></a>
+      <a href="/cotizar/" class="ol-qn-item ol-qn-cta"><span class="ol-qn-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span><span class="ol-qn-text"><span class="ol-qn-title">Cotizar Proyecto</span><span class="ol-qn-sub">Solicitar propuesta</span></span></a>
+    </div>
+  </div>
+
+  <!-- OVERVIEW -->
+  <section class="ol-overview">
+    <div class="ol-overview-inner">
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Modernización</span>
+          <h2 class="ol-section-title">Modernización sin<br>puntos ciegos.</h2>
+          <p class="ol-section-sub">Antes de tocar una línea de código, entendemos por qué tu sitio actual no está funcionando.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Un rediseño real no es solo un nuevo visual. Es revisar la arquitectura de información, el rendimiento, la experiencia en móvil, los formularios, la velocidad de carga y la claridad del mensaje. Todo lo que el visitante experimenta antes de tomar una decisión.</p>
+          <p class="ol-sh-copy">En OrigenLab hacemos una auditoría profunda del sitio existente, identificamos los puntos de fuga y construimos desde cero — o desde lo que sí funciona — para entregar un sitio que carga rápido, convierte mejor y representa tu marca con precisión.</p>
+        </div>
+      </div>
+      <div class="ol-overview-grid" style="margin-top:4rem;">
+        <div class="ol-overview-img">
+          <img src="../../img/servicios/rediseno-web.avif" alt="Rediseño web profesional — OrigenLab" width="1200" height="900" loading="lazy" decoding="async">
+        </div>
+        <div class="ol-overview-text">
+          <span class="ol-eyebrow">Auditoría antes del diseño</span>
+          <h3 class="ol-overview-title">Diagnóstico real, solución a medida, migración sin downtime.</h3>
+          <p>Un rediseño profesional requiere más que buen diseño. Necesita continuidad técnica, estrategia de migración y comunicación clara. Comenzamos con un reporte de auditoría del sitio actual antes de proponer cualquier cambio.</p>
+          <p>Identificamos qué funciona —y lo preservamos con cuidado—, qué está costando conversiones y qué necesita reconstruirse desde los cimientos. El resultado es un sitio nuevo que no pierde lo que ya estaba dando resultados.</p>
+          <p>Lo que recibes al final es un sitio <strong>rápido, coherente con tu marca y listo para convertir</strong> — no una plantilla con tu logo encima.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="ol-features">
+    <div class="ol-features-inner">
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Qué incluye</span>
+          <h2 class="ol-section-title">Todo lo que un rediseño<br>profesional necesita.</h2>
+          <p class="ol-section-sub">Cada entrega incluye estas capas de trabajo — sin extras ocultos al final del proyecto.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Un rediseño bien hecho requiere más que buen diseño. Necesita continuidad técnica, estrategia de migración y comunicación clara. Nuestra propuesta detalla el alcance completo antes de arrancar.</p>
+          <p class="ol-sh-copy">No cobramos por "versión móvil" ni por "configurar redirects". Todo está incluido. Los únicos costos adicionales son las funcionalidades que se definan como extensión en el brief.</p>
+        </div>
+      </div>
+      <div class="ol-features-grid" style="margin-top:4rem;">
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
+          <h3 class="ol-feature-title">Auditoría completa</h3>
+          <p class="ol-feature-desc">Revisamos velocidad, UX, conversión y arquitectura del sitio actual antes de proponer cualquier solución o tocar una línea de código.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+          <h3 class="ol-feature-title">Diseño visual a medida</h3>
+          <p class="ol-feature-desc">Nuevo sistema visual alineado a tu identidad de marca, sin plantillas genéricas ni clones de otros sitios. Cada elemento diseñado desde cero.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div>
+          <h3 class="ol-feature-title">Migración sin downtime</h3>
+          <p class="ol-feature-desc">Desplegamos el nuevo sitio en paralelo y hacemos el switch sin interrupciones para tus visitantes — cero tiempo de caída durante la transición.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div>
+          <h3 class="ol-feature-title">Mapa de redirects 301</h3>
+          <p class="ol-feature-desc">Documentamos y configuramos todos los redirects 301 necesarios para preservar el historial de URLs del sitio anterior y conservar la autoridad digital ya construida.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+          <h3 class="ol-feature-title">Velocidad Lighthouse 90+</h3>
+          <p class="ol-feature-desc">Optimización real: imágenes AVIF/WebP, CSS crítico inline, JS mínimo y hosting en CDN global. Score medido y entregado antes del go-live.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></div>
+          <h3 class="ol-feature-title">Responsivo desde cero</h3>
+          <p class="ol-feature-desc">Revisamos breakpoints, touch targets, tipografía y jerarquía visual en móvil, tablet y escritorio — no responsive añadido como parche.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h3 class="ol-feature-title">Formularios y WhatsApp</h3>
+          <p class="ol-feature-desc">Actualizamos todos los puntos de contacto: formularios, botones de WA, correos y rutas de conversión con validación y notificaciones.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3 class="ol-feature-title">Acompañamiento post-entrega</h3>
+          <p class="ol-feature-desc">Período de soporte activo para ajustes finos, capacitación al equipo y resolución de dudas técnicas después del lanzamiento.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="ol-stack">
+    <div class="ol-stack-inner">
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Tecnologías</span>
+          <h2 class="ol-section-title">Construido con tecnologías<br>que duran.</h2>
+          <p class="ol-section-sub">Sin dependencias frágiles ni plataformas que cobran por actualización o que dejan de tener soporte.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Usamos frameworks modernos de alto rendimiento que producen HTML estático limpio. El resultado es un sitio que no falla, no requiere mantenimiento constante y carga en fracciones de segundo.</p>
+          <p class="ol-sh-copy">Sin plugins vulnerables, sin bases de datos que explotar, sin costos ocultos de plataforma. Solo código limpio que funciona y escala con tu negocio.</p>
+        </div>
+      </div>
+      <div class="ol-stack-grid" style="margin-top:4rem;">
+        <div class="ol-stack-item"><p class="ol-stack-cat">Framework</p><h3 class="ol-stack-tech">Astro</h3><p class="ol-stack-desc">Landings ultra-rápidas con carga &lt; 1s y mínimo JavaScript.</p></div>
+        <div class="ol-stack-item"><p class="ol-stack-cat">Analytics</p><h3 class="ol-stack-tech">GA4 · GTM</h3><p class="ol-stack-desc">Seguimiento de conversiones, audiencias y eventos personalizados.</p></div>
+        <div class="ol-stack-item"><p class="ol-stack-cat">Ads</p><h3 class="ol-stack-tech">Meta · Google</h3><p class="ol-stack-desc">Píxel, CAPI, GTM y conversiones offline configurados.</p></div>
+        <div class="ol-stack-item"><p class="ol-stack-cat">Lenguaje</p><h3 class="ol-stack-tech">TypeScript</h3><p class="ol-stack-desc">Código tipado, mantenible y libre de errores en producción.</p></div>
+        <div class="ol-stack-item"><p class="ol-stack-cat">Estilos</p><h3 class="ol-stack-tech">CSS moderno</h3><p class="ol-stack-desc">Diseño a medida sin frameworks pesados que ralenticen la carga.</p></div>
+        <div class="ol-stack-item"><p class="ol-stack-cat">Hosting</p><h3 class="ol-stack-tech">Vercel · Cloudflare</h3><p class="ol-stack-desc">Edge global, SSL automático y deploys instantáneos.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIPOS -->
+  <section class="ol-types">
+    <div class="ol-types-inner">
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Casos de uso</span>
+          <h2 class="ol-section-title">¿Cuándo tiene sentido<br>rediseñar?</h2>
+          <p class="ol-section-sub">Hay señales claras que indican que es momento de renovar en lugar de parchear.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">No todo sitio necesita un rediseño completo, pero cuando el problema es estructural — lentitud extrema, identidad visual obsoleta, conversión nula o tecnología sin soporte — un parche no resuelve nada.</p>
+          <p class="ol-sh-copy">Estos son los escenarios donde trabajamos y donde un rediseño profesional genera el mayor retorno sobre la inversión. Si tu caso no está aquí, escríbenos y lo platicamos.</p>
+        </div>
+      </div>
+      <div class="ol-types-grid" style="margin-top:4rem;">
+
+        <article class="ol-type-card">
+          <p class="ol-type-num">01</p>
+          <h3 class="ol-type-title">WordPress obsoleto</h3>
+          <p class="ol-type-desc">Sitios lentos, con plugins sin actualizar, tema genérico o alto riesgo de vulnerabilidades. El más común y el que más se beneficia de un rediseño con tecnología moderna.</p>
+          <div class="ol-type-meta"><span>Origen</span><strong>WordPress</strong></div>
+        </article>
+
+        <article class="ol-type-card">
+          <p class="ol-type-num">02</p>
+          <h3 class="ol-type-title">Constructores visuales</h3>
+          <p class="ol-type-desc">Sitios en Wix, Squarespace o Webflow que han alcanzado sus límites de rendimiento y personalización — y que cargan lento en móvil.</p>
+          <div class="ol-type-meta"><span>Origen</span><strong>Wix · Squarespace</strong></div>
+        </article>
+
+        <article class="ol-type-card">
+          <p class="ol-type-num">03</p>
+          <h3 class="ol-type-title">Institucionales desactualizados</h3>
+          <p class="ol-type-desc">Sitios corporativos con diseño de hace 5+ años que ya no reflejan el nivel real de la empresa ni comunican confianza a visitantes nuevos.</p>
+          <div class="ol-type-meta"><span>Problema</span><strong>Imagen</strong></div>
+        </article>
+
+        <article class="ol-type-card">
+          <p class="ol-type-num">04</p>
+          <h3 class="ol-type-title">Sitios que no convierten</h3>
+          <p class="ol-type-desc">Visitas sin contactos. El tráfico existe pero los usuarios no saben cómo o por qué contactarte. Problema de UX, jerarquía visual y claridad del mensaje.</p>
+          <div class="ol-type-meta"><span>Problema</span><strong>Conversión</strong></div>
+        </article>
+
+        <article class="ol-type-card">
+          <p class="ol-type-num">05</p>
+          <h3 class="ol-type-title">E-commerce lento</h3>
+          <p class="ol-type-desc">Tiendas que cargan lento, tienen checkout confuso o un catálogo que no comunica valor al comprador — y que pierden ventas por fricción técnica.</p>
+          <div class="ol-type-meta"><span>Problema</span><strong>Velocidad</strong></div>
+        </article>
+
+        <article class="ol-type-card">
+          <p class="ol-type-num">06</p>
+          <h3 class="ol-type-title">Rediseño + rebranding</h3>
+          <p class="ol-type-desc">La identidad visual cambió y el sitio ya no la refleja. Actualizamos todo en una sola intervención: nuevo sistema de diseño alineado a la marca renovada.</p>
+          <div class="ol-type-meta"><span>Alcance</span><strong>Marca + web</strong></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="ol-svc-process">
+    <div class="ol-svc-process-inner">
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Cómo trabajamos</span>
+          <h2 class="ol-section-title">Un proceso claro,<br>sin sorpresas.</h2>
+          <p class="ol-section-sub">Cuatro etapas desde la auditoría hasta el lanzamiento — con entregables y aprobaciones en cada paso.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Cada rediseño comienza con entender qué tiene el sitio actual que funciona y qué está costando conversiones o credibilidad. No proponemos soluciones antes de tener ese diagnóstico.</p>
+          <p class="ol-sh-copy">El proceso es colaborativo: presentamos avances, recibimos retroalimentación y validamos antes de construir. Al final, lanzamos en vivo con soporte activo durante el período de estabilización.</p>
+        </div>
+      </div>
+      <div class="ol-svc-process-steps" style="margin-top:4rem;">
+
+        <div class="ol-svc-process-step">
+          <div class="ol-svc-process-num">1</div>
+          <h3 class="ol-svc-process-title">Brief y estrategia</h3>
+          <p class="ol-svc-process-desc">Entendemos objetivo, público, oferta y canal. Definimos estructura de la landing y copy por secciones — por escrito, antes de abrir el editor.</p>
+        </div>
+
+        <div class="ol-svc-process-step">
+          <div class="ol-svc-process-num">2</div>
+          <h3 class="ol-svc-process-title">Diseño y copy</h3>
+          <p class="ol-svc-process-desc">Sistema visual a medida, copy orientado a conversión y prototipo navegable aprobado antes de pasar al desarrollo.</p>
+        </div>
+
+        <div class="ol-svc-process-step">
+          <div class="ol-svc-process-num">3</div>
+          <h3 class="ol-svc-process-title">Desarrollo y píxeles</h3>
+          <p class="ol-svc-process-desc">Implementación a medida, integración de píxeles, eventos de conversión y formularios. Revisión en entorno de pruebas con tráfico real.</p>
+        </div>
+
+        <div class="ol-svc-process-step">
+          <div class="ol-svc-process-num">4</div>
+          <h3 class="ol-svc-process-title">Lanzamiento</h3>
+          <p class="ol-svc-process-desc">QA en dispositivos y navegadores, configuración de dominio y hosting, activación de píxeles en producción y go-live con soporte incluido.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="ol-pricing">
+    <div class="ol-pricing-inner">
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Inversión</span>
+          <h2 class="ol-section-title">Propuesta a la medida,<br>sin sorpresas.</h2>
+          <p class="ol-section-sub">Cada rediseño se cotiza en función de su alcance real: tamaño del sitio, complejidad de migración y nivel de personalización.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">El precio final se define después de la auditoría inicial, una vez que tengamos claro el inventario de contenido y el alcance del diseño. Todas las propuestas incluyen entregables por escrito antes de arrancar.</p>
+          <p class="ol-sh-copy">Sin cobros adicionales por versión móvil, redirecciones o correos de seguimiento. El costo cubre el ciclo completo: análisis, diseño, desarrollo, migración y soporte.</p>
+        </div>
+      </div>
+      <div class="ol-pricing-card" style="margin-top:4rem;">
+        <div class="ol-pricing-left">
+          <p class="ol-pricing-label">Rediseño Web · Propuesta personalizada</p>
+          <p class="ol-pricing-blurb">Cuéntanos en qué plataforma está tu sitio actual y qué necesitas mejorar — te enviamos una cotización clara con alcance, entregables y stack recomendado, sin compromiso.</p>
+          <a href="/cotizar/" class="ol-pricing-cta">Solicitar cotización<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
+        <div class="ol-pricing-right">
+          <p class="ol-pricing-includes-title">Incluido en todos los rediseños</p>
+          <ul class="ol-pricing-includes-list">
+            <li>Auditoría del sitio actual</li>
+            <li>Diseño visual a medida</li>
+            <li>Versión móvil optimizada</li>
+            <li>Migración de contenido existente</li>
+            <li>Mapa completo de redirects 301</li>
+            <li>Hosting + dominio + SSL</li>
+            <li>Capacitación al equipo</li>
+            <li>Soporte activo post-entrega</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWCASE CROSS-SELL -->
+  <section class="ol-showcase">
+    <div class="ol-showcase-inner">
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Otros servicios</span>
+          <h2 class="ol-section-title">¿Tu proyecto necesita<br>algo más que un rediseño?</h2>
+          <p class="ol-section-sub">Si también necesitas una landing que convierta, una tienda en línea o un sitio desde cero, podemos ayudarte.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Todos nuestros servicios comparten los mismos principios: diseño a medida, tecnología moderna, código limpio y una inversión clara sin sorpresas. Lo que cambia es el tipo de proyecto y el alcance de la entrega.</p>
+          <p class="ol-sh-copy">Si tienes dudas sobre cuál encaja mejor con lo que necesitas, podemos platicarlo por WhatsApp o en una llamada breve — en unos minutos te indicamos cuál es el camino correcto.</p>
+        </div>
+      </div>
+
+      <div class="ol-showcase-block" style="padding-top:5rem;">
+        <div class="ol-showcase-img"><div class="ol-showcase-img-label"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Imagen próximamente</span></div></div>
+        <div class="ol-showcase-info">
+          <p class="ol-showcase-num">01 — Desarrollo Web</p>
+          <h3 class="ol-showcase-title">Sitios corporativos a medida con tecnologías modernas.</h3>
+          <p class="ol-showcase-desc">Sitios web profesionales para empresas mexicanas que necesitan presencia digital sólida — sin tiendas ni e-commerce. Diseño a medida, velocidad real y código limpio.</p>
+          <ul class="ol-showcase-list">
+            <li>Diseño visual a medida — nada de plantillas ni page builders</li>
+            <li>Stack moderno — Astro, Next.js, React, TypeScript</li>
+            <li>Velocidad real medida y optimización de Core Web Vitals</li>
+            <li>Integración con WhatsApp, formularios y CRM</li>
+          </ul>
+          <a href="/servicios/desarrollo-web/" class="ol-showcase-cta">Ver Desarrollo Web →</a>
+        </div>
+      </div>
+
+      <div class="ol-showcase-block">
+        <div class="ol-showcase-img"><div class="ol-showcase-img-label"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg><span>Imagen próximamente</span></div></div>
+        <div class="ol-showcase-info">
+          <p class="ol-showcase-num">02 — Tiendas en Línea</p>
+          <h3 class="ol-showcase-title">E-commerce a medida con pagos mexicanos.</h3>
+          <p class="ol-showcase-desc">Tienda en línea completa: catálogo, carrito, checkout, pasarelas de pago mexicanas (Mercado Pago, OXXO Pay, Stripe) y panel de administración. Sobre Shopify, WooCommerce o stack a medida.</p>
+          <ul class="ol-showcase-list">
+            <li>Catálogo con filtros, búsqueda y variantes de producto</li>
+            <li>Pasarelas de pago locales — Mercado Pago · OXXO · Stripe</li>
+            <li>Panel de administración de inventario y pedidos</li>
+            <li>Diseño de marca, no plantilla genérica</li>
+          </ul>
+          <a href="/servicios/tiendas-en-linea/" class="ol-showcase-cta">Ver Tiendas en Línea →</a>
+        </div>
+      </div>
+
+      <div class="ol-showcase-block">
+        <div class="ol-showcase-img"><div class="ol-showcase-img-label"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg><span>Imagen próximamente</span></div></div>
+        <div class="ol-showcase-info">
+          <p class="ol-showcase-num">03 — Landing Pages</p>
+          <h3 class="ol-showcase-title">Landings de alta conversión para tus campañas.</h3>
+          <p class="ol-showcase-desc">Páginas de aterrizaje a medida para Meta Ads, Google Ads y campañas de lanzamiento. Copy estratégico, diseño orientado a conversión y píxeles configurados desde el primer día.</p>
+          <ul class="ol-showcase-list">
+            <li>Copy estratégico incluido — no necesitas escribirlo tú</li>
+            <li>Carga ultrarrápida con Astro o HTML puro</li>
+            <li>Meta Pixel, GTM, GA4 y eventos de conversión</li>
+            <li>Formularios y botón de WhatsApp como CTA</li>
+          </ul>
+          <a href="/servicios/landing-pages/" class="ol-showcase-cta">Ver Landing Pages →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ + FORM -->
+  <section class="ol-faq-section">
+    <div class="ol-faq-inner">
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Preguntas Frecuentes</span>
+          <h2 class="ol-section-title">Las dudas más comunes<br>sobre rediseño web.</h2>
+          <p class="ol-section-sub">Rediseñar un sitio activo genera dudas legítimas. Aquí respondemos las más comunes sobre proceso, migración y preservación de URLs.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Sabemos que rediseñar implica confiarle a alguien un activo digital que tardaste en construir. Por eso reunimos aquí las preguntas que más nos hacen antes de arrancar — sobre proceso, autoridad digital, migración y lo que incluye cada entrega.</p>
+          <p class="ol-sh-copy">Si tu pregunta no está aquí, escríbenos por WhatsApp. Te leemos personalmente y respondemos con propuestas claras y por escrito.</p>
+        </div>
+      </div>
+
+      <div class="ol-faq-grid">
+        <div>
+          <p class="ol-faq-col-label">Preguntas frecuentes</p>
+          <div class="ol-faq-list" id="ol-faq-list-rw">
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="rw1">¿Cuándo conviene rediseñar en lugar de ajustar?<span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button>
+              <div class="ol-faq-answer" id="faq-ans-rw1"><p class="ol-faq-answer-inner">Cuando el problema es estructural: lentitud extrema, tecnología sin soporte, identidad visual obsoleta o conversión nula. Si el sitio está en WordPress con muchos plugins o en un constructor visual que ya llegó a su límite, un rediseño completo tiene mejor retorno que parchear sobre algo frágil.</p></div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="rw2">¿Conservo la autoridad digital del sitio actual al rediseñar?<span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button>
+              <div class="ol-faq-answer" id="faq-ans-rw2"><p class="ol-faq-answer-inner">Sí, cuando el proceso se hace correctamente. Entregamos un mapa completo de redirects 301 que preserva el historial de URLs del sitio anterior. La migración incluye verificación técnica para que el cambio sea transparente para los motores de búsqueda y no se pierda el trabajo previo.</p></div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="rw3">¿Mantienen el contenido actual del sitio?<span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button>
+              <div class="ol-faq-answer" id="faq-ans-rw3"><p class="ol-faq-answer-inner">Sí. Migramos el contenido que funciona: textos, imágenes, estructura de páginas. Lo que detectemos que perjudica la conversión o el rendimiento lo discutimos contigo antes de decidir qué conservar y qué renovar.</p></div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="rw4">¿Pueden migrar desde WordPress, Wix o Squarespace?<span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button>
+              <div class="ol-faq-answer" id="faq-ans-rw4"><p class="ol-faq-answer-inner">Sí, es uno de los casos más comunes. Tenemos experiencia migrando desde todas esas plataformas. El proceso incluye exportar contenido, estructurar la nueva arquitectura, configurar los redirects necesarios y hacer el switch sin tiempo de caída.</p></div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="rw5">¿Cuánto tiempo toma un rediseño completo?<span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button>
+              <div class="ol-faq-answer" id="faq-ans-rw5"><p class="ol-faq-answer-inner">Depende del alcance, el inventario de contenido y la complejidad del diseño nuevo. El tiempo exacto lo definimos en la auditoría inicial, una vez que entendemos el sitio actual, las páginas a migrar y el nivel de personalización requerido. Lo dejamos por escrito en la propuesta antes de arrancar.</p></div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="rw6">¿El rediseño incluye nueva identidad visual?<span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button>
+              <div class="ol-faq-answer" id="faq-ans-rw6"><p class="ol-faq-answer-inner">Si ya tienes brand guidelines los respetamos y aplicamos al nuevo sitio. Si también necesitas renovar la identidad de marca, lo trabajamos dentro del mismo proyecto. Lo definimos en la primera reunión según tus objetivos.</p></div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="rw7">¿Cómo es el proceso completo?<span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button>
+              <div class="ol-faq-answer" id="faq-ans-rw7"><p class="ol-faq-answer-inner">Auditoría del sitio actual, diseño nuevo con prototipo navegable, desarrollo en paralelo al existente, validación en staging y lanzamiento sin interrumpir el sitio actual. Luego hay un período de soporte activo con entregables y aprobaciones por escrito en cada etapa.</p></div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="rw8">¿Cómo es el proceso de pago?<span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button>
+              <div class="ol-faq-answer" id="faq-ans-rw8"><p class="ol-faq-answer-inner">Dividimos el proyecto en dos pagos: 50% al firmar la propuesta para arrancar y 50% contra entrega antes del go-live. En proyectos grandes definimos hitos intermedios. Aceptamos transferencia, depósito y emitimos factura.</p></div>
+            </div>
+
+          </div>
+        </div>
+
+        <div>
+          <div class="ol-faq-form-wrap">
+            <span class="ol-faq-form-badge"><svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>Contáctanos por WhatsApp</span>
+            <h3 class="ol-faq-form-title">¿Listo para renovar<br>tu sitio?</h3>
+            <p class="ol-faq-form-sub">Cuéntanos en qué plataforma está tu sitio actual y qué quieres mejorar. Te respondemos con una propuesta clara y sin compromiso.</p>
+            <form class="ol-faq-form" id="ol-wa-form-rw" novalidate>
+              <div class="ol-faq-form-row">
+                <div class="ol-faq-field"><label for="rw-nombre">Tu nombre</label><input type="text" id="rw-nombre" placeholder="Ej. Carlos García" autocomplete="given-name"></div>
+                <div class="ol-faq-field"><label for="rw-empresa">Empresa / Negocio</label><input type="text" id="rw-empresa" placeholder="Nombre de tu empresa"></div>
+              </div>
+              <div class="ol-faq-field">
+                <label for="rw-plataforma">Plataforma actual</label>
+                <select id="rw-plataforma">
+                  <option value="" disabled selected>Selecciona una opción</option>
+                  <option value="WordPress">WordPress</option>
+                  <option value="Wix / Squarespace / Webflow">Wix / Squarespace / Webflow</option>
+                  <option value="Personalizado / Legacy">Personalizado / Legacy</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+              <div class="ol-faq-field"><label for="rw-mensaje">¿Qué quieres mejorar?</label><textarea id="rw-mensaje" placeholder="Cuéntanos qué no funciona en tu sitio actual o qué quieres lograr con el rediseño..."></textarea></div>
+              <button type="submit" class="ol-faq-submit"><svg width="17" height="17" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>Enviar por WhatsApp</button>
+              <p class="ol-faq-form-note">Al enviar, se abrirá WhatsApp con tu mensaje listo. Te respondemos personalmente.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  (function() {
+    var btns = document.querySelectorAll('#ol-faq-list-rw .ol-faq-question');
+    btns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var idx = btn.getAttribute('data-faq');
+        var answer = document.getElementById('faq-ans-' + idx);
+        var isOpen = btn.classList.contains('active');
+        btns.forEach(function(b) {
+          b.classList.remove('active');
+          var a = document.getElementById('faq-ans-' + b.getAttribute('data-faq'));
+          if (a) a.style.maxHeight = null;
+        });
+        if (!isOpen && answer) {
+          btn.classList.add('active');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+    var rwForm = document.getElementById('ol-wa-form-rw');
+    if (rwForm) {
+      rwForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var nombre     = document.getElementById('rw-nombre').value.trim();
+        var empresa    = document.getElementById('rw-empresa').value.trim();
+        var plataforma = document.getElementById('rw-plataforma').value;
+        var mensaje    = document.getElementById('rw-mensaje').value.trim();
+        var partes  = ['Hola OrigenLab, me contacto desde la página de Rediseño Web.'];
+        if (nombre)     partes.push('*Nombre:* ' + nombre);
+        if (empresa)    partes.push('*Empresa:* ' + empresa);
+        if (plataforma) partes.push('*Plataforma actual:* ' + plataforma);
+        if (mensaje)    partes.push('*Descripción:* ' + mensaje);
+        partes.push('Me gustaría recibir una propuesta. ¡Gracias!');
+        var url = 'https://wa.me/525547868402?text=' + encodeURIComponent(partes.join('\n'));
+        window.open(url, '_blank', 'noopener,noreferrer');
+      });
+    }
+  })();
+  </script>
+
+  <!-- QUICK NAV BOTTOM -->
+  <div class="ol-quicknav">
+    <div class="ol-quicknav-inner">
+      <a href="/servicios/desarrollo-web/" class="ol-qn-item"><div class="ol-qn-text"><span class="ol-qn-title">Desarrollo Web</span><span class="ol-qn-sub">Sitios corporativos</span></div></a>
+      <a href="/servicios/tiendas-en-linea/" class="ol-qn-item"><div class="ol-qn-text"><span class="ol-qn-title">Tiendas en Línea</span><span class="ol-qn-sub">Vende desde el día uno</span></div></a>
+      <a href="/servicios/landing-pages/" class="ol-qn-item"><div class="ol-qn-text"><span class="ol-qn-title">Landing Pages</span><span class="ol-qn-sub">Alta conversión</span></div></a>
+      <a href="/servicios/rediseno-web/" class="ol-qn-item" aria-current="page"><div class="ol-qn-text"><span class="ol-qn-title">Rediseño Web</span><span class="ol-qn-sub">Estás aquí</span></div></a>
+      <a href="/portafolio/" class="ol-qn-item"><div class="ol-qn-text"><span class="ol-qn-title">Portafolio</span><span class="ol-qn-sub">Ve lo que construimos</span></div></a>
+      <a href="/nosotros/" class="ol-qn-item"><div class="ol-qn-text"><span class="ol-qn-title">Nosotros</span><span class="ol-qn-sub">Quiénes somos</span></div></a>
+      <a href="/cotizar/" class="ol-qn-item ol-qn-cta"><div class="ol-qn-text"><span class="ol-qn-title">Iniciar Proyecto</span><span class="ol-qn-sub">Solicitar propuesta</span></div></a>
+    </div>
+  </div>
+
+</main>
+
+<footer class="ol-footer">
+  <div class="ol-footer-top">
+    <a href="/" class="ol-footer-logo">Origen<span class="ol-footer-logo-dot">.</span>Lab</a>
+    <p class="ol-footer-tagline">Agencia de desarrollo web en México.<br>Creamos sitios que generan resultados.</p>
+    <ul class="ol-footer-contact-list">
+      <li><a href="mailto:hola@origenlab.mx" class="ol-fcl-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>hola@origenlab.mx</a></li>
+      <li><a href="tel:+525547868402" class="ol-fcl-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+52 55 4786 8402</a></li>
+      <li><a href="https://wa.me/525547868402" target="_blank" rel="noopener noreferrer" class="ol-fcl-item ol-fcl-wa"><svg width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>WhatsApp</a></li>
+      <li><span class="ol-fcl-item ol-fcl-static"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Ciudad de México, MX</span></li>
+    </ul>
+  </div>
+  <div class="ol-footer-links">
+    <div>
+      <p class="ol-footer-col-title">Servicios</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/servicios/desarrollo-web/">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/">Rediseño Web</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Empresa</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/nosotros/">Nosotros</a></li>
+        <li><a href="/portafolio/">Portafolio</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/cotizar/">Cotizar proyecto</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Contacto</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/contacto/">Formulario de contacto</a></li>
+        <li><a href="mailto:hola@origenlab.mx">hola@origenlab.mx</a></li>
+        <li><a href="tel:+525547868402">+52 55 4786 8402</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Legal</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/aviso-de-privacidad/">Aviso de privacidad</a></li>
+        <li><a href="/terminos/">Términos de servicio</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ol-footer-bottom">
+    <p class="ol-footer-copy">© 2026 OrigenLab. Todos los derechos reservados.</p>
+    <div class="ol-footer-legal">
+      <a href="/aviso-de-privacidad/">Privacidad</a>
+      <a href="/terminos/">Términos</a>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20redisenio%20web.%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" class="wa-bubble" aria-label="Contáctanos por WhatsApp">
+  <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 0 0 2.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0 0 16.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+</a>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var toggle   = document.getElementById('ol-menu-toggle');
+    var panel    = document.getElementById('ol-mobile-panel');
+    var overlay  = document.getElementById('ol-mobile-overlay');
+    var closeBtn = document.getElementById('ol-mobile-close');
+    var header   = document.getElementById('ol-header');
+    function openMenu() { toggle.classList.add('open'); toggle.setAttribute('aria-expanded','true'); panel.classList.add('open'); overlay.classList.add('visible'); document.body.style.overflow='hidden'; }
+    function closeMenu() { toggle.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); panel.classList.remove('open'); overlay.classList.remove('visible'); document.body.style.overflow=''; }
+    if (toggle)   toggle.addEventListener('click', function () { panel.classList.contains('open') ? closeMenu() : openMenu(); });
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    if (overlay)  overlay.addEventListener('click', closeMenu);
+    var mobileLinks = panel ? panel.querySelectorAll('a') : [];
+    for (var i = 0; i < mobileLinks.length; i++) mobileLinks[i].addEventListener('click', closeMenu);
+    var subToggles = document.querySelectorAll('[data-submenu]');
+    for (var j = 0; j < subToggles.length; j++) {
+      subToggles[j].addEventListener('click', function () {
+        this.classList.toggle('expanded');
+        var sub = this.nextElementSibling;
+        if (sub) sub.classList.toggle('open');
+      });
+    }
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 10) { header.classList.add('scrolled'); } else { header.classList.remove('scrolled'); }
+    }, { passive: true });
+  });
+</script>
+
+</body>
+</html>

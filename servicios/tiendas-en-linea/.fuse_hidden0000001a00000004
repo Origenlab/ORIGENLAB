@@ -1,0 +1,1974 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="author" content="OrigenLab">
+  <meta name="theme-color" content="#08080E">
+  <title>Tiendas en Línea — E-commerce a la medida en México | OrigenLab</title>
+  <meta name="description" content="Tiendas en línea a medida con Shopify, WooCommerce o stack headless. Pasarelas mexicanas — Mercado Pago, Stripe, Conekta y OXXO Pay — y checkout optimizado para vender desde el día uno.">
+  <link rel="canonical" href="https://origenlab.mx/servicios/tiendas-en-linea/">
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://origenlab.mx/servicios/tiendas-en-linea/">
+  <meta property="og:title" content="Tiendas en Línea en México | OrigenLab">
+  <meta property="og:description" content="E-commerce con Mercado Pago, Stripe, Conekta y OXXO Pay. Shopify, WooCommerce o desarrollo headless a medida.">
+  <meta property="og:image" content="https://origenlab.mx/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="OrigenLab — Tiendas en línea y e-commerce a medida en México">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="OrigenLab">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tiendas en Línea | OrigenLab">
+  <meta name="twitter:description" content="E-commerce a medida listo para vender desde el primer día. Pasarelas mexicanas integradas y checkout optimizado.">
+  <meta name="twitter:image" content="https://origenlab.mx/og-image.jpg">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../_astro/BaseLayout.xeR8R953.css?v20260421a">
+  <link rel="stylesheet" href="../../_astro/premium-dark.css?v20260421a">
+  <script src="../../_astro/ol-header.js?v20260421a" defer></script>
+
+  <style>
+    /* ============================================================
+       L3 — TIENDAS EN LÍNEA — page-level styles
+       Homologado con desarrollo-web (mismo layout y complementos)
+       ============================================================ */
+
+    /* ---- PAGE HERO ---- */
+    .ol-page-hero {
+      background: #08080E;
+      padding: 6rem 0 5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .ol-page-hero::before {
+      content: '';
+      position: absolute;
+      top: -20%; left: -10%;
+      width: 60%; height: 120%;
+      background: radial-gradient(ellipse at center, rgba(201,168,76,0.06) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .ol-page-hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.2), transparent);
+    }
+    .ol-page-hero-inner {
+      width: 90%;
+      max-width: 1600px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    .ol-page-hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    @media (max-width: 860px) {
+      .ol-page-hero-grid { grid-template-columns: 1fr; gap: 2rem; }
+    }
+    .ol-page-hero-title {
+      font-size: clamp(2.8rem, 5vw, 4.5rem);
+      font-weight: 900;
+      color: #F0F0F5;
+      letter-spacing: -0.035em;
+      line-height: 1.04;
+      margin: 0 0 1.5rem;
+    }
+    .ol-page-hero-sub {
+      font-size: 1.0625rem;
+      color: rgba(240,240,245,0.5);
+      line-height: 1.75;
+      margin: 0;
+    }
+    .ol-page-hero-right {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      padding-top: 0.25rem;
+    }
+    .ol-page-hero-copy {
+      font-size: 15px;
+      color: rgba(240,240,245,0.48);
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    /* ---- OVERVIEW ---- */
+    .ol-overview {
+      background: #04040A;
+      padding: 6rem 0;
+      position: relative;
+    }
+    .ol-overview::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.07), transparent);
+    }
+    .ol-overview-inner {
+      width: 90%;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+    .ol-overview-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+    .ol-overview-img {
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+      background: #0C0C18;
+      border: 1px solid rgba(201,168,76,0.12);
+    }
+    .ol-overview-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .ol-overview-img::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(201,168,76,0.05) 0%, rgba(0,0,0,0.25) 100%);
+      pointer-events: none;
+    }
+    .ol-overview-text .ol-eyebrow { margin-bottom: 1.5rem; }
+    .ol-overview-title {
+      font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+      font-weight: 800;
+      color: #F0F0F5;
+      letter-spacing: -0.025em;
+      line-height: 1.12;
+      margin: 0 0 1.5rem;
+    }
+    .ol-overview-text p {
+      font-size: 1rem;
+      color: rgba(240,240,245,0.58);
+      line-height: 1.8;
+      margin: 0 0 1.25rem;
+    }
+    .ol-overview-text p:last-child { margin-bottom: 0; }
+    .ol-overview-text strong { color: #F0F0F5; font-weight: 600; }
+    @media (max-width: 900px) {
+      .ol-overview-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .ol-overview-img { order: -1; }
+    }
+
+    /* ---- FEATURES GRID ---- */
+    .ol-features {
+      background: #08080E;
+      padding: 6rem 0;
+      position: relative;
+    }
+    .ol-features::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.15), transparent);
+    }
+    .ol-features-inner {
+      width: 90%;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+    .ol-features-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+    .ol-feature-card {
+      background: #0C0C18;
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 14px;
+      padding: 2rem;
+    }
+    .ol-feature-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #C9A84C;
+      margin-bottom: 1.25rem;
+    }
+    .ol-feature-title {
+      font-size: 1.0625rem;
+      font-weight: 700;
+      color: #F0F0F5;
+      letter-spacing: -0.01em;
+      margin: 0 0 0.5rem;
+    }
+    .ol-feature-desc {
+      font-size: 14px;
+      color: rgba(240,240,245,0.55);
+      line-height: 1.7;
+      margin: 0;
+    }
+    @media (max-width: 1100px) { .ol-features-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) { .ol-features-grid { grid-template-columns: 1fr; } }
+
+    /* ---- STACK TECNOLÓGICO ---- */
+    .ol-stack {
+      background: #0D0D16;
+      padding: 6rem 0;
+      position: relative;
+    }
+    .ol-stack::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.07), transparent);
+    }
+    .ol-stack-inner {
+      width: 90%;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+    .ol-stack-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1rem;
+    }
+    .ol-stack-item {
+      background: #0C0C18;
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 1.75rem 1.25rem;
+      text-align: center;
+    }
+    .ol-stack-cat {
+      font-size: 10.5px;
+      color: rgba(201,168,76,0.85);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      margin: 0 0 0.5rem;
+      font-weight: 700;
+    }
+    .ol-stack-tech {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #F0F0F5;
+      margin: 0 0 0.4rem;
+      letter-spacing: -0.01em;
+    }
+    .ol-stack-desc {
+      font-size: 12.5px;
+      color: rgba(240,240,245,0.48);
+      line-height: 1.55;
+      margin: 0;
+    }
+    @media (max-width: 1100px) { .ol-stack-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 560px) { .ol-stack-grid { grid-template-columns: repeat(2, 1fr); } }
+
+    /* ---- TIPOS DE PROYECTO ---- */
+    .ol-types {
+      background: #08080E;
+      padding: 6rem 0;
+      position: relative;
+    }
+    .ol-types::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.07), transparent);
+    }
+    .ol-types-inner {
+      width: 90%;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+    .ol-types-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .ol-type-card {
+      background: #0C0C18;
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 14px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .ol-type-num {
+      font-size: 10.5px;
+      color: rgba(201,168,76,0.7);
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    .ol-type-title {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: #F0F0F5;
+      margin: 0;
+      letter-spacing: -0.01em;
+    }
+    .ol-type-desc {
+      font-size: 14px;
+      color: rgba(240,240,245,0.55);
+      line-height: 1.7;
+      margin: 0;
+      flex: 1;
+    }
+    .ol-type-meta {
+      font-size: 12.5px;
+      color: rgba(240,240,245,0.48);
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .ol-type-meta strong {
+      color: #C9A84C;
+      font-weight: 600;
+    }
+    @media (max-width: 980px) { .ol-types-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px) { .ol-types-grid { grid-template-columns: 1fr; } }
+
+    /* ---- PROCESO 4 PASOS ---- */
+    .ol-svc-process {
+      background: #04040A;
+      padding: 6rem 0;
+      position: relative;
+    }
+    .ol-svc-process::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.15), transparent);
+    }
+    .ol-svc-process-inner {
+      width: 90%;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+    .ol-svc-process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      position: relative;
+    }
+    .ol-svc-process-steps::before {
+      content: '';
+      position: absolute;
+      top: 27px;
+      left: calc(12.5% + 30px);
+      right: calc(12.5% + 30px);
+      height: 1px;
+      background: linear-gradient(90deg, rgba(201,168,76,0.15), rgba(201,168,76,0.35) 50%, rgba(201,168,76,0.15));
+    }
+    .ol-svc-process-step {
+      padding: 0 2rem;
+      text-align: center;
+      position: relative;
+    }
+    .ol-svc-process-num {
+      width: 56px;
+      height: 56px;
+      background: #0C0C18;
+      border: 1px solid rgba(201,168,76,0.28);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 2rem;
+      font-size: 17px;
+      font-weight: 800;
+      color: #C9A84C;
+      position: relative;
+      z-index: 1;
+    }
+    .ol-svc-process-title {
+      font-size: 1.0625rem;
+      font-weight: 700;
+      color: #F0F0F5;
+      margin: 0 0 0.75rem;
+      letter-spacing: -0.01em;
+    }
+    .ol-svc-process-desc {
+      font-size: 14px;
+      color: rgba(240,240,245,0.44);
+      line-height: 1.72;
+      margin: 0 0 1rem;
+    }
+    .ol-svc-process-time {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(201,168,76,0.75);
+      margin: 0;
+    }
+    @media (max-width: 900px) {
+      .ol-svc-process-steps { grid-template-columns: repeat(2, 1fr); gap: 3rem 1.5rem; }
+      .ol-svc-process-steps::before { display: none; }
+    }
+    @media (max-width: 520px) {
+      .ol-svc-process-steps { grid-template-columns: 1fr; }
+      .ol-svc-process-step { padding: 0; }
+    }
+
+    /* ---- PRICING ---- */
+    .ol-pricing {
+      background: #0D0D16;
+      padding: 6rem 0;
+      position: relative;
+    }
+    .ol-pricing::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.18), transparent);
+    }
+    .ol-pricing-inner {
+      width: 90%;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+    .ol-pricing-card {
+      background: linear-gradient(135deg, #0C0C18 0%, #12121F 100%);
+      border: 1px solid rgba(201,168,76,0.3);
+      border-radius: 18px;
+      padding: 3.5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .ol-pricing-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 60%;
+      height: 180%;
+      background: radial-gradient(ellipse at center, rgba(201,168,76,0.08) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .ol-pricing-left, .ol-pricing-right { position: relative; z-index: 1; }
+    .ol-pricing-label {
+      font-size: 10.5px;
+      color: #C9A84C;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin: 0 0 1.25rem;
+    }
+    .ol-pricing-from-word {
+      font-size: 13px;
+      color: rgba(240,240,245,0.5);
+      font-weight: 500;
+      margin: 0 0 0.4rem;
+      letter-spacing: 0.03em;
+    }
+    .ol-pricing-amount {
+      font-size: clamp(2.8rem, 5vw, 3.8rem);
+      font-weight: 900;
+      color: #F0F0F5;
+      letter-spacing: -0.035em;
+      line-height: 1;
+      margin: 0 0 0.35rem;
+    }
+    .ol-pricing-amount span.curr {
+      font-size: 0.55em;
+      color: rgba(240,240,245,0.55);
+      font-weight: 600;
+      margin-left: 0.35rem;
+      letter-spacing: 0.02em;
+    }
+    .ol-pricing-pay {
+      font-size: 13px;
+      color: rgba(240,240,245,0.5);
+      line-height: 1.5;
+      margin: 0.75rem 0 1.75rem;
+    }
+    .ol-pricing-blurb {
+      font-size: 14.5px;
+      color: rgba(240,240,245,0.62);
+      line-height: 1.72;
+      margin: 0 0 2rem;
+    }
+    .ol-pricing-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #C9A84C;
+      color: #08080E;
+      padding: 0.95rem 1.75rem;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      letter-spacing: 0.01em;
+      transition: background 0.22s ease, transform 0.15s ease, box-shadow 0.22s ease;
+    }
+    .ol-pricing-cta:hover {
+      background: #E4C26B;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 28px rgba(201,168,76,0.35);
+    }
+    .ol-pricing-includes-title {
+      font-size: 10.5px;
+      color: rgba(240,240,245,0.45);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      margin: 0 0 1.25rem;
+    }
+    .ol-pricing-includes-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem 1.5rem;
+    }
+    .ol-pricing-includes-list li {
+      font-size: 13.5px;
+      color: rgba(240,240,245,0.75);
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      line-height: 1.5;
+    }
+    .ol-pricing-includes-list li::before {
+      content: '';
+      flex-shrink: 0;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: rgba(201,168,76,0.15);
+      border: 1px solid rgba(201,168,76,0.4);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C9A84C' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+      background-size: 10px;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: 2px;
+    }
+    @media (max-width: 900px) {
+      .ol-pricing-card { grid-template-columns: 1fr; gap: 2.5rem; padding: 2.5rem; }
+      .ol-pricing-includes-list { grid-template-columns: 1fr; }
+    }
+
+    /* ---- SHOWCASE cross-sell ---- */
+    .ol-showcase {
+      background: #08080E;
+      padding: 5rem 0 6rem;
+      position: relative;
+    }
+    .ol-showcase::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.15), transparent);
+    }
+    .ol-showcase-inner {
+      width: 90%;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+    .ol-showcase-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+      padding: 5rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .ol-showcase-block:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .ol-showcase-img {
+      background: rgba(201,168,76,0.04);
+      border: 1px solid rgba(201,168,76,0.1);
+      border-radius: 12px;
+      aspect-ratio: 4 / 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .ol-showcase-img::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at center, rgba(201,168,76,0.06) 0%, transparent 70%);
+    }
+    .ol-showcase-img-label {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+      position: relative;
+      z-index: 1;
+    }
+    .ol-showcase-img-label svg {
+      opacity: 0.25;
+      color: var(--gold, #C9A84C);
+    }
+    .ol-showcase-img-label span {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(201,168,76,0.45);
+    }
+    .ol-showcase-info {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .ol-showcase-num {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(201,168,76,0.5);
+      margin: 0;
+    }
+    .ol-showcase-title {
+      font-size: clamp(1.75rem, 3vw, 2.5rem);
+      font-weight: 800;
+      color: #F0F0F5;
+      letter-spacing: -0.025em;
+      line-height: 1.1;
+      margin: 0;
+    }
+    .ol-showcase-desc {
+      font-size: 1rem;
+      color: rgba(240,240,245,0.5);
+      line-height: 1.8;
+      margin: 0;
+    }
+    .ol-showcase-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+    .ol-showcase-list li {
+      font-size: 13.5px;
+      color: rgba(240,240,245,0.62);
+      line-height: 1.5;
+      padding-left: 1.25rem;
+      position: relative;
+    }
+    .ol-showcase-list li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: rgba(201,168,76,0.6);
+      font-size: 11px;
+      top: 2px;
+    }
+    .ol-showcase-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(201,168,76,0.08);
+      border: 1px solid rgba(201,168,76,0.25);
+      color: #C9A84C;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      width: fit-content;
+    }
+    .ol-showcase-cta {
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+    .ol-showcase-cta:hover {
+      background: rgba(201,168,76,0.14);
+      border-color: rgba(201,168,76,0.4);
+    }
+    @media (max-width: 900px) {
+      .ol-showcase-block { grid-template-columns: 1fr; gap: 2.5rem; }
+    }
+
+    /* ---- FAQ Section ---- */
+    .ol-faq-section {
+      background: var(--bg-alt, #0D0D16);
+      padding: 6rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .ol-faq-section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent 0%, rgba(201,168,76,0.3) 50%, transparent 100%);
+    }
+    .ol-faq-inner {
+      width: 90%;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+    .ol-faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .ol-faq-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    }
+    .ol-faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .ol-faq-col-label {
+      font-size: 10.5px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(240,240,245,0.35);
+      margin-bottom: 1.25rem;
+    }
+    .ol-faq-item {
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    .ol-faq-item:first-of-type { border-top: 1px solid rgba(255,255,255,0.07); }
+    .ol-faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 1.15rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      cursor: pointer;
+      text-align: left;
+      color: #F0F0F5;
+      font-size: 0.95rem;
+      font-weight: 500;
+      font-family: 'Inter', -apple-system, sans-serif;
+      line-height: 1.4;
+    }
+    .ol-faq-question:hover { color: #C9A84C; }
+    .ol-faq-question.active { color: #C9A84C; }
+    .ol-faq-icon {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ol-faq-question.active .ol-faq-icon {
+      border-color: #C9A84C;
+      background: rgba(201,168,76,0.12);
+      transform: rotate(45deg);
+    }
+    .ol-faq-icon svg { display: block; }
+    .ol-faq-answer {
+      max-height: 0;
+      overflow: hidden;
+    }
+    .ol-faq-answer-inner {
+      padding: 0 0 1.25rem;
+      font-size: 0.9rem;
+      color: rgba(240,240,245,0.6);
+      line-height: 1.7;
+      margin: 0;
+    }
+    .ol-faq-form-wrap {
+      background: #131320;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 2.25rem;
+      position: sticky;
+      top: 120px;
+    }
+    .ol-faq-form-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #25D366;
+      background: rgba(37,211,102,0.1);
+      border: 1px solid rgba(37,211,102,0.2);
+      border-radius: 980px;
+      padding: 0.35rem 0.85rem;
+      margin-bottom: 1.25rem;
+    }
+    .ol-faq-form-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #F0F0F5;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.45rem;
+      line-height: 1.25;
+    }
+    .ol-faq-form-sub {
+      font-size: 0.875rem;
+      color: rgba(240,240,245,0.5);
+      line-height: 1.55;
+      margin: 0 0 1.75rem;
+    }
+    .ol-faq-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .ol-faq-field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .ol-faq-field label {
+      font-size: 11.5px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: rgba(240,240,245,0.45);
+    }
+    .ol-faq-field input,
+    .ol-faq-field select,
+    .ol-faq-field textarea {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 0.7rem 0.9rem;
+      font-size: 0.9rem;
+      font-family: 'Inter', -apple-system, sans-serif;
+      color: #F0F0F5;
+      outline: none;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .ol-faq-field input::placeholder,
+    .ol-faq-field textarea::placeholder { color: rgba(240,240,245,0.25); }
+    .ol-faq-field select option { background: #131320; color: #F0F0F5; }
+    .ol-faq-field input:focus,
+    .ol-faq-field select:focus,
+    .ol-faq-field textarea:focus {
+      border-color: rgba(201,168,76,0.45);
+      background: rgba(201,168,76,0.04);
+    }
+    .ol-faq-field textarea { resize: vertical; min-height: 90px; }
+    .ol-faq-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    @media (max-width: 560px) { .ol-faq-form-row { grid-template-columns: 1fr; } }
+    .ol-faq-submit {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      width: 100%;
+      padding: 0.85rem 1.5rem;
+      background: #25D366;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      font-family: 'Inter', -apple-system, sans-serif;
+      color: #fff;
+      cursor: pointer;
+      margin-top: 0.5rem;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .ol-faq-submit:hover { background: #1ebe5a; transform: translateY(-1px); }
+    .ol-faq-form-note {
+      font-size: 11px;
+      color: rgba(240,240,245,0.3);
+      text-align: center;
+      margin-top: 0.65rem;
+      line-height: 1.5;
+    }
+  </style>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.mx/#organization","name":"OrigenLab","url":"https://origenlab.mx","logo":"https://origenlab.mx/logo.svg","description":"Agencia mexicana de desarrollo web. Sitios corporativos, e-commerce, landing pages y rediseño a medida.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressRegion":"CDMX","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","email":"hola@origenlab.mx","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.mx/#website","url":"https://origenlab.mx/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.mx/#organization"}},{"@type":"WebPage","@id":"https://origenlab.mx/servicios/tiendas-en-linea/#webpage","url":"https://origenlab.mx/servicios/tiendas-en-linea/","name":"Tiendas en Línea — E-commerce a la medida en México | OrigenLab","inLanguage":"es-MX","isPartOf":{"@id":"https://origenlab.mx/#website"},"about":{"@id":"https://origenlab.mx/servicios/tiendas-en-linea/#service"},"breadcrumb":{"@id":"https://origenlab.mx/servicios/tiendas-en-linea/#breadcrumb"}},{"@type":"Service","@id":"https://origenlab.mx/servicios/tiendas-en-linea/#service","serviceType":"E-commerce / Tiendas en Línea","name":"Tiendas en Línea — E-commerce a la medida","description":"Desarrollo de tiendas en línea en México con Shopify, WooCommerce o stack a medida. Pasarelas mexicanas — Mercado Pago, Stripe, Conekta y OXXO Pay — y checkout optimizado para conversión.","provider":{"@id":"https://origenlab.mx/#organization"},"areaServed":[{"@type":"Country","name":"México"},{"@type":"City","name":"Ciudad de México"},{"@type":"City","name":"Monterrey"},{"@type":"City","name":"Guadalajara"}],"audience":{"@type":"BusinessAudience","name":"Marcas y comercios en México"},"category":"E-commerce / Comercio electrónico","url":"https://origenlab.mx/servicios/tiendas-en-linea/","isRelatedTo":[{"@id":"https://origenlab.mx/servicios/desarrollo-web/#service"},{"@id":"https://origenlab.mx/servicios/landing-pages/#service"}],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Tipos de tienda","itemListElement":[{"@type":"OfferCatalog","name":"Shopify a medida"},{"@type":"OfferCatalog","name":"WooCommerce headless"},{"@type":"OfferCatalog","name":"E-commerce headless con Astro + Stripe"},{"@type":"OfferCatalog","name":"Catálogos B2B con autenticación y precios por cliente"}]}},{"@type":"BreadcrumbList","@id":"https://origenlab.mx/servicios/tiendas-en-linea/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.mx/"},{"@type":"ListItem","position":2,"name":"Servicios","item":"https://origenlab.mx/servicios/"},{"@type":"ListItem","position":3,"name":"Tiendas en Línea","item":"https://origenlab.mx/servicios/tiendas-en-linea/"}]},{"@type":"FAQPage","@id":"https://origenlab.mx/servicios/tiendas-en-linea/#faq","mainEntity":[{"@type":"Question","name":"¿Qué plataforma recomiendan para una tienda en línea?","acceptedAnswer":{"@type":"Answer","text":"Depende del volumen y del tipo de catálogo. Para catálogos pequeños (menos de 50 productos) desarrollamos a medida con Astro + Snipcart o Stripe Checkout. Para tiendas medianas recomendamos Shopify con tema custom. Para catálogos grandes o B2B, WooCommerce o Medusa headless. La recomendación se hace después de entender tu operación."}},{"@type":"Question","name":"¿Integran pasarelas de pago mexicanas?","acceptedAnswer":{"@type":"Answer","text":"Sí. Configuramos Mercado Pago, Stripe, Conekta y OpenPay. Incluimos OXXO Pay, SPEI, tarjeta de crédito/débito y meses sin intereses cuando la pasarela lo permite. Todo con checkout responsivo y certificado SSL."}},{"@type":"Question","name":"¿Incluyen la carga inicial de productos?","acceptedAnswer":{"@type":"Answer","text":"Sí. Cargamos un lote inicial de productos como parte del proyecto, con sus fichas, imágenes y categorías. Para catálogos grandes ofrecemos importación masiva desde CSV o Excel y mapeo de campos personalizado."}},{"@type":"Question","name":"¿Qué pasa con inventario, envíos y facturación?","acceptedAnswer":{"@type":"Answer","text":"Integramos con tu sistema actual o configuramos módulos de inventario nativos de la plataforma. Para envíos conectamos con Skydropx, Enviaya, t1Envios o la paquetería que ya uses. Facturación CFDI 4.0 vía Facturapi, Bind ERP o el proveedor de tu preferencia."}},{"@type":"Question","name":"¿Puedo administrar la tienda yo mismo?","acceptedAnswer":{"@type":"Answer","text":"Sí. Cada tienda incluye un panel de administración donde tu equipo puede dar de alta productos, gestionar pedidos, actualizar inventario, aplicar descuentos y revisar reportes de ventas — sin tocar código y desde cualquier dispositivo."}},{"@type":"Question","name":"¿La tienda está optimizada para vender desde el celular?","acceptedAnswer":{"@type":"Answer","text":"Sí. Diseñamos cada tienda mobile-first, con checkout corto, formularios optimizados, carga rápida y botones de acción claros. La gran mayoría del tráfico de e-commerce en México llega desde móvil, así que esa es la experiencia que priorizamos."}},{"@type":"Question","name":"¿Se conecta con mi sistema de inventario o ERP?","acceptedAnswer":{"@type":"Answer","text":"Sí. Integramos con sistemas como Microsip, Aspel, Contpaq, Bind ERP, Odoo o ERPs internos vía API REST o GraphQL. Si tu sistema no expone API, evaluamos sincronización por archivos planos, conectores intermedios o middleware a medida."}},{"@type":"Question","name":"¿Cómo es el proceso de pago?","acceptedAnswer":{"@type":"Answer","text":"Trabajamos con esquema de parcialidades: 50% al firmar la propuesta para arrancar y 50% contra entrega antes de pasar la tienda a producción. En proyectos grandes definimos hitos intermedios. Aceptamos transferencia bancaria y emitimos factura CFDI 4.0."}}]}]}</script>
+</head>
+<body>
+
+<a class="ol-skip-link" href="#main">Saltar al contenido</a>
+
+<!-- ============================================================
+     TOPBAR
+     ============================================================ -->
+<div class="ol-topbar">
+  <div class="ol-topbar-inner">
+    <div class="ol-topbar-left">
+      <a href="mailto:hola@origenlab.mx" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        hola@origenlab.mx
+      </a>
+      <span class="ol-topbar-sep"></span>
+      <a href="tel:+525547868402" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        +52 55 4786 8402
+      </a>
+    </div>
+    <div class="ol-topbar-center">
+      <span class="ol-topbar-promo">
+        <span class="ol-topbar-dot"></span>
+        Atención personalizada &nbsp;·&nbsp; Ciudad de México, México
+      </span>
+    </div>
+    <div class="ol-topbar-right">
+      <a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20una%20tienda%20en%20l%C3%ADnea" target="_blank" rel="noopener noreferrer" class="ol-topbar-wa">
+        <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor">
+          <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="ol-header" id="ol-header">
+  <div class="ol-header-inner">
+    <a href="/" class="ol-header-logo">
+      <img src="../../img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
+    </a>
+    <nav class="ol-nav" aria-label="Navegación principal">
+      <ul class="ol-nav-list">
+        <li><a href="/" class="ol-nav-link">Inicio</a></li>
+        <li class="ol-has-dropdown">
+          <a href="/servicios/" class="ol-nav-link active">
+            Servicios
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/servicios/desarrollo-web/" class="ol-dropdown-link">Desarrollo Web</a></li>
+              <li><a href="/servicios/tiendas-en-linea/" class="ol-dropdown-link">Tiendas en Línea</a></li>
+              <li><a href="/servicios/landing-pages/" class="ol-dropdown-link">Landing Pages</a></li>
+              <li><a href="/servicios/rediseno-web/" class="ol-dropdown-link">Rediseño Web</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="ol-has-dropdown">
+          <a href="/portafolio/" class="ol-nav-link">
+            Portafolio
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a></li>
+              <li class="ol-has-subdrop">
+                <a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link ol-dropdown-parent">Equipos Contra Incendios</a>
+                <div class="ol-subdrop">
+                  <ul>
+                    <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link">Gama de México</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="/nosotros/" class="ol-nav-link">Nosotros</a></li>
+        <li><a href="/blog/" class="ol-nav-link">Blog</a></li>
+        <li><a href="/contacto/" class="ol-nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="/cotizar/" class="ol-header-cta">Cotizar proyecto →</a>
+    <button class="ol-menu-toggle" id="ol-menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile overlay -->
+<div class="ol-mobile-overlay" id="ol-mobile-overlay"></div>
+
+<!-- Mobile panel -->
+<nav class="ol-mobile-panel" id="ol-mobile-panel" aria-label="Menú móvil">
+  <div class="ol-mobile-header">
+    <a href="/" class="ol-mobile-logo">
+      <img src="../../img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
+    </a>
+    <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú">
+      <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <ul class="ol-mobile-nav">
+    <li><a href="/" class="ol-mobile-link">Inicio</a></li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Servicios</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/servicios/desarrollo-web/" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Portafolio</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/portafolio/" class="ol-mobile-link ol-mobile-sublink">Todo el Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/" class="ol-mobile-link ol-mobile-sublink">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">Gama de México</a></li>
+      </ul>
+    </li>
+    <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
+    <li><a href="/blog/" class="ol-mobile-link">Blog</a></li>
+    <li><a href="/contacto/" class="ol-mobile-link">Contacto</a></li>
+  </ul>
+  <div class="ol-mobile-footer">
+    <a href="/cotizar/" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a>
+  </div>
+</nav>
+
+<!-- ============================================================
+     BREADCRUMB
+     ============================================================ -->
+<nav class="ol-bc-wrap" aria-label="Migas de pan">
+  <div class="ol-bc">
+    <ol class="ol-bc-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/" itemprop="item" class="ol-bc-home"><span itemprop="name">Inicio</span></a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/servicios/" itemprop="item"><span itemprop="name">Servicios</span></a>
+        <meta itemprop="position" content="2" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item ol-bc-current" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name">Tiendas en Línea</span>
+        <meta itemprop="position" content="3" />
+      </li>
+    </ol>
+  </div>
+</nav>
+
+<!-- ============================================================
+     MAIN
+     ============================================================ -->
+<main id="main">
+
+  <!-- ============== PAGE HERO ============== -->
+  <section class="ol-page-hero">
+    <div class="ol-page-hero-inner">
+      <div class="ol-page-hero-grid">
+
+        <div class="ol-page-hero-left">
+          <span class="ol-eyebrow">Servicio · Tiendas en Línea</span>
+          <h1 class="ol-page-hero-title">Tiendas en línea hechas para vender, no solo para mostrarse.</h1>
+          <p class="ol-page-hero-sub">Diseñamos y desarrollamos e-commerce a medida sobre Shopify, WooCommerce o stack propio — con pasarelas mexicanas integradas, panel de administración claro y un checkout pensado para reducir el abandono de carrito.</p>
+        </div>
+
+        <div class="ol-page-hero-right">
+          <p class="ol-page-hero-copy">Vender en línea va mucho más allá de subir productos a un catálogo. Cada tienda que entregamos pasa por una fase de descubrimiento real: entendemos tu producto, tu margen, tu logística y tu cliente antes de elegir plataforma o escribir código.</p>
+          <p class="ol-page-hero-copy">El resultado es una tienda que carga rápido, transmite confianza desde el primer scroll y está conectada con las pasarelas que tus clientes ya usan — Mercado Pago, Stripe, Conekta y OXXO Pay. Cada proyecto se entrega con productos cargados, capacitación a tu equipo y soporte post-lanzamiento incluido.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== QUICK NAV TOP ============== -->
+  <div class="ol-quicknav">
+    <div class="ol-quicknav-inner">
+
+      <a href="/servicios/desarrollo-web/" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Desarrollo Web</span>
+          <span class="ol-qn-sub">Sitios corporativos</span>
+        </span>
+      </a>
+
+      <a href="/servicios/tiendas-en-linea/" class="ol-qn-item" aria-current="page">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Tiendas en Línea</span>
+          <span class="ol-qn-sub">E-commerce · Pagos MX</span>
+        </span>
+      </a>
+
+      <a href="/servicios/landing-pages/" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Landing Pages</span>
+          <span class="ol-qn-sub">Alta conversión</span>
+        </span>
+      </a>
+
+      <a href="/servicios/rediseno-web/" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Rediseño Web</span>
+          <span class="ol-qn-sub">Moderniza tu sitio</span>
+        </span>
+      </a>
+
+      <a href="/portafolio/" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Portafolio</span>
+          <span class="ol-qn-sub">Proyectos realizados</span>
+        </span>
+      </a>
+
+      <a href="/nosotros/" class="ol-qn-item">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Nosotros</span>
+          <span class="ol-qn-sub">Equipo &amp; proceso</span>
+        </span>
+      </a>
+
+      <a href="/cotizar/" class="ol-qn-item ol-qn-cta">
+        <span class="ol-qn-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </span>
+        <span class="ol-qn-text">
+          <span class="ol-qn-title">Cotizar Proyecto</span>
+          <span class="ol-qn-sub">Solicitar propuesta</span>
+        </span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- ============== OVERVIEW ============== -->
+  <section class="ol-overview">
+    <div class="ol-overview-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Qué hacemos</span>
+          <h2 class="ol-section-title">E-commerce que convierte,<br>no solo que existe.</h2>
+          <p class="ol-section-sub">No montamos plantillas genéricas. Construimos tiendas que se ven impecables, cargan rápido y guían al usuario hasta el checkout sin fricciones.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Cada tienda combina diseño visual a medida, arquitectura técnica sólida y entendimiento del cliente mexicano. Configuramos pasarelas locales, ajustamos la estructura de catálogo según tu inventario real y dejamos un panel de administración con el que tu equipo se siente cómodo desde el primer día.</p>
+          <p class="ol-sh-copy">Nuestro objetivo no es entregarte una tienda; es entregarte una herramienta de venta. Por eso medimos velocidad, claridad de información, flujo de checkout y abandono de carrito antes de dar por cerrado un proyecto.</p>
+        </div>
+      </div>
+
+      <div class="ol-overview-grid" style="margin-top:4rem;">
+        <div class="ol-overview-img">
+          <img src="../../img/servicios/tiendas-en-linea.avif" alt="Tiendas en línea profesionales — OrigenLab" width="1200" height="900" loading="lazy" decoding="async">
+        </div>
+        <div class="ol-overview-text">
+          <span class="ol-eyebrow">Tiendas listas para vender desde el día uno</span>
+          <h3 class="ol-overview-title">Diseño, tecnología y pagos mexicanos pensados juntos.</h3>
+          <p>Una tienda en línea profesional no es solo un catálogo bonito. Es un canal de venta que tiene que cargar rápido, generar confianza, mostrar bien el producto y, sobre todo, <strong>cobrar sin fricción</strong> con las pasarelas que tu cliente realmente usa en México.</p>
+          <p>En OrigenLab desarrollamos tu tienda con la plataforma correcta para tu caso — Shopify, WooCommerce o stack a medida con Astro, Next.js y Stripe. Diseño propio, no temas comprados. Configuración profesional de pasarelas, envíos, inventario y facturación 4.0.</p>
+          <p>Lo que recibes al final es una tienda <strong>sólida, rápida y propia</strong> — lista para escalar con tu negocio.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== FEATURES ============== -->
+  <section class="ol-features">
+    <div class="ol-features-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Lo que entregamos</span>
+          <h2 class="ol-section-title">Cada tienda incluye,<br>sin extras escondidos.</h2>
+          <p class="ol-section-sub">Trabajamos con alcance claro y completo. Estos son los pilares que vienen siempre — no son opcionales, son la línea base de un e-commerce que vale lo que cuesta.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Nuestra propuesta se presenta por escrito antes de arrancar: pantallas, funcionalidades, integraciones de pago, módulos de inventario, calendario y entregables. Lo que ves en la propuesta es exactamente lo que recibes.</p>
+          <p class="ol-sh-copy">No cobramos &quot;extra&quot; por versión móvil, configuración SSL o integración de WhatsApp. Todo eso está incluido. Los únicos costos adicionales son las funcionalidades que se definan como extensión en la fase de descubrimiento.</p>
+        </div>
+      </div>
+
+      <div class="ol-features-grid" style="margin-top:4rem;">
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Catálogo bien estructurado</h3>
+          <p class="ol-feature-desc">Categorías, filtros, búsqueda inteligente, variantes de producto (talla, color, modelo) y fichas con galería de imágenes optimizadas en AVIF/WebP.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M2 10h20"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Pasarelas mexicanas</h3>
+          <p class="ol-feature-desc">Mercado Pago, Stripe, Conekta, OpenPay y OXXO Pay. Tarjeta, SPEI, efectivo y meses sin intereses cuando la pasarela lo permite.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11H5a2 2 0 00-2 2v7a2 2 0 002 2h14a2 2 0 002-2v-7a2 2 0 00-2-2h-4"/><path d="M9 7l3-3 3 3"/><path d="M12 4v12"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Checkout corto y claro</h3>
+          <p class="ol-feature-desc">Proceso de compra optimizado para reducir el abandono de carrito: un solo paso cuando se puede, validación cuidada y resúmen visible siempre.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Mobile-first real</h3>
+          <p class="ol-feature-desc">Más del 70% de las compras en México llegan desde celular. Diseñamos cada tienda pensando primero en el móvil y después escalando a desktop.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M8 21H3v-5"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Envíos integrados</h3>
+          <p class="ol-feature-desc">Cotización automática y guías con Skydropx, Enviaya, FedEx, Estafeta o DHL — y soporte para envíos locales con tu propia logística.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Inventario y variantes</h3>
+          <p class="ol-feature-desc">Control de stock por SKU, variantes ilimitadas, alertas de inventario bajo y conexión opcional con tu ERP o sistema de almacén.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Facturación 4.0</h3>
+          <p class="ol-feature-desc">Conexión con Facturapi, SW Sapien o el PAC que ya uses para emitir CFDI 4.0 en automático tras cada compra completada.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3 class="ol-feature-title">WhatsApp + soporte</h3>
+          <p class="ol-feature-desc">Botón flotante de atención por WhatsApp, links pre-rellenados desde la ficha de producto y plantillas de respuesta para tu equipo de ventas.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== STACK TECNOLÓGICO ============== -->
+  <section class="ol-stack">
+    <div class="ol-stack-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Stack tecnológico</span>
+          <h2 class="ol-section-title">La plataforma correcta<br>para cada tipo de tienda.</h2>
+          <p class="ol-section-sub">No vendemos siempre la misma plataforma &quot;porque sí&quot;. La elegimos en función de tu volumen de productos, tu equipo y la complejidad de tu logística.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Para catálogos pequeños y márgenes ajustados, una tienda a medida con Astro + Stripe o Snipcart suele ser la mejor opción. Para catálogos medianos donde el cliente quiere autonomía total para administrar productos, Shopify es difícil de superar. Para catálogos grandes, B2B o tiendas con reglas de negocio complejas, recurrimos a WooCommerce o Medusa headless.</p>
+          <p class="ol-sh-copy">Lo importante no es la plataforma; es elegir la que tenga sentido para tu operación. Te explicamos las ventajas y desventajas de cada una, sin sesgo, antes de proponer una arquitectura.</p>
+        </div>
+      </div>
+
+      <div class="ol-stack-grid" style="margin-top:4rem;">
+        <div class="ol-stack-item"><p class="ol-stack-cat">Plataforma</p><h3 class="ol-stack-tech">Shopify</h3><p class="ol-stack-desc">Tiendas medianas con admin amigable y tema custom.</p></div>
+        <div class="ol-stack-item"><p class="ol-stack-cat">Plataforma</p><h3 class="ol-stack-tech">WooCommerce</h3><p class="ol-stack-desc">Catálogos grandes, B2B y reglas de negocio complejas.</p></div>
+        <div class="ol-stack-item"><p class="ol-stack-cat">Headless</p><h3 class="ol-stack-tech">Medusa · Astro</h3><p class="ol-stack-desc">E-commerce headless ultra rápido para catálogos a medida.</p></div>
+        <div class="ol-stack-item"><p class="ol-stack-cat">Pagos</p><h3 class="ol-stack-tech">Stripe · Mercado Pago</h3><p class="ol-stack-desc">Pasarelas líderes en México para tarjeta, SPEI y OXXO Pay.</p></div>
+        <div class="ol-stack-item"><p class="ol-stack-cat">Envíos</p><h3 class="ol-stack-tech">Skydropx · Enviaya</h3><p class="ol-stack-desc">Cotización automática y generación de guías multi-paquetería.</p></div>
+        <div class="ol-stack-item"><p class="ol-stack-cat">Hosting</p><h3 class="ol-stack-tech">Vercel · Cloudflare</h3><p class="ol-stack-desc">Edge global, SSL automático y deploys instantáneos.</p></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== TIPOS DE PROYECTO ============== -->
+  <section class="ol-types">
+    <div class="ol-types-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Para quién es</span>
+          <h2 class="ol-section-title">Tiendas en las que<br>trabajamos habitualmente.</h2>
+          <p class="ol-section-sub">El e-commerce a medida tiene sentido cuando lo que estás vendiendo importa: tu producto, tu marca y la experiencia que reciben tus clientes en cada compra.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Trabajamos con marcas mexicanas en sectores tan distintos como moda, alimentos, decoración, productos artesanales, suplementos, tecnología y consumibles B2B. Lo que tienen en común es la necesidad de una tienda que represente bien a la marca y reduzca la fricción de compra.</p>
+          <p class="ol-sh-copy">Si tu proyecto no cae exactamente en alguna de estas categorías, escríbenos. Prácticamente cualquier tipo de tienda en línea entra dentro de nuestro scope.</p>
+        </div>
+      </div>
+
+      <div class="ol-types-grid" style="margin-top:4rem;">
+
+        <article class="ol-type-card">
+          <p class="ol-type-num">01</p>
+          <h3 class="ol-type-title">Tienda boutique</h3>
+          <p class="ol-type-desc">Marcas pequeñas con catálogos enfocados (10 a 50 SKUs) que necesitan una tienda visualmente fuerte, con identidad propia y experiencia de compra cuidada.</p>
+          <div class="ol-type-meta"><span>Productos</span><strong>10 — 50</strong></div>
+        </article>
+
+        <article class="ol-type-card">
+          <p class="ol-type-num">02</p>
+          <h3 class="ol-type-title">Tienda mediana</h3>
+          <p class="ol-type-desc">Negocios con catálogo activo (50 a 300 SKUs), variantes, promociones y necesidad de administrar productos y pedidos sin depender del desarrollador.</p>
+          <div class="ol-type-meta"><span>Productos</span><strong>50 — 300</strong></div>
+        </article>
+
+        <article class="ol-type-card">
+          <p class="ol-type-num">03</p>
+          <h3 class="ol-type-title">Catálogo grande</h3>
+          <p class="ol-type-desc">Tiendas con cientos o miles de productos, importación masiva, filtros avanzados y conexión con sistemas de inventario o ERPs externos.</p>
+          <div class="ol-type-meta"><span>Productos</span><strong>300 +</strong></div>
+        </article>
+
+        <article class="ol-type-card">
+          <p class="ol-type-num">04</p>
+          <h3 class="ol-type-title">B2B / mayoreo</h3>
+          <p class="ol-type-desc">Portales de venta a distribuidores con precios por nivel, listas personalizadas, pedidos por volumen y cuentas de cliente con historial de compra.</p>
+          <div class="ol-type-meta"><span>Modelo</span><strong>B2B</strong></div>
+        </article>
+
+        <article class="ol-type-card">
+          <p class="ol-type-num">05</p>
+          <h3 class="ol-type-title">Producto único / DTC</h3>
+          <p class="ol-type-desc">Tiendas mono-producto o de pocas referencias, perfectas para lanzamientos DTC, suscripciones y campañas de marketing performance.</p>
+          <div class="ol-type-meta"><span>Productos</span><strong>1 — 5</strong></div>
+        </article>
+
+        <article class="ol-type-card">
+          <p class="ol-type-num">06</p>
+          <h3 class="ol-type-title">Headless / a medida</h3>
+          <p class="ol-type-desc">Cuando necesitas máxima velocidad, integración con tu CMS, ERP o app móvil, o experiencia de compra muy específica que ningún builder estándar resuelve.</p>
+          <div class="ol-type-meta"><span>Pantallas</span><strong>A medida</strong></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== PROCESO 4 PASOS ============== -->
+  <section class="ol-svc-process">
+    <div class="ol-svc-process-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Cómo trabajamos</span>
+          <h2 class="ol-section-title">Un proceso claro,<br>sin sorpresas.</h2>
+          <p class="ol-section-sub">El cliente sabe qué pasa, qué sigue y cuándo. Cuatro fases bien definidas, calendario por escrito y entregables visibles en cada paso.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">No aceptamos proyectos de tienda en línea sin una fase de descubrimiento real. Antes de elegir plataforma o abrir el editor, mapeamos tu catálogo, tu logística, tus márgenes y los puntos de fricción del cliente para dimensionar bien el proyecto.</p>
+          <p class="ol-sh-copy">Tienes acceso a la tienda en un entorno de pruebas, con productos reales y pasarela en modo sandbox — para ver el avance en vivo, no maquetas estáticas.</p>
+        </div>
+      </div>
+
+      <div class="ol-svc-process-steps" style="margin-top:4rem;">
+
+        <div class="ol-svc-process-step">
+          <div class="ol-svc-process-num">1</div>
+          <h3 class="ol-svc-process-title">Descubrimiento</h3>
+          <p class="ol-svc-process-desc">Sesión inicial para entender producto, catálogo, logística y márgenes. Definimos plataforma, alcance, flujos de checkout y entregables por escrito.</p>
+        </div>
+
+        <div class="ol-svc-process-step">
+          <div class="ol-svc-process-num">2</div>
+          <h3 class="ol-svc-process-title">Diseño visual</h3>
+          <p class="ol-svc-process-desc">Sistema de diseño, prototipo navegable de home, listado, ficha de producto, carrito y checkout. Iteración hasta dejar la dirección visual aprobada.</p>
+        </div>
+
+        <div class="ol-svc-process-step">
+          <div class="ol-svc-process-num">3</div>
+          <h3 class="ol-svc-process-title">Desarrollo &amp; carga</h3>
+          <p class="ol-svc-process-desc">Implementación con la plataforma elegida, integración de pasarelas en sandbox, carga inicial de productos y pruebas internas.</p>
+        </div>
+
+        <div class="ol-svc-process-step">
+          <div class="ol-svc-process-num">4</div>
+          <h3 class="ol-svc-process-title">Lanzamiento</h3>
+          <p class="ol-svc-process-desc">QA cruzado, pasarelas en producción, hosting y dominio configurados, capacitación al equipo y go-live. Soporte post-entrega incluido.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== PROPUESTA ============== -->
+  <section class="ol-pricing">
+    <div class="ol-pricing-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Cómo cotizamos</span>
+          <h2 class="ol-section-title">Propuesta a la medida,<br>sin sorpresas.</h2>
+          <p class="ol-section-sub">Cada tienda se cotiza en función de su alcance real: número de productos, integraciones de pasarelas y envíos, complejidad de catálogo y nivel de personalización visual.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Todas las propuestas incluyen alcance detallado y entregables por escrito antes de arrancar. No hay cargos ocultos ni &quot;este extra te cuesta más&quot; a mitad del proyecto.</p>
+          <p class="ol-sh-copy">Emitimos factura, aceptamos transferencia y depósito, y trabajamos con esquema de parcialidades para que el riesgo sea compartido.</p>
+        </div>
+      </div>
+
+      <div class="ol-pricing-card" style="margin-top:4rem;">
+        <div class="ol-pricing-left">
+          <p class="ol-pricing-label">Tiendas en Línea · Propuesta personalizada</p>
+          <p class="ol-pricing-blurb">Cuéntanos qué necesitas y te enviamos una cotización clara con alcance, entregables y plataforma recomendada — sin compromiso.</p>
+          <a href="/cotizar/" class="ol-pricing-cta">
+            Solicitar propuesta
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+        <div class="ol-pricing-right">
+          <p class="ol-pricing-includes-title">Incluido en todas las tiendas</p>
+          <ul class="ol-pricing-includes-list">
+            <li>Diseño visual a medida</li>
+            <li>Catálogo, carrito y checkout</li>
+            <li>Versión móvil optimizada</li>
+            <li>Pasarela de pago configurada</li>
+            <li>Panel de administración</li>
+            <li>Hosting + dominio + SSL</li>
+            <li>Capacitación al equipo</li>
+            <li>Soporte post-entrega</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== SHOWCASE CROSS-SELL ============== -->
+  <section class="ol-showcase">
+    <div class="ol-showcase-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Otros servicios</span>
+          <h2 class="ol-section-title">¿Tu proyecto es<br>algo distinto?</h2>
+          <p class="ol-section-sub">Si tu caso cae en otra categoría, también podemos ayudarte. Cada servicio tiene su propia metodología y alcance, pero comparten el mismo nivel de cuidado.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Todos nuestros servicios comparten los mismos principios: diseño a medida, tecnología moderna, código limpio y una inversión clara sin sorpresas. Lo que cambia es el tipo de proyecto y el alcance de la entrega.</p>
+          <p class="ol-sh-copy">Si tienes dudas sobre cuál encaja mejor con lo que necesitas, podemos platicarlo por WhatsApp o en una llamada breve — y en unos minutos te indicamos cuál es el camino correcto.</p>
+        </div>
+      </div>
+
+      <div class="ol-showcase-block" style="padding-top:5rem;">
+        <div class="ol-showcase-img">
+          <div class="ol-showcase-img-label">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            <span>Imagen próximamente</span>
+          </div>
+        </div>
+        <div class="ol-showcase-info">
+          <p class="ol-showcase-num">01 — Desarrollo Web</p>
+          <h3 class="ol-showcase-title">Sitios corporativos a medida con tecnologías modernas.</h3>
+          <p class="ol-showcase-desc">Sitios web profesionales para empresas mexicanas que necesitan presencia digital sólida — sin tienda en línea de por medio. Diseño propio, código limpio y velocidad real con Astro o Next.js.</p>
+          <ul class="ol-showcase-list">
+            <li>Diseño visual a medida — nada de plantillas ni page builders</li>
+            <li>Stack moderno — Astro, Next.js, React, TypeScript</li>
+            <li>Velocidad real medida y optimización de Core Web Vitals</li>
+            <li>Integración con WhatsApp, formularios y CRM</li>
+          </ul>
+          <a href="/servicios/desarrollo-web/" class="ol-showcase-cta">Ver Desarrollo Web →</a>
+        </div>
+      </div>
+
+      <div class="ol-showcase-block">
+        <div class="ol-showcase-img">
+          <div class="ol-showcase-img-label">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            <span>Imagen próximamente</span>
+          </div>
+        </div>
+        <div class="ol-showcase-info">
+          <p class="ol-showcase-num">02 — Landing Pages</p>
+          <h3 class="ol-showcase-title">Páginas de aterrizaje de alta conversión.</h3>
+          <p class="ol-showcase-desc">Landings para campañas pagadas, lanzamientos o productos específicos. Diseño orientado a conversión, copy estratégico, integración con Google Ads y Meta.</p>
+          <ul class="ol-showcase-list">
+            <li>Estructura probada para maximizar conversión</li>
+            <li>Copy estratégico incluido en el proyecto</li>
+            <li>Integración con Google Ads, Meta Ads y píxeles</li>
+            <li>Velocidad de carga optimizada</li>
+          </ul>
+          <a href="/servicios/landing-pages/" class="ol-showcase-cta">Ver Landing Pages →</a>
+        </div>
+      </div>
+
+      <div class="ol-showcase-block">
+        <div class="ol-showcase-img">
+          <div class="ol-showcase-img-label">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            <span>Imagen próximamente</span>
+          </div>
+        </div>
+        <div class="ol-showcase-info">
+          <p class="ol-showcase-num">03 — Rediseño Web</p>
+          <h3 class="ol-showcase-title">Moderniza tu tienda o sitio sin perder lo que funciona.</h3>
+          <p class="ol-showcase-desc">¿Ya tienes una tienda o un sitio que se siente lento, viejo o que no convierte? Lo rediseñamos a fondo respetando tu contenido, mejorando el rendimiento y actualizando el diseño sin perder lo que ya está dando resultados.</p>
+          <ul class="ol-showcase-list">
+            <li>Auditoría de diseño, velocidad, usabilidad y estructura</li>
+            <li>Rediseño visual completo alineado a identidad de marca</li>
+            <li>Migración de contenido y productos sin pérdida de datos</li>
+            <li>Acompañamiento post-lanzamiento incluido</li>
+          </ul>
+          <a href="/servicios/rediseno-web/" class="ol-showcase-cta">Ver Rediseño Web →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== FAQ + FORM ============== -->
+  <section class="ol-faq-section">
+    <div class="ol-faq-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Preguntas Frecuentes</span>
+          <h2 class="ol-section-title">Todo lo que normalmente<br>nos preguntan.</h2>
+          <p class="ol-section-sub">Resolvemos las dudas más comunes sobre el servicio de tiendas en línea. ¿No encuentras tu respuesta? Escríbenos directo por WhatsApp.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Sabemos que abrir una tienda en línea implica decisiones importantes: plataforma, pasarelas, logística y costos operativos. Por eso reunimos aquí las preguntas que más nos hacen antes de arrancar — sobre tiempos, integraciones y qué incluye cada entrega.</p>
+          <p class="ol-sh-copy">Si tu pregunta no está aquí, escríbenos por WhatsApp. Te leemos personalmente y respondemos con propuestas claras y por escrito.</p>
+        </div>
+      </div>
+
+      <div class="ol-faq-grid">
+
+        <!-- Columna izquierda: Acordeón FAQ -->
+        <div>
+          <p class="ol-faq-col-label">Preguntas frecuentes</p>
+          <div class="ol-faq-list" id="ol-faq-list-te">
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="te0">
+                ¿Qué plataforma recomiendan para una tienda en línea?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-te0">
+                <p class="ol-faq-answer-inner">Depende del volumen y del tipo de catálogo. Para catálogos pequeños (menos de 50 productos) desarrollamos a medida con Astro + Snipcart o Stripe. Para tiendas medianas recomendamos Shopify custom. Para catálogos grandes o B2B, WooCommerce o Medusa headless. En la primera llamada te explicamos las ventajas y desventajas de cada una para tu caso.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="te1">
+                ¿Integran pasarelas de pago mexicanas?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-te1">
+                <p class="ol-faq-answer-inner">Sí. Configuramos Mercado Pago, Stripe, Conekta y OpenPay. Incluimos OXXO Pay, SPEI, tarjeta de crédito/débito y meses sin intereses cuando la pasarela lo permite. Te ayudamos a elegir la pasarela con mejores comisiones según tu ticket promedio y volumen mensual estimado.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="te4">
+                ¿Incluyen la carga inicial de productos?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-te4">
+                <p class="ol-faq-answer-inner">Sí. Cargamos los primeros productos contigo como parte del proyecto. Para catálogos grandes ofrecemos importación masiva desde CSV o Excel y, si tienes ERP o sistema de inventario, sincronización automática vía API.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="te5">
+                ¿Qué pasa con inventario, envíos y facturación?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-te5">
+                <p class="ol-faq-answer-inner">Integramos con tu sistema actual o configuramos los módulos de inventario propios de la plataforma. Para envíos conectamos con Skydropx, Enviaya o la paquetería que ya uses (FedEx, Estafeta, DHL). Para facturación CFDI 4.0 nos conectamos con Facturapi, SW Sapien o el PAC que prefieras.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="te9">
+                ¿La tienda está optimizada para vender desde el celular?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-te9">
+                <p class="ol-faq-answer-inner">Sí. Diseñamos cada tienda mobile-first, con checkout corto, formularios optimizados, carga rápida y botones de acción claros. La gran mayoría del tráfico de e-commerce en México llega desde móvil, así que esa es la experiencia que priorizamos en el diseño.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="te6">
+                ¿Cómo es el proceso de pago del proyecto?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-te6">
+                <p class="ol-faq-answer-inner">Dividimos el proyecto en dos pagos: 50% al firmar la propuesta para arrancar y 50% contra entrega antes de pasar la tienda a producción. En proyectos grandes podemos definir hitos intermedios. Aceptamos transferencia, depósito y emitimos factura.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="te7">
+                ¿Yo puedo administrar la tienda después?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-te7">
+                <p class="ol-faq-answer-inner">Sí. Cada tienda incluye un panel de administración donde tu equipo puede dar de alta productos, gestionar pedidos, actualizar inventario y revisar reportes de ventas, sin tocar código. Antes del go-live capacitamos a tu equipo con sesiones grabadas y manual de uso.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="te8">
+                ¿Pueden conectar la tienda con mi ERP o sistema de inventario?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-te8">
+                <p class="ol-faq-answer-inner">Sí. Integramos con sistemas como Microsip, Aspel, Contpaq, Bind ERP, Odoo o ERPs internos vía API. Si tu sistema no expone API, evaluamos sincronización por archivos planos o conectores intermedios. La complejidad de la integración se evalúa en la fase de descubrimiento.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Columna derecha: Formulario WhatsApp -->
+        <div>
+          <div class="ol-faq-form-wrap">
+            <span class="ol-faq-form-badge">
+              <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+              Contáctanos por WhatsApp
+            </span>
+            <h3 class="ol-faq-form-title">¿Listo para arrancar<br>tu tienda en línea?</h3>
+            <p class="ol-faq-form-sub">Cuéntanos brevemente qué necesitas y te respondemos con una propuesta clara, por escrito y sin compromiso.</p>
+
+            <form class="ol-faq-form" id="ol-wa-form-te" novalidate>
+              <div class="ol-faq-form-row">
+                <div class="ol-faq-field">
+                  <label for="te-nombre">Tu nombre</label>
+                  <input type="text" id="te-nombre" placeholder="Ej. Carlos García" autocomplete="given-name">
+                </div>
+                <div class="ol-faq-field">
+                  <label for="te-empresa">Empresa / Marca</label>
+                  <input type="text" id="te-empresa" placeholder="Nombre de tu negocio">
+                </div>
+              </div>
+              <div class="ol-faq-field">
+                <label for="te-tipo">Tipo de tienda</label>
+                <select id="te-tipo">
+                  <option value="" disabled selected>Selecciona una opción</option>
+                  <option value="Tienda boutique">Tienda boutique (10 — 50 productos)</option>
+                  <option value="Tienda mediana">Tienda mediana (50 — 300 productos)</option>
+                  <option value="Catálogo grande">Catálogo grande (300+ productos)</option>
+                  <option value="B2B / mayoreo">B2B / mayoreo</option>
+                  <option value="Producto único / DTC">Producto único / DTC</option>
+                  <option value="Headless / a medida">Headless / a medida</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+              <div class="ol-faq-field">
+                <label for="te-mensaje">¿Qué necesitas?</label>
+                <textarea id="te-mensaje" placeholder="Describe brevemente tu proyecto: número de productos aproximado, pasarelas de pago, integraciones..."></textarea>
+              </div>
+              <button type="submit" class="ol-faq-submit">
+                <svg width="17" height="17" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+                Enviar por WhatsApp
+              </button>
+              <p class="ol-faq-form-note">Al enviar, se abrirá WhatsApp con tu mensaje listo. Te respondemos personalmente.</p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+  (function() {
+    var btns = document.querySelectorAll('#ol-faq-list-te .ol-faq-question');
+    btns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var idx = btn.getAttribute('data-faq');
+        var answer = document.getElementById('faq-ans-' + idx);
+        var isOpen = btn.classList.contains('active');
+        btns.forEach(function(b) {
+          b.classList.remove('active');
+          var a = document.getElementById('faq-ans-' + b.getAttribute('data-faq'));
+          if (a) a.style.maxHeight = null;
+        });
+        if (!isOpen && answer) {
+          btn.classList.add('active');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+    var teForm = document.getElementById('ol-wa-form-te');
+    if (teForm) {
+      teForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var nombre  = document.getElementById('te-nombre').value.trim();
+        var empresa = document.getElementById('te-empresa').value.trim();
+        var tipo    = document.getElementById('te-tipo').value;
+        var mensaje = document.getElementById('te-mensaje').value.trim();
+        var partes  = ['Hola OrigenLab, me contacto desde la página de Tiendas en Línea.'];
+        if (nombre)  partes.push('*Nombre:* ' + nombre);
+        if (empresa) partes.push('*Empresa:* ' + empresa);
+        if (tipo)    partes.push('*Tipo de tienda:* ' + tipo);
+        if (mensaje) partes.push('*Descripción:* ' + mensaje);
+        partes.push('Me gustaría recibir una propuesta. ¡Gracias!');
+        var url = 'https://wa.me/525547868402?text=' + encodeURIComponent(partes.join('\n'));
+        window.open(url, '_blank', 'noopener,noreferrer');
+      });
+    }
+  })();
+  </script>
+
+  <!-- ============== QUICK NAV BOTTOM ============== -->
+  <div class="ol-quicknav">
+    <div class="ol-quicknav-inner">
+      <a href="/servicios/desarrollo-web/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Desarrollo Web</span>
+          <span class="ol-qn-sub">Sitios corporativos</span>
+        </div>
+      </a>
+      <a href="/servicios/tiendas-en-linea/" class="ol-qn-item" aria-current="page">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Tiendas en Línea</span>
+          <span class="ol-qn-sub">Estás aquí</span>
+        </div>
+      </a>
+      <a href="/servicios/landing-pages/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Landing Pages</span>
+          <span class="ol-qn-sub">Más leads, más ventas</span>
+        </div>
+      </a>
+      <a href="/servicios/rediseno-web/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Rediseño Web</span>
+          <span class="ol-qn-sub">Actualiza tu presencia</span>
+        </div>
+      </a>
+      <a href="/portafolio/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Portafolio</span>
+          <span class="ol-qn-sub">Ve lo que construimos</span>
+        </div>
+      </a>
+      <a href="/nosotros/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Nosotros</span>
+          <span class="ol-qn-sub">Quiénes somos</span>
+        </div>
+      </a>
+      <a href="/cotizar/" class="ol-qn-item ol-qn-cta">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Iniciar Proyecto</span>
+          <span class="ol-qn-sub">Solicitar propuesta</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="ol-footer">
+  <div class="ol-footer-top">
+    <a href="/" class="ol-footer-logo">
+      Origen<span class="ol-footer-logo-dot">.</span>Lab
+    </a>
+    <p class="ol-footer-tagline">
+      Agencia de desarrollo web en México.<br>
+      Creamos sitios que generan resultados.
+    </p>
+    <ul class="ol-footer-contact-list">
+      <li>
+        <a href="mailto:hola@origenlab.mx" class="ol-fcl-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          hola@origenlab.mx
+        </a>
+      </li>
+      <li>
+        <a href="tel:+525547868402" class="ol-fcl-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +52 55 4786 8402
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/525547868402" target="_blank" rel="noopener noreferrer" class="ol-fcl-item ol-fcl-wa">
+          <svg width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+          WhatsApp
+        </a>
+      </li>
+      <li>
+        <span class="ol-fcl-item ol-fcl-static">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Ciudad de México, MX
+        </span>
+      </li>
+    </ul>
+  </div>
+  <div class="ol-footer-links">
+    <div>
+      <p class="ol-footer-col-title">Servicios</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/servicios/desarrollo-web/">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/">Rediseño Web</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Empresa</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/nosotros/">Nosotros</a></li>
+        <li><a href="/portafolio/">Portafolio</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/cotizar/">Cotizar proyecto</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Contacto</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/contacto/">Formulario de contacto</a></li>
+        <li><a href="mailto:hola@origenlab.mx">hola@origenlab.mx</a></li>
+        <li><a href="tel:+525547868402">+52 55 4786 8402</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Legal</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/aviso-de-privacidad/">Aviso de privacidad</a></li>
+        <li><a href="/terminos/">Términos de servicio</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ol-footer-bottom">
+    <p class="ol-footer-copy">© 2026 OrigenLab. Todos los derechos reservados.</p>
+    <div class="ol-footer-legal">
+      <a href="/aviso-de-privacidad/">Privacidad</a>
+      <a href="/terminos/">Términos</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WA Bubble -->
+<a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20una%20tienda%20en%20l%C3%ADnea.%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" class="wa-bubble" aria-label="Contáctanos por WhatsApp">
+  <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff">
+    <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 0 0 2.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0 0 16.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"></path>
+  </svg>
+</a>
+
+<!-- ============================================================
+     SCRIPTS (menu)
+     ============================================================ -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var toggle   = document.getElementById('ol-menu-toggle');
+    var panel    = document.getElementById('ol-mobile-panel');
+    var overlay  = document.getElementById('ol-mobile-overlay');
+    var closeBtn = document.getElementById('ol-mobile-close');
+    var header   = document.getElementById('ol-header');
+
+    function openMenu() {
+      toggle.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+      panel.classList.add('open');
+      overlay.classList.add('visible');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      panel.classList.remove('open');
+      overlay.classList.remove('visible');
+      document.body.style.overflow = '';
+    }
+
+    if (toggle)   toggle.addEventListener('click', function () { panel.classList.contains('open') ? closeMenu() : openMenu(); });
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    if (overlay)  overlay.addEventListener('click', closeMenu);
+
+    var mobileLinks = panel ? panel.querySelectorAll('a') : [];
+    for (var i = 0; i < mobileLinks.length; i++) mobileLinks[i].addEventListener('click', closeMenu);
+
+    var subToggles = document.querySelectorAll('[data-submenu]');
+    for (var j = 0; j < subToggles.length; j++) {
+      subToggles[j].addEventListener('click', function () {
+        this.classList.toggle('expanded');
+        var sub = this.nextElementSibling;
+        if (sub) sub.classList.toggle('open');
+      });
+    }
+
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 10) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    }, { passive: true });
+  });
+</script>
+
+</body>
+</html>

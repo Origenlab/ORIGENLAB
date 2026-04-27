@@ -1,0 +1,353 @@
+<!DOCTYPE html><html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Términos de servicio — OrigenLab</title>
+<meta name="description" content="Términos y condiciones de contratación de servicios de desarrollo web con OrigenLab: cotizaciones, pagos, entregables, propiedad intelectual y soporte.">
+<link rel="canonical" href="https://origenlab.mx/terminos/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://origenlab.mx/terminos/">
+<meta property="og:title" content="Términos de servicio — OrigenLab">
+<meta property="og:description" content="Términos de contratación: cotización, anticipo, entregas, propiedad intelectual y soporte.">
+<meta property="og:image" content="https://origenlab.mx/og-image.jpg">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="OrigenLab">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Términos · OrigenLab">
+<meta name="twitter:description" content="Condiciones de contratación de servicios de desarrollo web.">
+<meta name="twitter:image" content="https://origenlab.mx/og-image.jpg">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+<link rel="stylesheet" href="../_astro/BaseLayout.xeR8R953.css?v20260426c">
+<link rel="stylesheet" href="../_astro/premium-dark.css?v20260426c">
+<script src="../_astro/ol-header.js?v20260426d" defer></script>
+<style>
+  .legal-wrap{max-width:780px;margin:0 auto;padding:calc(var(--section-py,4rem) / 2) 1.25rem;color:var(--text,#1a1a1f);line-height:1.75}
+  .legal-wrap h1{font-size:clamp(2rem,4vw,2.75rem);font-weight:800;letter-spacing:-.02em;margin:0 0 .75rem}
+  .legal-wrap .eyebrow{display:inline-block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent,#C9A84C);font-weight:600;margin-bottom:.5rem}
+  .legal-wrap .last-upd{color:var(--text-muted,#6a6a75);font-size:.95rem;margin-bottom:2rem}
+  .legal-wrap h2{font-size:1.4rem;font-weight:700;margin:2.5rem 0 .75rem;letter-spacing:-.01em}
+  .legal-wrap h3{font-size:1.1rem;font-weight:700;margin:1.75rem 0 .5rem}
+  .legal-wrap p,.legal-wrap li{font-size:1rem;color:var(--text,#2a2a35)}
+  .legal-wrap ul{padding-left:1.25rem;margin:.75rem 0 1.25rem}
+  .legal-wrap li{margin:.35rem 0}
+  .legal-wrap a{color:var(--accent,#C9A84C);text-decoration:underline;text-underline-offset:2px}
+  .legal-wrap .callout{background:var(--bg-alt,#f6f6f8);border-left:3px solid var(--accent,#C9A84C);padding:1rem 1.25rem;border-radius:6px;margin:1.5rem 0}
+  .gracias-hero{text-align:center;padding:6rem 1.25rem 4rem;max-width:640px;margin:0 auto}
+  .gracias-hero .check{width:72px;height:72px;border-radius:50%;background:#E8F5EC;display:inline-flex;align-items:center;justify-content:center;margin-bottom:1.25rem}
+  .gracias-hero h1{font-size:clamp(2rem,5vw,3rem);font-weight:800;letter-spacing:-.02em;margin:0 0 .75rem;color:var(--text,#1a1a1f)}
+  .gracias-hero p{font-size:1.125rem;color:var(--text-muted,#5a5a65);margin:0 0 2rem;line-height:1.65}
+  .gracias-hero .actions{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap}
+  .gracias-hero .btn{display:inline-block;padding:.85rem 1.5rem;border-radius:980px;font-weight:600;text-decoration:none;font-size:.95rem;transition:transform .15s,background .15s}
+  .gracias-hero .btn-primary{background:var(--accent,#C9A84C);color:#fff}
+  .gracias-hero .btn-primary:hover{background:var(--accent-hover,#B89540);transform:translateY(-1px)}
+  .gracias-hero .btn-outline{background:transparent;color:var(--text,#1a1a1f);border:1px solid var(--border,#d8d8e0)}
+  .gracias-hero .btn-outline:hover{background:var(--bg-alt,#f6f6f8)}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"WebPage","url":"https://origenlab.mx/terminos/","name":"Términos de servicio — OrigenLab","inLanguage":"es-MX","isPartOf":{"@type":"WebSite","url":"https://origenlab.mx/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.mx/"},{"@type":"ListItem","position":2,"name":"Términos de servicio","item":"https://origenlab.mx/terminos/"}]}]}</script></head>
+<body>
+<a class="ol-skip-link" href="#main">Saltar al contenido</a><div class="ol-topbar">
+  <div class="ol-topbar-inner">
+    <div class="ol-topbar-left">
+      <a href="mailto:hola@origenlab.mx" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        hola@origenlab.mx
+      </a>
+      <span class="ol-topbar-sep"></span>
+      <a href="tel:+525547868402" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        +52 55 4786 8402
+      </a>
+    </div>
+    <div class="ol-topbar-center">
+      <span class="ol-topbar-promo">
+        <span class="ol-topbar-dot"></span>
+        Atención personalizada  ·  Ciudad de México
+      </span>
+    </div>
+    <div class="ol-topbar-right">
+      <a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web" target="_blank" rel="noopener noreferrer" class="ol-topbar-wa">
+        <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor">
+          <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+<header class="ol-header" id="ol-header">
+  <div class="ol-header-inner">
+    <a href="/" class="ol-header-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
+    </a>
+    <nav class="ol-nav" aria-label="Navegación principal">
+      <ul class="ol-nav-list">
+        <li><a href="/" class="ol-nav-link">Inicio</a></li>
+        <li class="ol-has-dropdown">
+          <a href="/servicios/" class="ol-nav-link">
+            Servicios
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/servicios/desarrollo-web/" class="ol-dropdown-link">Desarrollo Web</a></li>
+              <li><a href="/servicios/tiendas-en-linea/" class="ol-dropdown-link">Tiendas en Línea</a></li>
+              <li><a href="/servicios/landing-pages/" class="ol-dropdown-link">Landing Pages</a></li>
+              <li><a href="/servicios/rediseno-web/" class="ol-dropdown-link">Rediseño Web</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="ol-has-dropdown">
+          <a href="/portafolio/" class="ol-nav-link">
+            Portafolio
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link">Equipos Contra Incendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link ol-dropdown-sub">— Gama de México</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link ol-dropdown-sub">— MESECI</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link ol-dropdown-sub">— LGA Contraincendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-dropdown-link ol-dropdown-sub">— MANEXT</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-dropdown-link ol-dropdown-sub">— BOMBERO.MX</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-dropdown-link ol-dropdown-sub">— ProyectoRed</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="/nosotros/" class="ol-nav-link">Nosotros</a></li>
+        <li><a href="/blog/" class="ol-nav-link">Blog</a></li>
+        <li><a href="/contacto/" class="ol-nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="/cotizar/" class="ol-header-cta">Cotizar proyecto →</a>
+    <button class="ol-menu-toggle" id="ol-menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+    </button>
+  </div>
+</header>
+<div class="ol-mobile-overlay" id="ol-mobile-overlay"></div>
+<nav class="ol-mobile-panel" id="ol-mobile-panel" aria-label="Menú móvil">
+  <div class="ol-mobile-header">
+    <a href="/" class="ol-mobile-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
+    </a>
+    <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú">
+      <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <ul class="ol-mobile-nav">
+    <li><a href="/" class="ol-mobile-link">Inicio</a></li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Servicios</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/servicios/desarrollo-web/" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Portafolio</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/portafolio/" class="ol-mobile-link ol-mobile-sublink">Todo el Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/" class="ol-mobile-link ol-mobile-sublink">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Gama de México</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MESECI</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— LGA Contraincendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MANEXT</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— BOMBERO.MX</a></li>
+      </ul>
+    </li>
+    <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
+    <li><a href="/blog/" class="ol-mobile-link">Blog</a></li>
+    <li><a href="/contacto/" class="ol-mobile-link">Contacto</a></li>
+  </ul>
+  <div class="ol-mobile-footer">
+    <a href="/cotizar/" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a>
+  </div>
+</nav>
+<!-- ======= END HEADER ======= -->
+<!-- ============================================================
+     BREADCRUMB — ol-bc
+     ============================================================ -->
+<nav class="ol-bc-wrap" aria-label="Migas de pan">
+  <div class="ol-bc">
+    <ol class="ol-bc-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/" itemprop="item" class="ol-bc-home"><span itemprop="name">Inicio</span></a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item ol-bc-current" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name">Términos y Condiciones</span>
+        <meta itemprop="position" content="2" />
+      </li>
+    </ol>
+  </div>
+</nav>
+<!-- ======= END BREADCRUMB ======= -->
+<main id="main">
+<div class="legal-wrap">
+  <span class="eyebrow">Legal</span>
+  <h1>Términos de servicio</h1>
+  <p class="last-upd">Última actualización: 21 de abril de 2026</p>
+
+  <p>Estos términos rigen el uso del sitio <strong>origenlab.mx</strong> y los servicios ofrecidos por <strong>OrigenLab</strong>. Al contratar cualquiera de nuestros servicios o utilizar este sitio, aceptas lo establecido a continuación.</p>
+
+  <h2>1. Sobre OrigenLab</h2>
+  <p>OrigenLab es una agencia mexicana de desarrollo web y diseño digital con sede en Ciudad de México. Ofrecemos desarrollo de sitios corporativos, tiendas en línea, landing pages, rediseños y servicios relacionados de diseño, desarrollo e implementación técnica.</p>
+
+  <h2>2. Uso del sitio web</h2>
+  <p>El contenido publicado en origenlab.mx (textos, imágenes, código de ejemplo, capturas de pantalla y recursos gráficos) es propiedad de OrigenLab o se usa bajo licencia. Queda prohibida su reproducción total o parcial sin autorización expresa por escrito.</p>
+  <p>No debes usar este sitio para actividades ilegales, intentar vulnerar su seguridad, enviar código malicioso, extraer datos de forma automatizada o suplantar identidad.</p>
+
+  <h2>3. Propuestas y cotizaciones</h2>
+  <p>Las cotizaciones que emitimos son válidas por <strong>30 días naturales</strong> desde su envío, salvo que se indique otra vigencia por escrito. Los alcances, tiempos y costos se detallan en cada propuesta y rigen el proyecto una vez aceptada.</p>
+
+  <h2>4. Contratación, anticipo y pagos</h2>
+  <ul>
+    <li>Todo proyecto inicia con un <strong>anticipo del 50%</strong>, salvo que se pacte un esquema distinto por escrito.</li>
+    <li>El saldo se cubre a la entrega, contra publicación o según el esquema de hitos pactado.</li>
+    <li>Emitimos factura (CFDI) con datos fiscales del cliente.</li>
+    <li>Los precios están expresados en pesos mexicanos (MXN) más IVA, salvo indicación contraria.</li>
+  </ul>
+
+  <h2>5. Tiempos de entrega</h2>
+  <p>Los tiempos de entrega se estiman en la propuesta y pueden ajustarse por dependencias del cliente (entrega de contenidos, accesos, revisiones, aprobaciones). OrigenLab notificará oportunamente cualquier desvío y sus causas.</p>
+
+  <h2>6. Revisiones y ajustes</h2>
+  <p>Cada proyecto incluye un número definido de rondas de revisión (indicadas en la propuesta). Revisiones adicionales o cambios de alcance se cotizan por separado.</p>
+
+  <h2>7. Propiedad intelectual y entregables</h2>
+  <ul>
+    <li>Al liquidar el 100% del proyecto, el cliente recibe la propiedad del <strong>código del sitio</strong> y los <strong>archivos de diseño finales</strong>.</li>
+    <li>OrigenLab conserva la propiedad de frameworks, bibliotecas internas y procesos reutilizables propios utilizados durante el desarrollo.</li>
+    <li>OrigenLab puede mostrar el proyecto terminado en su portafolio y casos de estudio, salvo que se acuerde lo contrario por escrito (NDA).</li>
+  </ul>
+
+  <h2>8. Hosting, dominios y terceros</h2>
+  <p>El hosting, dominio, servicios de correo, pasarelas de pago (Mercado Pago, Stripe, Conekta) y otros servicios de terceros se contratan directamente por el cliente a nombre de su empresa, salvo que se acuerde contratación intermediada.</p>
+
+  <h2>9. Soporte post-entrega</h2>
+  <p>Todo proyecto incluye <strong>30 días naturales de soporte gratuito</strong> a partir de la publicación para correcciones de bugs atribuibles al desarrollo. Nuevas funcionalidades o cambios de contenido se cotizan como mantenimiento.</p>
+
+  <h2>10. Cancelación y reembolsos</h2>
+  <p>Si el cliente decide cancelar el proyecto una vez iniciado, el anticipo no es reembolsable. Si la cancelación ocurre tras la fase de diseño, se facturará adicionalmente la fase ejecutada hasta ese momento.</p>
+
+  <h2>11. Limitación de responsabilidad</h2>
+  <p>OrigenLab no se hace responsable por: (a) fallos de servicios de terceros (hosting, DNS, pasarelas); (b) pérdidas de datos causadas por no contar con respaldos activos por parte del cliente; (c) resultados comerciales o de tráfico, ya que dependen de factores externos al desarrollo.</p>
+
+  <h2>12. Confidencialidad</h2>
+  <p>OrigenLab mantiene confidencial toda información comercial, técnica y estratégica compartida durante el proyecto. De forma recíproca, el cliente se compromete a no divulgar procesos, metodologías o códigos internos propiedad de OrigenLab.</p>
+
+  <h2>13. Jurisdicción</h2>
+  <p>Estos términos se rigen por las leyes mexicanas. Para cualquier controversia, las partes se someten a los tribunales competentes de la Ciudad de México, renunciando a cualquier otro fuero.</p>
+
+  <h2>14. Contacto</h2>
+  <p>Para aclaraciones sobre estos términos:</p>
+  <p><strong>Correo:</strong> <a href="mailto:hola@origenlab.mx">hola@origenlab.mx</a><br>
+  <strong>WhatsApp:</strong> <a href="https://wa.me/525547868402" target="_blank" rel="noopener">+52 55 4786 8402</a></p>
+</div>
+</main>
+<footer class="ol-footer">
+  <div class="ol-footer-top">
+    <a href="/" class="ol-footer-logo">
+      ORIGENLAB<span class="ol-footer-logo-dot">·</span>
+    </a>
+    <p class="ol-footer-tagline">Agencia de desarrollo web profesional en México. Sitios rápidos, modernos y orientados a resultados — para empresas que quieren crecer en internet.</p>
+    <ul class="ol-footer-contact-list">
+      <li>
+        <a href="mailto:hola@origenlab.mx" class="ol-fcl-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          hola@origenlab.mx
+        </a>
+      </li>
+      <li>
+        <a href="tel:+525547868402" class="ol-fcl-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +52 55 4786 8402
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/525547868402" target="_blank" rel="noopener noreferrer" class="ol-fcl-item ol-fcl-wa">
+          <svg width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+          WhatsApp — Escribir ahora →
+        </a>
+      </li>
+      <li>
+        <span class="ol-fcl-item ol-fcl-static">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Ciudad de México, MX
+        </span>
+      </li>
+    </ul>
+  </div>
+  <div class="ol-footer-links">
+    <div>
+      <p class="ol-footer-col-title">Servicios</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/servicios/desarrollo-web/">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/">Rediseño Web</a></li>
+        <li><a href="/servicios/">Ver todos los servicios</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Empresa</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/nosotros/">Nosotros</a></li>
+        <li><a href="/portafolio/">Portafolio</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/cotizar/">Cotizar proyecto</a></li>
+        <li><a href="/contacto/">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Ubicaciones</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/contacto/">Ciudad de México</a></li>
+        <li><a href="/contacto/">Monterrey</a></li>
+        <li><a href="/contacto/">Guadalajara</a></li>
+        <li><a href="/contacto/">Puebla</a></li>
+        <li><a href="/contacto/">Proyectos remotos</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Legal</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/aviso-de-privacidad/">Aviso de privacidad</a></li>
+        <li><a href="/terminos/">Términos de servicio</a></li>
+        <li><a href="/aviso-de-privacidad/#cookies/">Política de cookies</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ol-footer-bottom">
+    <span class="ol-footer-copy">© 2026 OrigenLab. Todos los derechos reservados.</span>
+    <div class="ol-footer-legal">
+      <a href="/aviso-de-privacidad/">Privacidad</a>
+      <a href="/terminos/">Términos</a>
+      <a href="/aviso-de-privacidad/#cookies/">Cookies</a>
+    </div>
+  </div>
+</footer>
+<a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web.%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" class="wa-bubble" aria-label="Contáctanos por WhatsApp">
+  <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff">
+    <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 0 0 2.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0 0 16.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/>
+  </svg>
+</a>
+</body>
+</html>

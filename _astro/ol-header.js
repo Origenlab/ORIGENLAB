@@ -142,6 +142,69 @@
 })();
 
 /* ============================================================
+   Mobile Menu — hamburger, overlay, submenu accordion, scroll sticky
+   ============================================================ */
+(function () {
+  'use strict';
+  function initMobile() {
+    var toggle   = document.getElementById('ol-menu-toggle');
+    var panel    = document.getElementById('ol-mobile-panel');
+    var overlay  = document.getElementById('ol-mobile-overlay');
+    var closeBtn = document.getElementById('ol-mobile-close');
+    var header   = document.getElementById('ol-header');
+    if (!toggle && !panel) return;
+
+    function openMenu() {
+      if (!toggle || !panel) return;
+      toggle.classList.add('open'); toggle.setAttribute('aria-expanded', 'true');
+      panel.classList.add('open');
+      if (overlay) overlay.classList.add('visible');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      if (!toggle || !panel) return;
+      toggle.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false');
+      panel.classList.remove('open');
+      if (overlay) overlay.classList.remove('visible');
+      document.body.style.overflow = '';
+    }
+
+    if (toggle) toggle.addEventListener('click', function () {
+      panel && panel.classList.contains('open') ? closeMenu() : openMenu();
+    });
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    if (overlay)  overlay.addEventListener('click', closeMenu);
+
+    var mobileLinks = panel ? panel.querySelectorAll('a') : [];
+    for (var i = 0; i < mobileLinks.length; i++) mobileLinks[i].addEventListener('click', closeMenu);
+
+    var subToggles = document.querySelectorAll('[data-submenu]');
+    for (var j = 0; j < subToggles.length; j++) {
+      subToggles[j].addEventListener('click', function () {
+        this.classList.toggle('expanded');
+        var sub = this.parentElement.querySelector('.ol-mobile-submenu');
+        if (sub) sub.classList.toggle('open');
+      });
+    }
+
+    // Sticky header on scroll
+    window.addEventListener('scroll', function () {
+      var y = window.pageYOffset || document.documentElement.scrollTop;
+      if (header) {
+        if (y > 60) header.classList.add('scrolled');
+        else header.classList.remove('scrolled');
+      }
+    }, { passive: true });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMobile);
+  } else {
+    initMobile();
+  }
+})();
+
+/* ============================================================
    FAQ Accordion — universal (usa aria-controls)
    Soporta múltiples secciones FAQ en la misma página.
    ============================================================ */

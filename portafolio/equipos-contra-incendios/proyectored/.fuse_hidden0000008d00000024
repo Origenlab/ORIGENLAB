@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caso · ProyectoRed — Sistemas de Protección Contra Incendios · Ingeniería y Proyectos | OrigenLab</title>
+  <meta name="description" content="Caso de estudio del sitio corporativo de ProyectoRed, empresa mexicana especializada en diseño, suministro e instalación de sistemas de protección contra incendios para industria, comercio y gobierno.">
+  <link rel="canonical" href="https://origenlab.mx/portafolio/equipos-contra-incendios/proyectored/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://origenlab.mx/portafolio/equipos-contra-incendios/proyectored/">
+  <meta property="og:title" content="Caso · ProyectoRed — Sistemas de Protección Contra Incendios | OrigenLab">
+  <meta property="og:description" content="Cómo construimos el sitio corporativo de ProyectoRed: arquitectura, diseño, portafolio de proyectos y conversión B2B para ingeniería de protección contra incendios en México.">
+  <meta property="og:image" content="https://origenlab.mx/img/equipos-contra-incendios/proyectored/proyectored-01.webp">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="OrigenLab">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Caso · ProyectoRed — Sistemas de Protección Contra Incendios | OrigenLab">
+  <meta name="twitter:description" content="Sitio corporativo B2B para empresa de ingeniería y proyectos de protección contra incendios en México.">
+  <meta name="twitter:image" content="https://origenlab.mx/img/equipos-contra-incendios/proyectored/proyectored-01.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../../../favicon.svg">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+
+  <!-- CSS del sitio -->
+  <link rel="stylesheet" href="../../../_astro/BaseLayout.xeR8R953.css?v20260426c">
+  <link rel="stylesheet" href="../../../_astro/premium-dark.css?v20260426c">
+  <script src="../../../_astro/ol-header.js?v20260426d" defer></script>
+
+  <style>
+    /* ============================================================
+       L4 — CASO · PROYECTORED
+       Componentes en _astro/premium-dark.css. Aquí: SOLO acentos.
+       Acento: rojo carmesí #B91C1C (ingeniería de fuego).
+       Doc: /_docs/COMPONENTS.md y /_docs/LAYOUTS.md (sección L4)
+       ============================================================ */
+    :root {
+      --case-accent: #B91C1C;
+      --case-accent-soft: rgba(185,28,28,0.12);
+      --case-accent-line: rgba(185,28,28,0.28);
+    }
+    /* Hero hereda el acento del caso */
+    .hero { --hero-accent: var(--case-accent); --hero-accent-soft: var(--case-accent-soft); --hero-accent-line: var(--case-accent-line); }
+    .hero::before { background: radial-gradient(ellipse at center, rgba(185,28,28,0.08) 0%, transparent 65%); }
+  </style>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.mx/#organization","name":"OrigenLab","url":"https://origenlab.mx","logo":"https://origenlab.mx/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.mx/#website","url":"https://origenlab.mx/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.mx/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.mx/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.mx/portafolio/"},{"@type":"ListItem","position":3,"name":"Equipos Contra Incendios","item":"https://origenlab.mx/portafolio/equipos-contra-incendios/"},{"@type":"ListItem","position":4,"name":"ProyectoRed","item":"https://origenlab.mx/portafolio/equipos-contra-incendios/proyectored/"}]},{"@type":"CreativeWork","@id":"https://origenlab.mx/portafolio/equipos-contra-incendios/proyectored/#case","name":"ProyectoRed — Sistemas de Protección Contra Incendios · Ingeniería y Proyectos","headline":"Sitio corporativo para empresa de ingeniería en protección contra incendios en México","description":"Caso de estudio del sitio corporativo de ProyectoRed. Empresa mexicana especializada en el diseño, suministro e instalación de sistemas de protección contra incendios para sector industrial, comercial y gubernamental.","inLanguage":"es-MX","image":"https://origenlab.mx/img/equipos-contra-incendios/proyectored/proyectored-01.webp","author":{"@id":"https://origenlab.mx/#organization"},"publisher":{"@id":"https://origenlab.mx/#organization"},"about":{"@type":"Organization","name":"ProyectoRed","url":"https://proyectored.mx/"},"keywords":["protección contra incendios","sistemas contra incendios","ingeniería contra incendios","rociadores","detección de incendios","supresión","NFPA","México"]}]}</script>
+</head>
+<body>
+
+<a class="ol-skip-link" href="#main">Saltar al contenido</a>
+
+<div class="ol-topbar">
+  <div class="ol-topbar-inner">
+    <div class="ol-topbar-left">
+      <a href="mailto:hola@origenlab.mx" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        hola@origenlab.mx
+      </a>
+      <span class="ol-topbar-sep"></span>
+      <a href="tel:+525547868402" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        +52 55 4786 8402
+      </a>
+    </div>
+    <div class="ol-topbar-center">
+      <span class="ol-topbar-promo">
+        <span class="ol-topbar-dot"></span>
+        Atención personalizada  ·  Ciudad de México
+      </span>
+    </div>
+    <div class="ol-topbar-right">
+      <a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web" target="_blank" rel="noopener noreferrer" class="ol-topbar-wa">
+        <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor">
+          <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+<header class="ol-header" id="ol-header">
+  <div class="ol-header-inner">
+    <a href="/" class="ol-header-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
+    </a>
+    <nav class="ol-nav" aria-label="Navegación principal">
+      <ul class="ol-nav-list">
+        <li><a href="/" class="ol-nav-link">Inicio</a></li>
+        <li class="ol-has-dropdown">
+          <a href="/servicios/" class="ol-nav-link">
+            Servicios
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/servicios/desarrollo-web/" class="ol-dropdown-link">Desarrollo Web</a></li>
+              <li><a href="/servicios/tiendas-en-linea/" class="ol-dropdown-link">Tiendas en Línea</a></li>
+              <li><a href="/servicios/landing-pages/" class="ol-dropdown-link">Landing Pages</a></li>
+              <li><a href="/servicios/rediseno-web/" class="ol-dropdown-link">Rediseño Web</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="ol-has-dropdown">
+          <a href="/portafolio/" class="ol-nav-link active">
+            Portafolio
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link">Equipos Contra Incendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link ol-dropdown-sub">— Gama de México</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link ol-dropdown-sub">— MESECI</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link ol-dropdown-sub">— LGA Contraincendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-dropdown-link ol-dropdown-sub">— MANEXT</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-dropdown-link ol-dropdown-sub">— BOMBERO.MX</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-dropdown-link ol-dropdown-sub">— ProyectoRed</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="/nosotros/" class="ol-nav-link">Nosotros</a></li>
+        <li><a href="/blog/" class="ol-nav-link">Blog</a></li>
+        <li><a href="/contacto/" class="ol-nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="/cotizar/" class="ol-header-cta">Cotizar proyecto →</a>
+    <button class="ol-menu-toggle" id="ol-menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+    </button>
+  </div>
+</header>
+<div class="ol-mobile-overlay" id="ol-mobile-overlay"></div>
+<nav class="ol-mobile-panel" id="ol-mobile-panel" aria-label="Menú móvil">
+  <div class="ol-mobile-header">
+    <a href="/" class="ol-mobile-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
+    </a>
+    <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú">
+      <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <ul class="ol-mobile-nav">
+    <li><a href="/" class="ol-mobile-link">Inicio</a></li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Servicios</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/servicios/desarrollo-web/" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Portafolio</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/portafolio/" class="ol-mobile-link ol-mobile-sublink">Todo el Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/" class="ol-mobile-link ol-mobile-sublink">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Gama de México</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MESECI</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— LGA Contraincendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MANEXT</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— BOMBERO.MX</a></li>
+      </ul>
+    </li>
+    <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
+    <li><a href="/blog/" class="ol-mobile-link">Blog</a></li>
+    <li><a href="/contacto/" class="ol-mobile-link">Contacto</a></li>
+  </ul>
+  <div class="ol-mobile-footer">
+    <a href="/cotizar/" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a>
+  </div>
+</nav>
+
+<!-- ============================================================
+     BREADCRUMB
+     ============================================================ -->
+<nav class="ol-bc-wrap" aria-label="Migas de pan">
+  <div class="ol-bc">
+    <ol class="ol-bc-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/" itemprop="item" class="ol-bc-home"><span itemprop="name">Inicio</span></a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/portafolio/" itemprop="item"><span itemprop="name">Portafolio</span></a>
+        <meta itemprop="position" content="2" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/portafolio/equipos-contra-incendios/" itemprop="item"><span itemprop="name">Equipos Contra Incendios</span></a>
+        <meta itemprop="position" content="3" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item ol-bc-current" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name">ProyectoRed</span>
+        <meta itemprop="position" content="4" />
+      </li>
+    </ol>
+  </div>
+</nav>
+
+<!-- ============================================================
+     MAIN
+     ============================================================ -->
+<main id="main">
+
+  <!-- ============== HERO (componente compartido .hero) ============== -->
+  <section class="hero">
+    <div class="container hero__inner">
+
+      <div class="hero__col1">
+        <span class="hero__eyebrow">Caso de estudio · Ingeniería Contra Incendios</span>
+        <h1 class="hero__title">ProyectoRed<br>Sistemas de protección<br>con respaldo técnico.</h1>
+        <p class="hero__sub">Empresa mexicana especializada en el diseño, suministro e instalación de sistemas de protección contra incendios para industria, comercio y gobierno — bajo normas NFPA, NOM y estándares internacionales.</p>
+        <div class="hero__ctas">
+          <a href="https://proyectored.mx/" target="_blank" rel="noopener noreferrer" class="ol-btn-primary">
+            Visitar el sitio
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+          </a>
+          <a href="#construccion" class="ol-btn-ghost">
+            Cómo se construyó
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__col2">
+        <p class="hero__p1">Plataforma corporativa diseñada para que directores de seguridad, gerentes de planta, coordinadores de obra y responsables de compras encuentren en un solo recorrido la capacidad técnica de ProyectoRed: ingeniería de sistemas, catálogo de soluciones, portafolio de proyectos ejecutados y canales directos de contacto institucional.</p>
+        <p class="hero__p2">El sitio comunica desde el primer scroll la solidez técnica y la experiencia sectorial de la empresa — sin ambigüedades, sin exceso de información, con una jerarquía visual que prioriza credibilidad y guía al visitante calificado hacia la solicitud de cotización formal. Arquitectura, diseño y redacción técnica construidos para el comprador de proyectos industriales en México.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== CASE SHELL: SIDEBAR + CONTENT ============== -->
+  <section class="ol-case-shell" id="construccion">
+    <div class="ol-case-inner">
+      <div class="ol-case-grid">
+
+        <!-- ============ SIDEBAR ============ -->
+        <aside class="ol-case-sidebar" aria-label="Información del proyecto">
+
+          <div class="ol-side-card">
+            <p class="ol-side-eyebrow">Datos del proyecto</p>
+            <ul class="ol-side-meta">
+              <li><dt>Cliente</dt><dd>ProyectoRed</dd></li>
+              <li><dt>Sector</dt><dd>Equipos contra incendios · Ingeniería de proyectos</dd></li>
+              <li><dt>Tipo de sitio</dt><dd>Corporativo B2B · Portafolio técnico</dd></li>
+              <li><dt>Modelo de negocio</dt><dd>Diseño, suministro e instalación de sistemas</dd></li>
+              <li><dt>Especialidad</dt><dd>Rociadores · Detección · Supresión · Agente limpio</dd></li>
+              <li><dt>Normatividad</dt><dd>NFPA · NOM-002 · FM · UL</dd></li>
+              <li><dt>Cobertura</dt><dd>Ciudad de México · Área Metropolitana · República</dd></li>
+              <li><dt>Sitio en vivo</dt><dd><a href="https://proyectored.mx/" target="_blank" rel="noopener noreferrer">proyectored.mx →</a></dd></li>
+            </ul>
+          </div>
+
+          <div class="ol-side-card">
+            <p class="ol-side-eyebrow">Stack y entregables</p>
+            <div>
+              <span class="ol-case-spec-tag">Astro</span>
+              <span class="ol-case-spec-tag">HTML5 / CSS3</span>
+              <span class="ol-case-spec-tag">Inter</span>
+              <span class="ol-case-spec-tag">Schema.org</span>
+              <span class="ol-case-spec-tag">WhatsApp Lead</span>
+              <span class="ol-case-spec-tag">Formularios B2B</span>
+              <span class="ol-case-spec-tag">Portafolio de proyectos</span>
+              <span class="ol-case-spec-tag">Hosting CDN</span>
+              <span class="ol-case-spec-tag">Responsivo</span>
+              <span class="ol-case-spec-tag">Multi-sector</span>
+            </div>
+          </div>
+
+          <nav class="ol-side-card" aria-label="Índice del caso">
+            <p class="ol-side-eyebrow">Índice del caso</p>
+            <ul class="ol-side-toc" id="ol-case-toc">
+              <li><a href="#contexto"><span class="num">01</span>Contexto del cliente</a></li>
+              <li><a href="#reto"><span class="num">02</span>El reto</a></li>
+              <li><a href="#arquitectura"><span class="num">03</span>Arquitectura del sitio</a></li>
+              <li><a href="#diseno"><span class="num">04</span>Diseño y sistema visual</a></li>
+              <li><a href="#portafolio"><span class="num">05</span>Portafolio de proyectos</a></li>
+              <li><a href="#conversion"><span class="num">06</span>Conversión B2B</a></li>
+              <li><a href="#tecnologia"><span class="num">07</span>Tecnología y rendimiento</a></li>
+              <li><a href="#proceso"><span class="num">08</span>Proceso de trabajo</a></li>
+              <li><a href="#galeria"><span class="num">09</span>Galería del sitio</a></li>
+              <li><a href="#resultado"><span class="num">10</span>Resultado entregado</a></li>
+            </ul>
+          </nav>
+
+          <div class="ol-side-cta">
+            <h3 class="ol-side-cta-title">¿Un proyecto similar?</h3>
+            <p class="ol-side-cta-desc">Si tu empresa diseña, instala o distribuye sistemas de protección contra incendios y necesitas un sitio de alto nivel técnico, podemos construirlo contigo.</p>
+            <a href="/cotizar/" class="ol-side-cta-btn">
+              Cotizar mi proyecto
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+            <a href="https://wa.me/525547868402?text=Hola%2C%20vi%20el%20caso%20de%20ProyectoRed%20y%20me%20interesa%20un%20proyecto%20similar." target="_blank" rel="noopener noreferrer" class="ol-side-cta-link">o escribir por WhatsApp →</a>
+          </div>
+
+        </aside>
+
+        <!-- ============ CONTENT BODY ============ -->
+        <article class="ol-case-body">
+
+          <!-- 01 CONTEXTO -->
+          <section class="ol-case-section" id="contexto">
+            <span class="ol-case-eyebrow">01 · Contexto del cliente</span>
+            <h2 class="ol-case-h2">Ingeniería de protección contra incendios con experiencia comprobada en México.</h2>
+            <p class="ol-case-lead">ProyectoRed es una empresa mexicana con trayectoria en el diseño, suministro e instalación de sistemas de protección contra incendios — rociadores automáticos, detección y alarma, sistemas de supresión por agente limpio, extinción por CO₂ y soluciones a medida para entornos industriales, comerciales y gubernamentales.</p>
+            <p class="ol-case-p">La empresa atiende a un perfil técnico y corporativo muy definido: <strong>directores de seguridad, gerentes de planta, responsables de mantenimiento, coordinadores de obra, comités de compras y áreas de ingeniería</strong> de empresas medianas y grandes que requieren proyectos de protección contra incendios ejecutados bajo norma, con respaldo documental y con un interlocutor técnico capacitado desde la primera reunión.</p>
+            <p class="ol-case-p">Su operación abarca Ciudad de México y el Área Metropolitana, con proyectos en distintos estados de la República. Antes de este proyecto, ProyectoRed carecía de una presencia digital que reflejara su nivel técnico, su experiencia en proyectos ejecutados ni la solidez del equipo detrás de cada instalación.</p>
+
+            <div class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <img src="../../../img/equipos-contra-incendios/proyectored/proyectored-02.webp" alt="ProyectoRed — sección de especialidades y normatividad aplicable" width="1543" height="854" loading="lazy" decoding="async">
+              </div>
+              <p class="ol-case-figure-caption">Sección de especialidades: sistemas, normatividad y capacidades técnicas comunicadas desde el primer scroll.</p>
+            </div>
+          </section>
+
+          <!-- 02 RETO -->
+          <section class="ol-case-section" id="reto">
+            <span class="ol-case-eyebrow">02 · El reto</span>
+            <h2 class="ol-case-h2">Posicionar la experiencia técnica antes de la primera llamada.</h2>
+            <p class="ol-case-p">El comprador de sistemas contra incendios llega al sitio con preguntas muy específicas: <strong>¿tienen experiencia real en mi tipo de instalación?</strong>, <strong>¿trabajan bajo norma NFPA o NOM?</strong>, <strong>¿con qué marcas y proveedores certificados trabajan?</strong>, <strong>¿puedo ver proyectos similares al mío ya ejecutados?</strong>.</p>
+            <p class="ol-case-p">El reto del proyecto fue construir un sitio que respondiera a esas preguntas con evidencia concreta — no con frases genéricas — antes de que el visitante considerara llamar o escribir. La confianza en el sector de ingeniería se construye con trayectoria visible, no con promesas.</p>
+
+            <div class="ol-case-cards">
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.5v5c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11V6.5L12 2z"/><path d="M9 12l2 2 4-4"/></svg>
+                </div>
+                <h4>Credibilidad técnica</h4>
+                <p>Comunicar dominio normativo (NFPA, NOM-002, FM, UL) y experiencia sectorial sin depender de que el visitante lo solicite: visible desde la home, no oculto en un PDF.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                </div>
+                <h4>Portafolio ejecutado</h4>
+                <p>Mostrar proyectos reales con contexto — sector, tipo de sistema, alcance — para que el comprador identifique casos similares al suyo antes de cotizar.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M3 21a9 9 0 0 1 18 0"/></svg>
+                </div>
+                <h4>Equipo visible</h4>
+                <p>Presentar al equipo técnico con nombre, rol y especialidad — el comprador industrial necesita saber con quién trabaja antes de firmar un proyecto de seguridad.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                </div>
+                <h4>Canal de cotización formal</h4>
+                <p>Formulario orientado a proyectos con campos de datos técnicos — tipo de inmueble, superficie, sistema requerido, normatividad aplicable — para calificar el prospecto desde el primer contacto.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 03 ARQUITECTURA -->
+          <section class="ol-case-section" id="arquitectura">
+            <span class="ol-case-eyebrow">03 · Arquitectura del sitio</span>
+            <h2 class="ol-case-h2">Estructura orientada al recorrido del comprador técnico.</h2>
+            <p class="ol-case-p">La arquitectura de información se construyó sobre la base del recorrido real del comprador: <strong>llega desde una referencia o búsqueda sectorial, valida que la empresa tenga experiencia en su tipo de proyecto, revisa la normatividad con la que trabajan, consulta proyectos similares ejecutados y abre contacto formal</strong>. Cada capa del sitio atiende un momento específico de ese proceso.</p>
+
+            <div class="ol-case-arch">
+              <div class="ol-arch-step">
+                <p class="num">CAPA 01</p>
+                <h4>Home corporativa</h4>
+                <p>Propuesta de valor clara, especialidades técnicas en un vistazo, sectores atendidos, normatividad aplicable y acceso directo al portafolio y al contacto.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">CAPA 02</p>
+                <h4>Servicios y sistemas</h4>
+                <p>Cada sistema (rociadores, detección, supresión, agente limpio, CO₂, extinción especial) tiene su propia sección con descripción técnica, aplicaciones y normativa.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">CAPA 03</p>
+                <h4>Portafolio de proyectos</h4>
+                <p>Casos ejecutados organizados por sector (industria, comercio, hospitales, gobierno, centros de datos) con descripción del alcance y sistemas instalados.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">CAPA 04</p>
+                <h4>Empresa y equipo</h4>
+                <p>Historia, valores, equipo técnico y certificaciones corporativas — la sección que convierte la revisión del portafolio en confianza suficiente para iniciar contacto.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">CAPA 05</p>
+                <h4>Sectores atendidos</h4>
+                <p>Páginas por vertical (industrial, comercial, hospitalario, gubernamental, data centers) con casos representativos y requisitos normativos específicos de cada sector.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">CAPA 06</p>
+                <h4>Contacto técnico</h4>
+                <p>Formulario de cotización con campos orientados a proyectos: tipo de inmueble, superficie aproximada, sistema requerido, norma aplicable y zona de instalación.</p>
+              </div>
+            </div>
+
+            <div class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <img src="../../../img/equipos-contra-incendios/proyectored/proyectored-03.webp" alt="ProyectoRed — sección de sistemas y servicios por especialidad" width="1543" height="854" loading="lazy" decoding="async">
+              </div>
+              <p class="ol-case-figure-caption">Sección de sistemas: cada especialidad con descripción técnica, aplicaciones y normatividad correspondiente.</p>
+            </div>
+          </section>
+
+          <!-- 04 DISEÑO -->
+          <section class="ol-case-section" id="diseno">
+            <span class="ol-case-eyebrow">04 · Diseño y sistema visual</span>
+            <h2 class="ol-case-h2">Sobriedad técnica, sin renunciar a la fuerza visual de la marca.</h2>
+            <p class="ol-case-p">El diseño parte de una premisa clara: <strong>una empresa de ingeniería de seguridad no necesita efectos, gradientes decorativos ni recursos visuales de moda</strong>. Necesita tipografía legible, jerarquía de datos precisa y fotografía de instalación que comunique escala y profesionalismo. La paleta usa el carmesí de la marca como acento puntual de señalización — nunca como decoración — sobre una base oscura que favorece la concentración y el contraste técnico.</p>
+            <p class="ol-case-p">Cada componente del sistema visual — encabezados de sección, tarjetas de servicio, fichas de proyecto, tablas de normatividad, bloques del equipo técnico — comparte el mismo lenguaje, garantizando que el comprador sienta coherencia y seriedad institucional en cada pantalla del sitio.</p>
+
+            <div class="ol-case-cards">
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V4h16v3"/><path d="M9 20h6"/><path d="M12 4v16"/></svg>
+                </div>
+                <h4>Tipografía Inter</h4>
+                <p>Familia geométrica neutral, ideal para datos técnicos, normativas, especificaciones de sistemas y tablas comparativas que dominan el contenido de ingeniería.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="10.5" r="2.5"/><circle cx="8.5" cy="7.5" r="2.5"/><circle cx="6.5" cy="12.5" r="2.5"/><path d="M12 22a10 10 0 1 1 9.96-9.13.5.5 0 0 1-.5.54H17a3 3 0 0 0-3 3v.5a2 2 0 0 1-2 2"/></svg>
+                </div>
+                <h4>Paleta técnica</h4>
+                <p>Carmesí como acento de señalización y marca, fondos oscuros que favorecen la lectura de especificaciones, contrastes altos en datos normativos y CTAs.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                </div>
+                <h4>Sistema modular</h4>
+                <p>Componentes reutilizables para fichas de proyecto, tarjetas de sistema y bloques de equipo que mantienen coherencia en todas las páginas del sitio.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h4>Badges de norma</h4>
+                <p>Componente dedicado para destacar NFPA, NOM-002, FM y UL en cada sección relevante — credibilidad técnica sin saturar la jerarquía visual de la página.</p>
+              </div>
+            </div>
+
+            <div class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <img src="../../../img/equipos-contra-incendios/proyectored/proyectored-04.webp" alt="ProyectoRed — sistema visual de tarjetas de proyecto y badges de norma" width="1543" height="854" loading="lazy" decoding="async">
+              </div>
+              <p class="ol-case-figure-caption">Sistema de tarjetas de proyecto con badges normativos aplicados de forma consistente en todo el portafolio.</p>
+            </div>
+          </section>
+
+          <!-- 05 PORTAFOLIO DE PROYECTOS -->
+          <section class="ol-case-section" id="portafolio">
+            <span class="ol-case-eyebrow">05 · Portafolio de proyectos</span>
+            <h2 class="ol-case-h2">La experiencia ejecutada como principal argumento de venta.</h2>
+            <p class="ol-case-p">En ingeniería contra incendios, ningún texto supera a un caso real documentado. Por eso el núcleo del sitio de ProyectoRed es su portafolio de proyectos — organizado por sector, con ficha técnica de cada instalación y datos suficientes para que el comprador confirme que la empresa ya ha resuelto proyectos comparables al suyo.</p>
+
+            <ul class="ol-case-list">
+              <li><strong>Sector industrial:</strong> instalaciones en plantas de manufactura, almacenes, terminales logísticas y centros de distribución con sistemas de rociadores ESFR y cobertura total bajo NFPA 13.</li>
+              <li><strong>Sector comercial:</strong> proyectos en centros comerciales, hoteles y edificios de oficinas con sistemas de detección inteligente, alarma y rociadores convencionales integrados.</li>
+              <li><strong>Hospitales y salud:</strong> instalaciones con supresión por agente limpio en áreas críticas, sistemas de detección de alta sensibilidad y cumplimiento estricto de NOM-002 y NFPA 72.</li>
+              <li><strong>Gobierno y educativo:</strong> proyectos ejecutados en dependencias federales, planteles universitarios y recintos culturales con normativa pública aplicable.</li>
+              <li><strong>Centros de datos:</strong> supresión especializada con gas inerte o Novec 1230 para protección de equipos críticos sin daño colateral por agua.</li>
+              <li><strong>Descripción técnica por ficha:</strong> sistema instalado, normativa seguida, superficie protegida, tipo de riesgo y status del proyecto — toda la información que el comprador necesita para comparar.</li>
+            </ul>
+
+            <div class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <img src="../../../img/equipos-contra-incendios/proyectored/proyectored-05.webp" alt="ProyectoRed — portafolio de proyectos por sector con ficha técnica" width="1543" height="854" loading="lazy" decoding="async">
+              </div>
+              <p class="ol-case-figure-caption">Portafolio organizado por sector: cada proyecto con sistema instalado, normativa, alcance y fotografía de la instalación.</p>
+            </div>
+          </section>
+
+          <!-- 06 CONVERSIÓN -->
+          <section class="ol-case-section" id="conversion">
+            <span class="ol-case-eyebrow">06 · Conversión B2B</span>
+            <h2 class="ol-case-h2">Un canal directo entre el responsable técnico y el equipo de proyectos.</h2>
+            <p class="ol-case-p">En proyectos de ingeniería contra incendios, la calidad del primer contacto define el tono de toda la relación comercial. Por eso el sistema de conversión del sitio de ProyectoRed está diseñado para <strong>calificar al prospecto desde el formulario</strong> y darle al equipo técnico la información mínima para preparar una primera respuesta de valor — no una respuesta genérica.</p>
+
+            <div class="ol-case-cards">
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="14" x2="15" y2="14"/></svg>
+                </div>
+                <h4>Formulario técnico de proyecto</h4>
+                <p>Campos orientados a ingeniería: tipo de inmueble, superficie a proteger, sistema requerido, normativa aplicable, zona y breve descripción del proyecto — información suficiente para una respuesta útil.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg width="20" height="20" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg>
+                </div>
+                <h4>WhatsApp de proyecto</h4>
+                <p>Acceso directo por WhatsApp con mensaje precargado por tipo de sistema — el botón persiste en todo el recorrido sin interrumpir la lectura técnica del visitante.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <h4>Teléfono siempre visible</h4>
+                <p>Número comercial en topbar, header y footer — el responsable de seguridad que ya revisó el portafolio no necesita buscar el teléfono: lo tiene a la vista desde cualquier pantalla.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </div>
+                <h4>Correo institucional</h4>
+                <p>Dirección de correo corporativa expuesta para que el área de compras o ingeniería envíe directamente RFQ, bases de licitación o especificaciones del proyecto.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 07 TECNOLOGÍA -->
+          <section class="ol-case-section" id="tecnologia">
+            <span class="ol-case-eyebrow">07 · Tecnología y rendimiento</span>
+            <h2 class="ol-case-h2">Velocidad y estabilidad para el entorno técnico del comprador.</h2>
+            <p class="ol-case-p">El sitio de ProyectoRed se construyó sobre una base técnica ligera y moderna, optimizada para los entornos donde opera su comprador: <strong>redes corporativas con acceso restringido, dispositivos móviles en campo, conexiones lentas en zonas industriales</strong>. La arquitectura estática-primero garantiza carga inmediata y estabilidad visual en cualquier condición de red.</p>
+
+            <div class="ol-case-spec">
+              <dl>
+                <div class="ol-case-spec-row">
+                  <dt>Generador</dt>
+                  <dd>Astro · arquitectura estática-primero, salida HTML pura para máximo rendimiento e indexabilidad completa.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Estilo</dt>
+                  <dd>CSS3 con design tokens propios — variables CSS para paleta, tipografía, espaciado y radios. Sin dependencias pesadas de UI.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Tipografía</dt>
+                  <dd>Inter (300–900) con preconnect a Google Fonts — render no bloqueante, fallback del sistema en primera pincelada.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Imágenes</dt>
+                  <dd>WebP con dimensiones explícitas, <code>loading="lazy"</code> y <code>decoding="async"</code> — sin layout shift, sin bloqueo del hilo principal.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Datos estructurados</dt>
+                  <dd>Schema.org en JSON-LD: Organization, WebSite, BreadcrumbList y CreativeWork según plantilla — correcta interpretación por motores y agregadores.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Accesibilidad</dt>
+                  <dd>Skip-link a contenido principal, ARIA labels en navegación y formularios, contraste WCAG AA en todo el sistema visual.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Responsivo</dt>
+                  <dd>Layout fluido desde 360 px; menú móvil con overlay, dropdowns colapsables y formularios adaptados para uso en campo desde teléfono.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Hosting</dt>
+                  <dd>CDN global con HTTPS, compresión Brotli, caché agresivo en estáticos y dominio corporativo propio bajo certificado válido.</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <img src="../../../img/equipos-contra-incendios/proyectored/proyectored-06.webp" alt="ProyectoRed — vista responsiva del sitio en desktop, tablet y móvil" width="1543" height="854" loading="lazy" decoding="async">
+              </div>
+              <p class="ol-case-figure-caption">Comportamiento responsivo completo: desktop, tablet y móvil con el mismo sistema de componentes y jerarquía visual.</p>
+            </div>
+          </section>
+
+          <!-- 08 PROCESO -->
+          <section class="ol-case-section" id="proceso">
+            <span class="ol-case-eyebrow">08 · Proceso de trabajo</span>
+            <h2 class="ol-case-h2">Del levantamiento técnico al sitio en operación.</h2>
+            <p class="ol-case-p">El proyecto siguió la metodología de OrigenLab: descubrimiento → estrategia → diseño → desarrollo → pruebas → lanzamiento → acompañamiento. Cada etapa se documenta con entregables concretos y puntos de aprobación definidos, para que el cliente tenga claridad total sobre qué espera y cuándo lo recibe.</p>
+
+            <div class="ol-case-arch">
+              <div class="ol-arch-step">
+                <p class="num">FASE 01</p>
+                <h4>Descubrimiento</h4>
+                <p>Sesión técnica con el equipo de ProyectoRed: sistemas que ofrecen, sectores que atienden, perfil de comprador, proyectos de referencia y diferenciadores frente a la competencia.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">FASE 02</p>
+                <h4>Estrategia</h4>
+                <p>Arquitectura de información, mapa de contenidos por sector, jerarquía de mensajes y estrategia de conversión B2B orientada al comprador técnico industrial.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">FASE 03</p>
+                <h4>Diseño visual</h4>
+                <p>Sistema de design tokens, componentes base (header, tarjetas de sistema, fichas de proyecto, formulario técnico) y prototipos para validación con el cliente.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">FASE 04</p>
+                <h4>Desarrollo</h4>
+                <p>Construcción sobre Astro con componentes reutilizables, portafolio de proyectos, secciones por sector, formulario de cotización técnica y datos estructurados Schema.org.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">FASE 05</p>
+                <h4>Pruebas</h4>
+                <p>Auditoría técnica completa, validación responsiva, revisión de accesibilidad, pruebas cruzadas en navegadores y verificación de formularios y canales de contacto.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">FASE 06</p>
+                <h4>Lanzamiento</h4>
+                <p>Configuración de dominio, certificado SSL, despliegue en CDN y entrega de credenciales, junto con acompañamiento técnico al equipo de ProyectoRed.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 09 GALERÍA -->
+          <section class="ol-case-section" id="galeria">
+            <span class="ol-case-eyebrow">09 · Galería del sitio</span>
+            <h2 class="ol-case-h2">Pantallas y secciones del sitio en operación.</h2>
+            <p class="ol-case-p">Un recorrido por las pantallas principales del sitio de ProyectoRed: home corporativa, sección de sistemas, portafolio de proyectos, sección de equipo y módulo de contacto técnico — todas construidas con el mismo sistema de componentes y jerarquía visual.</p>
+
+            <div class="ol-case-gallery">
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <img src="../../../img/equipos-contra-incendios/proyectored/proyectored-01.webp" alt="ProyectoRed — pantalla 01: hero principal" width="1543" height="854" loading="lazy" decoding="async">
+                </div>
+                <figcaption class="ol-case-figure-caption">01 · Hero corporativo con propuesta de valor y especialidades del sector.</figcaption>
+              </figure>
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <img src="../../../img/equipos-contra-incendios/proyectored/proyectored-02.webp" alt="ProyectoRed — pantalla 02: especialidades y normatividad" width="1543" height="854" loading="lazy" decoding="async">
+                </div>
+                <figcaption class="ol-case-figure-caption">02 · Especialidades técnicas y normatividad aplicable por sistema.</figcaption>
+              </figure>
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <img src="../../../img/equipos-contra-incendios/proyectored/proyectored-03.webp" alt="ProyectoRed — pantalla 03: sección de sistemas por tipo" width="1543" height="854" loading="lazy" decoding="async">
+                </div>
+                <figcaption class="ol-case-figure-caption">03 · Sistemas organizados por tipo: rociadores, detección, supresión y agente limpio.</figcaption>
+              </figure>
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <img src="../../../img/equipos-contra-incendios/proyectored/proyectored-04.webp" alt="ProyectoRed — pantalla 04: tarjetas de proyecto con badges normativos" width="1543" height="854" loading="lazy" decoding="async">
+                </div>
+                <figcaption class="ol-case-figure-caption">04 · Portafolio de proyectos con tarjetas técnicas y badges de normativa.</figcaption>
+              </figure>
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <img src="../../../img/equipos-contra-incendios/proyectored/proyectored-05.webp" alt="ProyectoRed — pantalla 05: ficha de proyecto ejecutado" width="1543" height="854" loading="lazy" decoding="async">
+                </div>
+                <figcaption class="ol-case-figure-caption">05 · Ficha de proyecto con sector, sistema, normativa y alcance de la instalación.</figcaption>
+              </figure>
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <img src="../../../img/equipos-contra-incendios/proyectored/proyectored-06.webp" alt="ProyectoRed — pantalla 06: comportamiento responsivo" width="1543" height="854" loading="lazy" decoding="async">
+                </div>
+                <figcaption class="ol-case-figure-caption">06 · Comportamiento responsivo en desktop, tablet y móvil.</figcaption>
+              </figure>
+            </div>
+
+            <figure class="ol-case-figure" style="margin-top:1.25rem;">
+              <div class="ol-case-figure-frame">
+                <img src="../../../img/equipos-contra-incendios/proyectored/proyectored-07.webp" alt="ProyectoRed — pantalla 07: formulario de cotización técnica y contacto" width="1543" height="854" loading="lazy" decoding="async">
+              </div>
+              <figcaption class="ol-case-figure-caption">07 · Módulo de contacto técnico con formulario de cotización orientado a proyectos de ingeniería.</figcaption>
+            </figure>
+          </section>
+
+          <!-- 10 RESULTADO -->
+          <section class="ol-case-section" id="resultado">
+            <span class="ol-case-eyebrow">10 · Resultado entregado</span>
+            <h2 class="ol-case-h2">Una plataforma corporativa al nivel de la operación técnica de ProyectoRed.</h2>
+            <p class="ol-case-p">El resultado es un sitio que <strong>demuestra experiencia antes de la primera llamada</strong>, organiza el portafolio de proyectos ejecutados con profundidad técnica suficiente para calificar al comprador, y abre canales de cotización formal diseñados para el proceso de compra de proyectos de ingeniería. El comprador que llega al sitio de ProyectoRed sale con la certeza de que está ante una empresa seria, técnicamente competente y con trayectoria comprobada en su sector.</p>
+            <ul class="ol-case-list">
+              <li><strong>Sitio corporativo en operación</strong> bajo dominio propio, certificado SSL, CDN global y dominio gestionado.</li>
+              <li><strong>Portafolio de proyectos estructurado</strong> por sector con ficha técnica, normativa y alcance de cada instalación.</li>
+              <li><strong>Secciones por sistema</strong> con descripción técnica, aplicaciones y normatividad específica (NFPA, NOM, FM, UL).</li>
+              <li><strong>Formulario de cotización técnica</strong> con campos orientados a proyectos de ingeniería, enrutado al equipo comercial.</li>
+              <li><strong>Canal paralelo por WhatsApp y teléfono</strong> visibles en todas las pantallas del sitio.</li>
+              <li><strong>Datos estructurados Schema.org</strong> para que motores y agregadores entiendan la naturaleza corporativa del sitio.</li>
+              <li><strong>Sistema de componentes escalable</strong> que permite agregar proyectos, sistemas y sectores sin rehacer el diseño base.</li>
+              <li><strong>Documentación entregable</strong> al equipo de ProyectoRed para mantener y ampliar el sitio de forma autónoma.</li>
+            </ul>
+          </section>
+
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CTA HERO ============== -->
+  <section class="ol-cta-hero">
+    <div class="ol-cta-hero-inner">
+      <div class="ol-cta-hero-card">
+
+        <div class="ol-cta-hero-left">
+          <p class="ol-cta-hero-eyebrow">Iniciar proyecto</p>
+          <h2 class="ol-cta-hero-title">¿Tu empresa de protección contra incendios necesita un sitio al nivel de su operación técnica?</h2>
+          <p class="ol-cta-hero-blurb">Si diseñas, instalas, distribuyes o mantienes sistemas contra incendios — podemos construir contigo un sitio corporativo técnico, con portafolio real, canales B2B y estructura escalable. Sin plantillas, sin atajos, hecho para tu comprador.</p>
+          <div class="ol-cta-hero-actions">
+            <a href="/cotizar/" class="ol-btn-primary">
+              Cotizar proyecto
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+            <a href="https://wa.me/525547868402?text=Hola%2C%20vi%20el%20caso%20de%20ProyectoRed%20y%20quiero%20un%20proyecto%20similar." target="_blank" rel="noopener noreferrer" class="ol-btn-ghost">
+              <svg width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg>
+              Hablar por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="ol-cta-hero-right">
+          <div class="ol-cta-hero-promises">
+            <p class="ol-cta-hero-promises-title">Lo que recibes con OrigenLab</p>
+            <ul class="ol-cta-hero-promises-list">
+              <li>Levantamiento técnico del proyecto antes de cualquier propuesta visual</li>
+              <li>Diseño y desarrollo a medida — sin plantillas ni soluciones genéricas</li>
+              <li>Portafolio de proyectos ejecutados con ficha técnica y normativa</li>
+              <li>Formulario de cotización técnica B2B integrado al flujo comercial</li>
+              <li>Estructura escalable para agregar proyectos, sectores y sistemas</li>
+              <li>Acompañamiento post-entrega con tu equipo técnico y comercial</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="ol-faq-section">
+    <div class="ol-faq-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Preguntas Frecuentes</span>
+          <h2 class="ol-section-title">Todo lo que necesitas saber<br>antes de empezar</h2>
+          <p class="ol-section-sub">Resolvemos las dudas más comunes sobre nuestros proyectos web. ¿No encuentras tu respuesta? Escríbenos directo.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Sabemos que contratar una agencia de desarrollo web implica una decisión importante. Por eso reunimos aquí las preguntas que más nos hacen antes de arrancar un proyecto — sobre costos, tiempos, procesos y lo que incluye cada entrega. Queremos que llegues a la primera llamada con claridad, no con dudas.</p>
+          <p class="ol-sh-copy">Si tu pregunta no está aquí, escríbenos directo. Respondemos de manera personalizada y sin compromiso. Cada proyecto es distinto y preferimos una conversación real a una respuesta genérica.</p>
+        </div>
+      </div>
+
+      <div class="ol-faq-grid">
+
+        <!-- Columna izquierda: Acordeón FAQ -->
+        <div>
+          <p class="ol-faq-col-label">Preguntas frecuentes</p>
+          <div class="ol-faq-list" id="ol-faq-list">
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="0">
+                ¿Cuánto cuesta un sitio web profesional?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-0">
+                <p class="ol-faq-answer-inner">El costo depende del alcance, funcionalidad y diseño de cada proyecto. Cada cotización se construye a la medida según pantallas, integraciones, complejidad del portafolio y nivel de personalización. Siempre entregamos una propuesta detallada y por escrito, sin cargos ocultos, antes de comenzar.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="1">
+                ¿Cuánto tiempo tarda en estar listo mi sitio web?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-1">
+                <p class="ol-faq-answer-inner">Los plazos varían según la complejidad de cada proyecto. Trabajamos con calendario comprometido por escrito desde el inicio, con entregas iterativas en entorno de pruebas para ver el avance real durante todo el desarrollo.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="2">
+                ¿Trabajan con empresas fuera de Ciudad de México?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-2">
+                <p class="ol-faq-answer-inner">Sí. Trabajamos con clientes en todo México — Monterrey, Guadalajara, Puebla y muchas otras ciudades — así como proyectos para empresas en Estados Unidos y Latinoamérica. Todo el proceso se gestiona de forma remota, ágil y completamente en línea.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="3">
+                ¿Qué incluye el precio del sitio web?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-3">
+                <p class="ol-faq-answer-inner">Nuestras propuestas incluyen diseño personalizado, desarrollo front-end, versión responsiva completa (móvil y desktop), integración de formularios de contacto y cotización, optimización de velocidad y entrega de archivos finales. El dominio y hosting pueden incluirse según el plan elegido.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="4">
+                ¿Puedo ver avances antes de pagar el total?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-4">
+                <p class="ol-faq-answer-inner">Sí, claro. Nuestro proceso incluye etapas de revisión con prototipos y diseños visuales antes del desarrollo final. Tú apruebas cada fase antes de avanzar, lo que garantiza que el resultado final sea exactamente lo que esperabas.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="5">
+                ¿Qué pasa si necesito cambios después de entregar el sitio?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-5">
+                <p class="ol-faq-answer-inner">Todos nuestros proyectos incluyen un periodo de ajustes post-entrega. Para cambios posteriores ofrecemos planes de mantenimiento mensual o cotizaciones por proyecto. Nos mantenemos disponibles para crecer contigo en el tiempo.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="6">
+                ¿Necesito tener dominio y hosting propios?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-6">
+                <p class="ol-faq-answer-inner">No necesariamente. Podemos asesorarte en la elección del dominio y hosting ideales para tu proyecto, o trabajar con los que ya tienes. También ofrecemos gestión completa de infraestructura para que tú no te preocupes por aspectos técnicos.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="7">
+                ¿Hacen tiendas en línea y e-commerce?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-7">
+                <p class="ol-faq-answer-inner">Sí — hacemos e-commerce todo el tiempo. Desarrollamos tiendas en línea con catálogo de productos, carrito de compras, pasarelas de pago (OXXO, tarjeta, transferencia) y panel de administración para que gestiones tu inventario fácilmente.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Columna derecha: Formulario WhatsApp -->
+        <div>
+          <div class="ol-faq-form-wrap">
+            <span class="ol-faq-form-badge">
+              <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+              Contáctanos por WhatsApp
+            </span>
+            <h3 class="ol-faq-form-title">¿Listo para empezar<br>tu proyecto?</h3>
+            <p class="ol-faq-form-sub">Cuéntanos brevemente qué necesitas y te respondemos con una propuesta clara, por escrito y sin compromiso.</p>
+
+            <form class="ol-faq-form" id="ol-wa-form" novalidate>
+              <div class="ol-faq-form-row">
+                <div class="ol-faq-field">
+                  <label for="faq-nombre">Tu nombre</label>
+                  <input type="text" id="faq-nombre" placeholder="Ej. Carlos García" autocomplete="given-name">
+                </div>
+                <div class="ol-faq-field">
+                  <label for="faq-empresa">Empresa / Negocio</label>
+                  <input type="text" id="faq-empresa" placeholder="Nombre de tu empresa">
+                </div>
+              </div>
+              <div class="ol-faq-field">
+                <label for="faq-tipo">Tipo de proyecto</label>
+                <select id="faq-tipo">
+                  <option value="" disabled selected>Selecciona una opción</option>
+                  <option value="Sitio web corporativo">Sitio web corporativo</option>
+                  <option value="Tienda en línea / E-commerce">Tienda en línea / E-commerce</option>
+                  <option value="Landing page">Landing page</option>
+                  <option value="Rediseño de sitio existente">Rediseño de sitio existente</option>
+                  <option value="Portafolio profesional">Portafolio profesional</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+              <div class="ol-faq-field">
+                <label for="faq-mensaje">¿Qué necesitas?</label>
+                <textarea id="faq-mensaje" placeholder="Describe brevemente tu proyecto o la duda que tienes..."></textarea>
+              </div>
+              <button type="submit" class="ol-faq-submit">
+                <svg width="17" height="17" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+                Enviar por WhatsApp
+              </button>
+              <p class="ol-faq-form-note">Al enviar, se abrirá WhatsApp con tu mensaje listo. Respondemos en menos de 24 h.</p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+  (function() {
+    var waForm = document.getElementById('ol-wa-form');
+    if (waForm) waForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var nombre = document.getElementById('faq-nombre').value.trim();
+      var empresa = document.getElementById('faq-empresa').value.trim();
+      var tipo = document.getElementById('faq-tipo').value;
+      var mensaje = document.getElementById('faq-mensaje').value.trim();
+      var partes = ['Hola OrigenLab, me contacto desde el caso de estudio de ProyectoRed.'];
+      if (nombre) partes.push('*Nombre:* ' + nombre);
+      if (empresa) partes.push('*Empresa:* ' + empresa);
+      if (tipo) partes.push('*Tipo de proyecto:* ' + tipo);
+      if (mensaje) partes.push('*Descripción:* ' + mensaje);
+      partes.push('Me gustaría recibir más información. ¡Gracias!');
+      var url = 'https://wa.me/525547868402?text=' + encodeURIComponent(partes.join('\n'));
+      window.open(url, '_blank', 'noopener,noreferrer');
+    });
+  })();
+  </script>
+
+  <!-- ============== NEXT CASE NAV ============== -->
+  <section class="ol-case-next">
+    <div class="ol-case-next-inner">
+      <a href="/portafolio/equipos-contra-incendios/" class="ol-case-next-card">
+        <p class="ol-case-next-eyebrow">← Volver al sector</p>
+        <p class="ol-case-next-title">Ver más empresas del sector contra incendios</p>
+        <span class="ol-case-next-link">Ir al portafolio del sector →</span>
+      </a>
+      <a href="/portafolio/" class="ol-case-next-card">
+        <p class="ol-case-next-eyebrow">Otros sectores</p>
+        <p class="ol-case-next-title">Ver todo el portafolio de OrigenLab</p>
+        <span class="ol-case-next-link">Ir al portafolio completo →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============== QUICKNAV BOTTOM ============== -->
+  <div class="ol-quicknav">
+    <div class="ol-quicknav-inner">
+      <a href="/portafolio/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Todo el Portafolio</span>
+          <span class="ol-qn-sub">Más casos por sector</span>
+        </div>
+      </a>
+      <a href="/portafolio/equipos-contra-incendios/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Equipos Contra Incendios</span>
+          <span class="ol-qn-sub">Otros casos del sector</span>
+        </div>
+      </a>
+      <a href="/servicios/desarrollo-web/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Sitios Corporativos</span>
+          <span class="ol-qn-sub">Diseño a medida</span>
+        </div>
+      </a>
+      <a href="/servicios/tiendas-en-linea/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Tienda en Línea</span>
+          <span class="ol-qn-sub">E-commerce profesional</span>
+        </div>
+      </a>
+      <a href="/nosotros/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Nosotros</span>
+          <span class="ol-qn-sub">Quiénes somos</span>
+        </div>
+      </a>
+      <a href="/contacto/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Contacto</span>
+          <span class="ol-qn-sub">Escríbenos directo</span>
+        </div>
+      </a>
+      <a href="/cotizar/" class="ol-qn-item ol-qn-cta">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Iniciar Proyecto</span>
+          <span class="ol-qn-sub">Solicitar propuesta</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="ol-footer">
+  <div class="ol-footer-top">
+    <a href="/" class="ol-footer-logo">
+      Origen<span class="ol-footer-logo-dot">.</span>Lab
+    </a>
+    <p class="ol-footer-tagline">
+      Agencia de desarrollo web en México.<br>
+      Creamos sitios que generan resultados.
+    </p>
+    <ul class="ol-footer-contact-list">
+      <li>
+        <a href="mailto:hola@origenlab.mx" class="ol-fcl-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          hola@origenlab.mx
+        </a>
+      </li>
+      <li>
+        <a href="tel:+525547868402" class="ol-fcl-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +52 55 4786 8402
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/525547868402" target="_blank" rel="noopener noreferrer" class="ol-fcl-item ol-fcl-wa">
+          <svg width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg>
+          WhatsApp
+        </a>
+      </li>
+      <li>
+        <span class="ol-fcl-item ol-fcl-static">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Ciudad de México, MX
+        </span>
+      </li>
+    </ul>
+  </div>
+  <div class="ol-footer-links">
+    <div>
+      <p class="ol-footer-col-title">Servicios</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/servicios/desarrollo-web/">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/">Rediseño Web</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Empresa</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/nosotros/">Nosotros</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/contacto/">Contacto</a></li>
+        <li><a href="/cotizar/">Cotizar proyecto</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Portafolio</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/portafolio/">Todo el portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/">Gama de México</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/proyectored/">ProyectoRed</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Legal</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/aviso-de-privacidad/">Aviso de Privacidad</a></li>
+        <li><a href="/terminos/">Términos de Servicio</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ol-footer-bottom">
+    <p class="ol-footer-copy">© 2025 OrigenLab. Todos los derechos reservados.</p>
+    <p class="ol-footer-made">Hecho en México 🇲🇽</p>
+  </div>
+</footer>
+
+</body>
+</html>

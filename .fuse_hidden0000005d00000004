@@ -1,0 +1,1363 @@
+<!DOCTYPE html><html lang="es-MX"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Metadata --><title>OrigenLab — Sitios web que generan resultados</title><meta name="description" content="Agencia de desarrollo web profesional en México. Sitios rápidos, modernos y optimizados para convertir que generan resultados reales para tu negocio."><link rel="canonical" href="https://origenlab.mx/"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:url" content="https://origenlab.mx/"><meta property="og:title" content="Desarrollo web profesional en México — OrigenLab"><meta property="og:description" content="Sitios rápidos, modernos y diseñados para convertir. Agencia web profesional en México."><meta property="og:image" content="https://origenlab.mx/og-image.jpg"><meta property="og:locale" content="es_MX"><meta property="og:site_name" content="OrigenLab"><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="OrigenLab · Sitios web que generan resultados"><meta name="twitter:description" content="Agencia mexicana de desarrollo web. Velocidad, diseño y conversión en un solo equipo."><meta name="twitter:image" content="https://origenlab.mx/og-image.jpg"><!-- Favicon --><link rel="icon" type="image/svg+xml" href="favicon.svg"><!-- Schema.org Organization --><!-- TruConversion --><script type="60859e5f75cc6e16ebfd21f4-text/javascript">
+      var _tip = _tip || [];
+      (function(d,s,id){
+        var js, tjs = d.getElementsByTagName(s)[0];
+        if(d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.async = true;
+        js.src = d.location.protocol + '//app.truconversion.com/ti-js/62670/e9e44.js';
+        tjs.parentNode.insertBefore(js, tjs);
+      }(document, 'script', 'ti-js'));
+    </script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+<link rel="stylesheet" href="_astro/BaseLayout.xeR8R953.css?v20260426c">
+<link rel="stylesheet" href="_astro/index@_@astro.BX4RFBkr.css?v20260426c">
+<link rel="stylesheet" href="_astro/premium-dark.css?v20260426c">
+  <script src="_astro/ol-header.js?v20260426d" defer></script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://origenlab.mx/#organization",
+      "name": "OrigenLab",
+      "url": "https://origenlab.mx",
+      "logo": "https://origenlab.mx/logo.svg",
+      "description": "Agencia de desarrollo web profesional en México. Sitios web que generan resultados.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ciudad de México",
+        "addressCountry": "MX"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+525547868402",
+        "contactType": "sales",
+        "availableLanguage": [
+          "Spanish",
+          "es-MX"
+        ],
+        "areaServed": "MX"
+      },
+      "sameAs": []
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://origenlab.mx/#website",
+      "url": "https://origenlab.mx/",
+      "name": "OrigenLab",
+      "inLanguage": "es-MX",
+      "publisher": {
+        "@id": "https://origenlab.mx/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://origenlab.mx/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://origenlab.mx/#localbusiness",
+      "name": "OrigenLab",
+      "image": "https://origenlab.mx/og-image.jpg",
+      "url": "https://origenlab.mx",
+      "telephone": "+525547868402",
+      "email": "hola@origenlab.mx",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ciudad de México",
+        "addressRegion": "CDMX",
+        "addressCountry": "MX"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Ciudad de México"
+        },
+        {
+          "@type": "City",
+          "name": "Monterrey"
+        },
+        {
+          "@type": "City",
+          "name": "Guadalajara"
+        },
+        {
+          "@type": "Country",
+          "name": "México"
+        }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "19:00"
+        }
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Desarrollo web"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Tiendas en línea"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Landing pages"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Rediseño web"
+          }
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "8",
+        "bestRating": "5",
+        "worstRating": "5"
+      },
+      "review": [
+        {
+          "@id": "https://origenlab.mx/#review-1"
+        },
+        {
+          "@id": "https://origenlab.mx/#review-2"
+        },
+        {
+          "@id": "https://origenlab.mx/#review-3"
+        },
+        {
+          "@id": "https://origenlab.mx/#review-4"
+        },
+        {
+          "@id": "https://origenlab.mx/#review-5"
+        },
+        {
+          "@id": "https://origenlab.mx/#review-6"
+        },
+        {
+          "@id": "https://origenlab.mx/#review-7"
+        },
+        {
+          "@id": "https://origenlab.mx/#review-8"
+        }
+      ]
+    },
+    {
+      "@type": "Review",
+      "@id": "https://origenlab.mx/#review-1",
+      "author": {
+        "@type": "Person",
+        "name": "Equipo REDEIL"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "OrigenLab transformó nuestra presencia digital por completo. El nuevo sitio refleja el nivel profesional de nuestros servicios de iluminación para eventos y hemos notado un incremento real en solicitudes de cotización desde que lo lanzamos.",
+      "itemReviewed": {
+        "@id": "https://origenlab.mx/#localbusiness"
+      }
+    },
+    {
+      "@type": "Review",
+      "@id": "https://origenlab.mx/#review-2",
+      "author": {
+        "@type": "Person",
+        "name": "REDEIL CDMX"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "El proceso fue muy claro desde el inicio: nos explicaron cada etapa, cumplieron los tiempos y el resultado superó nuestras expectativas.",
+      "itemReviewed": {
+        "@id": "https://origenlab.mx/#localbusiness"
+      }
+    },
+    {
+      "@type": "Review",
+      "@id": "https://origenlab.mx/#review-3",
+      "author": {
+        "@type": "Person",
+        "name": "Equipo Eventech"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Necesitábamos un sitio que mostrara todo nuestro catálogo de renta de equipo para eventos de forma clara y profesional. OrigenLab entendió perfectamente nuestras necesidades.",
+      "itemReviewed": {
+        "@id": "https://origenlab.mx/#localbusiness"
+      }
+    },
+    {
+      "@type": "Review",
+      "@id": "https://origenlab.mx/#review-4",
+      "author": {
+        "@type": "Person",
+        "name": "Ana García"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "El portafolio que nos diseñaron es una obra de arte. Cada proyecto se presenta de forma espectacular y hemos conseguido clientes de mucho mejor perfil.",
+      "itemReviewed": {
+        "@id": "https://origenlab.mx/#localbusiness"
+      }
+    },
+    {
+      "@type": "Review",
+      "@id": "https://origenlab.mx/#review-5",
+      "author": {
+        "@type": "Person",
+        "name": "Roberto Sánchez"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Aparecemos en primer contacto con sus clientes cuando buscan dentistas en nuestra zona. La inversión se pagó sola en dos meses.",
+      "itemReviewed": {
+        "@id": "https://origenlab.mx/#localbusiness"
+      }
+    },
+    {
+      "@type": "Review",
+      "@id": "https://origenlab.mx/#review-6",
+      "author": {
+        "@type": "Person",
+        "name": "María López"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "El sitio que nos hicieron refleja perfectamente la calidad de nuestros proyectos. Los clientes nos contactan más y con mayor seriedad.",
+      "itemReviewed": {
+        "@id": "https://origenlab.mx/#localbusiness"
+      }
+    },
+    {
+      "@type": "Review",
+      "@id": "https://origenlab.mx/#review-7",
+      "author": {
+        "@type": "Person",
+        "name": "Carlos Mendoza"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Buscábamos una imagen digital que transmitiera seriedad y confianza. OrigenLab entendió perfectamente el perfil de nuestra firma.",
+      "itemReviewed": {
+        "@id": "https://origenlab.mx/#localbusiness"
+      }
+    },
+    {
+      "@type": "Review",
+      "@id": "https://origenlab.mx/#review-8",
+      "author": {
+        "@type": "Person",
+        "name": "Laura Vázquez"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Nuestra tienda en línea funciona de maravilla. La integración con Mercado Pago fue impecable y el diseño enamora a nuestras clientas.",
+      "itemReviewed": {
+        "@id": "https://origenlab.mx/#localbusiness"
+      }
+    }
+  ]
+}</script><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cuánto cuesta un sitio web profesional?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El costo depende del alcance, funcionalidad y diseño de cada proyecto. Cada cotización se construye a la medida según pantallas, integraciones, complejidad de catálogo y nivel de personalización. Siempre entregamos una propuesta detallada y por escrito, sin cargos ocultos, antes de comenzar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto tiempo tarda en estar listo mi sitio web?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los plazos varían según la complejidad de cada proyecto. Trabajamos con calendario comprometido por escrito desde el inicio, con entregas iterativas en entorno de pruebas para ver el avance real durante todo el proyecto."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Trabajan con empresas fuera de Ciudad de México?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Trabajamos con clientes en todo México — Monterrey, Guadalajara, Puebla y muchas otras ciudades — así como proyectos para empresas en Estados Unidos y Latinoamérica. Todo el proceso se gestiona de forma remota, ágil y completamente en línea."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué incluye el precio del sitio web?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nuestras propuestas incluyen diseño personalizado, desarrollo front-end y back-end, versión responsiva (móvil y desktop), integración de formularios de contacto, optimización de velocidad y entrega de archivos finales. El dominio y hosting pueden incluirse según el plan elegido."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo ver avances antes de pagar el total?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Nuestro proceso incluye etapas de revisión con prototipos y diseños visuales antes del desarrollo final. Tú apruebas cada fase antes de avanzar, lo que garantiza que el resultado final sea exactamente lo que esperabas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué pasa si necesito cambios después de entregar el sitio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Todos nuestros proyectos incluyen un periodo de ajustes post-entrega. Para cambios posteriores ofrecemos planes de mantenimiento mensual o cotizaciones por proyecto."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Necesito tener dominio y hosting propios?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No necesariamente. Podemos asesorarte en la elección del dominio y hosting ideales para tu proyecto, o trabajar con los que ya tienes. También ofrecemos gestión completa de infraestructura."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Hacen tiendas en línea y e-commerce?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí — hacemos e-commerce todo el tiempo. Desarrollamos tiendas en línea con catálogo de productos, carrito de compras, pasarelas de pago (OXXO, tarjeta, transferencia) y panel de administración."
+      }
+    }
+  ]
+}</script>
+</head> <body> <a class="ol-skip-link" href="#main">Saltar al contenido</a><div class="ol-topbar">
+  <div class="ol-topbar-inner">
+    <div class="ol-topbar-left">
+      <a href="mailto:hola@origenlab.mx" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        hola@origenlab.mx
+      </a>
+      <span class="ol-topbar-sep"></span>
+      <a href="tel:+525547868402" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        +52 55 4786 8402
+      </a>
+    </div>
+    <div class="ol-topbar-center">
+      <span class="ol-topbar-promo">
+        <span class="ol-topbar-dot"></span>
+        Atención personalizada  ·  Ciudad de México
+      </span>
+    </div>
+    <div class="ol-topbar-right">
+      <a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web" target="_blank" rel="noopener noreferrer" class="ol-topbar-wa">
+        <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor">
+          <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+<header class="ol-header" id="ol-header">
+  <div class="ol-header-inner">
+    <a href="/" class="ol-header-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
+    </a>
+    <nav class="ol-nav" aria-label="Navegación principal">
+      <ul class="ol-nav-list">
+        <li><a href="/" class="ol-nav-link active">Inicio</a></li>
+        <li class="ol-has-dropdown">
+          <a href="/servicios/" class="ol-nav-link">
+            Servicios
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/servicios/desarrollo-web/" class="ol-dropdown-link">Desarrollo Web</a></li>
+              <li><a href="/servicios/tiendas-en-linea/" class="ol-dropdown-link">Tiendas en Línea</a></li>
+              <li><a href="/servicios/landing-pages/" class="ol-dropdown-link">Landing Pages</a></li>
+              <li><a href="/servicios/rediseno-web/" class="ol-dropdown-link">Rediseño Web</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="ol-has-dropdown">
+          <a href="/portafolio/" class="ol-nav-link">
+            Portafolio
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link">Equipos Contra Incendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link ol-dropdown-sub">— Gama de México</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link ol-dropdown-sub">— MESECI</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link ol-dropdown-sub">— LGA Contraincendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-dropdown-link ol-dropdown-sub">— MANEXT</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-dropdown-link ol-dropdown-sub">— BOMBERO.MX</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-dropdown-link ol-dropdown-sub">— ProyectoRed</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="/nosotros/" class="ol-nav-link">Nosotros</a></li>
+        <li><a href="/blog/" class="ol-nav-link">Blog</a></li>
+        <li><a href="/contacto/" class="ol-nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="/cotizar/" class="ol-header-cta">Cotizar proyecto →</a>
+    <button class="ol-menu-toggle" id="ol-menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+    </button>
+  </div>
+</header>
+<div class="ol-mobile-overlay" id="ol-mobile-overlay"></div>
+<nav class="ol-mobile-panel" id="ol-mobile-panel" aria-label="Menú móvil">
+  <div class="ol-mobile-header">
+    <a href="/" class="ol-mobile-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
+    </a>
+    <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú">
+      <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <ul class="ol-mobile-nav">
+    <li><a href="/" class="ol-mobile-link active">Inicio</a></li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Servicios</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/servicios/desarrollo-web/" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Portafolio</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/portafolio/" class="ol-mobile-link ol-mobile-sublink">Todo el Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/" class="ol-mobile-link ol-mobile-sublink">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Gama de México</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MESECI</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— LGA Contraincendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MANEXT</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— BOMBERO.MX</a></li>
+      </ul>
+    </li>
+    <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
+    <li><a href="/blog/" class="ol-mobile-link">Blog</a></li>
+    <li><a href="/contacto/" class="ol-mobile-link">Contacto</a></li>
+  </ul>
+  <div class="ol-mobile-footer">
+    <a href="/cotizar/" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a>
+  </div>
+</nav>
+<!-- ======= END NEW HEADER ======= -->
+ <main id="main">   <section class="hero" data-astro-cid-bbe6dxrz> <div class="container hero__inner" data-astro-cid-bbe6dxrz> <!-- COLUMNA 1: Título + CTAs --> <div class="hero__col1" data-astro-cid-bbe6dxrz> <span class="hero__eyebrow" data-astro-cid-bbe6dxrz>Agencia Digital · México</span> <h1 class="hero__title" data-astro-cid-bbe6dxrz>Desarrollo web que<br data-astro-cid-bbe6dxrz>genera resultados reales.</h1> <p class="hero__sub" data-astro-cid-bbe6dxrz>Sitios rápidos, modernos y profesionales. Diseñados para convertir visitantes en clientes desde el primer día.</p> </div> <!-- COLUMNA 2: párrafos de presentación --> <div class="hero__col2" data-astro-cid-bbe6dxrz> <p class="hero__p1" data-astro-cid-bbe6dxrz>
+OrigenLab es una agencia de desarrollo web profesional en México especializada en sitios corporativos, 
+        tiendas en línea y landing pages de alta conversión. Con más de 15 proyectos entregados, trabajamos 
+        con empresas de Ciudad de México, Monterrey, Guadalajara y todo el territorio nacional, construyendo 
+        presencias digitales que generan clientes reales desde el primer día.
+</p> <p class="hero__p2" data-astro-cid-bbe6dxrz>
+Nos diferenciamos por usar tecnología moderna — Astro, Next.js y arquitecturas de alto rendimiento — 
+        que garantizan sitios con tiempos de carga menores a 1 segundo y puntuaciones perfectas en Core Web Vitals. 
+        Cada proyecto incluye diseño personalizado, integración de pagos, optimización de velocidad completa y soporte 
+        post-lanzamiento. Cuéntanos tu proyecto y recibe una propuesta a la medida.
+</p> </div> </div> </section>  <!-- ======= QUICK NAV BAR ======= -->
+<div class="ol-quicknav">
+  <div class="ol-quicknav-inner">
+
+    <a href="/servicios/desarrollo-web/" class="ol-qn-item">
+      <span class="ol-qn-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+      </span>
+      <span class="ol-qn-text">
+        <span class="ol-qn-title">Desarrollo Web</span>
+        <span class="ol-qn-sub">Sitios corporativos</span>
+      </span>
+    </a>
+
+    <a href="/servicios/tiendas-en-linea/" class="ol-qn-item">
+      <span class="ol-qn-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      </span>
+      <span class="ol-qn-text">
+        <span class="ol-qn-title">Tiendas en Línea</span>
+        <span class="ol-qn-sub">E-commerce · Pagos MX</span>
+      </span>
+    </a>
+
+    <a href="/servicios/landing-pages/" class="ol-qn-item">
+      <span class="ol-qn-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      </span>
+      <span class="ol-qn-text">
+        <span class="ol-qn-title">Landing Pages</span>
+        <span class="ol-qn-sub">Alta conversión</span>
+      </span>
+    </a>
+
+    <a href="/servicios/rediseno-web/" class="ol-qn-item">
+      <span class="ol-qn-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+      </span>
+      <span class="ol-qn-text">
+        <span class="ol-qn-title">Rediseño Web</span>
+        <span class="ol-qn-sub">Moderniza tu sitio</span>
+      </span>
+    </a>
+
+    <a href="/portafolio/" class="ol-qn-item">
+      <span class="ol-qn-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+      </span>
+      <span class="ol-qn-text">
+        <span class="ol-qn-title">Portafolio</span>
+        <span class="ol-qn-sub">Proyectos realizados</span>
+      </span>
+    </a>
+
+    <a href="/nosotros/" class="ol-qn-item">
+      <span class="ol-qn-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      </span>
+      <span class="ol-qn-text">
+        <span class="ol-qn-title">Nosotros</span>
+        <span class="ol-qn-sub">Equipo & proceso</span>
+      </span>
+    </a>
+
+    <a href="cotizar.html" class="ol-qn-item ol-qn-cta">
+      <span class="ol-qn-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+      </span>
+      <span class="ol-qn-text">
+        <span class="ol-qn-title">Cotizar Proyecto</span>
+        <span class="ol-qn-sub">Solicitar propuesta</span>
+      </span>
+    </a>
+
+  </div>
+</div>
+
+<!-- ============================================================
+     OL-SERVICES — Servicios premium
+     ============================================================ -->
+<section class="ol-services" id="servicios">
+  <div class="ol-services-inner">
+    <div class="ol-sh">
+      <div class="ol-sh-left">
+        <span class="ol-eyebrow">Servicios</span>
+        <h2 class="ol-section-title">Todo lo que tu negocio<br>necesita en línea.</h2>
+        <p class="ol-section-sub">Desde el diseño hasta el lanzamiento, construimos cada parte de tu presencia digital — sin subcontrataciones, sin intermediarios.</p>
+      </div>
+      <div class="ol-sh-right">
+        <p class="ol-sh-copy">Tu sitio web es el activo de marketing más poderoso que tiene tu negocio. Un buen diseño no solo comunica quién eres — atrae visitas, retiene atención y convierte usuarios en clientes. En OrigenLab cada proyecto parte de una pregunta concreta: ¿qué tiene que hacer este sitio para que tu negocio crezca? La respuesta guía cada decisión de diseño, estructura y funcionalidad.</p>
+        <p class="ol-sh-copy">En un entorno digital cada vez más competitivo, la calidad técnica de tu sitio determina si tu inversión en marketing genera resultados o se pierde. Velocidad de carga, experiencia móvil, claridad visual y llamadas a la acción bien colocadas son los factores que separan un sitio que vende de uno que solo ocupa espacio en internet. Construimos sitios que trabajan por ti las 24 horas del día.</p>
+      </div>
+    </div>
+    <div class="ol-services-grid">
+
+      <a href="/servicios/desarrollo-web/" class="ol-svc-card">
+        <div class="ol-svc-img">
+          <div class="ol-svc-img-label"><span>Imagen próximamente</span></div>
+        </div>
+        <div class="ol-svc-body">
+          <div class="ol-svc-num">01 — Desarrollo Web</div>
+          <h3 class="ol-svc-title">Sitios corporativos que generan resultados.</h3>
+          <p class="ol-svc-desc">Construimos sitios modernos, rápidos y a medida, pensados para negocios que necesitan una presencia digital que trabaje por ellos.</p>
+          <ul class="ol-svc-list">
+            <li>Sitios corporativos y portafolios</li>
+            <li>Astro · Next.js · React</li>
+            <li>Diseño adaptado a tu marca</li>
+          </ul>
+          <span class="ol-svc-cta">Desarrollo Web →</span>
+        </div>
+      </a>
+
+      <a href="/servicios/tiendas-en-linea/" class="ol-svc-card">
+        <div class="ol-svc-img">
+          <div class="ol-svc-img-label"><span>Imagen próximamente</span></div>
+        </div>
+        <div class="ol-svc-body">
+          <div class="ol-svc-num">02 — Tiendas en Línea</div>
+          <h3 class="ol-svc-title">E-commerce listo para vender desde el día uno.</h3>
+          <p class="ol-svc-desc">Tiendas completas con pagos integrados, gestión de inventario y checkout optimizado para maximizar cada venta.</p>
+          <ul class="ol-svc-list">
+            <li>Mercado Pago · OXXO Pay · Stripe</li>
+            <li>Catálogo y gestión de productos</li>
+            <li>Carrito y checkout optimizados</li>
+          </ul>
+          <span class="ol-svc-cta">Tiendas en Línea →</span>
+        </div>
+      </a>
+
+      <a href="/servicios/landing-pages/" class="ol-svc-card">
+        <div class="ol-svc-img">
+          <div class="ol-svc-img-label"><span>Imagen próximamente</span></div>
+        </div>
+        <div class="ol-svc-body">
+          <div class="ol-svc-num">03 — Landing Pages</div>
+          <h3 class="ol-svc-title">Páginas que convierten visitas en clientes.</h3>
+          <p class="ol-svc-desc">Diseño centrado en conversión, copy estratégico y velocidad extrema. Cada elemento tiene un propósito: que el visitante actúe.</p>
+          <ul class="ol-svc-list">
+            <li>Diseño orientado a conversión</li>
+            <li>Copy estratégico incluido</li>
+            <li>Formularios y CRM</li>
+          </ul>
+          <span class="ol-svc-cta">Landing Pages →</span>
+        </div>
+      </a>
+
+      <a href="/servicios/rediseno-web/" class="ol-svc-card">
+        <div class="ol-svc-img">
+          <div class="ol-svc-img-label"><span>Imagen próximamente</span></div>
+        </div>
+        <div class="ol-svc-body">
+          <div class="ol-svc-num">04 — Rediseño Web</div>
+          <h3 class="ol-svc-title">Tu sitio actual, transformado.</h3>
+          <p class="ol-svc-desc">Convertimos plataformas obsoletas en sitios modernos, veloces y alineados con los estándares actuales de diseño y rendimiento.</p>
+          <ul class="ol-svc-list">
+            <li>Auditoría completa incluida</li>
+            <li>Migración sin pérdida de datos</li>
+            <li>Mejora de velocidad garantizada</li>
+          </ul>
+          <span class="ol-svc-cta">Rediseño Web →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     OL-WHY — ¿Por qué OrigenLab?
+     ============================================================ -->
+<section class="ol-why" id="diferencia">
+  <div class="ol-why-inner">
+    <div class="ol-sh">
+      <div class="ol-sh-left">
+        <span class="ol-eyebrow">Diferencia</span>
+        <h2 class="ol-section-title">¿Por qué OrigenLab?</h2>
+        <p class="ol-section-sub">En un mercado saturado de agencias que prometen lo mismo, nos diferenciamos por una razón simple: entregamos. Sin subcontrataciones, sin paquetes inflados, sin sorpresas.</p>
+      </div>
+      <div class="ol-sh-right">
+        <p class="ol-sh-copy">Elegir la agencia equivocada no solo cuesta dinero — cuesta tiempo, credibilidad y oportunidades. Muchas empresas han pasado por proyectos que tardaron el doble, costaron más de lo presupuestado o simplemente no funcionaron. En OrigenLab trabajamos con un modelo diferente: un equipo directo, sin intermediarios, con responsabilidad técnica de principio a fin y entregables claros en cada etapa.</p>
+        <p class="ol-sh-copy">Nuestros clientes regresan porque el proceso es tan bueno como el resultado. Comunicación directa, tiempos cumplidos y un sitio que realmente funciona para el negocio. No vendemos paquetes genéricos — construimos exactamente lo que tu empresa necesita para crecer en internet.</p>
+      </div>
+    </div>
+    <div class="ol-why-grid">
+
+      <div class="ol-svc-card">
+        <div class="ol-svc-img">
+          <div class="ol-svc-img-label"><span>Imagen próximamente</span></div>
+        </div>
+        <div class="ol-svc-body">
+          <div class="ol-svc-num">01 — Rendimiento</div>
+          <h3 class="ol-svc-title">Velocidad extrema.</h3>
+          <p class="ol-svc-desc">Sitios que cargan en menos de 1 segundo. Usamos Astro y Next.js para arquitecturas estáticas de alto rendimiento. La velocidad tiene impacto directo en tu tasa de conversión.</p>
+          <ul class="ol-svc-list">
+            <li>Arquitecturas estáticas de alto rendimiento</li>
+            <li>Core Web Vitals optimizados</li>
+            <li>Menos de 1 s de carga garantizado</li>
+          </ul>
+          <span class="ol-svc-cta">Velocidad →</span>
+        </div>
+      </div>
+
+      <div class="ol-svc-card">
+        <div class="ol-svc-img">
+          <div class="ol-svc-img-label"><span>Imagen próximamente</span></div>
+        </div>
+        <div class="ol-svc-body">
+          <div class="ol-svc-num">02 — Diseño UX</div>
+          <h3 class="ol-svc-title">Diseño que convierte.</h3>
+          <p class="ol-svc-desc">UX/UI centrado en resultados. Cada elemento tiene un propósito: guiar al visitante hacia una acción concreta. No diseñamos para verse bonito — diseñamos para vender.</p>
+          <ul class="ol-svc-list">
+            <li>Estructura orientada a conversión</li>
+            <li>Jerarquía visual estratégica</li>
+            <li>CTA claros y efectivos</li>
+          </ul>
+          <span class="ol-svc-cta">Diseño UX →</span>
+        </div>
+      </div>
+
+      <div class="ol-svc-card">
+        <div class="ol-svc-img">
+          <div class="ol-svc-img-label"><span>Imagen próximamente</span></div>
+        </div>
+        <div class="ol-svc-body">
+          <div class="ol-svc-num">03 — Equipo</div>
+          <h3 class="ol-svc-title">Un equipo, un proyecto.</h3>
+          <p class="ol-svc-desc">Sin subcontrataciones ni intermediarios. Cada proyecto tiene un responsable técnico de principio a fin. Tú siempre hablas con quien construye tu sitio.</p>
+          <ul class="ol-svc-list">
+            <li>Sin intermediarios ni subcontratados</li>
+            <li>Un responsable técnico por proyecto</li>
+            <li>Comunicación directa siempre</li>
+          </ul>
+          <span class="ol-svc-cta">Nuestro Equipo →</span>
+        </div>
+      </div>
+
+      <div class="ol-svc-card">
+        <div class="ol-svc-img">
+          <div class="ol-svc-img-label"><span>Imagen próximamente</span></div>
+        </div>
+        <div class="ol-svc-body">
+          <div class="ol-svc-num">04 — Soporte</div>
+          <h3 class="ol-svc-title">Soporte post-lanzamiento.</h3>
+          <p class="ol-svc-desc">No desaparecemos después de entregar. Acompañamos el crecimiento digital de cada cliente con soporte, ajustes y seguimiento en las semanas posteriores al lanzamiento.</p>
+          <ul class="ol-svc-list">
+            <li>Acompañamiento post-entrega incluido</li>
+            <li>Ajustes y correcciones sin costo extra</li>
+            <li>Seguimiento de resultados</li>
+          </ul>
+          <span class="ol-svc-cta">Soporte →</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     OL-PROCESS — Cómo trabajamos
+     ============================================================ -->
+<section class="ol-process" id="proceso">
+  <div class="ol-process-inner">
+    <div class="ol-sh">
+      <div class="ol-sh-left">
+        <span class="ol-eyebrow">Proceso</span>
+        <h2 class="ol-section-title">Cómo trabajamos</h2>
+        <p class="ol-section-sub">4 etapas claras, sin incertidumbre. Entregables aprobados en cada fase antes de avanzar.</p>
+      </div>
+      <div class="ol-sh-right">
+        <p class="ol-sh-copy">La mayoría de los proyectos digitales fallan por falta de proceso, no por falta de talento. Sin etapas definidas, sin aprobaciones intermedias y sin comunicación clara, el resultado final rara vez coincide con lo que el cliente tenía en mente. Por eso en OrigenLab estructuramos cada proyecto en 4 fases con entregables concretos: sabes exactamente en qué punto estamos, qué sigue y cuándo termina.</p>
+        <p class="ol-sh-copy">Antes de escribir una línea de código dedicamos tiempo real a entender tu negocio, tu audiencia y tus objetivos. El diseño se aprueba antes del desarrollo. El staging se revisa antes del lanzamiento. Al cerrar el proyecto te entregamos documentación técnica completa y capacitación para gestionar tu propio contenido.</p>
+      </div>
+    </div>
+    <div class="ol-process-steps">
+      <div class="ol-process-step">
+        <div class="ol-process-num">01</div>
+        <h3 class="ol-process-step-title">Descubrimiento</h3>
+        <p class="ol-process-step-desc">Entendemos tu negocio, tu mercado y tus objetivos antes de escribir una sola línea de código. Sin este paso, no avanzamos.</p>
+      </div>
+      <div class="ol-process-step">
+        <div class="ol-process-num">02</div>
+        <h3 class="ol-process-step-title">Diseño</h3>
+        <p class="ol-process-step-desc">Prototipo visual completo. Tú apruebas el diseño antes de pasar al desarrollo. Cero sorpresas en el resultado final.</p>
+      </div>
+      <div class="ol-process-step">
+        <div class="ol-process-num">03</div>
+        <h3 class="ol-process-step-title">Desarrollo</h3>
+        <p class="ol-process-step-desc">Código limpio, optimizado y documentado. Construido con tecnologías de alto rendimiento pensadas para escalar con tu empresa.</p>
+      </div>
+      <div class="ol-process-step">
+        <div class="ol-process-num">04</div>
+        <h3 class="ol-process-step-title">Lanzamiento</h3>
+        <p class="ol-process-step-desc">Deploy profesional, capacitación completa sobre tu CMS y acompañamiento en las primeras semanas tras el lanzamiento.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     OL-TESTIMONIALS — Testimonios
+     ============================================================ -->
+<section class="ol-testimonials" id="testimonios">
+  <div class="ol-testimonials-inner">
+    <div class="ol-sh">
+      <div class="ol-sh-left">
+        <span class="ol-eyebrow">Testimonios</span>
+        <h2 class="ol-section-title">Lo que dicen nuestros clientes.</h2>
+        <p class="ol-section-sub">Más del 70% de nuestros proyectos provienen de referidos o clientes que regresan. Eso no ocurre por accidente.</p>
+      </div>
+      <div class="ol-sh-right">
+        <p class="ol-sh-copy">Los mejores indicadores de calidad no son los que nosotros mismos decimos — son los resultados que nuestros clientes reportan semanas después de lanzar. Empresas mexicanas de sectores tan distintos como gastronomía, servicios profesionales, retail y manufactura han encontrado en OrigenLab un socio tecnológico que entrega lo prometido en tiempo y forma.</p>
+        <p class="ol-sh-copy">Cada testimonio representa un proyecto real, un cliente que confió en nosotros y un resultado concreto. No publicamos casos de éxito genéricos — publicamos lo que nuestros clientes nos dicen directamente sobre el impacto que tuvo su nuevo sitio en su negocio.</p>
+      </div>
+    </div>
+    <div class="ol-testimonials-grid">
+      <div class="ol-tc">
+        <div class="ol-tc-quote">"</div>
+        <div class="ol-tc-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="ol-tc-text">Rentamos iluminación profesional para eventos y necesitábamos un sitio que transmitiera esa calidad desde el primer vistazo. OrigenLab lo entendió sin que tuviéramos que explicarlo dos veces — el resultado fue un sitio rápido, visualmente impactante y con un incremento real en solicitudes de cotización desde el lanzamiento.</p>
+        <div class="ol-tc-footer">
+          <div class="ol-tc-avatar">ER</div>
+          <div class="ol-tc-info">
+            <p class="ol-tc-name">Equipo REDEIL</p>
+            <p class="ol-tc-role">Renta de Iluminación Profesional · <a href="https://rentadeiluminacion.com/" target="_blank" rel="noopener noreferrer" class="ol-tc-link">rentadeiluminacion.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ol-tc">
+        <div class="ol-tc-quote">"</div>
+        <div class="ol-tc-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="ol-tc-text">Como agencia necesitábamos un sitio que proyectara credibilidad y mostrara nuestro trabajo de forma clara. OrigenLab cumplió en tiempo, con un proceso ordenado y un resultado que hoy usamos como carta de presentación con cada nuevo cliente.</p>
+        <div class="ol-tc-footer">
+          <div class="ol-tc-avatar">PR</div>
+          <div class="ol-tc-info">
+            <p class="ol-tc-name">Proyecto RED</p>
+            <p class="ol-tc-role">Agencia Creativa · <a href="https://proyectored.com.mx/" target="_blank" rel="noopener noreferrer" class="ol-tc-link">proyectored.com.mx</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ol-tc">
+        <div class="ol-tc-quote">"</div>
+        <div class="ol-tc-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="ol-tc-text">Teníamos un catálogo amplio y necesitábamos que los clientes lo pudieran explorar rápido y sin fricciones. OrigenLab diseñó una estructura de navegación muy clara y el sitio carga en segundos — eso marca la diferencia cuando el cliente está comparando opciones.</p>
+        <div class="ol-tc-footer">
+          <div class="ol-tc-avatar">GM</div>
+          <div class="ol-tc-info">
+            <p class="ol-tc-name"><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(192,57,43,0.4);">Gama de México</a></p>
+            <p class="ol-tc-role">Distribución y Catálogo · <a href="https://gamademexico.com/" target="_blank" rel="noopener noreferrer" class="ol-tc-link">gamademexico.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ol-tc">
+        <div class="ol-tc-quote">"</div>
+        <div class="ol-tc-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="ol-tc-text">Rentamos equipo audiovisual y de producción para eventos — necesitábamos que el sitio transmitiera profesionalismo y que los clientes pudieran cotizar fácil. OrigenLab entregó exactamente eso: un sitio que vende por sí solo antes de que alguien conteste el teléfono.</p>
+        <div class="ol-tc-footer">
+          <div class="ol-tc-avatar">ET</div>
+          <div class="ol-tc-info">
+            <p class="ol-tc-name">Eventech</p>
+            <p class="ol-tc-role">Renta de Equipo para Eventos · <a href="https://eventech.mx/" target="_blank" rel="noopener noreferrer" class="ol-tc-link">eventech.mx</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ol-tc">
+        <div class="ol-tc-quote">"</div>
+        <div class="ol-tc-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="ol-tc-text">Teníamos un sitio viejo que nos daba vergüenza compartir. OrigenLab lo rediseñó por completo en menos tiempo del que esperábamos. Ahora lo usamos en cada propuesta comercial con condominios y los clientes lo mencionan antes de que nosotros lo hagamos.</p>
+        <div class="ol-tc-footer">
+          <div class="ol-tc-avatar">SC</div>
+          <div class="ol-tc-info">
+            <p class="ol-tc-name">Seguridad Privada Condominios</p>
+            <p class="ol-tc-role">Seguridad para Condominios · <a href="https://seguridadprivadacondominios.com/" target="_blank" rel="noopener noreferrer" class="ol-tc-link">seguridadprivadacondominios.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ol-tc">
+        <div class="ol-tc-quote">"</div>
+        <div class="ol-tc-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="ol-tc-text">Lanzamos nuestra landing page con OrigenLab para una campaña específica y los resultados fueron inmediatos. El diseño estaba optimizado para convertir y se notó desde la primera semana — más formularios completados, más llamadas, más cierres.</p>
+        <div class="ol-tc-footer">
+          <div class="ol-tc-avatar">GP</div>
+          <div class="ol-tc-info">
+            <p class="ol-tc-name">Guardias Privados</p>
+            <p class="ol-tc-role">Servicios de Guardia · <a href="https://guardias-privados.com/" target="_blank" rel="noopener noreferrer" class="ol-tc-link">guardias-privados.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ol-tc">
+        <div class="ol-tc-quote">"</div>
+        <div class="ol-tc-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="ol-tc-text">Lo que más me sorprendió fue la velocidad del sitio. Venía de un sitio en WordPress que tardaba 8 segundos en cargar. El nuevo abre en menos de un segundo y eso se traduce directamente en que los clientes se quedan y nos contactan para rentar equipo de sonido.</p>
+        <div class="ol-tc-footer">
+          <div class="ol-tc-avatar">SE</div>
+          <div class="ol-tc-info">
+            <p class="ol-tc-name">Sonido para Eventos</p>
+            <p class="ol-tc-role">Renta de Sonido · <a href="https://sonidoparaeventos.com.mx/" target="_blank" rel="noopener noreferrer" class="ol-tc-link">sonidoparaeventos.com.mx</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ol-tc">
+        <div class="ol-tc-quote">"</div>
+        <div class="ol-tc-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="ol-tc-text">Abrimos nuestra tienda en línea con OrigenLab y en el primer mes ya teníamos pedidos. La integración con Mercado Pago funcionó desde el día uno y la gestión de productos de protección contra incendios es muy sencilla. Recomiendo su trabajo sin dudar.</p>
+        <div class="ol-tc-footer">
+          <div class="ol-tc-avatar">LG</div>
+          <div class="ol-tc-info">
+            <p class="ol-tc-name">LGA Contraincendios</p>
+            <p class="ol-tc-role">Equipos Contra Incendio · <a href="https://lgacontraincendios.com/" target="_blank" rel="noopener noreferrer" class="ol-tc-link">lgacontraincendios.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ol-tc">
+        <div class="ol-tc-quote">"</div>
+        <div class="ol-tc-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="ol-tc-text">Necesitábamos posicionarnos como referente en nuestro sector y el sitio anterior no lo transmitía. OrigenLab construyó una plataforma que comunica autoridad desde el primer scroll — diseño limpio, carga instantánea y estructura que guía al visitante exactamente donde necesitamos.</p>
+        <div class="ol-tc-footer">
+          <div class="ol-tc-avatar">PX</div>
+          <div class="ol-tc-info">
+            <p class="ol-tc-name">Podiumex</p>
+            <p class="ol-tc-role"><a href="https://podiumex.com/" target="_blank" rel="noopener noreferrer" class="ol-tc-link">podiumex.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ol-tc">
+        <div class="ol-tc-quote">"</div>
+        <div class="ol-tc-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="ol-tc-text">Rentamos inflables y juegos para fiestas y necesitábamos un sitio donde los papás pudieran ver todo nuestro catálogo, pedir información y contactarnos fácil desde el celular. OrigenLab lo resolvió perfecto — el sitio es claro, rápido y desde que lo lanzamos recibimos más solicitudes por WhatsApp que nunca.</p>
+        <div class="ol-tc-footer">
+          <div class="ol-tc-avatar">IF</div>
+          <div class="ol-tc-info">
+            <p class="ol-tc-name">Inflables para Fiestas</p>
+            <p class="ol-tc-role">Renta de Inflables · <a href="https://inflablesparafiestas.com.mx/" target="_blank" rel="noopener noreferrer" class="ol-tc-link">inflablesparafiestas.com.mx</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ol-tc">
+        <div class="ol-tc-quote">"</div>
+        <div class="ol-tc-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="ol-tc-text">Nuestro negocio es técnico y necesitábamos un sitio que transmitiera confianza y seriedad a empresas que buscan mantenimiento de extintores. OrigenLab entendió bien el giro — el sitio explica nuestros servicios con claridad, carga rápido y los clientes nos contactan directamente desde la página sin rodeos.</p>
+        <div class="ol-tc-footer">
+          <div class="ol-tc-avatar">ME</div>
+          <div class="ol-tc-info">
+            <p class="ol-tc-name">Mantenimiento de Extintores</p>
+            <p class="ol-tc-role">Servicios de Seguridad · <a href="https://mantenimientodeextintores.mx/" target="_blank" rel="noopener noreferrer" class="ol-tc-link">mantenimientodeextintores.mx</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ol-tc">
+        <div class="ol-tc-quote">"</div>
+        <div class="ol-tc-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="ol-tc-text">En seguridad privada la credibilidad lo es todo. Necesitábamos un sitio que inspirara confianza a empresas y corporativos desde el primer contacto. OrigenLab entregó exactamente eso: un diseño serio, profesional y con información bien estructurada que ha mejorado notablemente la calidad de los leads que recibimos.</p>
+        <div class="ol-tc-footer">
+          <div class="ol-tc-avatar">SP</div>
+          <div class="ol-tc-info">
+            <p class="ol-tc-name">Seguridad Privada</p>
+            <p class="ol-tc-role">Servicios de Seguridad Privada · <a href="https://seguridad-privada.com.mx/" target="_blank" rel="noopener noreferrer" class="ol-tc-link">seguridad-privada.com.mx</a></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="services-section" data-astro-cid-j7pv25f6> <div class="container" data-astro-cid-j7pv25f6> <div class="sh" data-astro-cid-j7pv25f6> <div class="sh__left" data-astro-cid-j7pv25f6> <span class="eyebrow" data-astro-cid-j7pv25f6>Servicios</span> <h2 class="section-title" data-astro-cid-j7pv25f6>Todo lo que tu negocio necesita en línea.</h2> <p class="section-subtitle" data-astro-cid-j7pv25f6>Desde el diseño hasta el lanzamiento, construimos cada parte de tu presencia digital.</p> </div> <div class="sh__right" data-astro-cid-j7pv25f6> <p class="sh__copy" data-astro-cid-j7pv25f6>Cada servicio que ofrecemos en OrigenLab está diseñado para resolver un problema real de negocio. No vendemos tecnología por sí misma — construimos sitios web que trabajan por ti: rápidos, bien diseñados, fáciles de administrar y listos para escalar con tu empresa. Nuestros proyectos integran diseño UX, código de producción limpio y arquitectura sólida en un solo flujo de trabajo eficiente y transparente.</p> <p class="sh__copy" data-astro-cid-j7pv25f6>Desde sitios corporativos hasta tiendas en línea con integración a Mercado Pago, OXXO Pay y Stripe, pasando por landing pages de alta conversión y rediseños completos de plataformas existentes — todo bajo un mismo equipo que conoce tu proyecto de principio a fin. Sin subcontrataciones, sin intermediarios, sin sorpresas.</p> </div> </div> <div class="services-grid" data-astro-cid-j7pv25f6> <div class="sc" data-astro-cid-uhzbvkqe> <div class="sc__img" data-astro-cid-uhzbvkqe> <span data-astro-cid-uhzbvkqe>Imagen próximamente</span> </div> <div class="sc__body" data-astro-cid-uhzbvkqe> <h3 class="sc__title" data-astro-cid-uhzbvkqe>Desarrollo Web</h3> <p class="sc__desc" data-astro-cid-uhzbvkqe>Sitios corporativos modernos, rápidos y a medida. Construidos con tecnología moderna para negocios mexicanos.</p> <a href="/servicios/desarrollo-web/" class="sc__btn" data-astro-cid-uhzbvkqe>Desarrollo Web</a> </div> </div><div class="sc" data-astro-cid-uhzbvkqe> <div class="sc__img" data-astro-cid-uhzbvkqe> <span data-astro-cid-uhzbvkqe>Imagen próximamente</span> </div> <div class="sc__body" data-astro-cid-uhzbvkqe> <h3 class="sc__title" data-astro-cid-uhzbvkqe>Tiendas en Línea</h3> <p class="sc__desc" data-astro-cid-uhzbvkqe>E-commerce completo con integración de Mercado Pago, OXXO Pay y Stripe. Tu tienda lista para vender.</p> <a href="/servicios/tiendas-en-linea/" class="sc__btn" data-astro-cid-uhzbvkqe>Tiendas en Línea</a> </div> </div><div class="sc" data-astro-cid-uhzbvkqe> <div class="sc__img" data-astro-cid-uhzbvkqe> <span data-astro-cid-uhzbvkqe>Imagen próximamente</span> </div> <div class="sc__body" data-astro-cid-uhzbvkqe> <h3 class="sc__title" data-astro-cid-uhzbvkqe>Landing Pages</h3> <p class="sc__desc" data-astro-cid-uhzbvkqe>Páginas de aterrizaje de alta conversión con copy estratégico, velocidad extrema y diseño centrado en resultados.</p> <a href="/servicios/landing-pages/" class="sc__btn" data-astro-cid-uhzbvkqe>Landing Pages</a> </div> </div><div class="sc" data-astro-cid-uhzbvkqe> <div class="sc__img" data-astro-cid-uhzbvkqe> <span data-astro-cid-uhzbvkqe>Imagen próximamente</span> </div> <div class="sc__body" data-astro-cid-uhzbvkqe> <h3 class="sc__title" data-astro-cid-uhzbvkqe>Rediseño Web</h3> <p class="sc__desc" data-astro-cid-uhzbvkqe>Transforma tu sitio actual en una plataforma moderna, veloz y alineada con los estándares actuales de diseño.</p> <a href="/servicios/rediseno-web/" class="sc__btn" data-astro-cid-uhzbvkqe>Rediseño Web</a> </div> </div> </div> </div> </section>  <section class="why-section" data-astro-cid-j7pv25f6> <div class="container" data-astro-cid-j7pv25f6> <div class="sh sh--dark" data-astro-cid-j7pv25f6> <div class="sh__left" data-astro-cid-j7pv25f6> <span class="eyebrow-dark" data-astro-cid-j7pv25f6>Diferencia</span> <h2 class="section-title-dark" data-astro-cid-j7pv25f6>¿Por qué OrigenLab?</h2> </div> <div class="sh__right" data-astro-cid-j7pv25f6> <p class="sh__copy sh__copy--dark" data-astro-cid-j7pv25f6>En un mercado saturado de agencias que prometen lo mismo, OrigenLab se diferencia por una razón simple: entregamos. Cada proyecto tiene un responsable técnico que lo conoce de principio a fin, un proceso de revisión con el cliente en cada etapa y métricas reales de resultado al mes de lanzar. No cobramos por mantenimiento sin sentido ni vendemos paquetes inflados — solo el trabajo necesario para alcanzar tus objetivos.</p> <p class="sh__copy sh__copy--dark" data-astro-cid-j7pv25f6>Nuestro equipo trabaja exclusivamente con tecnologías modernas de alto rendimiento: Astro, Next.js y arquitecturas estáticas que garantizan velocidades de carga en el primer percentil de Google. Esto no es un diferencial cosmético — la velocidad tiene impacto directo en tu tasa de conversión. Un segundo más de carga puede costarte el 7% de tus ventas.</p> </div> </div> <div class="why-grid" data-astro-cid-j7pv25f6> <div class="sc" data-astro-cid-uhzbvkqe> <div class="sc__img" data-astro-cid-uhzbvkqe> <span data-astro-cid-uhzbvkqe>Imagen próximamente</span> </div> <div class="sc__body" data-astro-cid-uhzbvkqe> <h3 class="sc__title" data-astro-cid-uhzbvkqe>Velocidad extrema</h3> <p class="sc__desc" data-astro-cid-uhzbvkqe>Sitios que cargan en menos de 1 segundo. Rendimiento real, no promesas.</p> <a href="/servicios/" class="sc__btn" data-astro-cid-uhzbvkqe>Velocidad extrema</a> </div> </div><div class="sc" data-astro-cid-uhzbvkqe> <div class="sc__img" data-astro-cid-uhzbvkqe> <span data-astro-cid-uhzbvkqe>Imagen próximamente</span> </div> <div class="sc__body" data-astro-cid-uhzbvkqe> <h3 class="sc__title" data-astro-cid-uhzbvkqe>Diseño que convierte</h3> <p class="sc__desc" data-astro-cid-uhzbvkqe>UX/UI centrado en resultados. Cada elemento tiene un propósito: convertir visitantes en clientes.</p> <a href="/servicios/" class="sc__btn" data-astro-cid-uhzbvkqe>Diseño que convierte</a> </div> </div><div class="sc" data-astro-cid-uhzbvkqe> <div class="sc__img" data-astro-cid-uhzbvkqe> <span data-astro-cid-uhzbvkqe>Imagen próximamente</span> </div> <div class="sc__body" data-astro-cid-uhzbvkqe> <h3 class="sc__title" data-astro-cid-uhzbvkqe>Soporte continuo</h3> <p class="sc__desc" data-astro-cid-uhzbvkqe>Acompañamiento post-lanzamiento. No desaparecemos después de entregar tu proyecto.</p> <a href="/nosotros/" class="sc__btn" data-astro-cid-uhzbvkqe>Soporte continuo</a> </div> </div><div class="sc" data-astro-cid-uhzbvkqe> <div class="sc__img" data-astro-cid-uhzbvkqe> <span data-astro-cid-uhzbvkqe>Imagen próximamente</span> </div> <div class="sc__body" data-astro-cid-uhzbvkqe> <h3 class="sc__title" data-astro-cid-uhzbvkqe>Tecnología moderna</h3> <p class="sc__desc" data-astro-cid-uhzbvkqe>Astro, Next.js y las mejores herramientas del mercado. Tu sitio listo para escalar.</p> <a href="/servicios/" class="sc__btn" data-astro-cid-uhzbvkqe>Tecnología moderna</a> </div> </div> </div> </div> </section>  <section class="process-section" data-astro-cid-j7pv25f6> <div class="container" data-astro-cid-j7pv25f6> <div class="sh" data-astro-cid-j7pv25f6> <div class="sh__left" data-astro-cid-j7pv25f6> <span class="eyebrow" data-astro-cid-j7pv25f6>Proceso</span> <h2 class="section-title" data-astro-cid-j7pv25f6>Cómo trabajamos</h2> <p class="section-subtitle" data-astro-cid-j7pv25f6>Simple, transparente y sin sorpresas.</p> </div> <div class="sh__right" data-astro-cid-j7pv25f6> <p class="sh__copy" data-astro-cid-j7pv25f6>Nuestro proceso de 4 etapas está diseñado para eliminar la incertidumbre que suele rodear a los proyectos digitales. Antes de escribir una sola línea de código, dedicamos tiempo a entender tu mercado, analizar a tu competencia en Google y definir con precisión qué necesita tu sitio para convertir. Esta etapa de descubrimiento es lo que separa un proyecto exitoso de uno que hay que rehacer.</p> <p class="sh__copy" data-astro-cid-j7pv25f6>Trabajamos con entregables claros en cada fase: wireframes aprobados antes del diseño, diseño aprobado antes del desarrollo, y staging completo antes del lanzamiento. Tú siempre sabes en qué etapa estamos, qué sigue y cuándo termina. Al lanzar, te capacitamos para gestionar tu propio contenido y te entregamos documentación técnica completa del proyecto.</p> </div> </div> <div class="process-grid" data-astro-cid-j7pv25f6> <div class="sc" data-astro-cid-uhzbvkqe> <div class="sc__img" data-astro-cid-uhzbvkqe> <span data-astro-cid-uhzbvkqe>Imagen próximamente</span> </div> <div class="sc__body" data-astro-cid-uhzbvkqe> <h3 class="sc__title" data-astro-cid-uhzbvkqe>Descubrimiento</h3> <p class="sc__desc" data-astro-cid-uhzbvkqe>Entendemos tu negocio, objetivos y competencia antes de escribir una sola línea de código.</p> <a href="cotizar.html" class="sc__btn" data-astro-cid-uhzbvkqe>Descubrimiento</a> </div> </div><div class="sc" data-astro-cid-uhzbvkqe> <div class="sc__img" data-astro-cid-uhzbvkqe> <span data-astro-cid-uhzbvkqe>Imagen próximamente</span> </div> <div class="sc__body" data-astro-cid-uhzbvkqe> <h3 class="sc__title" data-astro-cid-uhzbvkqe>Diseño</h3> <p class="sc__desc" data-astro-cid-uhzbvkqe>Prototipo y aprobación visual completa antes de desarrollar. Tú apruebas antes de avanzar.</p> <a href="cotizar.html" class="sc__btn" data-astro-cid-uhzbvkqe>Diseño</a> </div> </div><div class="sc" data-astro-cid-uhzbvkqe> <div class="sc__img" data-astro-cid-uhzbvkqe> <span data-astro-cid-uhzbvkqe>Imagen próximamente</span> </div> <div class="sc__body" data-astro-cid-uhzbvkqe> <h3 class="sc__title" data-astro-cid-uhzbvkqe>Desarrollo</h3> <p class="sc__desc" data-astro-cid-uhzbvkqe>Código limpio, optimizado y listo para escalar. Construido para durar y crecer.</p> <a href="cotizar.html" class="sc__btn" data-astro-cid-uhzbvkqe>Desarrollo</a> </div> </div><div class="sc" data-astro-cid-uhzbvkqe> <div class="sc__img" data-astro-cid-uhzbvkqe> <span data-astro-cid-uhzbvkqe>Imagen próximamente</span> </div> <div class="sc__body" data-astro-cid-uhzbvkqe> <h3 class="sc__title" data-astro-cid-uhzbvkqe>Lanzamiento</h3> <p class="sc__desc" data-astro-cid-uhzbvkqe>Deploy profesional, capacitación completa y acompañamiento en las primeras semanas.</p> <a href="cotizar.html" class="sc__btn" data-astro-cid-uhzbvkqe>Lanzamiento</a> </div> </div> </div> </div> </section>  <section class="testimonials-section" data-astro-cid-j7pv25f6> <div class="container" data-astro-cid-j7pv25f6> <div class="sh" data-astro-cid-j7pv25f6> <div class="sh__left" data-astro-cid-j7pv25f6> <span class="eyebrow" data-astro-cid-j7pv25f6>Testimonios</span> <h2 class="section-title" data-astro-cid-j7pv25f6>Lo que dicen nuestros clientes.</h2> </div> <div class="sh__right" data-astro-cid-j7pv25f6> <p class="sh__copy" data-astro-cid-j7pv25f6>Los mejores indicadores de calidad no son los que nosotros mismos decimos — son los resultados que nuestros clientes reportan semanas después de lanzar. Empresas mexicanas de sectores tan distintos como gastronomía, servicios profesionales, retail y manufactura han encontrado en OrigenLab un socio tecnológico confiable que entrega lo prometido en tiempo y forma.</p> <p class="sh__copy" data-astro-cid-j7pv25f6>Más del 70% de nuestros proyectos provienen de referidos o de clientes que regresan para un segundo o tercer proyecto. Eso no ocurre por accidente — ocurre porque nuestro enfoque va más allá de entregar código: acompañamos el crecimiento digital de cada cliente con soporte, métricas y estrategia a largo plazo.</p> </div> </div> <div class="testimonials-grid" data-astro-cid-j7pv25f6> <div class="tc" data-astro-cid-3ba2o4vp> <!-- Estrellas + texto --> <div class="tc__body" data-astro-cid-3ba2o4vp> <div class="tc__stars" aria-label="5 estrellas" data-astro-cid-3ba2o4vp> <span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span> </div> <p class="tc__text" data-astro-cid-3ba2o4vp>OrigenLab transformó nuestra presencia digital por completo. El nuevo sitio refleja el nivel profesional de nuestros servicios de iluminación para eventos y hemos notado un incremento real en solicitudes de cotización desde que lo lanzamos.</p> </div> <!-- Footer: avatar + info + enlace opcional --> <div class="tc__footer" data-astro-cid-3ba2o4vp> <div class="tc__avatar" aria-hidden="true" data-astro-cid-3ba2o4vp>ER</div> <div class="tc__info" data-astro-cid-3ba2o4vp> <p class="tc__name" data-astro-cid-3ba2o4vp>Equipo REDEIL</p> <p class="tc__role" data-astro-cid-3ba2o4vp>Renta de Iluminación Profesional ·
+<a href="https://rentadeiluminacion.com/" target="_blank" rel="noopener noreferrer" class="tc__link" data-astro-cid-3ba2o4vp>REDEIL</a> </p> </div> </div> </div><div class="tc" data-astro-cid-3ba2o4vp> <!-- Estrellas + texto --> <div class="tc__body" data-astro-cid-3ba2o4vp> <div class="tc__stars" aria-label="5 estrellas" data-astro-cid-3ba2o4vp> <span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span> </div> <p class="tc__text" data-astro-cid-3ba2o4vp>El proceso fue muy claro desde el inicio: nos explicaron cada etapa, cumplieron los tiempos y el resultado superó nuestras expectativas. Ahora nuestros clientes encuentran fácilmente todo lo que ofrecemos y el sitio transmite la calidad de nuestro equipo.</p> </div> <!-- Footer: avatar + info + enlace opcional --> <div class="tc__footer" data-astro-cid-3ba2o4vp> <div class="tc__avatar" aria-hidden="true" data-astro-cid-3ba2o4vp>RC</div> <div class="tc__info" data-astro-cid-3ba2o4vp> <p class="tc__name" data-astro-cid-3ba2o4vp>REDEIL CDMX</p> <p class="tc__role" data-astro-cid-3ba2o4vp>Renta de Iluminación para Eventos ·
+<a href="https://rentadeiluminacion.com/" target="_blank" rel="noopener noreferrer" class="tc__link" data-astro-cid-3ba2o4vp>REDEIL</a> </p> </div> </div> </div><div class="tc" data-astro-cid-3ba2o4vp> <!-- Estrellas + texto --> <div class="tc__body" data-astro-cid-3ba2o4vp> <div class="tc__stars" aria-label="5 estrellas" data-astro-cid-3ba2o4vp> <span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span> </div> <p class="tc__text" data-astro-cid-3ba2o4vp>Necesitábamos un sitio que mostrara todo nuestro catálogo de renta de equipo para eventos de forma clara y profesional. OrigenLab lo logró: el sitio es rápido, fácil de navegar y nuestros clientes encuentran exactamente lo que buscan.</p> </div> <!-- Footer: avatar + info + enlace opcional --> <div class="tc__footer" data-astro-cid-3ba2o4vp> <div class="tc__avatar" aria-hidden="true" data-astro-cid-3ba2o4vp>EE</div> <div class="tc__info" data-astro-cid-3ba2o4vp> <p class="tc__name" data-astro-cid-3ba2o4vp>Equipo Eventech</p> <p class="tc__role" data-astro-cid-3ba2o4vp>Renta de Equipo para Eventos ·
+<a href="https://eventech.mx/" target="_blank" rel="noopener noreferrer" class="tc__link" data-astro-cid-3ba2o4vp>Eventech</a> </p> </div> </div> </div><div class="tc" data-astro-cid-3ba2o4vp> <!-- Estrellas + texto --> <div class="tc__body" data-astro-cid-3ba2o4vp> <div class="tc__stars" aria-label="5 estrellas" data-astro-cid-3ba2o4vp> <span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span> </div> <p class="tc__text" data-astro-cid-3ba2o4vp>El portafolio que nos diseñaron es una obra de arte. Cada proyecto se presenta de forma espectacular y hemos conseguido clientes internacionales.</p> </div> <!-- Footer: avatar + info + enlace opcional --> <div class="tc__footer" data-astro-cid-3ba2o4vp> <div class="tc__avatar" aria-hidden="true" data-astro-cid-3ba2o4vp>AG</div> <div class="tc__info" data-astro-cid-3ba2o4vp> <p class="tc__name" data-astro-cid-3ba2o4vp>Ana García</p> <p class="tc__role" data-astro-cid-3ba2o4vp>Directora Creativa ·
+Estudio Creativo Mija </p> </div> </div> </div><div class="tc" data-astro-cid-3ba2o4vp> <!-- Estrellas + texto --> <div class="tc__body" data-astro-cid-3ba2o4vp> <div class="tc__stars" aria-label="5 estrellas" data-astro-cid-3ba2o4vp> <span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span> </div> <p class="tc__text" data-astro-cid-3ba2o4vp>Aparecemos en primer contacto con sus clientes cuando buscan dentistas en nuestra zona. La inversión se pagó sola en dos meses.</p> </div> <!-- Footer: avatar + info + enlace opcional --> <div class="tc__footer" data-astro-cid-3ba2o4vp> <div class="tc__avatar" aria-hidden="true" data-astro-cid-3ba2o4vp>RS</div> <div class="tc__info" data-astro-cid-3ba2o4vp> <p class="tc__name" data-astro-cid-3ba2o4vp>Roberto Sánchez</p> <p class="tc__role" data-astro-cid-3ba2o4vp>Director Médico ·
+Clínica Dental Sonríe </p> </div> </div> </div><div class="tc" data-astro-cid-3ba2o4vp> <!-- Estrellas + texto --> <div class="tc__body" data-astro-cid-3ba2o4vp> <div class="tc__stars" aria-label="5 estrellas" data-astro-cid-3ba2o4vp> <span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span> </div> <p class="tc__text" data-astro-cid-3ba2o4vp>El sitio que nos hicieron refleja perfectamente la calidad de nuestros proyectos. Los clientes nos contactan más y con mayor confianza.</p> </div> <!-- Footer: avatar + info + enlace opcional --> <div class="tc__footer" data-astro-cid-3ba2o4vp> <div class="tc__avatar" aria-hidden="true" data-astro-cid-3ba2o4vp>ML</div> <div class="tc__info" data-astro-cid-3ba2o4vp> <p class="tc__name" data-astro-cid-3ba2o4vp>María López</p> <p class="tc__role" data-astro-cid-3ba2o4vp>Gerente Comercial ·
+Constructora Horizonte </p> </div> </div> </div><div class="tc" data-astro-cid-3ba2o4vp> <!-- Estrellas + texto --> <div class="tc__body" data-astro-cid-3ba2o4vp> <div class="tc__stars" aria-label="5 estrellas" data-astro-cid-3ba2o4vp> <span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span> </div> <p class="tc__text" data-astro-cid-3ba2o4vp>Buscábamos una imagen digital que transmitiera seriedad y confianza. OrigenLab entendió perfectamente el perfil de nuestros clientes y entregó un sitio que nos ha generado consultas de calidad desde el primer mes.</p> </div> <!-- Footer: avatar + info + enlace opcional --> <div class="tc__footer" data-astro-cid-3ba2o4vp> <div class="tc__avatar" aria-hidden="true" data-astro-cid-3ba2o4vp>CM</div> <div class="tc__info" data-astro-cid-3ba2o4vp> <p class="tc__name" data-astro-cid-3ba2o4vp>Carlos Mendoza</p> <p class="tc__role" data-astro-cid-3ba2o4vp>Socio Director ·
+Despacho Mendoza &amp; Asociados </p> </div> </div> </div><div class="tc" data-astro-cid-3ba2o4vp> <!-- Estrellas + texto --> <div class="tc__body" data-astro-cid-3ba2o4vp> <div class="tc__stars" aria-label="5 estrellas" data-astro-cid-3ba2o4vp> <span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span><span data-astro-cid-3ba2o4vp>★</span> </div> <p class="tc__text" data-astro-cid-3ba2o4vp>Nuestra tienda en línea funciona de maravilla. La integración con Mercado Pago fue impecable y el diseño enamora a nuestras clientas. Las ventas en línea ya superan al local físico.</p> </div> <!-- Footer: avatar + info + enlace opcional --> <div class="tc__footer" data-astro-cid-3ba2o4vp> <div class="tc__avatar" aria-hidden="true" data-astro-cid-3ba2o4vp>LV</div> <div class="tc__info" data-astro-cid-3ba2o4vp> <p class="tc__name" data-astro-cid-3ba2o4vp>Laura Vázquez</p> <p class="tc__role" data-astro-cid-3ba2o4vp>Fundadora ·
+Moda Vázquez </p> </div> </div> </div> </div> </div> </section>  <section class="cta-final" data-astro-cid-frbqrhml> <div class="container cta-inner" data-astro-cid-frbqrhml> <h2 class="cta-title" data-astro-cid-frbqrhml>¿Listo para crecer en línea?</h2> <p class="cta-subtitle" data-astro-cid-frbqrhml>Cuéntanos tu proyecto y te respondemos personalmente.</p> <div class="cta-actions" data-astro-cid-frbqrhml> <a href="cotizar.html" class="btn btn-primary" data-astro-cid-frbqrhml>Iniciar proyecto →</a> <a href="https://origenlab.com/cdn-cgi/l/email-protection#d7bfb8bbb697b8a5beb0b2b9bbb6b5f9baaf" class="btn btn-outline-white" data-astro-cid-frbqrhml><span class="__cf_email__" data-cfemail="4c2423202d0c233e252b2922202d2e622134">[email&#160;protected]</span></a> </div> </div> </section> 
+
+
+<!-- ============================================================
+     OL-FAQ — Preguntas Frecuentes + Formulario WhatsApp
+     ============================================================ -->
+<!-- Componente FAQ — estilos en _astro/premium-dark.css -->
+
+<section class="ol-faq-section">
+  <div class="ol-faq-inner">
+
+    <div class="ol-sh">
+      <div class="ol-sh-left">
+        <span class="ol-eyebrow">Preguntas Frecuentes</span>
+        <h2 class="ol-section-title">Todo lo que necesitas saber<br>antes de empezar</h2>
+        <p class="ol-section-sub">Resolvemos las dudas más comunes sobre nuestros proyectos web. ¿No encuentras tu respuesta? Escríbenos directo.</p>
+      </div>
+      <div class="ol-sh-right">
+        <p class="ol-sh-copy">Sabemos que contratar una agencia de desarrollo web implica una decisión importante. Por eso reunimos aquí las preguntas que más nos hacen antes de arrancar un proyecto — sobre costos, tiempos, procesos y lo que incluye cada entrega. Queremos que llegues a la primera llamada con claridad, no con dudas.</p>
+        <p class="ol-sh-copy">Si tu pregunta no está aquí, escríbenos directo. Respondemos de manera personalizada y sin compromiso. Cada proyecto es distinto y preferimos una conversación real a una respuesta genérica.</p>
+      </div>
+    </div>
+
+    <div class="ol-faq-grid">
+
+      <!-- Columna izquierda: Acordeón FAQ -->
+      <div>
+        <p class="ol-faq-col-label">Preguntas frecuentes</p>
+        <div class="ol-faq-list" id="ol-faq-list">
+
+          <div class="ol-faq-item">
+            <button class="ol-faq-question" data-faq="0">
+              ¿Cuánto cuesta un sitio web profesional?
+              <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="ol-faq-answer" id="faq-ans-0">
+              <p class="ol-faq-answer-inner">El costo depende del alcance, funcionalidad y diseño de cada proyecto. Cada cotización se construye a la medida según pantallas, integraciones, complejidad de catálogo y nivel de personalización. Siempre entregamos una propuesta detallada y por escrito, sin cargos ocultos, antes de comenzar.</p>
+            </div>
+          </div>
+
+          <div class="ol-faq-item">
+            <button class="ol-faq-question" data-faq="1">
+              ¿Cuánto tiempo tarda en estar listo mi sitio web?
+              <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="ol-faq-answer" id="faq-ans-1">
+              <p class="ol-faq-answer-inner">Los plazos varían según la complejidad de cada proyecto. Trabajamos con calendario comprometido por escrito desde el inicio, con entregas iterativas en entorno de pruebas para ver el avance real durante todo el proyecto.</p>
+            </div>
+          </div>
+
+          <div class="ol-faq-item">
+            <button class="ol-faq-question" data-faq="2">
+              ¿Trabajan con empresas fuera de Ciudad de México?
+              <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="ol-faq-answer" id="faq-ans-2">
+              <p class="ol-faq-answer-inner">Sí. Trabajamos con clientes en todo México — Monterrey, Guadalajara, Puebla y muchas otras ciudades — así como proyectos para empresas en Estados Unidos y Latinoamérica. Todo el proceso se gestiona de forma remota, ágil y completamente en línea.</p>
+            </div>
+          </div>
+
+          <div class="ol-faq-item">
+            <button class="ol-faq-question" data-faq="3">
+              ¿Qué incluye el precio del sitio web?
+              <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="ol-faq-answer" id="faq-ans-3">
+              <p class="ol-faq-answer-inner">Nuestras propuestas incluyen diseño personalizado, desarrollo front-end y back-end, versión responsiva (móvil y desktop), integración de formularios de contacto, optimización de velocidad y entrega de archivos finales. El dominio y hosting pueden incluirse según el plan elegido.</p>
+            </div>
+          </div>
+
+          <div class="ol-faq-item">
+            <button class="ol-faq-question" data-faq="4">
+              ¿Puedo ver avances antes de pagar el total?
+              <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="ol-faq-answer" id="faq-ans-4">
+              <p class="ol-faq-answer-inner">Sí, claro. Nuestro proceso incluye etapas de revisión con prototipos y diseños visuales antes del desarrollo final. Tú apruebas cada fase antes de avanzar, lo que garantiza que el resultado final sea exactamente lo que esperabas.</p>
+            </div>
+          </div>
+
+          <div class="ol-faq-item">
+            <button class="ol-faq-question" data-faq="5">
+              ¿Qué pasa si necesito cambios después de entregar el sitio?
+              <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="ol-faq-answer" id="faq-ans-5">
+              <p class="ol-faq-answer-inner">Todos nuestros proyectos incluyen un periodo de ajustes post-entrega. Para cambios posteriores ofrecemos planes de mantenimiento mensual o cotizaciones por proyecto. Nos mantenemos disponibles para crecer contigo en el tiempo.</p>
+            </div>
+          </div>
+
+          <div class="ol-faq-item">
+            <button class="ol-faq-question" data-faq="6">
+              ¿Necesito tener dominio y hosting propios?
+              <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="ol-faq-answer" id="faq-ans-6">
+              <p class="ol-faq-answer-inner">No necesariamente. Podemos asesorarte en la elección del dominio y hosting ideales para tu proyecto, o trabajar con los que ya tienes. También ofrecemos gestión completa de infraestructura para que tú no te preocupes por aspectos técnicos.</p>
+            </div>
+          </div>
+
+          <div class="ol-faq-item">
+            <button class="ol-faq-question" data-faq="7">
+              ¿Hacen tiendas en línea y e-commerce?
+              <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="ol-faq-answer" id="faq-ans-7">
+              <p class="ol-faq-answer-inner">Sí — hacemos e-commerce todo el tiempo. Desarrollamos tiendas en línea con catálogo de productos, carrito de compras, pasarelas de pago (OXXO, tarjeta, transferencia) y panel de administración para que gestiones tu inventario fácilmente.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Columna derecha: Formulario WhatsApp -->
+      <div>
+        <div class="ol-faq-form-wrap">
+          <span class="ol-faq-form-badge">
+            <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+            Contáctanos por WhatsApp
+          </span>
+          <h3 class="ol-faq-form-title">¿Listo para empezar<br>tu proyecto?</h3>
+          <p class="ol-faq-form-sub">Cuéntanos brevemente qué necesitas y te respondemos con una propuesta clara, por escrito y sin compromiso.</p>
+
+          <form class="ol-faq-form" id="ol-wa-form" novalidate>
+            <div class="ol-faq-form-row">
+              <div class="ol-faq-field">
+                <label for="faq-nombre">Tu nombre</label>
+                <input type="text" id="faq-nombre" placeholder="Ej. Carlos García" autocomplete="given-name">
+              </div>
+              <div class="ol-faq-field">
+                <label for="faq-empresa">Empresa / Negocio</label>
+                <input type="text" id="faq-empresa" placeholder="Nombre de tu empresa">
+              </div>
+            </div>
+            <div class="ol-faq-field">
+              <label for="faq-tipo">Tipo de proyecto</label>
+              <select id="faq-tipo">
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="Sitio web corporativo">Sitio web corporativo</option>
+                <option value="Tienda en línea / E-commerce">Tienda en línea / E-commerce</option>
+                <option value="Landing page">Landing page</option>
+                <option value="Rediseño de sitio existente">Rediseño de sitio existente</option>
+                <option value="Portafolio profesional">Portafolio profesional</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+            <div class="ol-faq-field">
+              <label for="faq-mensaje">¿Qué necesitas?</label>
+              <textarea id="faq-mensaje" placeholder="Describe brevemente tu proyecto o la duda que tienes..."></textarea>
+            </div>
+            <button type="submit" class="ol-faq-submit">
+              <svg width="17" height="17" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+              Enviar por WhatsApp
+            </button>
+            <p class="ol-faq-form-note">Al enviar, se abrirá WhatsApp con tu mensaje listo. Respondemos en menos de 24 h.</p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  /* FAQ toggle se maneja en ol-header.js (universal). Solo el form WhatsApp aquí. */
+  var waForm = document.getElementById('ol-wa-form');
+  if (waForm) waForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var nombre = document.getElementById('faq-nombre').value.trim();
+    var empresa = document.getElementById('faq-empresa').value.trim();
+    var tipo = document.getElementById('faq-tipo').value;
+    var mensaje = document.getElementById('faq-mensaje').value.trim();
+    var partes = ['Hola OrigenLab, me contacto desde su sitio web.'];
+    if (nombre) partes.push('*Nombre:* ' + nombre);
+    if (empresa) partes.push('*Empresa:* ' + empresa);
+    if (tipo) partes.push('*Tipo de proyecto:* ' + tipo);
+    if (mensaje) partes.push('*Descripción:* ' + mensaje);
+    partes.push('Me gustaría recibir más información. ¡Gracias!');
+    var url = 'https://wa.me/525547868402?text=' + encodeURIComponent(partes.join('\n'));
+    window.open(url, '_blank', 'noopener,noreferrer');
+  });
+})();
+</script>
+
+<!-- ======= QUICKNAV BOTTOM ======= -->
+<div class="ol-quicknav">
+  <div class="ol-quicknav-inner">
+    <a href="/servicios/desarrollo-web/" class="ol-qn-item">
+      <div class="ol-qn-text">
+        <span class="ol-qn-title">Sitios Corporativos</span>
+        <span class="ol-qn-sub">Diseño a medida</span>
+      </div>
+    </a>
+    <a href="/servicios/tiendas-en-linea/" class="ol-qn-item">
+      <div class="ol-qn-text">
+        <span class="ol-qn-title">Tienda en Línea</span>
+        <span class="ol-qn-sub">Vende desde el día uno</span>
+      </div>
+    </a>
+    <a href="/servicios/landing-pages/" class="ol-qn-item">
+      <div class="ol-qn-text">
+        <span class="ol-qn-title">Landing Pages</span>
+        <span class="ol-qn-sub">Más leads, más ventas</span>
+      </div>
+    </a>
+    <a href="/servicios/rediseno-web/" class="ol-qn-item">
+      <div class="ol-qn-text">
+        <span class="ol-qn-title">Rediseño Web</span>
+        <span class="ol-qn-sub">Actualiza tu presencia</span>
+      </div>
+    </a>
+    <a href="/portafolio/" class="ol-qn-item">
+      <div class="ol-qn-text">
+        <span class="ol-qn-title">Portafolio</span>
+        <span class="ol-qn-sub">Ve lo que construimos</span>
+      </div>
+    </a>
+    <a href="/nosotros/" class="ol-qn-item">
+      <div class="ol-qn-text">
+        <span class="ol-qn-title">Nosotros</span>
+        <span class="ol-qn-sub">Quiénes somos</span>
+      </div>
+    </a>
+    <a href="cotizar.html" class="ol-qn-item ol-qn-cta">
+      <div class="ol-qn-text">
+        <span class="ol-qn-title">Iniciar Proyecto</span>
+        <span class="ol-qn-sub">Solicitar propuesta</span>
+      </div>
+    </a>
+  </div>
+</div>
+
+<!-- ============================================================
+     OL-FOOTER — Footer premium
+     ============================================================ -->
+<footer class="ol-footer">
+
+  <!-- Banda superior: logo | tagline | contacto -->
+  <div class="ol-footer-top">
+    <a href="/" class="ol-footer-logo">
+      ORIGENLAB<span class="ol-footer-logo-dot">·</span>
+    </a>
+    <p class="ol-footer-tagline">Agencia de desarrollo web profesional en México. Sitios rápidos, modernos y orientados a resultados — para empresas que quieren crecer en internet.</p>
+    <ul class="ol-footer-contact-list">
+      <li>
+        <a href="mailto:hola@origenlab.mx" class="ol-fcl-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          hola@origenlab.mx
+        </a>
+      </li>
+      <li>
+        <a href="tel:+525547868402" class="ol-fcl-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +52 55 4786 8402
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/525547868402" target="_blank" rel="noopener noreferrer" class="ol-fcl-item ol-fcl-wa">
+          <svg width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+          WhatsApp — Escribir ahora →
+        </a>
+      </li>
+      <li>
+        <span class="ol-fcl-item ol-fcl-static">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Ciudad de México, MX
+        </span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Grid de links -->
+  <div class="ol-footer-links">
+    <div>
+      <p class="ol-footer-col-title">Servicios</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/servicios/desarrollo-web/">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/">Rediseño Web</a></li>
+        <li><a href="/servicios/">Ver todos los servicios</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Empresa</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/nosotros/">Nosotros</a></li>
+        <li><a href="/portafolio/">Portafolio</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="cotizar.html">Cotizar proyecto</a></li>
+        <li><a href="/contacto/">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Ubicaciones</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="#">Ciudad de México</a></li>
+        <li><a href="#">Monterrey</a></li>
+        <li><a href="#">Guadalajara</a></li>
+        <li><a href="#">Puebla</a></li>
+        <li><a href="#">Proyectos remotos</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Legal</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/aviso-de-privacidad/">Aviso de privacidad</a></li>
+        <li><a href="/terminos/">Términos de servicio</a></li>
+        <li><a href="/aviso-de-privacidad/#cookies/">Política de cookies</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Barra inferior -->
+  <div class="ol-footer-bottom">
+    <span class="ol-footer-copy">© 2026 OrigenLab. Todos los derechos reservados.</span>
+    <div class="ol-footer-legal">
+      <a href="/aviso-de-privacidad/">Privacidad</a>
+      <a href="/terminos/">Términos</a>
+      <a href="/aviso-de-privacidad/#cookies/">Cookies</a>
+    </div>
+  </div>
+
+</footer>
+
+</main>   <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web.%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" class="wa-bubble" aria-label="Contáctanos por WhatsApp">
+  <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff">
+    <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 0 0 2.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0 0 16.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/>
+  </svg>
+</a>
+</body></html>

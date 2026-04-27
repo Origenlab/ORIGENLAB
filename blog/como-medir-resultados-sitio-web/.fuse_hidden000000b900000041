@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cómo saber si tu sitio web está generando resultados reales | Blog OrigenLab</title>
+<link rel="canonical" href="https://origenlab.mx/blog/como-medir-resultados-sitio-web/">
+  <meta name="description" content="Tener visitas no es lo mismo que tener clientes. Estas son las métricas que realmente importan para saber si tu sitio web está trabajando por tu negocio.">
+  <meta name="canonical" content="https://origenlab.mx/blog/como-medir-resultados-sitio-web/">
+  <meta property="og:title" content="Cómo saber si tu sitio web está generando resultados reales | Blog OrigenLab">
+  <meta property="og:description" content="Tener visitas no es lo mismo que tener clientes. Estas son las métricas que realmente importan.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://origenlab.mx/blog/como-medir-resultados-sitio-web/">
+  <meta property="og:image" content="https://origenlab.mx/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cómo saber si tu sitio web está generando resultados reales">
+  <meta name="twitter:description" content="Las métricas que realmente importan para medir el desempeño de tu sitio web.">
+  <meta name="twitter:image" content="https://origenlab.mx/og-image.jpg">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  
+  <!-- Fuentes: preconnect + direct link para evitar render-blocking -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="../../_astro/BaseLayout.xeR8R953.css?v20260426c">
+  <link rel="stylesheet" href="../../_astro/premium-dark.css?v20260426c">
+  <script src="../../_astro/ol-header.js?v20260426d" defer></script>
+  <!-- Componentes en _astro/premium-dark.css -->
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.mx/#organization","name":"OrigenLab","url":"https://origenlab.mx","logo":"https://origenlab.mx/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"BlogPosting","@id":"https://origenlab.mx/blog/como-medir-resultados-sitio-web/#blogposting","mainEntityOfPage":"https://origenlab.mx/blog/como-medir-resultados-sitio-web/","headline":"Cómo saber si tu sitio web está generando resultados reales","description":"Tener visitas no es lo mismo que tener clientes. Estas son las métricas que realmente importan para tu negocio.","image":"https://origenlab.mx/og-image.jpg","url":"https://origenlab.mx/blog/como-medir-resultados-sitio-web/","datePublished":"2026-01-28","dateModified":"2026-04-21","inLanguage":"es-MX","author":{"@type":"Organization","name":"OrigenLab","url":"https://origenlab.mx"},"publisher":{"@type":"Organization","name":"OrigenLab","logo":{"@type":"ImageObject","url":"https://origenlab.mx/logo.svg"}}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.mx/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://origenlab.mx/blog/"},{"@type":"ListItem","position":3,"name":"Cómo saber si tu sitio web está generando resultados reales","item":"https://origenlab.mx/blog/como-medir-resultados-sitio-web/"}]}]}</script></head>
+<body>
+
+<a class="ol-skip-link" href="#main">Saltar al contenido</a>
+<div class="ol-topbar">
+  <div class="ol-topbar-inner">
+    <div class="ol-topbar-left">
+      <a href="mailto:hola@origenlab.mx" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        hola@origenlab.mx
+      </a>
+      <span class="ol-topbar-sep"></span>
+      <a href="tel:+525547868402" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        +52 55 4786 8402
+      </a>
+    </div>
+    <div class="ol-topbar-center">
+      <span class="ol-topbar-promo">
+        <span class="ol-topbar-dot"></span>
+        Atención personalizada  ·  Ciudad de México
+      </span>
+    </div>
+    <div class="ol-topbar-right">
+      <a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web" target="_blank" rel="noopener noreferrer" class="ol-topbar-wa">
+        <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor">
+          <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+<header class="ol-header" id="ol-header">
+  <div class="ol-header-inner">
+    <a href="/" class="ol-header-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
+    </a>
+    <nav class="ol-nav" aria-label="Navegación principal">
+      <ul class="ol-nav-list">
+        <li><a href="/" class="ol-nav-link">Inicio</a></li>
+        <li class="ol-has-dropdown">
+          <a href="/servicios/" class="ol-nav-link">
+            Servicios
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/servicios/desarrollo-web/" class="ol-dropdown-link">Desarrollo Web</a></li>
+              <li><a href="/servicios/tiendas-en-linea/" class="ol-dropdown-link">Tiendas en Línea</a></li>
+              <li><a href="/servicios/landing-pages/" class="ol-dropdown-link">Landing Pages</a></li>
+              <li><a href="/servicios/rediseno-web/" class="ol-dropdown-link">Rediseño Web</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="ol-has-dropdown">
+          <a href="/portafolio/" class="ol-nav-link">
+            Portafolio
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link">Equipos Contra Incendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link ol-dropdown-sub">— Gama de México</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link ol-dropdown-sub">— MESECI</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link ol-dropdown-sub">— LGA Contraincendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-dropdown-link ol-dropdown-sub">— MANEXT</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-dropdown-link ol-dropdown-sub">— BOMBERO.MX</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="/nosotros/" class="ol-nav-link">Nosotros</a></li>
+        <li><a href="/blog/" class="ol-nav-link active">Blog</a></li>
+        <li><a href="/contacto/" class="ol-nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="/cotizar/" class="ol-header-cta">Cotizar proyecto →</a>
+    <button class="ol-menu-toggle" id="ol-menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+    </button>
+  </div>
+</header>
+<div class="ol-mobile-overlay" id="ol-mobile-overlay"></div>
+<nav class="ol-mobile-panel" id="ol-mobile-panel" aria-label="Menú móvil">
+  <div class="ol-mobile-header">
+    <a href="/" class="ol-mobile-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
+    </a>
+    <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú">
+      <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <ul class="ol-mobile-nav">
+    <li><a href="/" class="ol-mobile-link">Inicio</a></li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Servicios</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/servicios/desarrollo-web/" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Portafolio</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/portafolio/" class="ol-mobile-link ol-mobile-sublink">Todo el Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/" class="ol-mobile-link ol-mobile-sublink">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Gama de México</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MESECI</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— LGA Contraincendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MANEXT</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— BOMBERO.MX</a></li>
+      </ul>
+    </li>
+    <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
+    <li><a href="/blog/" class="ol-mobile-link active">Blog</a></li>
+    <li><a href="/contacto/" class="ol-mobile-link">Contacto</a></li>
+  </ul>
+  <div class="ol-mobile-footer">
+    <a href="/cotizar/" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a>
+  </div>
+</nav>
+
+<!-- ARTICLE HERO -->
+<nav class="ol-bc-wrap" aria-label="Migas de pan">
+  <div class="ol-bc">
+    <ol class="ol-bc-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/" itemprop="item" class="ol-bc-home"><span itemprop="name">Inicio</span></a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item ol-bc-item-mid" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/blog/" itemprop="item"><span itemprop="name">Blog</span></a>
+        <meta itemprop="position" content="2" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item ol-bc-current" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name">Cómo medir resultados de tu sitio web</span>
+        <meta itemprop="position" content="3" />
+      </li>
+    </ol>
+  </div>
+</nav>
+<section id="main" class="ol-article-hero">
+  <div class="ol-article-hero-inner">
+    <nav class="ol-article-breadcrumb">
+      <a href="/blog/">Blog</a>
+      <span>/</span>
+      <span>Cómo medir resultados de tu sitio web</span>
+    </nav>
+    <span class="ol-article-cat estrategia">Estrategia</span>
+    <h1 class="ol-article-title">Cómo saber si tu sitio web está generando resultados reales</h1>
+    <p class="ol-article-excerpt">Tener visitas no es lo mismo que tener clientes. Estas son las métricas que realmente importan para saber si tu sitio web está trabajando por tu negocio.</p>
+    <div class="ol-article-meta">
+      
+      <span class="ol-article-meta-sep">·</span>
+      <span>6 min de lectura</span>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLE CONTENT -->
+<section class="ol-article-section">
+  <div class="ol-article-inner">
+    <div class="ol-article-layout">
+      <article class="ol-article-body">
+        <p>Escuchamos esto una vez por semana: "Tenemos muchas visitas a nuestro sitio." Y luego viene la parte incómoda: "Pero no sé si están convirtiendo en clientes."</p>
+
+        <p>Visitas sin contexto son como contar autos que pasan por la puerta de tu negocio. Interesante. Pero ¿cuántos entran? ¿Cuántos compran? Eso es lo que importa. Aquí te explicamos cómo medir lo que realmente cuenta.</p>
+
+        <h2>La métrica que más importa: la tasa de conversión</h2>
+
+        <p>Olvida las visitas por un momento. La métrica fundamental es la tasa de conversión.</p>
+
+        <p>Define primero: ¿qué es una conversión para ti? Un formulario completado. Una llamada. Un mensaje de WhatsApp. Una compra. Si no tienes una definición clara, tu sitio no tiene objetivo — y medir resultados es imposible.</p>
+
+        <p>La tasa de conversión es simple: (conversiones ÷ visitas) × 100. Si tu sitio tuvo 1,000 visitantes y 20 dejaron su número de teléfono, tu tasa es 2%. Es un número pequeño, pero es la verdad de tu sitio.</p>
+
+        <p>Ahora bien: ¿es buena una tasa de 2%? Depende. Para un sitio corporativo, 1-3% es normal. Para una landing page optimizada, 5-10% es realista. Para un ecommerce, 2-5% es típico. Lo importante es que tengas una línea de base para comparar mes a mes.</p>
+
+        <div class="ol-article-highlight">
+          <h3>Real</h3>
+          <p>Un sitio que genera 500 visitas/mes y 10 leads tiene mejor desempeño que uno con 5,000 visitas y 2 leads. La tasa de conversión es todo.</p>
+        </div>
+
+        <h2>Google Analytics 4: configurarlo bien desde el principio</h2>
+
+        <p>Google Analytics es gratis y poderoso. Pero la mayoría de empresas lo usan mal. No configuran eventos de conversión, así que ven visitas pero no resultado.</p>
+
+        <p>Lo mínimo que debes hacer:</p>
+
+        <ul>
+          <li><strong>Crear un evento de "contacto".</strong> Cuando alguien completa un formulario, envía un mensaje por WhatsApp, o llama.</li>
+          <li><strong>Crear un evento de "compra".</strong> Si tienes ecommerce.</li>
+          <li><strong>Diferenciar tráfico por fuente.</strong> ¿Viene de Google? ¿De Meta Ads? ¿De referencia directa? Cada fuente tiene un valor distinto.</li>
+          <li><strong>Entender sesiones vs usuarios.</strong> 1,000 sesiones no son lo mismo que 1,000 usuarios únicos. Las sesiones pueden estar infladas por bots.</li>
+        </ul>
+
+        <p>Si tu Google Analytics no está capturando conversiones, los números son decoración. Configurarlo bien toma 30 minutos.</p>
+
+        <h2>Las 5 métricas que sí importan para tu negocio</h2>
+
+        <p><strong>1. Tasa de conversión (ya lo dijimos).</strong> Visitantes que hacen la acción deseada. Es la métrica reina.</p>
+
+        <p><strong>2. Costo por lead (CPL).</strong> Si inviertes en publicidad pagada, es crítico. Si gastas 1,000 USD en Ads y obtienes 20 leads, tu CPL es 50 USD. ¿Vale la pena? Solo tú sabes si un lead de 50 USD se convierte en cliente con ganancia.</p>
+
+        <p><strong>3. Tráfico orgánico vs tráfico pagado.</strong> Tráfico orgánico es gratis — viene de búsquedas. Tráfico pagado es publicidad. Un sitio ideal tiene ambos: pagado para rápidos resultados iniciales, orgánico para crecimiento sostenible. Si todo tu tráfico es pagado, detente en gastar y tu sitio muere de hambre.</p>
+
+        <p><strong>4. Tasa de rebote por página.</strong> Un usuario llega a tu sitio y se va inmediatamente sin hacer nada. El promedio es 50-60%. Pero si una página específica está en 80-90%, hay un problema: título confuso, diseño pobre, contenido irrelevante. Eso requiere atención.</p>
+
+        <p><strong>5. Tiempo promedio en página.</strong> Si un usuario pasa 30 segundos en tu página, probablemente no está leyendo. Si pasa 3 minutos, está interesado. No es una ciencia exacta, pero es una señal.</p>
+
+        <h2>Las métricas que no importan (o importan menos)</h2>
+
+        <p><strong>Visitas totales sin contexto.</strong> "Tengo 50,000 visitas/mes" suena impresionante. Pero si 0 leads, es humo. Una empresa con 5,000 visitas y 50 leads está ganando.</p>
+
+        <p><strong>Seguidores en redes sociales (vs tráfico que traen).</strong> 10,000 seguidores de Instagram es vanidad si solo 2 visitan tu sitio. Lo que importa es el tráfico que convierten, no el número que ves en tu perfil.</p>
+
+        <p><strong>Posición en Google (sin volumen de búsqueda).</strong> Posicionar #1 para "servicios web en el barrio La Condesa CDMX" es fácil — nadie busca eso. Posicionar para "desarrollo web CDMX" es difícil porque hay volumen. Conoce el volumen de búsqueda de tus keywords antes de celebrar rankear.</p>
+
+        <h2>Señales de alerta que debes vigilar</h2>
+
+        <p><strong>Rebote >80% en landing pages.</strong> Las landing pages de desempeño alto están en 20-30%. Si la tuya está en 80%, rediseña. Hay desconexión entre el anuncio y la página.</p>
+
+        <p><strong>Tiempo en página <30 segundos (promedio).</strong> Los usuarios no están leyendo. O el contenido no es relevante, o la página carga lenta.</p>
+
+        <p><strong>0 conversiones en 30 días.</strong> Si durante un mes entero no hay un solo lead, hay un problema sistémico. Revisa: ¿estás teniendo tráfico? ¿El formulario funciona? ¿El CTA es claro?</p>
+
+        <p><strong>Tráfico sube, leads bajan.</strong> Es la peor señal. Significa que atraes a más personas pero ninguna convierte. El problema está en la experiencia del usuario o en la propuesta de valor.</p>
+
+        <h2>Herramientas gratuitas que puedes usar hoy</h2>
+
+        <ul>
+          <li><strong>Google Analytics 4.</strong> Gratis. Instala el código, configura eventos de conversión, espera 24 horas de datos. Es el mínimo obligatorio.</li>
+          <li><strong>Google Search Console.</strong> Gratis. Te muestra qué búsquedas te traen tráfico, en qué posición rankeas, cuántas impresiones tienes.</li>
+          <li><strong>Hotjar (free tier).</strong> Mapas de calor y grabaciones de usuarios. Ves dónde hace clic la gente, dónde se desorienta.</li>
+          <li><strong>Microsoft Clarity.</strong> Similar a Hotjar, gratis completo. Muy subestimada.</li>
+        </ul>
+
+        <p>Con estas cuatro herramientas gratuitas tienes visibilidad real de tu sitio.</p>
+
+        <h2>Cuándo contratar a alguien para que lo interprete</h2>
+
+        <p>Si invertiste en publicidad pagada (Ads, Meta, LinkedIn), contrata a alguien que entienda análisis. El retorno potencial justifica la inversión en interpretación de datos.</p>
+
+        <p>Si tu sitio lleva 6 meses en línea y no puedes decir con precisión cuántos leads generó, hay un problema. No es que necesites a alguien mejor — necesitas configuración básica primero.</p>
+
+        <div class="ol-article-cta-inline">
+          <h3>¿Tu sitio no tiene claridad en métricas?</h3>
+          <p>Hacemos auditoría de analytics gratis. Te decimos qué está funcionando, qué no, y qué cambios tendrían más impacto. Sin compromiso.</p>
+          <a href="/cotizar/" class="ol-btn">Solicita tu auditoría</a>
+        </div>
+      </article>
+
+      <!-- SIDEBAR -->
+      <aside class="ol-article-sidebar">
+        <!-- CTA Widget -->
+        <div class="ol-as-widget ol-as-cta">
+          <p class="ol-as-cta-title">¿Necesitas un sitio web profesional?</p>
+          <p class="ol-as-cta-desc">Cotiza tu proyecto sin compromiso. Te respondemos personalmente.</p>
+          <a href="/cotizar/" class="ol-btn" style="display:block;text-align:center;width:100%;box-sizing:border-box;">Cotizar ahora</a>
+        </div>
+
+        <!-- TOC Widget -->
+        <div class="ol-as-widget">
+          <p class="ol-as-title">En este artículo</p>
+          <a href="#" class="ol-as-toc-link">La métrica que más importa</a>
+          <a href="#" class="ol-as-toc-link">Google Analytics 4</a>
+          <a href="#" class="ol-as-toc-link">Las 5 métricas que sí importan</a>
+          <a href="#" class="ol-as-toc-link">Las métricas que no importan</a>
+          <a href="#" class="ol-as-toc-link">Señales de alerta</a>
+          <a href="#" class="ol-as-toc-link">Herramientas gratuitas</a>
+        </div>
+
+        <!-- Servicios Widget -->
+        <div class="ol-as-widget">
+          <p class="ol-as-title">Nuestros Servicios</p>
+          <a href="/servicios/desarrollo-web/" class="ol-as-nav-link">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            Desarrollo Web
+          </a>
+          <a href="/servicios/landing-pages/" class="ol-as-nav-link">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            Landing Pages
+          </a>
+          <a href="/servicios/tiendas-en-linea/" class="ol-as-nav-link">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+            Tiendas en Línea
+          </a>
+          <a href="/servicios/rediseno-web/" class="ol-as-nav-link">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            Rediseño Web
+          </a>
+        </div>
+
+        <!-- Artículos Relacionados -->
+        <div class="ol-as-widget">
+          <p class="ol-as-title">Artículos relacionados</p>
+          <a href="/blog/landing-page-vs-sitio-corporativo/" class="ol-as-related-item">
+            <span class="ol-as-related-num">1</span>
+            <span class="ol-as-related-title">Landing page vs sitio corporativo</span>
+          </a>
+          <a href="/blog/por-que-tu-sitio-lento-cuesta-clientes/" class="ol-as-related-item">
+            <span class="ol-as-related-num">2</span>
+            <span class="ol-as-related-title">Por qué tu sitio lento cuesta clientes</span>
+          </a>
+          <a href="/blog/5-errores-sitios-web-pymes-mexico/" class="ol-as-related-item">
+            <span class="ol-as-related-num">3</span>
+            <span class="ol-as-related-title">5 errores en sitios de pymes mexicanas</span>
+          </a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<section class="ol-related" aria-labelledby="related-title">
+  <div class="ol-related-inner">
+    <p class="ol-related-eyebrow">Te puede interesar</p>
+    <h2 id="related-title" class="ol-related-title">Más artículos relacionados</h2>
+    <div class="ol-related-grid">
+      <a href="/blog/5-errores-sitios-web-pymes-mexico/" class="ol-related-card">
+        <span class="ol-related-cat">Estrategia</span>
+        <h3 class="ol-related-card-title">5 errores comunes en sitios web de PyMEs</h3>
+        <p class="ol-related-card-desc">Los fallos más caros que vemos en sitios de empresas mexicanas y cómo evitarlos.</p>
+        <span class="ol-related-card-arrow">Leer artículo →</span>
+      </a>
+      <a href="/blog/core-web-vitals-que-son/" class="ol-related-card">
+        <span class="ol-related-cat">Rendimiento</span>
+        <h3 class="ol-related-card-title">Core Web Vitals: qué son</h3>
+        <p class="ol-related-card-desc">LCP, CLS e INP explicados con impacto directo en tu negocio.</p>
+        <span class="ol-related-card-arrow">Leer artículo →</span>
+      </a>
+      <a href="/blog/rediseno-web-cuando-es-momento/" class="ol-related-card">
+        <span class="ol-related-cat">Estrategia</span>
+        <h3 class="ol-related-card-title">Rediseño web: cuándo es el momento</h3>
+        <p class="ol-related-card-desc">Señales claras de que tu sitio actual ya te está costando más de lo que aporta.</p>
+        <span class="ol-related-card-arrow">Leer artículo →</span>
+      </a>
+    </div>
+  </div>
+</section>
+<footer class="ol-footer">
+  <div class="ol-footer-top">
+    <a href="/" class="ol-footer-logo">
+      Origen<span class="ol-footer-logo-dot">.</span>Lab
+    </a>
+    <p class="ol-footer-tagline">
+      Agencia de desarrollo web en México.<br>
+      Creamos sitios que generan resultados.
+    </p>
+    <ul class="ol-footer-contact-list">
+      <li><a href="mailto:hola@origenlab.mx" class="ol-fcl-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>hola@origenlab.mx</a></li>
+      <li><a href="tel:+525547868402" class="ol-fcl-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+52 55 4786 8402</a></li>
+      <li><a href="https://wa.me/525547868402" target="_blank" rel="noopener noreferrer" class="ol-fcl-item ol-fcl-wa"><svg width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>WhatsApp</a></li>
+      <li><span class="ol-fcl-item ol-fcl-static"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Ciudad de México, MX</span></li>
+    </ul>
+  </div>
+  <div class="ol-footer-links">
+    <div><p class="ol-footer-col-title">Servicios</p><ul class="ol-footer-col-list"><li><a href="/servicios/desarrollo-web/">Desarrollo Web</a></li><li><a href="/servicios/tiendas-en-linea/">Tiendas en Línea</a></li><li><a href="/servicios/landing-pages/">Landing Pages</a></li><li><a href="/servicios/rediseno-web/">Rediseño Web</a></li></ul></div>
+    <div><p class="ol-footer-col-title">Empresa</p><ul class="ol-footer-col-list"><li><a href="/nosotros/">Nosotros</a></li><li><a href="/portafolio/">Portafolio</a></li><li><a href="/blog/">Blog</a></li><li><a href="/cotizar/">Cotizar proyecto</a></li></ul></div>
+    <div><p class="ol-footer-col-title">Contacto</p><ul class="ol-footer-col-list"><li><a href="/contacto/">Formulario de contacto</a></li><li><a href="mailto:hola@origenlab.mx">hola@origenlab.mx</a></li><li><a href="tel:+525547868402">+52 55 4786 8402</a></li></ul></div>
+    <div><p class="ol-footer-col-title">Legal</p><ul class="ol-footer-col-list"><li><a href="/aviso-de-privacidad/">Aviso de privacidad</a></li><li><a href="/terminos/">Términos de servicio</a></li></ul></div>
+  </div>
+  <div class="ol-footer-bottom">
+    <p class="ol-footer-copy">© 2026 OrigenLab. Todos los derechos reservados.</p>
+    <div class="ol-footer-legal">
+      <a href="/aviso-de-privacidad/">Privacidad</a>
+      <a href="/terminos/">Términos</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WA Bubble -->
+<a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web.%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" class="wa-bubble" aria-label="Contáctanos por WhatsApp">
+  <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 0 0 2.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0 0 16.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"></path></svg>
+</a>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var toggle = document.getElementById('ol-menu-toggle');
+  var panel = document.getElementById('ol-mobile-panel');
+  var overlay = document.getElementById('ol-mobile-overlay');
+  var closeBtn = document.getElementById('ol-mobile-close');
+  var header = document.getElementById('ol-header');
+
+  function openMenu() {
+    toggle.classList.add('open');
+    toggle.setAttribute('aria-expanded', 'true');
+    panel.classList.add('open');
+    overlay.classList.add('visible');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    toggle.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+    panel.classList.remove('open');
+    overlay.classList.remove('visible');
+    document.body.style.overflow = '';
+  }
+
+  if (toggle) toggle.addEventListener('click', function() {
+    panel.classList.contains('open') ? closeMenu() : openMenu();
+  });
+
+  if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+  if (overlay) overlay.addEventListener('click', closeMenu);
+
+  var menuLinks = panel ? panel.querySelectorAll('a') : [];
+  for (var i = 0; i < menuLinks.length; i++) {
+    menuLinks[i].addEventListener('click', closeMenu);
+  }
+
+  var subToggles = document.querySelectorAll('[data-submenu]');
+  for (var j = 0; j < subToggles.length; j++) {
+    subToggles[j].addEventListener('click', function() {
+      this.classList.toggle('expanded');
+      var submenu = this.nextElementSibling;
+      if (submenu) submenu.classList.toggle('open');
+    });
+  }
+
+  window.addEventListener('scroll', function() {
+    header.classList.toggle('scrolled', window.pageYOffset > 10);
+  }, { passive: true });
+});
+</script>
+
+</body>
+</html>

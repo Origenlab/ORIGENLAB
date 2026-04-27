@@ -1,0 +1,190 @@
+====================================================================================================
+REPORTE COMPLETO: COMPARATIVA DE HEADERS
+====================================================================================================
+
+ARCHIVO 1: /Users/frankoropeza/Documents/Claude/Projects/ORIGENLAB/index.html
+Líneas: 43 - 92 (aprox. 3270 caracteres)
+
+<header class="ol-header" id="ol-header">
+  <div class="ol-header-inner">
+    <!-- Logo -->
+      <a href="/" class="ol-header-logo">
+        <img src="img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
+        </a>
+        <!-- Desktop Nav -->
+          <nav class="ol-nav" aria-label="Navegación principal">
+            <ul class="ol-nav-list">
+              <li>
+                <a href="/" class="ol-nav-link active">Inicio</a>
+              </li>
+              <li class="ol-has-dropdown">
+                <a href="/servicios/" class="ol-nav-link">
+                  Servicios
+                  <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                    <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <div class="ol-dropdown">
+                  <ul>
+                    <li>
+                      <a href="/servicios/desarrollo-web/" class="ol-dropdown-link">Desarrollo Web</a>
+                    </li>
+                    <li>
+                      <a href="/servicios/tiendas-en-linea/" class="ol-dropdown-link">Tiendas en Línea</a>
+                    </li>
+                    <li>
+                      <a href="/servicios/landing-pages/" class="ol-dropdown-link">Landing Pages</a>
+                    </li>
+                    <li>
+                      <a href="/servicios/rediseno-web/" class="ol-dropdown-link">Rediseño Web</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="ol-has-dropdown">
+                <a href="/portafolio/" class="ol-nav-link">
+                  Portafolio
+                  <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                    <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <div class="ol-dropdown">
+                  <ul>
+                    <li>
+                      <a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a>
+                    </li>
+                    <li class="ol-has-subdrop">
+                      <a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link ol-dropdown-parent">Equipos Contra Incendios</a>
+                      <div class="ol-subdrop">
+                        <ul>
+                          <li>
+                            <a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link">Gama de México</a>
+                          </li>
+                          <li>
+                            <a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link">MESECI</a>
+                          </li>
+                          <li>
+                            <a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link">LGA Contraincendios</a>
+                          </li>
+                          <li>
+                            <a href="/portafolio/equipos-contra-incendios/manext/" class="ol-dropdown-link">MANEXT</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="/nosotros/" class="ol-nav-link">Nosotros</a>
+              </li>
+              <li>
+                <a href="/blog/" class="ol-nav-link">Blog</a>
+              </li>
+              <li>
+                <a href="/contacto/" class="ol-nav-link">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Desktop CTA -->
+            <a href="cotizar.html" class="ol-header-cta">Cotizar proyecto →</a>
+            <!-- Hamburger -->
+              <button class="ol-menu-toggle" id="ol-menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span class="ol-ham-line">
+                </span>
+                <span class="ol-ham-line">
+                </span>
+                <span class="ol-ham-line">
+                </span>
+              </button>
+            </div>
+          </header>
+
+====================================================================================================
+
+ARCHIVO 2: /Users/frankoropeza/Documents/Claude/Projects/ORIGENLAB/blog/gama-de-mexico-distribuidor-elkhart-brass/index.html
+Líneas: 43 - 92 (aprox. 2907 caracteres)
+
+<header class="ol-header" id="ol-header">
+  <div class="ol-header-inner">
+    <a href="/" class="ol-header-logo">
+      <img src="../../img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
+      </a>
+      <nav class="ol-nav" aria-label="Navegación principal">
+        <ul class="ol-nav-list">
+          <li>
+            <a href="/" class="ol-nav-link">Inicio</a>
+          </li>
+          <li class="ol-has-dropdown">
+            <a href="/servicios/" class="ol-nav-link">
+              Servicios
+              <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="ol-dropdown">
+              <ul>
+                <li>
+                  <a href="/servicios/desarrollo-web/" class="ol-dropdown-link">Desarrollo Web</a>
+                </li>
+                <li>
+                  <a href="/servicios/tiendas-en-linea/" class="ol-dropdown-link">Tiendas en Línea</a>
+                </li>
+                <li>
+                  <a href="/servicios/landing-pages/" class="ol-dropdown-link">Landing Pages</a>
+                </li>
+                <li>
+                  <a href="/servicios/rediseno-web/" class="ol-dropdown-link">Rediseño Web</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="ol-has-dropdown">
+            <a href="/portafolio/" class="ol-nav-link">
+              Portafolio
+              <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="ol-dropdown">
+              <ul>
+                <li>
+                  <a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a>
+                </li>
+                <li>
+                  <a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link">Equipos Contra Incendios</a>
+                </li>
+                <li>
+                  <a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link ol-dropdown-sub">— Gama de México</a>
+                </li>
+                <li>
+                  <a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link ol-dropdown-sub">— MESECI</a>
+                </li>
+                <li>
+                  <a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link ol-dropdown-sub">— LGA Contraincendios</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="/nosotros/" class="ol-nav-link">Nosotros</a>
+          </li>
+          <li>
+            <a href="/blog/" class="ol-nav-link active">Blog</a>
+          </li>
+          <li>
+            <a href="/contacto/" class="ol-nav-link">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="/cotizar/" class="ol-header-cta">Cotizar proyecto →</a>
+      <button class="ol-menu-toggle" id="ol-menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span class="ol-ham-line">
+        </span>
+        <span class="ol-ham-line">
+        </span>
+        <span class="ol-ham-line">
+        </span>
+      </button>
+    </div>
+  </header>

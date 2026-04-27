@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astro vs WordPress: cuál elegir para tu empresa en México | Blog OrigenLab</title>
+  <meta name="description" content="WordPress parece la opción obvia pero rara vez es la correcta. Comparamos velocidad, mantenimiento, costo y seguridad con datos reales de proyectos entregados en México.">
+  <link rel="canonical" href="https://origenlab.mx/blog/astro-vs-wordpress-cual-elegir/">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://origenlab.mx/blog/astro-vs-wordpress-cual-elegir/">
+  <meta property="og:title" content="Astro vs WordPress: cuál elegir para tu empresa en México">
+  <meta property="og:description" content="WordPress parece la opción obvia pero rara vez es la correcta. Comparamos velocidad, mantenimiento, costo y seguridad con datos reales de proyectos entregados en México.">
+  <meta property="og:image" content="https://origenlab.mx/og-image.jpg">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="OrigenLab">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Astro vs WordPress: cuál elegir para tu empresa en México">
+  <meta name="twitter:description" content="WordPress parece la opción obvia pero rara vez es la correcta. Comparamos velocidad, mantenimiento, costo y seguridad con datos reales de proyectos entregados en México.">
+  <meta name="twitter:image" content="https://origenlab.mx/og-image.jpg">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+
+  <link rel="stylesheet" href="../../_astro/BaseLayout.xeR8R953.css?v20260426c">
+  <link rel="stylesheet" href="../../_astro/premium-dark.css?v20260426c">
+  <script src="../../_astro/ol-header.js?v20260426d" defer></script>
+
+    .ol-art-hero::before { content: ''; position: absolute; top: -30%; left: -10%; width: 70%; height: 140%; background: radial-gradient(ellipse at center, rgba(129,140,248,0.07) 0%, transparent 60%); pointer-events: none; }
+    .ol-art-hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(201,168,76,0.2), transparent); }
+    .ol-art-hero-inner { width: 90%; max-width: 1600px; margin: 0 auto; position: relative; z-index: 1; }
+    .ol-art-hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    @media (max-width: 1000px) { .ol-art-hero-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
+
+    .ol-art-hero-right { display: flex; flex-direction: column; gap: 1.25rem; padding-top: 0.25rem; }
+    .ol-art-hero-copy { font-size: 15px; color: rgba(240,240,245,0.48); line-height: 1.8; margin: 0; }
+
+    .ol-art-badges { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
+    .ol-art-cat { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.3rem 0.85rem; border-radius: 999px; border: 1px solid; }
+    .ol-art-cat.rendimiento { background: rgba(99,102,241,0.1); border-color: rgba(99,102,241,0.3); color: #818CF8; }
+    .ol-art-cat.tecnologia  { background: rgba(14,165,233,0.1); border-color: rgba(14,165,233,0.3); color: #38BDF8; }
+    .ol-art-cat.diseno      { background: rgba(236,72,153,0.1); border-color: rgba(236,72,153,0.3); color: #F472B6; }
+    .ol-art-cat.ecommerce   { background: rgba(16,185,129,0.1); border-color: rgba(16,185,129,0.3); color: #34D399; }
+    .ol-art-cat.estrategia  { background: rgba(245,158,11,0.1); border-color: rgba(245,158,11,0.3); color: #FBBF24; }
+    .ol-art-readtime { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 12px; font-weight: 600; color: rgba(240,240,245,0.5); padding: 0.3rem 0.75rem; border-radius: 999px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); }
+
+    .ol-art-title { font-size: clamp(2.2rem, 4.5vw, 3.75rem); font-weight: 900; color: #F0F0F5; letter-spacing: -0.035em; line-height: 1.05; margin: 0 0 1.5rem; }
+    .ol-art-excerpt { font-size: 1.0625rem; color: rgba(240,240,245,0.55); line-height: 1.75; margin: 0 0 2rem; }
+    .ol-art-meta { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.06); }
+    .ol-art-meta-author { display: flex; align-items: center; gap: 0.75rem; }
+    .ol-art-meta-avatar { width: 38px; height: 38px; border-radius: 50%; background: linear-gradient(135deg, #C9A84C, #8B7236); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 800; color: #08080E; border: 1px solid rgba(201,168,76,0.3); }
+    .ol-art-meta-author-info { display: flex; flex-direction: column; gap: 2px; }
+    .ol-art-meta-author-name { font-size: 13px; font-weight: 700; color: rgba(240,240,245,0.85); }
+    .ol-art-meta-author-role { font-size: 11.5px; color: rgba(240,240,245,0.4); }
+    .ol-art-meta-sep { width: 1px; height: 24px; background: rgba(255,255,255,0.08); }
+    .ol-art-meta-item { font-size: 12.5px; color: rgba(240,240,245,0.45); display: inline-flex; align-items: center; gap: 0.35rem; }
+    .ol-art-meta-item svg { opacity: 0.5; }
+
+    /* ============================================================ FEATURED IMAGE BAND ============================================================ */
+    .ol-art-featured-band { background: #04040A; padding: 3rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .ol-art-featured-inner { width: 90%; max-width: 1600px; margin: 0 auto; }
+    .ol-art-featured { position: relative; border-radius: 16px; overflow: hidden; border: 1px solid rgba(201,168,76,0.15); background: #0C0C18; box-shadow: 0 30px 80px rgba(0,0,0,0.45); }
+    .ol-art-featured img { width: 100%; height: auto; display: block; aspect-ratio: 21/9; object-fit: cover; }
+    @media (max-width: 760px) { .ol-art-featured img { aspect-ratio: 16/10; } }
+    .ol-art-featured-caption { position: absolute; left: 1.25rem; bottom: 1.25rem; display: inline-flex; align-items: center; gap: 0.45rem; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.45rem 0.9rem; border-radius: 999px; background: rgba(8,8,14,0.72); border: 1px solid rgba(201,168,76,0.25); color: #C9A84C; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+
+    /* ============================================================ ARTICLE LAYOUT ============================================================ */
+    .ol-art-section { background: #08080E; padding: 5rem 0 6rem; position: relative; }
+    .ol-art-inner { width: 90%; max-width: 1600px; margin: 0 auto; }
+    .ol-art-layout { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 3.5rem; align-items: start; }
+    @media (max-width: 1100px) { .ol-art-layout { grid-template-columns: 1fr; gap: 3rem; } }
+
+    /* ============================================================ ARTICLE BODY ============================================================ */
+    .ol-art-body { max-width: none; width: 100%; font-family: 'Inter', system-ui, sans-serif; }
+    .ol-art-body > h2 { font-size: clamp(1.5rem, 2.5vw, 1.875rem); font-weight: 800; color: #F0F0F5; letter-spacing: -0.025em; margin: 3.5rem 0 1.25rem; line-height: 1.2; scroll-margin-top: 110px; position: relative; }
+    .ol-art-body > h2::before { content: ''; position: absolute; left: -1.25rem; top: 0.5em; width: 4px; height: 1.1em; background: linear-gradient(180deg, #C9A84C, rgba(201,168,76,0.2)); border-radius: 2px; }
+    @media (max-width: 760px) { .ol-art-body > h2::before { display: none; } }
+    .ol-art-body > h2:first-child { margin-top: 0; }
+    .ol-art-body > h3 { font-size: 1.125rem; font-weight: 700; color: rgba(240,240,245,0.9); margin: 2rem 0 0.75rem; letter-spacing: -0.015em; }
+    .ol-art-body > p { font-size: 1.0625rem; color: rgba(240,240,245,0.72); line-height: 1.85; margin: 0 0 1.25rem; }
+    .ol-art-body > p.lead::first-letter { float: left; font-size: 3.75rem; font-weight: 900; color: #C9A84C; line-height: 0.9; padding: 0.3rem 0.75rem 0 0; letter-spacing: -0.04em; }
+    .ol-art-body strong { color: #F0F0F5; font-weight: 700; }
+    .ol-art-body a:not([class]) { color: #C9A84C; text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.3); transition: all 0.2s; }
+    .ol-art-body a:not([class]):hover { border-bottom-color: #C9A84C; color: #E0BB5D; }
+    .ol-art-body > ul, .ol-art-body > ol { margin: 0 0 1.5rem 0; padding: 0; list-style: none; }
+    .ol-art-body > ul > li, .ol-art-body > ol > li { position: relative; padding: 0.25rem 0 0.25rem 1.75rem; font-size: 1.0625rem; color: rgba(240,240,245,0.72); line-height: 1.8; margin-bottom: 0.5rem; }
+    .ol-art-body > ul > li::before { content: ''; position: absolute; left: 0; top: 0.85rem; width: 6px; height: 6px; border-radius: 50%; background: #C9A84C; box-shadow: 0 0 0 3px rgba(201,168,76,0.15); }
+    .ol-art-body > ol { counter-reset: li; }
+    .ol-art-body > ol > li { counter-increment: li; }
+    .ol-art-body > ol > li::before { content: counter(li); position: absolute; left: 0; top: 0.35rem; font-size: 11px; font-weight: 800; color: #C9A84C; background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.25); border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; }
+
+    .ol-art-body > blockquote { position: relative; margin: 2.5rem 0; padding: 1.75rem 1.75rem 1.75rem 3.5rem; background: linear-gradient(135deg, rgba(201,168,76,0.06), rgba(201,168,76,0.02)); border: 1px solid rgba(201,168,76,0.15); border-left: 3px solid #C9A84C; border-radius: 0 12px 12px 0; }
+    .ol-art-body > blockquote::before { content: '"'; position: absolute; left: 1rem; top: 0.25rem; font-size: 3.5rem; font-weight: 900; color: rgba(201,168,76,0.35); font-family: Georgia, serif; line-height: 1; }
+    .ol-art-body > blockquote p { margin: 0; font-size: 1.125rem; font-style: italic; color: rgba(240,240,245,0.85); line-height: 1.7; }
+
+    .ol-art-cta-inline { margin: 3.5rem 0; padding: 2.25rem 2.5rem; background: radial-gradient(ellipse at 70% 30%, rgba(201,168,76,0.15) 0%, transparent 60%), #0C0C18; border: 1px solid rgba(201,168,76,0.25); border-radius: 16px; display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: center; }
+    @media (max-width: 700px) { .ol-art-cta-inline { grid-template-columns: 1fr; gap: 1.5rem; text-align: left; } }
+    .ol-art-cta-inline-label { font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(201,168,76,0.7); margin: 0 0 0.5rem; }
+    .ol-art-cta-inline h3 { margin: 0 0 0.5rem; font-size: 1.375rem; font-weight: 800; color: #F0F0F5; letter-spacing: -0.02em; line-height: 1.25; }
+    .ol-art-cta-inline p { margin: 0; font-size: 0.9375rem; color: rgba(240,240,245,0.6); line-height: 1.65; }
+    .ol-art-cta-inline-btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.85rem 1.5rem; background: #C9A84C; color: #08080E; font-size: 13.5px; font-weight: 700; text-decoration: none; border-radius: 8px; white-space: nowrap; transition: background 0.2s, transform 0.15s; }
+    .ol-art-cta-inline-btn:hover { background: #D4B45C; transform: translateY(-1px); }
+
+    .ol-art-share { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; margin: 3.5rem 0 2rem; padding: 1.5rem 0; border-top: 1px solid rgba(255,255,255,0.07); border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .ol-art-share-label { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(240,240,245,0.4); margin-right: 0.5rem; }
+    .ol-art-share-btn { width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; color: rgba(240,240,245,0.55); text-decoration: none; transition: all 0.2s; }
+    .ol-art-share-btn:hover { background: rgba(201,168,76,0.1); border-color: rgba(201,168,76,0.3); color: #C9A84C; }
+
+    .ol-art-author-card { display: grid; grid-template-columns: 64px 1fr auto; gap: 1.25rem; align-items: center; margin: 2rem 0 0; padding: 1.75rem; background: #0C0C18; border: 1px solid rgba(255,255,255,0.07); border-radius: 14px; }
+    @media (max-width: 600px) { .ol-art-author-card { grid-template-columns: 56px 1fr; gap: 1rem; } .ol-art-author-card-btn { grid-column: 1 / -1; text-align: center; } }
+    .ol-art-author-avatar { width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, #C9A84C, #8B7236); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; font-weight: 900; color: #08080E; border: 2px solid rgba(201,168,76,0.3); }
+    .ol-art-author-info .label { display: block; font-size: 10.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(201,168,76,0.65); margin-bottom: 0.3rem; }
+    .ol-art-author-info .name { display: block; font-size: 1rem; font-weight: 700; color: #F0F0F5; margin-bottom: 0.15rem; }
+    .ol-art-author-info .bio { font-size: 13px; color: rgba(240,240,245,0.5); line-height: 1.5; }
+    .ol-art-author-card-btn { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.65rem 1.1rem; border: 1px solid rgba(201,168,76,0.3); border-radius: 8px; font-size: 12.5px; font-weight: 700; color: #C9A84C; text-decoration: none; transition: all 0.2s; }
+    .ol-art-author-card-btn:hover { background: rgba(201,168,76,0.08); border-color: #C9A84C; }
+
+    /* ============================================================ SIDEBAR ============================================================ */
+    .ol-art-sidebar { display: flex; flex-direction: column; gap: 1.25rem; position: sticky; top: 110px; }
+    @media (max-width: 1100px) { .ol-art-sidebar { position: static; } }
+    .ol-sb-widget { background: #0C0C18; border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; padding: 1.5rem; }
+    .ol-sb-title { font-size: 10.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(240,240,245,0.35); margin: 0 0 1.1rem; }
+    .ol-sb-cta { background: rgba(201,168,76,0.05); border-color: rgba(201,168,76,0.18); text-align: center; padding: 1.75rem 1.5rem; }
+    .ol-sb-cta-icon { width: 44px; height: 44px; border-radius: 50%; background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.2); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: #C9A84C; }
+    .ol-sb-cta-title { font-size: 1rem; font-weight: 700; color: #F0F0F5; letter-spacing: -0.02em; margin: 0 0 0.45rem; line-height: 1.3; }
+    .ol-sb-cta-sub { font-size: 12.5px; color: rgba(240,240,245,0.45); line-height: 1.6; margin: 0 0 1.25rem; }
+    .ol-sb-cta-btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem; width: 100%; padding: 0.75rem 1rem; background: #C9A84C; border: none; border-radius: 7px; font-size: 13px; font-weight: 700; color: #08080E; text-decoration: none; transition: background 0.2s, transform 0.15s; }
+    .ol-sb-cta-btn:hover { background: #D4B45C; transform: translateY(-1px); }
+    .ol-sb-cta-wa { display: flex; align-items: center; justify-content: center; gap: 0.4rem; font-size: 11.5px; color: #25D366; text-decoration: none; margin-top: 0.75rem; font-weight: 600; }
+    .ol-sb-cta-wa:hover { opacity: 0.8; }
+
+    .ol-sb-toc { display: flex; flex-direction: column; gap: 0; }
+    .ol-sb-toc-link { position: relative; display: block; font-size: 12.5px; color: rgba(240,240,245,0.5); text-decoration: none; padding: 0.55rem 0 0.55rem 1rem; border-left: 2px solid rgba(255,255,255,0.06); line-height: 1.45; transition: all 0.2s; }
+    .ol-sb-toc-link:hover { color: rgba(240,240,245,0.85); border-left-color: rgba(201,168,76,0.4); }
+    .ol-sb-toc-link.active { color: #C9A84C; border-left-color: #C9A84C; background: linear-gradient(90deg, rgba(201,168,76,0.06), transparent); font-weight: 600; }
+
+    .ol-sb-services { display: flex; flex-direction: column; gap: 0.5rem; }
+    .ol-sb-svc-link { display: flex; align-items: center; gap: 0.65rem; padding: 0.65rem 0.75rem; border-radius: 8px; text-decoration: none; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); transition: all 0.2s; }
+    .ol-sb-svc-link:hover { background: rgba(201,168,76,0.06); border-color: rgba(201,168,76,0.15); }
+    .ol-sb-svc-icon { width: 30px; height: 30px; border-radius: 6px; background: rgba(201,168,76,0.08); border: 1px solid rgba(201,168,76,0.12); display: flex; align-items: center; justify-content: center; color: rgba(201,168,76,0.7); flex-shrink: 0; }
+    .ol-sb-svc-text { display: flex; flex-direction: column; gap: 0.1rem; }
+    .ol-sb-svc-name { font-size: 13px; font-weight: 600; color: rgba(240,240,245,0.75); line-height: 1.2; }
+    .ol-sb-svc-link:hover .ol-sb-svc-name { color: #C9A84C; }
+    .ol-sb-svc-sub { font-size: 11px; color: rgba(240,240,245,0.3); }
+
+    .ol-sb-related { display: flex; flex-direction: column; gap: 0; }
+    .ol-sb-related-item { display: flex; gap: 0.75rem; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); text-decoration: none; align-items: flex-start; transition: all 0.2s; }
+    .ol-sb-related-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .ol-sb-related-item:first-child { padding-top: 0; }
+    .ol-sb-related-num { font-size: 11px; font-weight: 800; color: rgba(201,168,76,0.35); min-width: 18px; margin-top: 2px; }
+    .ol-sb-related-info { display: flex; flex-direction: column; gap: 0.2rem; }
+    .ol-sb-related-title { font-size: 13px; font-weight: 600; color: rgba(240,240,245,0.65); line-height: 1.35; transition: color 0.2s; }
+    .ol-sb-related-item:hover .ol-sb-related-title { color: #C9A84C; }
+    .ol-sb-related-meta { font-size: 11px; color: rgba(240,240,245,0.28); }
+
+    /* ============================================================ NEXT READ ============================================================ */
+    .ol-art-nextread { background: #0A0A14; padding: 5rem 0 4rem; border-top: 1px solid rgba(255,255,255,0.06); position: relative; }
+    .ol-art-nextread::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(201,168,76,0.15), transparent); }
+    .ol-art-nextread-inner { width: 90%; max-width: 1600px; margin: 0 auto; }
+    .ol-art-nextread-head { display: flex; align-items: end; justify-content: space-between; margin-bottom: 2.5rem; gap: 2rem; flex-wrap: wrap; }
+    .ol-art-nextread-label { font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(201,168,76,0.7); margin: 0 0 0.75rem; }
+    .ol-art-nextread-title { font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 800; color: #F0F0F5; letter-spacing: -0.025em; line-height: 1.15; margin: 0; }
+    .ol-art-nextread-all { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 13px; font-weight: 600; color: #C9A84C; text-decoration: none; padding-bottom: 0.25rem; border-bottom: 1px solid rgba(201,168,76,0.3); transition: all 0.2s; }
+    .ol-art-nextread-all:hover { border-bottom-color: #C9A84C; }
+    .ol-art-nextread-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    @media (max-width: 900px) { .ol-art-nextread-grid { grid-template-columns: 1fr; } }
+    .ol-art-nextread-card { background: #0C0C18; border: 1px solid rgba(255,255,255,0.07); border-radius: 14px; overflow: hidden; text-decoration: none; display: flex; flex-direction: column; transition: all 0.25s; }
+    .ol-art-nextread-card:hover { border-color: rgba(201,168,76,0.25); }
+    .ol-art-nextread-thumb { position: relative; background: linear-gradient(135deg, #0D0D1E, #14142A, #0A0A18); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .ol-art-nextread-thumb::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 50%, rgba(201,168,76,0.1) 0%, transparent 65%); }
+    .ol-art-nextread-thumb::after { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px); background-size: 28px 28px; }
+    .ol-art-nextread-num { position: relative; z-index: 1; font-size: 3rem; font-weight: 900; color: rgba(201,168,76,0.25); letter-spacing: -0.05em; }
+    .ol-art-nextread-body { padding: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; flex: 1; }
+    .ol-art-nextread-top { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; }
+    .ol-art-nextread-meta { font-size: 11px; color: rgba(240,240,245,0.3); }
+    .ol-art-nextread-h { font-size: 1rem; font-weight: 700; color: #F0F0F5; letter-spacing: -0.02em; line-height: 1.3; margin: 0; transition: color 0.2s; }
+    .ol-art-nextread-card:hover .ol-art-nextread-h { color: #C9A84C; }
+    .ol-art-nextread-excerpt { font-size: 13px; color: rgba(240,240,245,0.5); line-height: 1.6; margin: 0; flex: 1; }
+    .ol-art-nextread-link { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 12px; font-weight: 600; color: #C9A84C; margin-top: 0.25rem; }
+
+    .ol-blog-cat { font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 999px; background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.2); color: #C9A84C; }
+    .ol-blog-cat.rendimiento  { background: rgba(99,102,241,0.1);  border-color: rgba(99,102,241,0.2);  color: #818CF8; }
+    .ol-blog-cat.tecnologia   { background: rgba(14,165,233,0.1);  border-color: rgba(14,165,233,0.2);  color: #38BDF8; }
+    .ol-blog-cat.diseno       { background: rgba(236,72,153,0.1);  border-color: rgba(236,72,153,0.2);  color: #F472B6; }
+    .ol-blog-cat.ecommerce    { background: rgba(16,185,129,0.1);  border-color: rgba(16,185,129,0.2);  color: #34D399; }
+    .ol-blog-cat.estrategia   { background: rgba(245,158,11,0.1);  border-color: rgba(245,158,11,0.2);  color: #FBBF24; }
+
+    /* ============================================================ CTA BAND ============================================================ */
+    .ol-blog-cta-band { background: #04040A; padding: 5rem 0; position: relative; }
+    .ol-blog-cta-band::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(201,168,76,0.2), transparent); }
+    .ol-blog-cta-band-inner { width: 90%; max-width: 1600px; margin: 0 auto; display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: center; }
+    @media (max-width: 760px) { .ol-blog-cta-band-inner { grid-template-columns: 1fr; gap: 2rem; } }
+    .ol-blog-cta-band-label { font-size: 10.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(201,168,76,0.6); margin: 0 0 0.75rem; }
+    .ol-blog-cta-band-title { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; color: #F0F0F5; letter-spacing: -0.03em; line-height: 1.15; margin: 0 0 0.75rem; }
+    .ol-blog-cta-band-sub { font-size: 15px; color: rgba(240,240,245,0.48); line-height: 1.7; margin: 0; max-width: 60ch; }
+    .ol-blog-cta-band-actions { display: flex; flex-direction: column; gap: 0.75rem; flex-shrink: 0; }
+    .ol-blog-cta-band-btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.9rem 1.75rem; background: #C9A84C; border-radius: 8px; font-size: 14px; font-weight: 700; color: #08080E; text-decoration: none; white-space: nowrap; transition: background 0.2s, transform 0.15s; }
+    .ol-blog-cta-band-btn:hover { background: #D4B45C; transform: translateY(-1px); }
+    .ol-blog-cta-band-wa { display: flex; align-items: center; justify-content: center; gap: 0.4rem; font-size: 12.5px; font-weight: 600; color: #25D366; text-decoration: none; }
+    .ol-blog-cta-band-wa:hover { opacity: 0.8; }
+  </style>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.mx/#organization","name":"OrigenLab","url":"https://origenlab.mx","logo":"https://origenlab.mx/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"BlogPosting","@id":"https://origenlab.mx/blog/astro-vs-wordpress-cual-elegir/#blogposting","mainEntityOfPage":"https://origenlab.mx/blog/astro-vs-wordpress-cual-elegir/","headline":"Astro vs WordPress: cuál elegir para tu empresa en México","description":"WordPress parece la opción obvia pero rara vez es la correcta. Comparamos velocidad, mantenimiento, costo y seguridad con datos reales de proyectos entregados en México.","image":"https://origenlab.mx/og-image.jpg","url":"https://origenlab.mx/blog/astro-vs-wordpress-cual-elegir/","datePublished":"2026-03-20","dateModified":"2026-04-21","inLanguage":"es-MX","author":{"@type":"Organization","name":"OrigenLab","url":"https://origenlab.mx"},"publisher":{"@type":"Organization","name":"OrigenLab","logo":{"@type":"ImageObject","url":"https://origenlab.mx/logo.svg"}}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.mx/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://origenlab.mx/blog/"},{"@type":"ListItem","position":3,"name":"Astro vs WordPress: cuál elegir","item":"https://origenlab.mx/blog/astro-vs-wordpress-cual-elegir/"}]}]}</script>
+</head>
+<body>
+
+<div class="ol-read-progress" id="ol-read-progress"></div>
+
+<a class="ol-skip-link" href="#main">Saltar al contenido</a>
+
+<div class="ol-topbar">
+  <div class="ol-topbar-inner">
+    <div class="ol-topbar-left">
+      <a href="mailto:hola@origenlab.mx" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        hola@origenlab.mx
+      </a>
+      <span class="ol-topbar-sep"></span>
+      <a href="tel:+525547868402" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        +52 55 4786 8402
+      </a>
+    </div>
+    <div class="ol-topbar-center">
+      <span class="ol-topbar-promo">
+        <span class="ol-topbar-dot"></span>
+        Atención personalizada  ·  Ciudad de México
+      </span>
+    </div>
+    <div class="ol-topbar-right">
+      <a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web" target="_blank" rel="noopener noreferrer" class="ol-topbar-wa">
+        <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor">
+          <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+<header class="ol-header" id="ol-header">
+  <div class="ol-header-inner">
+    <a href="/" class="ol-header-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
+    </a>
+    <nav class="ol-nav" aria-label="Navegación principal">
+      <ul class="ol-nav-list">
+        <li><a href="/" class="ol-nav-link">Inicio</a></li>
+        <li class="ol-has-dropdown">
+          <a href="/servicios/" class="ol-nav-link">
+            Servicios
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/servicios/desarrollo-web/" class="ol-dropdown-link">Desarrollo Web</a></li>
+              <li><a href="/servicios/tiendas-en-linea/" class="ol-dropdown-link">Tiendas en Línea</a></li>
+              <li><a href="/servicios/landing-pages/" class="ol-dropdown-link">Landing Pages</a></li>
+              <li><a href="/servicios/rediseno-web/" class="ol-dropdown-link">Rediseño Web</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="ol-has-dropdown">
+          <a href="/portafolio/" class="ol-nav-link">
+            Portafolio
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link">Equipos Contra Incendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link ol-dropdown-sub">— Gama de México</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link ol-dropdown-sub">— MESECI</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link ol-dropdown-sub">— LGA Contraincendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-dropdown-link ol-dropdown-sub">— MANEXT</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-dropdown-link ol-dropdown-sub">— BOMBERO.MX</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="/nosotros/" class="ol-nav-link">Nosotros</a></li>
+        <li><a href="/blog/" class="ol-nav-link active">Blog</a></li>
+        <li><a href="/contacto/" class="ol-nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="/cotizar/" class="ol-header-cta">Cotizar proyecto →</a>
+    <button class="ol-menu-toggle" id="ol-menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+    </button>
+  </div>
+</header>
+<div class="ol-mobile-overlay" id="ol-mobile-overlay"></div>
+<nav class="ol-mobile-panel" id="ol-mobile-panel" aria-label="Menú móvil">
+  <div class="ol-mobile-header">
+    <a href="/" class="ol-mobile-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
+    </a>
+    <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú">
+      <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <ul class="ol-mobile-nav">
+    <li><a href="/" class="ol-mobile-link">Inicio</a></li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Servicios</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/servicios/desarrollo-web/" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Portafolio</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/portafolio/" class="ol-mobile-link ol-mobile-sublink">Todo el Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/" class="ol-mobile-link ol-mobile-sublink">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Gama de México</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MESECI</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— LGA Contraincendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MANEXT</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— BOMBERO.MX</a></li>
+      </ul>
+    </li>
+    <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
+    <li><a href="/blog/" class="ol-mobile-link active">Blog</a></li>
+    <li><a href="/contacto/" class="ol-mobile-link">Contacto</a></li>
+  </ul>
+  <div class="ol-mobile-footer">
+    <a href="/cotizar/" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a>
+  </div>
+</nav>
+
+<!-- ============================================================
+     BREADCRUMB
+     ============================================================ -->
+<nav class="ol-bc-wrap" aria-label="Migas de pan">
+  <div class="ol-bc">
+    <ol class="ol-bc-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/" itemprop="item" class="ol-bc-home"><span itemprop="name">Inicio</span></a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item ol-bc-item-mid" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/blog/" itemprop="item"><span itemprop="name">Blog</span></a>
+        <meta itemprop="position" content="2" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item ol-bc-current" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name">Astro vs WordPress: cuál elegir</span>
+        <meta itemprop="position" content="3" />
+      </li>
+    </ol>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- ARTICLE HERO -->
+  <section class="ol-art-hero">
+    <div class="ol-art-hero-inner">
+      <div class="ol-art-hero-grid">
+        <div class="ol-art-hero-left">
+          <div class="ol-art-badges">
+            <span class="ol-art-cat tecnologia">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+              Tecnología
+            </span>
+            <span class="ol-art-readtime">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              8 min de lectura
+            </span>
+          </div>
+
+          <h1 class="ol-art-title">Astro vs WordPress: cuál elegir para tu empresa en México</h1>
+
+          <p class="ol-art-excerpt">WordPress parece la opción obvia pero rara vez es la correcta. Comparamos velocidad, mantenimiento, costo y seguridad con datos reales de proyectos entregados en México.</p>
+
+          <div class="ol-art-meta">
+            <div class="ol-art-meta-author">
+              <div class="ol-art-meta-avatar">OL</div>
+              <div class="ol-art-meta-author-info">
+                <span class="ol-art-meta-author-name">Equipo OrigenLab</span>
+                <span class="ol-art-meta-author-role">Desarrollo Web &amp; Diseño Digital</span>
+              </div>
+            </div>
+            <span class="ol-art-meta-sep"></span>
+            
+            <span class="ol-art-meta-item">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+              Guía profesional
+            </span>
+          </div>
+        </div>
+
+        <div class="ol-art-hero-right">
+          <p class="ol-art-hero-copy">El 70% del internet corre en WordPress — pero eso no significa que sea lo mejor para tu empresa. La mayoría de agencias mexicanas recomienda WordPress por inercia, no por análisis técnico. Es lo que saben hacer, no lo que el cliente necesita.</p>
+          <p class="ol-art-hero-copy">En esta comparativa honesta analizamos cuándo WordPress sigue teniendo sentido, cuándo Astro o Next.js son la elección correcta, y cómo decidir entre los dos según el tipo de negocio, presupuesto y objetivos de crecimiento a 5 años.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED IMAGE BAND -->
+  <section class="ol-art-featured-band" aria-label="Imagen destacada">
+    <div class="ol-art-featured-inner">
+      <figure class="ol-art-featured">
+        <img src="../../img/servicios/desarrollo-web.avif" alt="Sitio web Astro desarrollado por OrigenLab" loading="lazy" decoding="async">
+        <figcaption class="ol-art-featured-caption">Desarrollo Web</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ARTICLE CONTENT -->
+  <section class="ol-art-section">
+    <div class="ol-art-inner">
+      <div class="ol-art-layout">
+
+        <article class="ol-art-body">
+
+
+<h2 id="s1">El 70% del internet corre en WordPress — pero eso no significa que sea lo mejor para ti</h2>
+<p class="lead">WordPress es la opción por defecto. Es accesible, tiene miles de temas, cualquier agencia lo puede hacer. Pero <strong>accesible no es lo mismo que correcto</strong>.</p>
+<p>Cuando una empresa pregunta "¿cuál plataforma necesito?", la mayoría de agencias mexicanas contestan automáticamente WordPress. No porque sea la mejor solución — sino porque es la que saben hacer rápido y con margen de ganancia.</p>
+<p>Hemos construido sitios en WordPress, Astro, Next.js y otros frameworks. La verdad es que la elección depende de lo que necesites. WordPress es válido para algunos casos. Pero para la mayoría de empresas mexicanas que vienen a nosotros con un presupuesto normal, Astro es la opción correcta.</p>
+<h2 id="s2">¿Qué es Astro y por qué importa?</h2>
+<p><strong>Astro es un framework moderno que genera sitios estáticos a partir de HTML, CSS y JavaScript</strong>. A diferencia de WordPress, no necesita PHP ni base de datos en cada request.</p>
+<p>Aquí está la diferencia clave: cuando alguien visita tu sitio WordPress, el servidor corre PHP, consulta la base de datos, genera el HTML, y luego se lo envía. Cada visita dispara este proceso.</p>
+<p>Con Astro, el sitio se "construye" una sola vez. El HTML está listo. Cuando alguien visita, recibe HTML puro, sin procesamiento de servidor. Es más rápido, más seguro, más barato de alojar.</p>
+<blockquote>
+<p>"Astro por defecto envía 0 líneas de JavaScript al navegador del usuario. Solo JavaScript que el usuario realmente necesita se carga."</p>
+</blockquote>
+<h2 id="s3">WordPress: ventajas reales</h2>
+<p>Aquí dónde WordPress sigue siendo válido:</p>
+<ul>
+<li><strong>Ecosistema enorme</strong> — si necesitas un plugin muy específico, probablemente existe.</li>
+<li><strong>Muchos developers lo conocen</strong> — es fácil encontrar alguien que continúe tu proyecto.</li>
+<li><strong>CMS flexible</strong> — si tienes 10 usuarios internos editando contenido sin saber código, WordPress es mejor.</li>
+<li><strong>Blogs complejos</strong> — si publicamos 50+ artículos al mes con múltiples autores, categorías y taxonomías complejas, WordPress tiene herramientas nativas.</li>
+</ul>
+<h2 id="s4">WordPress: el costo oculto</h2>
+<p>Donde WordPress destruye presupuestos a largo plazo:</p>
+<ul>
+<li><strong>Actualizaciones constantes</strong> — WordPress, temas y plugins necesitan actualizarse. Cada actualización es riesgo de ruptura.</li>
+<li><strong>Conflictos entre plugins</strong> — con 20 plugins, es casi seguro que dos compitan y rompan algo.</li>
+<li><strong>Vulnerabilidades de seguridad</strong> — WordPress es target de ataques porque el 43% del internet lo corre. Si no actualizas constantemente, es un agujero.</li>
+<li><strong>Hosting caro o lento</strong> — un WordPress decente necesita hosting gestionado ($30+/mes). Hosting barato = sitio lento.</li>
+<li><strong>Mantenimiento permanente</strong> — alguien necesita vigilar actualizaciones, backups, seguridad. Eso cuesta.</li>
+</ul>
+<div class="ol-article-highlight">
+<h3>Dato de proyecto real</h3>
+<p>Rediseñamos un sitio WordPress que costaba $120/mes en Kinsta. Migré a Astro en Netlify: $0/mes (con plan gratuito). Velocidad mejoró de 3.2s a 0.8s. Mantenimiento: antes 5 horas/mes, ahora 30 minutos cada 2 meses.</p>
+</div>
+<h2 id="s5">Astro: ventajas para empresas mexicanas</h2>
+<p><strong>Para sitios corporativos, portafolios, landing pages y blogs moderados</strong>, Astro supera a WordPress:</p>
+<ul>
+<li><strong>Velocidad extrema</strong> — cargan en menos de 1 segundo. No necesitas optimización adicional.</li>
+<li><strong>Sin base de datos hackeable</strong> — el sitio es HTML estático. No hay SQL injection, no hay login que comprometer.</li>
+<li><strong>Hosting barato o gratis</strong> — Netlify, Vercel, GitHub Pages alojan sitios Astro sin costo.</li>
+<li><strong>Mantenimiento mínimo</strong> — después de lanzar, prácticamente no necesita mantenimiento.</li>
+<li><strong>Flexibilidad para cambios</strong> — es código. Cualquier cambio es directo, sin UI de WordPress.</li>
+</ul>
+<h2 id="s6">Astro: cuándo NO es la opción</h2>
+<p>Astro no es para todo. Evita Astro si:</p>
+<ul>
+<li><strong>Necesitas CMS complejo con múltiples editores no técnicos</strong> — WordPress o Contentful son mejores.</li>
+<li><strong>Tu equipo solo conoce WordPress</strong> — la curva de aprendizaje no vale la pena.</li>
+<li><strong>El sitio requiere funcionalidades dinámicas extremas</strong> — chats en vivo, búsqueda avanzada, dinámicas complejas. Next.js es mejor.</li>
+<li><strong>Necesitas e-commerce Shopify/WooCommerce</strong> — aunque Astro funciona con Shopify, es complicado.</li>
+</ul>
+<h2 id="s7">¿Qué usamos nosotros en OrigenLab?</h2>
+<p>En nuestros últimos 50 proyectos:</p>
+<ul>
+<li><strong>32 proyectos en Astro</strong> — sitios corporativos, landing pages, portafolios, blogs.</li>
+<li><strong>12 proyectos en Next.js</strong> — cuando necesitamos funcionalidades dinámicas complejas o e-commerce.</li>
+<li><strong>6 proyectos en WordPress</strong> — solo cuando el cliente insistió o necesitaba CMS muy complejo.</li>
+</ul>
+<p>La tendencia es clara: Astro para la mayoría. WordPress para excepciones.</p>
+
+
+          <div class="ol-art-cta-inline">
+            <div>
+              <p class="ol-art-cta-inline-label">Siguiente paso</p>
+              <h3>¿Listo para llevar tu sitio al siguiente nivel?</h3>
+              <p>Hacemos diagnóstico técnico y estratégico sin costo. Te decimos exactamente qué frena a tu sitio hoy y qué camino tiene más sentido para tu negocio — sin compromiso de compra.</p>
+            </div>
+            <a href="/cotizar/" class="ol-art-cta-inline-btn">
+              Solicitar diagnóstico
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="ol-art-share">
+            <span class="ol-art-share-label">Compartir</span>
+            <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Forigenlab.mx%2Fblog%2Fastro-vs-wordpress-cual-elegir%2F&text=Astro+vs+WordPress%3A+cu%C3%A1l+elegir+para+tu+empresa+en+M%C3%A9xico" target="_blank" rel="noopener noreferrer" class="ol-art-share-btn" aria-label="Compartir en X/Twitter">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Forigenlab.mx%2Fblog%2Fastro-vs-wordpress-cual-elegir%2F" target="_blank" rel="noopener noreferrer" class="ol-art-share-btn" aria-label="Compartir en LinkedIn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Forigenlab.mx%2Fblog%2Fastro-vs-wordpress-cual-elegir%2F" target="_blank" rel="noopener noreferrer" class="ol-art-share-btn" aria-label="Compartir en Facebook">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://wa.me/?text=Astro+vs+WordPress%3A+cu%C3%A1l+elegir+para+tu+empresa+en+M%C3%A9xico%20https%3A%2F%2Forigenlab.mx%2Fblog%2Fastro-vs-wordpress-cual-elegir%2F" target="_blank" rel="noopener noreferrer" class="ol-art-share-btn" aria-label="Compartir en WhatsApp">
+              <svg width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+            </a>
+            <a href="mailto:?subject=Astro+vs+WordPress%3A+cu%C3%A1l+elegir+para+tu+empresa+en+M%C3%A9xico&body=Mira%20este%20art%C3%ADculo%3A%20https%3A%2F%2Forigenlab.mx%2Fblog%2Fastro-vs-wordpress-cual-elegir%2F" class="ol-art-share-btn" aria-label="Compartir por email">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
+          </div>
+
+          <div class="ol-art-author-card">
+            <div class="ol-art-author-avatar">OL</div>
+            <div class="ol-art-author-info">
+              <span class="label">Escrito por</span>
+              <span class="name">Equipo OrigenLab</span>
+              <span class="bio">Agencia mexicana de desarrollo web. Construimos sitios rápidos, modernos y pensados para convertir — para empresas en CDMX, Monterrey y Guadalajara.</span>
+            </div>
+            <a href="/nosotros/" class="ol-art-author-card-btn">
+              Conocer al equipo
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+        </article>
+
+        <aside class="ol-art-sidebar" aria-label="Navegación y recursos">
+
+          <div class="ol-sb-widget ol-sb-cta">
+            <div class="ol-sb-cta-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            </div>
+            <p class="ol-sb-cta-title">¿Listo para<br>tu proyecto?</p>
+            <p class="ol-sb-cta-sub">Cotización y diagnóstico estratégico sin costo. Te respondemos personalmente.</p>
+            <a href="/cotizar/" class="ol-sb-cta-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              Cotizar mi proyecto
+            </a>
+            <a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web" target="_blank" rel="noopener noreferrer" class="ol-sb-cta-wa">
+              <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+              O escríbenos por WhatsApp
+            </a>
+          </div>
+
+          <div class="ol-sb-widget">
+            <p class="ol-sb-title">En este artículo</p>
+            <nav class="ol-sb-toc" id="ol-sb-toc" aria-label="Índice del artículo">
+              <a href="#s1" class="ol-sb-toc-link" data-target="s1">El 70% del internet corre en WordPress — pero…</a>
+              <a href="#s2" class="ol-sb-toc-link" data-target="s2">¿Qué es Astro y por qué importa?</a>
+              <a href="#s3" class="ol-sb-toc-link" data-target="s3">WordPress: ventajas reales</a>
+              <a href="#s4" class="ol-sb-toc-link" data-target="s4">WordPress: el costo oculto</a>
+              <a href="#s5" class="ol-sb-toc-link" data-target="s5">Astro: ventajas para empresas mexicanas</a>
+              <a href="#s6" class="ol-sb-toc-link" data-target="s6">Astro: cuándo NO es la opción</a>
+              <a href="#s7" class="ol-sb-toc-link" data-target="s7">¿Qué usamos nosotros en OrigenLab?</a>
+            </nav>
+          </div>
+
+          <div class="ol-sb-widget">
+            <p class="ol-sb-title">Nuestros Servicios</p>
+            <div class="ol-sb-services">
+              <a href="/servicios/desarrollo-web/" class="ol-sb-svc-link">
+                <div class="ol-sb-svc-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                </div>
+                <div class="ol-sb-svc-text">
+                  <span class="ol-sb-svc-name">Desarrollo Web</span>
+                  <span class="ol-sb-svc-sub">Sitios corporativos a medida</span>
+                </div>
+              </a>
+              <a href="/servicios/landing-pages/" class="ol-sb-svc-link">
+                <div class="ol-sb-svc-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                </div>
+                <div class="ol-sb-svc-text">
+                  <span class="ol-sb-svc-name">Landing Pages</span>
+                  <span class="ol-sb-svc-sub">Alta conversión desde día 1</span>
+                </div>
+              </a>
+              <a href="/servicios/tiendas-en-linea/" class="ol-sb-svc-link">
+                <div class="ol-sb-svc-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                </div>
+                <div class="ol-sb-svc-text">
+                  <span class="ol-sb-svc-name">Tiendas en Línea</span>
+                  <span class="ol-sb-svc-sub">E-commerce con Mercado Pago</span>
+                </div>
+              </a>
+              <a href="/servicios/rediseno-web/" class="ol-sb-svc-link">
+                <div class="ol-sb-svc-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                </div>
+                <div class="ol-sb-svc-text">
+                  <span class="ol-sb-svc-name">Rediseño Web</span>
+                  <span class="ol-sb-svc-sub">Moderniza tu sitio actual</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="ol-sb-widget">
+            <p class="ol-sb-title">Seguir leyendo</p>
+            <div class="ol-sb-related">
+              <a href="/blog/velocidad-de-carga-importancia/" class="ol-sb-related-item">
+                <span class="ol-sb-related-num">01</span>
+                <div class="ol-sb-related-info">
+                  <span class="ol-sb-related-title">Por qué tu sitio lento te está costando clientes</span>
+                  <span class="ol-sb-related-meta">Rendimiento · 5 min</span>
+                </div>
+              </a>
+              <a href="/blog/core-web-vitals-que-son/" class="ol-sb-related-item">
+                <span class="ol-sb-related-num">02</span>
+                <div class="ol-sb-related-info">
+                  <span class="ol-sb-related-title">Core Web Vitals: qué son y cómo afectan tu negocio</span>
+                  <span class="ol-sb-related-meta">Rendimiento · 6 min</span>
+                </div>
+              </a>
+              <a href="/blog/rediseno-web-cuando-es-momento/" class="ol-sb-related-item">
+                <span class="ol-sb-related-num">03</span>
+                <div class="ol-sb-related-info">
+                  <span class="ol-sb-related-title">Rediseño web: cuándo es el momento de renovar</span>
+                  <span class="ol-sb-related-meta">Diseño Web · 4 min</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NEXT READ -->
+  <section class="ol-art-nextread" aria-label="Artículos relacionados">
+    <div class="ol-art-nextread-inner">
+      <div class="ol-art-nextread-head">
+        <div>
+          <p class="ol-art-nextread-label">Te puede interesar</p>
+          <h2 class="ol-art-nextread-title">Sigue explorando el blog</h2>
+        </div>
+        <a href="/blog/" class="ol-art-nextread-all">
+          Ver todos los artículos
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="ol-art-nextread-grid">
+
+        <a href="/blog/velocidad-de-carga-importancia/" class="ol-art-nextread-card">
+          <div class="ol-art-nextread-thumb"><span class="ol-art-nextread-num">01</span></div>
+          <div class="ol-art-nextread-body">
+            <div class="ol-art-nextread-top">
+              <span class="ol-blog-cat rendimiento">Rendimiento</span>
+              <span class="ol-art-nextread-meta">5 min de lectura</span>
+            </div>
+            <h3 class="ol-art-nextread-h">Por qué tu sitio lento te está costando clientes</h3>
+            <p class="ol-art-nextread-excerpt">El 53% abandona sitios >3s. Así afecta la velocidad a tu negocio — y cómo resolverlo.</p>
+            <span class="ol-art-nextread-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+        <a href="/blog/core-web-vitals-que-son/" class="ol-art-nextread-card">
+          <div class="ol-art-nextread-thumb"><span class="ol-art-nextread-num">02</span></div>
+          <div class="ol-art-nextread-body">
+            <div class="ol-art-nextread-top">
+              <span class="ol-blog-cat rendimiento">Rendimiento</span>
+              <span class="ol-art-nextread-meta">6 min de lectura</span>
+            </div>
+            <h3 class="ol-art-nextread-h">Core Web Vitals: qué son y cómo afectan tu negocio</h3>
+            <p class="ol-art-nextread-excerpt">LCP, INP y CLS en español: qué miden y cómo lo usa Google para posicionarte.</p>
+            <span class="ol-art-nextread-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+        <a href="/blog/rediseno-web-cuando-es-momento/" class="ol-art-nextread-card">
+          <div class="ol-art-nextread-thumb"><span class="ol-art-nextread-num">03</span></div>
+          <div class="ol-art-nextread-body">
+            <div class="ol-art-nextread-top">
+              <span class="ol-blog-cat diseno">Diseño Web</span>
+              <span class="ol-art-nextread-meta">4 min de lectura</span>
+            </div>
+            <h3 class="ol-art-nextread-h">Rediseño web: cuándo es el momento de renovar</h3>
+            <p class="ol-art-nextread-excerpt">Las señales concretas que indican que tu sitio ya no sostiene a tu empresa.</p>
+            <span class="ol-art-nextread-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="ol-blog-cta-band">
+    <div class="ol-blog-cta-band-inner">
+      <div>
+        <p class="ol-blog-cta-band-label">¿Listo para actuar?</p>
+        <h2 class="ol-blog-cta-band-title">Lo que lees aquí lo aplicamos<br>en cada proyecto.</h2>
+        <p class="ol-blog-cta-band-sub">Si este artículo te hizo preguntarte cómo se aplica en tu negocio, la respuesta más rápida es una conversación directa. Sin compromiso, sin ventas de presión — solo claridad sobre lo que necesitas.</p>
+      </div>
+      <div class="ol-blog-cta-band-actions">
+        <a href="/cotizar/" class="ol-blog-cta-band-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          Cotizar mi proyecto
+        </a>
+        <a href="https://wa.me/525547868402?text=Hola%2C%20vi%20el%20blog%20de%20OrigenLab%20y%20quiero%20platicar%20sobre%20mi%20proyecto" target="_blank" rel="noopener noreferrer" class="ol-blog-cta-band-wa">
+          <svg width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+          Escribirnos por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICKNAV BOTTOM -->
+  <div class="ol-quicknav">
+    <div class="ol-quicknav-inner">
+      <a href="/servicios/desarrollo-web/" class="ol-qn-item">
+        <div class="ol-qn-text"><span class="ol-qn-title">Sitios Corporativos</span><span class="ol-qn-sub">Diseño a medida</span></div>
+      </a>
+      <a href="/servicios/tiendas-en-linea/" class="ol-qn-item">
+        <div class="ol-qn-text"><span class="ol-qn-title">Tienda en Línea</span><span class="ol-qn-sub">Vende desde el día uno</span></div>
+      </a>
+      <a href="/servicios/landing-pages/" class="ol-qn-item">
+        <div class="ol-qn-text"><span class="ol-qn-title">Landing Pages</span><span class="ol-qn-sub">Más leads, más ventas</span></div>
+      </a>
+      <a href="/servicios/rediseno-web/" class="ol-qn-item">
+        <div class="ol-qn-text"><span class="ol-qn-title">Rediseño Web</span><span class="ol-qn-sub">Actualiza tu presencia</span></div>
+      </a>
+      <a href="/portafolio/" class="ol-qn-item">
+        <div class="ol-qn-text"><span class="ol-qn-title">Portafolio</span><span class="ol-qn-sub">Proyectos realizados</span></div>
+      </a>
+      <a href="/nosotros/" class="ol-qn-item">
+        <div class="ol-qn-text"><span class="ol-qn-title">Nosotros</span><span class="ol-qn-sub">Quiénes somos</span></div>
+      </a>
+      <a href="/cotizar/" class="ol-qn-item ol-qn-cta">
+        <div class="ol-qn-text"><span class="ol-qn-title">Iniciar Proyecto</span><span class="ol-qn-sub">Solicitar propuesta</span></div>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<footer class="ol-footer">
+  <div class="ol-footer-top">
+    <a href="/" class="ol-footer-logo">
+      Origen<span class="ol-footer-logo-dot">.</span>Lab
+    </a>
+    <p class="ol-footer-tagline">
+      Agencia de desarrollo web en México.<br>
+      Creamos sitios que generan resultados.
+    </p>
+    <ul class="ol-footer-contact-list">
+      <li>
+        <a href="mailto:hola@origenlab.mx" class="ol-fcl-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          hola@origenlab.mx
+        </a>
+      </li>
+      <li>
+        <a href="tel:+525547868402" class="ol-fcl-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +52 55 4786 8402
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/525547868402" target="_blank" rel="noopener noreferrer" class="ol-fcl-item ol-fcl-wa">
+          <svg width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+          WhatsApp
+        </a>
+      </li>
+      <li>
+        <span class="ol-fcl-item ol-fcl-static">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Ciudad de México, MX
+        </span>
+      </li>
+    </ul>
+  </div>
+  <div class="ol-footer-links">
+    <div>
+      <p class="ol-footer-col-title">Servicios</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/servicios/desarrollo-web/">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/">Rediseño Web</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Empresa</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/nosotros/">Nosotros</a></li>
+        <li><a href="/portafolio/">Portafolio</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/cotizar/">Cotizar proyecto</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Contacto</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/contacto/">Formulario de contacto</a></li>
+        <li><a href="mailto:hola@origenlab.mx">hola@origenlab.mx</a></li>
+        <li><a href="tel:+525547868402">+52 55 4786 8402</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Legal</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/aviso-de-privacidad/">Aviso de privacidad</a></li>
+        <li><a href="/terminos/">Términos de servicio</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ol-footer-bottom">
+    <p class="ol-footer-copy">© 2026 OrigenLab. Todos los derechos reservados.</p>
+    <div class="ol-footer-legal">
+      <a href="/aviso-de-privacidad/">Privacidad</a>
+      <a href="/terminos/">Términos</a>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web.%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" class="wa-bubble" aria-label="Contáctanos por WhatsApp">
+  <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 0 0 2.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0 0 16.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+</a>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var toggle   = document.getElementById('ol-menu-toggle');
+  var panel    = document.getElementById('ol-mobile-panel');
+  var overlay  = document.getElementById('ol-mobile-overlay');
+  var closeBtn = document.getElementById('ol-mobile-close');
+  var header   = document.getElementById('ol-header');
+
+  function openMenu() { toggle.classList.add('open'); toggle.setAttribute('aria-expanded','true'); panel.classList.add('open'); overlay.classList.add('visible'); document.body.style.overflow='hidden'; }
+  function closeMenu() { toggle.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); panel.classList.remove('open'); overlay.classList.remove('visible'); document.body.style.overflow=''; }
+
+  if (toggle) toggle.addEventListener('click', function(){ panel.classList.contains('open') ? closeMenu() : openMenu(); });
+  if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+  if (overlay) overlay.addEventListener('click', closeMenu);
+
+  var mobileLinks = panel ? panel.querySelectorAll('a') : [];
+  for (var i=0; i<mobileLinks.length; i++) mobileLinks[i].addEventListener('click', closeMenu);
+
+  var subToggles = document.querySelectorAll('[data-submenu]');
+  for (var j=0; j<subToggles.length; j++) {
+    subToggles[j].addEventListener('click', function(){ this.classList.toggle('expanded'); var sub=this.nextElementSibling; if(sub) sub.classList.toggle('open'); });
+  }
+
+  var progress = document.getElementById('ol-read-progress');
+  var tocLinks = document.querySelectorAll('#ol-sb-toc .ol-sb-toc-link');
+  var sections = [];
+  for (var k=0; k<tocLinks.length; k++) {
+    var id = tocLinks[k].getAttribute('data-target');
+    var el = document.getElementById(id);
+    if (el) sections.push({ id: id, el: el, link: tocLinks[k] });
+  }
+
+  function onScroll() {
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var pct = docHeight > 0 ? (window.pageYOffset / docHeight) * 100 : 0;
+    if (progress) progress.style.width = Math.min(100, Math.max(0, pct)) + '%';
+    if (header) header.classList.toggle('scrolled', window.pageYOffset > 10);
+    var activeIdx = -1;
+    for (var m=0; m<sections.length; m++) {
+      var rect = sections[m].el.getBoundingClientRect();
+      if (rect.top <= 140) activeIdx = m;
+    }
+    for (var n=0; n<sections.length; n++) {
+      sections[n].link.classList.toggle('active', n === activeIdx);
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  for (var p=0; p<tocLinks.length; p++) {
+    tocLinks[p].addEventListener('click', function(e) {
+      var target = this.getAttribute('data-target');
+      var el = document.getElementById(target);
+      if (el) {
+        e.preventDefault();
+        var y = el.getBoundingClientRect().top + window.pageYOffset - 100;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    });
+  }
+});
+</script>
+
+</body>
+</html>
