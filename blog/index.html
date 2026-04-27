@@ -28,9 +28,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
   <!-- CSS -->
-  <link rel="stylesheet" href="../_astro/BaseLayout.xeR8R953.css?v20260426c">
-  <link rel="stylesheet" href="../_astro/premium-dark.css?v20260426c">
-  <script src="../_astro/ol-header.js?v20260426d" defer></script>
+  <link rel="stylesheet" href="../_astro/BaseLayout.xeR8R953.css?v20260426f">
+  <link rel="stylesheet" href="../_astro/premium-dark.css?v20260426f">
+  <script src="../_astro/ol-header.js?v20260426f" defer></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.mx/#organization","name":"OrigenLab","url":"https://origenlab.mx","logo":"https://origenlab.mx/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"Blog","@id":"https://origenlab.mx/blog/#blog","url":"https://origenlab.mx/blog/","name":"Blog — OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.mx/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.mx/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://origenlab.mx/blog/"}]}]}</script></head>
 <body>
 
@@ -98,13 +98,20 @@
           <div class="ol-dropdown">
             <ul>
               <li><a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a></li>
-              <li><a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link">Equipos Contra Incendios</a></li>
-              <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link ol-dropdown-sub">— Gama de México</a></li>
-              <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link ol-dropdown-sub">— MESECI</a></li>
-              <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link ol-dropdown-sub">— LGA Contraincendios</a></li>
-              <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-dropdown-link ol-dropdown-sub">— MANEXT</a></li>
-              <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-dropdown-link ol-dropdown-sub">— BOMBERO.MX</a></li>
-              <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-dropdown-link ol-dropdown-sub">— ProyectoRed</a></li>
+              <li class="ol-has-subdrop">
+                <a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link ol-dropdown-parent">Equipos Contra Incendios</a>
+                <div class="ol-subdrop">
+                  <ul>
+                    <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link">Gama de México</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link">MESECI</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link">LGA Contraincendios</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-dropdown-link">MANEXT</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-dropdown-link">BOMBERO.MX</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-dropdown-link">ProyectoRed</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/directorio/" class="ol-dropdown-link">Directorio México</a></li>
+                  </ul>
+                </div>
+              </li>
             </ul>
           </div>
         </li>
@@ -159,6 +166,7 @@
         <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MANEXT</a></li>
         <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— BOMBERO.MX</a></li>
         <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— ProyectoRed</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/directorio/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Directorio México</a></li>
       </ul>
     </li>
     <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
@@ -302,287 +310,331 @@
         <!-- ===================== MAIN ===================== -->
         <div class="ol-blog-main">
 
-          <!-- Filtros de categoría -->
-          <div class="ol-blog-filters" role="group" aria-label="Filtrar por categoría">
-            <button class="ol-blog-filter active" data-cat="todos">Todos</button>
-            <button class="ol-blog-filter" data-cat="pci">Sector PCI</button>
-            <button class="ol-blog-filter" data-cat="diseno">Diseño Web</button>
-            <button class="ol-blog-filter" data-cat="rendimiento">Rendimiento</button>
-            <button class="ol-blog-filter" data-cat="estrategia">Estrategia</button>
-            <button class="ol-blog-filter" data-cat="ecommerce">E-commerce</button>
-            <button class="ol-blog-filter" data-cat="tecnologia">Tecnología</button>
+          <!-- Grid encabezado -->
+          <div class="ol-blog-grid-header" style="display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:2rem;flex-wrap:wrap;">
+            <div>
+              <p style="font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(201,168,76,0.6);margin:0 0 0.4rem;">Publicaciones</p>
+              <h2 style="font-size:1.5rem;font-weight:800;color:#F0F0F5;letter-spacing:-0.03em;margin:0;line-height:1.1;">Todos los artículos</h2>
+            </div>
+            <span class="ol-blog-pg-info" id="ol-blog-count" style="color:rgba(240,240,245,0.3);font-size:12px;"></span>
           </div>
 
-          <!-- Artículo destacado -->
-          <a href="/blog/por-que-tu-sitio-lento-cuesta-clientes/" class="ol-blog-featured" data-cat="rendimiento">
-            <div class="ol-blog-featured-img">
-              <div class="ol-blog-featured-img-label">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-                <span>Imagen próximamente</span>
-              </div>
-            </div>
-            <div class="ol-blog-featured-body">
-              <div class="ol-blog-featured-badge">
-                <span class="ol-blog-featured-pin">
-                  <svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  Destacado
-                </span>
-                <span class="ol-blog-cat rendimiento">Rendimiento</span>
-              </div>
-              <p class="ol-blog-featured-meta">6 min de lectura</p>
-              <h2 class="ol-blog-featured-title">Por qué tu sitio web lento te está costando clientes cada día</h2>
-              <p class="ol-blog-featured-excerpt">El 53% de los visitantes abandona un sitio que tarda más de 3 segundos en cargar. Si tu sitio está en WordPress sin optimizar, o en un hosting compartido barato, es probable que estés perdiendo prospectos sin siquiera saberlo. Aquí te explicamos exactamente qué pasa y cómo medirlo.</p>
-              <span class="ol-blog-featured-link">Leer artículo <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-            </div>
-          </a>
-
-          <!-- ===================== SECTOR DESTACADO: EQUIPOS CONTRA INCENDIOS ===================== -->
-          <section class="ol-blog-sector" aria-labelledby="sector-pci-title">
-            <div class="ol-blog-sector-head">
-              <div class="ol-blog-sector-head-left">
-                <span class="ol-blog-sector-eyebrow">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/></svg>
-                  Sector destacado
-                </span>
-                <h2 id="sector-pci-title" class="ol-blog-sector-title">Equipos Contra Incendios</h2>
-                <p class="ol-blog-sector-sub">Trabajamos con empresas mexicanas que cubren todo el espectro del sector — distribución industrial, e-commerce especializado, equipo para bomberos, sistemas integrales y servicios técnicos. Aquí compartimos artículos sobre cada una.</p>
-              </div>
-              <a href="/portafolio/equipos-contra-incendios/" class="ol-blog-sector-link">
-                Ver portafolio del sector
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-
-            <div class="ol-blog-sector-grid">
-
-              <a href="/blog/gama-de-mexico-distribuidor-elkhart-brass/" class="ol-sec-card">
-                <span class="ol-sec-card-num">01</span>
-                <div class="ol-sec-card-body">
-                  <span class="ol-sec-card-meta">Gama de México</span>
-                  <h3 class="ol-sec-card-title">Distribuidor autorizado de Elkhart Brass para la industria mexicana</h3>
-                  <span class="ol-sec-card-company">gamademexico.com · Distribución industrial</span>
-                </div>
-              </a>
-
-              <a href="/blog/monitores-elkhart-brass-plantas-industriales/" class="ol-sec-card">
-                <span class="ol-sec-card-num">02</span>
-                <div class="ol-sec-card-body">
-                  <span class="ol-sec-card-meta">Gama de México</span>
-                  <h3 class="ol-sec-card-title">Monitores y boquillas Elkhart Brass: por qué la industria los especifica</h3>
-                  <span class="ol-sec-card-company">gamademexico.com · Equipo industrial</span>
-                </div>
-              </a>
-
-              <a href="/blog/meseci-equipo-contra-incendios-nom-nfpa/" class="ol-sec-card">
-                <span class="ol-sec-card-num">03</span>
-                <div class="ol-sec-card-body">
-                  <span class="ol-sec-card-meta">MESECI</span>
-                  <h3 class="ol-sec-card-title">El especialista en equipo contra incendios bajo NOM y NFPA</h3>
-                  <span class="ol-sec-card-company">meseci.com.mx · Especialista PCI</span>
-                </div>
-              </a>
-
-              <a href="/blog/catalogo-extintores-rociadores-hidrantes-meseci/" class="ol-sec-card">
-                <span class="ol-sec-card-num">04</span>
-                <div class="ol-sec-card-body">
-                  <span class="ol-sec-card-meta">MESECI</span>
-                  <h3 class="ol-sec-card-title">Catálogo integral: extintores, rociadores, gabinetes e hidrantes</h3>
-                  <span class="ol-sec-card-company">meseci.com.mx · Catálogo PCI</span>
-                </div>
-              </a>
-
-              <a href="/blog/lga-extintores-clases-a-b-c-d-k-queretaro/" class="ol-sec-card">
-                <span class="ol-sec-card-num">05</span>
-                <div class="ol-sec-card-body">
-                  <span class="ol-sec-card-meta">LGA Contraincendios</span>
-                  <h3 class="ol-sec-card-title">Extintores certificados clases A, B, C, D y K para industria</h3>
-                  <span class="ol-sec-card-company">lgacontraincendios.com · Querétaro</span>
-                </div>
-              </a>
-
-              <a href="/blog/comprar-equipo-contra-incendios-en-linea-lga/" class="ol-sec-card">
-                <span class="ol-sec-card-num">06</span>
-                <div class="ol-sec-card-body">
-                  <span class="ol-sec-card-meta">LGA Contraincendios</span>
-                  <h3 class="ol-sec-card-title">Comprar equipo contra incendios en línea: el modelo B2B</h3>
-                  <span class="ol-sec-card-company">lgacontraincendios.com · E-commerce</span>
-                </div>
-              </a>
-
-              <a href="/blog/manext-recarga-mantenimiento-extintores-cdmx/" class="ol-sec-card">
-                <span class="ol-sec-card-num">07</span>
-                <div class="ol-sec-card-body">
-                  <span class="ol-sec-card-meta">MANEXT</span>
-                  <h3 class="ol-sec-card-title">Recarga y mantenimiento certificado en CDMX y zona metropolitana</h3>
-                  <span class="ol-sec-card-company">mantenimientodeextintores.mx · Servicio técnico</span>
-                </div>
-              </a>
-
-              <a href="/blog/prueba-hidrostatica-extintores-nom-154-nom-002/" class="ol-sec-card">
-                <span class="ol-sec-card-num">08</span>
-                <div class="ol-sec-card-body">
-                  <span class="ol-sec-card-meta">MANEXT</span>
-                  <h3 class="ol-sec-card-title">Prueba hidrostática y cumplimiento NOM-154 / NOM-002</h3>
-                  <span class="ol-sec-card-company">mantenimientodeextintores.mx · Cumplimiento</span>
-                </div>
-              </a>
-
-              <a href="/blog/bombero-mx-equipo-personal-proteccion-bomberos/" class="ol-sec-card">
-                <span class="ol-sec-card-num">09</span>
-                <div class="ol-sec-card-body">
-                  <span class="ol-sec-card-meta">BOMBERO.MX</span>
-                  <h3 class="ol-sec-card-title">Equipo personal de protección certificado NFPA para bomberos</h3>
-                  <span class="ol-sec-card-company">bombero.mx · Distribución nacional</span>
-                </div>
-              </a>
-
-              <a href="/blog/msa-honeywell-globe-bullard-mexico-bombero/" class="ol-sec-card">
-                <span class="ol-sec-card-num">10</span>
-                <div class="ol-sec-card-body">
-                  <span class="ol-sec-card-meta">BOMBERO.MX</span>
-                  <h3 class="ol-sec-card-title">MSA, Honeywell, Globe y Bullard: distribución oficial en México</h3>
-                  <span class="ol-sec-card-company">bombero.mx · Marcas internacionales</span>
-                </div>
-              </a>
-
-              <a href="/blog/proyecto-red-sistemas-contra-incendio-integrales/" class="ol-sec-card">
-                <span class="ol-sec-card-num">11</span>
-                <div class="ol-sec-card-body">
-                  <span class="ol-sec-card-meta">Proyecto Red</span>
-                  <h3 class="ol-sec-card-title">Sistemas contra incendio integrales para industria, comercio y vivienda</h3>
-                  <span class="ol-sec-card-company">proyectored.com.mx · Sistemas integrales</span>
-                </div>
-              </a>
-
-              <a href="/blog/diseno-instalacion-mantenimiento-sistemas-pci-proyecto-red/" class="ol-sec-card">
-                <span class="ol-sec-card-num">12</span>
-                <div class="ol-sec-card-body">
-                  <span class="ol-sec-card-meta">Proyecto Red</span>
-                  <h3 class="ol-sec-card-title">Diseño, instalación y mantenimiento de sistemas hidráulicos PCI</h3>
-                  <span class="ol-sec-card-company">proyectored.com.mx · Ingeniería PCI</span>
-                </div>
-              </a>
-
-            </div>
-          </section>
-
-          <!-- Grid de artículos -->
+          <!-- Grid unificado de artículos -->
           <div class="ol-blog-grid" id="ol-blog-grid">
 
-            <!-- 01 -->
-            <a href="/blog/astro-vs-wordpress-cual-elegir/" class="ol-blog-card" data-cat="tecnologia">
+            <!-- ══════════ 01 DESTACADO (card ancha) ══════════ -->
+            <a href="/blog/por-que-tu-sitio-lento-cuesta-clientes/" class="ol-blog-card ol-blog-card--wide">
               <div class="ol-blog-card-thumb">
-                <span class="ol-blog-card-thumb-num">01</span>
+                <div class="ol-blog-card-cover ol-blog-card-cover--rendimiento">
+                  <svg class="ol-blog-card-cover-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                </div>
+                <span class="ol-blog-cat rendimiento">Rendimiento</span>
+                <span class="ol-blog-card-thumb-meta">6 min de lectura</span>
               </div>
               <div class="ol-blog-card-body">
-                <div class="ol-blog-card-top">
-                  <span class="ol-blog-cat tecnologia">Tecnología</span>
-                  <span class="ol-blog-card-meta">8 min de lectura</span>
+                <h2 class="ol-blog-card-title">Por qué tu sitio web lento te está costando clientes cada día</h2>
+                <p class="ol-blog-card-excerpt">El 53% de los visitantes abandona un sitio que tarda más de 3 segundos en cargar. Si tu sitio está en WordPress sin optimizar, o en un hosting barato, estás perdiendo prospectos sin saberlo. Explicamos exactamente qué pasa y cómo medirlo.</p>
+                <span class="ol-blog-card-link">Leer artículo <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+              </div>
+            </a>
+
+            <!-- ════ 02 Astro vs WordPress ════ -->
+            <a href="/blog/astro-vs-wordpress-cual-elegir/" class="ol-blog-card">
+              <div class="ol-blog-card-thumb">
+                <div class="ol-blog-card-cover ol-blog-card-cover--tecnologia">
+                  <svg class="ol-blog-card-cover-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
                 </div>
+                <span class="ol-blog-cat tecnologia">Tecnología</span>
+                <span class="ol-blog-card-thumb-meta">8 min</span>
+              </div>
+              <div class="ol-blog-card-body">
                 <h3 class="ol-blog-card-title">Astro vs WordPress: cuál elegir para tu empresa en México</h3>
-                <p class="ol-blog-card-excerpt">WordPress parece la opción obvia pero rara vez es la correcta. Comparamos velocidad, mantenimiento, costo y seguridad con datos reales de proyectos mexicanos.</p>
+                <p class="ol-blog-card-excerpt">WordPress parece la opción obvia pero rara vez es la correcta. Velocidad, mantenimiento, costo y seguridad comparados con datos reales de proyectos mexicanos.</p>
                 <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
               </div>
             </a>
 
-            <!-- 02 -->
-            <a href="/blog/5-errores-sitios-web-pymes-mexico/" class="ol-blog-card" data-cat="diseno">
+            <!-- ════ 03 5 errores pymes ════ -->
+            <a href="/blog/5-errores-sitios-web-pymes-mexico/" class="ol-blog-card">
               <div class="ol-blog-card-thumb">
-                <span class="ol-blog-card-thumb-num">02</span>
+                <div class="ol-blog-card-cover ol-blog-card-cover--diseno">
+                  <svg class="ol-blog-card-cover-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                </div>
+                <span class="ol-blog-cat diseno">Diseño Web</span>
+                <span class="ol-blog-card-thumb-meta">5 min</span>
               </div>
               <div class="ol-blog-card-body">
-                <div class="ol-blog-card-top">
-                  <span class="ol-blog-cat diseno">Diseño Web</span>
-                  <span class="ol-blog-card-meta">5 min de lectura</span>
-                </div>
                 <h3 class="ol-blog-card-title">5 errores que cometen las pymes mexicanas en su sitio web</h3>
-                <p class="ol-blog-card-excerpt">Errores que vemos en el 80% de los sitios que llegan a nosotros para rediseño: desde CTAs invisibles hasta formularios que no convierten. Chécalos antes de perder más prospectos.</p>
+                <p class="ol-blog-card-excerpt">CTAs invisibles, formularios que no convierten, imágenes sin comprimir. Los errores que vemos en el 80% de los sitios que llegan a nosotros para rediseño.</p>
                 <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
               </div>
             </a>
 
-            <!-- 03 -->
-            <a href="/blog/landing-page-vs-sitio-corporativo/" class="ol-blog-card" data-cat="estrategia">
+            <!-- ════ 04 Landing vs corporativo ════ -->
+            <a href="/blog/landing-page-vs-sitio-corporativo/" class="ol-blog-card">
               <div class="ol-blog-card-thumb">
-                <span class="ol-blog-card-thumb-num">03</span>
+                <div class="ol-blog-card-cover ol-blog-card-cover--estrategia">
+                  <svg class="ol-blog-card-cover-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                </div>
+                <span class="ol-blog-cat estrategia">Estrategia</span>
+                <span class="ol-blog-card-thumb-meta">4 min</span>
               </div>
               <div class="ol-blog-card-body">
-                <div class="ol-blog-card-top">
-                  <span class="ol-blog-cat estrategia">Estrategia</span>
-                  <span class="ol-blog-card-meta">4 min de lectura</span>
-                </div>
                 <h3 class="ol-blog-card-title">Landing page vs sitio corporativo: ¿qué necesita tu negocio?</h3>
-                <p class="ol-blog-card-excerpt">No son lo mismo y confundirlos puede costarte dinero. Te explicamos cuándo necesitas cada uno, con ejemplos reales de empresas mexicanas que hemos asesorado.</p>
+                <p class="ol-blog-card-excerpt">No son lo mismo y confundirlos puede costarte dinero. Cuándo necesitas cada uno, con ejemplos reales de empresas mexicanas que hemos asesorado.</p>
                 <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
               </div>
             </a>
 
-            <!-- 04 -->
-            <a href="/blog/como-medir-resultados-sitio-web/" class="ol-blog-card" data-cat="estrategia">
+            <!-- ════ 05 Cómo medir resultados ════ -->
+            <a href="/blog/como-medir-resultados-sitio-web/" class="ol-blog-card">
               <div class="ol-blog-card-thumb">
-                <span class="ol-blog-card-thumb-num">04</span>
+                <div class="ol-blog-card-cover ol-blog-card-cover--estrategia">
+                  <svg class="ol-blog-card-cover-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                </div>
+                <span class="ol-blog-cat estrategia">Estrategia</span>
+                <span class="ol-blog-card-thumb-meta">5 min</span>
               </div>
               <div class="ol-blog-card-body">
-                <div class="ol-blog-card-top">
-                  <span class="ol-blog-cat estrategia">Estrategia</span>
-                  <span class="ol-blog-card-meta">5 min de lectura</span>
-                </div>
                 <h3 class="ol-blog-card-title">Cómo saber si tu sitio web está generando resultados reales</h3>
-                <p class="ol-blog-card-excerpt">Tener visitas no es lo mismo que tener clientes. Estas son las métricas que realmente importan — y cómo interpretarlas sin necesidad de ser analista de datos.</p>
+                <p class="ol-blog-card-excerpt">Tener visitas no es lo mismo que tener clientes. Las métricas que realmente importan — y cómo interpretarlas sin ser analista de datos.</p>
                 <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
               </div>
             </a>
 
-            <!-- 05 -->
-            <a href="/blog/core-web-vitals-que-son/" class="ol-blog-card" data-cat="rendimiento">
+            <!-- ════ 06 Core Web Vitals ════ -->
+            <a href="/blog/core-web-vitals-que-son/" class="ol-blog-card">
               <div class="ol-blog-card-thumb">
-                <span class="ol-blog-card-thumb-num">05</span>
+                <div class="ol-blog-card-cover ol-blog-card-cover--rendimiento">
+                  <svg class="ol-blog-card-cover-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                </div>
+                <span class="ol-blog-cat rendimiento">Rendimiento</span>
+                <span class="ol-blog-card-thumb-meta">6 min</span>
               </div>
               <div class="ol-blog-card-body">
-                <div class="ol-blog-card-top">
-                  <span class="ol-blog-cat rendimiento">Rendimiento</span>
-                  <span class="ol-blog-card-meta">6 min de lectura</span>
-                </div>
                 <h3 class="ol-blog-card-title">Core Web Vitals: qué son y cómo afectan a tu negocio en México</h3>
-                <p class="ol-blog-card-excerpt">Google mide la experiencia de usuario con métricas técnicas muy concretas. Si tu sitio las falla, pierdes visibilidad y prospectos. Aquí te explicamos qué miden y qué puedes hacer.</p>
+                <p class="ol-blog-card-excerpt">Google mide la experiencia de usuario con métricas técnicas concretas. Si tu sitio las falla, pierdes visibilidad y prospectos.</p>
                 <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
               </div>
             </a>
 
-            <!-- 06 -->
-            <a href="/blog/mercado-pago-vs-stripe-ecommerce-mexico/" class="ol-blog-card" data-cat="ecommerce">
+            <!-- ════ 07 Mercado Pago vs Stripe ════ -->
+            <a href="/blog/mercado-pago-vs-stripe-ecommerce-mexico/" class="ol-blog-card">
               <div class="ol-blog-card-thumb">
-                <span class="ol-blog-card-thumb-num">06</span>
+                <div class="ol-blog-card-cover ol-blog-card-cover--ecommerce">
+                  <svg class="ol-blog-card-cover-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                </div>
+                <span class="ol-blog-cat ecommerce">E-commerce</span>
+                <span class="ol-blog-card-thumb-meta">5 min</span>
               </div>
               <div class="ol-blog-card-body">
-                <div class="ol-blog-card-top">
-                  <span class="ol-blog-cat ecommerce">E-commerce</span>
-                  <span class="ol-blog-card-meta">5 min de lectura</span>
-                </div>
-                <h3 class="ol-blog-card-title">Mercado Pago vs Stripe: cuál integrar en tu tienda en línea mexicana</h3>
-                <p class="ol-blog-card-excerpt">Comisiones, conversión, soporte local y UX para el comprador mexicano — comparamos las dos opciones más comunes para que tomes la mejor decisión para tu e-commerce.</p>
+                <h3 class="ol-blog-card-title">Mercado Pago vs Stripe: cuál integrar en tu tienda mexicana</h3>
+                <p class="ol-blog-card-excerpt">Comisiones, conversión, soporte local y UX para el comprador mexicano — las dos opciones más comunes comparadas con datos reales.</p>
                 <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
               </div>
             </a>
 
-            <!-- 07 -->
-            <a href="/blog/rediseno-web-cuando-es-momento/" class="ol-blog-card" data-cat="diseno">
+            <!-- ════ 08 Rediseño ════ -->
+            <a href="/blog/rediseno-web-cuando-es-momento/" class="ol-blog-card">
               <div class="ol-blog-card-thumb">
-                <span class="ol-blog-card-thumb-num">07</span>
+                <div class="ol-blog-card-cover ol-blog-card-cover--diseno">
+                  <svg class="ol-blog-card-cover-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                </div>
+                <span class="ol-blog-cat diseno">Diseño Web</span>
+                <span class="ol-blog-card-thumb-meta">4 min</span>
               </div>
               <div class="ol-blog-card-body">
-                <div class="ol-blog-card-top">
-                  <span class="ol-blog-cat diseno">Diseño Web</span>
-                  <span class="ol-blog-card-meta">4 min de lectura</span>
-                </div>
                 <h3 class="ol-blog-card-title">Rediseño web: cuándo es el momento de renovar tu sitio</h3>
-                <p class="ol-blog-card-excerpt">No siempre es obvio. Estos son las señales concretas que indican que tu sitio está frenando a tu empresa — y cuándo tiene sentido invertir en un rediseño completo vs ajustes menores.</p>
+                <p class="ol-blog-card-excerpt">Las señales concretas que indican que tu sitio está frenando a tu empresa — y cuándo tiene sentido un rediseño completo vs ajustes menores.</p>
+                <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+              </div>
+            </a>
+
+            <!-- ════ 09 Gama de México ════ -->
+            <a href="/blog/gama-de-mexico-distribuidor-elkhart-brass/" class="ol-blog-card">
+              <div class="ol-blog-card-thumb">
+                <img src="/img/equipos-contra-incendios/Fire_protection_equipment_202604261327.jpeg" alt="Equipo industrial contra incendios Gama de México" width="600" height="400" loading="lazy" decoding="async">
+                <span class="ol-blog-cat pci">Sector PCI</span>
+                <span class="ol-blog-card-thumb-meta">7 min</span>
+              </div>
+              <div class="ol-blog-card-body">
+                <h3 class="ol-blog-card-title">Gama de México: distribuidor autorizado Elkhart Brass</h3>
+                <p class="ol-blog-card-excerpt">Cómo construimos la presencia digital del distribuidor exclusivo de Elkhart Brass en México para compradores B2B e ingenieros especificadores.</p>
+                <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+              </div>
+            </a>
+
+            <!-- ════ 10 Monitores Elkhart ════ -->
+            <a href="/blog/monitores-elkhart-brass-plantas-industriales/" class="ol-blog-card">
+              <div class="ol-blog-card-thumb">
+                <img src="/img/equipos-contra-incendios/Industrial_fire_hose_202604261329.jpeg" alt="Monitor industrial Elkhart Brass en planta" width="600" height="400" loading="lazy" decoding="async">
+                <span class="ol-blog-cat pci">Sector PCI</span>
+                <span class="ol-blog-card-thumb-meta">6 min</span>
+              </div>
+              <div class="ol-blog-card-body">
+                <h3 class="ol-blog-card-title">Monitores y boquillas Elkhart Brass: por qué la industria los especifica</h3>
+                <p class="ol-blog-card-excerpt">Detrás del catálogo técnico hay decisiones de diseño web que convierten visitas en cotizaciones. El caso de la línea industrial de Gama de México.</p>
+                <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+              </div>
+            </a>
+
+            <!-- ════ 11 MESECI NOM/NFPA ════ -->
+            <a href="/blog/meseci-equipo-contra-incendios-nom-nfpa/" class="ol-blog-card">
+              <div class="ol-blog-card-thumb">
+                <img src="/img/equipos-contra-incendios/Fire_protection_equipment_202604261326.jpeg" alt="Equipo contra incendios certificado NOM NFPA MESECI" width="600" height="400" loading="lazy" decoding="async">
+                <span class="ol-blog-cat pci">Sector PCI</span>
+                <span class="ol-blog-card-thumb-meta">6 min</span>
+              </div>
+              <div class="ol-blog-card-body">
+                <h3 class="ol-blog-card-title">MESECI: el especialista en equipo bajo NOM y NFPA</h3>
+                <p class="ol-blog-card-excerpt">Un sitio para un especialista técnico necesita comunicar certificaciones, no solo catálogo. Cómo estructuramos meseci.com.mx para transmitir autoridad sectorial.</p>
+                <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+              </div>
+            </a>
+
+            <!-- ════ 12 Catálogo MESECI ════ -->
+            <a href="/blog/catalogo-extintores-rociadores-hidrantes-meseci/" class="ol-blog-card">
+              <div class="ol-blog-card-thumb">
+                <img src="/img/equipos-contra-incendios/Fire_extinguishers_in_202604261321.jpeg" alt="Extintores rociadores gabinetes hidrantes MESECI" width="600" height="400" loading="lazy" decoding="async">
+                <span class="ol-blog-cat pci">Sector PCI</span>
+                <span class="ol-blog-card-thumb-meta">5 min</span>
+              </div>
+              <div class="ol-blog-card-body">
+                <h3 class="ol-blog-card-title">Catálogo MESECI: extintores, rociadores, gabinetes e hidrantes</h3>
+                <p class="ol-blog-card-excerpt">Un catálogo PCI completo que no abruma al comprador. Arquitectura de información para múltiples líneas de producto bajo un solo dominio especializado.</p>
+                <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+              </div>
+            </a>
+
+            <!-- ════ 13 LGA extintores ════ -->
+            <a href="/blog/lga-extintores-clases-a-b-c-d-k-queretaro/" class="ol-blog-card">
+              <div class="ol-blog-card-thumb">
+                <img src="/img/equipos-contra-incendios/Fire_extinguishers_in_202604261321 (1).jpeg" alt="Extintores certificados clases A B C D K LGA" width="600" height="400" loading="lazy" decoding="async">
+                <span class="ol-blog-cat pci">Sector PCI</span>
+                <span class="ol-blog-card-thumb-meta">6 min</span>
+              </div>
+              <div class="ol-blog-card-body">
+                <h3 class="ol-blog-card-title">LGA Contraincendios: extintores certificados clases A, B, C, D y K</h3>
+                <p class="ol-blog-card-excerpt">Distribución especializada en Querétaro. Cómo un sitio bien estructurado convierte consultas técnicas en pedidos formales para compradores industriales.</p>
+                <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+              </div>
+            </a>
+
+            <!-- ════ 14 LGA ecommerce ════ -->
+            <a href="/blog/comprar-equipo-contra-incendios-en-linea-lga/" class="ol-blog-card">
+              <div class="ol-blog-card-thumb">
+                <img src="/img/equipos-contra-incendios/Fire_extinguishers_in_202604261321 (2).jpeg" alt="E-commerce B2B equipo contra incendios en línea LGA" width="600" height="400" loading="lazy" decoding="async">
+                <span class="ol-blog-cat pci">Sector PCI</span>
+                <span class="ol-blog-card-thumb-meta">5 min</span>
+              </div>
+              <div class="ol-blog-card-body">
+                <h3 class="ol-blog-card-title">Comprar equipo PCI en línea: el modelo B2B de LGA</h3>
+                <p class="ol-blog-card-excerpt">E-commerce técnico orientado a compradores industriales. Diseño de tienda que agiliza la compra institucional sin sacrificar confianza ni claridad técnica.</p>
+                <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+              </div>
+            </a>
+
+            <!-- ════ 15 MANEXT recarga ════ -->
+            <a href="/blog/manext-recarga-mantenimiento-extintores-cdmx/" class="ol-blog-card">
+              <div class="ol-blog-card-thumb">
+                <img src="/img/equipos-contra-incendios/Fire_protection_equipment_202604261328.jpeg" alt="Recarga y mantenimiento extintores MANEXT CDMX" width="600" height="400" loading="lazy" decoding="async">
+                <span class="ol-blog-cat pci">Sector PCI</span>
+                <span class="ol-blog-card-thumb-meta">6 min</span>
+              </div>
+              <div class="ol-blog-card-body">
+                <h3 class="ol-blog-card-title">MANEXT: recarga y mantenimiento certificado en CDMX</h3>
+                <p class="ol-blog-card-excerpt">Servicio técnico de alta frecuencia en zona metropolitana. Cómo una empresa de servicios genera nuevos contratos desde su presencia digital.</p>
+                <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+              </div>
+            </a>
+
+            <!-- ════ 16 MANEXT NOM ════ -->
+            <a href="/blog/prueba-hidrostatica-extintores-nom-154-nom-002/" class="ol-blog-card">
+              <div class="ol-blog-card-thumb">
+                <img src="/img/equipos-contra-incendios/Firefighters_training_rescue_202604261328.jpeg" alt="Prueba hidrostática NOM-154 NOM-002 extintores" width="600" height="400" loading="lazy" decoding="async">
+                <span class="ol-blog-cat pci">Sector PCI</span>
+                <span class="ol-blog-card-thumb-meta">5 min</span>
+              </div>
+              <div class="ol-blog-card-body">
+                <h3 class="ol-blog-card-title">Prueba hidrostática y cumplimiento NOM-154 / NOM-002</h3>
+                <p class="ol-blog-card-excerpt">Comunicar normativa en un sitio web sin aburrir al visitante. El enfoque de contenido técnico que posiciona a MANEXT como referente de cumplimiento en CDMX.</p>
+                <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+              </div>
+            </a>
+
+            <!-- ════ 17 BOMBERO.MX EPP ════ -->
+            <a href="/blog/bombero-mx-equipo-personal-proteccion-bomberos/" class="ol-blog-card">
+              <div class="ol-blog-card-thumb">
+                <img src="/img/equipos-contra-incendios/Firefighters_in_front_202604261332.jpeg" alt="Equipo personal de protección NFPA bomberos México" width="600" height="400" loading="lazy" decoding="async">
+                <span class="ol-blog-cat pci">Sector PCI</span>
+                <span class="ol-blog-card-thumb-meta">7 min</span>
+              </div>
+              <div class="ol-blog-card-body">
+                <h3 class="ol-blog-card-title">BOMBERO.MX: equipo personal de protección certificado NFPA</h3>
+                <p class="ol-blog-card-excerpt">Distribución nacional para cuerpos de bomberos. Sitio que comunica certificación internacional a compradores institucionales con alta exigencia técnica.</p>
+                <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+              </div>
+            </a>
+
+            <!-- ════ 18 MSA Honeywell ════ -->
+            <a href="/blog/msa-honeywell-globe-bullard-mexico-bombero/" class="ol-blog-card">
+              <div class="ol-blog-card-thumb">
+                <img src="/img/equipos-contra-incendios/Firefighter_climbing_ladder_202604261330.jpeg" alt="Equipo EPP marcas MSA Honeywell Globe Bullard México" width="600" height="400" loading="lazy" decoding="async">
+                <span class="ol-blog-cat pci">Sector PCI</span>
+                <span class="ol-blog-card-thumb-meta">6 min</span>
+              </div>
+              <div class="ol-blog-card-body">
+                <h3 class="ol-blog-card-title">MSA, Honeywell, Globe y Bullard: distribución oficial en México</h3>
+                <p class="ol-blog-card-excerpt">Cuando las marcas que vendes son tu argumento de venta. Arquitectura de catálogo multi-marca con credenciales de distribución verificables para bombero.mx.</p>
+                <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+              </div>
+            </a>
+
+            <!-- ════ 19 Proyecto Red ════ -->
+            <a href="/blog/proyecto-red-sistemas-contra-incendio-integrales/" class="ol-blog-card">
+              <div class="ol-blog-card-thumb">
+                <img src="/img/equipos-contra-incendios/Fire_alarm_systems_202604261331.jpeg" alt="Sistemas contra incendio integrales industria comercio" width="600" height="400" loading="lazy" decoding="async">
+                <span class="ol-blog-cat pci">Sector PCI</span>
+                <span class="ol-blog-card-thumb-meta">7 min</span>
+              </div>
+              <div class="ol-blog-card-body">
+                <h3 class="ol-blog-card-title">Proyecto Red: sistemas contra incendio integrales</h3>
+                <p class="ol-blog-card-excerpt">Integrador de sistemas para industria, comercio y vivienda. El reto de comunicar ingeniería compleja a dos audiencias: el ingeniero y el dueño de empresa.</p>
+                <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+              </div>
+            </a>
+
+            <!-- ════ 20 Diseño instalación PCI ════ -->
+            <a href="/blog/diseno-instalacion-mantenimiento-sistemas-pci-proyecto-red/" class="ol-blog-card">
+              <div class="ol-blog-card-thumb">
+                <img src="/img/equipos-contra-incendios/Fire_protection_equipment_202604261327 (1).jpeg" alt="Diseño instalación sistemas hidráulicos PCI Proyecto Red" width="600" height="400" loading="lazy" decoding="async">
+                <span class="ol-blog-cat pci">Sector PCI</span>
+                <span class="ol-blog-card-thumb-meta">5 min</span>
+              </div>
+              <div class="ol-blog-card-body">
+                <h3 class="ol-blog-card-title">Diseño, instalación y mantenimiento de sistemas hidráulicos PCI</h3>
+                <p class="ol-blog-card-excerpt">La ingeniería detrás de proyectored.com.mx: jerarquía de servicios técnicos, flujos de cotización y credenciales de certificación en un solo dominio.</p>
                 <span class="ol-blog-card-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
               </div>
             </a>
 
           </div>
           <!-- /ol-blog-grid -->
+
+          <!-- ══════════ PAGINACIÓN ══════════ -->
+          <div class="ol-blog-pagination" id="ol-blog-pagination" aria-label="Navegación de páginas">
+            <div class="ol-blog-pg-left">
+              <button class="ol-blog-pg-btn" id="ol-blog-pg-prev" aria-label="Página anterior" disabled>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 18l-6-6 6-6"/></svg>
+              </button>
+            </div>
+            <div class="ol-blog-pg-nums" id="ol-blog-pg-nums" role="list" aria-label="Páginas"></div>
+            <div class="ol-blog-pg-right">
+              <button class="ol-blog-pg-btn" id="ol-blog-pg-next" aria-label="Página siguiente">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+            </div>
+          </div>
 
         </div>
         <!-- /ol-blog-main -->
@@ -995,64 +1047,81 @@
       header.classList.toggle('scrolled', window.pageYOffset > 10);
     }, { passive: true });
 
-    /* ---- Filtros de categoría ---- */
-    var filterBtns  = document.querySelectorAll('.ol-blog-filter');
-    var cards       = document.querySelectorAll('#ol-blog-grid .ol-blog-card');
-    var featured    = document.querySelector('.ol-blog-featured');
-    var sectorBlock = document.querySelector('.ol-blog-sector');
-    var grid        = document.getElementById('ol-blog-grid');
-    var sbCatItems  = document.querySelectorAll('.ol-sb-cat-item');
-    var sbTags      = document.querySelectorAll('.ol-sb-tag');
+    /* ---- Paginación del blog ---- */
+    var allCards     = Array.from(document.querySelectorAll('#ol-blog-grid .ol-blog-card'));
+    var pgPrev       = document.getElementById('ol-blog-pg-prev');
+    var pgNext       = document.getElementById('ol-blog-pg-next');
+    var pgNums       = document.getElementById('ol-blog-pg-nums');
+    var pgCount      = document.getElementById('ol-blog-count');
+    var ITEMS_PER_PG = 9;
+    var currentPage  = 1;
+    var totalPages   = Math.ceil(allCards.length / ITEMS_PER_PG);
 
-    function applyFilter(cat) {
-      /* Botones de filtro */
-      filterBtns.forEach(function(b) { b.classList.toggle('active', b.getAttribute('data-cat') === cat); });
-
-      /* Featured: mostrar si cat = todos o coincide; ocultar para filtros sin coincidencia */
-      if (featured) {
-        var featCat = featured.getAttribute('data-cat');
-        featured.style.display = (cat === 'todos' || cat === featCat) ? '' : 'none';
+    function buildPageNums() {
+      pgNums.innerHTML = '';
+      for (var p = 1; p <= totalPages; p++) {
+        (function(p) {
+          var btn = document.createElement('button');
+          btn.className = 'ol-blog-pg-btn' + (p === currentPage ? ' active' : '');
+          btn.setAttribute('data-page', p);
+          btn.setAttribute('aria-label', 'Página ' + p);
+          btn.setAttribute('aria-current', p === currentPage ? 'page' : 'false');
+          btn.textContent = p;
+          btn.addEventListener('click', function() { goToPage(p); });
+          pgNums.appendChild(btn);
+        })(p);
       }
-
-      /* Sector PCI: mostrar siempre que cat = todos o pci */
-      if (sectorBlock) {
-        sectorBlock.style.display = (cat === 'todos' || cat === 'pci') ? '' : 'none';
-      }
-
-      /* Grid regular: ocultar completo si filtro = pci (los artículos PCI viven en sector) */
-      if (grid) {
-        grid.style.display = (cat === 'pci') ? 'none' : '';
-      }
-
-      /* Cards del grid */
-      var visible = 0;
-      cards.forEach(function(c) {
-        var match = cat === 'todos' || c.getAttribute('data-cat') === cat;
-        c.style.display = match ? '' : 'none';
-        if (match) visible++;
-      });
     }
 
-    filterBtns.forEach(function(btn) {
-      btn.addEventListener('click', function() { applyFilter(this.getAttribute('data-cat')); });
-    });
+    function goToPage(page) {
+      currentPage = page;
+      var start = (page - 1) * ITEMS_PER_PG;
+      var end   = start + ITEMS_PER_PG;
 
-    /* Categorías del sidebar también filtran */
+      allCards.forEach(function(card, i) {
+        card.style.display = (i >= start && i < end) ? '' : 'none';
+      });
+
+      buildPageNums();
+      pgPrev.disabled = (currentPage <= 1);
+      pgNext.disabled = (currentPage >= totalPages);
+
+      /* Contador */
+      if (pgCount) {
+        var showing = Math.min(end, allCards.length);
+        pgCount.textContent = start + 1 + '–' + showing + ' de ' + allCards.length + ' artículos';
+      }
+
+      /* Scroll suave al encabezado del grid */
+      var grid = document.getElementById('ol-blog-grid');
+      if (grid && page > 1) {
+        grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    if (pgPrev) pgPrev.addEventListener('click', function() { if (currentPage > 1) goToPage(currentPage - 1); });
+    if (pgNext) pgNext.addEventListener('click', function() { if (currentPage < totalPages) goToPage(currentPage + 1); });
+
+    /* Init */
+    goToPage(1);
+
+    /* Sidebar category items — placeholder (no filters, scroll to grid) */
+    var sbCatItems = document.querySelectorAll('.ol-sb-cat-item');
     sbCatItems.forEach(function(item) {
       item.addEventListener('click', function(e) {
         e.preventDefault();
-        applyFilter(this.getAttribute('data-filter'));
-        /* scroll suave al top de los artículos */
-        document.querySelector('.ol-blog-filters').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        goToPage(1);
+        document.getElementById('ol-blog-grid').scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     });
 
-    /* Tags del sidebar también filtran */
+    /* Tags del sidebar — scroll al grid */
+    var sbTags = document.querySelectorAll('.ol-sb-tag');
     sbTags.forEach(function(tag) {
       tag.addEventListener('click', function(e) {
         e.preventDefault();
-        applyFilter(this.getAttribute('data-filter'));
-        document.querySelector('.ol-blog-filters').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        goToPage(1);
+        document.getElementById('ol-blog-grid').scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     });
 

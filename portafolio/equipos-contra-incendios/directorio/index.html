@@ -1,0 +1,1696 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Directorio · Empresas de Equipos Contra Incendios en México | OrigenLab</title>
+  <meta name="description" content="Directorio de empresas de equipos contra incendios en México que aparecen en Google Maps pero aún no tienen sitio web. ¿Es tu empresa? OrigenLab te ayuda a tener presencia digital profesional.">
+  <link rel="canonical" href="https://origenlab.mx/portafolio/equipos-contra-incendios/directorio/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://origenlab.mx/portafolio/equipos-contra-incendios/directorio/">
+  <meta property="og:title" content="Directorio · Empresas de Equipos Contra Incendios México sin sitio web">
+  <meta property="og:description" content="Empresas activas en México del sector protección contra incendios — en Google Maps, sin sitio web todavía.">
+  <meta property="og:image" content="https://origenlab.mx/og-image.jpg">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="OrigenLab">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Directorio · Equipos Contra Incendios México · Sin sitio web">
+  <meta name="twitter:description" content="Empresas activas del sector en México que aún no tienen presencia digital. OrigenLab las ayuda a crecer en línea.">
+  <meta name="twitter:image" content="https://origenlab.mx/og-image.jpg">
+  <link rel="icon" type="image/svg+xml" href="../../../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="../../../_astro/BaseLayout.xeR8R953.css?v20260426f">
+  <link rel="stylesheet" href="../../../_astro/premium-dark.css?v20260426f">
+  <script src="../../../_astro/ol-header.js?v20260426f" defer></script>
+
+  <style>
+    /* ============================================================
+       L9 — DIRECTORIO EQUIPOS CONTRA INCENDIOS · MÉXICO
+       Componentes compartidos heredados de premium-dark.css.
+       Solo clases nuevas .ol-dir-* que no existen en el sistema.
+       ============================================================ */
+
+    /* Hero accent */
+    .ol-page-hero { --page-hero-accent: #C0392B; }
+
+    /* ---- STATS BAR ---- */
+    .ol-dir-stats {
+      background: #08080E;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding: 1.1rem 0;
+    }
+    .ol-dir-stats-inner {
+      width: 90%;
+      max-width: 1600px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .ol-dir-stat {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .ol-dir-stat-num {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #C0392B;
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+    .ol-dir-stat-label {
+      font-size: 12px;
+      color: rgba(240,240,245,0.45);
+      font-weight: 500;
+      line-height: 1.3;
+    }
+    .ol-dir-stat-sep {
+      width: 1px;
+      height: 28px;
+      background: rgba(255,255,255,0.07);
+    }
+    .ol-dir-stats-note {
+      margin-left: auto;
+      font-size: 11px;
+      color: rgba(240,240,245,0.28);
+      font-style: italic;
+    }
+    @media (max-width: 680px) {
+      .ol-dir-stats-note { display: none; }
+    }
+
+    /* ---- FILTERS ---- */
+    .ol-dir-filters-wrap {
+      background: #0A0A14;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding: 1.25rem 0;
+      position: sticky;
+      top: 56px;
+      z-index: 40;
+    }
+    .ol-dir-filters-inner {
+      width: 90%;
+      max-width: 1600px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .ol-dir-filter-label {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(240,240,245,0.35);
+      white-space: nowrap;
+    }
+    .ol-dir-filter-chips {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .ol-dir-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      cursor: pointer;
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.03);
+      color: rgba(240,240,245,0.55);
+      transition: border-color 0.18s, background 0.18s, color 0.18s;
+      user-select: none;
+    }
+    .ol-dir-chip:hover {
+      border-color: rgba(192,57,43,0.4);
+      color: rgba(240,240,245,0.85);
+      background: rgba(192,57,43,0.06);
+    }
+    .ol-dir-chip.active {
+      border-color: #C0392B;
+      background: rgba(192,57,43,0.14);
+      color: #F0F0F5;
+    }
+    .ol-dir-filter-sep {
+      width: 1px;
+      height: 20px;
+      background: rgba(255,255,255,0.08);
+      flex-shrink: 0;
+    }
+    .ol-dir-count-badge {
+      margin-left: auto;
+      font-size: 12px;
+      color: rgba(240,240,245,0.35);
+      white-space: nowrap;
+    }
+    .ol-dir-count-badge strong {
+      color: rgba(240,240,245,0.7);
+      font-weight: 600;
+    }
+
+    /* ---- DIRECTORY SECTION ---- */
+    .ol-dir-section {
+      background: #08080E;
+      padding: 4rem 0 6rem;
+    }
+    .ol-dir-inner {
+      width: 90%;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+
+    /* ---- GRID ---- */
+    .ol-dir-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+    @media (max-width: 1280px) {
+      .ol-dir-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 640px) {
+      .ol-dir-grid { grid-template-columns: 1fr; gap: 1rem; }
+    }
+
+    /* ---- ol-svc-card overrides para directorio (acento rojo) ---- */
+    .ol-dir-section .ol-svc-card.hidden { display: none; }
+    .ol-dir-section .ol-svc-card:hover {
+      border-color: rgba(192,57,43,0.35);
+    }
+    .ol-dir-section .ol-svc-num {
+      color: rgba(192,57,43,0.55);
+    }
+    .ol-dir-section .ol-svc-list li::before {
+      color: rgba(192,57,43,0.5);
+    }
+    .ol-dir-section .ol-svc-cta {
+      color: #C0392B;
+      border-color: rgba(192,57,43,0.3);
+      background: rgba(192,57,43,0.05);
+    }
+    .ol-dir-section .ol-svc-card:hover .ol-svc-cta {
+      background: #C0392B;
+      border-color: #C0392B;
+      color: #fff;
+    }
+    /* glow rojo en área de imagen */
+    .ol-dir-section .ol-svc-img::after {
+      background: radial-gradient(ellipse at 40% 40%, rgba(192,57,43,0.1) 0%, transparent 60%);
+    }
+
+    /* ---- Área de imagen del directorio ---- */
+    .ol-dir-img-inner {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      z-index: 2;
+    }
+    .ol-dir-av {
+      width: 54px;
+      height: 54px;
+      border-radius: 12px;
+      background: rgba(192,57,43,0.12);
+      border: 1px solid rgba(192,57,43,0.32);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      font-weight: 800;
+      color: #D94030;
+      letter-spacing: -0.02em;
+    }
+    .ol-dir-img-badges {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    /* ---- Status badges (reutilizados en imagen y donde sea) ---- */
+    .ol-dir-badge-maps,
+    .ol-dir-badge-noweb {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      padding: 0.25rem 0.6rem;
+      border-radius: 6px;
+    }
+    .ol-dir-badge-maps {
+      background: rgba(52,168,83,0.1);
+      border: 1px solid rgba(52,168,83,0.25);
+      color: #34A853;
+    }
+    .ol-dir-badge-noweb {
+      background: rgba(192,57,43,0.1);
+      border: 1px solid rgba(192,57,43,0.28);
+      color: #E05040;
+    }
+
+    /* ---- EMPTY STATE ---- */
+    .ol-dir-empty {
+      display: none;
+      text-align: center;
+      padding: 4rem 0;
+      color: rgba(240,240,245,0.35);
+      font-size: 14px;
+      grid-column: 1 / -1;
+    }
+    .ol-dir-empty.visible { display: block; }
+
+    /* ---- CALLOUT BANNER (por qué importa tener sitio) ---- */
+    .ol-dir-callout {
+      background: linear-gradient(135deg, #0C0C1A 0%, #12121F 100%);
+      border: 1px solid rgba(192,57,43,0.2);
+      border-radius: 14px;
+      padding: 2.25rem 2.5rem;
+      margin: 3rem 0 0;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2rem;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .ol-dir-callout::before {
+      content: '';
+      position: absolute;
+      top: -40%;
+      right: -10%;
+      width: 50%;
+      height: 200%;
+      background: radial-gradient(ellipse at center, rgba(192,57,43,0.07) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .ol-dir-callout-eyebrow {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #C0392B;
+      margin: 0 0 0.6rem;
+    }
+    .ol-dir-callout-title {
+      font-size: clamp(1.1rem, 2vw, 1.45rem);
+      font-weight: 800;
+      color: #F0F0F5;
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+      margin: 0 0 0.65rem;
+    }
+    .ol-dir-callout-desc {
+      font-size: 14px;
+      color: rgba(240,240,245,0.55);
+      line-height: 1.7;
+      margin: 0;
+      max-width: 62ch;
+    }
+    .ol-dir-callout-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      flex-shrink: 0;
+    }
+    .ol-dir-callout-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1.5rem;
+      border-radius: 9px;
+      font-weight: 700;
+      font-size: 13.5px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.2s, transform 0.13s;
+    }
+    .ol-dir-callout-btn-primary {
+      background: #C0392B;
+      color: #fff;
+    }
+    .ol-dir-callout-btn-primary:hover {
+      background: #D94030;
+      transform: translateY(-1px);
+    }
+    .ol-dir-callout-btn-ghost {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: rgba(240,240,245,0.75);
+    }
+    .ol-dir-callout-btn-ghost:hover {
+      background: rgba(255,255,255,0.08);
+      border-color: rgba(255,255,255,0.18);
+    }
+    @media (max-width: 800px) {
+      .ol-dir-callout { grid-template-columns: 1fr; }
+      .ol-dir-callout-actions { flex-direction: row; }
+    }
+    @media (max-width: 480px) {
+      .ol-dir-callout { padding: 1.75rem; }
+      .ol-dir-callout-actions { flex-direction: column; }
+    }
+
+
+    /* ---- LAYOUT + SIDEBAR ---- */
+    .ol-dir-layout {
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 2rem;
+      align-items: start;
+    }
+    .ol-dir-main { min-width: 0; }
+    .ol-dir-sidebar {
+      position: sticky;
+      top: 120px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    @media (max-width: 1024px) {
+      .ol-dir-layout { grid-template-columns: 1fr; }
+      .ol-dir-sidebar { position: static; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    }
+    @media (max-width: 600px) {
+      .ol-dir-sidebar { grid-template-columns: 1fr; }
+    }
+
+    .ol-dir-sb-card {
+      background: #0C0C1A;
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 14px;
+      padding: 1.25rem 1.35rem;
+    }
+    .ol-dir-sb-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      color: rgba(240,240,245,0.28);
+      margin: 0 0 0.75rem;
+      display: block;
+    }
+    .ol-dir-sb-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .ol-dir-sb-list a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 12.5px;
+      color: rgba(240,240,245,0.52);
+      text-decoration: none;
+      padding: 0.45rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      transition: color 0.15s;
+      line-height: 1.35;
+    }
+    .ol-dir-sb-list li:last-child a { border-bottom: none; }
+    .ol-dir-sb-list a:hover { color: #D05040; }
+    .ol-dir-sb-list a::before {
+      content: '';
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: rgba(192,57,43,0.45);
+      flex-shrink: 0;
+    }
+    .ol-dir-sb-cta {
+      background: linear-gradient(135deg, rgba(192,57,43,0.12) 0%, rgba(192,57,43,0.04) 100%);
+      border: 1px solid rgba(192,57,43,0.22);
+      border-radius: 14px;
+      padding: 1.35rem;
+      text-align: center;
+    }
+    .ol-dir-sb-cta-eyebrow {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      color: #C0392B;
+      display: block;
+      margin: 0 0 0.5rem;
+    }
+    .ol-dir-sb-cta-title {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: #F0F0F5;
+      letter-spacing: -0.02em;
+      line-height: 1.3;
+      margin: 0 0 1rem;
+    }
+    .ol-dir-sb-cta-btn {
+      display: block;
+      background: #C0392B;
+      color: #fff;
+      font-size: 12.5px;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 0.75rem 1rem;
+      border-radius: 9px;
+      transition: background 0.18s, transform 0.13s;
+    }
+    .ol-dir-sb-cta-btn:hover { background: #D94030; transform: translateY(-1px); }
+
+    /* ---- WHY SECTION ---- */
+    .ol-dir-why {
+      background: #0A0A14;
+      padding: 5rem 0;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+    .ol-dir-why-inner {
+      width: 90%;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+    .ol-dir-why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    @media (max-width: 900px) { .ol-dir-why-grid { grid-template-columns: 1fr; gap: 1rem; } }
+    .ol-dir-why-card {
+      background: #0D0D1A;
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 14px;
+      padding: 1.75rem;
+    }
+    .ol-dir-why-num {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #C0392B;
+      opacity: 0.8;
+      margin: 0 0 1rem;
+    }
+    .ol-dir-why-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #F0F0F5;
+      letter-spacing: -0.015em;
+      margin: 0 0 0.6rem;
+      line-height: 1.3;
+    }
+    .ol-dir-why-desc {
+      font-size: 13.5px;
+      color: rgba(240,240,245,0.5);
+      line-height: 1.72;
+      margin: 0;
+    }
+  </style>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.mx/#organization","name":"OrigenLab","url":"https://origenlab.mx","logo":"https://origenlab.mx/logo.svg","description":"Agencia de desarrollo web profesional en México.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"}},{"@type":"CollectionPage","@id":"https://origenlab.mx/portafolio/equipos-contra-incendios/directorio/#page","url":"https://origenlab.mx/portafolio/equipos-contra-incendios/directorio/","name":"Directorio · Empresas de Equipos Contra Incendios en México sin sitio web — OrigenLab","inLanguage":"es-MX","isPartOf":{"@type":"WebSite","@id":"https://origenlab.mx/#website","url":"https://origenlab.mx/","name":"OrigenLab"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.mx/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.mx/portafolio/"},{"@type":"ListItem","position":3,"name":"Equipos Contra Incendios","item":"https://origenlab.mx/portafolio/equipos-contra-incendios/"},{"@type":"ListItem","position":4,"name":"Directorio México","item":"https://origenlab.mx/portafolio/equipos-contra-incendios/directorio/"}]}]}</script>
+</head>
+<body>
+
+<a class="ol-skip-link" href="#main">Saltar al contenido</a>
+
+<div class="ol-topbar">
+  <div class="ol-topbar-inner">
+    <div class="ol-topbar-left">
+      <a href="mailto:hola@origenlab.mx" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        hola@origenlab.mx
+      </a>
+      <span class="ol-topbar-sep"></span>
+      <a href="tel:+525547868402" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +52 55 4786 8402
+      </a>
+    </div>
+    <div class="ol-topbar-center">
+      <span class="ol-topbar-promo">
+        <span class="ol-topbar-dot"></span>
+        Atención personalizada  ·  Ciudad de México
+      </span>
+    </div>
+    <div class="ol-topbar-right">
+      <a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20sitio%20web%20para%20mi%20empresa%20de%20equipos%20contra%20incendios." target="_blank" rel="noopener noreferrer" class="ol-topbar-wa">
+        <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true" focusable="false"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+<header class="ol-header" id="ol-header">
+  <div class="ol-header-inner">
+    <a href="/" class="ol-header-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
+    </a>
+    <nav class="ol-nav" aria-label="Navegación principal">
+      <ul class="ol-nav-list">
+        <li><a href="/" class="ol-nav-link">Inicio</a></li>
+        <li class="ol-has-dropdown">
+          <a href="/servicios/" class="ol-nav-link">Servicios
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true" focusable="false"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/servicios/desarrollo-web/" class="ol-dropdown-link">Desarrollo Web</a></li>
+              <li><a href="/servicios/tiendas-en-linea/" class="ol-dropdown-link">Tiendas en Línea</a></li>
+              <li><a href="/servicios/landing-pages/" class="ol-dropdown-link">Landing Pages</a></li>
+              <li><a href="/servicios/rediseno-web/" class="ol-dropdown-link">Rediseño Web</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="ol-has-dropdown">
+          <a href="/portafolio/" class="ol-nav-link active">Portafolio
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true" focusable="false"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a></li>
+              <li class="ol-has-subdrop">
+                <a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link ol-dropdown-parent">Equipos Contra Incendios</a>
+                <div class="ol-subdrop">
+                  <ul>
+                    <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link">Gama de México</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link">MESECI</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link">LGA Contraincendios</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-dropdown-link">MANEXT</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-dropdown-link">BOMBERO.MX</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-dropdown-link">ProyectoRed</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/directorio/" class="ol-dropdown-link">Directorio México</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="/nosotros/" class="ol-nav-link">Nosotros</a></li>
+        <li><a href="/blog/" class="ol-nav-link">Blog</a></li>
+        <li><a href="/contacto/" class="ol-nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="/cotizar/" class="ol-header-cta">Cotizar proyecto →</a>
+    <button class="ol-menu-toggle" id="ol-menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+    </button>
+  </div>
+</header>
+
+<div class="ol-mobile-overlay" id="ol-mobile-overlay"></div>
+<nav class="ol-mobile-panel" id="ol-mobile-panel" aria-label="Menú móvil">
+  <div class="ol-mobile-header">
+    <a href="/" class="ol-mobile-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
+    </a>
+    <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú">
+      <svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true" focusable="false"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <ul class="ol-mobile-nav">
+    <li><a href="/" class="ol-mobile-link">Inicio</a></li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu><span>Servicios</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none" aria-hidden="true" focusable="false"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/servicios/desarrollo-web/" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu><span>Portafolio</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none" aria-hidden="true" focusable="false"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/portafolio/" class="ol-mobile-link ol-mobile-sublink">Todo el Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/" class="ol-mobile-link ol-mobile-sublink">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/directorio/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Directorio México</a></li>
+      </ul>
+    </li>
+    <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
+    <li><a href="/blog/" class="ol-mobile-link">Blog</a></li>
+    <li><a href="/contacto/" class="ol-mobile-link">Contacto</a></li>
+  </ul>
+  <div class="ol-mobile-footer">
+    <a href="/cotizar/" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a>
+  </div>
+</nav>
+
+<!-- BREADCRUMB -->
+<nav class="ol-bc-wrap" aria-label="Migas de pan">
+  <div class="ol-bc">
+    <ol class="ol-bc-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/" itemprop="item" class="ol-bc-home"><span itemprop="name">Inicio</span></a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/portafolio/" itemprop="item"><span itemprop="name">Portafolio</span></a>
+        <meta itemprop="position" content="2" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/portafolio/equipos-contra-incendios/" itemprop="item"><span itemprop="name">Equipos Contra Incendios</span></a>
+        <meta itemprop="position" content="3" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item ol-bc-current" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name">Directorio México</span>
+        <meta itemprop="position" content="4" />
+      </li>
+    </ol>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- ============== PAGE HERO ============== -->
+  <section class="ol-page-hero">
+    <div class="ol-page-hero-inner">
+      <div class="ol-page-hero-grid">
+        <div class="ol-page-hero-left">
+          <span class="ol-eyebrow">Directorio · Equipos Contra Incendios · México</span>
+          <h1 class="ol-page-hero-title">Empresas activas en México sin sitio web.</h1>
+          <p class="ol-page-hero-sub">Empresas del sector protección contra incendios que aparecen en Google Maps, atienden clientes reales y operan sin presencia digital propia. Aquí están — y aquí está la oportunidad.</p>
+        </div>
+        <div class="ol-page-hero-right">
+          <p class="ol-page-hero-copy">Hay decenas de empresas de extintores, sistemas contra incendio y servicios técnicos en México que generan ventas todos los días sin tener un solo byte de presencia en internet. Sus clientes los encuentran por recomendación, por tarjeta física o por un perfil básico en Google Maps — sin dirección web.</p>
+          <p class="ol-page-hero-copy">Este directorio reúne algunas de ellas. No como crítica — como señal de una oportunidad real. Cada empresa aquí listada tiene ya lo más difícil: un negocio en operación, clientes que confían en ellos y experiencia comprobada en su giro. Lo que falta es una plataforma digital que multiplique ese alcance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== STATS BAR ============== -->
+  <div class="ol-dir-stats">
+    <div class="ol-dir-stats-inner">
+      <div class="ol-dir-stat">
+        <span class="ol-dir-stat-num" id="js-total">20</span>
+        <span class="ol-dir-stat-label">empresas<br>listadas</span>
+      </div>
+      <div class="ol-dir-stat-sep"></div>
+      <div class="ol-dir-stat">
+        <span class="ol-dir-stat-num">100%</span>
+        <span class="ol-dir-stat-label">sin sitio<br>web propio</span>
+      </div>
+      <div class="ol-dir-stat-sep"></div>
+      <div class="ol-dir-stat">
+        <span class="ol-dir-stat-num">MX</span>
+        <span class="ol-dir-stat-label">cobertura<br>actual</span>
+      </div>
+      <div class="ol-dir-stat-sep"></div>
+      <div class="ol-dir-stat">
+        <span class="ol-dir-stat-num">4</span>
+        <span class="ol-dir-stat-label">tipos de<br>negocio</span>
+      </div>
+      <span class="ol-dir-stats-note">Actualizado abril 2026 · Fuente: Google Maps México</span>
+    </div>
+  </div>
+
+  <!-- ============== FILTERS ============== -->
+  <div class="ol-dir-filters-wrap">
+    <div class="ol-dir-filters-inner">
+      <span class="ol-dir-filter-label">Tipo:</span>
+      <div class="ol-dir-filter-chips" id="js-tipo-chips">
+        <button class="ol-dir-chip active" data-tipo="todos">Todos</button>
+        <button class="ol-dir-chip" data-tipo="extintor">Extintores</button>
+        <button class="ol-dir-chip" data-tipo="mantenimiento">Mantenimiento</button>
+        <button class="ol-dir-chip" data-tipo="sistemas">Sistemas CI</button>
+        <button class="ol-dir-chip" data-tipo="distribucion">Distribución</button>
+      </div>
+      <div class="ol-dir-filter-sep"></div>
+      <span class="ol-dir-filter-label">Zona:</span>
+      <div class="ol-dir-filter-chips" id="js-zona-chips">
+        <button class="ol-dir-chip active" data-zona="todas">Todas</button>
+        <button class="ol-dir-chip" data-zona="norte">Norte</button>
+        <button class="ol-dir-chip" data-zona="sur">Sur</button>
+        <button class="ol-dir-chip" data-zona="oriente">Oriente</button>
+        <button class="ol-dir-chip" data-zona="poniente">Poniente</button>
+        <button class="ol-dir-chip" data-zona="centro">Centro</button>
+      </div>
+      <span class="ol-dir-count-badge"><strong id="js-visible-count">20</strong> empresas</span>
+    </div>
+  </div>
+
+  <!-- ============== DIRECTORY GRID ============== -->
+  <section class="ol-dir-section">
+    <div class="ol-dir-inner">
+      <div class="ol-dir-layout">
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <div class="ol-dir-main">
+
+          <div class="ol-dir-grid" id="js-dir-grid">
+        <!-- 01 -->
+        <article class="ol-svc-card ol-dir-card" data-tipo="extintor mantenimiento" data-zona="norte">
+          <div class="ol-svc-img">
+            <div class="ol-dir-img-inner">
+              <div class="ol-dir-av">ES</div>
+              <div class="ol-dir-img-badges">
+                <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
+                <span class="ol-dir-badge-noweb">Sin sitio web</span>
+              </div>
+            </div>
+          </div>
+          <div class="ol-svc-body">
+            <div class="ol-svc-num">01 — Gustavo A. Madero</div>
+            <h2 class="ol-svc-title">EQUIPOS Y SERVICIOS MF</h2>
+            <p class="ol-svc-desc">Venta y mantenimiento de extintores certificados en la zona norte de la Ciudad de México.</p>
+            <ul class="ol-svc-list">
+              <li>Eduardo Molina 4715, GAM</li>
+              <li>Tel. 55 5331 8307</li>
+              <li>4.8 ★ en Google Maps (13 reseñas)</li>
+            </ul>
+            <a href="https://wa.me/525547868402?text=Hola%2C+soy+de+EQUIPOS+Y+SERVICIOS+MF+en+Gustavo A. Madero+y+me+interesa+conocer+m%C3%A1s+sobre+un+sitio+web+profesional." target="_blank" rel="noopener noreferrer" class="ol-svc-cta">¿Es tu empresa? →</a>
+          </div>
+        </article>
+
+        <!-- 02 -->
+        <article class="ol-svc-card ol-dir-card" data-tipo="extintor mantenimiento" data-zona="oriente">
+          <div class="ol-svc-img">
+            <div class="ol-dir-img-inner">
+              <div class="ol-dir-av">RE</div>
+              <div class="ol-dir-img-badges">
+                <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
+                <span class="ol-dir-badge-noweb">Sin sitio web</span>
+              </div>
+            </div>
+          </div>
+          <div class="ol-svc-body">
+            <div class="ol-svc-num">02 — Iztapalapa</div>
+            <h2 class="ol-svc-title">Recarga de Extintores</h2>
+            <p class="ol-svc-desc">Servicio especializado en recarga y mantenimiento preventivo de extintores en zona oriente.</p>
+            <ul class="ol-svc-list">
+              <li>Calle 2 229, Iztapalapa</li>
+              <li>Tel. 55 2178 6855</li>
+              <li>4.7 ★ en Google Maps (29 reseñas)</li>
+            </ul>
+            <a href="https://wa.me/525547868402?text=Hola%2C+soy+de+Recarga+de+Extintores+en+Iztapalapa+y+me+interesa+conocer+m%C3%A1s+sobre+un+sitio+web+profesional." target="_blank" rel="noopener noreferrer" class="ol-svc-cta">¿Es tu empresa? →</a>
+          </div>
+        </article>
+
+        <!-- 03 -->
+        <article class="ol-svc-card ol-dir-card" data-tipo="extintor distribucion" data-zona="oriente">
+          <div class="ol-svc-img">
+            <div class="ol-dir-img-inner">
+              <div class="ol-dir-av">EA</div>
+              <div class="ol-dir-img-badges">
+                <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
+                <span class="ol-dir-badge-noweb">Sin sitio web</span>
+              </div>
+            </div>
+          </div>
+          <div class="ol-svc-body">
+            <div class="ol-svc-num">03 — Iztapalapa</div>
+            <h2 class="ol-svc-title">Extintores Aztahuacan</h2>
+            <p class="ol-svc-desc">Distribución y venta de extintores en el oriente de la ciudad, zona Aztahuacan.</p>
+            <ul class="ol-svc-list">
+              <li>Anillo de Circunvalación 1924-L1</li>
+              <li>Tel. 55 6772 3379</li>
+              <li>Iztapalapa, CDMX</li>
+            </ul>
+            <a href="https://wa.me/525547868402?text=Hola%2C+soy+de+Extintores+Aztahuacan+en+Iztapalapa+y+me+interesa+conocer+m%C3%A1s+sobre+un+sitio+web+profesional." target="_blank" rel="noopener noreferrer" class="ol-svc-cta">¿Es tu empresa? →</a>
+          </div>
+        </article>
+
+        <!-- 04 -->
+        <article class="ol-svc-card ol-dir-card" data-tipo="extintor distribucion" data-zona="norte">
+          <div class="ol-svc-img">
+            <div class="ol-dir-img-inner">
+              <div class="ol-dir-av">GB</div>
+              <div class="ol-dir-img-badges">
+                <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
+                <span class="ol-dir-badge-noweb">Sin sitio web</span>
+              </div>
+            </div>
+          </div>
+          <div class="ol-svc-body">
+            <div class="ol-svc-num">04 — Gustavo A. Madero</div>
+            <h2 class="ol-svc-title">GRUPO BAM EXTINTORES</h2>
+            <p class="ol-svc-desc">Venta y distribución de extintores con atención personalizada en Gustavo A. Madero.</p>
+            <ul class="ol-svc-list">
+              <li>C. Talpa 169, GAM</li>
+              <li>Tel. 55 2144 5166</li>
+              <li>5.0 ★ en Google Maps (3 reseñas)</li>
+            </ul>
+            <a href="https://wa.me/525547868402?text=Hola%2C+soy+de+GRUPO+BAM+EXTINTORES+en+Gustavo A. Madero+y+me+interesa+conocer+m%C3%A1s+sobre+un+sitio+web+profesional." target="_blank" rel="noopener noreferrer" class="ol-svc-cta">¿Es tu empresa? →</a>
+          </div>
+        </article>
+
+        <!-- 05 -->
+        <article class="ol-svc-card ol-dir-card" data-tipo="extintor mantenimiento" data-zona="norte">
+          <div class="ol-svc-img">
+            <div class="ol-dir-img-inner">
+              <div class="ol-dir-av">EP</div>
+              <div class="ol-dir-img-badges">
+                <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
+                <span class="ol-dir-badge-noweb">Sin sitio web</span>
+              </div>
+            </div>
+          </div>
+          <div class="ol-svc-body">
+            <div class="ol-svc-num">05 — Gustavo A. Madero</div>
+            <h2 class="ol-svc-title">Extintores Plasa</h2>
+            <p class="ol-svc-desc">Venta, recarga y mantenimiento de extintores en la zona norte de la Ciudad de México.</p>
+            <ul class="ol-svc-list">
+              <li>5 de Febrero #302, GAM</li>
+              <li>Tel. 55 5577 0040</li>
+              <li>3.5 ★ en Google Maps (8 reseñas)</li>
+            </ul>
+            <a href="https://wa.me/525547868402?text=Hola%2C+soy+de+Extintores+Plasa+en+Gustavo A. Madero+y+me+interesa+conocer+m%C3%A1s+sobre+un+sitio+web+profesional." target="_blank" rel="noopener noreferrer" class="ol-svc-cta">¿Es tu empresa? →</a>
+          </div>
+        </article>
+
+        <!-- 06 -->
+        <article class="ol-svc-card ol-dir-card" data-tipo="extintor mantenimiento" data-zona="norte">
+          <div class="ol-svc-img">
+            <div class="ol-dir-img-inner">
+              <div class="ol-dir-av">EM</div>
+              <div class="ol-dir-img-badges">
+                <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
+                <span class="ol-dir-badge-noweb">Sin sitio web</span>
+              </div>
+            </div>
+          </div>
+          <div class="ol-svc-body">
+            <div class="ol-svc-num">06 — Gustavo A. Madero</div>
+            <h2 class="ol-svc-title">Extintores Emmvira</h2>
+            <p class="ol-svc-desc">Servicio de recarga y mantenimiento de extintores en la alcaldía Gustavo A. Madero.</p>
+            <ul class="ol-svc-list">
+              <li>C. 311 #824, GAM</li>
+              <li>Tel. 56 1327 5734</li>
+              <li>Iztapalapa, CDMX</li>
+            </ul>
+            <a href="https://wa.me/525547868402?text=Hola%2C+soy+de+Extintores+Emmvira+en+Gustavo A. Madero+y+me+interesa+conocer+m%C3%A1s+sobre+un+sitio+web+profesional." target="_blank" rel="noopener noreferrer" class="ol-svc-cta">¿Es tu empresa? →</a>
+          </div>
+        </article>
+
+        <!-- 07 -->
+        <article class="ol-svc-card ol-dir-card" data-tipo="extintor sistemas" data-zona="norte">
+          <div class="ol-svc-img">
+            <div class="ol-dir-img-inner">
+              <div class="ol-dir-av">MO</div>
+              <div class="ol-dir-img-badges">
+                <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
+                <span class="ol-dir-badge-noweb">Sin sitio web</span>
+              </div>
+            </div>
+          </div>
+          <div class="ol-svc-body">
+            <div class="ol-svc-num">07 — Azcapotzalco</div>
+            <h2 class="ol-svc-title">MONYZA Equipos Contra Incendio</h2>
+            <p class="ol-svc-desc">Equipos contra incendio y sistemas CI para industria y comercio en zona norte.</p>
+            <ul class="ol-svc-list">
+              <li>Calz. Camarones 611, Azcapotzalco</li>
+              <li>Tel. 55 5561 6876</li>
+              <li>3.4 ★ en Google Maps (10 reseñas)</li>
+            </ul>
+            <a href="https://wa.me/525547868402?text=Hola%2C+soy+de+MONYZA+Equipos+Contra+Incendio+en+Azcapotzalco+y+me+interesa+conocer+m%C3%A1s+sobre+un+sitio+web+profesional." target="_blank" rel="noopener noreferrer" class="ol-svc-cta">¿Es tu empresa? →</a>
+          </div>
+        </article>
+
+        <!-- 08 -->
+        <article class="ol-svc-card ol-dir-card" data-tipo="extintor mantenimiento" data-zona="norte">
+          <div class="ol-svc-img">
+            <div class="ol-dir-img-inner">
+              <div class="ol-dir-av">EK</div>
+              <div class="ol-dir-img-badges">
+                <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
+                <span class="ol-dir-badge-noweb">Sin sitio web</span>
+              </div>
+            </div>
+          </div>
+          <div class="ol-svc-body">
+            <div class="ol-svc-num">08 — Azcapotzalco</div>
+            <h2 class="ol-svc-title">Extintores Corona</h2>
+            <p class="ol-svc-desc">Recarga y mantenimiento de extintores en la zona norte, alcaldía Azcapotzalco.</p>
+            <ul class="ol-svc-list">
+              <li>Calle Nte 79-B 21, Azcapotzalco</li>
+              <li>Tel. 56 1182 5426</li>
+              <li>2.3 ★ en Google Maps (3 reseñas)</li>
+            </ul>
+            <a href="https://wa.me/525547868402?text=Hola%2C+soy+de+Extintores+Corona+en+Azcapotzalco+y+me+interesa+conocer+m%C3%A1s+sobre+un+sitio+web+profesional." target="_blank" rel="noopener noreferrer" class="ol-svc-cta">¿Es tu empresa? →</a>
+          </div>
+        </article>
+
+        <!-- 09 -->
+        <article class="ol-svc-card ol-dir-card" data-tipo="extintor distribucion" data-zona="sur">
+          <div class="ol-svc-img">
+            <div class="ol-dir-img-inner">
+              <div class="ol-dir-av">CM</div>
+              <div class="ol-dir-img-badges">
+                <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
+                <span class="ol-dir-badge-noweb">Sin sitio web</span>
+              </div>
+            </div>
+          </div>
+          <div class="ol-svc-body">
+            <div class="ol-svc-num">09 — Xochimilco</div>
+            <h2 class="ol-svc-title">Central Mexicana de Extinguidores</h2>
+            <p class="ol-svc-desc">Distribución de extinguidores certificados en la zona sur, alcaldías Xochimilco y Tlalpan.</p>
+            <ul class="ol-svc-list">
+              <li>Av. Muyuguarda 2, Xochimilco</li>
+              <li>Tel. 55 4952 5145</li>
+              <li>4.2 ★ en Google Maps (18 reseñas)</li>
+            </ul>
+            <a href="https://wa.me/525547868402?text=Hola%2C+soy+de+Central+Mexicana+de+Extinguidores+en+Xochimilco+y+me+interesa+conocer+m%C3%A1s+sobre+un+sitio+web+profesional." target="_blank" rel="noopener noreferrer" class="ol-svc-cta">¿Es tu empresa? →</a>
+          </div>
+        </article>
+
+        <!-- 10 -->
+        <article class="ol-svc-card ol-dir-card" data-tipo="extintor mantenimiento" data-zona="sur">
+          <div class="ol-svc-img">
+            <div class="ol-dir-img-inner">
+              <div class="ol-dir-av">EL</div>
+              <div class="ol-dir-img-badges">
+                <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
+                <span class="ol-dir-badge-noweb">Sin sitio web</span>
+              </div>
+            </div>
+          </div>
+          <div class="ol-svc-body">
+            <div class="ol-svc-num">10 — Tlalpan</div>
+            <h2 class="ol-svc-title">Extinguidores León</h2>
+            <p class="ol-svc-desc">Recarga y mantenimiento de extinguidores en Tlalpan y sur de la ciudad.</p>
+            <ul class="ol-svc-list">
+              <li>Cto. Cuyutecas 23, Tlalpan</li>
+              <li>Tel. 55 3511 7096</li>
+              <li>3.7 ★ en Google Maps (3 reseñas)</li>
+            </ul>
+            <a href="https://wa.me/525547868402?text=Hola%2C+soy+de+Extinguidores+Le%C3%B3n+en+Tlalpan+y+me+interesa+conocer+m%C3%A1s+sobre+un+sitio+web+profesional." target="_blank" rel="noopener noreferrer" class="ol-svc-cta">¿Es tu empresa? →</a>
+          </div>
+        </article>
+
+        <!-- 11 -->
+        <article class="ol-svc-card ol-dir-card" data-tipo="extintor mantenimiento" data-zona="sur">
+          <div class="ol-svc-img">
+            <div class="ol-dir-img-inner">
+              <div class="ol-dir-av">TE</div>
+              <div class="ol-dir-img-badges">
+                <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
+                <span class="ol-dir-badge-noweb">Sin sitio web</span>
+              </div>
+            </div>
+          </div>
+          <div class="ol-svc-body">
+            <div class="ol-svc-num">11 — Tlalpan</div>
+            <h2 class="ol-svc-title">Todo en Extintores</h2>
+            <p class="ol-svc-desc">Solución integral en extintores: venta, recarga y mantenimiento en zona sur.</p>
+            <ul class="ol-svc-list">
+              <li>Tlalpan, CDMX</li>
+              <li>Tel. 55 2257 7712</li>
+              <li>Atención a domicilio zona sur</li>
+            </ul>
+            <a href="https://wa.me/525547868402?text=Hola%2C+soy+de+Todo+en+Extintores+en+Tlalpan+y+me+interesa+conocer+m%C3%A1s+sobre+un+sitio+web+profesional." target="_blank" rel="noopener noreferrer" class="ol-svc-cta">¿Es tu empresa? →</a>
+          </div>
+        </article>
+
+        <!-- 12 -->
+        <article class="ol-svc-card ol-dir-card" data-tipo="extintor sistemas" data-zona="sur">
+          <div class="ol-svc-img">
+            <div class="ol-dir-img-inner">
+              <div class="ol-dir-av">CY</div>
+              <div class="ol-dir-img-badges">
+                <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
+                <span class="ol-dir-badge-noweb">Sin sitio web</span>
+              </div>
+            </div>
+          </div>
+          <div class="ol-svc-body">
+            <div class="ol-svc-num">12 — Xochimilco</div>
+            <h2 class="ol-svc-title">Caybe Extintores y Sistemas CI</h2>
+            <p class="ol-svc-desc">Extintores y sistemas contra incendio para industria y comercio en sur de CDMX.</p>
+            <ul class="ol-svc-list">
+              <li>Quecholoc M-2-L-7, Xochimilco</li>
+              <li>Tel. 55 6407 1055</li>
+              <li>4.3 ★ en Google Maps (6 reseñas)</li>
+            </ul>
+            <a href="https://wa.me/525547868402?text=Hola%2C+soy+de+Caybe+Extintores+y+Sistemas+CI+en+Xochimilco+y+me+interesa+conocer+m%C3%A1s+sobre+un+sitio+web+profesional." target="_blank" rel="noopener noreferrer" class="ol-svc-cta">¿Es tu empresa? →</a>
+          </div>
+        </article>
+
+        <!-- 13 -->
+        <article class="ol-svc-card ol-dir-card" data-tipo="extintor mantenimiento" data-zona="poniente">
+          <div class="ol-svc-img">
+            <div class="ol-dir-img-inner">
+              <div class="ol-dir-av">EO</div>
+              <div class="ol-dir-img-badges">
+                <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
+                <span class="ol-dir-badge-noweb">Sin sitio web</span>
+              </div>
+            </div>
+          </div>
+          <div class="ol-svc-body">
+            <div class="ol-svc-num">13 — Álvaro Obregón</div>
+            <h2 class="ol-svc-title">Extintores Omega</h2>
+            <p class="ol-svc-desc">Venta, recarga y mantenimiento de extintores en zona poniente, Álvaro Obregón.</p>
+            <ul class="ol-svc-list">
+              <li>Camino Real a Toluca #15, AO</li>
+              <li>Tel. 55 5271 7099</li>
+              <li>3.6 ★ en Google Maps (18 reseñas)</li>
+            </ul>
+            <a href="https://wa.me/525547868402?text=Hola%2C+soy+de+Extintores+Omega+en+Álvaro Obregón+y+me+interesa+conocer+m%C3%A1s+sobre+un+sitio+web+profesional." target="_blank" rel="noopener noreferrer" class="ol-svc-cta">¿Es tu empresa? →</a>
+          </div>
+        </article>
+
+        <!-- 14 -->
+        <article class="ol-svc-card ol-dir-card" data-tipo="sistemas extintor" data-zona="centro">
+          <div class="ol-svc-img">
+            <div class="ol-dir-img-inner">
+              <div class="ol-dir-av">MF</div>
+              <div class="ol-dir-img-badges">
+                <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
+                <span class="ol-dir-badge-noweb">Sin sitio web</span>
+              </div>
+            </div>
+          </div>
+          <div class="ol-svc-body">
+            <div class="ol-svc-num">14 — Cuauhtémoc</div>
+            <h2 class="ol-svc-title">Multifire Systems Equipo Contra Incendio</h2>
+            <p class="ol-svc-desc">Equipos y sistemas contra incendio en el centro histórico de la Ciudad de México.</p>
+            <ul class="ol-svc-list">
+              <li>República de Uruguay 107, Centro</li>
+              <li>Cuauhtémoc, CDMX</li>
+              <li>1.0 ★ en Google Maps (1 reseña)</li>
+            </ul>
+            <a href="https://wa.me/525547868402?text=Hola%2C+soy+de+Multifire+Systems+Equipo+Contra+Incendio+en+Cuauhtémoc+y+me+interesa+conocer+m%C3%A1s+sobre+un+sitio+web+profesional." target="_blank" rel="noopener noreferrer" class="ol-svc-cta">¿Es tu empresa? →</a>
+          </div>
+        </article>
+
+        <!-- 15 -->
+        <article class="ol-svc-card ol-dir-card" data-tipo="extintor mantenimiento" data-zona="oriente">
+          <div class="ol-svc-img">
+            <div class="ol-dir-img-inner">
+              <div class="ol-dir-av">EC</div>
+              <div class="ol-dir-img-badges">
+                <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
+                <span class="ol-dir-badge-noweb">Sin sitio web</span>
+              </div>
+            </div>
+          </div>
+          <div class="ol-svc-body">
+            <div class="ol-svc-num">15 — Iztacalco</div>
+            <h2 class="ol-svc-title">Extintores Ecoín</h2>
+            <p class="ol-svc-desc">Recarga y mantenimiento de extintores con atención en Iztacalco y zona oriente.</p>
+            <ul class="ol-svc-list">
+              <li>Sur 109, Col. Tlacotal, Iztacalco</li>
+              <li>Tel. 55 5654 6634</li>
+              <li>5.0 ★ en Google Maps (2 reseñas)</li>
+            </ul>
+            <a href="https://wa.me/525547868402?text=Hola%2C+soy+de+Extintores+Ecoín+en+Iztacalco+y+me+interesa+conocer+m%C3%A1s+sobre+un+sitio+web+profesional." target="_blank" rel="noopener noreferrer" class="ol-svc-cta">¿Es tu empresa? →</a>
+          </div>
+        </article>
+
+        <!-- 16 -->
+        <article class="ol-svc-card ol-dir-card" data-tipo="extintor mantenimiento" data-zona="oriente">
+          <div class="ol-svc-img">
+            <div class="ol-dir-img-inner">
+              <div class="ol-dir-av">OL</div>
+              <div class="ol-dir-img-badges">
+                <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
+                <span class="ol-dir-badge-noweb">Sin sitio web</span>
+              </div>
+            </div>
+          </div>
+          <div class="ol-svc-body">
+            <div class="ol-svc-num">16 — Tláhuac</div>
+            <h2 class="ol-svc-title">EXTINTORES OLIVOS</h2>
+            <p class="ol-svc-desc">Venta y servicio de extintores en Tláhuac y sur-oriente de la Ciudad de México.</p>
+            <ul class="ol-svc-list">
+              <li>Av. Tláhuac 5684, Tláhuac</li>
+              <li>Tel. 55 1017 5349</li>
+              <li>5.0 ★ en Google Maps (1 reseña)</li>
+            </ul>
+            <a href="https://wa.me/525547868402?text=Hola%2C+soy+de+EXTINTORES+OLIVOS+en+Tláhuac+y+me+interesa+conocer+m%C3%A1s+sobre+un+sitio+web+profesional." target="_blank" rel="noopener noreferrer" class="ol-svc-cta">¿Es tu empresa? →</a>
+          </div>
+        </article>
+
+        <!-- 17 -->
+        <article class="ol-svc-card ol-dir-card" data-tipo="extintor mantenimiento" data-zona="oriente">
+          <div class="ol-svc-img">
+            <div class="ol-dir-img-inner">
+              <div class="ol-dir-av">AL</div>
+              <div class="ol-dir-img-badges">
+                <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
+                <span class="ol-dir-badge-noweb">Sin sitio web</span>
+              </div>
+            </div>
+          </div>
+          <div class="ol-svc-body">
+            <div class="ol-svc-num">17 — Iztacalco</div>
+            <h2 class="ol-svc-title">ALVIFIRE</h2>
+            <p class="ol-svc-desc">Servicio de seguridad contra incendios en zona oriente, con atención los 7 días.</p>
+            <ul class="ol-svc-list">
+              <li>Calle 2 #229, Iztacalco</li>
+              <li>Tel. 55 8688 4659</li>
+              <li>5.0 ★ en Google Maps (1 reseña)</li>
+            </ul>
+            <a href="https://wa.me/525547868402?text=Hola%2C+soy+de+ALVIFIRE+en+Iztacalco+y+me+interesa+conocer+m%C3%A1s+sobre+un+sitio+web+profesional." target="_blank" rel="noopener noreferrer" class="ol-svc-cta">¿Es tu empresa? →</a>
+          </div>
+        </article>
+
+        <!-- 18 -->
+        <article class="ol-svc-card ol-dir-card" data-tipo="extintor mantenimiento" data-zona="oriente">
+          <div class="ol-svc-img">
+            <div class="ol-dir-img-inner">
+              <div class="ol-dir-av">CU</div>
+              <div class="ol-dir-img-badges">
+                <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
+                <span class="ol-dir-badge-noweb">Sin sitio web</span>
+              </div>
+            </div>
+          </div>
+          <div class="ol-svc-body">
+            <div class="ol-svc-num">18 — Iztapalapa</div>
+            <h2 class="ol-svc-title">Extintores Cuauhtémoc</h2>
+            <p class="ol-svc-desc">Recarga y mantenimiento de extintores en Iztapalapa con excelente calificación.</p>
+            <ul class="ol-svc-list">
+              <li>Derechos Democráticos MZ4 LT12</li>
+              <li>Tel. 55 2328 8485</li>
+              <li>5.0 ★ en Google Maps (8 reseñas)</li>
+            </ul>
+            <a href="https://wa.me/525547868402?text=Hola%2C+soy+de+Extintores+Cuauht%C3%A9moc+en+Iztapalapa+y+me+interesa+conocer+m%C3%A1s+sobre+un+sitio+web+profesional." target="_blank" rel="noopener noreferrer" class="ol-svc-cta">¿Es tu empresa? →</a>
+          </div>
+        </article>
+
+        <!-- 19 -->
+        <article class="ol-svc-card ol-dir-card" data-tipo="extintor mantenimiento" data-zona="sur">
+          <div class="ol-svc-img">
+            <div class="ol-dir-img-inner">
+              <div class="ol-dir-av">CG</div>
+              <div class="ol-dir-img-badges">
+                <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
+                <span class="ol-dir-badge-noweb">Sin sitio web</span>
+              </div>
+            </div>
+          </div>
+          <div class="ol-svc-body">
+            <div class="ol-svc-num">19 — Milpa Alta</div>
+            <h2 class="ol-svc-title">Extintores Casa Guajardo</h2>
+            <p class="ol-svc-desc">Protección contra incendios en Milpa Alta y zonas rurales del sur de la CDMX.</p>
+            <ul class="ol-svc-list">
+              <li>1a. Cda. de La Virgen 5, Tecaxtitla</li>
+              <li>Tel. 56 3413 1036</li>
+              <li>5.0 ★ en Google Maps (7 reseñas)</li>
+            </ul>
+            <a href="https://wa.me/525547868402?text=Hola%2C+soy+de+Extintores+Casa+Guajardo+en+Milpa Alta+y+me+interesa+conocer+m%C3%A1s+sobre+un+sitio+web+profesional." target="_blank" rel="noopener noreferrer" class="ol-svc-cta">¿Es tu empresa? →</a>
+          </div>
+        </article>
+
+        <!-- 20 -->
+        <article class="ol-svc-card ol-dir-card" data-tipo="extintor distribucion" data-zona="sur">
+          <div class="ol-svc-img">
+            <div class="ol-dir-img-inner">
+              <div class="ol-dir-av">RV</div>
+              <div class="ol-dir-img-badges">
+                <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
+                <span class="ol-dir-badge-noweb">Sin sitio web</span>
+              </div>
+            </div>
+          </div>
+          <div class="ol-svc-body">
+            <div class="ol-svc-num">20 — Milpa Alta</div>
+            <h2 class="ol-svc-title">Recarga de Extintores y Venta de Equipo Nuevo</h2>
+            <p class="ol-svc-desc">Recarga y venta de equipo nuevo contra incendios en Milpa Alta y zona sur.</p>
+            <ul class="ol-svc-list">
+              <li>Cda. Cráter Tycho MZA9 LT15</li>
+              <li>Tel. 56 4554 2591</li>
+              <li>5.0 ★ en Google Maps (2 reseñas)</li>
+            </ul>
+            <a href="https://wa.me/525547868402?text=Hola%2C+soy+de+Recarga+de+Extintores+y+Venta+de+Equipo+Nuevo+en+Milpa Alta+y+me+interesa+conocer+m%C3%A1s+sobre+un+sitio+web+profesional." target="_blank" rel="noopener noreferrer" class="ol-svc-cta">¿Es tu empresa? →</a>
+          </div>
+        </article>
+
+          </div><!-- /ol-dir-grid -->
+
+          <!-- CALLOUT BANNER -->
+          <div class="ol-dir-callout">
+        <div>
+          <p class="ol-dir-callout-eyebrow">¿Tu empresa aparece aquí?</p>
+          <h2 class="ol-dir-callout-title">Tu negocio ya existe.<br>Solo falta que te encuentren en línea.</h2>
+          <p class="ol-dir-callout-desc">Llevamos más de 6 proyectos en este sector. Sabemos cómo presentar extintores, sistemas de rociadores, equipo NFPA y servicios técnicos para que el comprador profesional llegue directo a ti — sin intermediarios, sin directorios genéricos. Tu sitio, tu marca, tu canal.</p>
+        </div>
+        <div class="ol-dir-callout-actions">
+          <a href="https://wa.me/525547868402?text=Hola%2C%20vi%20el%20directorio%20de%20OrigenLab%20y%20me%20interesa%20un%20sitio%20web%20para%20mi%20empresa%20de%20equipos%20contra%20incendios%20en%20M%C3%A9xico." target="_blank" rel="noopener noreferrer" class="ol-dir-callout-btn ol-dir-callout-btn-primary">
+            Quiero mi sitio web →
+          </a>
+          <a href="/portafolio/equipos-contra-incendios/" class="ol-dir-callout-btn ol-dir-callout-btn-ghost">
+            Ver sitios del sector
+          </a>
+        </div>
+
+        </div>
+
+        </div><!-- /ol-dir-main -->
+
+        <!-- ============ SIDEBAR ============ -->
+        <aside class="ol-dir-sidebar" aria-label="Recursos relacionados">
+
+          <!-- Card 1: Casos del sector -->
+          <div class="ol-dir-sb-card">
+            <span class="ol-dir-sb-label">Casos del sector</span>
+            <ul class="ol-dir-sb-list">
+              <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/">Gama de México</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/meseci/">MESECI</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/">LGA Contraincendios</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/manext/">MANEXT</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/">BOMBERO.MX</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/proyectored/">Proyecto Red</a></li>
+              <li><a href="/portafolio/equipos-contra-incendios/">← Ver sector completo</a></li>
+            </ul>
+          </div>
+
+          <!-- Card 2: Servicios OrigenLab -->
+          <div class="ol-dir-sb-card">
+            <span class="ol-dir-sb-label">Nuestros servicios</span>
+            <ul class="ol-dir-sb-list">
+              <li><a href="/servicios/desarrollo-web/">Desarrollo Web</a></li>
+              <li><a href="/servicios/landing-pages/">Landing Pages</a></li>
+              <li><a href="/servicios/tiendas-en-linea/">Tiendas en Línea</a></li>
+              <li><a href="/servicios/rediseno-web/">Rediseño Web</a></li>
+              <li><a href="/servicios/">Ver todos los servicios →</a></li>
+            </ul>
+          </div>
+
+          <!-- Card 3: Artículos del sector -->
+          <div class="ol-dir-sb-card">
+            <span class="ol-dir-sb-label">Artículos de interés</span>
+            <ul class="ol-dir-sb-list">
+              <li><a href="/blog/5-errores-sitios-web-pymes-mexico/">5 errores de pymes mexicanas en su sitio web</a></li>
+              <li><a href="/blog/landing-page-vs-sitio-corporativo/">¿Landing page o sitio corporativo?</a></li>
+              <li><a href="/blog/por-que-tu-sitio-lento-cuesta-clientes/">Por qué un sitio lento cuesta clientes</a></li>
+              <li><a href="/blog/gama-de-mexico-distribuidor-elkhart-brass/">Gama de México: distribuidor Elkhart Brass</a></li>
+              <li><a href="/blog/catalogo-extintores-rociadores-hidrantes-meseci/">Catálogo MESECI: extintores y rociadores</a></li>
+              <li><a href="/blog/">Ver todos los artículos →</a></li>
+            </ul>
+          </div>
+
+          <!-- Card 4: CTA -->
+          <div class="ol-dir-sb-cta">
+            <span class="ol-dir-sb-cta-eyebrow">¿Tu empresa aquí?</span>
+            <p class="ol-dir-sb-cta-title">Un sitio web que trabaja por ti las 24 horas.</p>
+            <a href="https://wa.me/525547868402?text=Hola%2C%20vi%20el%20directorio%20de%20equipos%20contra%20incendios%20de%20OrigenLab%20y%20me%20interesa%20un%20sitio%20web%20para%20mi%20empresa." target="_blank" rel="noopener noreferrer" class="ol-dir-sb-cta-btn">
+              Cotizar mi sitio →
+            </a>
+          </div>
+
+        </aside><!-- /sidebar -->
+
+      </div><!-- /ol-dir-layout -->
+    </div><!-- /ol-dir-inner -->
+  </section>
+
+    <!-- ============== WHY A WEBSITE ============== -->
+  <section class="ol-dir-why">
+    <div class="ol-dir-why-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Por qué importa tener sitio web</span>
+          <h2 class="ol-section-title">Google Maps es un punto de partida.<br>Un sitio es donde se cierra la venta.</h2>
+          <p class="ol-section-sub">Un perfil en Google Maps da visibilidad básica. Pero cuando el comprador corporativo, el jefe de compras o el responsable de seguridad industrial te busca, espera encontrar algo más.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Las empresas del sector que ya tienen sitio web reciben solicitudes de cotización de compradores que nunca habrían llamado al teléfono que aparece en Google Maps. La diferencia no es el tamaño de la empresa — es si el comprador encuentra suficiente información para confiar en ellos antes de hacer el primer contacto.</p>
+          <p class="ol-sh-copy">Un sitio construido para el sector de protección contra incendios comunica certificaciones, catálogo técnico, cobertura y canales de contacto en un solo lugar. Eso es lo que convierte una visita en una cotización.</p>
+        </div>
+      </div>
+
+      <div class="ol-dir-why-grid">
+        <div class="ol-dir-why-card">
+          <p class="ol-dir-why-num">01</p>
+          <h3 class="ol-dir-why-title">El comprador B2B investiga antes de llamar</h3>
+          <p class="ol-dir-why-desc">Las áreas de compras, seguridad industrial y mantenimiento corporativo no llaman al primer número que encuentran. Buscan, comparan y descartan. Sin sitio, quedas fuera de esa evaluación antes de empezar.</p>
+        </div>
+        <div class="ol-dir-why-card">
+          <p class="ol-dir-why-num">02</p>
+          <h3 class="ol-dir-why-title">Tus certificaciones necesitan un escaparate</h3>
+          <p class="ol-dir-why-desc">NOM-154, NOM-002, NOM-100, distribución NFPA, marcas representadas — estas credenciales valen mucho. Un sitio las presenta con claridad para el especificador técnico que toma la decisión de compra.</p>
+        </div>
+        <div class="ol-dir-why-card">
+          <p class="ol-dir-why-num">03</p>
+          <h3 class="ol-dir-why-title">El formulario es tu vendedor 24 horas</h3>
+          <p class="ol-dir-why-desc">Un formulario de cotización bien diseñado captura leads mientras tu equipo descansa. El comprador completa su solicitud, tú recibes la información y el seguimiento empieza con toda la ventaja de tu lado.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== FAQ ============== -->
+  <section class="ol-faq-section">
+    <div class="ol-faq-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Preguntas frecuentes</span>
+          <h2 class="ol-section-title">¿Cómo funciona<br>el proceso?</h2>
+          <p class="ol-section-sub">Preguntas directas de empresas del sector que arrancaron su sitio con OrigenLab.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">No vendemos paquetes genéricos. Cada sitio del sector fue construido con un proceso de descubrimiento previo: entendemos tu catálogo, tus clientes, tu cobertura y tus diferenciadores antes de tocar el editor.</p>
+          <p class="ol-sh-copy">El resultado es un sitio que suena como tu empresa, muestra lo que vendes con precisión técnica y abre el canal correcto para que el comprador profesional llegue directo a ti.</p>
+        </div>
+      </div>
+
+      <div class="ol-faq-grid">
+        <div>
+          <p class="ol-faq-col-label">Preguntas sobre el proceso</p>
+          <div class="ol-faq-list" id="ol-faq-list-dir">
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="d0">
+                ¿Cuánto tiempo tarda en estar listo mi sitio?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true" focusable="false"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-d0">
+                <p class="ol-faq-answer-inner">Depende del alcance del proyecto: catálogo, número de páginas, integraciones. Lo que sí garantizamos es un calendario comprometido por escrito desde el inicio, con hitos y validaciones claras antes de cada entrega. Sin plazos vagos.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="d1">
+                ¿Pueden manejar mi catálogo de productos?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true" focusable="false"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-d1">
+                <p class="ol-faq-answer-inner">Sí. Tenemos experiencia construyendo catálogos técnicos para empresas del sector: extintores por clase, sistemas de rociadores, mangueras, monitores, equipo NFPA para bomberos y gabinetes. Cada producto con su ficha técnica, certificaciones y aplicaciones.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="d2">
+                ¿El sitio funciona bien en celular?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true" focusable="false"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-d2">
+                <p class="ol-faq-answer-inner">Todos los sitios que construimos son completamente responsivos y optimizados para móvil. El comprador en planta, en almacén o en obra que llega desde su celular tiene la misma experiencia que desde escritorio.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="d3">
+                ¿Puedo actualizar el sitio después de que esté listo?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true" focusable="false"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-d3">
+                <p class="ol-faq-answer-inner">Sí. El sitio queda en tus manos — con capacitación, manual de uso y acceso completo. Para actualizaciones más técnicas (nuevas páginas, integraciones) estamos disponibles con un acuerdo de soporte o de forma puntual según lo que necesites.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="d4">
+                ¿Incluyen formularios de contacto o cotización?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true" focusable="false"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-d4">
+                <p class="ol-faq-answer-inner">Sí. Diseñamos formularios B2B específicos para el sector: cotización de extintores, solicitud de servicio técnico, solicitud de mantenimiento programado, contacto corporativo. Conectados a WhatsApp, correo o tu CRM preferido.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="d5">
+                ¿Cómo inicio el proceso?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true" focusable="false"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-d5">
+                <p class="ol-faq-answer-inner">Escríbenos por WhatsApp o por el formulario de aquí al lado. Te respondemos con una llamada corta de descubrimiento — sin compromiso. Si hay fit, te entregamos una propuesta detallada por escrito con alcance, entregables y calendario.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Formulario WhatsApp -->
+        <div>
+          <div class="ol-faq-form-wrap">
+            <span class="ol-faq-form-badge">
+              <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true" focusable="false"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg>
+              Contáctanos por WhatsApp
+            </span>
+            <h3 class="ol-faq-form-title">¿Tu empresa aparece<br>en este directorio?</h3>
+            <p class="ol-faq-form-sub">Cuéntanos brevemente qué hace tu empresa y te respondemos con una propuesta clara, por escrito y sin compromiso.</p>
+
+            <form class="ol-faq-form" id="ol-wa-form-dir" novalidate>
+              <div class="ol-faq-form-row">
+                <div class="ol-faq-field">
+                  <label for="dir-nombre">Tu nombre</label>
+                  <input type="text" id="dir-nombre" placeholder="Ej. Ramón Torres" autocomplete="given-name">
+                </div>
+                <div class="ol-faq-field">
+                  <label for="dir-empresa">Empresa</label>
+                  <input type="text" id="dir-empresa" placeholder="Nombre de tu empresa">
+                </div>
+              </div>
+              <div class="ol-faq-field">
+                <label for="dir-tipo">¿Qué vende o hace tu empresa?</label>
+                <select id="dir-tipo">
+                  <option value="" disabled selected>Selecciona una opción</option>
+                  <option value="Venta y recarga de extintores">Venta y recarga de extintores</option>
+                  <option value="Mantenimiento y servicios técnicos certificados">Mantenimiento y servicios técnicos certificados</option>
+                  <option value="Instalación de sistemas contra incendio">Instalación de sistemas contra incendio</option>
+                  <option value="Distribución de equipo especializado">Distribución de equipo especializado</option>
+                  <option value="Equipo personal de protección NFPA">Equipo personal de protección NFPA</option>
+                  <option value="Combinación de los anteriores">Combinación de los anteriores</option>
+                </select>
+              </div>
+              <div class="ol-faq-field">
+                <label for="dir-mensaje">¿Algo que quieras que sepamos?</label>
+                <textarea id="dir-mensaje" placeholder="Ej. Llevamos 10 años operando, tenemos clientes corporativos pero ningún canal en línea..."></textarea>
+              </div>
+              <button type="submit" class="ol-faq-submit">
+                <svg width="17" height="17" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true" focusable="false"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg>
+                Enviar por WhatsApp
+              </button>
+              <p class="ol-faq-form-note">Al enviar se abrirá WhatsApp con tu mensaje listo. Respondemos en menos de 24 h.</p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== QUICKNAV BOTTOM ============== -->
+  <div class="ol-quicknav">
+    <div class="ol-quicknav-inner">
+      <a href="/portafolio/equipos-contra-incendios/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Casos del Sector</span>
+          <span class="ol-qn-sub">6 proyectos en operación</span>
+        </div>
+      </a>
+      <a href="/portafolio/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Todo el Portafolio</span>
+          <span class="ol-qn-sub">Más casos por sector</span>
+        </div>
+      </a>
+      <a href="/servicios/desarrollo-web/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Sitios Corporativos</span>
+          <span class="ol-qn-sub">Diseño a medida</span>
+        </div>
+      </a>
+      <a href="/servicios/tiendas-en-linea/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Tienda en Línea</span>
+          <span class="ol-qn-sub">E-commerce profesional</span>
+        </div>
+      </a>
+      <a href="/contacto/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Contacto</span>
+          <span class="ol-qn-sub">Escríbenos directo</span>
+        </div>
+      </a>
+      <a href="/nosotros/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Nosotros</span>
+          <span class="ol-qn-sub">Quiénes somos</span>
+        </div>
+      </a>
+      <a href="/cotizar/" class="ol-qn-item ol-qn-cta">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Iniciar Proyecto</span>
+          <span class="ol-qn-sub">Solicitar propuesta</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="ol-footer">
+  <div class="ol-footer-top">
+    <a href="/" class="ol-footer-logo">Origen<span class="ol-footer-logo-dot">.</span>Lab</a>
+    <p class="ol-footer-tagline">Agencia de desarrollo web en México.<br>Creamos sitios que generan resultados.</p>
+    <ul class="ol-footer-contact-list">
+      <li><a href="mailto:hola@origenlab.mx" class="ol-fcl-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>hola@origenlab.mx</a></li>
+      <li><a href="tel:+525547868402" class="ol-fcl-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+52 55 4786 8402</a></li>
+      <li><a href="https://wa.me/525547868402" target="_blank" rel="noopener noreferrer" class="ol-fcl-item ol-fcl-wa"><svg width="14" height="14" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true" focusable="false"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg>WhatsApp</a></li>
+      <li><span class="ol-fcl-item ol-fcl-static"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Ciudad de México, MX</span></li>
+    </ul>
+  </div>
+  <div class="ol-footer-links">
+    <div>
+      <p class="ol-footer-col-title">Servicios</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/servicios/desarrollo-web/">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/">Rediseño Web</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Empresa</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/nosotros/">Nosotros</a></li>
+        <li><a href="/portafolio/">Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/">Equipos Contra Incendios</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Contacto</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/contacto/">Formulario de contacto</a></li>
+        <li><a href="mailto:hola@origenlab.mx">hola@origenlab.mx</a></li>
+        <li><a href="tel:+525547868402">+52 55 4786 8402</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Legal</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/aviso-de-privacidad/">Aviso de privacidad</a></li>
+        <li><a href="/terminos/">Términos de servicio</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ol-footer-bottom">
+    <p class="ol-footer-copy">© 2026 OrigenLab. Todos los derechos reservados.</p>
+    <div class="ol-footer-legal">
+      <a href="/aviso-de-privacidad/">Privacidad</a>
+      <a href="/terminos/">Términos</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WA Bubble -->
+<a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20sitio%20web%20para%20mi%20empresa%20de%20equipos%20contra%20incendios%20en%20M%C3%A9xico." target="_blank" rel="noopener noreferrer" class="wa-bubble" aria-label="Contáctanos por WhatsApp">
+  <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff" aria-hidden="true" focusable="false"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 0 0 2.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0 0 16.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"></path></svg>
+</a>
+
+<!-- ============================================================
+     SCRIPTS — filtros + FAQ + WA form + header móvil
+     ============================================================ -->
+<script>
+(function () {
+  /* ---- FILTERS ---- */
+  var cards = Array.from(document.querySelectorAll('#js-dir-grid .ol-svc-card'));
+  var tipoChips = document.querySelectorAll('#js-tipo-chips .ol-dir-chip');
+  var zonaChips = document.querySelectorAll('#js-zona-chips .ol-dir-chip');
+  var countBadge = document.getElementById('js-visible-count');
+  var emptyEl = document.getElementById('js-empty');
+
+  var activeTipo = 'todos';
+  var activeZona = 'todas';
+
+  function applyFilters() {
+    var visible = 0;
+    cards.forEach(function (card) {
+      var tipoData = card.getAttribute('data-tipo') || '';
+      var zonaData = card.getAttribute('data-zona') || '';
+      var tipoOk = activeTipo === 'todos' || tipoData.includes(activeTipo);
+      var zonaOk = activeZona === 'todas' || zonaData === activeZona;
+      if (tipoOk && zonaOk) {
+        card.classList.remove('hidden');
+        visible++;
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+    countBadge.textContent = visible;
+    emptyEl.classList.toggle('visible', visible === 0);
+  }
+
+  tipoChips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      tipoChips.forEach(function (c) { c.classList.remove('active'); });
+      chip.classList.add('active');
+      activeTipo = chip.getAttribute('data-tipo');
+      applyFilters();
+    });
+  });
+
+  zonaChips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      zonaChips.forEach(function (c) { c.classList.remove('active'); });
+      chip.classList.add('active');
+      activeZona = chip.getAttribute('data-zona');
+      applyFilters();
+    });
+  });
+
+  /* ---- FAQ ---- */
+  var faqBtns = document.querySelectorAll('#ol-faq-list-dir .ol-faq-question');
+  faqBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var idx = btn.getAttribute('data-faq');
+      var answer = document.getElementById('faq-ans-' + idx);
+      var isOpen = btn.classList.contains('active');
+      faqBtns.forEach(function (b) {
+        b.classList.remove('active');
+        var a = document.getElementById('faq-ans-' + b.getAttribute('data-faq'));
+        if (a) a.style.maxHeight = null;
+      });
+      if (!isOpen && answer) {
+        btn.classList.add('active');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    });
+  });
+
+  /* ---- WA FORM ---- */
+  document.getElementById('ol-wa-form-dir').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var nombre  = document.getElementById('dir-nombre').value.trim();
+    var empresa = document.getElementById('dir-empresa').value.trim();
+    var tipo    = document.getElementById('dir-tipo').value;
+    var mensaje = document.getElementById('dir-mensaje').value.trim();
+    var partes  = ['Hola OrigenLab, vi el directorio de empresas de equipos contra incendios en México.'];
+    if (nombre)  partes.push('*Nombre:* ' + nombre);
+    if (empresa) partes.push('*Empresa:* ' + empresa);
+    if (tipo)    partes.push('*Giro:* ' + tipo);
+    if (mensaje) partes.push('*Comentario:* ' + mensaje);
+    partes.push('Me gustaría saber más sobre tener mi sitio web. ¡Gracias!');
+    var url = 'https://wa.me/525547868402?text=' + encodeURIComponent(partes.join('\n'));
+    window.open(url, '_blank', 'noopener,noreferrer');
+  });
+
+})();
+</script>
+
+</body>
+</html>
