@@ -207,37 +207,37 @@
       background: radial-gradient(ellipse at 40% 40%, rgba(192,57,43,0.1) 0%, transparent 60%);
     }
 
-    /* ---- Área de imagen del directorio ---- */
-    .ol-dir-img-inner {
+    /* ---- Foto real en card de directorio ---- */
+    .ol-dir-photo {
       position: absolute;
       inset: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-      z-index: 2;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.45s ease;
     }
-    .ol-dir-av {
-      width: 54px;
-      height: 54px;
-      border-radius: 12px;
-      background: rgba(192,57,43,0.12);
-      border: 1px solid rgba(192,57,43,0.32);
+    .ol-svc-card:hover .ol-dir-photo {
+      transform: scale(1.04);
+    }
+    .ol-dir-img-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 0.65rem 0.8rem;
+      background: linear-gradient(to top, rgba(5,5,12,0.72) 0%, transparent 100%);
       display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 15px;
-      font-weight: 800;
-      color: #D94030;
-      letter-spacing: -0.02em;
+      align-items: flex-end;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      z-index: 3;
     }
     .ol-dir-img-badges {
       display: flex;
       align-items: center;
       gap: 0.45rem;
       flex-wrap: wrap;
-      justify-content: center;
     }
 
     /* ---- Status badges (reutilizados en imagen y donde sea) ---- */
@@ -764,8 +764,8 @@
         <!-- 01 -->
         <article class="ol-svc-card ol-dir-card" data-tipo="extintor mantenimiento" data-zona="norte">
           <div class="ol-svc-img">
-            <div class="ol-dir-img-inner">
-              <div class="ol-dir-av">ES</div>
+            <img src="/portafolio/equipos-contra-incendios/directorio/equipos-y-servicios-mf/img/equipos-servicios-mf-capacitacion-uso-extintor-01.avif" alt="Capacitación uso de extintor, EQUIPOS Y SERVICIOS MF, Gustavo A. Madero CDMX" loading="lazy" class="ol-dir-photo">
+            <div class="ol-dir-img-overlay">
               <div class="ol-dir-img-badges">
                 <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
                 <span class="ol-dir-badge-noweb">Sin sitio web</span>
@@ -788,8 +788,8 @@
         <!-- 02 -->
         <article class="ol-svc-card ol-dir-card" data-tipo="extintor mantenimiento" data-zona="oriente">
           <div class="ol-svc-img">
-            <div class="ol-dir-img-inner">
-              <div class="ol-dir-av">RE</div>
+            <img src="/portafolio/equipos-contra-incendios/directorio/recarga-de-extintores-iztapalapa/img/recarga-extintores-iztapalapa-servicio-extintor-01.avif" alt="Servicio de recarga de extintores en Iztapalapa CDMX" loading="lazy" class="ol-dir-photo">
+            <div class="ol-dir-img-overlay">
               <div class="ol-dir-img-badges">
                 <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
                 <span class="ol-dir-badge-noweb">Sin sitio web</span>
@@ -812,8 +812,8 @@
         <!-- 03 -->
         <article class="ol-svc-card ol-dir-card" data-tipo="extintor distribucion" data-zona="oriente">
           <div class="ol-svc-img">
-            <div class="ol-dir-img-inner">
-              <div class="ol-dir-av">EA</div>
+            <img src="/portafolio/equipos-contra-incendios/directorio/extintores-aztahuacan/img/extintores-aztahuacan-iztapalapa-fachada-local-01.avif" alt="Fachada local Extintores Aztahuacan, Iztapalapa CDMX" loading="lazy" class="ol-dir-photo">
+            <div class="ol-dir-img-overlay">
               <div class="ol-dir-img-badges">
                 <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
                 <span class="ol-dir-badge-noweb">Sin sitio web</span>
@@ -836,8 +836,8 @@
         <!-- 04 -->
         <article class="ol-svc-card ol-dir-card" data-tipo="extintor distribucion" data-zona="norte">
           <div class="ol-svc-img">
-            <div class="ol-dir-img-inner">
-              <div class="ol-dir-av">GB</div>
+            <img src="/portafolio/equipos-contra-incendios/directorio/grupo-bam-extintores/img/grupo-bam-extintores-venta-extintor-cdmx-01.avif" alt="Venta de extintores Grupo BAM, Gustavo A. Madero CDMX" loading="lazy" class="ol-dir-photo">
+            <div class="ol-dir-img-overlay">
               <div class="ol-dir-img-badges">
                 <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
                 <span class="ol-dir-badge-noweb">Sin sitio web</span>
@@ -860,8 +860,8 @@
         <!-- 05 -->
         <article class="ol-svc-card ol-dir-card" data-tipo="extintor mantenimiento" data-zona="norte">
           <div class="ol-svc-img">
-            <div class="ol-dir-img-inner">
-              <div class="ol-dir-av">EP</div>
+            <img src="/portafolio/equipos-contra-incendios/directorio/extintores-plasa/img/extintores-plasa-venta-extintor-cdmx-01.avif" alt="Extintores Plasa, venta de extintores en CDMX" loading="lazy" class="ol-dir-photo">
+            <div class="ol-dir-img-overlay">
               <div class="ol-dir-img-badges">
                 <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
                 <span class="ol-dir-badge-noweb">Sin sitio web</span>
@@ -884,8 +884,8 @@
         <!-- 06 -->
         <article class="ol-svc-card ol-dir-card" data-tipo="extintor mantenimiento" data-zona="norte">
           <div class="ol-svc-img">
-            <div class="ol-dir-img-inner">
-              <div class="ol-dir-av">EM</div>
+            <img src="/portafolio/equipos-contra-incendios/directorio/extintores-emmvira/img/extintores-emmvira-venta-extintor-cdmx-01.avif" alt="Extintores Emmvira, venta y recarga, Gustavo A. Madero CDMX" loading="lazy" class="ol-dir-photo">
+            <div class="ol-dir-img-overlay">
               <div class="ol-dir-img-badges">
                 <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
                 <span class="ol-dir-badge-noweb">Sin sitio web</span>
@@ -908,8 +908,8 @@
         <!-- 07 -->
         <article class="ol-svc-card ol-dir-card" data-tipo="extintor sistemas" data-zona="norte">
           <div class="ol-svc-img">
-            <div class="ol-dir-img-inner">
-              <div class="ol-dir-av">MO</div>
+            <img src="/portafolio/equipos-contra-incendios/directorio/monyza-equipos-contra-incendio/img/monyza-equipos-contra-incendio-local-cdmx-01.avif" alt="Local MONYZA Equipos Contra Incendio, Azcapotzalco CDMX" loading="lazy" class="ol-dir-photo">
+            <div class="ol-dir-img-overlay">
               <div class="ol-dir-img-badges">
                 <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
                 <span class="ol-dir-badge-noweb">Sin sitio web</span>
@@ -932,8 +932,8 @@
         <!-- 08 -->
         <article class="ol-svc-card ol-dir-card" data-tipo="extintor mantenimiento" data-zona="norte">
           <div class="ol-svc-img">
-            <div class="ol-dir-img-inner">
-              <div class="ol-dir-av">EK</div>
+            <img src="/portafolio/equipos-contra-incendios/directorio/extintores-corona/img/extintores-corona-azcapotzalco-ubicacion-local-01.avif" alt="Extintores Corona, local Azcapotzalco CDMX" loading="lazy" class="ol-dir-photo">
+            <div class="ol-dir-img-overlay">
               <div class="ol-dir-img-badges">
                 <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
                 <span class="ol-dir-badge-noweb">Sin sitio web</span>
@@ -956,8 +956,8 @@
         <!-- 09 -->
         <article class="ol-svc-card ol-dir-card" data-tipo="extintor distribucion" data-zona="sur">
           <div class="ol-svc-img">
-            <div class="ol-dir-img-inner">
-              <div class="ol-dir-av">CM</div>
+            <img src="/portafolio/equipos-contra-incendios/directorio/central-mexicana-de-extinguidores/img/central-mexicana-extinguidores-cinta-peligro-01.avif" alt="Central Mexicana de Extinguidores, Xochimilco CDMX" loading="lazy" class="ol-dir-photo">
+            <div class="ol-dir-img-overlay">
               <div class="ol-dir-img-badges">
                 <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
                 <span class="ol-dir-badge-noweb">Sin sitio web</span>
@@ -980,8 +980,8 @@
         <!-- 10 -->
         <article class="ol-svc-card ol-dir-card" data-tipo="extintor mantenimiento" data-zona="sur">
           <div class="ol-svc-img">
-            <div class="ol-dir-img-inner">
-              <div class="ol-dir-av">EL</div>
+            <img src="/portafolio/equipos-contra-incendios/directorio/extinguidores-leon/img/extinguidores-leon-tlalpan-extintores-almacen-01.avif" alt="Almacén de extinguidores, Extinguidores León, Tlalpan CDMX" loading="lazy" class="ol-dir-photo">
+            <div class="ol-dir-img-overlay">
               <div class="ol-dir-img-badges">
                 <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
                 <span class="ol-dir-badge-noweb">Sin sitio web</span>
@@ -1004,8 +1004,8 @@
         <!-- 11 -->
         <article class="ol-svc-card ol-dir-card" data-tipo="extintor mantenimiento" data-zona="sur">
           <div class="ol-svc-img">
-            <div class="ol-dir-img-inner">
-              <div class="ol-dir-av">TE</div>
+            <img src="/portafolio/equipos-contra-incendios/directorio/todo-en-extintores/img/todo-en-extintores-venta-extintor-cdmx-01.avif" alt="Todo en Extintores, venta y recarga, zona sur CDMX" loading="lazy" class="ol-dir-photo">
+            <div class="ol-dir-img-overlay">
               <div class="ol-dir-img-badges">
                 <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
                 <span class="ol-dir-badge-noweb">Sin sitio web</span>
@@ -1028,8 +1028,8 @@
         <!-- 12 -->
         <article class="ol-svc-card ol-dir-card" data-tipo="extintor sistemas" data-zona="sur">
           <div class="ol-svc-img">
-            <div class="ol-dir-img-inner">
-              <div class="ol-dir-av">CY</div>
+            <img src="/portafolio/equipos-contra-incendios/directorio/caybe-extintores-y-sistemas-ci/img/caybe-extintores-xochimilco-fachada-01.avif" alt="Fachada Caybe Extintores y Sistemas CI, Xochimilco CDMX" loading="lazy" class="ol-dir-photo">
+            <div class="ol-dir-img-overlay">
               <div class="ol-dir-img-badges">
                 <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
                 <span class="ol-dir-badge-noweb">Sin sitio web</span>
@@ -1052,8 +1052,8 @@
         <!-- 13 -->
         <article class="ol-svc-card ol-dir-card" data-tipo="extintor mantenimiento" data-zona="poniente">
           <div class="ol-svc-img">
-            <div class="ol-dir-img-inner">
-              <div class="ol-dir-av">EO</div>
+            <img src="/portafolio/equipos-contra-incendios/directorio/extintores-omega/img/extintores-omega-venta-recarga-extintor-01.avif" alt="Extintores Omega, venta y recarga, Álvaro Obregón CDMX" loading="lazy" class="ol-dir-photo">
+            <div class="ol-dir-img-overlay">
               <div class="ol-dir-img-badges">
                 <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
                 <span class="ol-dir-badge-noweb">Sin sitio web</span>
@@ -1076,8 +1076,8 @@
         <!-- 14 -->
         <article class="ol-svc-card ol-dir-card" data-tipo="sistemas extintor" data-zona="centro">
           <div class="ol-svc-img">
-            <div class="ol-dir-img-inner">
-              <div class="ol-dir-av">MF</div>
+            <img src="/portafolio/equipos-contra-incendios/directorio/multifire-systems/img/multifire-systems-equipo-contra-incendio-cdmx-01.avif" alt="Multifire Systems equipo contra incendio, Centro Histórico CDMX" loading="lazy" class="ol-dir-photo">
+            <div class="ol-dir-img-overlay">
               <div class="ol-dir-img-badges">
                 <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
                 <span class="ol-dir-badge-noweb">Sin sitio web</span>
@@ -1100,8 +1100,8 @@
         <!-- 15 -->
         <article class="ol-svc-card ol-dir-card" data-tipo="extintor mantenimiento" data-zona="oriente">
           <div class="ol-svc-img">
-            <div class="ol-dir-img-inner">
-              <div class="ol-dir-av">EC</div>
+            <img src="/portafolio/equipos-contra-incendios/directorio/extintores-ecoin/img/extintores-ecoin-iztacalco-extintores-recarga-01.avif" alt="Extintores Ecoín, recarga y mantenimiento, Iztacalco CDMX" loading="lazy" class="ol-dir-photo">
+            <div class="ol-dir-img-overlay">
               <div class="ol-dir-img-badges">
                 <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
                 <span class="ol-dir-badge-noweb">Sin sitio web</span>
@@ -1124,8 +1124,8 @@
         <!-- 16 -->
         <article class="ol-svc-card ol-dir-card" data-tipo="extintor mantenimiento" data-zona="oriente">
           <div class="ol-svc-img">
-            <div class="ol-dir-img-inner">
-              <div class="ol-dir-av">OL</div>
+            <img src="/portafolio/equipos-contra-incendios/directorio/extintores-olivos/img/extintores-olivos-tlahuac-local-fachada-01.avif" alt="Extintores Olivos, local Tláhuac CDMX" loading="lazy" class="ol-dir-photo">
+            <div class="ol-dir-img-overlay">
               <div class="ol-dir-img-badges">
                 <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
                 <span class="ol-dir-badge-noweb">Sin sitio web</span>
@@ -1148,8 +1148,8 @@
         <!-- 17 -->
         <article class="ol-svc-card ol-dir-card" data-tipo="extintor mantenimiento" data-zona="oriente">
           <div class="ol-svc-img">
-            <div class="ol-dir-img-inner">
-              <div class="ol-dir-av">AL</div>
+            <img src="/portafolio/equipos-contra-incendios/directorio/alvifire/img/alvifire-extintores-iztacalco-fachada-01.avif" alt="ALVIFIRE seguridad contra incendios, Iztacalco CDMX" loading="lazy" class="ol-dir-photo">
+            <div class="ol-dir-img-overlay">
               <div class="ol-dir-img-badges">
                 <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
                 <span class="ol-dir-badge-noweb">Sin sitio web</span>
@@ -1172,8 +1172,8 @@
         <!-- 18 -->
         <article class="ol-svc-card ol-dir-card" data-tipo="extintor mantenimiento" data-zona="oriente">
           <div class="ol-svc-img">
-            <div class="ol-dir-img-inner">
-              <div class="ol-dir-av">CU</div>
+            <img src="/portafolio/equipos-contra-incendios/directorio/extintores-cuauhtemoc/img/extintores-cuauhtemoc-iztapalapa-polvo-quimico-01.avif" alt="Extintores Cuauhtémoc, polvo químico, Iztapalapa CDMX" loading="lazy" class="ol-dir-photo">
+            <div class="ol-dir-img-overlay">
               <div class="ol-dir-img-badges">
                 <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
                 <span class="ol-dir-badge-noweb">Sin sitio web</span>
@@ -1196,8 +1196,8 @@
         <!-- 19 -->
         <article class="ol-svc-card ol-dir-card" data-tipo="extintor mantenimiento" data-zona="sur">
           <div class="ol-svc-img">
-            <div class="ol-dir-img-inner">
-              <div class="ol-dir-av">CG</div>
+            <img src="/portafolio/equipos-contra-incendios/directorio/extintores-casa-guajardo/img/extintores-casa-guajardo-milpa-alta-producto-01.avif" alt="Extintores Casa Guajardo, productos contra incendio, Milpa Alta CDMX" loading="lazy" class="ol-dir-photo">
+            <div class="ol-dir-img-overlay">
               <div class="ol-dir-img-badges">
                 <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
                 <span class="ol-dir-badge-noweb">Sin sitio web</span>
@@ -1220,8 +1220,8 @@
         <!-- 20 -->
         <article class="ol-svc-card ol-dir-card" data-tipo="extintor distribucion" data-zona="sur">
           <div class="ol-svc-img">
-            <div class="ol-dir-img-inner">
-              <div class="ol-dir-av">RV</div>
+            <img src="/portafolio/equipos-contra-incendios/directorio/recarga-extintores-milpa-alta/img/recarga-extintores-milpa-alta-venta-extintor-01.avif" alt="Recarga de Extintores y Venta de Equipo Nuevo, Milpa Alta CDMX" loading="lazy" class="ol-dir-photo">
+            <div class="ol-dir-img-overlay">
               <div class="ol-dir-img-badges">
                 <span class="ol-dir-badge-maps"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Maps</span>
                 <span class="ol-dir-badge-noweb">Sin sitio web</span>
