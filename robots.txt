@@ -61,4 +61,4 @@ Disallow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://origenlab.mx/sitemap.xml
+Sitemap: https://origenlab.com/sitemap.xml
