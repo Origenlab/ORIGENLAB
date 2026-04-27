@@ -4653,9 +4653,9 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 
 /* Imágenes en bloque */
 .ol-case-figure { margin: 2rem 0 0; }
-.ol-case-figure-frame { background: #0A0A12; border: 1px solid var(--case-accent-line, rgba(201,168,76,0.18)); border-radius: 12px; overflow: hidden; }
+.ol-case-figure-frame { background: #0A0A12; border: 1px solid var(--case-accent-line, rgba(201,168,76,0.18)); border-radius: 10px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.35); }
 .ol-case-figure-frame img { width: 100%; height: auto; display: block; object-fit: cover; }
-.ol-case-figure-caption { font-size: 12.5px; color: rgba(240,240,245,0.45); margin: 0.85rem 0 0; line-height: 1.55; font-style: italic; }
+.ol-case-figure-caption { font-size: 11.5px; font-weight: 500; letter-spacing: .03em; color: rgba(240,240,245,0.5); margin: 0.6rem 0 0; line-height: 1.5; padding-left: .1rem; }
 
 /* Cards de highlight */
 .ol-case-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 1.5rem; }
