@@ -783,7 +783,8 @@ body { padding-top: calc(42px + 88px) !important; }
   background: #08080E;
   position: relative;
   overflow: hidden;
-  min-height: 88vh;
+  min-height: auto;
+  padding: 5.5rem 0 5rem;
   display: flex;
   align-items: center;
 }

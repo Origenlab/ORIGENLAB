@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipos y Servicios MF — Extintores en Gustavo A. Madero, CDMX | Directorio OrigenLab</title>
+  <meta name="description" content="Perfil de Equipos y Servicios MF, empresa de venta y mantenimiento de extintores certificados en la zona norte de la Ciudad de México, Gustavo A. Madero. 4.8 estrellas en Google Maps.">
+  <link rel="canonical" href="https://origenlab.mx/portafolio/equipos-contra-incendios/directorio/equipos-y-servicios-mf/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://origenlab.mx/portafolio/equipos-contra-incendios/directorio/equipos-y-servicios-mf/">
+  <meta property="og:title" content="Equipos y Servicios MF — Extintores en Gustavo A. Madero, CDMX">
+  <meta property="og:description" content="Empresa especializada en venta y mantenimiento de extintores certificados en la zona norte de CDMX. 4.8 ★ en Google Maps. Sin sitio web propio.">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="OrigenLab">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Equipos y Servicios MF — Extintores GAM, CDMX">
+  <meta name="twitter:description" content="Empresa de extintores certificados en Gustavo A. Madero. 4.8 ★ en Google Maps. Sin sitio web propio.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../../../../favicon.svg">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../../../_astro/BaseLayout.xeR8R953.css?v20260426g">
+  <link rel="stylesheet" href="../../../../_astro/premium-dark.css?v20260426g">
+  <script src="../../../../_astro/ol-header.js?v20260426g" defer></script>
+
+  <style>
+    /* ============================================================
+       PERFIL DE EMPRESA — EQUIPOS Y SERVICIOS MF
+       Acento: rojo industrial #C0392B (sector contra incendios).
+       Solo overrides de acento — componentes en premium-dark.css.
+       ============================================================ */
+    :root {
+      --case-accent: #C0392B;
+      --case-accent-soft: rgba(192,57,43,0.12);
+      --case-accent-line: rgba(192,57,43,0.28);
+    }
+    .hero { --hero-accent: var(--case-accent); --hero-accent-soft: var(--case-accent-soft); --hero-accent-line: var(--case-accent-line); }
+    .hero::before { background: radial-gradient(ellipse at center, rgba(192,57,43,0.08) 0%, transparent 65%); }
+
+    /* Badges de perfil en el hero */
+    .ol-prof-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      margin-top: 1.25rem;
+    }
+    .ol-prof-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .35rem;
+      padding: .3rem .7rem;
+      border-radius: 4px;
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .03em;
+      text-transform: uppercase;
+    }
+    .ol-prof-badge--maps {
+      background: rgba(52,168,83,0.15);
+      color: #34a853;
+      border: 1px solid rgba(52,168,83,0.3);
+    }
+    .ol-prof-badge--noweb {
+      background: rgba(192,57,43,0.13);
+      color: #e05c4a;
+      border: 1px solid rgba(192,57,43,0.3);
+    }
+    .ol-prof-badge--rating {
+      background: rgba(251,188,4,0.13);
+      color: #e8a800;
+      border: 1px solid rgba(251,188,4,0.3);
+    }
+    .ol-prof-badge--zone {
+      background: rgba(255,255,255,0.06);
+      color: rgba(255,255,255,0.6);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+
+    /* Alerta de oportunidad digital en el body */
+    .ol-prof-alert {
+      display: flex;
+      gap: 1rem;
+      padding: 1.25rem 1.5rem;
+      background: rgba(192,57,43,0.09);
+      border: 1px solid rgba(192,57,43,0.25);
+      border-left: 3px solid #C0392B;
+      border-radius: 6px;
+      margin: 1.5rem 0 2rem;
+    }
+    .ol-prof-alert-icon {
+      flex-shrink: 0;
+      color: #C0392B;
+      margin-top: .1rem;
+    }
+    .ol-prof-alert-body {
+      flex: 1;
+    }
+    .ol-prof-alert-title {
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: #C0392B;
+      margin: 0 0 .35rem;
+    }
+    .ol-prof-alert-text {
+      font-size: .92rem;
+      color: rgba(255,255,255,0.72);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    /* Stat row */
+    .ol-prof-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(255,255,255,0.07);
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 2rem 0;
+    }
+    .ol-prof-stat {
+      background: rgba(255,255,255,0.03);
+      padding: 1.25rem 1rem;
+      text-align: center;
+    }
+    .ol-prof-stat-num {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1;
+      margin-bottom: .3rem;
+    }
+    .ol-prof-stat-num span {
+      color: var(--case-accent);
+    }
+    .ol-prof-stat-label {
+      font-size: .72rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.45);
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+
+    /* Info grid */
+    .ol-prof-info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    @media (max-width: 560px) {
+      .ol-prof-info-grid { grid-template-columns: 1fr; }
+      .ol-prof-stats { grid-template-columns: 1fr; }
+    }
+    .ol-prof-info-item {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 6px;
+      padding: 1rem 1.1rem;
+    }
+    .ol-prof-info-label {
+      font-size: .68rem;
+      font-weight: 600;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: .35rem;
+    }
+    .ol-prof-info-value {
+      font-size: .9rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.4;
+    }
+
+    /* Oportunidad steps */
+    .ol-prof-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .ol-prof-step {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .ol-prof-step-num {
+      flex-shrink: 0;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background: var(--case-accent-soft);
+      border: 1px solid var(--case-accent-line);
+      color: var(--case-accent);
+      font-size: .75rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ol-prof-step-content h4 {
+      font-size: .9rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.9);
+      margin: 0 0 .25rem;
+    }
+    .ol-prof-step-content p {
+      font-size: .88rem;
+      color: rgba(255,255,255,0.55);
+      margin: 0;
+      line-height: 1.55;
+    }
+
+    /* Sidebar: brecha digital badge */
+    .ol-side-gap-badge {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .6rem .85rem;
+      background: rgba(192,57,43,0.1);
+      border: 1px solid rgba(192,57,43,0.25);
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+    .ol-side-gap-badge svg { flex-shrink: 0; color: #C0392B; }
+    .ol-side-gap-badge span {
+      font-size: .72rem;
+      font-weight: 600;
+      color: #e05c4a;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    /* Sidebar opportunity score */
+    .ol-side-score {
+      margin: .75rem 0 .5rem;
+    }
+    .ol-side-score-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: .72rem;
+      color: rgba(255,255,255,0.45);
+      margin-bottom: .4rem;
+    }
+    .ol-side-score-label strong { color: rgba(255,255,255,0.8); font-weight: 700; }
+    .ol-side-score-bar {
+      height: 5px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .ol-side-score-fill {
+      height: 100%;
+      border-radius: 3px;
+      background: var(--case-accent);
+    }
+  </style>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.mx/#organization","name":"OrigenLab","url":"https://origenlab.mx","logo":"https://origenlab.mx/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"}},{"@type":"WebSite","@id":"https://origenlab.mx/#website","url":"https://origenlab.mx/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.mx/#organization"}},{"@type":"BreadcrumbList","@id":"https://origenlab.mx/portafolio/equipos-contra-incendios/directorio/equipos-y-servicios-mf/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.mx/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.mx/portafolio/"},{"@type":"ListItem","position":3,"name":"Equipos Contra Incendios","item":"https://origenlab.mx/portafolio/equipos-contra-incendios/"},{"@type":"ListItem","position":4,"name":"Directorio","item":"https://origenlab.mx/portafolio/equipos-contra-incendios/directorio/"},{"@type":"ListItem","position":5,"name":"Equipos y Servicios MF","item":"https://origenlab.mx/portafolio/equipos-contra-incendios/directorio/equipos-y-servicios-mf/"}]},{"@type":"LocalBusiness","@id":"https://origenlab.mx/portafolio/equipos-contra-incendios/directorio/equipos-y-servicios-mf/#business","name":"Equipos y Servicios MF","description":"Empresa especializada en venta y mantenimiento de extintores certificados en la zona norte de la Ciudad de México, Gustavo A. Madero.","address":{"@type":"PostalAddress","streetAddress":"Eduardo Molina 4715","addressLocality":"Gustavo A. Madero","addressRegion":"Ciudad de México","addressCountry":"MX"},"telephone":"+525553318307","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"13","bestRating":"5"},"areaServed":{"@type":"City","name":"Ciudad de México"},"knowsAbout":["Extintores","Mantenimiento de extintores","Recarga de extintores","Equipos contra incendios","Norma NOM-154","Zona norte CDMX"]}]}</script>
+</head>
+<body>
+
+<a class="ol-skip-link" href="#main">Saltar al contenido</a>
+
+<div class="ol-topbar">
+  <div class="ol-topbar-inner">
+    <div class="ol-topbar-left">
+      <a href="mailto:hola@origenlab.mx" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        hola@origenlab.mx
+      </a>
+      <span class="ol-topbar-sep"></span>
+      <a href="tel:+525547868402" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        +52 55 4786 8402
+      </a>
+    </div>
+    <div class="ol-topbar-center">
+      <span class="ol-topbar-promo">
+        <span class="ol-topbar-dot"></span>
+        Atención personalizada  ·  Ciudad de México
+      </span>
+    </div>
+    <div class="ol-topbar-right">
+      <a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web" target="_blank" rel="noopener noreferrer" class="ol-topbar-wa">
+        <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor">
+          <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+<header class="ol-header" id="ol-header">
+  <div class="ol-header-inner">
+    <a href="/" class="ol-header-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
+    </a>
+    <nav class="ol-nav" aria-label="Navegación principal">
+      <ul class="ol-nav-list">
+        <li><a href="/" class="ol-nav-link">Inicio</a></li>
+        <li class="ol-has-dropdown">
+          <a href="/servicios/" class="ol-nav-link">
+            Servicios
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/servicios/desarrollo-web/" class="ol-dropdown-link">Desarrollo Web</a></li>
+              <li><a href="/servicios/tiendas-en-linea/" class="ol-dropdown-link">Tiendas en Línea</a></li>
+              <li><a href="/servicios/landing-pages/" class="ol-dropdown-link">Landing Pages</a></li>
+              <li><a href="/servicios/rediseno-web/" class="ol-dropdown-link">Rediseño Web</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="ol-has-dropdown">
+          <a href="/portafolio/" class="ol-nav-link active">
+            Portafolio
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a></li>
+              <li class="ol-has-subdrop">
+                <a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link ol-dropdown-parent">Equipos Contra Incendios</a>
+                <div class="ol-subdrop">
+                  <ul>
+                    <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link">Gama de México</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link">MESECI</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link">LGA Contraincendios</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-dropdown-link">MANEXT</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-dropdown-link">BOMBERO.MX</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-dropdown-link">ProyectoRed</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/directorio/" class="ol-dropdown-link">Directorio México</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="/nosotros/" class="ol-nav-link">Nosotros</a></li>
+        <li><a href="/blog/" class="ol-nav-link">Blog</a></li>
+        <li><a href="/contacto/" class="ol-nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="/cotizar/" class="ol-header-cta">Cotizar proyecto →</a>
+    <button class="ol-menu-toggle" id="ol-menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+    </button>
+  </div>
+</header>
+<div class="ol-mobile-overlay" id="ol-mobile-overlay"></div>
+<nav class="ol-mobile-panel" id="ol-mobile-panel" aria-label="Menú móvil">
+  <div class="ol-mobile-header">
+    <a href="/" class="ol-mobile-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
+    </a>
+    <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú">
+      <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <ul class="ol-mobile-nav">
+    <li><a href="/" class="ol-mobile-link">Inicio</a></li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Servicios</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/servicios/desarrollo-web/" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Portafolio</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/portafolio/" class="ol-mobile-link ol-mobile-sublink">Todo el Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/" class="ol-mobile-link ol-mobile-sublink">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/directorio/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Directorio México</a></li>
+      </ul>
+    </li>
+    <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
+    <li><a href="/blog/" class="ol-mobile-link">Blog</a></li>
+    <li><a href="/contacto/" class="ol-mobile-link">Contacto</a></li>
+  </ul>
+  <div class="ol-mobile-footer">
+    <a href="/cotizar/" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a>
+  </div>
+</nav>
+
+<!-- ============================================================
+     BREADCRUMB
+     ============================================================ -->
+<nav class="ol-bc-wrap" aria-label="Migas de pan">
+  <div class="ol-bc">
+    <ol class="ol-bc-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/" itemprop="item" class="ol-bc-home"><span itemprop="name">Inicio</span></a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/portafolio/" itemprop="item"><span itemprop="name">Portafolio</span></a>
+        <meta itemprop="position" content="2" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/portafolio/equipos-contra-incendios/" itemprop="item"><span itemprop="name">Equipos Contra Incendios</span></a>
+        <meta itemprop="position" content="3" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/portafolio/equipos-contra-incendios/directorio/" itemprop="item"><span itemprop="name">Directorio México</span></a>
+        <meta itemprop="position" content="4" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item ol-bc-current" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name">Equipos y Servicios MF</span>
+        <meta itemprop="position" content="5" />
+      </li>
+    </ol>
+  </div>
+</nav>
+
+<!-- ============================================================
+     MAIN
+     ============================================================ -->
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__inner">
+
+      <div class="hero__col1">
+        <span class="hero__eyebrow">Perfil de empresa · Directorio · Zona Norte CDMX</span>
+        <h1 class="hero__title">Equipos y<br>Servicios MF</h1>
+        <p class="hero__sub">Empresa de venta y mantenimiento de extintores certificados en la alcaldía Gustavo A. Madero, Ciudad de México. Operando con reputación sólida en la zona norte.</p>
+        <div class="ol-prof-badges">
+          <span class="ol-prof-badge ol-prof-badge--rating">
+            <svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            4.8 ★ Google Maps (13 reseñas)
+          </span>
+          <span class="ol-prof-badge ol-prof-badge--maps">
+            <svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Verificado Google Maps
+          </span>
+          <span class="ol-prof-badge ol-prof-badge--noweb">
+            <svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+            Sin sitio web propio
+          </span>
+          <span class="ol-prof-badge ol-prof-badge--zone">
+            <svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            Gustavo A. Madero
+          </span>
+        </div>
+      </div>
+
+      <div class="hero__col2">
+        <p class="hero__p1">Equipos y Servicios MF lleva años atendiendo a empresas, edificios y comercios en la zona norte de la Ciudad de México con venta, recarga y mantenimiento de extintores. Sus 13 reseñas con calificación de 4.8 sobre 5 en Google Maps reflejan un servicio técnico confiable y presencia real en la comunidad industrial y comercial de Gustavo A. Madero.</p>
+        <p class="hero__p2">Este perfil fue elaborado por OrigenLab como parte del <a href="/portafolio/equipos-contra-incendios/directorio/" style="color:rgba(255,255,255,0.7);text-decoration:underline;text-underline-offset:3px;">Directorio de empresas de equipos contra incendios en México</a>. Su propósito es visibilizar a empresas con trayectoria comprobada que aún no cuentan con presencia digital propia, y abrir la conversación sobre el valor que un sitio web profesional puede aportarles.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== CASE SHELL: SIDEBAR + CONTENT ============== -->
+  <section class="ol-case-shell" id="perfil">
+    <div class="ol-case-inner">
+      <div class="ol-case-grid">
+
+        <!-- ============ SIDEBAR ============ -->
+        <aside class="ol-case-sidebar" aria-label="Datos de la empresa">
+
+          <!-- Datos verificados -->
+          <div class="ol-side-card">
+            <p class="ol-side-eyebrow">Datos verificados</p>
+            <div class="ol-side-gap-badge">
+              <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+              <span>Sin sitio web propio</span>
+            </div>
+            <ul class="ol-side-meta">
+              <li><dt>Empresa</dt><dd>Equipos y Servicios MF</dd></li>
+              <li><dt>Alcaldía</dt><dd>Gustavo A. Madero, CDMX</dd></li>
+              <li><dt>Dirección</dt><dd>Eduardo Molina 4715, GAM</dd></li>
+              <li><dt>Teléfono</dt><dd><a href="tel:+525553318307">55 5331 8307</a></dd></li>
+              <li><dt>Zona</dt><dd>Norte de la Ciudad de México</dd></li>
+              <li><dt>Especialidad</dt><dd>Extintores · Mantenimiento · Recarga</dd></li>
+              <li><dt>Calificación</dt><dd>4.8 ★ (13 reseñas Google Maps)</dd></li>
+              <li><dt>Fuente</dt><dd>Google Maps · verificado 2026</dd></li>
+            </ul>
+          </div>
+
+          <!-- Potencial digital -->
+          <div class="ol-side-card">
+            <p class="ol-side-eyebrow">Potencial digital</p>
+            <p style="font-size:.82rem;color:rgba(255,255,255,.5);margin:0 0 .85rem;line-height:1.5;">Indicadores clave de oportunidad para esta empresa:</p>
+
+            <div class="ol-side-score">
+              <div class="ol-side-score-label">
+                <span>Reputación local</span>
+                <strong>96%</strong>
+              </div>
+              <div class="ol-side-score-bar">
+                <div class="ol-side-score-fill" style="width:96%"></div>
+              </div>
+            </div>
+            <div class="ol-side-score">
+              <div class="ol-side-score-label">
+                <span>Demanda del sector</span>
+                <strong>88%</strong>
+              </div>
+              <div class="ol-side-score-bar">
+                <div class="ol-side-score-fill" style="width:88%"></div>
+              </div>
+            </div>
+            <div class="ol-side-score">
+              <div class="ol-side-score-label">
+                <span>Competencia digital</span>
+                <strong>42%</strong>
+              </div>
+              <div class="ol-side-score-bar">
+                <div class="ol-side-score-fill" style="width:42%;background:rgba(255,255,255,0.2)"></div>
+              </div>
+            </div>
+            <div class="ol-side-score">
+              <div class="ol-side-score-label">
+                <span>Brecha vs. competencia</span>
+                <strong>Alta</strong>
+              </div>
+              <div class="ol-side-score-bar">
+                <div class="ol-side-score-fill" style="width:78%"></div>
+              </div>
+            </div>
+
+            <p style="font-size:.73rem;color:rgba(255,255,255,.3);margin:.85rem 0 0;line-height:1.4;">Análisis basado en reputación local verificada, frecuencia de búsqueda del sector y presencia digital de competidores en la zona norte de CDMX.</p>
+          </div>
+
+          <!-- Tags de servicio -->
+          <div class="ol-side-card">
+            <p class="ol-side-eyebrow">Servicios identificados</p>
+            <div>
+              <span class="ol-case-spec-tag">Extintores</span>
+              <span class="ol-case-spec-tag">Mantenimiento</span>
+              <span class="ol-case-spec-tag">Recarga</span>
+              <span class="ol-case-spec-tag">Certificación NOM</span>
+              <span class="ol-case-spec-tag">Zona Norte CDMX</span>
+              <span class="ol-case-spec-tag">Gustavo A. Madero</span>
+              <span class="ol-case-spec-tag">Empresas</span>
+              <span class="ol-case-spec-tag">Edificios</span>
+              <span class="ol-case-spec-tag">Comercios</span>
+            </div>
+          </div>
+
+          <!-- Índice -->
+          <nav class="ol-side-card" aria-label="Índice del perfil">
+            <p class="ol-side-eyebrow">Contenido del perfil</p>
+            <ul class="ol-side-toc">
+              <li><a href="#empresa"><span class="num">01</span>La empresa</a></li>
+              <li><a href="#servicios"><span class="num">02</span>Servicios y especialidad</a></li>
+              <li><a href="#operacion"><span class="num">03</span>Zona de operación</a></li>
+              <li><a href="#brecha"><span class="num">04</span>La brecha digital</a></li>
+              <li><a href="#oportunidad"><span class="num">05</span>Qué ganaría con un sitio</a></li>
+              <li><a href="#proceso"><span class="num">06</span>Cómo trabajaría OrigenLab</a></li>
+            </ul>
+          </nav>
+
+          <!-- CTA -->
+          <div class="ol-side-cta">
+            <h3 class="ol-side-cta-title">¿Eres de Equipos y Servicios MF?</h3>
+            <p class="ol-side-cta-desc">Tu empresa tiene la reputación. Nosotros ponemos la presencia digital. Conversemos sin compromiso sobre lo que un sitio web profesional puede hacer por tu negocio.</p>
+            <a href="https://wa.me/525547868402?text=Hola%2C+soy+de+Equipos+y+Servicios+MF+en+Gustavo+A.+Madero+y+me+interesa+conocer+m%C3%A1s+sobre+un+sitio+web+profesional." target="_blank" rel="noopener noreferrer" class="ol-side-cta-btn">
+              Hablar por WhatsApp
+              <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+            <a href="/cotizar/" class="ol-side-cta-link">o cotizar mi proyecto web →</a>
+          </div>
+
+        </aside>
+
+        <!-- ============ CONTENT BODY ============ -->
+        <article class="ol-case-body">
+
+          <!-- 01 LA EMPRESA -->
+          <section class="ol-case-section" id="empresa">
+            <span class="ol-case-eyebrow">01 · La empresa</span>
+            <h2 class="ol-case-h2">Empresa de extintores con trayectoria verificada en la zona norte de la Ciudad de México.</h2>
+            <p class="ol-case-lead">Equipos y Servicios MF es una empresa especializada en la venta y mantenimiento de extintores certificados con operaciones en la alcaldía Gustavo A. Madero, una de las zonas industriales y comerciales más activas del norte de la Ciudad de México. Su presencia física en Eduardo Molina 4715 la posiciona en el corazón de una alcaldía con alta densidad de empresas, talleres, bodegas, escuelas y establecimientos que requieren cumplimiento normativo en materia de protección contra incendios.</p>
+            <p class="ol-case-p">Con una calificación de <strong>4.8 sobre 5 estrellas</strong> en Google Maps, respaldada por 13 reseñas de clientes reales, la empresa refleja un historial de servicio técnico confiable y atención consistente. En un sector donde la recomendación directa ha sido tradicionalmente el principal canal de adquisición de clientes, esa reputación acumulada es un activo real — uno que un sitio web profesional convertiría en presencia digital permanente y alcance ampliado.</p>
+
+            <div class="ol-prof-stats">
+              <div class="ol-prof-stat">
+                <div class="ol-prof-stat-num">4.<span>8</span></div>
+                <div class="ol-prof-stat-label">Estrellas Google</div>
+              </div>
+              <div class="ol-prof-stat">
+                <div class="ol-prof-stat-num"><span>13</span></div>
+                <div class="ol-prof-stat-label">Reseñas verificadas</div>
+              </div>
+              <div class="ol-prof-stat">
+                <div class="ol-prof-stat-num"><span>01</span></div>
+                <div class="ol-prof-stat-label">GAM · Zona Norte</div>
+              </div>
+            </div>
+
+            <div class="ol-prof-alert">
+              <div class="ol-prof-alert-icon">
+                <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </div>
+              <div class="ol-prof-alert-body">
+                <p class="ol-prof-alert-title">Sin sitio web propio</p>
+                <p class="ol-prof-alert-text">Al momento de elaborar este perfil, Equipos y Servicios MF no cuenta con un sitio web propio. Toda su presencia digital se limita a su ficha de Google Maps. Eso significa que cada cliente potencial que los busca fuera de Google — por recomendación directa, en redes, en un correo de cotización o en un directorio del sector — no encuentra ninguna página que respalde la empresa, sus servicios o sus credenciales técnicas.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 02 SERVICIOS -->
+          <section class="ol-case-section" id="servicios">
+            <span class="ol-case-eyebrow">02 · Servicios y especialidad</span>
+            <h2 class="ol-case-h2">Extintores certificados: venta, recarga y mantenimiento para clientes en el norte de CDMX.</h2>
+            <p class="ol-case-p">El core del negocio de Equipos y Servicios MF es la protección activa contra incendios en su forma más fundamental: el extintor. Se trata de un producto regulado por la norma mexicana NOM-154-SCFI y la NOM-002-STPS, lo que convierte cada venta, recarga y revisión en un servicio técnico documentado con responsabilidad legal para el cliente final.</p>
+            <p class="ol-case-p">Sus clientes típicos incluyen empresas con obligación normativa de contar con extintores vigentes, edificios de oficinas con revisiones periódicas requeridas por protección civil, comercios de la zona que necesitan cumplir con permisos de operación, escuelas y planteles educativos, y particulares con necesidades de seguridad residencial o de taller. Todos ellos comparten una característica: <strong>buscan en internet</strong> antes de llamar a un proveedor.</p>
+
+            <div class="ol-case-cards">
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                </div>
+                <h4>Venta de extintores</h4>
+                <p>Suministro de extintores de CO₂, polvo químico seco, agua y agentes limpios para uso comercial, industrial y residencial, con la carga certificada de origen.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                </div>
+                <h4>Mantenimiento preventivo</h4>
+                <p>Revisión anual requerida por norma: inspección visual, prueba hidrostática, verificación de carga y sellado. Documentación para auditorías de protección civil.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/><path d="M12 6v6l4 2"/></svg>
+                </div>
+                <h4>Recarga y recertificación</h4>
+                <p>Recarga del agente extintor con materiales certificados y etiquetado con fecha de vigencia. Reemplaza el extintor en condición de uso inmediato con cumplimiento normativo.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.5v5c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11V6.5L12 2z"/><path d="M9 12l2 2 4-4"/></svg>
+                </div>
+                <h4>Asesoría normativa</h4>
+                <p>Orientación para empresas sobre el tipo, cantidad y ubicación de extintores requeridos por su giro, sus metros cuadrados y las normas NOM-154 y NOM-002 aplicables.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 03 ZONA DE OPERACIÓN -->
+          <section class="ol-case-section" id="operacion">
+            <span class="ol-case-eyebrow">03 · Zona de operación</span>
+            <h2 class="ol-case-h2">Gustavo A. Madero: la alcaldía más poblada del norte, con alta demanda de cumplimiento normativo.</h2>
+            <p class="ol-case-p">Gustavo A. Madero es la alcaldía más poblada de la Ciudad de México con más de 1.1 millones de habitantes y una densa actividad industrial y comercial en corredores como Insurgentes Norte, Vallejo, Eduardo Molina y la zona de La Villa. Esa densidad se traduce directamente en demanda de servicios de protección contra incendios: cada empresa, taller, local comercial, escuela o instalación de salud en la alcaldía tiene obligación normativa de contar con extintores vigentes y en condición certificada.</p>
+            <p class="ol-case-p">La ubicación de Equipos y Servicios MF en Eduardo Molina 4715 la coloca en un punto estratégico para atender tanto el corredor industrial al oriente de la alcaldía como las colonias residenciales y comerciales del centro y poniente de GAM. Su área de influencia natural incluye además alcaldías colindantes como Azcapotzalco, Venustiano Carranza y Gustavo A. Madero norte.</p>
+
+            <div class="ol-prof-info-grid">
+              <div class="ol-prof-info-item">
+                <p class="ol-prof-info-label">Dirección</p>
+                <p class="ol-prof-info-value">Eduardo Molina 4715<br>Gustavo A. Madero, CDMX</p>
+              </div>
+              <div class="ol-prof-info-item">
+                <p class="ol-prof-info-label">Teléfono</p>
+                <p class="ol-prof-info-value"><a href="tel:+525553318307" style="color:rgba(255,255,255,.85);text-decoration:none;">55 5331 8307</a></p>
+              </div>
+              <div class="ol-prof-info-item">
+                <p class="ol-prof-info-label">Zona de cobertura</p>
+                <p class="ol-prof-info-value">Norte de la Ciudad de México · GAM · Azcapotzalco · VC</p>
+              </div>
+              <div class="ol-prof-info-item">
+                <p class="ol-prof-info-label">Tipo de clientes</p>
+                <p class="ol-prof-info-value">Empresas · Talleres · Comercios · Edificios · Escuelas</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 04 LA BRECHA DIGITAL -->
+          <section class="ol-case-section" id="brecha">
+            <span class="ol-case-eyebrow">04 · La brecha digital</span>
+            <h2 class="ol-case-h2">Una empresa con 4.8 estrellas que no existe fuera de Google Maps.</h2>
+            <p class="ol-case-p">La calificación de 4.8 sobre 5 de Equipos y Servicios MF en Google Maps representa años de trabajo técnico bien hecho y clientes satisfechos. Es una reputación real. El problema es que esa reputación existe <strong>exclusivamente dentro del ecosistema de Google</strong>, y únicamente para quienes ya saben buscar extintores en GAM.</p>
+            <p class="ol-case-p">Cuando un responsable de mantenimiento de un edificio de oficinas en Lindavista recibe la recomendación "llámale a los de Eduardo Molina", lo primero que hace es buscar el nombre de la empresa en internet. Si no hay sitio web, el proceso de decisión se interrumpe. Si hay un competidor con sitio web en la primera página de resultados, ese competidor se lleva la cotización — independientemente de que Equipos y Servicios MF sea mejor, más barata o esté más cerca.</p>
+
+            <div class="ol-prof-alert">
+              <div class="ol-prof-alert-icon">
+                <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              </div>
+              <div class="ol-prof-alert-body">
+                <p class="ol-prof-alert-title">Oportunidad perdida cada día</p>
+                <p class="ol-prof-alert-text">En la zona norte de la Ciudad de México hay miles de empresas con obligación normativa de mantener extintores vigentes. La mayoría busca proveedores en internet antes de llamar. Sin un sitio web, Equipos y Servicios MF no aparece en esas búsquedas — y cada cotización que se va a la competencia es clientes reales que podría estar captando hoy.</p>
+              </div>
+            </div>
+
+            <div class="ol-case-cards">
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </div>
+                <h4>Invisible en búsquedas</h4>
+                <p>Cuando alguien busca "extintores GAM" o "mantenimiento extintores Gustavo A. Madero", Equipos y Servicios MF no aparece en ningún resultado web fuera de su ficha de Google Maps.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <h4>Sin credencial de confianza</h4>
+                <p>Empresas nuevas que reciben la recomendación no encuentran nada que respalde la empresa: sin servicios detallados, sin información de contacto completa, sin historia de la empresa.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                </div>
+                <h4>Competidores con ventaja</h4>
+                <p>Empresas con menor reputación pero con sitio web capturan cotizaciones que deberían ir a Equipos y Servicios MF, solo porque tienen presencia digital y aparecen primero.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                </div>
+                <h4>Sin canal propio de captación</h4>
+                <p>Todo cliente nuevo llega por recomendación oral o Google Maps. Un sitio web abre un canal adicional activo las 24 horas: formulario de cotización, WhatsApp directo, descripción de servicios.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 05 QUÉ GANARÍA -->
+          <section class="ol-case-section" id="oportunidad">
+            <span class="ol-case-eyebrow">05 · Qué ganaría con un sitio web</span>
+            <h2 class="ol-case-h2">De ficha de Google a plataforma de captación activa en la zona norte.</h2>
+            <p class="ol-case-p">Un sitio web profesional para Equipos y Servicios MF no es un gasto de imagen — es una herramienta de captación que trabaja todos los días. Para una empresa de extintores con operaciones locales bien establecidas, el impacto es concreto y directo: más cotizaciones entrantes, más conversiones de recomendación, más capacidad de atender a clientes corporativos que requieren documentación de proveedor antes de contratarlos.</p>
+
+            <div class="ol-prof-steps">
+              <div class="ol-prof-step">
+                <div class="ol-prof-step-num">1</div>
+                <div class="ol-prof-step-content">
+                  <h4>Presencia permanente en búsquedas de la zona norte</h4>
+                  <p>Un sitio optimizado para búsquedas locales aparece cuando alguien busca extintores en GAM, Azcapotzalco o Venustiano Carranza — todos los días, sin depender de Google Maps.</p>
+                </div>
+              </div>
+              <div class="ol-prof-step">
+                <div class="ol-prof-step-num">2</div>
+                <div class="ol-prof-step-content">
+                  <h4>Credencial de confianza para clientes corporativos</h4>
+                  <p>Empresas medianas y grandes requieren que sus proveedores tengan presencia web antes de abrir un registro de proveedor. Un sitio profesional abre esa puerta.</p>
+                </div>
+              </div>
+              <div class="ol-prof-step">
+                <div class="ol-prof-step-num">3</div>
+                <div class="ol-prof-step-content">
+                  <h4>Canal de cotización directo y funcional</h4>
+                  <p>Formulario de solicitud de mantenimiento o recarga, enlace a WhatsApp, número de teléfono prominente. Cada visita al sitio es una oportunidad de convertir en cotización.</p>
+                </div>
+              </div>
+              <div class="ol-prof-step">
+                <div class="ol-prof-step-num">4</div>
+                <div class="ol-prof-step-content">
+                  <h4>Respaldo de la reputación de 4.8 estrellas</h4>
+                  <p>Las 13 reseñas de Google Maps reflejan un trabajo bien hecho. Un sitio web amplifica esa reputación, la hace visible fuera del ecosistema de Google y la convierte en ventaja competitiva durable.</p>
+                </div>
+              </div>
+              <div class="ol-prof-step">
+                <div class="ol-prof-step-num">5</div>
+                <div class="ol-prof-step-content">
+                  <h4>Información de servicio disponible las 24 horas</h4>
+                  <p>Tipos de extintores, zonas de cobertura, proceso de mantenimiento, normativa aplicable, datos de contacto. El sitio responde las preguntas del cliente antes de que tenga que llamar.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 06 CÓMO TRABAJARÍA ORIGENLAB -->
+          <section class="ol-case-section" id="proceso">
+            <span class="ol-case-eyebrow">06 · Cómo trabajaría OrigenLab</span>
+            <h2 class="ol-case-h2">Un sitio construido alrededor del negocio real — no de una plantilla genérica.</h2>
+            <p class="ol-case-p">OrigenLab ha trabajado con empresas del sector de equipos contra incendios en la Ciudad de México: distribuidores, integradores de sistemas, proveedores de extintores y firmas de mantenimiento técnico. Entendemos el lenguaje del sector, el perfil del cliente industrial y las necesidades específicas de una empresa local que quiere crecer sin depender únicamente de la recomendación boca a boca.</p>
+            <p class="ol-case-p">Para Equipos y Servicios MF, el proceso sería claro desde el inicio: una llamada o reunión inicial para entender el negocio, sus clientes principales, los servicios que quiere destacar y cómo prefiere que lleguen los nuevos contactos; después una propuesta con estructura, diseño y contenido adaptados específicamente a la zona norte de CDMX y al perfil de sus clientes — y un calendario por escrito desde el primer día.</p>
+
+            <div class="ol-case-arch">
+              <div class="ol-arch-step">
+                <p class="num">FASE 01</p>
+                <h4>Descubrimiento</h4>
+                <p>Conversación para entender la empresa, sus servicios, sus clientes típicos, su zona de cobertura real y qué tipo de clientes nuevos quiere atraer con el sitio.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">FASE 02</p>
+                <h4>Arquitectura y propuesta</h4>
+                <p>Definición de páginas, estructura de contenidos, llamadas a la acción y diseño de la home. Todo presentado antes de escribir una sola línea de código.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">FASE 03</p>
+                <h4>Diseño y desarrollo</h4>
+                <p>Construcción del sitio con el sistema de diseño de OrigenLab: rápido, responsivo, optimizado para móvil y construido sobre tecnología moderna de alto rendimiento.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">FASE 04</p>
+                <h4>Contenido y revisión</h4>
+                <p>Textos adaptados al tono de la empresa y al lenguaje real de sus clientes. Revisión con el equipo de la empresa para asegurar que todo esté correcto antes del lanzamiento.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">FASE 05</p>
+                <h4>Lanzamiento</h4>
+                <p>Publicación del sitio con dominio propio, hosting de alto rendimiento, correo corporativo configurado y revisión final de velocidad y funcionamiento en todos los dispositivos.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">FASE 06</p>
+                <h4>Acompañamiento post-entrega</h4>
+                <p>Disponibilidad para ajustes y soporte tras el lanzamiento. La empresa recibe el sitio listo para operar — no un proyecto abandonado al momento de publicar.</p>
+              </div>
+            </div>
+
+          </section>
+
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CTA HERO CARD ============== -->
+  <section class="ol-cta-hero-card">
+    <div class="ol-cta-hero-inner">
+      <div class="ol-cta-hero-col1">
+        <span class="ol-cta-hero-eyebrow">¿Eres de Equipos y Servicios MF?</span>
+        <h2 class="ol-cta-hero-title">Tu empresa tiene la reputación.<br>Pongámosla en línea.</h2>
+        <p class="ol-cta-hero-sub">4.8 estrellas en Google Maps es una base sólida. Un sitio web profesional la convierte en captación activa: más cotizaciones, más clientes corporativos y presencia permanente en la zona norte de CDMX.</p>
+      </div>
+      <div class="ol-cta-hero-col2">
+        <div class="ol-cta-hero-actions">
+          <a href="https://wa.me/525547868402?text=Hola%2C+soy+de+Equipos+y+Servicios+MF+en+Gustavo+A.+Madero+y+me+interesa+conocer+m%C3%A1s+sobre+un+sitio+web+profesional." target="_blank" rel="noopener noreferrer" class="ol-btn-primary">
+            Escribir por WhatsApp
+            <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </a>
+          <a href="/cotizar/" class="ol-btn-ghost">
+            Cotizar mi proyecto
+            <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </a>
+        </div>
+        <p class="ol-cta-hero-note">Sin compromiso · Respuesta el mismo día · Atención personalizada</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CASE NEXT / VOLVER ============== -->
+  <section class="ol-case-next">
+    <div class="ol-case-next-inner">
+      <a href="/portafolio/equipos-contra-incendios/directorio/" class="ol-case-next-card">
+        <p class="ol-case-next-eyebrow">← Directorio completo</p>
+        <p class="ol-case-next-title">Ver todas las empresas de equipos contra incendios en México</p>
+        <span class="ol-case-next-link">Ver directorio →</span>
+      </a>
+      <a href="/portafolio/equipos-contra-incendios/" class="ol-case-next-card">
+        <p class="ol-case-next-eyebrow">Portafolio del sector →</p>
+        <p class="ol-case-next-title">Equipos Contra Incendios · Casos de estudio desarrollados por OrigenLab</p>
+        <span class="ol-case-next-link">Ver portafolio →</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="ol-footer">
+  <div class="ol-footer-top">
+    <a href="/" class="ol-footer-logo">
+      Origen<span class="ol-footer-logo-dot">.</span>Lab
+    </a>
+    <p class="ol-footer-tagline">
+      Agencia de desarrollo web en México.<br>
+      Creamos sitios que generan resultados.
+    </p>
+    <ul class="ol-footer-contact-list">
+      <li>
+        <a href="mailto:hola@origenlab.mx" class="ol-fcl-item">
+          <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          hola@origenlab.mx
+        </a>
+      </li>
+      <li>
+        <a href="tel:+525547868402" class="ol-fcl-item">
+          <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +52 55 4786 8402
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/525547868402" target="_blank" rel="noopener noreferrer" class="ol-fcl-item ol-fcl-wa">
+          <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+          WhatsApp
+        </a>
+      </li>
+      <li>
+        <span class="ol-fcl-item ol-fcl-static">
+          <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Ciudad de México, MX
+        </span>
+      </li>
+    </ul>
+  </div>
+  <div class="ol-footer-links">
+    <div>
+      <p class="ol-footer-col-title">Servicios</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/servicios/desarrollo-web/">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/">Rediseño Web</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Portafolio</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/portafolio/">Todo el portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/directorio/">Directorio México</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Empresa</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/nosotros/">Nosotros</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/cotizar/">Cotizar proyecto</a></li>
+        <li><a href="/contacto/">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Legal</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/aviso-de-privacidad/">Aviso de privacidad</a></li>
+        <li><a href="/terminos/">Términos de uso</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ol-footer-bottom">
+    <p class="ol-footer-copy">© 2026 OrigenLab. Todos los derechos reservados.</p>
+    <div class="ol-footer-legal">
+      <a href="/aviso-de-privacidad/">Privacidad</a>
+      <a href="/terminos/">Términos</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
