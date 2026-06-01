@@ -79,6 +79,17 @@
     .ol-mk-card .tx{padding:.4rem .5rem}
     .ol-mk-card b{font-size:.6rem;color:#3a2f22;display:block}
     .ol-mk-card span{font-size:.52rem;color:#8a6a3e}
+    .ol-svc-img img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+    .ol-svc-live-badge{position:absolute;top:.6rem;left:.6rem;z-index:2;display:inline-flex;align-items:center;gap:.4rem;font-size:.6rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#fff;background:rgba(10,10,16,.8);border:1px solid rgba(52,211,153,.55);border-radius:999px;padding:.26rem .6rem}
+    .ol-svc-live-badge::before{content:'\25CF';color:#34D399;font-size:.7em}
+    .ol-mock-body.is-shot{padding:0;min-height:0;background:#fff}
+    .ol-mock-shot{display:block;width:100%;height:auto}
+    .ol-renta-phone{display:flex;flex-direction:column;align-items:center;gap:.65rem;margin-top:1.6rem}
+    .ol-renta-phone .cap{font-size:.72rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#9aa0ad}
+    .ol-phone{width:236px;max-width:62vw;background:#15151f;border:8px solid #15151f;border-radius:34px;overflow:hidden;box-shadow:0 14px 40px rgba(0,0,0,.5)}
+    .ol-phone-bar{display:block;height:22px;background:#15151f;position:relative}
+    .ol-phone-bar::after{content:'';position:absolute;left:0;right:0;top:7px;margin:0 auto;width:64px;height:7px;border-radius:99px;background:#000}
+    .ol-phone img{display:block;width:100%;height:auto}
   </style>
 
 </head>
@@ -164,7 +175,14 @@
                   </ul>
                 </div>
               </li>
-              <li><a href="/portafolio/seguridad-privada/" class="ol-dropdown-link">Seguridad Privada</a></li>
+              <li class="ol-has-subdrop">
+                <a href="/portafolio/seguridad-privada/" class="ol-dropdown-link ol-dropdown-parent">Seguridad Privada</a>
+                <div class="ol-subdrop">
+                  <ul>
+                    <li><a href="/portafolio/seguridad-privada/origins/" class="ol-dropdown-link">ORIGINS Private Security</a></li>
+                  </ul>
+                </div>
+              </li>
             </ul>
           </div>
         </li>
@@ -222,6 +240,7 @@
         <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— ProyectoRed</a></li>
         <li><a href="/portafolio/equipos-contra-incendios/directorio/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Directorio México</a></li>
         <li><a href="/portafolio/seguridad-privada/" class="ol-mobile-link ol-mobile-sublink">Seguridad Privada</a></li>
+        <li><a href="/portafolio/seguridad-privada/origins/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— ORIGINS Private Security</a></li>
       </ul>
     </li>
     <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
@@ -349,76 +368,6 @@
     </div>
   </div>
 
-  <!-- ============== FEATURES — Qué incluye la renta ============== -->
-  <section class="ol-features">
-    <div class="ol-features-inner">
-
-      <div class="ol-sh">
-        <div class="ol-sh-left">
-          <span class="ol-eyebrow">Qué incluye</span>
-          <h2 class="ol-section-title">Una página lista para operar,<br>sin las complicaciones de siempre.</h2>
-          <p class="ol-section-sub">Rentar una página es la vía más directa para que un negocio tenga presencia profesional en línea: sin un proyecto largo de por medio y sin ocuparte de la parte técnica.</p>
-        </div>
-        <div class="ol-sh-right">
-          <p class="ol-sh-copy">Cada página parte de una base ya diseñada para un tipo de negocio concreto, probada en móvil y desktop, y la adaptamos a tu marca. Lo que recibes no es un molde rígido: ajustamos secciones, textos e imágenes para que represente fielmente lo que haces.</p>
-          <p class="ol-sh-copy">Mientras la rentas, la página se mantiene publicada, segura y actualizada. Si tu negocio crece o cambia, la página crece contigo — y siempre tienes la opción de adquirirla por completo.</p>
-        </div>
-      </div>
-
-      <div class="ol-features-grid" style="margin-top:4rem;">
-
-        <article class="ol-feature-card">
-          <div class="ol-feature-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-          </div>
-          <h3 class="ol-feature-title">Lista para publicar</h3>
-          <p class="ol-feature-desc">Parte de una base profesional ya diseñada y optimizada. Tu negocio tiene presencia en línea de forma ágil, sin esperar un proyecto desde cero.</p>
-        </article>
-
-        <article class="ol-feature-card">
-          <div class="ol-feature-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
-          </div>
-          <h3 class="ol-feature-title">Personalizada a tu marca</h3>
-          <p class="ol-feature-desc">Tu logo, tus colores, tu tipografía, tus textos e imágenes. Ajustamos secciones para que la página comunique exactamente lo que ofrece tu negocio.</p>
-        </article>
-
-        <article class="ol-feature-card">
-          <div class="ol-feature-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2L2 7v10l10 5 10-5V7z"/><polyline points="2 7 12 12 22 7"/><line x1="12" y1="22" x2="12" y2="12"/></svg>
-          </div>
-          <h3 class="ol-feature-title">Hosting y dominio incluidos</h3>
-          <p class="ol-feature-desc">Configuramos hosting de alto rendimiento, dominio, certificado SSL y correos. No tienes que preocuparte por la parte técnica ni por renovaciones.</p>
-        </article>
-
-        <article class="ol-feature-card">
-          <div class="ol-feature-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/><circle cx="12" cy="12" r="4"/></svg>
-          </div>
-          <h3 class="ol-feature-title">Mantenimiento continuo</h3>
-          <p class="ol-feature-desc">Mientras rentas, mantenemos la página en línea, segura y actualizada, con cambios menores de contenido cuando los necesites.</p>
-        </article>
-
-        <article class="ol-feature-card">
-          <div class="ol-feature-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
-          </div>
-          <h3 class="ol-feature-title">Óptima en móvil y veloz</h3>
-          <p class="ol-feature-desc">Cada página se ve impecable en celular, tablet y computadora, y carga rápido — donde hoy te encuentran la mayoría de tus clientes.</p>
-        </article>
-
-        <article class="ol-feature-card">
-          <div class="ol-feature-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6L9 17l-5-5"/></svg>
-          </div>
-          <h3 class="ol-feature-title">Con opción de compra</h3>
-          <p class="ol-feature-desc">Si decides que la página sea totalmente tuya, convertimos la renta en una adquisición. Tú eliges el camino, sin presión.</p>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
   <!-- ============== CATÁLOGO — Páginas por giro ============== -->
   <section class="ol-types" id="catalogo">
     <div class="ol-types-inner">
@@ -435,79 +384,23 @@
         </div>
       </div>
 
-      <!-- Demo destacado: MESPIC (mockups on-brand de la página real) -->
-      <div class="ol-renta-demo">
-        <div class="ol-renta-demo-head">
-          <div>
-            <span class="ol-renta-demo-live">Sitio en vivo</span>
-            <p class="t">Demo destacado — MESPIC · Mobiliario para eventos</p>
-            <p class="s">Vista de la página real: hero, servicios y catálogo.</p>
-          </div>
-          <a href="https://mesaspicnic.com/" target="_blank" rel="noopener noreferrer" class="ol-showcase-cta">Ver sitio en vivo &rarr;</a>
-        </div>
-        <div class="ol-renta-shots">
-
-          <div class="ol-mock">
-            <div class="ol-mock-bar"><span class="ol-mock-dots"><i></i><i></i><i></i></span><span class="ol-mock-url">mesaspicnic.com</span></div>
-            <div class="ol-mock-body">
-              <p class="ol-mk-eye">Mobiliario para eventos</p>
-              <p class="ol-mk-h">Renta de Mesas Picnic para Eventos en CDMX</p>
-              <p class="ol-mk-p">Bancas de madera natural para bodas, corporativos, fiestas infantiles y picnics. Entrega, montaje y recolección incluidos.</p>
-              <span class="ol-mk-btn">Cotizar ahora</span>
-              <div class="ol-mk-stats">
-                <div class="ol-mk-stat"><b>500+</b><span>eventos</span></div>
-                <div class="ol-mk-stat"><b>7 d&iacute;as</b><span>atenci&oacute;n</span></div>
-                <div class="ol-mk-stat"><b>8 a&ntilde;os</b><span>experiencia</span></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="ol-mock">
-            <div class="ol-mock-bar"><span class="ol-mock-dots"><i></i><i></i><i></i></span><span class="ol-mock-url">mesaspicnic.com/servicios</span></div>
-            <div class="ol-mock-body">
-              <p class="ol-mk-eye">Nuestros servicios</p>
-              <p class="ol-mk-h">Renta de mobiliario por tipo de evento</p>
-              <div class="ol-mk-svc">
-                <div><b>Bodas al aire libre</b><span>Bancas de pino barnizadas a mano</span></div>
-                <div><b>Eventos corporativos</b><span>Montaje seg&uacute;n asistentes y formato</span></div>
-                <div><b>Fiestas infantiles</b><span>Modelo infantil sin astillas</span></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="ol-mock">
-            <div class="ol-mock-bar"><span class="ol-mock-dots"><i></i><i></i><i></i></span><span class="ol-mock-url">mesaspicnic.com/catalogo</span></div>
-            <div class="ol-mock-body">
-              <p class="ol-mk-eye">Cat&aacute;logo de productos</p>
-              <p class="ol-mk-h">Modelos de mesa picnic</p>
-              <div class="ol-mk-cat">
-                <div class="ol-mk-card"><div class="sw"></div><div class="tx"><b>Est&aacute;ndar</b><span>6 personas</span></div></div>
-                <div class="ol-mk-card"><div class="sw"></div><div class="tx"><b>Grande</b><span>10&ndash;12 pers.</span></div></div>
-                <div class="ol-mk-card"><div class="sw"></div><div class="tx"><b>Infantil</b><span>3&ndash;10 a&ntilde;os</span></div></div>
-                <div class="ol-mk-card"><div class="sw"></div><div class="tx"><b>Set completo</b><span>Todo incluido</span></div></div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
       <div class="ol-services-grid" style="margin-top:4rem;">
 
         <!-- 01 MESPIC — Mobiliario para eventos (DEMO EN VIVO) -->
         <a href="https://mesaspicnic.com/" target="_blank" rel="noopener noreferrer" class="ol-svc-card">
           <div class="ol-svc-img">
-            <div class="ol-svc-img-label ol-svc-live"><span>Sitio en vivo</span></div>
+            <span class="ol-svc-live-badge">Sitio en vivo</span>
+            <img src="../../img/paginas-en-renta/mespic-hero.webp" alt="Sitio MESPIC — renta de mesas picnic para eventos en CDMX" width="1280" height="800" loading="lazy" decoding="async">
           </div>
           <div class="ol-svc-body">
             <p class="ol-svc-num">01</p>
-            <h3 class="ol-svc-title">Mobiliario y Renta para Eventos</h3>
-            <p class="ol-svc-desc">Para negocios de renta de mobiliario y servicios para eventos —bodas, corporativos, fiestas infantiles y picnics—. Servicios por tipo de evento, catálogo con fichas, paquetes y galería, con cotización directa por WhatsApp.</p>
+            <h3 class="ol-svc-title">MESPIC · Mobiliario para Eventos</h3>
+            <p class="ol-svc-desc">MESPIC renta mesas picnic y mobiliario de madera para eventos al aire libre en CDMX y Estado de México. Operando desde 2017, ha participado en más de 500 bodas, corporativos, fiestas infantiles y picnics. Su sitio presenta los servicios por tipo de evento, el catálogo de modelos y los paquetes, con cotización directa por WhatsApp.</p>
             <ul class="ol-svc-list">
-              <li>Servicios por tipo de evento</li>
-              <li>Catálogo de productos con fichas</li>
-              <li>Paquetes y galería de eventos</li>
-              <li>Cotización directa por WhatsApp</li>
+              <li>Bancas de pino natural para bodas, corporativos e infantiles</li>
+              <li>Catálogo de modelos con fichas técnicas</li>
+              <li>Paquetes según número de invitados</li>
+              <li>Entrega, montaje y recolección incluidos</li>
             </ul>
             <span class="ol-svc-cta">Ver sitio en vivo →</span>
           </div>
@@ -626,6 +519,76 @@
             <span class="ol-svc-cta">Solicitar esta página →</span>
           </div>
         </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FEATURES — Qué incluye la renta ============== -->
+  <section class="ol-features">
+    <div class="ol-features-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Qué incluye</span>
+          <h2 class="ol-section-title">Una página lista para operar,<br>sin las complicaciones de siempre.</h2>
+          <p class="ol-section-sub">Rentar una página es la vía más directa para que un negocio tenga presencia profesional en línea: sin un proyecto largo de por medio y sin ocuparte de la parte técnica.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Cada página parte de una base ya diseñada para un tipo de negocio concreto, probada en móvil y desktop, y la adaptamos a tu marca. Lo que recibes no es un molde rígido: ajustamos secciones, textos e imágenes para que represente fielmente lo que haces.</p>
+          <p class="ol-sh-copy">Mientras la rentas, la página se mantiene publicada, segura y actualizada. Si tu negocio crece o cambia, la página crece contigo — y siempre tienes la opción de adquirirla por completo.</p>
+        </div>
+      </div>
+
+      <div class="ol-features-grid" style="margin-top:4rem;">
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Lista para publicar</h3>
+          <p class="ol-feature-desc">Parte de una base profesional ya diseñada y optimizada. Tu negocio tiene presencia en línea de forma ágil, sin esperar un proyecto desde cero.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Personalizada a tu marca</h3>
+          <p class="ol-feature-desc">Tu logo, tus colores, tu tipografía, tus textos e imágenes. Ajustamos secciones para que la página comunique exactamente lo que ofrece tu negocio.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2L2 7v10l10 5 10-5V7z"/><polyline points="2 7 12 12 22 7"/><line x1="12" y1="22" x2="12" y2="12"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Hosting y dominio incluidos</h3>
+          <p class="ol-feature-desc">Configuramos hosting de alto rendimiento, dominio, certificado SSL y correos. No tienes que preocuparte por la parte técnica ni por renovaciones.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/><circle cx="12" cy="12" r="4"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Mantenimiento continuo</h3>
+          <p class="ol-feature-desc">Mientras rentas, mantenemos la página en línea, segura y actualizada, con cambios menores de contenido cuando los necesites.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Óptima en móvil y veloz</h3>
+          <p class="ol-feature-desc">Cada página se ve impecable en celular, tablet y computadora, y carga rápido — donde hoy te encuentran la mayoría de tus clientes.</p>
+        </article>
+
+        <article class="ol-feature-card">
+          <div class="ol-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6L9 17l-5-5"/></svg>
+          </div>
+          <h3 class="ol-feature-title">Con opción de compra</h3>
+          <p class="ol-feature-desc">Si decides que la página sea totalmente tuya, convertimos la renta en una adquisición. Tú eliges el camino, sin presión.</p>
+        </article>
 
       </div>
     </div>
