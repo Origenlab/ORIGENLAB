@@ -1,0 +1,10 @@
+# macOS / FUSE noise
+.DS_Store
+.fuse_hidden*
+
+# Respaldos y salidas de análisis (solo local)
+_backup-2026-04-21/
+graphify-out/
+
+# Node
+node_modules/
