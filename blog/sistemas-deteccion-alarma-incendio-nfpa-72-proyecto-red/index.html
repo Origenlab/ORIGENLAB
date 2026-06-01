@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistemas de Detección y Alarma de Incendio NFPA 72: Guía Técnica Proyecto Red | OrigenLab</title>
+  <meta name="description" content="Guía técnica sobre sistemas de detección y alarma de incendio bajo NFPA 72: paneles direccionables, detectores de humo, calor y multicriterio, estaciones manuales, notificación e integración con supresión. Diseño e instalación por Proyecto Red.">
+  <link rel="canonical" href="https://origenlab.com/blog/sistemas-deteccion-alarma-incendio-nfpa-72-proyecto-red/">
+  <meta property="og:title" content="Sistemas de Detección y Alarma de Incendio NFPA 72 · Proyecto Red">
+  <meta property="og:description" content="Paneles, detectores, estaciones manuales, notificación e integración con supresión: el sistema nervioso de la protección contra incendios bajo NFPA 72.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://origenlab.com/blog/sistemas-deteccion-alarma-incendio-nfpa-72-proyecto-red/">
+  <meta property="og:site_name" content="OrigenLab">
+  <meta property="og:image" content="https://origenlab.com/img/equipos-contra-incendios/proyectored/proyectored-catalogo-equipos-nom-nfpa-cdmx.avif">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sistemas de Detección y Alarma de Incendio NFPA 72 · Proyecto Red">
+  <meta name="twitter:description" content="Paneles direccionables, detectores, notificación e integración con supresión bajo NFPA 72. Diseño e instalación por Proyecto Red.">
+  <meta name="twitter:image" content="https://origenlab.com/img/equipos-contra-incendios/proyectored/proyectored-catalogo-equipos-nom-nfpa-cdmx.avif">
+  <link rel="stylesheet" href="../../_astro/BaseLayout.xeR8R953.css?v20260601a">
+  <link rel="stylesheet" href="../../_astro/premium-dark.css?v20260601a">
+  <style>
+    :root {
+      --blog-accent: #7F1D1D;
+      --blog-accent-dim: rgba(127,29,29,0.15);
+      --case-accent: #7F1D1D;
+    }
+    /* Highlight boxes */
+    .ol-art-norm-badge {
+      display: inline-block;
+      background: var(--blog-accent-dim);
+      color: var(--blog-accent);
+      border: 1px solid var(--blog-accent);
+      border-radius: 4px;
+      padding: 2px 8px;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      margin: 2px 3px;
+    }
+    .ol-art-spec-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: .88rem;
+    }
+    .ol-art-spec-table th {
+      background: var(--blog-accent);
+      color: #fff;
+      padding: .55rem .75rem;
+      text-align: left;
+      font-weight: 700;
+    }
+    .ol-art-spec-table td {
+      padding: .5rem .75rem;
+      border-bottom: 1px solid rgba(255,255,255,.07);
+      vertical-align: top;
+    }
+    .ol-art-spec-table tr:nth-child(even) td {
+      background: rgba(255,255,255,.03);
+    }
+    /* Phase blocks */
+    .ol-phase-block {
+      display: grid;
+      grid-template-columns: 2.5rem 1fr;
+      gap: 0 1.25rem;
+      margin: 1.25rem 0;
+      align-items: start;
+    }
+    .ol-phase-num {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background: var(--blog-accent);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1rem;
+      flex-shrink: 0;
+      margin-top: .2rem;
+    }
+    .ol-phase-body h4 {
+      margin: 0 0 .35rem;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #f0f0f0;
+    }
+    .ol-phase-body p {
+      margin: 0;
+      font-size: .9rem;
+      color: rgba(255,255,255,.75);
+      line-height: 1.6;
+    }
+    /* Contact card */
+    .ol-art-contact-card {
+      background: rgba(127,29,29,.12);
+      border: 1px solid rgba(127,29,29,.35);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+    }
+    .ol-art-contact-card h3 {
+      margin: 0 0 1rem;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #f0f0f0;
+    }
+    .ol-art-contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .ol-art-contact-item {
+      display: flex;
+      flex-direction: column;
+      gap: .3rem;
+      font-size: .9rem;
+      color: rgba(255,255,255,.8);
+    }
+    .ol-art-contact-item strong {
+      color: #f0f0f0;
+      font-weight: 700;
+    }
+    .ol-art-contact-item a {
+      color: #C0392B;
+      text-decoration: none;
+    }
+    /* Calculation blocks */
+    .ol-calc-box {
+      background: rgba(0,0,0,.35);
+      border-left: 4px solid var(--blog-accent);
+      border-radius: 0 8px 8px 0;
+      padding: 1.1rem 1.25rem;
+      margin: 1.25rem 0;
+      font-family: 'Courier New', monospace;
+      font-size: .87rem;
+      color: rgba(255,255,255,.85);
+      line-height: 1.7;
+    }
+    .ol-calc-box strong {
+      color: #f0f0f0;
+      display: block;
+      font-family: inherit;
+      margin-bottom: .4rem;
+    }
+    /* Checklist */
+    .ol-checklist {
+      list-style: none;
+      padding: 0;
+      margin: 1.25rem 0;
+    }
+    .ol-checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: .75rem;
+      padding: .5rem 0;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+      font-size: .9rem;
+      color: rgba(255,255,255,.8);
+    }
+    .ol-checklist li::before {
+      content: '✓';
+      color: var(--blog-accent);
+      font-weight: 900;
+      flex-shrink: 0;
+      margin-top: .05rem;
+    }
+    /* Warning callout */
+    .ol-art-warn {
+      background: rgba(127,29,29,.12);
+      border: 1px solid rgba(127,29,29,.4);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin: 1.25rem 0;
+      font-size: .9rem;
+      color: rgba(255,255,255,.85);
+      line-height: 1.6;
+    }
+    .ol-art-warn strong {
+      color: #f5a0a0;
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "@id": "https://origenlab.com/blog/sistemas-deteccion-alarma-incendio-nfpa-72-proyecto-red/#article",
+        "headline": "Sistemas de Detección y Alarma de Incendio NFPA 72: Guía Técnica por Proyecto Red",
+        "description": "Guía técnica sobre sistemas de detección y alarma de incendio bajo NFPA 72: paneles direccionables, detectores de humo, calor y multicriterio, estaciones manuales, notificación e integración con supresión.",
+        "datePublished": "2026-06-01",
+        "dateModified": "2026-06-01",
+        "inLanguage": "es-MX",
+        "url": "https://origenlab.com/blog/sistemas-deteccion-alarma-incendio-nfpa-72-proyecto-red/",
+        "image": "https://origenlab.com/img/equipos-contra-incendios/proyectored/proyectored-catalogo-equipos-nom-nfpa-cdmx.avif",
+        "author": {
+          "@type": "Organization",
+          "name": "OrigenLab",
+          "url": "https://origenlab.com"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "OrigenLab",
+          "url": "https://origenlab.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://origenlab.com/assets/logo-origenlab.svg"
+          }
+        },
+        "about": {
+          "@type": "Organization",
+          "@id": "https://proyectored.mx/#org",
+          "name": "Proyecto Red",
+          "url": "https://proyectored.mx",
+          "description": "Integrador de sistemas de protección contra incendios en México. Diseño, ingeniería, instalación y mantenimiento bajo NFPA y NOM.",
+          "areaServed": "MX",
+          "knowsAbout": [
+            "Detección y alarma NFPA 72",
+            "Paneles direccionables de incendio",
+            "Detectores de humo y calor",
+            "Estaciones manuales",
+            "Dispositivos de notificación",
+            "Integración con supresión",
+            "NOM-002-STPS"
+          ]
+        },
+        "keywords": ["detección de incendio", "NFPA 72", "panel direccionable", "detectores de humo", "alarma de incendio", "notificación masiva", "protección contra incendios México"]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://origenlab.com/blog/sistemas-deteccion-alarma-incendio-nfpa-72-proyecto-red/#breadcrumbs",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://origenlab.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://origenlab.com/blog/"},
+          {"@type": "ListItem", "position": 3, "name": "Sistemas de detección y alarma NFPA 72", "item": "https://origenlab.com/blog/sistemas-deteccion-alarma-incendio-nfpa-72-proyecto-red/"}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="ol-topbar">
+  <div class="ol-topbar-inner">
+    <span>🇲🇽 Agencia mexicana de desarrollo web</span>
+    <a href="/contacto/" class="ol-topbar-cta">Solicita tu sitio →</a>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="ol-header" id="ol-header">
+  <div class="ol-header-inner">
+    <a href="/" class="ol-header-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
+    </a>
+    <nav class="ol-nav" aria-label="Navegación principal">
+      <ul class="ol-nav-list">
+        <li><a href="/" class="ol-nav-link">Inicio</a></li>
+        <li class="ol-has-dropdown">
+          <a href="/servicios/" class="ol-nav-link active">
+            Servicios
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/servicios/desarrollo-web/" class="ol-dropdown-link">Desarrollo Web</a></li>
+              <li><a href="/servicios/tiendas-en-linea/" class="ol-dropdown-link">Tiendas en Línea</a></li>
+              <li><a href="/servicios/landing-pages/" class="ol-dropdown-link">Landing Pages</a></li>
+              <li><a href="/servicios/rediseno-web/" class="ol-dropdown-link">Rediseño Web</a></li>
+              <li><a href="/servicios/paginas-en-renta/" class="ol-dropdown-link">Páginas en Renta</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="ol-has-dropdown">
+          <a href="/portafolio/" class="ol-nav-link">
+            Portafolio
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a></li>
+              <li class="ol-has-subdrop">
+                <a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link ol-dropdown-parent">Equipos Contra Incendios</a>
+                <div class="ol-subdrop">
+                  <ul>
+                    <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link">Gama de México</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link">MESECI</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link">LGA Contraincendios</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-dropdown-link">MANEXT</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-dropdown-link">BOMBERO.MX</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-dropdown-link">ProyectoRed</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/directorio/" class="ol-dropdown-link">Directorio México</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="/portafolio/seguridad-privada/" class="ol-dropdown-link">Seguridad Privada</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="/nosotros/" class="ol-nav-link">Nosotros</a></li>
+        <li><a href="/blog/" class="ol-nav-link">Blog</a></li>
+        <li><a href="/contacto/" class="ol-nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="/cotizar/" class="ol-header-cta">Cotizar proyecto →</a>
+    <button class="ol-menu-toggle" id="ol-menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+    </button>
+  </div>
+</header>
+<div class="ol-mobile-overlay" id="ol-mobile-overlay"></div>
+<nav class="ol-mobile-panel" id="ol-mobile-panel" aria-label="Menú móvil">
+  <div class="ol-mobile-header">
+    <a href="/" class="ol-mobile-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
+    </a>
+    <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú">
+      <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <ul class="ol-mobile-nav">
+    <li><a href="/" class="ol-mobile-link">Inicio</a></li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Servicios</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/servicios/desarrollo-web/" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
+        <li><a href="/servicios/paginas-en-renta/" class="ol-mobile-link ol-mobile-sublink">Páginas en Renta</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Portafolio</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/portafolio/" class="ol-mobile-link ol-mobile-sublink">Todo el Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/" class="ol-mobile-link ol-mobile-sublink">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Gama de México</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MESECI</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— LGA Contraincendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MANEXT</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— BOMBERO.MX</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— ProyectoRed</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/directorio/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Directorio México</a></li>
+        <li><a href="/portafolio/seguridad-privada/" class="ol-mobile-link ol-mobile-sublink">Seguridad Privada</a></li>
+      </ul>
+    </li>
+    <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
+    <li><a href="/blog/" class="ol-mobile-link">Blog</a></li>
+    <li><a href="/contacto/" class="ol-mobile-link">Contacto</a></li>
+  </ul>
+  <div class="ol-mobile-footer">
+    <a href="/cotizar/" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a>
+  </div>
+</nav>
+
+<!-- BREADCRUMB -->
+<nav class="ol-breadcrumb" aria-label="Ruta de navegación">
+  <div class="ol-breadcrumb-inner">
+    <a href="/">Inicio</a>
+    <span aria-hidden="true">›</span>
+    <a href="/blog/">Blog</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">Detección y alarma NFPA 72</span>
+  </div>
+</nav>
+
+<!-- ARTICLE HERO -->
+<section class="ol-art-hero" style="--art-accent: #7F1D1D;">
+  <div class="ol-art-hero-inner">
+    <div class="ol-art-hero-meta">
+      <a href="/blog/" class="ol-art-category pci">PCI</a>
+      <span class="ol-art-read-time">12 min de lectura</span>
+    </div>
+    <h1 class="ol-art-title">Detección y alarma de incendio NFPA 72</h1>
+    <p class="ol-art-excerpt">El sistema nervioso de la protección contra incendios: cómo se diseñan e instalan paneles direccionables, detectores, estaciones manuales y notificación bajo NFPA 72, y cómo se integran con la supresión.</p>
+    <div class="ol-art-author-row">
+      <div class="ol-art-author-info">
+        <span class="ol-art-author-name">Equipo OrigenLab</span>
+        <span class="ol-art-author-date">1 de junio, 2026</span>
+      </div>
+    </div>
+    <div class="ol-art-hero-right">
+      <p>Un sistema de detección y alarma es la primera línea de defensa: detecta el incendio en su etapa incipiente, alerta a los ocupantes y dispara la cadena de respuesta antes de que el fuego se propague. La diferencia entre minutos y segundos define el resultado.</p>
+      <p><strong>Proyecto Red</strong>, integradora mexicana de sistemas PCI, diseña, instala y pone en marcha sistemas de detección direccionables bajo <span class="ol-art-norm-badge">NFPA 72</span> y NOM-002-STPS, integrados con rociadores, supresión por agente limpio y monitoreo remoto.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLE BODY -->
+<main class="ol-article-body">
+  <div class="ol-art-content">
+
+    <!-- IMAGEN DESTACADA -->
+    <figure class="ol-art-figure">
+      <img src="/img/equipos-contra-incendios/proyectored/proyectored-catalogo-equipos-nom-nfpa-cdmx.avif" alt="Catálogo de equipos de detección y alarma de incendio bajo NOM y NFPA instalados por Proyecto Red en CDMX" width="1200" height="675" loading="lazy" decoding="async">
+      <figcaption>Equipos de detección y alarma — paneles, detectores y dispositivos de notificación — bajo NOM y NFPA, diseñados e instalados por Proyecto Red.</figcaption>
+    </figure>
+
+    <!-- INTRO -->
+    <p>En cualquier sistema de protección contra incendios, la detección es lo que convierte una instalación pasiva en una respuesta activa. Mientras los rociadores y la supresión actúan sobre el fuego, el sistema de detección y alarma es el que <em>avisa</em>: alerta a las personas, notifica a la brigada, comanda la evacuación y dispara los sistemas de supresión cuando corresponde.</p>
+
+    <p>La norma de referencia global es la <span class="ol-art-norm-badge">NFPA 72</span> — National Fire Alarm and Signaling Code —, que rige el diseño, instalación, prueba y mantenimiento de todo el ecosistema de detección, notificación y señalización. En <strong>Proyecto Red</strong>, integradora mexicana de sistemas PCI, el diseño e instalación de estos sistemas es uno de los servicios centrales, siempre coordinado con los sistemas de rociadores y supresión del mismo edificio.</p>
+
+    <p>Esta guía recorre los componentes del sistema, los tipos de detector y cuándo se usa cada uno, la arquitectura de los paneles direccionables, los criterios de notificación masiva y la integración crítica con los sistemas de supresión.</p>
+
+    <!-- 1 -->
+    <h2 id="s1">1. Por qué la detección define el resultado de un incendio</h2>
+    <p>El incendio sigue una curva conocida: una etapa incipiente de combustión lenta (que puede durar minutos sin llama visible), una etapa de crecimiento, el flashover y la fase de extinción. La ventana en la que un sistema de detección puede marcar la diferencia entre un incidente controlado y una pérdida total está casi siempre en la etapa incipiente.</p>
+
+    <p>Un sistema de detección bien diseñado bajo <span class="ol-art-norm-badge">NFPA 72</span> persigue tres objetivos simultáneos:</p>
+    <ul>
+      <li><strong>Detección temprana:</strong> identificar el evento en su etapa incipiente, antes de que haya llama o calor significativo.</li>
+      <li><strong>Notificación confiable:</strong> alertar a los ocupantes de forma inequívoca, audible y visible, en cualquier punto del inmueble.</li>
+      <li><strong>Comando y control:</strong> disparar acciones automáticas —liberación de puertas, paro de HVAC, activación de supresión, llamada a monitoreo— sin intervención humana.</li>
+    </ul>
+
+    <blockquote>Un sistema de rociadores apaga el fuego que ya creció. Un sistema de detección bien diseñado avisa cuando el fuego apenas empieza — y esa diferencia de minutos es, casi siempre, la diferencia entre un susto y una tragedia.</blockquote>
+
+    <!-- 2 -->
+    <h2 id="s2">2. Anatomía de un sistema de detección y alarma</h2>
+    <p>Todo sistema bajo <span class="ol-art-norm-badge">NFPA 72</span> se compone de tres bloques funcionales: dispositivos de iniciación (detectan), unidad de control (decide) y dispositivos de notificación (avisan). Proyecto Red diseña cada bloque en función de la ocupación, la carga de fuego y los requerimientos de protección civil y de la aseguradora.</p>
+
+    <ul class="ol-checklist">
+      <li><strong>Dispositivos de iniciación:</strong> detectores automáticos (humo, calor, llama, multicriterio) y estaciones manuales de disparo.</li>
+      <li><strong>Unidad de control (FACP):</strong> el panel de control de alarma de incendio, que recibe señales, ejecuta la lógica de causa-efecto y comanda salidas.</li>
+      <li><strong>Dispositivos de notificación:</strong> sirenas, estrobos, bocinas de voz y señalización que alertan a los ocupantes.</li>
+      <li><strong>Circuitos de monitoreo:</strong> supervisión de flujo de rociadores, posición de válvulas, presión y estado de sistemas de supresión.</li>
+      <li><strong>Fuente de energía supervisada:</strong> alimentación primaria más respaldo por baterías dimensionado para 24 horas en reposo más 5 minutos en alarma (o 15 según el caso).</li>
+      <li><strong>Comunicación a estación central:</strong> transmisión de eventos a monitoreo remoto para despacho de brigada o cuerpo de bomberos.</li>
+    </ul>
+
+    <!-- 3 -->
+    <h2 id="s3">3. Tipos de detector y cuándo se usa cada uno</h2>
+    <p>La selección del detector correcto es la decisión técnica más importante del diseño. Un detector inadecuado genera falsas alarmas constantes (que erosionan la confianza en el sistema) o, peor, no detecta el incendio a tiempo. La <span class="ol-art-norm-badge">NFPA 72</span> y la <span class="ol-art-norm-badge">NFPA 76</span> orientan la selección según el tipo de fuego esperado y las condiciones ambientales.</p>
+
+    <table class="ol-art-spec-table" role="table">
+      <thead>
+        <tr>
+          <th scope="col">Tipo de detector</th>
+          <th scope="col">Principio de operación</th>
+          <th scope="col">Aplicación ideal</th>
+          <th scope="col">Limitación principal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Humo fotoeléctrico</td>
+          <td>Dispersión de luz por partículas</td>
+          <td>Fuegos latentes y de combustión lenta (oficinas, hoteles)</td>
+          <td>Menor sensibilidad a fuegos de llama rápida</td>
+        </tr>
+        <tr>
+          <td>Humo iónico</td>
+          <td>Ionización de cámara por partículas finas</td>
+          <td>Fuegos de llama rápida y combustión limpia</td>
+          <td>Propenso a falsas alarmas por vapor o polvo</td>
+        </tr>
+        <tr>
+          <td>Multicriterio</td>
+          <td>Combina humo, calor y a veces CO</td>
+          <td>Áreas mixtas que exigen baja tasa de falsa alarma</td>
+          <td>Mayor costo unitario y complejidad</td>
+        </tr>
+        <tr>
+          <td>Térmico (temperatura fija / razón de aumento)</td>
+          <td>Umbral de temperatura o gradiente</td>
+          <td>Cocinas, calderas, estacionamientos, áreas sucias</td>
+          <td>Detección tardía respecto al humo</td>
+        </tr>
+        <tr>
+          <td>De llama (UV/IR)</td>
+          <td>Radiación de la flama</td>
+          <td>Hangares, terminales de combustible, procesos con solvente</td>
+          <td>Requiere línea de vista a la flama</td>
+        </tr>
+        <tr>
+          <td>Aspiración (VESDA)</td>
+          <td>Muestreo activo de aire por tubería</td>
+          <td>Centros de datos, archivos, museos, alturas grandes</td>
+          <td>Diseño de red de muestreo especializado</td>
+        </tr>
+        <tr>
+          <td>Lineal por haz (beam)</td>
+          <td>Obscurecimiento de haz proyectado</td>
+          <td>Naves industriales y techos altos de gran área</td>
+          <td>Sensible a desalineación estructural</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="ol-art-warn">
+      <strong>⚠ Error frecuente en campo:</strong> Instalar detectores iónicos en cocinas o cerca de difusores de HVAC. El vapor, los gases de cocción y las corrientes de aire generan falsas alarmas que terminan en el peor escenario posible: que el personal silencie o desconecte el panel. Proyecto Red selecciona el detector por zona según el ambiente real, no por costo unitario.
+    </div>
+
+    <!-- 4 -->
+    <h2 id="s4">4. Paneles de control: convencional vs. direccionable</h2>
+    <p>El panel de control (FACP, Fire Alarm Control Panel) es el cerebro del sistema. Existen dos arquitecturas fundamentales, y la elección impacta el costo, la capacidad de diagnóstico y el tiempo de localización del evento.</p>
+
+    <table class="ol-art-spec-table" role="table">
+      <thead>
+        <tr>
+          <th scope="col">Característica</th>
+          <th scope="col">Convencional</th>
+          <th scope="col">Direccionable / analógico</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Localización del evento</td>
+          <td>Por zona (grupo de dispositivos)</td>
+          <td>Por dispositivo individual (dirección única)</td>
+        </tr>
+        <tr>
+          <td>Capacidad de puntos</td>
+          <td>Decenas, por circuitos de zona</td>
+          <td>Cientos a miles, por lazos SLC</td>
+        </tr>
+        <tr>
+          <td>Diagnóstico de sensibilidad</td>
+          <td>No disponible</td>
+          <td>Monitoreo de deriva y autocompensación por suciedad</td>
+        </tr>
+        <tr>
+          <td>Lógica causa-efecto</td>
+          <td>Básica, cableada</td>
+          <td>Programable por software (matrices)</td>
+        </tr>
+        <tr>
+          <td>Aplicación recomendada</td>
+          <td>Inmuebles pequeños y sencillos</td>
+          <td>Edificios medianos y grandes, multipiso, críticos</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Para prácticamente todos los proyectos comerciales, industriales, hospitalarios y de datos, Proyecto Red especifica paneles <strong>direccionables analógicos</strong>: cada detector reporta no solo "alarma sí/no", sino su nivel de obscurecimiento, su estado de suciedad y su dirección exacta. Eso permite localizar el evento en segundos, anticipar mantenimiento y reducir falsas alarmas mediante umbrales dinámicos.</p>
+
+    <!-- 5 -->
+    <h2 id="s5">5. Estaciones manuales de disparo</h2>
+    <p>Las estaciones manuales (pull stations) permiten a cualquier ocupante activar la alarma al detectar un incendio que el sistema automático aún no ha registrado. La <span class="ol-art-norm-badge">NFPA 72</span> establece criterios estrictos de ubicación y accesibilidad.</p>
+
+    <ul>
+      <li><strong>Ubicación en rutas de salida:</strong> en cada nivel, junto a cada salida y escalera de evacuación.</li>
+      <li><strong>Distancia de recorrido:</strong> ningún punto del piso debe quedar a más de aproximadamente 60 m (200 ft) de una estación manual.</li>
+      <li><strong>Altura de montaje:</strong> entre 1.07 m y 1.22 m del nivel de piso terminado, accesible para personas con discapacidad.</li>
+      <li><strong>Acción doble:</strong> mecanismo de doble acción (levantar/empujar) para reducir activaciones accidentales o maliciosas.</li>
+      <li><strong>Señalización e iluminación:</strong> visibles, contrastantes y, cuando aplica, iluminadas para identificación inmediata.</li>
+    </ul>
+
+    <!-- 6 -->
+    <h2 id="s6">6. Dispositivos de notificación: audible y visible</h2>
+    <p>De nada sirve detectar si la notificación no llega de forma inequívoca a cada ocupante. La <span class="ol-art-norm-badge">NFPA 72</span> regula tanto el nivel sonoro como la cobertura visual de los dispositivos de notificación.</p>
+
+    <h3>6.1 Notificación audible</h3>
+    <p>El patrón temporal estándar para alarma de evacuación es el <strong>Temporal-Three (T-3)</strong>: tres pulsos seguidos de una pausa, repetidos. El nivel sonoro debe superar el ruido ambiente en al menos 15 dBA, o 5 dBA por encima de cualquier sonido máximo de 60 segundos, con un mínimo típico de 75 dBA en la almohada para ocupaciones de dormitorio.</p>
+
+    <h3>6.2 Notificación visible</h3>
+    <p>Los estrobos son obligatorios en áreas con ruido elevado, ocupaciones públicas y para cumplir con accesibilidad. Su intensidad (en candelas) y su ubicación se calculan según el área del cuarto y la distancia de montaje, conforme a las tablas de la <span class="ol-art-norm-badge">NFPA 72</span> y los lineamientos de accesibilidad aplicables.</p>
+
+    <h3>6.3 Notificación por voz (EVAC)</h3>
+    <p>En edificios altos, hospitales, centros comerciales y aeropuertos, la notificación por voz (sistemas EVAC / mass notification) reemplaza a las sirenas: mensajes pregrabados y en vivo guían una evacuación por fases, reduciendo el pánico y permitiendo instrucciones dirigidas por zona.</p>
+
+    <!-- 7 -->
+    <h2 id="s7">7. Lógica causa-efecto y secuencia de operación</h2>
+    <p>El verdadero valor de un panel direccionable está en su matriz de causa-efecto: la programación que define qué hace el sistema ante cada evento. Proyecto Red documenta esta matriz como parte del expediente del proyecto.</p>
+
+    <div class="ol-calc-box">
+      <strong>Ejemplo de secuencia de operación (centro corporativo):</strong>
+      EVENTO: 1 detector de humo en alarma
+      → Alerta en panel + pre-señal en zona
+      → Notificación audible/visible en zona afectada
+      → Aviso a recepción y a monitoreo remoto
+
+      EVENTO: 2 detectores o estación manual
+      → Alarma general de evacuación (T-3)
+      → Paro de manejadoras de aire (HVAC)
+      → Liberación de puertas magnéticas
+      → Retorno de elevadores a planta baja
+      → Notificación a estación central / bomberos
+    </div>
+
+    <p>Esta lógica se prueba dispositivo por dispositivo durante la puesta en marcha y se vuelve a verificar en cada inspección anual conforme a <span class="ol-art-norm-badge">NFPA 72</span>.</p>
+
+    <!-- 8 -->
+    <h2 id="s8">8. Integración con rociadores y supresión</h2>
+    <p>Un sistema de detección moderno no opera aislado: es el coordinador de todos los sistemas activos del edificio. La integración con rociadores y supresión es donde un integrador como Proyecto Red marca la diferencia frente a una instalación fragmentada.</p>
+
+    <ul class="ol-checklist">
+      <li><strong>Supervisión de flujo:</strong> los interruptores de flujo de los rociadores reportan al panel la activación de agua, generando alarma y registro.</li>
+      <li><strong>Monitoreo de válvulas:</strong> toda válvula de control supervisada envía señal de "problema" si se mueve hacia cerrada — evitando el fallo más común en sistemas PCI.</li>
+      <li><strong>Sistemas de preacción:</strong> la apertura de la válvula de preacción requiere confirmación cruzada de dos detectores antes de liberar agua a la red.</li>
+      <li><strong>Disparo de agente limpio:</strong> la detección cruzada en cuartos críticos comanda la descarga de agente limpio con conteo regresivo y aborto manual.</li>
+      <li><strong>Paro de procesos:</strong> el panel comanda el paro de HVAC, dampers de humo y equipos de proceso para contener la propagación.</li>
+    </ul>
+
+    <p>Para profundizar en los sistemas de supresión que se integran con esta detección, consulta nuestra guía dedicada a <a href="/blog/supresion-agentes-limpios-co2-centros-datos-proyecto-red/">supresión por agentes limpios y CO₂ para centros de datos</a>.</p>
+
+    <!-- CTA INLINE -->
+    <div class="ol-art-cta-inline">
+      <p>¿Necesitas un sistema de detección direccionable diseñado e instalado bajo NFPA 72, integrado con tus rociadores y supresión? Conoce el trabajo de Proyecto Red como integrador PCI.</p>
+      <a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-btn-primary" style="--case-accent: #7F1D1D;">Ver caso Proyecto Red →</a>
+    </div>
+
+    <!-- 9 -->
+    <h2 id="s9">9. Energía, supervisión y respaldo</h2>
+    <p>Un sistema de alarma que se queda sin energía durante un corte de luz es inútil precisamente cuando más se necesita. La <span class="ol-art-norm-badge">NFPA 72</span> exige doble fuente de energía supervisada.</p>
+
+    <ul>
+      <li><strong>Fuente primaria:</strong> alimentación eléctrica comercial dedicada, con protección de circuito identificada.</li>
+      <li><strong>Fuente secundaria:</strong> banco de baterías sellado dimensionado para mantener el sistema en reposo 24 horas más el tiempo de alarma requerido.</li>
+      <li><strong>Supervisión de líneas:</strong> todos los circuitos (iniciación, notificación, comunicación) son supervisados — cualquier corte o cortocircuito genera señal de "problema".</li>
+      <li><strong>Cableado resistente al fuego:</strong> en circuitos críticos de supervivencia (sistemas de voz, rutas de evacuación) se usa cableado con clasificación de resistencia al fuego.</li>
+    </ul>
+
+    <!-- 10 -->
+    <h2 id="s10">10. Pruebas, puesta en marcha y mantenimiento NFPA 72</h2>
+    <p>La instalación es solo el comienzo. La <span class="ol-art-norm-badge">NFPA 72</span> define un régimen de inspección, prueba y mantenimiento que mantiene el sistema operativo a lo largo de su vida útil.</p>
+
+    <div class="ol-phase-block">
+      <div class="ol-phase-num">1</div>
+      <div class="ol-phase-body">
+        <h4>Prueba de aceptación</h4>
+        <p>Verificación funcional dispositivo por dispositivo: cada detector se prueba con humo o calor real/sintético, cada estación manual se activa, cada estrobo y sirena se verifica. Se valida la matriz causa-efecto completa.</p>
+      </div>
+    </div>
+
+    <div class="ol-phase-block">
+      <div class="ol-phase-num">2</div>
+      <div class="ol-phase-body">
+        <h4>Inspección y prueba periódica</h4>
+        <p>Prueba semestral de detectores y dispositivos de iniciación, prueba anual del 100% del sistema, verificación trimestral de la transmisión a monitoreo y prueba mensual de baterías según el componente.</p>
+      </div>
+    </div>
+
+    <div class="ol-phase-block">
+      <div class="ol-phase-num">3</div>
+      <div class="ol-phase-body">
+        <h4>Sensibilidad de detectores</h4>
+        <p>Verificación de la sensibilidad de los detectores de humo a intervalos definidos. Los paneles direccionables permiten lectura electrónica continua; los convencionales requieren prueba con instrumento.</p>
+      </div>
+    </div>
+
+    <div class="ol-phase-block">
+      <div class="ol-phase-num">4</div>
+      <div class="ol-phase-body">
+        <h4>Registro y expediente</h4>
+        <p>Cada prueba se documenta en el formato NFPA 72 correspondiente, firmado por el técnico. Estos registros conforman el expediente que se presenta en auditorías de protección civil y aseguradoras.</p>
+      </div>
+    </div>
+
+    <!-- 11 -->
+    <h2 id="s11">11. Errores comunes en sistemas de detección en México</h2>
+    <p>La experiencia de campo de Proyecto Red ha identificado los errores más recurrentes que comprometen la efectividad de los sistemas de detección.</p>
+
+    <table class="ol-art-spec-table" role="table">
+      <thead>
+        <tr>
+          <th scope="col">Error</th>
+          <th scope="col">Consecuencia</th>
+          <th scope="col">Solución</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Detector inadecuado para el ambiente</td>
+          <td>Falsas alarmas que llevan a desconectar el panel</td>
+          <td>Selección por zona según ambiente real</td>
+        </tr>
+        <tr>
+          <td>Detectores cerca de difusores de HVAC</td>
+          <td>Detección tardía por dilución del humo</td>
+          <td>Reubicación según patrones de flujo de aire</td>
+        </tr>
+        <tr>
+          <td>Sin respaldo de baterías dimensionado</td>
+          <td>Sistema inoperable durante corte de energía</td>
+          <td>Cálculo de carga y banco de baterías supervisado</td>
+        </tr>
+        <tr>
+          <td>Notificación insuficiente en zonas ruidosas</td>
+          <td>Ocupantes no escuchan la alarma de evacuación</td>
+          <td>Cálculo de nivel sonoro + estrobos</td>
+        </tr>
+        <tr>
+          <td>Sin matriz causa-efecto documentada</td>
+          <td>Imposible verificar o mantener la lógica</td>
+          <td>Matriz programada y documentada en el expediente</td>
+        </tr>
+        <tr>
+          <td>Detección no integrada con supresión</td>
+          <td>Supresión que dispara tarde o no dispara</td>
+          <td>Integración con detección cruzada y monitoreo</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 12 -->
+    <h2 id="s12">12. ¿Por qué elegir a Proyecto Red?</h2>
+    <p>Proyecto Red es un <strong>integrador de sistemas PCI</strong>, no un simple proveedor de equipo. Eso significa que el sistema de detección no se entrega como una caja de dispositivos, sino como un sistema diseñado, calculado, instalado, programado, probado y documentado — y coordinado con los rociadores y la supresión del mismo edificio.</p>
+
+    <ul class="ol-checklist">
+      <li><strong>Ingeniería de detalle:</strong> diseño del sistema con cálculo de cobertura, niveles de notificación y matriz causa-efecto.</li>
+      <li><strong>Paneles direccionables:</strong> arquitectura analógica con localización por dispositivo y diagnóstico de sensibilidad.</li>
+      <li><strong>Integración total:</strong> coordinación con rociadores, supresión por agente limpio, HVAC, elevadores y control de accesos.</li>
+      <li><strong>Equipo con listado UL/FM:</strong> componentes certificados con documentación de origen.</li>
+      <li><strong>Programa NFPA 72:</strong> contratos de inspección, prueba y mantenimiento que mantienen el sistema en cumplimiento.</li>
+      <li><strong>Expediente completo:</strong> planos as-built, matriz causa-efecto, protocolos de prueba y manuales de operación.</li>
+    </ul>
+
+    <div class="ol-art-contact-card">
+      <h3>Contacto Proyecto Red — Detección y Alarma de Incendio</h3>
+      <div class="ol-art-contact-grid">
+        <div class="ol-art-contact-item">
+          <strong>Sitio web</strong>
+          <a href="https://proyectored.mx" target="_blank" rel="noopener">proyectored.mx</a>
+        </div>
+        <div class="ol-art-contact-item">
+          <strong>Teléfono</strong>
+          <a href="tel:+525547868402">+52 55 4786 8402</a>
+        </div>
+        <div class="ol-art-contact-item">
+          <strong>Servicios</strong>
+          <span>Diseño · Instalación · Programación · Mantenimiento NFPA 72</span>
+        </div>
+        <div class="ol-art-contact-item">
+          <strong>Cobertura</strong>
+          <span>Ciudad de México y Estado de México</span>
+        </div>
+        <div class="ol-art-contact-item">
+          <strong>Normas que cubre</strong>
+          <span>NFPA 72 · 13 · 14 · 20 · 25 · 2001 · NOM-002-STPS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMPARTIR -->
+    <div class="ol-art-share">
+      <span class="ol-art-share-label">Compartir:</span>
+      <a href="https://twitter.com/intent/tweet?url=https://origenlab.com/blog/sistemas-deteccion-alarma-incendio-nfpa-72-proyecto-red/&text=Sistemas+de+detección+y+alarma+de+incendio+NFPA+72" target="_blank" rel="noopener" class="ol-art-share-btn" aria-label="Compartir en Twitter/X">𝕏</a>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://origenlab.com/blog/sistemas-deteccion-alarma-incendio-nfpa-72-proyecto-red/" target="_blank" rel="noopener" class="ol-art-share-btn" aria-label="Compartir en LinkedIn">in</a>
+      <a href="https://wa.me/?text=Sistemas+de+detección+y+alarma+de+incendio+NFPA+72+https://origenlab.com/blog/sistemas-deteccion-alarma-incendio-nfpa-72-proyecto-red/" target="_blank" rel="noopener" class="ol-art-share-btn" aria-label="Compartir en WhatsApp">WA</a>
+    </div>
+
+    <!-- AUTOR -->
+    <div class="ol-art-author-card">
+      <div class="ol-art-author-card-info">
+        <strong class="ol-art-author-card-name">Equipo OrigenLab</strong>
+        <p class="ol-art-author-card-bio">Agencia mexicana de desarrollo web. Creamos sitios rápidos, modernos y optimizados para negocios que necesitan resultados reales en internet.</p>
+      </div>
+    </div>
+
+  </div><!-- /.ol-art-content -->
+
+  <!-- SIDEBAR -->
+  <aside class="ol-art-sidebar" aria-label="Contenido relacionado">
+
+    <div class="ol-side-card" style="--case-accent: #7F1D1D;">
+      <div class="ol-side-meta">
+        <span>Sobre Proyecto Red</span>
+      </div>
+      <h3 class="ol-side-title">Integrador PCI</h3>
+      <p class="ol-side-body">Proyecto Red diseña, instala y mantiene sistemas integrales de protección contra incendios para industria, corporativos y centros de datos en México.</p>
+      <a href="https://proyectored.mx" target="_blank" rel="noopener" class="ol-btn-primary" style="--case-accent: #7F1D1D;">Ver sitio →</a>
+    </div>
+
+    <div class="ol-side-card ol-side-toc" style="--case-accent: #7F1D1D;">
+      <div class="ol-side-meta"><span>Contenido</span></div>
+      <nav aria-label="Tabla de contenido">
+        <ol>
+          <li><a href="#s1">Por qué la detección define el resultado</a></li>
+          <li><a href="#s2">Anatomía del sistema</a></li>
+          <li><a href="#s3">Tipos de detector</a></li>
+          <li><a href="#s4">Paneles: convencional vs. direccionable</a></li>
+          <li><a href="#s5">Estaciones manuales</a></li>
+          <li><a href="#s6">Dispositivos de notificación</a></li>
+          <li><a href="#s7">Lógica causa-efecto</a></li>
+          <li><a href="#s8">Integración con supresión</a></li>
+          <li><a href="#s9">Energía y respaldo</a></li>
+          <li><a href="#s10">Pruebas y mantenimiento NFPA 72</a></li>
+          <li><a href="#s11">Errores comunes</a></li>
+          <li><a href="#s12">¿Por qué Proyecto Red?</a></li>
+        </ol>
+      </nav>
+    </div>
+
+    <div class="ol-side-card ol-side-cta" style="--case-accent: #7F1D1D;">
+      <p>¿Tu empresa necesita un sistema de detección certificado bajo NFPA 72?</p>
+      <a href="/contacto/" class="ol-btn-primary" style="--case-accent: #7F1D1D;">Cotiza tu proyecto →</a>
+    </div>
+
+  </aside>
+
+</main><!-- /.ol-article-body -->
+
+<!-- RELATED POSTS -->
+<section class="ol-related-grid" aria-label="Artículos relacionados">
+  <div class="ol-related-inner">
+    <h2 class="ol-related-title">Más artículos sobre protección contra incendios</h2>
+    <div class="ol-blog-grid" style="--cols: 3;">
+
+      <article class="ol-blog-card">
+        <div class="ol-blog-card-body">
+          <a href="/blog/supresion-agentes-limpios-co2-centros-datos-proyecto-red/" class="ol-blog-card-category">Supresión PCI</a>
+          <h3 class="ol-blog-card-title"><a href="/blog/supresion-agentes-limpios-co2-centros-datos-proyecto-red/">Supresión por agentes limpios y CO₂ para centros de datos</a></h3>
+          <p class="ol-blog-card-excerpt">FM-200, Novec 1230, inergén y CO₂ bajo NFPA 2001/12: cómo proteger CPD, cuartos eléctricos y telecom sin daño por agua.</p>
+          <a href="/blog/supresion-agentes-limpios-co2-centros-datos-proyecto-red/" class="ol-blog-card-link">Leer artículo →</a>
+        </div>
+      </article>
+
+      <article class="ol-blog-card">
+        <div class="ol-blog-card-body">
+          <a href="/blog/proyecto-red-sistemas-contra-incendio-integrales/" class="ol-blog-card-category">Integrador PCI</a>
+          <h3 class="ol-blog-card-title"><a href="/blog/proyecto-red-sistemas-contra-incendio-integrales/">Proyecto Red: integrador de sistemas PCI en México</a></h3>
+          <p class="ol-blog-card-excerpt">Quién es Proyecto Red, qué sistemas integra y por qué la diferencia entre distribuidor e integrador importa en proyectos de alta complejidad.</p>
+          <a href="/blog/proyecto-red-sistemas-contra-incendio-integrales/" class="ol-blog-card-link">Leer artículo →</a>
+        </div>
+      </article>
+
+      <article class="ol-blog-card">
+        <div class="ol-blog-card-body">
+          <a href="/blog/diseno-instalacion-mantenimiento-sistemas-pci-proyecto-red/" class="ol-blog-card-category">Ingeniería PCI</a>
+          <h3 class="ol-blog-card-title"><a href="/blog/diseno-instalacion-mantenimiento-sistemas-pci-proyecto-red/">Diseño, instalación y mantenimiento de sistemas PCI</a></h3>
+          <p class="ol-blog-card-excerpt">El ciclo completo de un sistema PCI: cálculo hidráulico, instalación en campo y programa de inspección NFPA 25.</p>
+          <a href="/blog/diseno-instalacion-mantenimiento-sistemas-pci-proyecto-red/" class="ol-blog-card-link">Leer artículo →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- NEXT READ -->
+<section class="ol-nextread" aria-label="Continúa leyendo">
+  <div class="ol-nextread-inner">
+    <span class="ol-nextread-eyebrow">Continúa leyendo</span>
+    <div class="ol-nextread-links">
+      <a href="/blog/supresion-agentes-limpios-co2-centros-datos-proyecto-red/" class="ol-nextread-link">Supresión por agentes limpios y CO₂ para centros de datos →</a>
+      <a href="/blog/proyecto-red-sistemas-contra-incendio-integrales/" class="ol-nextread-link">Proyecto Red: integrador de sistemas PCI en México →</a>
+      <a href="/blog/diseno-instalacion-mantenimiento-sistemas-pci-proyecto-red/" class="ol-nextread-link">Diseño, instalación y mantenimiento de sistemas PCI →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAR -->
+<section class="ol-cta-bar">
+  <div class="ol-cta-bar-inner">
+    <div class="ol-cta-bar-copy">
+      <h2 class="ol-cta-bar-title">¿Tu empresa necesita un sitio web profesional?</h2>
+      <p class="ol-cta-bar-sub">Diseñamos y desarrollamos sitios que generan resultados reales.</p>
+    </div>
+    <a href="/contacto/" class="btn-primary">Solicitar cotización →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="ol-footer">
+  <div class="ol-footer-inner">
+    <div class="ol-footer-brand">
+      <a href="/" class="ol-logo" aria-label="OrigenLab — inicio">
+        <span class="ol-logo-mark">OL</span>
+        <span class="ol-logo-text">OrigenLab</span>
+      </a>
+      <p class="ol-footer-tagline">Desarrollo web profesional para empresas mexicanas.</p>
+    </div>
+    <nav class="ol-footer-nav" aria-label="Navegación de pie de página">
+      <div class="ol-footer-col">
+        <h3>Servicios</h3>
+        <a href="/servicios/desarrollo-web/">Desarrollo web</a>
+        <a href="/servicios/landing-pages/">Landing pages</a>
+        <a href="/servicios/tiendas-en-linea/">Tiendas en línea</a>
+        <a href="/servicios/rediseno-web/">Rediseño web</a>
+      </div>
+      <div class="ol-footer-col">
+        <h3>Empresa</h3>
+        <a href="/nosotros/">Nosotros</a>
+        <a href="/portafolio/">Portafolio</a>
+        <a href="/blog/">Blog</a>
+        <a href="/contacto/">Contacto</a>
+      </div>
+      <div class="ol-footer-col">
+        <h3>Legal</h3>
+        <a href="/aviso-de-privacidad/">Aviso de privacidad</a>
+        <a href="/terminos/">Términos de servicio</a>
+      </div>
+    </nav>
+  </div>
+  <div class="ol-footer-bottom">
+    <p>© 2026 OrigenLab. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="../../_astro/ol-header.js?v20260601a"></script>
+</body>
+</html>
