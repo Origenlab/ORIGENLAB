@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Caso · Gama de México — Sitio Corporativo · Distribución Industrial | OrigenLab</title>
-  <meta name="description" content="Caso de estudio del sitio corporativo de Gama de México, distribuidor autorizado de Elkhart Brass en México. Catálogo técnico de monitores, boquillas, mangueras y válvulas certificadas UL/FM, con cobertura en CDMX, Querétaro y el Bajío.">
+  <meta name="description" content="Caso de estudio del sitio corporativo de Gama de México, distribuidor autorizado de Elkhart Brass en México. Catálogo técnico de monitores, boquillas, mangueras y válvulas certificadas UL/FM, con dos sucursales (CDMX y Querétaro) y envíos a toda la República.">
   <link rel="canonical" href="https://origenlab.com/portafolio/equipos-contra-incendios/gama-de-mexico/">
 
   <!-- Open Graph -->
@@ -12,14 +12,14 @@
   <meta property="og:url" content="https://origenlab.com/portafolio/equipos-contra-incendios/gama-de-mexico/">
   <meta property="og:title" content="Caso · Gama de México — Sitio Corporativo · Distribución Industrial | OrigenLab">
   <meta property="og:description" content="Cómo construimos el sitio corporativo de Gama de México: arquitectura, diseño, catálogo técnico y conversión B2B para distribución autorizada en México.">
-  <meta property="og:image" content="https://origenlab.com/img/equipos-contra-incendios/gamademexico/gama-home-distribuidor-elkhart-brass-mexico.avif">
+  <meta property="og:image" content="https://origenlab.com/img/equipos-contra-incendios/gamademexico/gamademexico-hero.webp">
   <meta property="og:locale" content="es_MX">
   <meta property="og:site_name" content="OrigenLab">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Caso · Gama de México — Sitio Corporativo · Distribución Industrial | OrigenLab">
   <meta name="twitter:description" content="Sitio corporativo B2B para distribuidor autorizado de Elkhart Brass en México.">
-  <meta name="twitter:image" content="https://origenlab.com/img/equipos-contra-incendios/gamademexico/gama-home-distribuidor-elkhart-brass-mexico.avif">
+  <meta name="twitter:image" content="https://origenlab.com/img/equipos-contra-incendios/gamademexico/gamademexico-hero.webp">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="../../../favicon.svg">
@@ -49,9 +49,117 @@
     /* Hero hereda el acento del caso */
     .hero { --hero-accent: var(--case-accent); --hero-accent-soft: var(--case-accent-soft); --hero-accent-line: var(--case-accent-line); }
     .hero::before { background: radial-gradient(ellipse at center, rgba(192,57,43,0.08) 0%, transparent 65%); }
+
+    /* ── Maquetas .mk (browser-mockups del sitio del cliente · tema claro · sin animaciones) ── */
+    .mk { --mk-indigo:#C0392B; --mk-ink:#0F1729; --mk-gray:#475467; --mk-soft:#7A8699;
+          --mk-line:#E6E8EE; --mk-bg:#FFFFFF; --mk-bg2:#F6F7FB; --mk-indigo-soft:#FBE9E7;
+          border-radius:10px; overflow:hidden; border:1px solid var(--mk-line); background:var(--mk-bg); }
+    .mk-bar { display:flex; align-items:center; gap:.55rem; padding:.5rem .8rem; background:#1A1D29; border-bottom:1px solid rgba(255,255,255,.06); }
+    .mk-dots { display:flex; gap:5px; }
+    .mk-dots i { width:8px; height:8px; border-radius:50%; background:rgba(255,255,255,.22); }
+    .mk-dots i:nth-child(1){ background:#ED6A5E; } .mk-dots i:nth-child(2){ background:#F4BF4F; } .mk-dots i:nth-child(3){ background:#61C554; }
+    .mk-url { flex:1; background:rgba(255,255,255,.07); border-radius:999px; padding:.22rem .7rem; font-size:10.5px; color:rgba(255,255,255,.62); text-align:center; font-family:'SFMono-Regular',Menlo,Consolas,monospace; letter-spacing:.02em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .mk-view { background:var(--mk-bg); color:var(--mk-ink); padding:1.4rem 1.5rem 1.6rem; }
+    .mk-nav { display:flex; align-items:center; justify-content:space-between; padding-bottom:1rem; border-bottom:1px solid var(--mk-line); margin-bottom:1.3rem; }
+    .mk-logo { font-size:.95rem; font-weight:800; color:var(--mk-indigo); letter-spacing:-.01em; }
+    .mk-menu { display:flex; gap:.85rem; font-size:10.5px; color:var(--mk-gray); font-weight:600; align-items:center; }
+    .mk-menu .mk-cta { background:var(--mk-indigo); color:#fff; padding:.28rem .6rem; border-radius:6px; }
+    .mk-eyebrow { font-size:9.5px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--mk-indigo); }
+    .mk-h { font-size:1.5rem; font-weight:800; letter-spacing:-.02em; line-height:1.1; color:var(--mk-ink); margin:.4rem 0 0; }
+    .mk-h .ac { color:var(--mk-indigo); }
+    .mk-sub { font-size:11.5px; color:var(--mk-gray); line-height:1.55; margin:.6rem 0 0; }
+    .mk-grid2 { display:grid; grid-template-columns:1.1fr 1fr; gap:1.6rem; align-items:start; }
+    .mk-sect-h { font-size:1.05rem; font-weight:800; letter-spacing:-.01em; color:var(--mk-ink); text-align:center; margin:0 0 .25rem; }
+    .mk-sect-sub { font-size:10.5px; color:var(--mk-soft); text-align:center; line-height:1.5; margin:0 auto 1.2rem; max-width:80%; }
+    .mk-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:.7rem; }
+    .mk-card { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.8rem .75rem; }
+    .mk-ic { width:30px; height:30px; border-radius:7px; background:var(--mk-indigo-soft); color:var(--mk-indigo); display:flex; align-items:center; justify-content:center; margin-bottom:.55rem; }
+    .mk-ct { font-size:11.5px; font-weight:700; color:var(--mk-ink); margin:0 0 .35rem; }
+    .mk-bul { list-style:none; margin:0; padding:0; }
+    .mk-bul li { position:relative; font-size:9.5px; color:var(--mk-gray); line-height:1.5; padding-left:.85rem; margin-bottom:.18rem; }
+    .mk-bul li::before { content:''; position:absolute; left:0; top:.42em; width:5px; height:5px; border-radius:50%; background:var(--mk-indigo); opacity:.55; }
+    .mk-stats { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-stat { text-align:center; background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:1rem .5rem; }
+    .mk-stat b { display:block; font-size:1.45rem; font-weight:800; color:var(--mk-indigo); letter-spacing:-.02em; line-height:1; }
+    .mk-stat span { display:block; font-size:9px; color:var(--mk-soft); margin-top:.4rem; line-height:1.35; font-weight:600; }
+    .mk-chips { display:flex; flex-wrap:wrap; gap:.4rem; justify-content:center; }
+    .mk-chip { font-size:9.5px; font-weight:600; color:var(--mk-gray); background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:999px; padding:.3rem .65rem; }
+    .mk-chip.on { background:var(--mk-indigo-soft); border-color:rgba(192,57,43,.25); color:var(--mk-indigo); }
+    .mk-tcards { display:grid; grid-template-columns:repeat(3,1fr); gap:.7rem; }
+    .mk-tcard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .8rem; }
+    .mk-trow { display:flex; align-items:center; gap:.5rem; margin-bottom:.5rem; }
+    .mk-av { width:28px; height:28px; border-radius:50%; background:var(--mk-indigo); color:#fff; font-size:9.5px; font-weight:700; display:flex; align-items:center; justify-content:center; flex:0 0 28px; }
+    .mk-tn { font-size:10px; font-weight:700; color:var(--mk-ink); line-height:1.2; }
+    .mk-tloc { font-size:8.5px; color:var(--mk-soft); }
+    .mk-stars { color:#F5A623; font-size:9px; letter-spacing:1px; margin-bottom:.3rem; }
+    .mk-quote { font-size:9.5px; color:var(--mk-gray); line-height:1.5; margin:0; }
+    .mk-form { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:11px; padding:1.1rem 1.1rem 1.2rem; }
+    .mk-field { height:30px; background:var(--mk-bg); border:1px solid var(--mk-line); border-radius:7px; margin-bottom:.55rem; display:flex; align-items:center; padding:0 .6rem; font-size:9.5px; color:var(--mk-soft); }
+    .mk-frow { display:grid; grid-template-columns:1fr 1fr; gap:.55rem; }
+    .mk-submit { background:var(--mk-indigo); color:#fff; font-size:10.5px; font-weight:700; text-align:center; border-radius:7px; padding:.6rem; margin-top:.3rem; }
+    .mk-trust { display:grid; grid-template-columns:repeat(4,1fr); gap:.55rem; margin-bottom:1rem; }
+    .mk-trust div { text-align:center; }
+    .mk-trust b { display:block; font-size:1.05rem; font-weight:800; color:var(--mk-indigo); line-height:1; }
+    .mk-trust span { display:block; font-size:8px; color:var(--mk-soft); margin-top:.25rem; font-weight:600; }
+    /* --- Hero oscuro (mirror del sitio live · acentos derivados del rojo industrial #C0392B) --- */
+    .mk-hero { background:linear-gradient(135deg,#1A1014 0%,#140C0E 58%,#1A1014 100%); margin:-1.4rem -1.5rem 1.3rem; padding:1.5rem 1.5rem 1.35rem; border-bottom:1px solid var(--mk-line); }
+    .mk-hero .mk-eyebrow { color:#FF8A7A; }
+    .mk-hero .mk-h { color:#fff; }
+    .mk-hero .mk-h .ac { color:#FF6B5E; }
+    .mk-hero .mk-sub { color:rgba(240,228,226,.74); }
+    .mk-hb { display:grid; grid-template-columns:1.2fr 1fr; gap:1.4rem; align-items:start; }
+    .mk-hk { font-size:9px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#FF8A7A; margin:0 0 .35rem; }
+    .mk-hp { font-size:10px; color:rgba(240,228,226,.68); line-height:1.55; margin:0; }
+    .mk-strip { display:flex; gap:1.6rem; margin-top:1rem; padding-top:.9rem; border-top:1px solid rgba(255,255,255,.1); }
+    .mk-strip div b { font-size:1.15rem; font-weight:800; color:#fff; letter-spacing:-.02em; line-height:1; }
+    .mk-strip div b span { color:#FF6B5E; }
+    .mk-strip div .l { display:block; font-size:7.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:rgba(240,228,226,.52); margin-top:.3rem; }
+    /* --- Tira de categorías bajo el hero --- */
+    .mk-quick { display:grid; grid-template-columns:repeat(6,1fr); gap:.5rem; }
+    .mk-qc { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:8px; padding:.6rem .55rem; }
+    .mk-qc .mk-ic { width:24px; height:24px; margin-bottom:.4rem; border-radius:6px; }
+    .mk-qc b { display:block; font-size:9.5px; font-weight:700; color:var(--mk-ink); line-height:1.2; }
+    .mk-qc span { display:block; font-size:7.5px; color:var(--mk-soft); margin-top:.18rem; line-height:1.3; }
+    .mk-qc.cta { background:var(--mk-indigo); border-color:var(--mk-indigo); }
+    .mk-qc.cta b, .mk-qc.cta span { color:#fff; }
+    .mk-qc.cta .mk-ic { background:rgba(255,255,255,.18); color:#fff; }
+    /* --- Listas INCLUYE en cards de categoría --- */
+    .mk-pbadge { float:right; font-size:7.5px; font-weight:700; letter-spacing:.08em; color:var(--mk-indigo); background:var(--mk-indigo-soft); border-radius:5px; padding:.18rem .4rem; }
+    .mk-inc-k { font-size:7.5px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; color:var(--mk-soft); margin:.55rem 0 .35rem; }
+    .mk-inc { display:flex; flex-wrap:wrap; gap:.28rem; }
+    .mk-inc span { font-size:8px; font-weight:600; color:var(--mk-gray); background:var(--mk-bg); border:1px solid var(--mk-line); border-radius:5px; padding:.22rem .42rem .22rem .82rem; position:relative; }
+    .mk-inc span::before { content:''; position:absolute; left:.36rem; top:50%; transform:translateY(-50%); width:4px; height:4px; border-radius:50%; background:var(--mk-indigo); }
+    /* --- Diferenciadores (3 col) --- */
+    .mk-diff { display:grid; grid-template-columns:repeat(3,1fr); gap:.7rem; }
+    .mk-dcard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .75rem; }
+    .mk-dcard .mk-ic { margin-bottom:.5rem; }
+    .mk-dcard b { display:block; font-size:11px; font-weight:700; color:var(--mk-ink); margin-bottom:.3rem; }
+    .mk-dcard p { font-size:8.5px; color:var(--mk-gray); line-height:1.5; margin:0 0 .4rem; }
+    .mk-dlink { font-size:8px; font-weight:700; color:var(--mk-indigo); }
+    /* --- Sectores / industrias atendidas --- */
+    .mk-sect-cards { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-scard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .75rem; display:flex; flex-direction:column; }
+    .mk-scard .k { font-size:7.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--mk-indigo); margin-bottom:.3rem; }
+    .mk-scard b { font-size:11.5px; font-weight:700; color:var(--mk-ink); margin-bottom:.3rem; }
+    .mk-scard p { font-size:8.5px; color:var(--mk-gray); line-height:1.5; margin:0 0 .5rem; }
+    .mk-scard .v { font-size:8px; font-weight:700; color:var(--mk-indigo); margin-top:auto; }
+    /* --- Aliados / casos reales --- */
+    .mk-ally { font-size:7.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--mk-indigo); background:var(--mk-indigo-soft); border-radius:5px; padding:.18rem .45rem; display:inline-block; margin-bottom:.45rem; }
+    .mk-dom { font-size:8px; color:var(--mk-soft); margin-top:.35rem; }
+    @media (max-width:640px){
+      .mk-grid2 { grid-template-columns:1fr; gap:1rem; }
+      .mk-cards, .mk-tcards { grid-template-columns:1fr 1fr; }
+      .mk-stats, .mk-trust { grid-template-columns:repeat(2,1fr); }
+      .mk-h { font-size:1.2rem; }
+      .mk-hb { grid-template-columns:1fr; gap:.8rem; }
+      .mk-quick { grid-template-columns:repeat(3,1fr); }
+      .mk-diff { grid-template-columns:1fr; }
+      .mk-sect-cards { grid-template-columns:1fr 1fr; }
+      .mk-strip { flex-wrap:wrap; gap:.9rem; }
+    }
   </style>
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.com/#organization","name":"OrigenLab","url":"https://origenlab.com","logo":"https://origenlab.com/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.com/#website","url":"https://origenlab.com/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.com/#organization"}},{"@type":"BreadcrumbList","@id":"https://origenlab.com/portafolio/equipos-contra-incendios/gama-de-mexico/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.com/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.com/portafolio/"},{"@type":"ListItem","position":3,"name":"Equipos Contra Incendios","item":"https://origenlab.com/portafolio/equipos-contra-incendios/"},{"@type":"ListItem","position":4,"name":"Gama de México","item":"https://origenlab.com/portafolio/equipos-contra-incendios/gama-de-mexico/"}]},{"@type":"Organization","@id":"https://gamademexico.com/#organization","name":"Gama de México","url":"https://gamademexico.com/","description":"Distribuidor autorizado en México de Elkhart Brass — equipo contra incendios certificado UL/FM con cobertura en CDMX, Querétaro y el corredor industrial del Bajío.","areaServed":{"@type":"Country","name":"México"},"knowsAbout":["Equipos contra incendios","Monitores industriales","Boquillas UL/FM","Mangueras","Válvulas","Distribución autorizada","Elkhart Brass"],"brand":[{"@type":"Brand","name":"Elkhart Brass"}]},{"@type":"CreativeWork","@id":"https://origenlab.com/portafolio/equipos-contra-incendios/gama-de-mexico/#case","name":"Gama de México — Caso de estudio","description":"Distribuidor autorizado en México de Elkhart Brass — equipo contra incendios certificado UL/FM con cobertura en CDMX, Querétaro y el corredor industrial del Bajío.","inLanguage":"es-MX","image":"https://origenlab.com/img/equipos-contra-incendios/gamademexico/gama-home-distribuidor-elkhart-brass-mexico.avif","author":{"@id":"https://origenlab.com/#organization"},"publisher":{"@id":"https://origenlab.com/#organization"},"about":{"@id":"https://gamademexico.com/#organization"},"keywords":["distribución industrial","equipos contra incendios","Elkhart Brass","catálogo técnico","B2B","UL/FM"]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.com/#organization","name":"OrigenLab","url":"https://origenlab.com","logo":"https://origenlab.com/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.com/#website","url":"https://origenlab.com/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.com/#organization"}},{"@type":"BreadcrumbList","@id":"https://origenlab.com/portafolio/equipos-contra-incendios/gama-de-mexico/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.com/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.com/portafolio/"},{"@type":"ListItem","position":3,"name":"Equipos Contra Incendios","item":"https://origenlab.com/portafolio/equipos-contra-incendios/"},{"@type":"ListItem","position":4,"name":"Gama de México","item":"https://origenlab.com/portafolio/equipos-contra-incendios/gama-de-mexico/"}]},{"@type":"Organization","@id":"https://gamademexico.com/#organization","name":"Gama de México","url":"https://gamademexico.com/","description":"Distribuidor autorizado en México de Elkhart Brass — equipo contra incendios certificado UL/FM con dos sucursales (CDMX y Querétaro) y envíos a toda la República Mexicana.","areaServed":{"@type":"Country","name":"México"},"knowsAbout":["Equipos contra incendios","Monitores Copperhead y Stinger","Boquillas turbo jet y tipo pistola","Mangueras Millhose y Blindex","Válvulas OS&Y UL/FM","Conexiones de bronce y toma siamesa FDC","Gabinetes e hidrantes","Distribución autorizada Elkhart Brass","NFPA 13","NFPA 14","NFPA 24","NOM-002-STPS"],"brand":[{"@type":"Brand","name":"Elkhart Brass"}]},{"@type":"CreativeWork","@id":"https://origenlab.com/portafolio/equipos-contra-incendios/gama-de-mexico/#case","name":"Gama de México — Caso de estudio","description":"Distribuidor autorizado en México de Elkhart Brass — equipo contra incendios certificado UL/FM con dos sucursales (CDMX y Querétaro) y envíos a toda la República Mexicana.","inLanguage":"es-MX","image":"https://origenlab.com/img/equipos-contra-incendios/gamademexico/gamademexico-hero.webp","author":{"@id":"https://origenlab.com/#organization"},"publisher":{"@id":"https://origenlab.com/#organization"},"about":{"@id":"https://gamademexico.com/#organization"},"keywords":["distribución industrial","equipos contra incendios","Elkhart Brass","catálogo técnico","B2B","UL/FM"]}]}</script>
 </head>
 <body>
 
@@ -142,9 +250,18 @@
                     <li><a href="/portafolio/seguridad-privada/origins/" class="ol-dropdown-link">ORIGINS Private Security</a></li>
                     <li><a href="/portafolio/seguridad-privada/seprico/" class="ol-dropdown-link">SEPRICO</a></li>
                     <li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-dropdown-link">SeguridadPrivadaMX</a></li>
+                    <li><a href="/portafolio/seguridad-privada/seguridadeventos/" class="ol-dropdown-link">SeguridadEventos</a></li>
+                    <li><a href="/portafolio/seguridad-privada/gupri/" class="ol-dropdown-link">GUPRI</a></li>
+                    <li><a href="/portafolio/seguridad-privada/directorio/" class="ol-dropdown-link">Directorio México</a></li>
                   </ul>
                 </div>
               </li>
+              <li class="ol-has-subdrop">
+              <a href="/portafolio/equipo-para-eventos/" class="ol-dropdown-link ol-dropdown-parent">Equipo para Eventos</a>
+              <div class="ol-subdrop"><ul>
+                <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-dropdown-link">PODIUMEX</a></li>
+              </ul></div>
+            </li>
             </ul>
           </div>
         </li>
@@ -205,6 +322,11 @@
         <li><a href="/portafolio/seguridad-privada/origins/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— ORIGINS Private Security</a></li>
         <li><a href="/portafolio/seguridad-privada/seprico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SEPRICO</a></li>
         <li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SeguridadPrivadaMX</a></li>
+        <li><a href="/portafolio/seguridad-privada/seguridadeventos/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SeguridadEventos</a></li>
+        <li><a href="/portafolio/seguridad-privada/gupri/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— GUPRI</a></li>
+        <li><a href="/portafolio/seguridad-privada/directorio/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Directorio México</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/" class="ol-mobile-link ol-mobile-sublink">Equipo para Eventos</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— PODIUMEX</a></li>
       </ul>
     </li>
     <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
@@ -257,7 +379,7 @@
       <div class="hero__col1">
         <span class="hero__eyebrow">Caso de estudio · Distribución Industrial</span>
         <h1 class="hero__title">Gama de México<br>Sitio corporativo<br>de alta autoridad.</h1>
-        <p class="hero__sub">Distribuidor autorizado de Elkhart Brass en México — catálogo técnico de monitores, boquillas, mangueras y válvulas certificadas UL/FM, con cobertura en CDMX, Querétaro y el Bajío.</p>
+        <p class="hero__sub">Distribuidor autorizado de Elkhart Brass en México — catálogo técnico de monitores, boquillas, mangueras y válvulas certificadas UL/FM, operando desde CDMX y Querétaro con envíos a toda la República.</p>
         <div class="hero__ctas">
           <a href="https://gamademexico.com/" target="_blank" rel="noopener noreferrer" class="ol-btn-primary">
             Visitar el sitio
@@ -272,7 +394,7 @@
 
       <div class="hero__col2">
         <p class="hero__p1">Plataforma comercial B2B diseñada para que arquitectos, integradores, corporativos industriales y gobierno encuentren equipos contra incendios certificados UL/FM con claridad técnica y confianza institucional. Cada sección refuerza el valor de la distribución autorizada de Elkhart Brass en México y guía al visitante calificado hacia la solicitud de cotización.</p>
-        <p class="hero__p2">Arquitectura de contenidos, jerarquía visual y redacción técnica construidas con criterio editorial profesional para el mercado mexicano: equipos contra incendios, distribuidor Elkhart Brass, monitores industriales, boquillas UL/FM y protección contra incendios en CDMX, Querétaro y Bajío. Sitio rápido, indexable y profesional.</p>
+        <p class="hero__p2">Arquitectura de contenidos, jerarquía visual y redacción técnica construidas con criterio editorial profesional para el mercado mexicano: equipos contra incendios, distribuidor Elkhart Brass, monitores Copperhead y Stinger, boquillas UL/FM y protección contra incendios con operación en CDMX y Querétaro y envíos nacionales. Sitio rápido, indexable y profesional.</p>
       </div>
 
     </div>
@@ -304,8 +426,8 @@
           <p class="ol-co-stat-label">distribución oficial de marca, no reventa</p>
         </div>
         <div class="ol-co-stat">
-          <p class="ol-co-stat-val">CDMX · QRO · Bajío</p>
-          <p class="ol-co-stat-label">cobertura operativa en el corredor industrial</p>
+          <p class="ol-co-stat-val">CDMX · QRO</p>
+          <p class="ol-co-stat-label">dos sucursales con envíos a toda la República</p>
         </div>
       </div>
 
@@ -330,33 +452,33 @@
         <div class="ol-co-lines">
           <div class="ol-co-line">
             <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6"/><path d="m5 9 7-1 7 1"/><path d="M5 9v7a7 7 0 0 0 14 0V9"/><path d="M9 22h6"/></svg></div>
-            <h4 class="ol-co-line-h">Monitores industriales</h4>
-            <p class="ol-co-line-p">Cañones fijos y portátiles de alto flujo para refinerías, terminales y zonas de riesgo elevado.</p>
+            <h4 class="ol-co-line-h">Monitores Copperhead y Stinger</h4>
+            <p class="ol-co-line-p">Monitores Elkhart Brass de alto flujo (hasta 2,000 GPM) para refinerías, terminales y zonas de riesgo elevado.</p>
           </div>
           <div class="ol-co-line">
             <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-3 3 6 2-3h4"/><circle cx="20" cy="9" r="1.5"/></svg></div>
             <h4 class="ol-co-line-h">Boquillas UL/FM</h4>
-            <p class="ol-co-line-p">Boquillas de chorro y niebla con patrón ajustable, certificadas para combate profesional.</p>
+            <p class="ol-co-line-p">Boquillas turbo jet y tipo pistola con patrón ajustable, certificadas para combate profesional.</p>
           </div>
           <div class="ol-co-line">
             <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg></div>
-            <h4 class="ol-co-line-h">Válvulas</h4>
-            <p class="ol-co-line-p">Válvulas de control y seccionamiento para redes contra incendio bajo norma internacional.</p>
+            <h4 class="ol-co-line-h">Válvulas OS&amp;Y</h4>
+            <p class="ol-co-line-p">Válvulas de compuerta OS&amp;Y, globo, retención y mariposa certificadas UL/FM para redes contra incendio.</p>
           </div>
           <div class="ol-co-line">
             <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6a2 2 0 0 1 2-2c4 0 4 16 8 16a2 2 0 0 0 2-2"/><circle cx="4" cy="6" r="0"/></svg></div>
-            <h4 class="ol-co-line-h">Mangueras</h4>
-            <p class="ol-co-line-p">Mangueras y conexiones de acople rápido compatibles con el equipo distribuido.</p>
+            <h4 class="ol-co-line-h">Mangueras Millhose y Blindex</h4>
+            <p class="ol-co-line-p">Mangueras Millhose y Blindex de cuatro capas, de succión y forestales para uso industrial y petroquímico.</p>
           </div>
           <div class="ol-co-line">
             <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6h.09a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
-            <h4 class="ol-co-line-h">Accesorios y refacciones</h4>
-            <p class="ol-co-line-p">Adaptadores, racores y refacciones originales para mantener el equipo operativo.</p>
+            <h4 class="ol-co-line-h">Conexiones y herrajes de bronce</h4>
+            <p class="ol-co-line-p">Adaptadores de bronce, conexión Y (Wye), toma siamesa FDC, coples, reducciones y chiflones de tres pasos.</p>
           </div>
           <div class="ol-co-line">
-            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg></div>
-            <h4 class="ol-co-line-h">Asesoría y especificación</h4>
-            <p class="ol-co-line-p">Acompañamiento técnico para elegir, dimensionar y documentar el equipo correcto.</p>
+            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+            <h4 class="ol-co-line-h">Gabinetes e hidrantes</h4>
+            <p class="ol-co-line-p">Gabinetes tipo 30ME, empotrados, hidrantes y estaciones de manguera para redes contra incendio.</p>
           </div>
         </div>
       </div>
@@ -390,8 +512,8 @@
           <div class="ol-co-why-item">
             <div class="ol-co-why-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
             <div>
-              <h4 class="ol-co-why-h">Existencia y cobertura en México</h4>
-              <p class="ol-co-why-p">Disponibilidad real y operación en CDMX, Querétaro y el Bajío para tiempos de entrega confiables.</p>
+              <h4 class="ol-co-why-h">Existencia y cobertura nacional</h4>
+              <p class="ol-co-why-p">Inventario permanente y dos sucursales (CDMX y Querétaro) que coordinan envíos a toda la República.</p>
             </div>
           </div>
         </div>
@@ -437,7 +559,7 @@
               <li><dt>Tipo de sitio</dt><dd>Corporativo B2B · Catálogo técnico</dd></li>
               <li><dt>Modelo de negocio</dt><dd>Distribución autorizada de marca internacional</dd></li>
               <li><dt>Marca distribuida</dt><dd>Elkhart Brass (USA)</dd></li>
-              <li><dt>Cobertura</dt><dd>CDMX · Querétaro · Bajío</dd></li>
+              <li><dt>Cobertura</dt><dd>Sucursales CDMX y Querétaro · envíos nacionales</dd></li>
               <li><dt>Sitio en vivo</dt><dd><a href="https://gamademexico.com/" target="_blank" rel="noopener noreferrer">gamademexico.com →</a></dd></li>
             </ul>
           </div>
@@ -494,14 +616,48 @@
             <h2 class="ol-case-h2">Distribuidor autorizado de Elkhart Brass en México.</h2>
             <p class="ol-case-lead">Gama de México es el distribuidor autorizado en México de Elkhart Brass — fabricante estadounidense con más de un siglo de trayectoria en boquillas, monitores, válvulas y accesorios para protección contra incendios bajo certificación UL/FM.</p>
             <p class="ol-case-p">El cliente atiende a un comprador corporativo muy específico: <strong>plantas industriales, refinerías, terminales logísticas, complejos petroquímicos, brigadas internas de respuesta y oficiales de seguridad</strong> que necesitan equipo certificado bajo norma internacional, con respaldo técnico documentado y disponibilidad real en territorio mexicano.</p>
-            <p class="ol-case-p">Su operación cubre Ciudad de México, Querétaro y el corredor industrial del Bajío — zonas donde se concentra una porción importante del consumo industrial nacional de equipo contra incendios. Antes de este proyecto, la presencia digital de Gama de México no reflejaba ni la solidez de la marca distribuida, ni la profundidad técnica de su catálogo, ni la seriedad operativa de la empresa.</p>
+            <p class="ol-case-p">Opera desde dos sucursales —Ciudad de México y Querétaro— con inventario permanente y envíos a toda la República Mexicana, lo que le permite atender con rapidez al centro del país y coordinar entregas nacionales. Antes de este proyecto, la presencia digital de Gama de México no reflejaba ni la solidez de la marca distribuida, ni la profundidad técnica de su catálogo, ni la seriedad operativa de la empresa.</p>
 
-            <div class="ol-case-figure">
+            <figure class="ol-case-figure">
               <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/gamademexico/gama-institucional-distribuidor-autorizado-cdmx.avif" alt="Gama de México — distribuidor autorizado de Elkhart Brass con respaldo institucional en CDMX" width="1543" height="854" loading="lazy" decoding="async">
+                <div class="mk">
+                  <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">gamademexico.com</span></div>
+                  <div class="mk-view">
+                    <div class="mk-nav">
+                      <span class="mk-logo">GAMA <span style="font-weight:600;color:var(--mk-soft);font-size:.7em">DE MÉXICO</span></span>
+                      <span class="mk-menu"><span>Equipos y Accesorios</span><span>Servicios</span><span>Blog</span><span>Nosotros</span><span>Contacto</span><span class="mk-cta">Cotizar por WhatsApp</span></span>
+                    </div>
+                    <div class="mk-hero">
+                      <div class="mk-hb">
+                        <div>
+                          <span class="mk-eyebrow">Distribuidor autorizado Elkhart Brass</span>
+                          <h3 class="mk-h">Equipos Contra Incendios en <span class="ac">México</span></h3>
+                          <p class="mk-sub">Suministro profesional de equipos certificados para protección industrial, comercial y residencial. Asesoría técnica, inventario y logística nacional para proyectos críticos.</p>
+                        </div>
+                        <div>
+                          <p class="mk-hk">Acerca de la empresa</p>
+                          <p class="mk-hp">Distribuimos monitores Elkhart Brass Copperhead y Stinger, boquillas turbo jet y tipo pistola, mangueras Blindex para petroquímica, válvulas OS&amp;Y certificadas UL/FM y conexiones de bronce con toma siamesa FDC. Todo cumple NFPA 13, 14 y 24, con ficha técnica del fabricante y documentación para protección civil y aseguradoras.</p>
+                        </div>
+                      </div>
+                      <div class="mk-strip">
+                        <div><b>UL<span>/</span>FM</b><span class="l">Certificados</span></div>
+                        <div><b>24<span>h</span></b><span class="l">Respuesta cotización</span></div>
+                        <div><b>Nacional</b><span class="l">Cobertura envíos</span></div>
+                      </div>
+                    </div>
+                    <div class="mk-quick">
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg></div><b>Monitores</b><span>Copperhead y Stinger</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h8l8-4v8l-8-4"/></svg></div><b>Boquillas</b><span>Turbo jet y pistola</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9 9 0 0 1 9 9"/><circle cx="12" cy="12" r="3"/></svg></div><b>Mangueras</b><span>Millhose y Blindex</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg></div><b>Válvulas</b><span>OS&amp;Y certificadas</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16M9 7h2M13 7h2M9 11h2M13 11h2"/></svg></div><b>Gabinetes</b><span>Tipo 30ME e hidrantes</span></div>
+                      <div class="mk-qc cta"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></div><b>Solicitar Cotización</b><span>Respuesta en 24 h</span></div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <p class="ol-case-figure-caption">Sección institucional: marca distribuida, certificaciones y respaldo internacional comunicados desde el primer scroll.</p>
-            </div>
+              <figcaption class="ol-case-figure-caption">Home del sitio: hero con propuesta de valor, párrafo "acerca" con producto Elkhart Brass, certificación UL/FM y accesos rápidos a las familias de catálogo y a la cotización — comunicados desde el primer scroll.</figcaption>
+            </figure>
           </section>
 
           <!-- 02 RETO -->
@@ -531,7 +687,7 @@
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
                 </div>
                 <h4>Cobertura geográfica</h4>
-                <p>Hacer evidente la presencia operativa en CDMX, Querétaro y el Bajío para validar capacidad de entrega ante áreas de compras corporativas.</p>
+                <p>Hacer evidente las dos sucursales (CDMX y Querétaro) y los envíos nacionales para validar capacidad de entrega ante áreas de compras corporativas.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
@@ -558,7 +714,7 @@
               <div class="ol-arch-step">
                 <p class="num">CAPA 02</p>
                 <h4>Familias de producto</h4>
-                <p>Cada familia (monitores, boquillas, válvulas, mangueras, accesorios) tiene su propia sección con explicación, aplicaciones y modelos.</p>
+                <p>Cada familia (monitores, boquillas, mangueras, válvulas, conexiones de bronce, gabinetes e hidrantes) tiene su propia sección con explicación, aplicaciones y modelos.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">CAPA 03</p>
@@ -573,20 +729,13 @@
               <div class="ol-arch-step">
                 <p class="num">CAPA 05</p>
                 <h4>Cobertura</h4>
-                <p>Mapa narrativo de zonas de operación —CDMX, Querétaro y Bajío— para que el comprador valide rango logístico antes de cotizar.</p>
+                <p>Mapa narrativo de las dos sucursales —CDMX y Querétaro— y los envíos nacionales para que el comprador valide rango logístico antes de cotizar.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">CAPA 06</p>
                 <h4>Contacto B2B</h4>
                 <p>Formulario corporativo con campos relevantes para cotización formal, atención por correo y acceso paralelo por WhatsApp.</p>
               </div>
-            </div>
-
-            <div class="ol-case-figure">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/gamademexico/gama-catalogo-monitores-boquillas-mangueras.avif" alt="Gama de México — catálogo de monitores, boquillas y mangueras Elkhart Brass" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <p class="ol-case-figure-caption">Catálogo organizado por familia de producto: monitores, boquillas, válvulas y mangueras certificadas.</p>
             </div>
           </section>
 
@@ -627,13 +776,6 @@
                 <p>Componente específico para destacar UL, FM y otras normas en cada ficha — refuerza credibilidad sin saturar la jerarquía visual.</p>
               </div>
             </div>
-
-            <div class="ol-case-figure">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/gamademexico/gama-fichas-tecnicas-valvulas-ul-fm.avif" alt="Gama de México — fichas técnicas de válvulas certificadas UL y FM" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <p class="ol-case-figure-caption">Sistema de tarjetas y badges de certificación aplicado de forma consistente en todo el catálogo.</p>
-            </div>
           </section>
 
           <!-- 05 CATÁLOGO -->
@@ -650,13 +792,6 @@
               <li><strong>Documentación descargable:</strong> espacio reservado para hoja técnica, ficha del fabricante o documento PDF de referencia cuando aplica.</li>
               <li><strong>CTA contextual:</strong> botón "Solicitar cotización para este modelo" que precarga el modelo en el formulario de contacto B2B.</li>
             </ul>
-
-            <div class="ol-case-figure">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/gamademexico/gama-producto-monitor-elkhart-brass-cdmx.avif" alt="Gama de México — monitor Elkhart Brass con especificación técnica detallada" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <p class="ol-case-figure-caption">Ficha de producto con especificación, certificaciones, aplicaciones y CTA contextual de cotización.</p>
-            </div>
           </section>
 
           <!-- 06 CONVERSIÓN -->
@@ -739,13 +874,6 @@
                 </div>
               </dl>
             </div>
-
-            <div class="ol-case-figure">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/gamademexico/gama-responsiva-sitio-movil-tablet.avif" alt="Gama de México — sitio responsivo en móvil, tablet y desktop" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <p class="ol-case-figure-caption">Comportamiento responsivo: desktop, tablet y móvil compartiendo sistema de componentes.</p>
-            </div>
           </section>
 
           <!-- 08 PROCESO -->
@@ -792,53 +920,217 @@
           <section class="ol-case-section" id="galeria">
             <span class="ol-case-eyebrow">09 · Galería del sitio</span>
             <h2 class="ol-case-h2">Pantallas y secciones del sitio en operación.</h2>
-            <p class="ol-case-p">Una recorrida por las pantallas principales del sitio: home, catálogo, sección institucional, ficha de producto y módulo de contacto B2B — todas construidas con el mismo sistema de componentes y la misma jerarquía visual.</p>
+            <p class="ol-case-p">Siete pantallas del sitio de Gama de México —catálogo por familia, diferenciadores, servicios de venta y asesoría, industrias atendidas, cobertura nacional, aliados del sector y cotización— reproducidas con el mismo sistema de componentes y la misma jerarquía visual del sitio en operación. Cada pantalla está pensada para llevar al comprador técnico del interés a la solicitud de cotización.</p>
 
             <div class="ol-case-gallery">
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/gamademexico/gama-home-distribuidor-elkhart-brass-mexico.avif" alt="Gama de México — pantalla 01: home distribuidor autorizado Elkhart Brass en México" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">01 · Hero principal con propuesta de valor y acceso al catálogo.</figcaption>
-              </figure>
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/gamademexico/gama-institucional-distribuidor-autorizado-cdmx.avif" alt="Gama de México — pantalla 02: sección institucional distribuidor autorizado CDMX" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">02 · Sección institucional con respaldo de marca distribuida.</figcaption>
-              </figure>
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/gamademexico/gama-catalogo-monitores-boquillas-mangueras.avif" alt="Gama de México — pantalla 03: catálogo monitores, boquillas y mangueras" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">03 · Catálogo organizado por familia de producto.</figcaption>
-              </figure>
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/gamademexico/gama-fichas-tecnicas-valvulas-ul-fm.avif" alt="Gama de México — pantalla 04: fichas técnicas válvulas UL y FM" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">04 · Sistema de tarjetas con badges de certificación.</figcaption>
-              </figure>
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/gamademexico/gama-producto-monitor-elkhart-brass-cdmx.avif" alt="Gama de México — pantalla 05: ficha de producto monitor Elkhart Brass" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">05 · Ficha técnica de producto con especificación y CTA contextual.</figcaption>
-              </figure>
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/gamademexico/gama-responsiva-sitio-movil-tablet.avif" alt="Gama de México — pantalla 06: vista responsiva en móvil y tablet" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">06 · Comportamiento responsivo en distintos dispositivos.</figcaption>
-              </figure>
-            </div>
 
-            <figure class="ol-case-figure" style="margin-top:1.25rem;">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/gamademexico/gama-contacto-cotizacion-distribuidor-cdmx.avif" alt="Gama de México — pantalla 07: contacto y cotización con distribuidor en CDMX" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <figcaption class="ol-case-figure-caption">07 · Módulo de contacto B2B con formulario corporativo y zona de cobertura.</figcaption>
-            </figure>
+              <!-- 01 · CATÁLOGO POR FAMILIA -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">gamademexico.com/equipos-y-accesorios</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Equipos Contra Incendios: Monitores, Boquillas, Mangueras y más</h3>
+                      <p class="mk-sect-sub">Equipos certificados UL y FM de Elkhart Brass. Selecciona una categoría para conocer productos y solicitar cotización.</p>
+                      <div class="mk-cards">
+                        <div class="mk-card">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg></div>
+                          <p class="mk-ct">Monitores Contra Incendios</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Monitor tipo corazón</span><span>Cuello de cisne</span><span>Certificado FM</span><span>UL Listed</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h8l8-4v8l-8-4"/></svg></div>
+                          <p class="mk-ct">Boquillas Contra Incendios</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Tipo pistola</span><span>Turbo jet</span><span>Industrial</span><span>Certificada</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9 9 0 0 1 9 9"/><circle cx="12" cy="12" r="3"/></svg></div>
+                          <p class="mk-ct">Mangueras Contra Incendios</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Millhose</span><span>Blindex</span><span>De succión</span><span>Forestal</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg></div>
+                          <p class="mk-ct">Válvulas Contra Incendios</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Compuerta OS&amp;Y</span><span>De globo</span><span>De retención</span><span>Mariposa</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 7.5L12 3 3.5 7.5 12 12l8.5-4.5zM3.5 16.5L12 21l8.5-4.5M3.5 12L12 16.5 20.5 12"/></svg></div>
+                          <p class="mk-ct">Conexiones y Herrajes de Bronce</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Adaptadores de bronce</span><span>Conexión Y (Wye)</span><span>Toma siamesa FDC</span><span>Coples y reducciones</span><span>Chiflones de tres pasos</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+                          <p class="mk-ct">Gabinetes e Hidrantes</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Gabinete tipo 30ME</span><span>Gabinete empotrado</span><span>Hidrantes</span><span>Estaciones de manguera</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">01 · Catálogo — seis familias de producto Elkhart Brass con su detalle de tipos incluidos, comparables de un vistazo por el comprador técnico.</figcaption>
+              </figure>
+
+              <!-- 02 · DIFERENCIADORES / POR QUÉ ELEGIR -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">gamademexico.com/#por-que-elegirnos</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Por qué elegir a Gama de México como proveedor</h3>
+                      <p class="mk-sect-sub">Distribuidor autorizado Elkhart Brass con cobertura nacional, asesoría técnica y disponibilidad inmediata. Producto original con certificaciones UL y FM y conocimiento de la normativa mexicana NOM-002-STPS y estándares NFPA.</p>
+                      <div class="mk-diff">
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.5v5c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11V6.5L12 2z"/><path d="M9 12l2 2 4-4"/></svg></div>
+                          <b>Calidad garantizada</b>
+                          <p>Distribuidores autorizados Elkhart Brass. Equipos con certificaciones UL y FM y garantía de funcionamiento en cada producto.</p>
+                          <span class="mk-dlink">Ver certificaciones →</span>
+                        </div>
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+                          <b>Asesoría técnica real</b>
+                          <p>No solo vendemos: te ayudamos a seleccionar lo correcto para tu proyecto, por riesgo y normativa NOM aplicable.</p>
+                          <span class="mk-dlink">Pedir asesoría →</span>
+                        </div>
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7z"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg></div>
+                          <b>Disponibilidad y cobertura nacional</b>
+                          <p>Inventario permanente de lo más solicitado y envíos a toda la República, con logística coordinada a tu obra o instalación.</p>
+                          <span class="mk-dlink">Ver cobertura →</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">02 · Diferenciadores — los argumentos que el comprador técnico valora: certificación, asesoría por norma y disponibilidad nacional.</figcaption>
+              </figure>
+
+              <!-- 03 · SERVICIOS DE VENTA Y ASESORÍA -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">gamademexico.com/servicios</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Servicios de Venta y Asesoría en Equipos Contra Incendios</h3>
+                      <p class="mk-sect-sub">Venta, asesoría técnica y logística de equipos contra incendios para el sector industrial, comercial y residencial en México.</p>
+                      <div class="mk-sect-cards" style="grid-template-columns:repeat(3,1fr)">
+                        <div class="mk-scard"><span class="k">Respaldo</span><b>Garantía y Respaldo Técnico</b><p>Garantía del fabricante, certificados UL y FM, fichas técnicas oficiales y soporte postventa para verificaciones de protección civil.</p><span class="v">Conocer →</span></div>
+                        <div class="mk-scard"><span class="k">Ingeniería</span><b>Asesoría Técnica Especializada</b><p>Ingenieros que seleccionan equipo según el proyecto, el tipo de riesgo y la normativa NOM aplicable. Asesoría sin costo.</p><span class="v">Conocer →</span></div>
+                        <div class="mk-scard"><span class="k">B2B</span><b>Atención a Empresas y Proyectos</b><p>Constructoras, instaladores certificados y plantas industriales. Cotizaciones para licitaciones y obras gubernamentales.</p><span class="v">Conocer →</span></div>
+                        <div class="mk-scard"><span class="k">Mantenimiento</span><b>Suministro para Mantenimiento</b><p>Reposición de piezas, refacciones y accesorios para mantenimiento preventivo y correctivo de sistemas existentes.</p><span class="v">Conocer →</span></div>
+                        <div class="mk-scard"><span class="k">Logística</span><b>Logística y Envíos Nacionales</b><p>Envíos a toda la República, con embalaje especializado para monitores, válvulas y equipos de alto valor.</p><span class="v">Conocer →</span></div>
+                        <div class="mk-scard"><span class="k">Compras</span><b>Cotizaciones Corporativas</b><p>Procesos de cotización y facturación para compras corporativas, licitaciones públicas y venta al mayoreo con distribución directa.</p><span class="v">Conocer →</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">03 · Servicios — seis servicios de venta y asesoría que acompañan al comprador desde la especificación hasta la entrega en sitio.</figcaption>
+              </figure>
+
+              <!-- 04 · INDUSTRIAS ATENDIDAS -->
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">gamademexico.com/#industrias</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Industrias y proyectos que atendemos</h3>
+                      <p class="mk-sect-sub">Del reemplazo de una válvula a la cotización completa de una planta o licitación.</p>
+                      <div class="mk-chips">
+                        <span class="mk-chip on">Plantas industriales</span><span class="mk-chip on">Refinerías</span><span class="mk-chip on">Petroquímica</span><span class="mk-chip">Centros de datos</span><span class="mk-chip">Hospitales</span><span class="mk-chip">Hoteles</span><span class="mk-chip">Constructoras</span><span class="mk-chip">Naves industriales</span><span class="mk-chip">Terminales de almacenamiento</span><span class="mk-chip">Desarrollos residenciales</span><span class="mk-chip">Brigadas de protección civil</span><span class="mk-chip">Licitaciones de gobierno</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">04 · Industrias — los perfiles de comprador a los que el sitio se dirige, del proyecto crítico a la requisición de mantenimiento.</figcaption>
+              </figure>
+
+              <!-- 05 · COBERTURA NACIONAL -->
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">gamademexico.com/#cobertura</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Cobertura nacional desde CDMX y Querétaro</h3>
+                      <p class="mk-sect-sub">Dos sucursales estratégicas, envíos a toda la República Mexicana.</p>
+                      <div class="mk-chips">
+                        <span class="mk-chip on">Santa Fe · CDMX</span><span class="mk-chip on">Santiago de Querétaro</span><span class="mk-chip on">El Bajío</span><span class="mk-chip">Aguascalientes</span><span class="mk-chip">San Luis Potosí</span><span class="mk-chip">León</span><span class="mk-chip">Celaya</span><span class="mk-chip">Toda la República</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">05 · Cobertura — dos sucursales (Santa Fe CDMX y Querétaro) que coordinan envíos nacionales, comunicadas para validar logística antes de cotizar.</figcaption>
+              </figure>
+
+              <!-- 06 · ALIADOS / CASOS REALES -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">gamademexico.com/#clientes</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Lo que dicen nuestros clientes</h3>
+                      <p class="mk-sect-sub">Empresas verificadas de todo México que confían en Gama de México para sus equipos contra incendios.</p>
+                      <div class="mk-tcards">
+                        <div class="mk-tcard">
+                          <span class="mk-ally">Empresa verificada</span>
+                          <div class="mk-trow"><span class="mk-av">PR</span><span><span class="mk-tn">Proyecto Red</span><br><span class="mk-tloc">Integrador de sistemas contra incendio</span></span></div>
+                          <div class="mk-stars">★★★★★</div>
+                          <p class="mk-quote">"Nos asesoraron para implementar nuestro sistema con equipos certificados UL y FM. Cotización transparente, entrega puntual y seguimiento técnico excepcional."</p>
+                          <p class="mk-dom">proyectored — aliado del sector</p>
+                        </div>
+                        <div class="mk-tcard">
+                          <span class="mk-ally">Empresa verificada</span>
+                          <div class="mk-trow"><span class="mk-av">ME</span><span><span class="mk-tn">Mantenimiento de Extintores</span><br><span class="mk-tloc">Servicio y recarga de extintores</span></span></div>
+                          <div class="mk-stars">★★★★★</div>
+                          <p class="mk-quote">"Gama de México nos surte válvulas, mangueras y conexiones Elkhart Brass con documentación completa. Siempre tienen stock y la asesoría técnica es seria."</p>
+                          <p class="mk-dom">aliado del sector contra incendios</p>
+                        </div>
+                        <div class="mk-tcard">
+                          <span class="mk-ally">Empresa verificada</span>
+                          <div class="mk-trow"><span class="mk-av">LG</span><span><span class="mk-tn">LGA Contra Incendios</span><br><span class="mk-tloc">Sistemas contra incendios · proveedor</span></span></div>
+                          <div class="mk-stars">★★★★★</div>
+                          <p class="mk-quote">"Trabajamos con Gama de México como proveedor principal de equipos Elkhart Brass. Monitores certificados, boquillas y válvulas siempre disponibles. Una alianza sólida y confiable."</p>
+                          <p class="mk-dom">lgacontraincendios.com</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">06 · Aliados — prueba social B2B: empresas verificadas del sector (integradores, mantenimiento, proveedores) que refieren a Gama de México.</figcaption>
+              </figure>
+
+              <!-- 07 · COTIZACIÓN -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">gamademexico.com/contacto</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Solicita tu cotización sin compromiso</h3>
+                      <p class="mk-sect-sub">Canal directo con el equipo comercial, respuesta en menos de 24 horas — o escríbenos por WhatsApp para asesoría inmediata.</p>
+                      <div class="mk-trust">
+                        <div><b>UL/FM</b><span>certificados</span></div>
+                        <div><b>Autorizado</b><span>Elkhart Brass</span></div>
+                        <div><b>Nacional</b><span>cobertura envíos</span></div>
+                        <div><b>24 h</b><span>respuesta</span></div>
+                      </div>
+                      <div class="mk-form">
+                        <div class="mk-frow"><div class="mk-field">Empresa</div><div class="mk-field">Responsable del proyecto</div></div>
+                        <div class="mk-frow"><div class="mk-field">Teléfono</div><div class="mk-field">Correo</div></div>
+                        <div class="mk-field">Equipos de interés (monitores, boquillas, válvulas…)</div>
+                        <div class="mk-field">Zona de entrega</div>
+                        <div class="mk-submit">Solicitar Cotización →</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">07 · Contacto — formulario corporativo con campos B2B y señales de confianza (UL/FM, autorizado, cobertura nacional) visibles antes de enviar.</figcaption>
+              </figure>
+
+            </div>
           </section>
 
           <!-- 10 RESULTADO -->

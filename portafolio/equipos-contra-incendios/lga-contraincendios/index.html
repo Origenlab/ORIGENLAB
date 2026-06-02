@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Caso · LGA Contraincendios — Tienda en Línea · E-commerce Equipos Contra Incendios | OrigenLab</title>
-  <meta name="description" content="Caso de estudio del e-commerce de LGA Contraincendios, tienda en línea establecida en Querétaro, especializada en venta de extintores certificados clases A, B, C, D y K, monitores, mangueras y equipo para bomberos para industria y comercio en México.">
+  <title>Caso · LGA Contraincendios — Sitio Catálogo · Equipos Contra Incendios en Querétaro | OrigenLab</title>
+  <meta name="description" content="Caso de estudio del sitio de LGA Contraincendios, empresa con más de 25 años en Querétaro, especializada en venta de extintores certificados clases A, B, C y K, monitores EXM2, mangueras, equipo para bomberos y señalización NOM/NFPA para industria y comercio.">
   <link rel="canonical" href="https://origenlab.com/portafolio/equipos-contra-incendios/lga-contraincendios/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://origenlab.com/portafolio/equipos-contra-incendios/lga-contraincendios/">
-  <meta property="og:title" content="Caso · LGA Contraincendios — Tienda en Línea · E-commerce Equipos Contra Incendios | OrigenLab">
-  <meta property="og:description" content="Cómo construimos el e-commerce de LGA Contraincendios: arquitectura, catálogo técnico online, carrito B2B y conversión para tienda en línea de equipo contra incendios en Querétaro y México.">
-  <meta property="og:image" content="https://origenlab.com/img/equipos-contra-incendios/lgacontraincendios/lga-home-equipos-contra-incendios-queretaro.avif">
+  <meta property="og:title" content="Caso · LGA Contraincendios — Sitio Catálogo · Equipos Contra Incendios en Querétaro | OrigenLab">
+  <meta property="og:description" content="Cómo construimos el sitio de LGA Contraincendios: catálogo técnico, arquitectura por línea de producto y conversión por cotización para empresa de equipo contra incendios con más de 25 años en Querétaro.">
+  <meta property="og:image" content="https://origenlab.com/img/equipos-contra-incendios/lgacontraincendios/lgacontraincendios-hero.webp">
   <meta property="og:locale" content="es_MX">
   <meta property="og:site_name" content="OrigenLab">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Caso · LGA Contraincendios — Tienda en Línea · E-commerce Equipos Contra Incendios | OrigenLab">
-  <meta name="twitter:description" content="E-commerce para empresa querétana de extintores, mangueras y equipo bombero — venta en línea con catálogo técnico y entrega nacional.">
-  <meta name="twitter:image" content="https://origenlab.com/img/equipos-contra-incendios/lgacontraincendios/lga-home-equipos-contra-incendios-queretaro.avif">
+  <meta name="twitter:title" content="Caso · LGA Contraincendios — Sitio Catálogo · Equipos Contra Incendios en Querétaro | OrigenLab">
+  <meta name="twitter:description" content="Sitio para empresa querétana con +25 años: catálogo técnico de extintores, monitores, mangueras, equipo bombero y señalización, con cotización por WhatsApp.">
+  <meta name="twitter:image" content="https://origenlab.com/img/equipos-contra-incendios/lgacontraincendios/lgacontraincendios-hero.webp">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="../../../favicon.svg">
@@ -38,7 +38,7 @@
     /* ============================================================
        L4 — CASO · LGA CONTRAINCENDIOS
        Componentes en _astro/premium-dark.css. Aquí: SOLO acentos.
-       Acento: rojo retail #E63946 (E-commerce / clases A B C D K).
+       Acento: rojo retail #E63946 (catálogo técnico / clases A B C K).
        Doc: /_docs/COMPONENTS.md y /_docs/LAYOUTS.md (sección L4)
        ============================================================ */
     :root {
@@ -53,9 +53,130 @@
     /* Check de listas hereda el acento del caso (shared usa hex Gama por defecto) */
     .ol-case-list li::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23E63946' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E"); }
     .ol-cta-hero-promises-list li::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23E63946' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E"); }
+
+    /* ── Maquetas .mk (browser-mockups del sitio del cliente · tema claro · sin animaciones) ── */
+    .mk { --mk-indigo:#E63946; --mk-ink:#0F1729; --mk-gray:#475467; --mk-soft:#7A8699;
+          --mk-line:#E6E8EE; --mk-bg:#FFFFFF; --mk-bg2:#F6F7FB; --mk-indigo-soft:#FCEAEC;
+          border-radius:10px; overflow:hidden; border:1px solid var(--mk-line); background:var(--mk-bg); }
+    .mk-bar { display:flex; align-items:center; gap:.55rem; padding:.5rem .8rem; background:#1A1D29; border-bottom:1px solid rgba(255,255,255,.06); }
+    .mk-dots { display:flex; gap:5px; }
+    .mk-dots i { width:8px; height:8px; border-radius:50%; background:rgba(255,255,255,.22); }
+    .mk-dots i:nth-child(1){ background:#ED6A5E; } .mk-dots i:nth-child(2){ background:#F4BF4F; } .mk-dots i:nth-child(3){ background:#61C554; }
+    .mk-url { flex:1; background:rgba(255,255,255,.07); border-radius:999px; padding:.22rem .7rem; font-size:10.5px; color:rgba(255,255,255,.62); text-align:center; font-family:'SFMono-Regular',Menlo,Consolas,monospace; letter-spacing:.02em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .mk-view { background:var(--mk-bg); color:var(--mk-ink); padding:1.4rem 1.5rem 1.6rem; }
+    .mk-nav { display:flex; align-items:center; justify-content:space-between; padding-bottom:1rem; border-bottom:1px solid var(--mk-line); margin-bottom:1.3rem; }
+    .mk-logo { font-size:.95rem; font-weight:800; color:var(--mk-indigo); letter-spacing:-.01em; }
+    .mk-menu { display:flex; gap:.85rem; font-size:10.5px; color:var(--mk-gray); font-weight:600; align-items:center; }
+    .mk-menu .mk-cta { background:var(--mk-indigo); color:#fff; padding:.28rem .6rem; border-radius:6px; }
+    .mk-eyebrow { font-size:9.5px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--mk-indigo); }
+    .mk-h { font-size:1.5rem; font-weight:800; letter-spacing:-.02em; line-height:1.1; color:var(--mk-ink); margin:.4rem 0 0; }
+    .mk-h .ac { color:var(--mk-indigo); }
+    .mk-sub { font-size:11.5px; color:var(--mk-gray); line-height:1.55; margin:.6rem 0 0; }
+    .mk-grid2 { display:grid; grid-template-columns:1.1fr 1fr; gap:1.6rem; align-items:start; }
+    .mk-sect-h { font-size:1.05rem; font-weight:800; letter-spacing:-.01em; color:var(--mk-ink); text-align:center; margin:0 0 .25rem; }
+    .mk-sect-sub { font-size:10.5px; color:var(--mk-soft); text-align:center; line-height:1.5; margin:0 auto 1.2rem; max-width:80%; }
+    .mk-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:.7rem; }
+    .mk-card { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.8rem .75rem; }
+    .mk-ic { width:30px; height:30px; border-radius:7px; background:var(--mk-indigo-soft); color:var(--mk-indigo); display:flex; align-items:center; justify-content:center; margin-bottom:.55rem; }
+    .mk-ct { font-size:11.5px; font-weight:700; color:var(--mk-ink); margin:0 0 .35rem; }
+    .mk-bul { list-style:none; margin:0; padding:0; }
+    .mk-bul li { position:relative; font-size:9.5px; color:var(--mk-gray); line-height:1.5; padding-left:.85rem; margin-bottom:.18rem; }
+    .mk-bul li::before { content:''; position:absolute; left:0; top:.42em; width:5px; height:5px; border-radius:50%; background:var(--mk-indigo); opacity:.55; }
+    .mk-stats { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-stat { text-align:center; background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:1rem .5rem; }
+    .mk-stat b { display:block; font-size:1.45rem; font-weight:800; color:var(--mk-indigo); letter-spacing:-.02em; line-height:1; }
+    .mk-stat span { display:block; font-size:9px; color:var(--mk-soft); margin-top:.4rem; line-height:1.35; font-weight:600; }
+    .mk-chips { display:flex; flex-wrap:wrap; gap:.4rem; justify-content:center; }
+    .mk-chip { font-size:9.5px; font-weight:600; color:var(--mk-gray); background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:999px; padding:.3rem .65rem; }
+    .mk-chip.on { background:var(--mk-indigo-soft); border-color:rgba(230,57,70,.25); color:var(--mk-indigo); }
+    .mk-tcards { display:grid; grid-template-columns:repeat(3,1fr); gap:.7rem; }
+    .mk-tcard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .8rem; }
+    .mk-trow { display:flex; align-items:center; gap:.5rem; margin-bottom:.5rem; }
+    .mk-av { width:28px; height:28px; border-radius:50%; background:var(--mk-indigo); color:#fff; font-size:9.5px; font-weight:700; display:flex; align-items:center; justify-content:center; flex:0 0 28px; }
+    .mk-tn { font-size:10px; font-weight:700; color:var(--mk-ink); line-height:1.2; }
+    .mk-tloc { font-size:8.5px; color:var(--mk-soft); }
+    .mk-stars { color:#F5A623; font-size:9px; letter-spacing:1px; margin-bottom:.3rem; }
+    .mk-quote { font-size:9.5px; color:var(--mk-gray); line-height:1.5; margin:0; }
+    .mk-form { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:11px; padding:1.1rem 1.1rem 1.2rem; }
+    .mk-field { height:30px; background:var(--mk-bg); border:1px solid var(--mk-line); border-radius:7px; margin-bottom:.55rem; display:flex; align-items:center; padding:0 .6rem; font-size:9.5px; color:var(--mk-soft); }
+    .mk-frow { display:grid; grid-template-columns:1fr 1fr; gap:.55rem; }
+    .mk-submit { background:var(--mk-indigo); color:#fff; font-size:10.5px; font-weight:700; text-align:center; border-radius:7px; padding:.6rem; margin-top:.3rem; }
+    .mk-trust { display:grid; grid-template-columns:repeat(4,1fr); gap:.55rem; margin-bottom:1rem; }
+    .mk-trust div { text-align:center; }
+    .mk-trust b { display:block; font-size:1.05rem; font-weight:800; color:var(--mk-indigo); line-height:1; }
+    .mk-trust span { display:block; font-size:8px; color:var(--mk-soft); margin-top:.25rem; font-weight:600; }
+    /* --- Hero oscuro (mirror del sitio live · acento rojo retail #E63946) --- */
+    .mk-hero { background:linear-gradient(135deg,#1A1018 0%,#120A0C 58%,#1A1018 100%); margin:-1.4rem -1.5rem 1.3rem; padding:1.5rem 1.5rem 1.35rem; border-bottom:1px solid var(--mk-line); }
+    .mk-hero .mk-eyebrow { color:#FF8A93; }
+    .mk-hero .mk-h { color:#fff; }
+    .mk-hero .mk-h .ac { color:#FF6B76; }
+    .mk-hero .mk-sub { color:rgba(243,232,233,.74); }
+    .mk-hb { display:grid; grid-template-columns:1.2fr 1fr; gap:1.4rem; align-items:start; }
+    .mk-hk { font-size:9px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#FF8A93; margin:0 0 .35rem; }
+    .mk-hp { font-size:10px; color:rgba(243,232,233,.68); line-height:1.55; margin:0; }
+    .mk-strip { display:flex; gap:1.6rem; margin-top:1rem; padding-top:.9rem; border-top:1px solid rgba(255,255,255,.1); }
+    .mk-strip div b { font-size:1.15rem; font-weight:800; color:#fff; letter-spacing:-.02em; line-height:1; }
+    .mk-strip div b span { color:#FF6B76; }
+    .mk-strip div .l { display:block; font-size:7.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:rgba(243,232,233,.52); margin-top:.3rem; }
+    /* --- Tira de categorías bajo el hero --- */
+    .mk-quick { display:grid; grid-template-columns:repeat(6,1fr); gap:.5rem; }
+    .mk-qc { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:8px; padding:.6rem .55rem; }
+    .mk-qc .mk-ic { width:24px; height:24px; margin-bottom:.4rem; border-radius:6px; }
+    .mk-qc b { display:block; font-size:9.5px; font-weight:700; color:var(--mk-ink); line-height:1.2; }
+    .mk-qc span { display:block; font-size:7.5px; color:var(--mk-soft); margin-top:.18rem; line-height:1.3; }
+    .mk-qc.cta { background:var(--mk-indigo); border-color:var(--mk-indigo); }
+    .mk-qc.cta b, .mk-qc.cta span { color:#fff; }
+    .mk-qc.cta .mk-ic { background:rgba(255,255,255,.18); color:#fff; }
+    /* --- Listas INCLUYE en cards de categoría/ficha --- */
+    .mk-pbadge { float:right; font-size:7.5px; font-weight:700; letter-spacing:.08em; color:var(--mk-indigo); background:var(--mk-indigo-soft); border-radius:5px; padding:.18rem .4rem; }
+    .mk-inc-k { font-size:7.5px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; color:var(--mk-soft); margin:.55rem 0 .35rem; }
+    .mk-inc { display:flex; flex-wrap:wrap; gap:.28rem; }
+    .mk-inc span { font-size:8px; font-weight:600; color:var(--mk-gray); background:var(--mk-bg); border:1px solid var(--mk-line); border-radius:5px; padding:.22rem .42rem .22rem .82rem; position:relative; }
+    .mk-inc span::before { content:''; position:absolute; left:.36rem; top:50%; transform:translateY(-50%); width:4px; height:4px; border-radius:50%; background:var(--mk-indigo); }
+    /* --- Ficha de producto --- */
+    .mk-pdp { display:grid; grid-template-columns:.85fr 1.15fr; gap:1.1rem; align-items:start; }
+    .mk-pimg { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; aspect-ratio:1/1; display:flex; align-items:center; justify-content:center; color:var(--mk-indigo); }
+    .mk-pbadges { display:flex; flex-wrap:wrap; gap:.3rem; margin:0 0 .5rem; }
+    .mk-pbadges span { font-size:8px; font-weight:700; letter-spacing:.04em; color:var(--mk-indigo); background:var(--mk-indigo-soft); border:1px solid rgba(230,57,70,.2); border-radius:5px; padding:.2rem .45rem; }
+    .mk-ph { font-size:1.05rem; font-weight:800; color:var(--mk-ink); letter-spacing:-.01em; margin:0 0 .2rem; }
+    .mk-pspec { list-style:none; margin:.55rem 0 .7rem; padding:0; border-top:1px solid var(--mk-line); }
+    .mk-pspec li { display:flex; justify-content:space-between; gap:1rem; font-size:9px; padding:.32rem 0; border-bottom:1px solid var(--mk-line); }
+    .mk-pspec li span:first-child { color:var(--mk-soft); font-weight:600; }
+    .mk-pspec li span:last-child { color:var(--mk-ink); font-weight:700; text-align:right; }
+    .mk-pcta { display:flex; gap:.5rem; }
+    .mk-pcta .b1 { flex:1; background:var(--mk-indigo); color:#fff; font-size:9.5px; font-weight:700; text-align:center; border-radius:7px; padding:.55rem; }
+    .mk-pcta .b2 { flex:1; background:var(--mk-bg); border:1px solid var(--mk-indigo); color:var(--mk-indigo); font-size:9.5px; font-weight:700; text-align:center; border-radius:7px; padding:.55rem; }
+    /* --- Marcas / aliados (4 col) --- */
+    .mk-diff { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-dcard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .75rem; }
+    .mk-dcard .mk-ic { margin-bottom:.5rem; }
+    .mk-dcard b { display:block; font-size:11px; font-weight:700; color:var(--mk-ink); margin-bottom:.3rem; }
+    .mk-dcard p { font-size:8.5px; color:var(--mk-gray); line-height:1.5; margin:0 0 .4rem; }
+    .mk-dlink { font-size:8px; font-weight:700; color:var(--mk-indigo); }
+    /* --- Sectores / aplicaciones (4 col) --- */
+    .mk-sect-cards { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-scard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .75rem; display:flex; flex-direction:column; }
+    .mk-scard .k { font-size:7.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--mk-indigo); margin-bottom:.3rem; }
+    .mk-scard b { font-size:11.5px; font-weight:700; color:var(--mk-ink); margin-bottom:.3rem; }
+    .mk-scard p { font-size:8.5px; color:var(--mk-gray); line-height:1.5; margin:0 0 .5rem; }
+    .mk-scard .v { font-size:8px; font-weight:700; color:var(--mk-indigo); margin-top:auto; }
+    /* --- Aliados / casos reales --- */
+    .mk-ally { font-size:7.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--mk-indigo); background:var(--mk-indigo-soft); border-radius:5px; padding:.18rem .45rem; display:inline-block; margin-bottom:.45rem; }
+    .mk-dom { font-size:8px; color:var(--mk-soft); margin-top:.35rem; }
+    @media (max-width:640px){
+      .mk-grid2 { grid-template-columns:1fr; gap:1rem; }
+      .mk-cards, .mk-tcards { grid-template-columns:1fr 1fr; }
+      .mk-stats, .mk-trust { grid-template-columns:repeat(2,1fr); }
+      .mk-h { font-size:1.2rem; }
+      .mk-hb { grid-template-columns:1fr; gap:.8rem; }
+      .mk-quick { grid-template-columns:repeat(3,1fr); }
+      .mk-diff, .mk-sect-cards { grid-template-columns:1fr 1fr; }
+      .mk-strip { flex-wrap:wrap; gap:.9rem; }
+      .mk-pdp { grid-template-columns:1fr; }
+    }
   </style>
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.com/#organization","name":"OrigenLab","url":"https://origenlab.com","logo":"https://origenlab.com/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.com/#website","url":"https://origenlab.com/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.com/#organization"}},{"@type":"BreadcrumbList","@id":"https://origenlab.com/portafolio/equipos-contra-incendios/lga-contraincendios/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.com/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.com/portafolio/"},{"@type":"ListItem","position":3,"name":"Equipos Contra Incendios","item":"https://origenlab.com/portafolio/equipos-contra-incendios/"},{"@type":"ListItem","position":4,"name":"LGA Contraincendios","item":"https://origenlab.com/portafolio/equipos-contra-incendios/lga-contraincendios/"}]},{"@type":"Organization","@id":"https://lgacontraincendios.com/#organization","name":"LGA Contraincendios","url":"https://lgacontraincendios.com/","description":"Tienda en línea de equipo contra incendios con cobertura en Querétaro y la región Bajío.","areaServed":{"@type":"AdministrativeArea","name":"Querétaro"},"knowsAbout":["Extintores clase A","Extintores clase B","Extintores clase C","Extintores clase D","Extintores clase K","Equipo contra incendios","E-commerce técnico","NOM"]},{"@type":"CreativeWork","@id":"https://origenlab.com/portafolio/equipos-contra-incendios/lga-contraincendios/#case","name":"LGA Contraincendios — Caso de estudio","description":"Tienda en línea de equipo contra incendios con cobertura en Querétaro y la región Bajío.","inLanguage":"es-MX","image":"https://origenlab.com/img/equipos-contra-incendios/lgacontraincendios/lga-home-equipos-contra-incendios-queretaro.avif","author":{"@id":"https://origenlab.com/#organization"},"publisher":{"@id":"https://origenlab.com/#organization"},"about":{"@id":"https://lgacontraincendios.com/#organization"},"keywords":["e-commerce","extintores","equipo contra incendios","Querétaro","tienda en línea","NOM"]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.com/#organization","name":"OrigenLab","url":"https://origenlab.com","logo":"https://origenlab.com/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.com/#website","url":"https://origenlab.com/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.com/#organization"}},{"@type":"BreadcrumbList","@id":"https://origenlab.com/portafolio/equipos-contra-incendios/lga-contraincendios/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.com/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.com/portafolio/"},{"@type":"ListItem","position":3,"name":"Equipos Contra Incendios","item":"https://origenlab.com/portafolio/equipos-contra-incendios/"},{"@type":"ListItem","position":4,"name":"LGA Contraincendios","item":"https://origenlab.com/portafolio/equipos-contra-incendios/lga-contraincendios/"}]},{"@type":"Organization","@id":"https://lgacontraincendios.com/#organization","name":"LGA Contra Incendios","url":"https://lgacontraincendios.com/","description":"Empresa con más de 25 años en Querétaro especializada en venta de equipo contra incendios certificado NOM y NFPA, con asesoría técnica y mantenimiento preventivo.","foundingDate":"2000","telephone":"+524424525589","areaServed":{"@type":"AdministrativeArea","name":"Querétaro"},"brand":["Elkhart Brass","SKÖLD"],"knowsAbout":["Extintores clase A","Extintores clase B","Extintores clase C","Extintores clase K","Monitores contra incendios EXM2","Mangueras contra incendios","Equipo para bomberos","Señalización NOM","NOM-002-STPS","NFPA 10","NFPA 1971","Protección Civil"]},{"@type":"CreativeWork","@id":"https://origenlab.com/portafolio/equipos-contra-incendios/lga-contraincendios/#case","name":"LGA Contraincendios — Caso de estudio","description":"Sitio catálogo de equipo contra incendios certificado para empresa con más de 25 años en Querétaro, con conversión por cotización y WhatsApp.","inLanguage":"es-MX","image":"https://origenlab.com/img/equipos-contra-incendios/lgacontraincendios/lgacontraincendios-hero.webp","author":{"@id":"https://origenlab.com/#organization"},"publisher":{"@id":"https://origenlab.com/#organization"},"about":{"@id":"https://lgacontraincendios.com/#organization"},"keywords":["catálogo técnico","extintores","monitores EXM2","equipo contra incendios","Querétaro","NOM","NFPA","cotización"]}]}</script>
 </head>
 <body>
 
@@ -146,9 +267,18 @@
                     <li><a href="/portafolio/seguridad-privada/origins/" class="ol-dropdown-link">ORIGINS Private Security</a></li>
                     <li><a href="/portafolio/seguridad-privada/seprico/" class="ol-dropdown-link">SEPRICO</a></li>
                     <li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-dropdown-link">SeguridadPrivadaMX</a></li>
+                    <li><a href="/portafolio/seguridad-privada/seguridadeventos/" class="ol-dropdown-link">SeguridadEventos</a></li>
+                    <li><a href="/portafolio/seguridad-privada/gupri/" class="ol-dropdown-link">GUPRI</a></li>
+                    <li><a href="/portafolio/seguridad-privada/directorio/" class="ol-dropdown-link">Directorio México</a></li>
                   </ul>
                 </div>
               </li>
+              <li class="ol-has-subdrop">
+              <a href="/portafolio/equipo-para-eventos/" class="ol-dropdown-link ol-dropdown-parent">Equipo para Eventos</a>
+              <div class="ol-subdrop"><ul>
+                <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-dropdown-link">PODIUMEX</a></li>
+              </ul></div>
+            </li>
             </ul>
           </div>
         </li>
@@ -209,6 +339,11 @@
         <li><a href="/portafolio/seguridad-privada/origins/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— ORIGINS Private Security</a></li>
         <li><a href="/portafolio/seguridad-privada/seprico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SEPRICO</a></li>
         <li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SeguridadPrivadaMX</a></li>
+        <li><a href="/portafolio/seguridad-privada/seguridadeventos/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SeguridadEventos</a></li>
+        <li><a href="/portafolio/seguridad-privada/gupri/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— GUPRI</a></li>
+        <li><a href="/portafolio/seguridad-privada/directorio/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Directorio México</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/" class="ol-mobile-link ol-mobile-sublink">Equipo para Eventos</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— PODIUMEX</a></li>
       </ul>
     </li>
     <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
@@ -259,12 +394,12 @@
     <div class="container hero__inner">
 
       <div class="hero__col1">
-        <span class="hero__eyebrow">Caso de estudio · Tienda en Línea · Querétaro</span>
-        <h1 class="hero__title">LGA Contraincendios<br>E-commerce técnico<br>de equipo contra incendios.</h1>
-        <p class="hero__sub">Tienda en línea para empresa establecida en Querétaro — venta directa de extintores certificados clases A, B, C, D y K, monitores, mangueras y equipo para bomberos para industria y comercio en México.</p>
+        <span class="hero__eyebrow">Caso de estudio · Sitio Catálogo · Querétaro</span>
+        <h1 class="hero__title">LGA Contraincendios<br>Catálogo técnico<br>de equipo contra incendios.</h1>
+        <p class="hero__sub">Sitio para empresa con más de 25 años en Querétaro — venta de extintores certificados clases A, B, C y K, monitores EXM2, mangueras, equipo para bomberos y señalización NOM/NFPA para industria, comercio e instituciones.</p>
         <div class="hero__ctas">
           <a href="https://lgacontraincendios.com/" target="_blank" rel="noopener noreferrer" class="ol-btn-primary">
-            Visitar la tienda
+            Visitar el sitio
             <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
           </a>
           <a href="#construccion" class="ol-btn-ghost">
@@ -275,8 +410,8 @@
       </div>
 
       <div class="hero__col2">
-        <p class="hero__p1">Plataforma de e-commerce diseñada para que oficiales de seguridad, áreas de mantenimiento, brigadas internas, comercios, plazas y edificios de oficinas en Querétaro, el Bajío y el resto del país encuentren el extintor o el equipo contra incendios correcto, lo agreguen al carrito y lo reciban en su domicilio o sitio de operación con total claridad técnica.</p>
-        <p class="hero__p2">Arquitectura de catálogo, fichas de producto y flujo de compra construidos con criterio profesional para los términos reales del mercado mexicano: extintor PQS, extintor CO2, extintor clase K para cocinas, manguera contra incendios, monitor industrial, gabinete contra incendios y equipo personal de protección para bomberos. Tienda rápida, segura y con cobertura nacional.</p>
+        <p class="hero__p1">Sitio catálogo diseñado para que oficiales de seguridad, áreas de mantenimiento, brigadas internas, comercios, plazas, hospitales y plantas del corredor industrial del Bajío encuentren el extintor o el equipo contra incendios correcto, validen su certificación NOM y NFPA, y soliciten cotización en minutos con respuesta el mismo día.</p>
+        <p class="hero__p2">Arquitectura de catálogo y fichas de producto construidas con criterio profesional para los términos reales del mercado mexicano: extintor PQS, extintor CO₂, extintor clase K para cocinas, manguera contra incendios, monitor EXM2 Elkhart Brass, equipo SKÖLD para bomberos y señalización de Protección Civil. Sitio rápido, técnico y con asesoría sin costo detrás.</p>
       </div>
 
     </div>
@@ -291,111 +426,111 @@
           <span class="ol-co-eyebrow">La empresa</span>
           <h2 class="ol-co-title">Equipo contra incendios certificado, <em>a un clic</em>.</h2>
         </div>
-        <p class="ol-co-lead">LGA Contraincendios es una empresa establecida en Querétaro con experiencia en la <strong>venta de equipo contra incendios certificado</strong> para industria, comercio e instituciones — ahora con compra directa en línea y envío a todo México.</p>
+        <p class="ol-co-lead">LGA Contraincendios es una empresa con <strong>más de 25 años de trayectoria en Querétaro</strong>, especializada en la venta de equipo contra incendios certificado NOM y NFPA para industria, comercio e instituciones — con asesoría técnica sin costo y mantenimiento preventivo.</p>
       </div>
 
       <div class="ol-co-stats">
         <div class="ol-co-stat">
-          <p class="ol-co-stat-val">A · B · C · D · K</p>
-          <p class="ol-co-stat-label">extintores certificados para cada clase de fuego</p>
+          <p class="ol-co-stat-val">+25 años</p>
+          <p class="ol-co-stat-label">de trayectoria, fundados en Querétaro en el año 2000</p>
         </div>
         <div class="ol-co-stat">
-          <p class="ol-co-stat-val">Compra en línea</p>
-          <p class="ol-co-stat-label">catálogo, carrito y pago directo sin fricción</p>
+          <p class="ol-co-stat-val">NOM · NFPA</p>
+          <p class="ol-co-stat-label">equipo certificado para cada clase de fuego e inspección</p>
         </div>
         <div class="ol-co-stat">
-          <p class="ol-co-stat-val">B2B + B2C</p>
-          <p class="ol-co-stat-label">atiende a empresa y a comprador individual</p>
+          <p class="ol-co-stat-val">5 líneas</p>
+          <p class="ol-co-stat-label">extintores, monitores, equipo bombero, mangueras y señalización</p>
         </div>
         <div class="ol-co-stat">
-          <p class="ol-co-stat-val">QRO · Nacional</p>
-          <p class="ol-co-stat-label">base en Querétaro con envío a toda la República</p>
+          <p class="ol-co-stat-val">QRO · Bajío</p>
+          <p class="ol-co-stat-label">base en Querétaro con proyectos en más de 10 estados</p>
         </div>
       </div>
 
       <div class="ol-co-split">
         <div class="ol-co-panel">
           <p class="ol-co-panel-k">Qué hace</p>
-          <h3 class="ol-co-panel-h">Venta directa de equipo contra incendios certificado.</h3>
-          <p class="ol-co-panel-p">LGA ofrece <strong>extintores de todas las clases, monitores, mangueras y equipo para bomberos</strong> al sector industrial, comercial e institucional. El comprador encuentra, compara y adquiere el equipo que necesita sin depender de un proceso de cotización lento.</p>
+          <h3 class="ol-co-panel-h">Equipo contra incendios certificado, en un solo proveedor.</h3>
+          <p class="ol-co-panel-p">LGA ofrece <strong>extintores clases A, B, C y K, monitores EXM2, mangueras, equipo para bomberos y señalización NOM</strong> al sector industrial, comercial e institucional — un catálogo integral sin fragmentar proveedores, distribuidor autorizado de Elkhart Brass y SKÖLD.</p>
         </div>
         <div class="ol-co-panel">
           <p class="ol-co-panel-k">Cómo lo hace</p>
-          <h3 class="ol-co-panel-h">Tienda en línea con asesoría detrás.</h3>
-          <p class="ol-co-panel-p">Catálogo estructurado, carrito persistente y pago en línea, con <strong>asesoría por WhatsApp</strong> para resolver dudas técnicas antes de comprar. La experiencia digital agiliza la compra sin sacrificar el respaldo de un especialista.</p>
+          <h3 class="ol-co-panel-h">Catálogo técnico con asesoría sin costo detrás.</h3>
+          <p class="ol-co-panel-p">Catálogo estructurado por línea y clase de fuego, con <strong>diagnóstico técnico sin costo, cotización por WhatsApp y mantenimiento preventivo calendarizado</strong>. El cliente valida certificación antes de comprar y recibe documentación lista para auditorías de Protección Civil y STPS.</p>
         </div>
       </div>
 
       <div class="ol-co-sub">
         <p class="ol-co-sub-eyebrow">Líneas de producto</p>
-        <h3 class="ol-co-sub-h">Catálogo certificado, listo para comprar.</h3>
-        <p class="ol-co-sub-p">Equipo para cada necesidad de protección, disponible en línea con envío nacional.</p>
+        <h3 class="ol-co-sub-h">Catálogo integral certificado, en un solo proveedor.</h3>
+        <p class="ol-co-sub-p">Cinco líneas de equipo contra incendios para cada necesidad de protección, todas certificadas NOM o NFPA.</p>
 
         <div class="ol-co-lines">
           <div class="ol-co-line">
             <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l1 4H8l1-4z"/><path d="M8 7h8v13a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V7z"/></svg></div>
-            <h4 class="ol-co-line-h">Extintores A·B·C·D·K</h4>
-            <p class="ol-co-line-p">Extintores certificados para cada clase de fuego, desde oficina hasta cocina industrial y metal.</p>
+            <h4 class="ol-co-line-h">Extintores A·B·C·K</h4>
+            <p class="ol-co-line-p">Extintores certificados NOM y NFPA 10 para cada clase de fuego, desde oficina hasta cocina industrial.</p>
           </div>
           <div class="ol-co-line">
             <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6"/><path d="m5 9 7-1 7 1"/><path d="M5 9v7a7 7 0 0 0 14 0V9"/><path d="M9 22h6"/></svg></div>
-            <h4 class="ol-co-line-h">Monitores</h4>
-            <p class="ol-co-line-p">Monitores y cañones de agua para protección de áreas industriales de alto riesgo.</p>
+            <h4 class="ol-co-line-h">Monitores EXM2</h4>
+            <p class="ol-co-line-p">Monitores y cañones Elkhart Brass — manuales, de control y con Wi-Fi para áreas industriales de alto riesgo.</p>
           </div>
           <div class="ol-co-line">
             <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6a2 2 0 0 1 2-2c4 0 4 16 8 16a2 2 0 0 0 2-2"/></svg></div>
             <h4 class="ol-co-line-h">Mangueras</h4>
-            <p class="ol-co-line-p">Mangueras y conexiones para redes contra incendio y equipo de combate.</p>
+            <p class="ol-co-line-p">Mangueras doble capa y single jacket, de succión y para hidrante — series FAD y FAS para redes contra incendio.</p>
           </div>
           <div class="ol-co-line">
             <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5l-8-3z"/></svg></div>
             <h4 class="ol-co-line-h">Equipo para bomberos</h4>
-            <p class="ol-co-line-p">Herramienta y equipo de protección para brigadas internas y cuerpos de respuesta.</p>
+            <p class="ol-co-line-p">Trajes SKÖLD, equipos de respiración autónoma (ERA), cascos, botas y arneses de rescate NFPA 1971.</p>
           </div>
           <div class="ol-co-line">
-            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg></div>
-            <h4 class="ol-co-line-h">Compra en línea</h4>
-            <p class="ol-co-line-p">Carrito, pago seguro y seguimiento de pedido, con envío a todo el país.</p>
+            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M3 9l2-5h14l2 5"/><path d="M9 13h6"/></svg></div>
+            <h4 class="ol-co-line-h">Señalización NOM</h4>
+            <p class="ol-co-line-p">Señalamientos de prohibición, obligación, advertencia y salvación bajo NOM-003-SEGOB para Protección Civil.</p>
           </div>
           <div class="ol-co-line">
             <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
-            <h4 class="ol-co-line-h">Asesoría por WhatsApp</h4>
-            <p class="ol-co-line-p">Soporte técnico directo para elegir el equipo correcto antes de cerrar la compra.</p>
+            <h4 class="ol-co-line-h">Asesoría sin costo</h4>
+            <p class="ol-co-line-p">Diagnóstico técnico y cotización por WhatsApp para elegir el equipo correcto y cumplir la norma.</p>
           </div>
         </div>
       </div>
 
       <div class="ol-co-sub">
         <p class="ol-co-sub-eyebrow">Por qué elegir a LGA</p>
-        <h3 class="ol-co-sub-h">Comprar equipo certificado, sin complicarse.</h3>
+        <h3 class="ol-co-sub-h">Un aliado técnico, no solo un proveedor.</h3>
 
         <div class="ol-co-why">
           <div class="ol-co-why-item">
             <div class="ol-co-why-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
             <div>
-              <h4 class="ol-co-why-h">Equipo certificado</h4>
-              <p class="ol-co-why-p">Producto que cumple norma para cada clase de fuego, listo para auditoría e inspección.</p>
+              <h4 class="ol-co-why-h">Catálogo integral</h4>
+              <p class="ol-co-why-p">Extintores, monitores, equipo bombero, mangueras y señalización en un solo proveedor, sin fragmentar compras.</p>
             </div>
           </div>
           <div class="ol-co-why-item">
             <div class="ol-co-why-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
             <div>
-              <h4 class="ol-co-why-h">Compra ágil en línea</h4>
-              <p class="ol-co-why-p">Sin esperas de cotización: encuentra, compara y adquiere el equipo en minutos.</p>
+              <h4 class="ol-co-why-h">Diagnóstico sin costo</h4>
+              <p class="ol-co-why-p">Visita técnica, identificación de riesgos reales y propuesta exacta antes de la compra.</p>
             </div>
           </div>
           <div class="ol-co-why-item">
             <div class="ol-co-why-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
             <div>
-              <h4 class="ol-co-why-h">Envío nacional</h4>
-              <p class="ol-co-why-p">Base en Querétaro con distribución a toda la República Mexicana.</p>
+              <h4 class="ol-co-why-h">Documentación NOM completa</h4>
+              <p class="ol-co-why-p">Cada equipo lleva ficha técnica y certificación lista para auditorías de Protección Civil y STPS.</p>
             </div>
           </div>
           <div class="ol-co-why-item">
             <div class="ol-co-why-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
             <div>
-              <h4 class="ol-co-why-h">Asesoría especializada</h4>
-              <p class="ol-co-why-p">Experiencia en el sector detrás de la tienda: comprar bien, no solo comprar rápido.</p>
+              <h4 class="ol-co-why-h">Mantenimiento calendarizado</h4>
+              <p class="ol-co-why-p">Programas anuales con bitácora de seguimiento para mantener tus equipos siempre operativos.</p>
             </div>
           </div>
         </div>
@@ -403,15 +538,15 @@
 
       <div class="ol-co-band">
         <div>
-          <p class="ol-co-band-k">Experiencia de compra</p>
-          <h3 class="ol-co-band-h">Una empresa establecida, ahora también en línea.</h3>
-          <p class="ol-co-band-p">LGA Contraincendios combina la confianza de un especialista establecido en Querétaro con la comodidad de una tienda en línea: catálogo certificado, pago seguro y envío a todo México.</p>
+          <p class="ol-co-band-k">Más de dos décadas</p>
+          <h3 class="ol-co-band-h">Un aliado estratégico desde el año 2000.</h3>
+          <p class="ol-co-band-p">LGA Contraincendios combina más de 25 años de experiencia en Querétaro con el respaldo de marcas líderes —distribuidor autorizado de Elkhart Brass y SKÖLD— y documentación lista para auditoría en cada entrega.</p>
         </div>
         <div class="ol-co-band-tags">
-          <span class="ol-co-band-tag">Certificado</span>
-          <span class="ol-co-band-tag">Tienda en línea</span>
-          <span class="ol-co-band-tag">Envío nacional</span>
-          <span class="ol-co-band-tag">B2B · B2C</span>
+          <span class="ol-co-band-tag">Certificado NOM/NFPA</span>
+          <span class="ol-co-band-tag">+25 años</span>
+          <span class="ol-co-band-tag">Diagnóstico sin costo</span>
+          <span class="ol-co-band-tag">Elkhart Brass · SKÖLD</span>
         </div>
       </div>
 
@@ -421,8 +556,8 @@
   <!-- Reframe del caso como bloque secundario -->
   <div class="ol-co-divider">
     <p class="ol-co-divider-k">Detrás del sitio</p>
-    <h2 class="ol-co-divider-h">Cómo construimos su tienda en línea</h2>
-    <p class="ol-co-divider-p">El proyecto de e-commerce que OrigenLab desarrolló para llevar su catálogo certificado a la venta directa en línea.</p>
+    <h2 class="ol-co-divider-h">Cómo construimos su sitio catálogo</h2>
+    <p class="ol-co-divider-p">El proyecto que OrigenLab desarrolló para llevar su catálogo certificado a un sitio técnico con conversión por cotización.</p>
   </div>
 
   <!-- ============== CASE SHELL: SIDEBAR + CONTENT ============== -->
@@ -437,11 +572,11 @@
             <p class="ol-side-eyebrow">Datos del proyecto</p>
             <ul class="ol-side-meta">
               <li><dt>Cliente</dt><dd>LGA Contraincendios</dd></li>
-              <li><dt>Sector</dt><dd>Equipos contra incendios · E-commerce</dd></li>
-              <li><dt>Tipo de sitio</dt><dd>Tienda en línea · Catálogo técnico</dd></li>
-              <li><dt>Modelo de negocio</dt><dd>Venta directa B2B y B2C en línea</dd></li>
-              <li><dt>Líneas de producto</dt><dd>Extintores A · B · C · D · K, monitores, mangueras, equipo bombero</dd></li>
-              <li><dt>Cobertura</dt><dd>Querétaro · Bajío · Nacional</dd></li>
+              <li><dt>Sector</dt><dd>Equipos contra incendios</dd></li>
+              <li><dt>Tipo de sitio</dt><dd>Sitio catálogo · Técnico</dd></li>
+              <li><dt>Modelo de negocio</dt><dd>Venta y asesoría con cotización directa</dd></li>
+              <li><dt>Líneas de producto</dt><dd>Extintores A · B · C · K, monitores EXM2, mangueras, equipo bombero, señalización</dd></li>
+              <li><dt>Cobertura</dt><dd>Querétaro · Bajío · +10 estados</dd></li>
               <li><dt>Sitio en vivo</dt><dd><a href="https://lgacontraincendios.com/" target="_blank" rel="noopener noreferrer">lgacontraincendios.com →</a></dd></li>
             </ul>
           </div>
@@ -450,16 +585,16 @@
             <p class="ol-side-eyebrow">Stack y entregables</p>
             <div>
               <span class="ol-case-spec-tag">Astro</span>
-              <span class="ol-case-spec-tag">E-commerce</span>
-              <span class="ol-case-spec-tag">Carrito</span>
-              <span class="ol-case-spec-tag">Pasarela de pago</span>
+              <span class="ol-case-spec-tag">Catálogo técnico</span>
+              <span class="ol-case-spec-tag">Fichas de producto</span>
+              <span class="ol-case-spec-tag">Formulario de cotización</span>
               <span class="ol-case-spec-tag">HTML5 / CSS3</span>
               <span class="ol-case-spec-tag">Inter</span>
               <span class="ol-case-spec-tag">Schema.org</span>
               <span class="ol-case-spec-tag">WhatsApp Lead</span>
               <span class="ol-case-spec-tag">Hosting CDN</span>
               <span class="ol-case-spec-tag">Responsivo</span>
-              <span class="ol-case-spec-tag">Envíos nacionales</span>
+              <span class="ol-case-spec-tag">Blog técnico</span>
             </div>
           </div>
 
@@ -468,10 +603,10 @@
             <ul class="ol-side-toc" id="ol-case-toc">
               <li><a href="#contexto"><span class="num">01</span>Contexto del cliente</a></li>
               <li><a href="#reto"><span class="num">02</span>El reto</a></li>
-              <li><a href="#arquitectura"><span class="num">03</span>Arquitectura del e-commerce</a></li>
+              <li><a href="#arquitectura"><span class="num">03</span>Arquitectura del catálogo</a></li>
               <li><a href="#diseno"><span class="num">04</span>Diseño y sistema visual</a></li>
-              <li><a href="#catalogo"><span class="num">05</span>Catálogo técnico online</a></li>
-              <li><a href="#conversion"><span class="num">06</span>Conversión y carrito</a></li>
+              <li><a href="#catalogo"><span class="num">05</span>Catálogo técnico</a></li>
+              <li><a href="#conversion"><span class="num">06</span>Conversión y cotización</a></li>
               <li><a href="#tecnologia"><span class="num">07</span>Tecnología y rendimiento</a></li>
               <li><a href="#proceso"><span class="num">08</span>Proceso de trabajo</a></li>
               <li><a href="#galeria"><span class="num">09</span>Galería del sitio</a></li>
@@ -481,7 +616,7 @@
 
           <div class="ol-side-cta">
             <h3 class="ol-side-cta-title">¿Un proyecto similar?</h3>
-            <p class="ol-side-cta-desc">Si tu empresa vende, distribuye o recarga equipos contra incendios y necesitas una tienda en línea profesional, podemos construirla contigo.</p>
+            <p class="ol-side-cta-desc">Si tu empresa vende, distribuye o recarga equipos contra incendios y necesitas un sitio catálogo profesional, podemos construirlo contigo.</p>
             <a href="/cotizar/" class="ol-side-cta-btn">
               Cotizar mi proyecto
               <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
@@ -497,25 +632,60 @@
           <!-- 01 CONTEXTO -->
           <section class="ol-case-section" id="contexto">
             <span class="ol-case-eyebrow">01 · Contexto del cliente</span>
-            <h2 class="ol-case-h2">Empresa querétana de equipo contra incendios para industria y comercio.</h2>
-            <p class="ol-case-lead">LGA Contraincendios es una empresa establecida en Querétaro, con experiencia en la venta de equipos contra incendios certificados para el sector industrial, comercial e institucional en México.</p>
-            <p class="ol-case-p">Su catálogo cubre las líneas de producto más demandadas del mercado: <strong>extintores certificados clases A, B, C, D y K, monitores, mangueras, gabinetes, accesorios para hidrantes, señalización y equipo personal de protección para bomberos</strong>. Atienden a brigadas internas, áreas de mantenimiento, oficiales de seguridad, plazas comerciales, edificios de oficinas, restaurantes con cocinas industriales y empresas del corredor industrial del Bajío.</p>
-            <p class="ol-case-p">Con base en Querétaro, LGA Contraincendios opera con cobertura local y proyección nacional. Antes de este proyecto, su presencia digital no permitía aprovechar el tráfico de compra online ni mostrar la profundidad real del catálogo, dejando gran parte de las ventas a llamadas telefónicas y mensajes sueltos por WhatsApp.</p>
+            <h2 class="ol-case-h2">Empresa querétana de equipo contra incendios con más de 25 años.</h2>
+            <p class="ol-case-lead">LGA Contraincendios es una empresa fundada en Querétaro en el año 2000, con más de 25 años de experiencia en la venta de equipo contra incendios certificado NOM y NFPA para el sector industrial, comercial e institucional.</p>
+            <p class="ol-case-p">Su catálogo cubre las cinco líneas de producto más demandadas del mercado: <strong>extintores certificados clases A, B, C y K, monitores EXM2 Elkhart Brass, mangueras, equipo personal de protección para bomberos (trajes SKÖLD, ERA, arneses) y señalización NOM</strong>. Atienden a brigadas internas, áreas de mantenimiento, oficiales de seguridad, plazas comerciales, hospitales, hoteles, restaurantes con cocinas industriales y plantas del corredor industrial del Bajío.</p>
+            <p class="ol-case-p">Como distribuidor autorizado de Elkhart Brass y SKÖLD, LGA opera con base en Querétaro y proyectos en más de 10 estados. Antes de este proyecto, su presencia digital no mostraba la profundidad real del catálogo ni el respaldo de sus más de dos décadas de trayectoria, dejando gran parte de los prospectos a llamadas telefónicas y mensajes sueltos por WhatsApp.</p>
 
-            <div class="ol-case-figure">
+            <figure class="ol-case-figure">
               <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/lgacontraincendios/lga-nosotros-empresa-queretaro-25-anos.avif" alt="LGA Contraincendios — 25 años como empresa de equipo contra incendios en Querétaro" width="1543" height="854" loading="lazy" decoding="async">
+                <div class="mk">
+                  <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">lgacontraincendios.com</span></div>
+                  <div class="mk-view">
+                    <div class="mk-nav">
+                      <span class="mk-logo">LGA Contra Incendios</span>
+                      <span class="mk-menu"><span>Productos</span><span>Nosotros</span><span>Catálogo</span><span>Blog</span><span>Contacto</span><span class="mk-cta">Cotizar</span></span>
+                    </div>
+                    <div class="mk-hero">
+                      <div class="mk-hb">
+                        <div>
+                          <span class="mk-eyebrow">Equipo contra incendios · Querétaro · +25 años</span>
+                          <h3 class="mk-h">Extintores y equipo contra incendios <span class="ac">certificado</span> NOM/NFPA</h3>
+                          <p class="mk-sub">Extintores clases A, B, C y K, monitores EXM2, mangueras y equipo para bomberos — diagnóstico sin costo y cotización en menos de 24 h.</p>
+                        </div>
+                        <div>
+                          <p class="mk-hk">Acerca de la empresa</p>
+                          <p class="mk-hp">Empresa fundada en Querétaro en el año 2000 con más de 25 años en la venta de equipo contra incendios certificado para industria, comercio e instituciones — distribuidor autorizado de Elkhart Brass y SKÖLD, con asesoría técnica sin costo.</p>
+                        </div>
+                      </div>
+                      <div class="mk-strip">
+                        <div><b>A·B·C·K</b><span class="l">Todas las clases</span></div>
+                        <div><b>+25 <span>años</span></b><span class="l">En Querétaro</span></div>
+                        <div><b>NOM·NFPA</b><span class="l">Equipo certificado</span></div>
+                        <div><b>&lt;24<span>h</span></b><span class="l">Cotización</span></div>
+                      </div>
+                    </div>
+                    <div class="mk-quick">
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l1 4H8l1-4z"/><path d="M8 7h8v13a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V7z"/></svg></div><b>Extintores</b><span>Clases A, B, C, K</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18h16"/><path d="M7 18V9a5 5 0 0 1 10 0v9"/></svg></div><b>Clase K</b><span>Cocinas industriales</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg></div><b>Monitores</b><span>Cañones de agua</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9 9 0 0 1 9 9"/><circle cx="12" cy="12" r="3"/></svg></div><b>Mangueras</b><span>Redes contra incendio</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5l-8-3z"/></svg></div><b>Equipo bombero</b><span>Protección personal</span></div>
+                      <div class="mk-qc cta"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg></div><b>Cotizar</b><span>Diagnóstico sin costo</span></div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <p class="ol-case-figure-caption">Líneas de extintor por clase de fuego (A, B, C, D, K) presentadas con criterio de catálogo técnico online.</p>
-            </div>
+              <figcaption class="ol-case-figure-caption">Home del sitio: hero con propuesta de valor, "acerca", barra de respaldo (clases A–K, +25 años, equipo NOM/NFPA, cotización en 24 h) y accesos rápidos a las líneas principales — todo desde el primer scroll.</figcaption>
+            </figure>
           </section>
 
           <!-- 02 RETO -->
           <section class="ol-case-section" id="reto">
             <span class="ol-case-eyebrow">02 · El reto</span>
-            <h2 class="ol-case-h2">Convertir un catálogo técnico en una tienda en línea operable.</h2>
-            <p class="ol-case-p">El comprador de equipo contra incendios no llega al sitio buscando "ofertas". Llega buscando una respuesta concreta: <strong>¿qué extintor necesito para mi cocina?</strong>, <strong>¿cuántos kilos para mi nave industrial?</strong>, <strong>¿esta manguera cumple norma?</strong>, <strong>¿en cuánto me llega a Querétaro o a otra ciudad?</strong>.</p>
-            <p class="ol-case-p">El reto del proyecto fue diseñar una tienda en línea que respondiera a esas preguntas en pocos clicks, manteniendo el rigor técnico que el sector exige y abriendo un canal de venta directa que no obliga al cliente a llamar o mandar un correo para cerrar una compra simple.</p>
+            <h2 class="ol-case-h2">Convertir un catálogo técnico en un sitio que califica prospectos.</h2>
+            <p class="ol-case-p">El comprador de equipo contra incendios no llega al sitio buscando "ofertas". Llega buscando una respuesta concreta: <strong>¿qué extintor necesito para mi cocina?</strong>, <strong>¿cuántos kilos para mi nave industrial?</strong>, <strong>¿esta manguera cumple norma?</strong>, <strong>¿este equipo pasa inspección de Protección Civil?</strong>.</p>
+            <p class="ol-case-p">El reto del proyecto fue diseñar un sitio catálogo que respondiera a esas preguntas con rigor técnico y llevara al visitante a un solo destino claro: <strong>solicitar diagnóstico y cotización</strong>, sin perder prospectos en llamadas sueltas. El sitio informa y filtra; la venta se cierra con asesoría y propuesta a la medida.</p>
 
             <div class="ol-case-cards">
               <div class="ol-case-card">
@@ -523,85 +693,78 @@
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></svg>
                 </div>
                 <h4>Catálogo navegable</h4>
-                <p>Estructurar el inventario por familia (extintores, mangueras, monitores, equipo bombero) y por clase de fuego (A, B, C, D, K), de forma que el comprador encuentre lo que necesita sin asesor.</p>
+                <p>Estructurar el catálogo por familia (extintores, monitores, mangueras, equipo bombero, señalización) y por clase de fuego (A, B, C, K), de forma que el visitante encuentre lo que necesita sin asesor.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
-                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="14" x2="15" y2="14"/></svg>
                 </div>
-                <h4>Carrito real</h4>
-                <p>Habilitar carrito de compra con cantidades por modelo, costos de envío estimados por zona y opciones de pago compatibles con los hábitos del comprador mexicano.</p>
+                <h4>Ruta de cotización</h4>
+                <p>Convertir cada ficha y categoría en un punto de captación: formulario de cotización y WhatsApp directo con respuesta en menos de 24 horas, sin obligar a llamar.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.5v5c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11V6.5L12 2z"/><path d="M9 12l2 2 4-4"/></svg>
                 </div>
                 <h4>Confianza técnica</h4>
-                <p>Mostrar certificaciones, normas aplicables y datos técnicos claros en cada ficha — el comprador necesita validar antes de pagar, sobre todo cuando compra para una empresa.</p>
+                <p>Mostrar certificaciones, normas aplicables (NOM, NFPA) y datos técnicos claros en cada ficha — el comprador necesita validar antes de cotizar, sobre todo cuando compra para una empresa.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
                 </div>
-                <h4>Asesoría paralela</h4>
-                <p>Mantener un canal de WhatsApp y correo siempre disponible para compras corporativas, facturación, cantidades especiales o dudas de aplicación que no se resuelven en checkout.</p>
+                <h4>Asesoría detrás</h4>
+                <p>Mantener visible el canal de WhatsApp y teléfono para diagnóstico sin costo, dudas de aplicación, cantidades de volumen y mantenimiento — el respaldo de un especialista con más de 25 años.</p>
               </div>
             </div>
           </section>
 
           <!-- 03 ARQUITECTURA -->
           <section class="ol-case-section" id="arquitectura">
-            <span class="ol-case-eyebrow">03 · Arquitectura del e-commerce</span>
+            <span class="ol-case-eyebrow">03 · Arquitectura del catálogo</span>
             <h2 class="ol-case-h2">Estructura pensada para el comprador real, no para el catálogo PDF.</h2>
-            <p class="ol-case-p">Antes de levantar la primera tienda, el equipo definió una arquitectura de información que resuelve el recorrido típico de quien compra equipo contra incendios en línea: <strong>llega buscando un tipo específico (extintor, manguera, equipo bombero), filtra por clase o aplicación, valida certificación, agrega al carrito y paga o pide cotización formal según el tamaño de la orden</strong>.</p>
+            <p class="ol-case-p">El equipo definió una arquitectura de información que resuelve el recorrido típico de quien busca equipo contra incendios: <strong>llega buscando un tipo específico (extintor, monitor, manguera, equipo bombero), navega por familia o clase de fuego, valida certificación, y solicita diagnóstico o cotización según su instalación</strong>. Todo el sitio empuja a un solo destino: el contacto calificado.</p>
 
             <div class="ol-case-arch">
               <div class="ol-arch-step">
                 <p class="num">CAPA 01</p>
-                <h4>Home de tienda</h4>
-                <p>Encabezado con propuesta de valor, accesos directos a familias principales, productos destacados y zonas de cobertura — todo orientado a que el visitante avance al catálogo en menos de un scroll.</p>
+                <h4>Home del sitio</h4>
+                <p>Encabezado con propuesta de valor, accesos directos a las cinco familias principales, normas que cumple y respaldo de +25 años — todo orientado a que el visitante avance al catálogo en menos de un scroll.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">CAPA 02</p>
                 <h4>Familias y categorías</h4>
-                <p>Cada familia (extintores, mangueras, monitores, equipo bombero, accesorios) tiene su propia página de listado con filtros por clase de fuego, capacidad y aplicación industrial.</p>
+                <p>Cada familia (extintores, monitores, equipo bombero, mangueras, señalización) tiene su propia página de listado, organizada por clase de fuego y aplicación industrial.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">CAPA 03</p>
                 <h4>Ficha de producto</h4>
-                <p>Página dedicada por modelo con imagen aislada, especificación técnica, clase de fuego, certificaciones, capacidad, accesorios compatibles, botón de "agregar al carrito" y CTA paralelo de cotización.</p>
+                <p>Página dedicada por modelo con imagen aislada, especificación técnica, clase de fuego, certificaciones, capacidad, aplicaciones recomendadas y CTA de cotización.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">CAPA 04</p>
-                <h4>Carrito y checkout</h4>
-                <p>Carrito persistente, edición de cantidades, cálculo de envío estimado por código postal, datos de facturación opcionales y selección de método de pago.</p>
+                <h4>Diagnóstico y cotización</h4>
+                <p>Formulario de cotización con categoría, datos de contacto y necesidad, más WhatsApp directo — la ruta de conversión principal del sitio, con respuesta en menos de 24 horas.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">CAPA 05</p>
-                <h4>Asesoría B2B</h4>
-                <p>Canal paralelo para compradores corporativos: cotización con orden de compra, facturación con uso de CFDI, condiciones de pago a plazo y entregas programadas.</p>
+                <h4>Nosotros y blog</h4>
+                <p>Sección institucional con la historia de +25 años, valores, proceso y norma; más un blog técnico que educa sobre clases de fuego, normativa y casos por sector.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">CAPA 06</p>
-                <h4>Quiénes somos · Contacto</h4>
-                <p>Sección institucional sobre LGA Contraincendios, ubicación en Querétaro, alcance de cobertura y formas de contacto — refuerzo de confianza para visitantes que llegan por primera vez.</p>
+                <h4>Contacto</h4>
+                <p>Ubicación en Querétaro, teléfono local 442 452 55 89, WhatsApp y formulario — refuerzo de confianza y vía directa para visitantes que llegan por primera vez.</p>
               </div>
-            </div>
-
-            <div class="ol-case-figure">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/lgacontraincendios/lga-catalogo-equipo-nom-nfpa-queretaro.avif" alt="LGA Contraincendios — catálogo de equipo contra incendios NOM y NFPA en Querétaro" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <p class="ol-case-figure-caption">Catálogo online estructurado por familia y clase de fuego — el comprador llega rápido al producto correcto.</p>
             </div>
           </section>
 
           <!-- 04 DISEÑO -->
           <section class="ol-case-section" id="diseno">
             <span class="ol-case-eyebrow">04 · Diseño y sistema visual</span>
-            <h2 class="ol-case-h2">Interfaz limpia, técnica y orientada a venta directa.</h2>
-            <p class="ol-case-p">El diseño parte de una idea simple: <strong>una tienda en línea de equipo contra incendios no necesita ser estridente, necesita ser legible, confiable y rápida</strong>. La paleta usa rojos saturados como acento de marca y señalización de clase de fuego, sobre una base neutra oscura que respeta el producto, los datos técnicos y la imagen real de cada modelo.</p>
-            <p class="ol-case-p">Cada componente del sistema —tarjeta de producto, badge de clase de fuego, ficha técnica, controles del carrito, formularios de checkout y módulos de contacto— se diseñó con el mismo lenguaje, garantizando coherencia entre la home, los listados y la página de cada producto.</p>
+            <h2 class="ol-case-h2">Interfaz limpia, técnica y orientada a cotización.</h2>
+            <p class="ol-case-p">El diseño parte de una idea simple: <strong>un sitio de equipo contra incendios no necesita ser estridente, necesita ser legible, confiable y rápido</strong>. La paleta usa rojos saturados como acento de marca y señalización de clase de fuego, sobre una base neutra oscura que respeta el producto, los datos técnicos y la imagen real de cada modelo.</p>
+            <p class="ol-case-p">Cada componente del sistema —tarjeta de producto, badge de clase de fuego, ficha técnica, formulario de cotización y módulos de contacto— se diseñó con el mismo lenguaje, garantizando coherencia entre la home, los listados y la página de cada producto.</p>
 
             <div class="ol-case-cards">
               <div class="ol-case-card">
@@ -616,7 +779,7 @@
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="10.5" r="2.5"/><circle cx="8.5" cy="7.5" r="2.5"/><circle cx="6.5" cy="12.5" r="2.5"/><path d="M12 22a10 10 0 1 1 9.96-9.13.5.5 0 0 1-.5.54H17a3 3 0 0 0-3 3v.5a2 2 0 0 1-2 2"/></svg>
                 </div>
                 <h4>Paleta retail-industrial</h4>
-                <p>Rojo saturado como acento de marca y señalización (clases de fuego, CTA de compra), fondos oscuros para destacar producto, contrastes altos para precios y especificaciones.</p>
+                <p>Rojo saturado como acento de marca y señalización (clases de fuego, CTA de cotización), fondos oscuros para destacar producto, contrastes altos para datos técnicos y especificaciones.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
@@ -630,76 +793,62 @@
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                 </div>
                 <h4>Badges de clase de fuego</h4>
-                <p>Componente específico para resaltar la clase de fuego (A, B, C, D, K) y la certificación aplicable — información crítica que el comprador busca antes de agregar al carrito.</p>
+                <p>Componente específico para resaltar la clase de fuego (A, B, C, K) y la certificación aplicable — información crítica que el comprador busca antes de solicitar cotización.</p>
               </div>
-            </div>
-
-            <div class="ol-case-figure">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/lgacontraincendios/lga-categorias-extintores-monitores-bomberos.avif" alt="LGA Contraincendios — categorías: extintores, monitores y equipo para bomberos" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <p class="ol-case-figure-caption">Sistema de tarjetas y badges aplicado de forma consistente a toda la tienda — extintores, mangueras, monitores y equipo bombero.</p>
             </div>
           </section>
 
           <!-- 05 CATÁLOGO -->
           <section class="ol-case-section" id="catalogo">
-            <span class="ol-case-eyebrow">05 · Catálogo técnico online</span>
+            <span class="ol-case-eyebrow">05 · Catálogo técnico</span>
             <h2 class="ol-case-h2">Cada producto presentado con la profundidad que el sector exige.</h2>
-            <p class="ol-case-p">El núcleo de la tienda es el catálogo técnico. Cada modelo está documentado con la información que el comprador necesita para validar especificación, cumplimiento y aplicación antes de cerrar la compra. La estructura de cada ficha sigue siempre el mismo patrón, lo que permite al comprador comparar modelos sin reaprender el sitio.</p>
+            <p class="ol-case-p">El núcleo del sitio es el catálogo técnico. Cada modelo está documentado con la información que el comprador necesita para validar especificación, cumplimiento y aplicación antes de solicitar cotización. La estructura de cada ficha sigue siempre el mismo patrón, lo que permite al comprador comparar modelos sin reaprender el sitio.</p>
 
             <ul class="ol-case-list">
-              <li><strong>Clase de fuego:</strong> badge visible en jerarquía superior — A, B, C, D, K — para que el comprador identifique de inmediato la aplicación.</li>
+              <li><strong>Clase de fuego:</strong> badge visible en jerarquía superior — A, B, C, K — para que el comprador identifique de inmediato la aplicación.</li>
               <li><strong>Especificación técnica:</strong> capacidad (kg / lb), agente extintor, presión, materiales de construcción, dimensiones y peso por modelo.</li>
-              <li><strong>Certificaciones aplicables:</strong> normas y certificados mostrados en jerarquía superior de la ficha — refuerza credibilidad antes de agregar al carrito.</li>
-              <li><strong>Aplicaciones recomendadas:</strong> entornos donde el modelo es ideal (cocinas industriales, naves, oficinas, talleres mecánicos, plazas comerciales, vehículos).</li>
+              <li><strong>Certificaciones aplicables:</strong> normas NOM y NFPA mostradas en jerarquía superior de la ficha — refuerza credibilidad antes de solicitar cotización.</li>
+              <li><strong>Aplicaciones recomendadas:</strong> entornos donde el modelo es ideal (cocinas industriales, naves, oficinas, talleres mecánicos, plazas comerciales, hospitales).</li>
               <li><strong>Imagen de producto:</strong> foto principal aislada sobre fondo neutro, con vistas adicionales cuando aportan claridad técnica.</li>
               <li><strong>Productos relacionados:</strong> sugerencia de accesorios o complementos compatibles para que el comprador arme su solución completa.</li>
-              <li><strong>Doble CTA:</strong> "Agregar al carrito" para venta directa y "Solicitar cotización" para compras corporativas o cantidades especiales.</li>
+              <li><strong>CTA de cotización:</strong> "Solicitar cotización" y WhatsApp directo en cada ficha — la ruta de conversión, con respuesta en menos de 24 horas.</li>
             </ul>
-
-            <div class="ol-case-figure">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/lgacontraincendios/lga-productos-contra-incendios-queretaro.avif" alt="LGA Contraincendios — productos contra incendios con especificaciones técnicas" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <p class="ol-case-figure-caption">Ficha de producto con clase de fuego, especificación, certificaciones, productos relacionados y CTA de compra directa.</p>
-            </div>
           </section>
 
           <!-- 06 CONVERSIÓN -->
           <section class="ol-case-section" id="conversion">
-            <span class="ol-case-eyebrow">06 · Conversión y carrito</span>
-            <h2 class="ol-case-h2">Tienda en línea de verdad, no un catálogo decorado.</h2>
-            <p class="ol-case-p">Una tienda en línea de equipo contra incendios se mide por dos cosas: <strong>cuántos compradores cierran la compra sin tener que llamar y cuántos prospectos calificados llegan al canal corporativo</strong>. Por eso el sitio de LGA Contraincendios integra dos rutas de conversión paralelas, sin que una pelee con la otra.</p>
+            <span class="ol-case-eyebrow">06 · Conversión y cotización</span>
+            <h2 class="ol-case-h2">Un sitio que califica prospectos, no un catálogo decorado.</h2>
+            <p class="ol-case-p">El sitio de LGA Contraincendios se mide por una sola cosa: <strong>cuántos prospectos calificados llegan al equipo técnico listos para recibir propuesta</strong>. Por eso toda la navegación empuja a tres canales de contacto que comparten el mismo objetivo, sin que uno pelee con otro.</p>
 
             <div class="ol-case-cards">
               <div class="ol-case-card">
                 <div class="icon">
-                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="14" x2="15" y2="14"/></svg>
                 </div>
-                <h4>Carrito y checkout</h4>
-                <p>Carrito persistente, edición de cantidades, cálculo estimado de envío por zona y proceso de pago compatible con tarjeta, transferencia y métodos preferidos del comprador mexicano.</p>
+                <h4>Formulario de cotización</h4>
+                <p>Formulario con categoría, contacto y necesidad — extintores, monitores, equipo bombero, mangueras, señalización o mantenimiento — para que el equipo técnico responda con propuesta a la medida.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
-                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="14" x2="15" y2="14"/></svg>
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.5v5c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11V6.5L12 2z"/><path d="M9 12l2 2 4-4"/></svg>
                 </div>
-                <h4>Cotización corporativa</h4>
-                <p>Formulario para órdenes mayores con campos relevantes B2B: empresa, RFC, contacto técnico, modelos, cantidades estimadas y zona de entrega — para que el equipo comercial responda con propuesta formal.</p>
+                <h4>Diagnóstico sin costo</h4>
+                <p>Invitación recurrente a solicitar diagnóstico de riesgo gratuito: visita técnica, identificación de riesgos reales y propuesta exacta antes de cualquier compra.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg>
                 </div>
-                <h4>WhatsApp paralelo</h4>
-                <p>Acceso directo por WhatsApp para consultas rápidas, asesoría sobre clase de fuego correcta, dudas de aplicación o seguimiento de pedido — visible en toda la tienda sin invadir el contenido.</p>
+                <h4>WhatsApp directo</h4>
+                <p>Acceso directo por WhatsApp para consultas rápidas, asesoría sobre clase de fuego correcta, dudas de aplicación o cantidades de volumen — visible en todo el sitio sin invadir el contenido.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 </div>
-                <h4>Línea telefónica</h4>
-                <p>Teléfono comercial visible en topbar, header y footer — sigue siendo el canal preferido para órdenes corporativas grandes o entregas urgentes en el corredor del Bajío.</p>
+                <h4>Línea telefónica local</h4>
+                <p>Teléfono local de Querétaro (442 452 55 89) visible en header y footer — sigue siendo el canal preferido para proyectos de volumen o entregas urgentes en el corredor del Bajío.</p>
               </div>
             </div>
           </section>
@@ -707,8 +856,8 @@
           <!-- 07 TECNOLOGÍA -->
           <section class="ol-case-section" id="tecnologia">
             <span class="ol-case-eyebrow">07 · Tecnología y rendimiento</span>
-            <h2 class="ol-case-h2">Tienda rápida, segura y lista para escalar el catálogo.</h2>
-            <p class="ol-case-p">El sitio se construyó sobre una base ligera y moderna, priorizando <strong>tiempo de carga, estabilidad visual, seguridad de la transacción y eficiencia en redes restrictivas</strong> — donde muchas veces el comprador navega desde planta o desde un dispositivo móvil en sitio. La arquitectura técnica favorece HTML estático servido desde CDN, con interactividad selectiva sólo en carrito, checkout y módulos dinámicos.</p>
+            <h2 class="ol-case-h2">Sitio rápido, ligero y listo para escalar el catálogo.</h2>
+            <p class="ol-case-p">El sitio se construyó sobre una base ligera y moderna, priorizando <strong>tiempo de carga, estabilidad visual y eficiencia en redes restrictivas</strong> — donde muchas veces el comprador navega desde planta o desde un dispositivo móvil en sitio. La arquitectura técnica favorece HTML estático servido desde CDN, con interactividad selectiva sólo en el formulario de cotización y los módulos dinámicos.</p>
 
             <div class="ol-case-spec">
               <dl>
@@ -717,8 +866,8 @@
                   <dd>Astro · arquitectura estática-primero, hidratación selectiva, salida HTML pura para máximo rendimiento.</dd>
                 </div>
                 <div class="ol-case-spec-row">
-                  <dt>E-commerce</dt>
-                  <dd>Catálogo estructurado, carrito persistente, checkout con pasarela de pago e integración con WhatsApp para asesoría.</dd>
+                  <dt>Catálogo</dt>
+                  <dd>Catálogo estructurado por familia y clase de fuego, fichas técnicas por modelo y formulario de cotización integrado con WhatsApp.</dd>
                 </div>
                 <div class="ol-case-spec-row">
                   <dt>Estilo</dt>
@@ -734,19 +883,19 @@
                 </div>
                 <div class="ol-case-spec-row">
                   <dt>Datos estructurados</dt>
-                  <dd>Schema.org en JSON-LD: Organization, WebSite, BreadcrumbList, Product y Offer en cada ficha de producto.</dd>
+                  <dd>Schema.org en JSON-LD: Organization, WebSite, BreadcrumbList y Product en las fichas del catálogo.</dd>
                 </div>
                 <div class="ol-case-spec-row">
                   <dt>Accesibilidad</dt>
-                  <dd>Skip-link a contenido, ARIA labels en navegación, contraste alto en texto, foco visible en componentes interactivos del checkout.</dd>
+                  <dd>Skip-link a contenido, ARIA labels en navegación, contraste alto en texto, foco visible en el formulario de cotización.</dd>
                 </div>
                 <div class="ol-case-spec-row">
                   <dt>Responsivo</dt>
-                  <dd>Layout fluido desde 360 px; menú móvil con overlay, listados en grid adaptable y carrito optimizado al pulgar.</dd>
+                  <dd>Layout fluido desde 360 px; menú móvil con overlay, listados en grid adaptable y CTA de cotización optimizado al pulgar.</dd>
                 </div>
                 <div class="ol-case-spec-row">
                   <dt>Seguridad</dt>
-                  <dd>HTTPS con certificado válido, pasarela de pago externa certificada y datos sensibles fuera del servidor del sitio.</dd>
+                  <dd>HTTPS con certificado válido en todo el sitio; el formulario de cotización abre WhatsApp sin almacenar datos sensibles en el servidor.</dd>
                 </div>
                 <div class="ol-case-spec-row">
                   <dt>Hosting</dt>
@@ -754,51 +903,44 @@
                 </div>
               </dl>
             </div>
-
-            <div class="ol-case-figure">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/lgacontraincendios/lga-blog-seguridad-contra-incendios.avif" alt="LGA Contraincendios — blog de seguridad contra incendios y normatividad NOM" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <p class="ol-case-figure-caption">Comportamiento responsivo: desktop, tablet y móvil compartiendo el mismo sistema de componentes y flujo de compra.</p>
-            </div>
           </section>
 
           <!-- 08 PROCESO -->
           <section class="ol-case-section" id="proceso">
             <span class="ol-case-eyebrow">08 · Proceso de trabajo</span>
-            <h2 class="ol-case-h2">De la conversación inicial a la tienda en operación.</h2>
+            <h2 class="ol-case-h2">De la conversación inicial al sitio en operación.</h2>
             <p class="ol-case-p">El proyecto siguió la metodología estándar de OrigenLab: descubrimiento → estrategia → diseño → desarrollo → pruebas → lanzamiento → acompañamiento. Cada etapa se documenta con entregables específicos para que el cliente sepa siempre qué espera y qué recibe — con calendario por escrito desde el inicio.</p>
 
             <div class="ol-case-arch">
               <div class="ol-arch-step">
                 <p class="num">FASE 01</p>
                 <h4>Descubrimiento</h4>
-                <p>Sesión inicial con LGA Contraincendios: producto, líneas de extintor por clase, cobertura de envío, perfil del comprador típico y referencias del sector.</p>
+                <p>Sesión inicial con LGA Contraincendios: producto, líneas por clase de fuego, cobertura, perfil del comprador típico y referencias del sector.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">FASE 02</p>
                 <h4>Estrategia</h4>
-                <p>Mapa de catálogo, arquitectura de información, definición de plantillas de tienda, jerarquía de mensajes, flujo de compra y estrategia de conversión dual (B2C / B2B).</p>
+                <p>Mapa de catálogo, arquitectura de información, definición de plantillas, jerarquía de mensajes y estrategia de conversión por cotización y diagnóstico.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">FASE 03</p>
                 <h4>Diseño visual</h4>
-                <p>Sistema de design tokens, componentes base (header, tarjeta de producto, ficha, badges, checkout) y prototipos de las plantillas principales para validación.</p>
+                <p>Sistema de design tokens, componentes base (header, tarjeta de producto, ficha, badges, formulario de cotización) y prototipos de las plantillas principales para validación.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">FASE 04</p>
                 <h4>Desarrollo</h4>
-                <p>Construcción modular sobre Astro con componentes reutilizables, integración del catálogo e-commerce, carrito, pasarela de pago, formularios B2B y datos estructurados.</p>
+                <p>Construcción modular sobre Astro con componentes reutilizables, integración del catálogo técnico, formulario de cotización por WhatsApp, blog y datos estructurados.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">FASE 05</p>
                 <h4>Pruebas</h4>
-                <p>Auditoría técnica, validación responsiva, revisión de accesibilidad, pruebas cruzadas en navegadores, simulación de compra y verificación de pasarela de pago.</p>
+                <p>Auditoría técnica, validación responsiva, revisión de accesibilidad, pruebas cruzadas en navegadores y verificación del flujo de cotización por WhatsApp.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">FASE 06</p>
                 <h4>Lanzamiento</h4>
-                <p>Configuración de dominio, certificado SSL, despliegue en CDN, alta inicial de catálogo y entrega de credenciales con capacitación al equipo del cliente.</p>
+                <p>Configuración de dominio, certificado SSL, despliegue en CDN, alta inicial de catálogo y entrega con capacitación al equipo del cliente.</p>
               </div>
             </div>
           </section>
@@ -806,70 +948,244 @@
           <!-- 09 GALERÍA -->
           <section class="ol-case-section" id="galeria">
             <span class="ol-case-eyebrow">09 · Galería del sitio</span>
-            <h2 class="ol-case-h2">Pantallas y secciones de la tienda en operación.</h2>
-            <p class="ol-case-p">Una recorrida por las pantallas principales del e-commerce: home, listado por familia, ficha de producto, carrito, checkout y módulo de contacto B2B — todas construidas con el mismo sistema de componentes y la misma jerarquía visual.</p>
+            <h2 class="ol-case-h2">Pantallas y secciones del sitio en operación.</h2>
+            <p class="ol-case-p">Siete pantallas del sitio —catálogo por familia, ficha de producto, diferenciadores, aplicaciones por sector, cobertura, perfiles de comprador y conversión— reproducidas con el mismo sistema de componentes y la misma jerarquía visual del sitio en operación. Cada pantalla está pensada para llevar al comprador del catálogo a la cotización sin fricción.</p>
 
             <div class="ol-case-gallery">
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/lgacontraincendios/lga-home-equipos-contra-incendios-queretaro.avif" alt="LGA Contraincendios — pantalla 01: home tienda de equipo contra incendios Querétaro" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">01 · Home de la tienda con propuesta de valor y acceso directo al catálogo.</figcaption>
-              </figure>
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/lgacontraincendios/lga-nosotros-empresa-queretaro-25-anos.avif" alt="LGA Contraincendios — pantalla 02: nosotros, empresa con 25 años en Querétaro" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">02 · Listado de extintores con filtro por clase de fuego (A, B, C, D, K).</figcaption>
-              </figure>
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/lgacontraincendios/lga-catalogo-equipo-nom-nfpa-queretaro.avif" alt="LGA Contraincendios — pantalla 03: catálogo de equipo NOM y NFPA" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">03 · Familias de producto: extintores, mangueras, monitores, equipo bombero.</figcaption>
-              </figure>
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/lgacontraincendios/lga-categorias-extintores-monitores-bomberos.avif" alt="LGA Contraincendios — pantalla 04: categorías extintores, monitores y bomberos" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">04 · Línea de mangueras industriales con datos técnicos por modelo.</figcaption>
-              </figure>
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/lgacontraincendios/lga-productos-contra-incendios-queretaro.avif" alt="LGA Contraincendios — pantalla 05: productos técnicos contra incendios" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">05 · Equipo personal de protección para bomberos y brigadas internas.</figcaption>
-              </figure>
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/lgacontraincendios/lga-blog-seguridad-contra-incendios.avif" alt="LGA Contraincendios — pantalla 06: blog seguridad contra incendios" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">06 · Ficha de producto con clase de fuego, certificaciones y CTA de compra directa.</figcaption>
-              </figure>
-            </div>
 
-            <figure class="ol-case-figure" style="margin-top:1.25rem;">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/lgacontraincendios/lga-contacto-cotizacion-queretaro.avif" alt="LGA Contraincendios — pantalla 07: contacto y cotización en Querétaro" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <figcaption class="ol-case-figure-caption">07 · Módulo de contacto B2B con formulario corporativo y zonas de cobertura desde Querétaro.</figcaption>
-            </figure>
+              <!-- 01 · CATÁLOGO POR FAMILIA -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">lgacontraincendios.com/tienda</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Catálogo por familia y clase de fuego</h3>
+                      <p class="mk-sect-sub">Equipo certificado organizado por línea, con clase de fuego y aplicaciones visibles en cada categoría — comparables de un vistazo.</p>
+                      <div class="mk-cards">
+                        <div class="mk-card">
+                          <span class="mk-pbadge">Clases A·B·C</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l1 4H8l1-4z"/><path d="M8 7h8v13a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V7z"/></svg></div>
+                          <p class="mk-ct">Extintores PQS y CO₂</p>
+                          <p class="mk-inc-k">Aplicaciones</p>
+                          <div class="mk-inc"><span>Oficinas</span><span>Naves industriales</span><span>Talleres</span><span>Vehículos</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">Clase K</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18h16"/><path d="M7 18V9a5 5 0 0 1 10 0v9"/></svg></div>
+                          <p class="mk-ct">Extintores para cocina</p>
+                          <p class="mk-inc-k">Aplicaciones</p>
+                          <div class="mk-inc"><span>Restaurantes</span><span>Comedores industriales</span><span>Grasas y aceites</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">Industrial</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg></div>
+                          <p class="mk-ct">Monitores y cañones</p>
+                          <p class="mk-inc-k">Aplicaciones</p>
+                          <div class="mk-inc"><span>Áreas de alto riesgo</span><span>Fijos y portátiles</span><span>Petroquímica</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">Red contra incendio</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9 9 0 0 1 9 9"/><circle cx="12" cy="12" r="3"/></svg></div>
+                          <p class="mk-ct">Mangueras y conexiones</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Mangueras</span><span>Coples</span><span>Boquillas</span><span>Equipo de combate</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">Brigadas</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5l-8-3z"/></svg></div>
+                          <p class="mk-ct">Equipo para bomberos</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Protección personal</span><span>Herramienta</span><span>Para brigadas internas</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">Accesorios</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M3 9l2-5h14l2 5"/><path d="M9 13h6"/></svg></div>
+                          <p class="mk-ct">Gabinetes y señalización</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Gabinetes</span><span>Señalización</span><span>Hidrantes</span><span>Refacciones</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">01 · Catálogo — familias de producto con estructura uniforme, clase de fuego y aplicaciones visibles en cada tarjeta.</figcaption>
+              </figure>
+
+              <!-- 02 · FICHA DE PRODUCTO -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">lgacontraincendios.com/extintor-pqs-9kg</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Ficha de producto con profundidad técnica</h3>
+                      <p class="mk-sect-sub">Cada modelo documentado con clase de fuego, especificación, certificación y doble CTA — la información que el comprador necesita para validar antes de cerrar la compra.</p>
+                      <div class="mk-pdp">
+                        <div class="mk-pimg"><svg aria-hidden="true" focusable="false" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l1 4H8l1-4z"/><path d="M8 7h8v13a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V7z"/><path d="M11 11h2"/></svg></div>
+                        <div>
+                          <div class="mk-pbadges"><span>Clase A</span><span>Clase B</span><span>Clase C</span><span>Certificado NOM</span></div>
+                          <p class="mk-ph">Extintor PQS · Polvo Químico Seco</p>
+                          <p class="mk-sub" style="margin-top:.1rem">Para fuegos de sólidos, líquidos inflamables y equipo energizado — el extintor multipropósito más usado en industria y comercio.</p>
+                          <ul class="mk-pspec">
+                            <li><span>Capacidad</span><span>4.5 / 6 / 9 kg</span></li>
+                            <li><span>Agente extintor</span><span>Polvo químico seco ABC</span></li>
+                            <li><span>Clase de fuego</span><span>A · B · C</span></li>
+                            <li><span>Certificación</span><span>Cumple norma vigente</span></li>
+                            <li><span>Aplicación</span><span>Oficinas, naves, talleres</span></li>
+                          </ul>
+                          <div class="mk-pcta"><span class="b1">Solicitar cotización</span><span class="b2">WhatsApp directo</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">02 · Ficha de producto — imagen aislada, badges de clase de fuego y certificación, tabla técnica y CTA de cotización (formulario o WhatsApp directo).</figcaption>
+              </figure>
+
+              <!-- 03 · MARCAS REPRESENTADAS -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">lgacontraincendios.com/#por-que-comprar</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Por qué comprar en LGA Contra Incendios</h3>
+                      <p class="mk-sect-sub">Catálogo integral, diagnóstico sin costo y +25 años de respaldo — no solo vendemos, acompañamos.</p>
+                      <div class="mk-diff">
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M3 9l2-5h14l2 5"/><path d="M9 13h6"/></svg></div>
+                          <b>Catálogo integral</b>
+                          <p>Extintores, monitores, equipo bombero, mangueras y señalización sin fragmentar proveedores.</p>
+                          <span class="mk-dlink">Ver catálogo →</span>
+                        </div>
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.5v5c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11V6.5L12 2z"/><path d="M9 12l2 2 4-4"/></svg></div>
+                          <b>Diagnóstico sin costo</b>
+                          <p>Visita técnica, riesgos reales identificados y propuesta exacta antes de comprar.</p>
+                          <span class="mk-dlink">Solicitar diagnóstico →</span>
+                        </div>
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="14" x2="15" y2="14"/></svg></div>
+                          <b>Documentación NOM</b>
+                          <p>Ficha técnica y certificación lista para auditorías de Protección Civil y STPS.</p>
+                          <span class="mk-dlink">Ver normas →</span>
+                        </div>
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+                          <b>Asesoría especializada</b>
+                          <p>Más de 25 años de experiencia detrás del catálogo, con soporte por WhatsApp.</p>
+                          <span class="mk-dlink">Escribir por WhatsApp →</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">03 · Diferenciadores — los argumentos que el comprador valora: catálogo integral, diagnóstico sin costo, documentación NOM y asesoría con +25 años.</figcaption>
+              </figure>
+
+              <!-- 04 · APLICACIONES POR SECTOR -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">lgacontraincendios.com/aplicaciones</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Equipo según tu tipo de instalación</h3>
+                      <p class="mk-sect-sub">Cada entorno necesita su mix de clase de fuego y equipo — el catálogo guía al comprador a lo que aplica a su sitio.</p>
+                      <div class="mk-sect-cards">
+                        <div class="mk-scard"><span class="k">Corredor industrial</span><b>Naves y plantas</b><p>Extintores ABC por capacidad, monitores y mangueras para red contra incendio.</p><span class="v">Ver equipo →</span></div>
+                        <div class="mk-scard"><span class="k">Alimentos</span><b>Cocinas y restaurantes</b><p>Extintores clase K para grasas y aceites, certificados para comedores industriales.</p><span class="v">Ver equipo →</span></div>
+                        <div class="mk-scard"><span class="k">Comercio</span><b>Plazas y oficinas</b><p>Extintores ABC, gabinetes y señalización para edificios y locales comerciales.</p><span class="v">Ver equipo →</span></div>
+                        <div class="mk-scard"><span class="k">Respuesta</span><b>Brigadas internas</b><p>Equipo de protección personal y herramienta para cuerpos de respuesta.</p><span class="v">Ver equipo →</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">04 · Aplicaciones — el sitio segmenta por tipo de instalación para que cada comprador encuentre el equipo correcto.</figcaption>
+              </figure>
+
+              <!-- 05 · COBERTURA -->
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">lgacontraincendios.com/#cobertura</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Cobertura de envío</h3>
+                      <p class="mk-sect-sub">Base en Querétaro con envío a toda la República Mexicana.</p>
+                      <div class="mk-chips">
+                        <span class="mk-chip on">Querétaro</span><span class="mk-chip on">El Bajío</span><span class="mk-chip on">Nacional</span><span class="mk-chip">CDMX</span><span class="mk-chip">León</span><span class="mk-chip">Celaya</span><span class="mk-chip">San Luis Potosí</span><span class="mk-chip">Guadalajara</span><span class="mk-chip">Monterrey</span><span class="mk-chip">Puebla</span><span class="mk-chip">Aguascalientes</span><span class="mk-chip">Toluca</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">05 · Cobertura — base en Querétaro y proyectos en el Bajío y +10 estados, comunicados con claridad antes de cotizar.</figcaption>
+              </figure>
+
+              <!-- 06 · PERFILES DE COMPRADOR -->
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">lgacontraincendios.com/#para-quien</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Para quién está hecha la tienda</h3>
+                      <p class="mk-sect-sub">Perfiles de comprador que el sitio resuelve sin obligar a llamar.</p>
+                      <div class="mk-tcards" style="grid-template-columns:1fr">
+                        <div class="mk-tcard">
+                          <div class="mk-trow"><span class="mk-av">MA</span><span><span class="mk-tn">Mantenimiento</span><br><span class="mk-tloc">Nave industrial · Bajío</span></span></div>
+                          <p class="mk-quote">Identifica extintores PQS por capacidad y clase, valida la norma y solicita cotización para resolver el reabasto el mismo día.</p>
+                        </div>
+                        <div class="mk-tcard">
+                          <div class="mk-trow"><span class="mk-av">RC</span><span><span class="mk-tn">Restaurante / cocina</span><br><span class="mk-tloc">Plaza comercial · Querétaro</span></span></div>
+                          <p class="mk-quote">Necesita clase K para la cocina; valida la norma en la ficha y cotiza el equipo certificado por WhatsApp.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">06 · Perfiles — el comprador típico que la tienda busca convertir, por rol y sector, sin nombres inventados.</figcaption>
+              </figure>
+
+              <!-- 07 · CONVERSIÓN: CARRITO + COTIZACIÓN -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">lgacontraincendios.com/cotizacion</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Cotización en menos de 24 horas</h3>
+                      <p class="mk-sect-sub">Formulario de cotización y WhatsApp directo — dinos qué necesitas y el equipo técnico responde con propuesta a la medida.</p>
+                      <div class="mk-trust">
+                        <div><b>Certificado</b><span>cada clase</span></div>
+                        <div><b>Sin costo</b><span>diagnóstico</span></div>
+                        <div><b>&lt;24h</b><span>respuesta</span></div>
+                        <div><b>WhatsApp</b><span>asesoría</span></div>
+                      </div>
+                      <div class="mk-form">
+                        <div class="mk-frow"><div class="mk-field">Empresa</div><div class="mk-field">RFC</div></div>
+                        <div class="mk-frow"><div class="mk-field">Contacto técnico</div><div class="mk-field">Teléfono</div></div>
+                        <div class="mk-field">Modelos y cantidades</div>
+                        <div class="mk-field">Zona de entrega</div>
+                        <div class="mk-submit">Solicitar cotización →</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">07 · Conversión — formulario de cotización calificado y WhatsApp directo, con señales de confianza visibles antes de enviar.</figcaption>
+              </figure>
+
+            </div>
           </section>
 
           <!-- 10 RESULTADO -->
           <section class="ol-case-section" id="resultado">
             <span class="ol-case-eyebrow">10 · Resultado entregado</span>
-            <h2 class="ol-case-h2">Una tienda en línea al nivel del catálogo y del comprador.</h2>
-            <p class="ol-case-p">El resultado es un e-commerce que <strong>convierte sin obligar al comprador a llamar</strong>, presenta el catálogo con la profundidad técnica que el sector exige y mantiene abierto el canal corporativo para órdenes mayores. La identidad visual y el tono editorial reflejan la seriedad de LGA Contraincendios y el peso del producto que comercializa.</p>
+            <h2 class="ol-case-h2">Un sitio al nivel del catálogo y de los +25 años de LGA.</h2>
+            <p class="ol-case-p">El resultado es un sitio catálogo que <strong>convierte sin obligar al comprador a llamar</strong>, presenta el catálogo con la profundidad técnica que el sector exige y enruta cada prospecto al equipo técnico para diagnóstico y cotización. La identidad visual y el tono editorial reflejan la seriedad de LGA Contraincendios y el peso del producto que comercializa.</p>
             <ul class="ol-case-list">
-              <li><strong>Tienda en línea en operación</strong> bajo dominio propio, certificado SSL, hosting CDN y dominio gestionado.</li>
-              <li><strong>Catálogo técnico estructurado</strong> con plantilla de ficha consistente para extintores, mangueras, monitores y equipo bombero.</li>
-              <li><strong>Carrito y checkout funcional</strong> con cantidades, cálculo de envío y métodos de pago compatibles con el comprador mexicano.</li>
+              <li><strong>Sitio en operación</strong> bajo dominio propio, certificado SSL, hosting CDN y dominio gestionado.</li>
+              <li><strong>Catálogo técnico estructurado</strong> con plantilla de ficha consistente para extintores, monitores, mangueras, equipo bombero y señalización.</li>
+              <li><strong>Formulario de cotización funcional</strong> con categoría, contacto y necesidad, enrutado a WhatsApp con respuesta en menos de 24 horas.</li>
               <li><strong>Sistema de componentes reutilizable</strong> que permite ampliar líneas y modelos sin rehacer el diseño.</li>
-              <li><strong>Formulario corporativo B2B</strong> con campos relevantes y enrutado al equipo comercial para órdenes mayores.</li>
-              <li><strong>Canal paralelo por WhatsApp y teléfono</strong> visibles en todas las pantallas del sitio.</li>
-              <li><strong>Datos estructurados Schema.org</strong> con Product y Offer en cada ficha — los motores entienden correctamente la naturaleza de tienda.</li>
-              <li><strong>Documentación entregable</strong> al equipo del cliente para mantener catálogo, agregar productos y crecer la tienda en el tiempo.</li>
+              <li><strong>Blog técnico</strong> que educa sobre clases de fuego, normativa NOM/NFPA y casos por sector, reforzando autoridad.</li>
+              <li><strong>Canales de contacto</strong> —WhatsApp y teléfono local de Querétaro— visibles en todas las pantallas del sitio.</li>
+              <li><strong>Datos estructurados Schema.org</strong> con Organization, BreadcrumbList y Product — los motores entienden correctamente el catálogo y la empresa.</li>
+              <li><strong>Documentación entregable</strong> al equipo del cliente para mantener catálogo, agregar productos y crecer el sitio en el tiempo.</li>
             </ul>
           </section>
 
@@ -886,8 +1202,8 @@
 
         <div class="ol-cta-hero-left">
           <p class="ol-cta-hero-eyebrow">Iniciar proyecto</p>
-          <h2 class="ol-cta-hero-title">¿Tu empresa de equipo contra incendios necesita una tienda en línea de verdad?</h2>
-          <p class="ol-cta-hero-blurb">Si vendes extintores, mangueras, monitores o equipo personal de bomberos — podemos construir contigo una tienda en línea profesional, técnica y orientada a conversión. Sin plantillas genéricas, sin atajos, hecha para tu comprador y tu catálogo.</p>
+          <h2 class="ol-cta-hero-title">¿Tu empresa de equipo contra incendios necesita un sitio catálogo de verdad?</h2>
+          <p class="ol-cta-hero-blurb">Si vendes extintores, mangueras, monitores o equipo personal de bomberos — podemos construir contigo un sitio catálogo profesional, técnico y orientado a conversión. Sin plantillas genéricas, sin atajos, hecho para tu comprador y tu catálogo.</p>
           <div class="ol-cta-hero-actions">
             <a href="/cotizar/" class="ol-btn-primary">
               Cotizar proyecto
@@ -907,8 +1223,8 @@
               <li>Descubrimiento técnico antes de cualquier propuesta visual</li>
               <li>Diseño y desarrollo a medida — sin plantillas ni atajos</li>
               <li>Catálogo técnico estructurado por clase y aplicación</li>
-              <li>Carrito, checkout y pasarela de pago integrados</li>
-              <li>Formularios B2B, WhatsApp y CRM integrados al flujo</li>
+              <li>Fichas de producto con norma, especificación y badges</li>
+              <li>Formulario de cotización y WhatsApp integrados al flujo</li>
               <li>Estructura escalable para crecer catálogo y operación</li>
               <li>Acompañamiento post-entrega con tu equipo</li>
             </ul>
@@ -944,17 +1260,17 @@
 
             <div class="ol-faq-item">
               <button class="ol-faq-question" data-faq="0">
-                ¿Cuánto cuesta una tienda en línea profesional?
+                ¿Cuánto cuesta un sitio catálogo profesional?
                 <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
               </button>
               <div class="ol-faq-answer" id="faq-ans-0">
-                <p class="ol-faq-answer-inner">El costo depende del alcance, funcionalidad y diseño de cada proyecto — número de productos, integraciones de pago, envíos, facturación y nivel de personalización. Cada cotización se construye a la medida y entregamos una propuesta detallada por escrito, sin cargos ocultos, antes de comenzar.</p>
+                <p class="ol-faq-answer-inner">El costo depende del alcance, funcionalidad y diseño de cada proyecto — número de productos, profundidad del catálogo técnico, integraciones y nivel de personalización. Cada cotización se construye a la medida y entregamos una propuesta detallada por escrito, sin cargos ocultos, antes de comenzar.</p>
               </div>
             </div>
 
             <div class="ol-faq-item">
               <button class="ol-faq-question" data-faq="1">
-                ¿Cuánto tiempo tarda en estar listo mi e-commerce?
+                ¿Cuánto tiempo tarda en estar listo mi sitio?
                 <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
               </button>
               <div class="ol-faq-answer" id="faq-ans-1">
@@ -974,11 +1290,11 @@
 
             <div class="ol-faq-item">
               <button class="ol-faq-question" data-faq="3">
-                ¿Qué incluye el precio de la tienda en línea?
+                ¿Qué incluye un sitio catálogo con OrigenLab?
                 <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
               </button>
               <div class="ol-faq-answer" id="faq-ans-3">
-                <p class="ol-faq-answer-inner">Nuestras propuestas de e-commerce incluyen diseño personalizado, desarrollo, catálogo de productos, carrito de compras, integración de pasarela de pago, gestión de envíos, panel de administración y entrega de archivos finales. El dominio y hosting pueden incluirse según el plan elegido.</p>
+                <p class="ol-faq-answer-inner">Nuestras propuestas incluyen diseño personalizado, desarrollo, catálogo técnico estructurado, fichas de producto con especificación y norma, formulario de cotización integrado con WhatsApp, datos estructurados y entrega de archivos finales. El dominio y hosting pueden incluirse según el plan elegido.</p>
               </div>
             </div>
 

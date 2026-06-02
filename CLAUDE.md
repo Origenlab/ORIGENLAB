@@ -86,7 +86,7 @@ Detalles del playbook GH Pages + Cloudflare en memoria persistente del proyecto.
 - 7 páginas con 6-30 líneas (overrides legítimos de variables CSS)
 - 2 páginas con >100 líneas (portafolio root + sector — mockups custom específicos de página, refactor pendiente si se desea)
 
-**Cache buster unificado:** `?v20260426b` en todas las páginas live.
+**Cache buster unificado:** `?v20260601d` en todas las páginas live que cargan `premium-dark.css` (homologado 2026-06-01). Los artículos de blog L6 usan plantilla propia sin `premium-dark.css`.
 
 **Reglas auto-aplicadas:**
 - 0 referencias a `.ol-pricing-*` en HTML live (regla "no precios" cumplida)
@@ -118,6 +118,14 @@ Detalles del playbook GH Pages + Cloudflare en memoria persistente del proyecto.
 | Proyecto Red | `proyectored` | `#7F1D1D` | Integrador de sistemas |
 
 Cadena de navegación L4 (`ol-case-next`): Gama → MESECI → LGA → MANEXT → BOMBERO.MX → Proyecto Red → (sector). Cada caso enlaza al anterior y siguiente.
+
+**Galerías unificadas a maquetas `.mk` (2026-06-01):**
+- Los 6 casos de incendios migraron de galería de **fotos `.avif`** a **6 maquetas `.mk` HTML/CSS** (mismo sistema que seguridad-privada). Ahora TODOS los casos L4 (11) ilustran con `.mk` — cero `<img>` de captura en la galería. Doc del sistema: `/_docs/38`.
+- Estructura canónica por caso: **1 hero real (`{slug}-hero.webp`) en `#contexto`** + **6 maquetas `.mk` en `#galeria`** (01 Home, 02 Catálogo/Servicios, 03 Promesa, 04 Cobertura, 05 Respaldo, 06 Cotización). Secciones de cuerpo SIN figuras-screenshot.
+- Bloque CSS `.mk` vive inline en cada caso; solo cambian `--mk-indigo`, `--mk-indigo-soft` y el `rgba(...,.25)` de `.mk-chip.on`. **El acento `.mk` se alinea al `--case-accent` real de la página** (no al roster): LGA usa `#E63946`, Proyecto Red usa `#B91C1C` (sus `--case-accent` reales difieren de la tabla de arriba — pendiente unificar roster vs página si se desea).
+- Testimonios de las maquetas usan **perfiles por rol/sector** (p. ej. "Jefe de brigada · Planta petroquímica"), nunca nombres propios inventados.
+- `og:image`/`twitter:image`/JSON-LD `image` repuntados de `.avif` a `{slug}-hero.webp`.
+- Limpieza: ~137 imágenes huérfanas (galería `.avif`, fallbacks `.jpg`, numeradas `.png/.webp`) quedaron sin referencia. Script generado en raíz: `_cleanup-huerfanos.sh` (revisar `git diff` y correr a mano).
 
 **Reglas reforzadas L4 (2026-04-26):**
 - `aria-hidden="true" focusable="false"` en SVG decorativos (40+ por caso). Aplicado retroactivamente en Gama y MANEXT.

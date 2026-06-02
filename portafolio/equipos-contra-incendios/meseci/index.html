@@ -12,14 +12,14 @@
   <meta property="og:url" content="https://origenlab.com/portafolio/equipos-contra-incendios/meseci/">
   <meta property="og:title" content="Caso · MESECI — Sitio Corporativo · Equipo Contra Incendio NOM/NFPA | OrigenLab">
   <meta property="og:description" content="Cómo construimos el sitio corporativo de MESECI: catálogo técnico extenso, normas NOM y NFPA, y servicios integrales de venta, instalación y mantenimiento.">
-  <meta property="og:image" content="https://origenlab.com/img/equipos-contra-incendios/meseci/meseci-home-extintores-certificados-nom-nfpa.avif">
+  <meta property="og:image" content="https://origenlab.com/img/equipos-contra-incendios/meseci/meseci-hero.webp">
   <meta property="og:locale" content="es_MX">
   <meta property="og:site_name" content="OrigenLab">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Caso · MESECI — Sitio Corporativo · Equipo Contra Incendio NOM/NFPA | OrigenLab">
   <meta name="twitter:description" content="Sitio corporativo para especialista en equipo contra incendios bajo normas NOM y NFPA.">
-  <meta name="twitter:image" content="https://origenlab.com/img/equipos-contra-incendios/meseci/meseci-home-extintores-certificados-nom-nfpa.avif">
+  <meta name="twitter:image" content="https://origenlab.com/img/equipos-contra-incendios/meseci/meseci-hero.webp">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="../../../favicon.svg">
@@ -54,9 +54,115 @@
     /* Override de check SVG (componente shared usa hex hardcoded de Gama) */
     .ol-case-list li::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23E67E22' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E"); }
     .ol-cta-hero-promises-list li::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23E67E22' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E"); }
+
+    /* ── Maquetas .mk (browser-mockups del sitio del cliente · tema claro · sin animaciones) ── */
+    .mk { --mk-indigo:#E67E22; --mk-ink:#0F1729; --mk-gray:#475467; --mk-soft:#7A8699;
+          --mk-line:#E6E8EE; --mk-bg:#FFFFFF; --mk-bg2:#F6F7FB; --mk-indigo-soft:#FDEEE0;
+          border-radius:10px; overflow:hidden; border:1px solid var(--mk-line); background:var(--mk-bg); }
+    .mk-bar { display:flex; align-items:center; gap:.55rem; padding:.5rem .8rem; background:#1A1D29; border-bottom:1px solid rgba(255,255,255,.06); }
+    .mk-dots { display:flex; gap:5px; }
+    .mk-dots i { width:8px; height:8px; border-radius:50%; background:rgba(255,255,255,.22); }
+    .mk-dots i:nth-child(1){ background:#ED6A5E; } .mk-dots i:nth-child(2){ background:#F4BF4F; } .mk-dots i:nth-child(3){ background:#61C554; }
+    .mk-url { flex:1; background:rgba(255,255,255,.07); border-radius:999px; padding:.22rem .7rem; font-size:10.5px; color:rgba(255,255,255,.62); text-align:center; font-family:'SFMono-Regular',Menlo,Consolas,monospace; letter-spacing:.02em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .mk-view { background:var(--mk-bg); color:var(--mk-ink); padding:1.4rem 1.5rem 1.6rem; }
+    .mk-nav { display:flex; align-items:center; justify-content:space-between; padding-bottom:1rem; border-bottom:1px solid var(--mk-line); margin-bottom:1.3rem; }
+    .mk-logo { font-size:.95rem; font-weight:800; color:var(--mk-indigo); letter-spacing:-.01em; }
+    .mk-menu { display:flex; gap:.85rem; font-size:10.5px; color:var(--mk-gray); font-weight:600; align-items:center; }
+    .mk-menu .mk-cta { background:var(--mk-indigo); color:#fff; padding:.28rem .6rem; border-radius:6px; }
+    .mk-eyebrow { font-size:9.5px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--mk-indigo); }
+    .mk-h { font-size:1.5rem; font-weight:800; letter-spacing:-.02em; line-height:1.1; color:var(--mk-ink); margin:.4rem 0 0; }
+    .mk-h .ac { color:var(--mk-indigo); }
+    .mk-sub { font-size:11.5px; color:var(--mk-gray); line-height:1.55; margin:.6rem 0 0; }
+    .mk-grid2 { display:grid; grid-template-columns:1.1fr 1fr; gap:1.6rem; align-items:start; }
+    .mk-sect-h { font-size:1.05rem; font-weight:800; letter-spacing:-.01em; color:var(--mk-ink); text-align:center; margin:0 0 .25rem; }
+    .mk-sect-sub { font-size:10.5px; color:var(--mk-soft); text-align:center; line-height:1.5; margin:0 auto 1.2rem; max-width:80%; }
+    .mk-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:.7rem; }
+    .mk-card { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.8rem .75rem; }
+    .mk-ic { width:30px; height:30px; border-radius:7px; background:var(--mk-indigo-soft); color:var(--mk-indigo); display:flex; align-items:center; justify-content:center; margin-bottom:.55rem; }
+    .mk-ct { font-size:11.5px; font-weight:700; color:var(--mk-ink); margin:0 0 .35rem; }
+    .mk-bul { list-style:none; margin:0; padding:0; }
+    .mk-bul li { position:relative; font-size:9.5px; color:var(--mk-gray); line-height:1.5; padding-left:.85rem; margin-bottom:.18rem; }
+    .mk-bul li::before { content:''; position:absolute; left:0; top:.42em; width:5px; height:5px; border-radius:50%; background:var(--mk-indigo); opacity:.55; }
+    .mk-stats { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-stat { text-align:center; background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:1rem .5rem; }
+    .mk-stat b { display:block; font-size:1.45rem; font-weight:800; color:var(--mk-indigo); letter-spacing:-.02em; line-height:1; }
+    .mk-stat span { display:block; font-size:9px; color:var(--mk-soft); margin-top:.4rem; line-height:1.35; font-weight:600; }
+    .mk-chips { display:flex; flex-wrap:wrap; gap:.4rem; justify-content:center; }
+    .mk-chip { font-size:9.5px; font-weight:600; color:var(--mk-gray); background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:999px; padding:.3rem .65rem; }
+    .mk-chip.on { background:var(--mk-indigo-soft); border-color:rgba(230,126,34,.25); color:var(--mk-indigo); }
+    .mk-tcards { display:grid; grid-template-columns:repeat(3,1fr); gap:.7rem; }
+    .mk-tcard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .8rem; }
+    .mk-trow { display:flex; align-items:center; gap:.5rem; margin-bottom:.5rem; }
+    .mk-av { width:28px; height:28px; border-radius:50%; background:var(--mk-indigo); color:#fff; font-size:9.5px; font-weight:700; display:flex; align-items:center; justify-content:center; flex:0 0 28px; }
+    .mk-tn { font-size:10px; font-weight:700; color:var(--mk-ink); line-height:1.2; }
+    .mk-tloc { font-size:8.5px; color:var(--mk-soft); }
+    .mk-stars { color:#F5A623; font-size:9px; letter-spacing:1px; margin-bottom:.3rem; }
+    .mk-quote { font-size:9.5px; color:var(--mk-gray); line-height:1.5; margin:0; }
+    .mk-form { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:11px; padding:1.1rem 1.1rem 1.2rem; }
+    .mk-field { height:30px; background:var(--mk-bg); border:1px solid var(--mk-line); border-radius:7px; margin-bottom:.55rem; display:flex; align-items:center; padding:0 .6rem; font-size:9.5px; color:var(--mk-soft); }
+    .mk-frow { display:grid; grid-template-columns:1fr 1fr; gap:.55rem; }
+    .mk-submit { background:var(--mk-indigo); color:#fff; font-size:10.5px; font-weight:700; text-align:center; border-radius:7px; padding:.6rem; margin-top:.3rem; }
+    .mk-trust { display:grid; grid-template-columns:repeat(4,1fr); gap:.55rem; margin-bottom:1rem; }
+    .mk-trust div { text-align:center; }
+    .mk-trust b { display:block; font-size:1.05rem; font-weight:800; color:var(--mk-indigo); line-height:1; }
+    .mk-trust span { display:block; font-size:8px; color:var(--mk-soft); margin-top:.25rem; font-weight:600; }
+    /* Hero oscuro de la maqueta home (tono naranja brillante derivado de #E67E22) */
+    .mk-hero { background:linear-gradient(135deg,#1E1408 0%,#14110B 58%,#1E1408 100%); margin:-1.4rem -1.5rem 1.3rem; padding:1.5rem 1.5rem 1.35rem; border-bottom:1px solid var(--mk-line); }
+    .mk-hero .mk-eyebrow { color:#F4A35A; }
+    .mk-hero .mk-h { color:#fff; }
+    .mk-hero .mk-h .ac { color:#F39C4E; }
+    .mk-hero .mk-sub { color:rgba(236,228,220,.72); }
+    .mk-hb { display:grid; grid-template-columns:1.2fr 1fr; gap:1.4rem; align-items:start; }
+    .mk-hk { font-size:9px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#F4A35A; margin:0 0 .35rem; }
+    .mk-hp { font-size:10px; color:rgba(236,228,220,.66); line-height:1.55; margin:0; }
+    .mk-strip { display:flex; gap:1.6rem; margin-top:1rem; padding-top:.9rem; border-top:1px solid rgba(255,255,255,.1); }
+    .mk-strip div b { font-size:1.15rem; font-weight:800; color:#fff; letter-spacing:-.02em; line-height:1; }
+    .mk-strip div b span { color:#F39C4E; }
+    .mk-strip div .l { display:block; font-size:7.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:rgba(236,228,220,.5); margin-top:.3rem; }
+    .mk-quick { display:grid; grid-template-columns:repeat(6,1fr); gap:.5rem; }
+    .mk-qc { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:8px; padding:.6rem .55rem; }
+    .mk-qc .mk-ic { width:24px; height:24px; margin-bottom:.4rem; border-radius:6px; }
+    .mk-qc b { display:block; font-size:9.5px; font-weight:700; color:var(--mk-ink); line-height:1.2; }
+    .mk-qc span { display:block; font-size:7.5px; color:var(--mk-soft); margin-top:.18rem; line-height:1.3; }
+    .mk-qc.cta { background:var(--mk-indigo); border-color:var(--mk-indigo); }
+    .mk-qc.cta b, .mk-qc.cta span { color:#fff; }
+    .mk-qc.cta .mk-ic { background:rgba(255,255,255,.18); color:#fff; }
+    /* Badge de norma + chips de "incluye" en cards de familia */
+    .mk-pbadge { float:right; font-size:7.5px; font-weight:700; letter-spacing:.08em; color:var(--mk-indigo); background:var(--mk-indigo-soft); border-radius:5px; padding:.18rem .4rem; }
+    .mk-inc-k { font-size:7.5px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; color:var(--mk-soft); margin:.55rem 0 .35rem; }
+    .mk-inc { display:flex; flex-wrap:wrap; gap:.28rem; }
+    .mk-inc span { font-size:8px; font-weight:600; color:var(--mk-gray); background:var(--mk-bg); border:1px solid var(--mk-line); border-radius:5px; padding:.22rem .42rem .22rem .82rem; position:relative; }
+    .mk-inc span::before { content:''; position:absolute; left:.36rem; top:50%; transform:translateY(-50%); width:4px; height:4px; border-radius:50%; background:var(--mk-indigo); }
+    /* Diferenciadores / ventajas */
+    .mk-diff { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-dcard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .75rem; }
+    .mk-dcard .mk-ic { margin-bottom:.5rem; }
+    .mk-dcard b { display:block; font-size:11px; font-weight:700; color:var(--mk-ink); margin-bottom:.3rem; }
+    .mk-dcard p { font-size:8.5px; color:var(--mk-gray); line-height:1.5; margin:0 0 .4rem; }
+    .mk-dlink { font-size:8px; font-weight:700; color:var(--mk-indigo); }
+    /* Sectores atendidos */
+    .mk-sect-cards { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-scard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .75rem; display:flex; flex-direction:column; }
+    .mk-scard .k { font-size:7.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--mk-indigo); margin-bottom:.3rem; }
+    .mk-scard b { font-size:11.5px; font-weight:700; color:var(--mk-ink); margin-bottom:.3rem; }
+    .mk-scard p { font-size:8.5px; color:var(--mk-gray); line-height:1.5; margin:0 0 .5rem; }
+    .mk-scard .v { font-size:8px; font-weight:700; color:var(--mk-indigo); margin-top:auto; }
+    /* Aliados (prueba social B2B) */
+    .mk-ally { font-size:7.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--mk-indigo); background:var(--mk-indigo-soft); border-radius:5px; padding:.18rem .45rem; display:inline-block; margin-bottom:.45rem; }
+    .mk-dom { font-size:8px; color:var(--mk-soft); margin-top:.35rem; }
+    @media (max-width:640px){
+      .mk-grid2 { grid-template-columns:1fr; gap:1rem; }
+      .mk-cards, .mk-tcards { grid-template-columns:1fr 1fr; }
+      .mk-stats, .mk-trust { grid-template-columns:repeat(2,1fr); }
+      .mk-h { font-size:1.2rem; }
+      .mk-hb { grid-template-columns:1fr; gap:.8rem; }
+      .mk-quick { grid-template-columns:repeat(3,1fr); }
+      .mk-diff, .mk-sect-cards { grid-template-columns:1fr 1fr; }
+      .mk-strip { flex-wrap:wrap; gap:.9rem; }
+    }
   </style>
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.com/#organization","name":"OrigenLab","url":"https://origenlab.com","logo":"https://origenlab.com/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.com/#website","url":"https://origenlab.com/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.com/#organization"}},{"@type":"BreadcrumbList","@id":"https://origenlab.com/portafolio/equipos-contra-incendios/meseci/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.com/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.com/portafolio/"},{"@type":"ListItem","position":3,"name":"Equipos Contra Incendios","item":"https://origenlab.com/portafolio/equipos-contra-incendios/"},{"@type":"ListItem","position":4,"name":"MESECI","item":"https://origenlab.com/portafolio/equipos-contra-incendios/meseci/"}]},{"@type":"Organization","@id":"https://meseci.com.mx/#organization","name":"MESECI","url":"https://meseci.com.mx/","description":"Empresa mexicana especializada en venta, instalación y mantenimiento de equipo contra incendios bajo normas NOM y NFPA.","areaServed":{"@type":"Country","name":"México"},"knowsAbout":["Extintores","Sistemas contra incendio","Hidrantes","Mangueras","Gabinetes","Equipo para bomberos","NOM","NFPA"]},{"@type":"CreativeWork","@id":"https://origenlab.com/portafolio/equipos-contra-incendios/meseci/#case","name":"MESECI — Caso de estudio","description":"Empresa mexicana especializada en venta, instalación y mantenimiento de equipo contra incendios bajo normas NOM y NFPA.","inLanguage":"es-MX","image":"https://origenlab.com/img/equipos-contra-incendios/meseci/meseci-home-extintores-certificados-nom-nfpa.avif","author":{"@id":"https://origenlab.com/#organization"},"publisher":{"@id":"https://origenlab.com/#organization"},"about":{"@id":"https://meseci.com.mx/#organization"},"keywords":["equipo contra incendios","extintores","sistemas contra incendio","hidrantes","NOM","NFPA","B2B"]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.com/#organization","name":"OrigenLab","url":"https://origenlab.com","logo":"https://origenlab.com/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.com/#website","url":"https://origenlab.com/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.com/#organization"}},{"@type":"BreadcrumbList","@id":"https://origenlab.com/portafolio/equipos-contra-incendios/meseci/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.com/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.com/portafolio/"},{"@type":"ListItem","position":3,"name":"Equipos Contra Incendios","item":"https://origenlab.com/portafolio/equipos-contra-incendios/"},{"@type":"ListItem","position":4,"name":"MESECI","item":"https://origenlab.com/portafolio/equipos-contra-incendios/meseci/"}]},{"@type":"Organization","@id":"https://meseci.com.mx/#organization","name":"MESECI","url":"https://meseci.com.mx/","description":"Empresa mexicana especializada desde 2008 en venta, instalación y mantenimiento de equipo contra incendios bajo normas NOM y NFPA.","foundingDate":"2008","areaServed":{"@type":"Country","name":"México"},"knowsAbout":["Extintores contra incendios","Equipamiento para bomberos","Combate contra incendios","Gabinetes","Mangueras","Rociadores automáticos","Hidrantes","Componentes y accesorios","NOM-154-SCFI","NOM-002-STPS","NFPA 13","NFPA 1971"]},{"@type":"CreativeWork","@id":"https://origenlab.com/portafolio/equipos-contra-incendios/meseci/#case","name":"MESECI — Caso de estudio","description":"Empresa mexicana especializada en venta, instalación y mantenimiento de equipo contra incendios bajo normas NOM y NFPA.","inLanguage":"es-MX","image":"https://origenlab.com/img/equipos-contra-incendios/meseci/meseci-hero.webp","author":{"@id":"https://origenlab.com/#organization"},"publisher":{"@id":"https://origenlab.com/#organization"},"about":{"@id":"https://meseci.com.mx/#organization"},"keywords":["equipo contra incendios","extintores","sistemas contra incendio","hidrantes","NOM","NFPA","B2B"]}]}</script>
 </head>
 <body>
 
@@ -147,9 +253,18 @@
                     <li><a href="/portafolio/seguridad-privada/origins/" class="ol-dropdown-link">ORIGINS Private Security</a></li>
                     <li><a href="/portafolio/seguridad-privada/seprico/" class="ol-dropdown-link">SEPRICO</a></li>
                     <li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-dropdown-link">SeguridadPrivadaMX</a></li>
+                    <li><a href="/portafolio/seguridad-privada/seguridadeventos/" class="ol-dropdown-link">SeguridadEventos</a></li>
+                    <li><a href="/portafolio/seguridad-privada/gupri/" class="ol-dropdown-link">GUPRI</a></li>
+                    <li><a href="/portafolio/seguridad-privada/directorio/" class="ol-dropdown-link">Directorio México</a></li>
                   </ul>
                 </div>
               </li>
+              <li class="ol-has-subdrop">
+              <a href="/portafolio/equipo-para-eventos/" class="ol-dropdown-link ol-dropdown-parent">Equipo para Eventos</a>
+              <div class="ol-subdrop"><ul>
+                <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-dropdown-link">PODIUMEX</a></li>
+              </ul></div>
+            </li>
             </ul>
           </div>
         </li>
@@ -210,6 +325,11 @@
         <li><a href="/portafolio/seguridad-privada/origins/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— ORIGINS Private Security</a></li>
         <li><a href="/portafolio/seguridad-privada/seprico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SEPRICO</a></li>
         <li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SeguridadPrivadaMX</a></li>
+        <li><a href="/portafolio/seguridad-privada/seguridadeventos/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SeguridadEventos</a></li>
+        <li><a href="/portafolio/seguridad-privada/gupri/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— GUPRI</a></li>
+        <li><a href="/portafolio/seguridad-privada/directorio/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Directorio México</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/" class="ol-mobile-link ol-mobile-sublink">Equipo para Eventos</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— PODIUMEX</a></li>
       </ul>
     </li>
     <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
@@ -297,20 +417,20 @@
 
       <div class="ol-co-stats">
         <div class="ol-co-stat">
-          <p class="ol-co-stat-val">3 en 1</p>
-          <p class="ol-co-stat-label">venta, instalación y mantenimiento con el mismo proveedor</p>
+          <p class="ol-co-stat-val">2008</p>
+          <p class="ol-co-stat-label">operando como especialista contra incendios en México</p>
         </div>
         <div class="ol-co-stat">
-          <p class="ol-co-stat-val">NOM · NFPA</p>
-          <p class="ol-co-stat-label">cumplimiento normativo sin atajos</p>
+          <p class="ol-co-stat-val">+500</p>
+          <p class="ol-co-stat-label">empresas protegidas en industria, salud, comercio y gobierno</p>
         </div>
         <div class="ol-co-stat">
-          <p class="ol-co-stat-val">Catálogo extenso</p>
-          <p class="ol-co-stat-label">extintores, sistemas, gabinetes, hidrantes y más</p>
+          <p class="ol-co-stat-val">+2,000</p>
+          <p class="ol-co-stat-label">productos en catálogo bajo norma NOM y NFPA</p>
         </div>
         <div class="ol-co-stat">
-          <p class="ol-co-stat-val">CDMX · ZMVM</p>
-          <p class="ol-co-stat-label">cobertura en el Valle de México</p>
+          <p class="ol-co-stat-val">2 sucursales</p>
+          <p class="ol-co-stat-label">Benito Juárez CDMX y Tlalnepantla EdoMex · stock permanente</p>
         </div>
       </div>
 
@@ -335,33 +455,33 @@
         <div class="ol-co-lines">
           <div class="ol-co-line">
             <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l1 4H8l1-4z"/><path d="M8 7h8v13a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V7z"/></svg></div>
-            <h4 class="ol-co-line-h">Extintores</h4>
-            <p class="ol-co-line-p">Extintores de todas las clases para empresa, industria y comercio, con recarga y servicio.</p>
+            <h4 class="ol-co-line-h">Extintores contra incendios</h4>
+            <p class="ol-co-line-p">Polvo ABC (PQS), CO₂, agua a presión, espuma AFFF, agente limpio HFC y tipo K, certificados NOM-154-SCFI.</p>
+          </div>
+          <div class="ol-co-line">
+            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 0-5 5v3l-2 4h14l-2-4V7a5 5 0 0 0-5-5z"/><path d="M9 18a3 3 0 0 0 6 0"/></svg></div>
+            <h4 class="ol-co-line-h">Equipamiento para bomberos</h4>
+            <p class="ol-co-line-p">Trajes, cascos, botas, guantes y equipo de respiración ERA certificados NFPA 1971 para brigadas industriales.</p>
           </div>
           <div class="ol-co-line">
             <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-6h6v6"/></svg></div>
-            <h4 class="ol-co-line-h">Sistemas fijos</h4>
-            <p class="ol-co-line-p">Diseño e instalación de sistemas de protección contra incendio para edificios e industria.</p>
-          </div>
-          <div class="ol-co-line">
-            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 3v18"/><circle cx="6.5" cy="12" r="0.8"/></svg></div>
-            <h4 class="ol-co-line-h">Gabinetes</h4>
-            <p class="ol-co-line-p">Gabinetes y estaciones de manguera para distribución de equipo en planta y edificio.</p>
+            <h4 class="ol-co-line-h">Combate contra incendios</h4>
+            <p class="ol-co-line-p">Gabinetes, mangueras, rociadores automáticos, tubería y señalización bajo NFPA 13 para infraestructura activa.</p>
           </div>
           <div class="ol-co-line">
             <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6"/><path d="M8 8h8l-1 6H9L8 8z"/><path d="M10 14v4a2 2 0 0 0 4 0"/></svg></div>
-            <h4 class="ol-co-line-h">Hidrantes</h4>
-            <p class="ol-co-line-p">Hidrantes y redes contra incendio para abastecimiento confiable en emergencia.</p>
+            <h4 class="ol-co-line-h">Componentes y accesorios</h4>
+            <p class="ol-co-line-p">Hidrantes, herrajes, monitores, boquillas y primeros auxilios para completar y mantener el sistema.</p>
           </div>
           <div class="ol-co-line">
-            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6a2 2 0 0 1 2-2c4 0 4 16 8 16a2 2 0 0 0 2-2"/></svg></div>
-            <h4 class="ol-co-line-h">Mangueras y equipo bombero</h4>
-            <p class="ol-co-line-p">Mangueras, conexiones y equipo de combate para brigadas internas y cuerpos de respuesta.</p>
+            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.5v5c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11V6.5L12 2z"/><path d="M9 12l2 2 4-4"/></svg></div>
+            <h4 class="ol-co-line-h">Instalación profesional</h4>
+            <p class="ol-co-line-p">Diagnóstico de riesgo bajo NOM-002-STPS e instalación con personal técnico propio, documentada para auditorías.</p>
           </div>
           <div class="ol-co-line">
             <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.6 5.6l-6 6a1.4 1.4 0 0 0 2 2l6-6a4 4 0 0 0 5.6-5.6l-2.1 2.1-2-2 2.1-2.1z"/></svg></div>
-            <h4 class="ol-co-line-h">Instalación y mantenimiento</h4>
-            <p class="ol-co-line-p">Servicio técnico recurrente: instalación, revisión y mantenimiento bajo norma vigente.</p>
+            <h4 class="ol-co-line-h">Mantenimiento y respaldo</h4>
+            <p class="ol-co-line-p">Programa de mantenimiento preventivo bajo un solo contrato anual, con soporte documental para Protección Civil y STPS.</p>
           </div>
         </div>
       </div>
@@ -444,7 +564,7 @@
               <li><dt>Modelo de negocio</dt><dd>Venta, instalación y mantenimiento bajo un mismo contrato</dd></li>
               <li><dt>Normatividad</dt><dd>NOM (Norma Oficial Mexicana) · NFPA (National Fire Protection Association)</dd></li>
               <li><dt>Servicios integrales</dt><dd>Venta · Instalación · Mantenimiento</dd></li>
-              <li><dt>Cobertura</dt><dd>CDMX · Zona Metropolitana del Valle de México</dd></li>
+              <li><dt>Cobertura</dt><dd>2 sucursales ZMVM (Benito Juárez CDMX · Tlalnepantla EdoMex) · proyectos a nivel nacional</dd></li>
               <li><dt>Sitio en vivo</dt><dd><a href="https://meseci.com.mx/" target="_blank" rel="noopener noreferrer">meseci.com.mx →</a></dd></li>
             </ul>
           </div>
@@ -507,19 +627,54 @@
             <p class="ol-case-p">El cliente atiende a un perfil amplio pero exigente: <strong>oficiales de seguridad de plantas, comités de protección civil, integradores de proyectos, áreas de compras industriales, administradores de inmuebles corporativos, brigadas internas y autoridades de cumplimiento</strong>. Todos llegan al sitio con una pregunta operativa concreta y necesitan respuestas técnicas claras antes de levantar el teléfono.</p>
             <p class="ol-case-p">El reto editorial fue construir un sitio que conviva con dos vocabularios paralelos —<strong>la NOM mexicana y la NFPA estadounidense</strong>— sin volver el contenido confuso, manteniendo coherencia técnica y autoridad profesional en cada familia de producto.</p>
 
-            <div class="ol-case-figure">
+            <figure class="ol-case-figure">
               <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/meseci/meseci-nosotros-empresa-proteccion-incendios.avif" alt="MESECI — nosotros: empresa de protección contra incendios certificada NOM y NFPA" width="1543" height="854" loading="lazy" decoding="async">
+                <div class="mk">
+                  <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">meseci.com.mx</span></div>
+                  <div class="mk-view">
+                    <div class="mk-nav">
+                      <span class="mk-logo">MESECI</span>
+                      <span class="mk-menu"><span>Nosotros</span><span>Productos</span><span>Blog</span><span>Contacto</span><span class="mk-cta">Cotizar Ahora</span></span>
+                    </div>
+                    <div class="mk-hero">
+                      <div class="mk-hb">
+                        <div>
+                          <span class="mk-eyebrow">Proveedor certificado NOM &amp; NFPA · Desde 2008</span>
+                          <h3 class="mk-h">Equipo contra incendios <span class="ac">certificado</span> para tu empresa</h3>
+                          <p class="mk-sub">Extintores, equipamiento para bomberos, sistemas de rociadores y componentes especializados. Asesoría técnica, instalación profesional y mantenimiento programado en toda la ZMVM.</p>
+                        </div>
+                        <div>
+                          <p class="mk-hk">Acerca de la empresa</p>
+                          <p class="mk-hp">Especialistas en venta de equipo contra incendios en México desde 2008. Cubrimos toda la cadena de protección: extintores NOM-154-SCFI, equipamiento NFPA 1971, sistemas de rociadores NFPA 13, mangueras, gabinetes e hidrantes — con soporte documental para Protección Civil.</p>
+                        </div>
+                      </div>
+                      <div class="mk-strip">
+                        <div><b><span>+</span>500</b><span class="l">Empresas protegidas</span></div>
+                        <div><b><span>+</span>2,000</b><span class="l">Productos</span></div>
+                        <div><b>2</b><span class="l">Sucursales ZMVM</span></div>
+                        <div><b>2008</b><span class="l">Desde</span></div>
+                      </div>
+                    </div>
+                    <div class="mk-quick">
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l1 4H8l1-4z"/><path d="M8 7h8v13a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V7z"/></svg></div><b>Extintores</b><span>NOM-154-SCFI</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 0-5 5v3l-2 4h14l-2-4V7a5 5 0 0 0-5-5z"/><path d="M9 18a3 3 0 0 0 6 0"/></svg></div><b>Equipamiento Bomberos</b><span>NFPA 1971</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 3v18"/></svg></div><b>Combate CI</b><span>Gabinetes · Mangueras</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-6h6v6"/></svg></div><b>Sistemas CI</b><span>Rociadores NFPA 13</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6"/><path d="M8 8h8l-1 6H9L8 8z"/><path d="M10 14v4a2 2 0 0 0 4 0"/></svg></div><b>Componentes</b><span>Hidrantes · Herrajes</span></div>
+                      <div class="mk-qc cta"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></div><b>Solicitar Cotización</b><span>Respuesta en &lt;2 h</span></div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <p class="ol-case-figure-caption">Sitio corporativo de MESECI: catálogo, normatividad y servicios integrales bajo una sola jerarquía visual.</p>
-            </div>
+              <figcaption class="ol-case-figure-caption">Home del sitio: hero con propuesta de valor, trayectoria (desde 2008, +500 empresas, +2,000 productos) y accesos rápidos a las familias de producto y a la cotización, comunicados desde el primer scroll.</figcaption>
+            </figure>
           </section>
 
           <!-- 02 RETO -->
           <section class="ol-case-section" id="reto">
             <span class="ol-case-eyebrow">02 · El reto</span>
             <h2 class="ol-case-h2">Convertir un catálogo extenso en una experiencia navegable.</h2>
-            <p class="ol-case-p">Un catálogo amplio es valioso comercialmente, pero suele volverse el peor enemigo de la conversión: el comprador se pierde, no encuentra lo que busca y abandona. El reto del proyecto fue presentar <strong>seis familias de producto, dos marcos normativos y tres líneas de servicio</strong> sin saturar al usuario, manteniendo la sensación de "todo está bajo control" desde la primera pantalla.</p>
+            <p class="ol-case-p">Un catálogo amplio es valioso comercialmente, pero suele volverse el peor enemigo de la conversión: el comprador se pierde, no encuentra lo que busca y abandona. El reto del proyecto fue presentar <strong>cuatro familias de producto, dos marcos normativos y un servicio integral en cuatro etapas</strong> sin saturar al usuario, manteniendo la sensación de "todo está bajo control" desde la primera pantalla.</p>
 
             <div class="ol-case-cards">
               <div class="ol-case-card">
@@ -527,7 +682,7 @@
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></svg>
                 </div>
                 <h4>Profundidad sin ruido</h4>
-                <p>Estructurar seis familias de producto (extintores, sistemas, gabinetes, hidrantes, mangueras y equipo bomberos) con jerarquía única, evitando el efecto de "cuarto de bodega".</p>
+                <p>Estructurar cuatro familias de producto (extintores, equipamiento para bomberos, combate contra incendios y componentes) con jerarquía única, evitando el efecto de "cuarto de bodega".</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
@@ -540,8 +695,8 @@
                 <div class="icon">
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9H3m9 9a9 9 0 0 1-9-9m9 9c2.5-2.5 4-5.5 4-9s-1.5-6.5-4-9m0 18c-2.5-2.5-4-5.5-4-9s1.5-6.5 4-9"/></svg>
                 </div>
-                <h4>Tres líneas de servicio</h4>
-                <p>Comunicar venta, instalación y mantenimiento como un mismo contrato — no tres negocios separados — y dejar claro que el cliente puede entrar por cualquiera de las tres puertas.</p>
+                <h4>Servicio integral en etapas</h4>
+                <p>Comunicar diagnóstico, propuesta, suministro e instalación y mantenimiento como un mismo contrato anual — no servicios sueltos — bajo un solo proveedor responsable.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
@@ -557,23 +712,23 @@
           <section class="ol-case-section" id="arquitectura">
             <span class="ol-case-eyebrow">03 · Arquitectura del sitio</span>
             <h2 class="ol-case-h2">Una arquitectura plana para un catálogo amplio.</h2>
-            <p class="ol-case-p">Antes de diseñar una sola pantalla, el equipo definió una arquitectura plana que evita anidar al comprador en cuatro o cinco niveles para llegar a un producto. <strong>Cualquier familia de producto está a un solo clic desde la home y a un segundo clic desde su detalle</strong>. Esto resulta crítico cuando el comprador llega buscando algo muy específico —un extintor PQS de 9 kg, una manguera de 1½", un gabinete tipo II— y necesita validar disponibilidad rápido.</p>
+            <p class="ol-case-p">Antes de diseñar una sola pantalla, el equipo definió una arquitectura plana que evita anidar al comprador en cuatro o cinco niveles para llegar a un producto. <strong>Cualquier familia de producto está a un solo clic desde la home y a un segundo clic desde su detalle</strong>. Esto resulta crítico cuando el comprador llega buscando algo muy específico —un extintor PQS, un traje NFPA 1971, un gabinete o un hidrante— y necesita validar disponibilidad rápido.</p>
 
             <div class="ol-case-arch">
               <div class="ol-arch-step">
                 <p class="num">CAPA 01</p>
                 <h4>Home corporativa</h4>
-                <p>Encabezado con propuesta de valor, normas que cumple, acceso a las seis familias de producto y a las tres líneas de servicio.</p>
+                <p>Encabezado con propuesta de valor, trayectoria desde 2008, normas que cumple y acceso a las cuatro familias de producto y al servicio integral.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">CAPA 02</p>
                 <h4>Familias de producto</h4>
-                <p>Una página por familia: extintores, sistemas, gabinetes, hidrantes, mangueras y equipo para bomberos — cada una con su propio detalle técnico.</p>
+                <p>Una página por familia: extintores, equipamiento para bomberos, combate contra incendios y componentes — cada una con su propio detalle técnico.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">CAPA 03</p>
                 <h4>Sub-líneas y modelos</h4>
-                <p>Dentro de cada familia, sub-líneas claras (PQS / CO₂ / AFFF / clase K para extintores; rociadores / agentes limpios / espuma para sistemas).</p>
+                <p>Dentro de cada familia, líneas claras (PQS / CO₂ / agua / AFFF / agente limpio / tipo K para extintores; gabinetes / mangueras / rociadores / tubería para combate contra incendios).</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">CAPA 04</p>
@@ -606,13 +761,6 @@
                 <p>Formulario corporativo con campos para empresa, tipo de servicio, familia de producto y zona de entrega; canal paralelo por WhatsApp y teléfono.</p>
               </div>
             </div>
-
-            <div class="ol-case-figure">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/meseci/meseci-catalogo-equipo-contra-incendios.avif" alt="MESECI — catálogo de equipo contra incendios con seis familias de producto" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <p class="ol-case-figure-caption">Arquitectura plana: seis familias y tres servicios accesibles a un clic desde la home.</p>
-            </div>
           </section>
 
           <!-- 04 DISEÑO -->
@@ -642,7 +790,7 @@
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
                 </div>
                 <h4>Cards de familia</h4>
-                <p>Componente único de tarjeta de familia, reutilizable para las seis familias del catálogo — coherencia total en home, listados y resultados.</p>
+                <p>Componente único de tarjeta de familia, reutilizable para las cuatro familias del catálogo — coherencia total en home, listados y resultados.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
@@ -652,62 +800,41 @@
                 <p>Componente específico para destacar NOM y NFPA en cada ficha — refuerza credibilidad sin saturar la jerarquía visual ni quitar protagonismo al producto.</p>
               </div>
             </div>
-
-            <div class="ol-case-figure">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/meseci/meseci-extintores-polvo-abc-nom-154-cdmx.avif" alt="MESECI — extintores polvo ABC con certificación NOM-154 para CDMX" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <p class="ol-case-figure-caption">Sistema de cards y badges aplicado de forma consistente en todo el sitio.</p>
-            </div>
           </section>
 
           <!-- 05 CATÁLOGO -->
           <section class="ol-case-section" id="catalogo">
             <span class="ol-case-eyebrow">05 · Catálogo técnico extenso</span>
-            <h2 class="ol-case-h2">Seis familias, una jerarquía, cero confusión.</h2>
-            <p class="ol-case-p">El núcleo del sitio es el catálogo. La estructura presenta <strong>seis familias de producto</strong> con la misma anatomía: descripción técnica, sub-líneas relevantes, normas aplicables y CTA contextual de cotización. El comprador no tiene que reaprender la página cada vez que cambia de familia.</p>
+            <h2 class="ol-case-h2">Cuatro familias, una jerarquía, cero confusión.</h2>
+            <p class="ol-case-p">El núcleo del sitio es el catálogo. La estructura presenta <strong>cuatro familias de producto</strong> con la misma anatomía: descripción técnica, líneas relevantes, normas aplicables y CTA contextual de cotización. El comprador no tiene que reaprender la página cada vez que cambia de familia.</p>
 
             <div class="ol-case-family">
               <div class="ol-fam-card">
-                <h4>Extintores <span class="ol-fam-tag">NOM-154</span></h4>
-                <p>Extintores portátiles y móviles certificados para todas las clases de fuego, con explicación clara de aplicación, peso, presión y compatibilidad por entorno.</p>
+                <h4>Extintores contra incendios <span class="ol-fam-tag">NOM-154 · 40+</span></h4>
+                <p>Primera línea de defensa: extintores portátiles y móviles certificados NOM-154-SCFI para todas las clases de fuego, con aplicación, peso y presión claros por entorno.</p>
                 <ul>
-                  <li>PQS</li><li>CO₂</li><li>AFFF</li><li>Clase K</li><li>Acetato de potasio</li><li>Polvo ABC</li>
+                  <li>Polvo ABC (PQS)</li><li>CO₂</li><li>Agua a presión</li><li>Espuma AFFF</li><li>Agente limpio HFC</li><li>Tipo K</li>
                 </ul>
               </div>
               <div class="ol-fam-card">
-                <h4>Sistemas contra incendio <span class="ol-fam-tag">NFPA</span></h4>
-                <p>Sistemas fijos diseñados, calculados e instalados según el riesgo del inmueble: oficinas, plantas industriales, centros de datos, almacenes y bodegas.</p>
+                <h4>Equipamiento para bomberos <span class="ol-fam-tag">NFPA 1971 · 25+</span></h4>
+                <p>Protección personal certificada NFPA para brigadas industriales y cuerpos de bomberos, con equipo de respiración autónoma y herramientas de combate.</p>
                 <ul>
-                  <li>Rociadores automáticos</li><li>Agentes limpios</li><li>Espuma AFFF</li><li>Detección y alarma</li><li>Bomba contra incendio</li>
+                  <li>Trajes de bombero</li><li>Cascos</li><li>Botas</li><li>Guantes</li><li>Equipo de respiración ERA</li>
                 </ul>
               </div>
               <div class="ol-fam-card">
-                <h4>Gabinetes contra incendio <span class="ol-fam-tag">NOM/NFPA</span></h4>
-                <p>Gabinetes fabricados según norma, con accesorios completos para hidrante interior y para uso de brigadas internas, en configuración tipo I, II y III.</p>
+                <h4>Combate contra incendios <span class="ol-fam-tag">NFPA 13 · 50+</span></h4>
+                <p>Infraestructura activa: gabinetes, mangueras, rociadores automáticos, tubería y señalización certificada para edificios, plantas industriales y bodegas.</p>
                 <ul>
-                  <li>Tipo I</li><li>Tipo II</li><li>Tipo III</li><li>Empotrar</li><li>Sobreponer</li><li>Acero / acrílico</li>
+                  <li>Gabinetes</li><li>Mangueras</li><li>Rociadores automáticos</li><li>Tubería</li><li>Señalización</li>
                 </ul>
               </div>
               <div class="ol-fam-card">
-                <h4>Hidrantes <span class="ol-fam-tag">NFPA 24</span></h4>
-                <p>Hidrantes de pared, de jardín y de columna seca, con especificación clara de presión, conexión, materiales y compatibilidad con la red existente.</p>
+                <h4>Componentes y accesorios <span class="ol-fam-tag">30+</span></h4>
+                <p>Herrajes, hidrantes, monitores y boquillas para completar y mantener el sistema, más equipo de primeros auxilios para el sitio de trabajo.</p>
                 <ul>
-                  <li>Hidrante de pared</li><li>Columna seca</li><li>Tipo poste</li><li>Tipo Storz</li><li>Conexión NST / NPSH</li>
-                </ul>
-              </div>
-              <div class="ol-fam-card">
-                <h4>Mangueras <span class="ol-fam-tag">NFPA 1961</span></h4>
-                <p>Mangueras flexibles para uso en hidrantes, brigadas y servicio profesional de bomberos, con doble forro, recubrimiento sintético y conexión Storz / NST.</p>
-                <ul>
-                  <li>1½"</li><li>2½"</li><li>4"</li><li>Doble forro</li><li>Goma EPDM</li><li>Storz / NST</li>
-                </ul>
-              </div>
-              <div class="ol-fam-card">
-                <h4>Equipo para bomberos <span class="ol-fam-tag">NFPA 1971</span></h4>
-                <p>Equipo personal de protección y herramientas para brigadas internas y cuerpo de bomberos, certificado bajo estándares NFPA para uso estructural.</p>
-                <ul>
-                  <li>Bunker gear</li><li>SCBA</li><li>Casco estructural</li><li>Botas</li><li>Guantes</li><li>Hachas y herramientas</li>
+                  <li>Hidrantes</li><li>Herrajes</li><li>Monitores</li><li>Boquillas</li><li>Primeros auxilios</li>
                 </ul>
               </div>
             </div>
@@ -722,13 +849,6 @@
               <li><strong>Imagen de producto:</strong> foto principal aislada sobre fondo neutro, con vistas adicionales cuando aportan claridad técnica.</li>
               <li><strong>CTA contextual:</strong> "Solicitar cotización para esta familia" precarga la familia en el formulario de contacto B2B.</li>
             </ul>
-
-            <div class="ol-case-figure">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/meseci/meseci-familias-producto-equipamiento-bomberos.avif" alt="MESECI — familias de producto: equipamiento integral para bomberos y brigadas" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <p class="ol-case-figure-caption">Catálogo organizado por familia: cada bloque comunica norma aplicable y sub-líneas en un solo vistazo.</p>
-            </div>
           </section>
 
           <!-- 06 NORMAS -->
@@ -757,24 +877,29 @@
           <!-- 07 SERVICIOS -->
           <section class="ol-case-section" id="servicios">
             <span class="ol-case-eyebrow">07 · Servicios integrales</span>
-            <h2 class="ol-case-h2">Venta, instalación y mantenimiento bajo un mismo contrato.</h2>
-            <p class="ol-case-p">El valor diferencial de MESECI es operativo: el cliente no necesita coordinar a tres proveedores distintos para tener su sitio en cumplimiento. <strong>Una sola empresa cotiza el equipo, lo instala y lo mantiene</strong> — y el sitio refleja esa promesa con tres bloques visuales paralelos, cada uno con su propio alcance.</p>
+            <h2 class="ol-case-h2">No solo venden equipo: acompañan todo el ciclo bajo un mismo contrato.</h2>
+            <p class="ol-case-p">El valor diferencial de MESECI es operativo: el cliente no necesita coordinar a varios proveedores para tener su sitio en cumplimiento. <strong>Una sola empresa diagnostica el riesgo, propone, suministra, instala y mantiene</strong> — y el sitio refleja esa promesa con cuatro etapas claras, cada una documentada para auditorías de Protección Civil y STPS.</p>
 
             <div class="ol-case-service">
               <div class="ol-svc-block">
-                <p class="num">SERVICIO 01</p>
-                <h4>Venta</h4>
-                <p>Cotización y entrega de equipo certificado: extintores, sistemas, gabinetes, hidrantes, mangueras y equipo para bomberos. Asesoría técnica para que el cliente compre lo que su entorno realmente requiere bajo norma.</p>
+                <p class="num">ETAPA 01</p>
+                <h4>Diagnóstico y análisis de riesgo</h4>
+                <p>Evaluación de la instalación e identificación de riesgos potenciales para determinar el sistema óptimo según la actividad económica y la normativa vigente, bajo NOM-002-STPS.</p>
               </div>
               <div class="ol-svc-block">
-                <p class="num">SERVICIO 02</p>
-                <h4>Instalación</h4>
-                <p>Diseño, cálculo e instalación de sistemas contra incendio en oficinas, naves industriales, centros comerciales y bodegas, con apego a NOM-002-STPS y referencia a NFPA según el riesgo del inmueble.</p>
+                <p class="num">ETAPA 02</p>
+                <h4>Propuesta técnica y cotización</h4>
+                <p>Cotización detallada con equipo certificado NOM/NFPA, garantías claras y el respaldo normativo que la empresa necesita. Respuesta en menos de dos horas hábiles.</p>
               </div>
               <div class="ol-svc-block">
-                <p class="num">SERVICIO 03</p>
-                <h4>Mantenimiento</h4>
-                <p>Recarga, prueba hidrostática, mantenimiento preventivo y correctivo de extintores y sistemas. Programa anual con calendario, bitácora y dictamen documentado para auditorías de protección civil.</p>
+                <p class="num">ETAPA 03</p>
+                <h4>Suministro e instalación profesional</h4>
+                <p>Suministro e instalación con personal técnico propio, minimizando la interrupción de la operación, con equipo certificado y documentación entregada para auditorías.</p>
+              </div>
+              <div class="ol-svc-block">
+                <p class="num">ETAPA 04</p>
+                <h4>Mantenimiento y respaldo continuo</h4>
+                <p>Programa de mantenimiento preventivo bajo un solo contrato anual, con sistema siempre actualizado y en cumplimiento, atendido por ingenieros con más de 15 años en el sector.</p>
               </div>
             </div>
           </section>
@@ -782,7 +907,7 @@
           <!-- 08 CONVERSIÓN -->
           <section class="ol-case-section" id="conversion">
             <span class="ol-case-eyebrow">08 · Conversión B2B</span>
-            <h2 class="ol-case-h2">Tres canales, un mismo equipo comercial al otro lado.</h2>
+            <h2 class="ol-case-h2">Varios canales, un mismo equipo comercial al otro lado.</h2>
             <p class="ol-case-p">Un sitio del sector industrial no se mide por carrito de compra ni por checkout: se mide por <strong>calidad de los prospectos que llegan al equipo comercial</strong>. Por eso el sitio de MESECI integra un sistema de conversión pensado para B2B desde la primera pantalla, abriendo varios canales para que cada perfil de comprador encuentre la vía que prefiere.</p>
 
             <div class="ol-case-cards">
@@ -791,7 +916,7 @@
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="14" x2="15" y2="14"/></svg>
                 </div>
                 <h4>Formulario corporativo</h4>
-                <p>Campos relevantes para venta industrial: empresa, RFC, contacto técnico, tipo de servicio, familia de producto, cantidades estimadas y zona de entrega.</p>
+                <p>Campos relevantes para venta industrial: nombre, teléfono, empresa o negocio, categoría de equipo y descripción de la necesidad — calificación clara sin fricción.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
@@ -863,13 +988,6 @@
                 </div>
               </dl>
             </div>
-
-            <div class="ol-case-figure">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/meseci/meseci-blog-seguridad-contra-incendios.avif" alt="MESECI — blog de seguridad contra incendios: guías técnicas y normatividad" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <p class="ol-case-figure-caption">Comportamiento responsivo: desktop, tablet y móvil compartiendo sistema de componentes.</p>
-            </div>
           </section>
 
           <!-- 10 PROCESO -->
@@ -915,54 +1033,216 @@
           <!-- 11 GALERÍA -->
           <section class="ol-case-section" id="galeria">
             <span class="ol-case-eyebrow">11 · Galería del sitio</span>
-            <h2 class="ol-case-h2">Pantallas y secciones del sitio en operación.</h2>
-            <p class="ol-case-p">Una recorrida por las pantallas principales del sitio: home, catálogo por familia, sección de servicios integrales, blog técnico y módulo de contacto B2B — todas construidas con el mismo sistema de componentes y la misma jerarquía visual.</p>
+            <h2 class="ol-case-h2">Recorrido por el sitio en operación.</h2>
+            <p class="ol-case-p">Siete pantallas del sitio de MESECI —catálogo por familia, ventajas, sectores atendidos, proceso, cobertura, aliados del sector y cotización— reproducidas con el mismo sistema de componentes y la misma jerarquía visual del sitio en operación. Cada pantalla está pensada para llevar al comprador del interés a la cotización en menos de dos horas.</p>
 
             <div class="ol-case-gallery">
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/meseci/meseci-home-extintores-certificados-nom-nfpa.avif" alt="MESECI — pantalla 01: home con extintores certificados NOM y NFPA" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">01 · Hero principal con propuesta de valor y acceso al catálogo.</figcaption>
-              </figure>
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/meseci/meseci-nosotros-empresa-proteccion-incendios.avif" alt="MESECI — pantalla 02: empresa especializada en protección contra incendios" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">02 · Bloque de seis familias con badges normativos.</figcaption>
-              </figure>
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/meseci/meseci-catalogo-equipo-contra-incendios.avif" alt="MESECI — pantalla 03: catálogo completo de equipo contra incendios" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">03 · Detalle de familia con sub-líneas y modelos.</figcaption>
-              </figure>
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/meseci/meseci-extintores-polvo-abc-nom-154-cdmx.avif" alt="MESECI — pantalla 04: extintores polvo ABC NOM-154 disponibles en CDMX" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">04 · Bloque de servicios integrales: venta, instalación, mantenimiento.</figcaption>
-              </figure>
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/meseci/meseci-familias-producto-equipamiento-bomberos.avif" alt="MESECI — pantalla 05: familias de producto para equipamiento de bomberos" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">05 · Blog técnico con índice editorial y guías de norma.</figcaption>
-              </figure>
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/meseci/meseci-blog-seguridad-contra-incendios.avif" alt="MESECI — pantalla 06: blog técnico sobre seguridad contra incendios" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">06 · Comportamiento responsivo en distintos dispositivos.</figcaption>
-              </figure>
-            </div>
 
-            <figure class="ol-case-figure" style="margin-top:1.25rem;">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/meseci/meseci-contacto-cotizacion-equipo-contra-incendios.avif" alt="MESECI — pantalla 07: contacto y cotización de equipo contra incendios" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <figcaption class="ol-case-figure-caption">07 · Módulo de contacto B2B con formulario corporativo y zona de cobertura.</figcaption>
-            </figure>
+              <!-- 01 · CATÁLOGO POR FAMILIA -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">meseci.com.mx/productos</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Venta de equipo contra incendios</h3>
+                      <p class="mk-sect-sub">Cuatro familias de producto certificadas NOM y NFPA, cada una con su detalle de líneas incluidas y la norma aplicable visible.</p>
+                      <div class="mk-cards">
+                        <div class="mk-card">
+                          <span class="mk-pbadge">NOM-154 · 40+</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l1 4H8l1-4z"/><path d="M8 7h8v13a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V7z"/></svg></div>
+                          <p class="mk-ct">Extintores Contra Incendios</p>
+                          <p class="mk-inc-k">Líneas</p>
+                          <div class="mk-inc"><span>Polvo ABC (PQS)</span><span>CO₂</span><span>Agua a presión</span><span>Espuma AFFF</span><span>Agente limpio HFC</span><span>Tipo K</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">NFPA 1971 · 25+</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 0-5 5v3l-2 4h14l-2-4V7a5 5 0 0 0-5-5z"/><path d="M9 18a3 3 0 0 0 6 0"/></svg></div>
+                          <p class="mk-ct">Equipamiento para Bomberos</p>
+                          <p class="mk-inc-k">Líneas</p>
+                          <div class="mk-inc"><span>Trajes de bombero</span><span>Cascos</span><span>Botas</span><span>Guantes</span><span>Equipo de respiración ERA</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">NFPA 13 · 50+</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 3v18"/></svg></div>
+                          <p class="mk-ct">Combate Contra Incendios</p>
+                          <p class="mk-inc-k">Líneas</p>
+                          <div class="mk-inc"><span>Gabinetes</span><span>Mangueras</span><span>Rociadores automáticos</span><span>Tubería</span><span>Señalización</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">30+</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6"/><path d="M8 8h8l-1 6H9L8 8z"/><path d="M10 14v4a2 2 0 0 0 4 0"/></svg></div>
+                          <p class="mk-ct">Componentes y Accesorios</p>
+                          <p class="mk-inc-k">Líneas</p>
+                          <div class="mk-inc"><span>Hidrantes</span><span>Monitores</span><span>Herrajes</span><span>Boquillas</span><span>Primeros auxilios</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">01 · Catálogo por familia — cuatro familias con su detalle de líneas y norma aplicable, comparables de un vistazo.</figcaption>
+              </figure>
+
+              <!-- 02 · VENTAJAS / DIFERENCIADORES -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">meseci.com.mx/#ventajas</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">¿Por qué elegir MESECI?</h3>
+                      <p class="mk-sect-sub">Más de 15 años como proveedor de confianza de industrias, empresas e instituciones — con ingenieros, no vendedores.</p>
+                      <div class="mk-diff">
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.5v5c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11V6.5L12 2z"/><path d="M9 12l2 2 4-4"/></svg></div>
+                          <b>Certificación NOM y NFPA</b>
+                          <p>Toda la línea cumple las Normas Oficiales Mexicanas y estándares NFPA, con documentación oficial para auditorías de Protección Civil.</p>
+                          <span class="mk-dlink">Ver certificaciones →</span>
+                        </div>
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+                          <b>Cotización en menos de 2 h</b>
+                          <p>Un asesor especializado responde tu solicitud en tiempo récord, con propuesta detallada y especificaciones técnicas.</p>
+                          <span class="mk-dlink">Solicitar cotización →</span>
+                        </div>
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg></div>
+                          <b>Solución integral</b>
+                          <p>Venta, instalación profesional, mantenimiento preventivo y gestión del cumplimiento normativo con un solo proveedor.</p>
+                          <span class="mk-dlink">Ver servicios →</span>
+                        </div>
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+                          <b>Entrega el mismo día</b>
+                          <p>Stock permanente en dos sucursales de la ZMVM —Benito Juárez CDMX y Tlalnepantla EdoMex— con despacho el mismo día.</p>
+                          <span class="mk-dlink">Ver sucursales →</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">02 · Ventajas — los cuatro argumentos que el comprador valora: certificación, velocidad de cotización, solución integral y stock inmediato.</figcaption>
+              </figure>
+
+              <!-- 03 · SECTORES ATENDIDOS -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">meseci.com.mx/#sectores</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Protegemos todo tipo de instalación</h3>
+                      <p class="mk-sect-sub">Cada sector tiene normativa propia — el sitio segmenta para que el comprador se reconozca y entienda qué norma aplica.</p>
+                      <div class="mk-sect-cards">
+                        <div class="mk-scard"><span class="k">Alto riesgo</span><b>Industria y Manufactura</b><p>Plantas, bodegas y líneas de producción bajo NOM-002-STPS.</p><span class="v">Ver propuesta →</span></div>
+                        <div class="mk-scard"><span class="k">Uso mixto</span><b>Corporativos y Oficinas</b><p>Torres empresariales y parques corporativos en CDMX y ZMVM.</p><span class="v">Ver propuesta →</span></div>
+                        <div class="mk-scard"><span class="k">Alta disponibilidad</span><b>Hospitales e Instituciones</b><p>Centros médicos y laboratorios con requerimientos especiales.</p><span class="v">Ver propuesta →</span></div>
+                        <div class="mk-scard"><span class="k">Gran afluencia</span><b>Comercio y Retail</b><p>Tiendas, centros comerciales y superficies de gran formato.</p><span class="v">Ver propuesta →</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">03 · Sectores atendidos — además: educación y gobierno, residencial y condominio. Cada perfil con su normativa específica.</figcaption>
+              </figure>
+
+              <!-- 04 · PROCESO / TRAYECTORIA -->
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">meseci.com.mx/#proceso</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">De la cotización a la protección completa</h3>
+                      <p class="mk-sect-sub">Trayectoria que respalda — números verificables desde 2008.</p>
+                      <div class="mk-stats">
+                        <div class="mk-stat"><b>2008</b><span>Operando desde</span></div>
+                        <div class="mk-stat"><b>+500</b><span>Empresas protegidas</span></div>
+                        <div class="mk-stat"><b>+2,000</b><span>Productos en catálogo</span></div>
+                        <div class="mk-stat"><b>&lt;2 h</b><span>Cotización hábil</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">04 · Proceso y trayectoria — diagnóstico, propuesta, instalación y mantenimiento, con cifras al frente como argumento de continuidad.</figcaption>
+              </figure>
+
+              <!-- 05 · COBERTURA -->
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">meseci.com.mx/contacto</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Cobertura en la ZMVM y la República</h3>
+                      <p class="mk-sect-sub">Dos sucursales físicas con stock permanente; envío a proyectos especiales en todo el país.</p>
+                      <div class="mk-chips">
+                        <span class="mk-chip on">Benito Juárez CDMX</span><span class="mk-chip on">Tlalnepantla EdoMex</span><span class="mk-chip on">ZMVM</span><span class="mk-chip">Naucalpan</span><span class="mk-chip">Ecatepec</span><span class="mk-chip">Querétaro</span><span class="mk-chip">Bajío</span><span class="mk-chip">Tabasco</span><span class="mk-chip">Nacional · proyectos</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">05 · Cobertura — sucursales en Benito Juárez CDMX y Tlalnepantla EdoMex, con alcance nacional en proyectos.</figcaption>
+              </figure>
+
+              <!-- 06 · ALIADOS / CASOS REALES -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">meseci.com.mx/#clientes</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Clientes y aliados que confían en MESECI</h3>
+                      <p class="mk-sect-sub">Empresas, distribuidores y cuerpos de bomberos que refieren a MESECI como su proveedor especialista desde 2008.</p>
+                      <div class="mk-tcards">
+                        <div class="mk-tcard">
+                          <span class="mk-ally">Aliado MESECI</span>
+                          <div class="mk-trow"><span class="mk-av">SE</span><span><span class="mk-tn">SEIND</span><br><span class="mk-tloc">EPP, señalización y equipos CI</span></span></div>
+                          <div class="mk-stars">★★★★★</div>
+                          <p class="mk-quote">"Cuando necesitamos reforzar inventario de extintores y gabinetes en CDMX, MESECI es nuestra primera llamada. Stock real, certificados NOM sin trámites extras y entrega el mismo día."</p>
+                          <p class="mk-dom">equipo-de-seguridad-industrial.com</p>
+                        </div>
+                        <div class="mk-tcard">
+                          <span class="mk-ally">Aliado MESECI</span>
+                          <div class="mk-trow"><span class="mk-av">MX</span><span><span class="mk-tn">MANEXT</span><br><span class="mk-tloc">Mantenimiento y recarga de extintores</span></span></div>
+                          <div class="mk-stars">★★★★★</div>
+                          <p class="mk-quote">"MESECI nos surte extintores PQS, CO₂ y gabinetes con documentación NOM completa. Precios competitivos, despacho ágil y cero problemas en facturación."</p>
+                          <p class="mk-dom">mantenimientodeextintores.mx</p>
+                        </div>
+                        <div class="mk-tcard">
+                          <span class="mk-ally">Aliado MESECI</span>
+                          <div class="mk-trow"><span class="mk-av">LG</span><span><span class="mk-tn">LGA Contra Incendios</span><br><span class="mk-tloc">Venta de equipos CI · Querétaro</span></span></div>
+                          <div class="mk-stars">★★★★★</div>
+                          <p class="mk-quote">"MESECI es nuestro proveedor de cabecera para extintores, monitores y equipo de bombero. Producto certificado NOM y NFPA, entregas coordinadas y asesoría técnica de primer nivel."</p>
+                          <p class="mk-dom">lgacontraincendios.com</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">06 · Clientes y aliados — prueba social B2B por perfil de sector: distribuidores y especialistas que se surten con MESECI desde 2008.</figcaption>
+              </figure>
+
+              <!-- 07 · COTIZACIÓN -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">meseci.com.mx/contacto</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Solicita tu cotización gratuita</h3>
+                      <p class="mk-sect-sub">Respuesta en menos de 2 horas hábiles, sin compromiso — por formulario o WhatsApp directo.</p>
+                      <div class="mk-trust">
+                        <div><b>NOM/NFPA</b><span>certificado</span></div>
+                        <div><b>&lt;2 h</b><span>respuesta</span></div>
+                        <div><b>2008</b><span>desde</span></div>
+                        <div><b>WhatsApp</b><span>canal directo</span></div>
+                      </div>
+                      <div class="mk-form">
+                        <div class="mk-frow"><div class="mk-field">Nombre completo</div><div class="mk-field">Teléfono</div></div>
+                        <div class="mk-frow"><div class="mk-field">Empresa o negocio</div><div class="mk-field">Categoría de equipo</div></div>
+                        <div class="mk-field">Cuéntanos qué necesitas</div>
+                        <div class="mk-submit">Solicitar cotización por WhatsApp →</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">07 · Cotización — formulario calificado con campos B2B y señales de confianza visibles antes de enviar.</figcaption>
+              </figure>
+
+            </div>
           </section>
 
           <!-- 12 RESULTADO -->
@@ -972,7 +1252,7 @@
             <p class="ol-case-p">El resultado es un sitio que <strong>convierte un catálogo extenso en una experiencia navegable</strong>, comunica con claridad las dos normatividades aplicables (NOM y NFPA), explica los tres servicios bajo un mismo contrato y abre canales de conversión sin fricción. La identidad visual y el tono editorial reflejan la seriedad técnica del producto y la cercanía operativa de un equipo que vende, instala y mantiene en territorio mexicano.</p>
             <ul class="ol-case-list">
               <li><strong>Sitio corporativo en operación</strong> bajo dominio propio, certificado SSL, hosting CDN y dominio gestionado.</li>
-              <li><strong>Catálogo extenso estructurado</strong> en seis familias con sub-líneas, normas y CTA contextual por familia.</li>
+              <li><strong>Catálogo extenso estructurado</strong> en cuatro familias con líneas, normas y CTA contextual por familia.</li>
               <li><strong>Sección de servicios integrales</strong> que comunica venta, instalación y mantenimiento bajo un mismo contrato.</li>
               <li><strong>Páginas dedicadas a normas</strong> NOM y NFPA con explicación del marco regulatorio y aplicación al producto.</li>
               <li><strong>Blog técnico editorial</strong> con guías sobre cumplimiento, recargas, prueba hidrostática y casos de aplicación industrial.</li>

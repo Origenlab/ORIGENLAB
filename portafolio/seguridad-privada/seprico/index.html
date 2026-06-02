@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SEPRICO · Seguridad privada para condominios en CDMX y Edomex | OrigenLab</title>
-  <meta name="description" content="Caso de estudio del sitio corporativo de SEPRICO: seguridad privada para condominios en CDMX y Estado de México desde el año 2000, con personal certificado, tecnología y monitoreo, auditorías documentadas y atención directa al comité.">
+  <meta name="description" content="Caso de estudio del sitio de SEPRICO: seguridad privada para condominios en CDMX y Edomex con personal certificado, monitoreo y auditorías documentadas.">
   <link rel="canonical" href="https://origenlab.com/portafolio/seguridad-privada/seprico/">
 
   <!-- Open Graph -->
@@ -12,14 +12,14 @@
   <meta property="og:url" content="https://origenlab.com/portafolio/seguridad-privada/seprico/">
   <meta property="og:title" content="SEPRICO · Seguridad privada para condominios en CDMX y Edomex | OrigenLab">
   <meta property="og:description" content="Cómo construimos el sitio corporativo de SEPRICO: arquitectura, diseño, los cuatro pilares y conversión B2B para una empresa de seguridad documentada y auditable.">
-  <meta property="og:image" content="https://origenlab.com/img/seguridad-privada/seprico/seprico-hero.avif">
+  <meta property="og:image" content="https://origenlab.com/img/seguridad-privada/seprico/seprico-hero.webp">
   <meta property="og:locale" content="es_MX">
   <meta property="og:site_name" content="OrigenLab">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="SEPRICO · Seguridad privada para condominios en CDMX y Edomex | OrigenLab">
   <meta name="twitter:description" content="Sitio corporativo B2B para SEPRICO, seguridad privada para condominios en CDMX y Estado de México.">
-  <meta name="twitter:image" content="https://origenlab.com/img/seguridad-privada/seprico/seprico-hero.avif">
+  <meta name="twitter:image" content="https://origenlab.com/img/seguridad-privada/seprico/seprico-hero.webp">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="../../../favicon.svg">
@@ -109,11 +109,60 @@
     .mk-trust div { text-align:center; }
     .mk-trust b { display:block; font-size:1.05rem; font-weight:800; color:var(--mk-indigo); line-height:1; }
     .mk-trust span { display:block; font-size:8px; color:var(--mk-soft); margin-top:.25rem; font-weight:600; }
+    /* --- Hero oscuro (mirror del sitio live) --- */
+    .mk-hero { background:linear-gradient(135deg,#0E1726 0%,#0B1220 58%,#0E1726 100%); margin:-1.4rem -1.5rem 1.3rem; padding:1.5rem 1.5rem 1.35rem; border-bottom:1px solid var(--mk-line); }
+    .mk-hero .mk-eyebrow { color:#5FD0E6; }
+    .mk-hero .mk-h { color:#fff; }
+    .mk-hero .mk-h .ac { color:#3FB8D4; }
+    .mk-hero .mk-sub { color:rgba(226,232,240,.72); }
+    .mk-hb { display:grid; grid-template-columns:1.2fr 1fr; gap:1.4rem; align-items:start; }
+    .mk-hk { font-size:9px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#5FD0E6; margin:0 0 .35rem; }
+    .mk-hp { font-size:10px; color:rgba(226,232,240,.66); line-height:1.55; margin:0; }
+    .mk-strip { display:flex; gap:1.6rem; margin-top:1rem; padding-top:.9rem; border-top:1px solid rgba(255,255,255,.1); }
+    .mk-strip div b { font-size:1.15rem; font-weight:800; color:#fff; letter-spacing:-.02em; line-height:1; }
+    .mk-strip div b span { color:#3FB8D4; }
+    .mk-strip div .l { display:block; font-size:7.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:rgba(226,232,240,.5); margin-top:.3rem; }
+    /* --- Tira de servicios bajo el hero --- */
+    .mk-quick { display:grid; grid-template-columns:repeat(6,1fr); gap:.5rem; }
+    .mk-qc { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:8px; padding:.6rem .55rem; }
+    .mk-qc .mk-ic { width:24px; height:24px; margin-bottom:.4rem; border-radius:6px; }
+    .mk-qc b { display:block; font-size:9.5px; font-weight:700; color:var(--mk-ink); line-height:1.2; }
+    .mk-qc span { display:block; font-size:7.5px; color:var(--mk-soft); margin-top:.18rem; line-height:1.3; }
+    .mk-qc.cta { background:var(--mk-indigo); border-color:var(--mk-indigo); }
+    .mk-qc.cta b, .mk-qc.cta span { color:#fff; }
+    .mk-qc.cta .mk-ic { background:rgba(255,255,255,.18); color:#fff; }
+    /* --- Listas INCLUYE en cards de pilar --- */
+    .mk-pbadge { float:right; font-size:7.5px; font-weight:700; letter-spacing:.08em; color:var(--mk-indigo); background:var(--mk-indigo-soft); border-radius:5px; padding:.18rem .4rem; }
+    .mk-inc-k { font-size:7.5px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; color:var(--mk-soft); margin:.55rem 0 .35rem; }
+    .mk-inc { display:flex; flex-wrap:wrap; gap:.28rem; }
+    .mk-inc span { font-size:8px; font-weight:600; color:var(--mk-gray); background:var(--mk-bg); border:1px solid var(--mk-line); border-radius:5px; padding:.22rem .42rem .22rem .82rem; position:relative; }
+    .mk-inc span::before { content:''; position:absolute; left:.36rem; top:50%; transform:translateY(-50%); width:4px; height:4px; border-radius:50%; background:var(--mk-indigo); }
+    /* --- Diferenciadores (4 col) --- */
+    .mk-diff { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-dcard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .75rem; }
+    .mk-dcard .mk-ic { margin-bottom:.5rem; }
+    .mk-dcard b { display:block; font-size:11px; font-weight:700; color:var(--mk-ink); margin-bottom:.3rem; }
+    .mk-dcard p { font-size:8.5px; color:var(--mk-gray); line-height:1.5; margin:0 0 .4rem; }
+    .mk-dlink { font-size:8px; font-weight:700; color:var(--mk-indigo); }
+    /* --- Sectores atendidos --- */
+    .mk-sect-cards { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-scard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .75rem; display:flex; flex-direction:column; }
+    .mk-scard .k { font-size:7.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--mk-indigo); margin-bottom:.3rem; }
+    .mk-scard b { font-size:11.5px; font-weight:700; color:var(--mk-ink); margin-bottom:.3rem; }
+    .mk-scard p { font-size:8.5px; color:var(--mk-gray); line-height:1.5; margin:0 0 .5rem; }
+    .mk-scard .v { font-size:8px; font-weight:700; color:var(--mk-indigo); margin-top:auto; }
+    /* --- Aliados / casos reales --- */
+    .mk-ally { font-size:7.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--mk-indigo); background:var(--mk-indigo-soft); border-radius:5px; padding:.18rem .45rem; display:inline-block; margin-bottom:.45rem; }
+    .mk-dom { font-size:8px; color:var(--mk-soft); margin-top:.35rem; }
     @media (max-width:560px){
       .mk-grid2 { grid-template-columns:1fr; gap:1rem; }
       .mk-cards, .mk-tcards { grid-template-columns:1fr 1fr; }
       .mk-stats, .mk-trust { grid-template-columns:repeat(2,1fr); }
       .mk-h { font-size:1.2rem; }
+      .mk-hb { grid-template-columns:1fr; gap:.8rem; }
+      .mk-quick { grid-template-columns:repeat(3,1fr); }
+      .mk-diff, .mk-sect-cards { grid-template-columns:1fr 1fr; }
+      .mk-strip { flex-wrap:wrap; gap:.9rem; }
     }
     /* Banda de cifras comunicadas (tema oscuro del case body) */
     .ol-cs-band { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; margin:2rem 0 0; }
@@ -124,7 +173,7 @@
     @media (max-width:560px){ .ol-cs-band { grid-template-columns:1fr 1fr; } }
   </style>
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.com/#organization","name":"OrigenLab","url":"https://origenlab.com","logo":"https://origenlab.com/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.com/#website","url":"https://origenlab.com/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.com/#organization"}},{"@type":"BreadcrumbList","@id":"https://origenlab.com/portafolio/seguridad-privada/seprico/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.com/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.com/portafolio/"},{"@type":"ListItem","position":3,"name":"Seguridad Privada","item":"https://origenlab.com/portafolio/seguridad-privada/"},{"@type":"ListItem","position":4,"name":"SEPRICO","item":"https://origenlab.com/portafolio/seguridad-privada/seprico/"}]},{"@type":["Organization","SecurityService"],"@id":"https://seguridadprivadacondominios.com/#organization","name":"SEPRICO","url":"https://seguridadprivadacondominios.com/","description":"Empresa de seguridad privada para condominios y residenciales en CDMX y Estado de México desde el año 2000. Personal certificado, tecnología y monitoreo, protocolos y consultoría, y atención directa al comité con bitácora digital y auditorías documentadas.","areaServed":{"@type":"Country","name":"México"},"knowsAbout":["Seguridad privada","Seguridad para condominios","Guardias y patrullaje","Monitoreo y CCTV","Control de acceso","Auditorías de seguridad"],"slogan":"Seguridad para condominios, documentada y medible"},{"@type":"CreativeWork","@id":"https://origenlab.com/portafolio/seguridad-privada/seprico/#case","name":"SEPRICO — Caso de estudio","description":"Sitio corporativo para SEPRICO, empresa de seguridad privada para condominios en CDMX y Estado de México.","inLanguage":"es-MX","image":"https://origenlab.com/img/seguridad-privada/seprico/seprico-hero.avif","author":{"@id":"https://origenlab.com/#organization"},"publisher":{"@id":"https://origenlab.com/#organization"},"about":{"@id":"https://seguridadprivadacondominios.com/#organization"},"keywords":["seguridad privada","condominios","SEPRICO","monitoreo","auditorías","CDMX","Estado de México"]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.com/#organization","name":"OrigenLab","url":"https://origenlab.com","logo":"https://origenlab.com/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.com/#website","url":"https://origenlab.com/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.com/#organization"}},{"@type":"BreadcrumbList","@id":"https://origenlab.com/portafolio/seguridad-privada/seprico/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.com/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.com/portafolio/"},{"@type":"ListItem","position":3,"name":"Seguridad Privada","item":"https://origenlab.com/portafolio/seguridad-privada/"},{"@type":"ListItem","position":4,"name":"SEPRICO","item":"https://origenlab.com/portafolio/seguridad-privada/seprico/"}]},{"@type":["Organization","SecurityService"],"@id":"https://seguridadprivadacondominios.com/#organization","name":"SEPRICO","url":"https://seguridadprivadacondominios.com/","description":"Empresa de seguridad privada para condominios y residenciales en CDMX y Estado de México desde el año 2000. Personal certificado, tecnología y monitoreo, protocolos y consultoría, y atención directa al comité con bitácora digital y auditorías documentadas.","areaServed":{"@type":"Country","name":"México"},"knowsAbout":["Seguridad privada","Seguridad para condominios","Guardias y patrullaje","Monitoreo y CCTV","Control de acceso","Auditorías de seguridad"],"slogan":"Seguridad para condominios, documentada y medible"},{"@type":"CreativeWork","@id":"https://origenlab.com/portafolio/seguridad-privada/seprico/#case","name":"SEPRICO — Caso de estudio","description":"Sitio corporativo para SEPRICO, empresa de seguridad privada para condominios en CDMX y Estado de México.","inLanguage":"es-MX","image":"https://origenlab.com/img/seguridad-privada/seprico/seprico-hero.webp","author":{"@id":"https://origenlab.com/#organization"},"publisher":{"@id":"https://origenlab.com/#organization"},"about":{"@id":"https://seguridadprivadacondominios.com/#organization"},"keywords":["seguridad privada","condominios","SEPRICO","monitoreo","auditorías","CDMX","Estado de México"]},{"@type":"FAQPage","@id":"https://origenlab.com/portafolio/seguridad-privada/seprico/#faq","mainEntity":[{"@type":"Question","name":"¿Cómo comunica el sitio un modelo de cuatro pilares sin abrumar al comité?","acceptedAnswer":{"@type":"Answer","text":"Los cuatro pilares de SEPRICO —personal, tecnología, protocolos y atención al comité— se presentan con una estructura uniforme y comparable: el comité los entiende de un vistazo y profundiza solo en lo que le interesa. El modelo se vuelve el hilo conductor del sitio, no una lista más de servicios."}},{"@type":"Question","name":"¿Cómo se muestra la trayectoria y la evidencia auditable?","acceptedAnswer":{"@type":"Answer","text":"La trayectoria desde el año 2000 y la certificación SETEC se tratan como bloques de confianza, presentes desde el encabezado. La evidencia —bitácoras, reportes y auditorías— se eleva a argumento central: \"la seguridad que no está documentada no puede auditarse ni mejorar\". Eso es justo lo que pesa en la decisión del comité."}},{"@type":"Question","name":"¿El sitio diferencia el servicio por tipo de comunidad?","acceptedAnswer":{"@type":"Answer","text":"Sí. El sitio segmenta por torres verticales, fraccionamientos, residenciales premium y cotos cerrados, para que cada comité se reconozca y entienda que la protección se adapta a su tipo de desarrollo, no es un paquete genérico."}},{"@type":"Question","name":"¿El sitio capta al comité o al administrador del condominio?","acceptedAnswer":{"@type":"Answer","text":"Está diseñado para el decisor B2B residencial. El CTA principal es la auditoría de seguridad sin costo, y el formulario pide el contexto que califica el lead —tipo de comunidad, número de unidades, ubicación— para que el equipo reciba solicitudes accionables. WhatsApp y teléfono quedan visibles 24/7 para resolver de inmediato."}},{"@type":"Question","name":"¿Cómo manejan la cobertura en CDMX y Estado de México?","acceptedAnswer":{"@type":"Answer","text":"La cobertura se estructura por zonas de CDMX y Estado de México para que el administrador confirme operación cercana de un vistazo. Esa organización también permite que cada zona tenga su propio espacio dentro del sitio, sin duplicar contenido ni inflar el menú."}},{"@type":"Question","name":"¿Cuánto cuesta un proyecto como este?","acceptedAnswer":{"@type":"Answer","text":"Depende del alcance: número de pantallas, integraciones, secciones de cobertura y nivel de personalización. Construimos cada propuesta a la medida y la entregamos detallada y por escrito, sin cargos ocultos, antes de comenzar."}},{"@type":"Question","name":"¿En cuánto tiempo está listo?","acceptedAnswer":{"@type":"Answer","text":"Cada proyecto tiene su propio alcance, así que fijamos un calendario comprometido por escrito desde el inicio. Trabajamos con entregas iterativas en un entorno de pruebas para que veas el avance real en cada etapa, sin sorpresas."}},{"@type":"Question","name":"¿Dan acompañamiento después de lanzar el sitio?","acceptedAnswer":{"@type":"Answer","text":"Sí. Entregamos el sitio en operación con documentación para tu equipo y quedamos disponibles para crecerlo: nuevas zonas de cobertura, servicios o casos. La estructura queda lista para escalar conforme crece tu operación."}}]}]}</script>
 </head>
 <body>
 
@@ -215,9 +264,18 @@
                     <li><a href="/portafolio/seguridad-privada/origins/" class="ol-dropdown-link">ORIGINS Private Security</a></li>
                     <li><a href="/portafolio/seguridad-privada/seprico/" class="ol-dropdown-link">SEPRICO</a></li>
                     <li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-dropdown-link">SeguridadPrivadaMX</a></li>
+                    <li><a href="/portafolio/seguridad-privada/seguridadeventos/" class="ol-dropdown-link">SeguridadEventos</a></li>
+                    <li><a href="/portafolio/seguridad-privada/gupri/" class="ol-dropdown-link">GUPRI</a></li>
+                    <li><a href="/portafolio/seguridad-privada/directorio/" class="ol-dropdown-link">Directorio México</a></li>
                   </ul>
                 </div>
               </li>
+              <li class="ol-has-subdrop">
+              <a href="/portafolio/equipo-para-eventos/" class="ol-dropdown-link ol-dropdown-parent">Equipo para Eventos</a>
+              <div class="ol-subdrop"><ul>
+                <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-dropdown-link">PODIUMEX</a></li>
+              </ul></div>
+            </li>
             </ul>
           </div>
         </li>
@@ -278,6 +336,11 @@
         <li><a href="/portafolio/seguridad-privada/origins/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— ORIGINS Private Security</a></li>
         <li><a href="/portafolio/seguridad-privada/seprico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SEPRICO</a></li>
         <li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SeguridadPrivadaMX</a></li>
+        <li><a href="/portafolio/seguridad-privada/seguridadeventos/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SeguridadEventos</a></li>
+        <li><a href="/portafolio/seguridad-privada/gupri/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— GUPRI</a></li>
+        <li><a href="/portafolio/seguridad-privada/directorio/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Directorio México</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/" class="ol-mobile-link ol-mobile-sublink">Equipo para Eventos</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— PODIUMEX</a></li>
       </ul>
     </li>
     <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
@@ -442,7 +505,7 @@
           <div class="ol-co-why-item">
             <div class="ol-co-why-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
             <div>
-              <h4 class="ol-co-why-h">Más de 20 años</h4>
+              <h4 class="ol-co-why-h">Más de 25 años</h4>
               <p class="ol-co-why-p">Trayectoria desde el año 2000 con más de 120 comunidades atendidas.</p>
             </div>
           </div>
@@ -569,31 +632,56 @@
             <p class="ol-case-p">Su comprador es exigente y técnico: <strong>comités administrativos, administradores profesionales y desarrolladores</strong> que ya vivieron malas experiencias con proveedores que prometen mucho y documentan poco. Para ellos, lo decisivo no es el uniforme: es la <strong>trazabilidad</strong> —saber qué pasó, cuándo y con qué evidencia—.</p>
             <p class="ol-case-p">Antes de este proyecto, la presencia digital de SEPRICO no comunicaba ni su trayectoria, ni la profundidad de su modelo operativo, ni su diferenciador más fuerte: una seguridad que se puede auditar. El sitio tenía que cambiar eso desde la primera pantalla.</p>
 
-            <div class="ol-case-figure">
+            <figure class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <picture>
+                  <source srcset="/img/seguridad-privada/seprico/control-de-accesos-seguridad-privada-seprico.avif" type="image/avif">
+                  <img src="/img/seguridad-privada/seprico/control-de-accesos-seguridad-privada-seprico.webp" alt="Oficial de seguridad privada verificando credenciales en la caseta de control de accesos de un condominio" width="1280" height="720" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <figcaption class="ol-case-figure-caption">Caseta de control de accesos de SEPRICO con verificación de credenciales: el servicio que el sitio explica al administrador.</figcaption>
+            </figure>
+
+            <figure class="ol-case-figure">
               <div class="ol-case-figure-frame">
                 <div class="mk">
                   <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadacondominios.com</span></div>
                   <div class="mk-view">
                     <div class="mk-nav">
                       <span class="mk-logo">SEPRICO</span>
-                      <span class="mk-menu"><span>Nosotros</span><span>Servicios</span><span>Catálogo</span><span>Blog</span><span class="mk-cta">Cotiza Gratis</span></span>
+                      <span class="mk-menu"><span>Nosotros</span><span>Servicios</span><span>Recursos Humanos</span><span>Catálogo</span><span>Blog</span><span class="mk-cta">Cotiza Gratis</span></span>
                     </div>
-                    <div class="mk-grid2">
-                      <div>
-                        <span class="mk-eyebrow">Seguridad privada profesional · CDMX y Edomex</span>
-                        <h3 class="mk-h">Seguridad Privada para <span class="ac">Condominios</span> en CDMX y Estado de México</h3>
-                        <p class="mk-sub">Soluciones integrales que garantizan tranquilidad: vigilancia 24/7, control de accesos, monitoreo electrónico y protocolos de emergencia adaptados a cada residencial.</p>
+                    <div class="mk-hero">
+                      <div class="mk-hb">
+                        <div>
+                          <span class="mk-eyebrow">Seguridad privada profesional · CDMX y Edomex</span>
+                          <h3 class="mk-h">Seguridad Privada para <span class="ac">Condominios</span> en CDMX y Estado de México</h3>
+                          <p class="mk-sub">Soluciones integrales que garantizan tranquilidad: vigilancia 24/7, control de accesos, monitoreo electrónico y protocolos de emergencia adaptados a cada residencial.</p>
+                        </div>
+                        <div>
+                          <p class="mk-hk">Acerca de la empresa</p>
+                          <p class="mk-hp">Desde el año 2000 diseñamos soluciones que combinan personal altamente capacitado, tecnología de vanguardia y protocolos auditables. Cada servicio se diseña a la medida tras una auditoría sin costo, alineada con el reglamento interno de tu condominio.</p>
+                        </div>
                       </div>
-                      <div>
-                        <p class="mk-ct" style="font-size:12.5px;margin-bottom:.5rem">Acerca de la empresa</p>
-                        <p class="mk-sub" style="margin-top:0">Desde el año 2000 diseñamos soluciones que combinan personal altamente capacitado, tecnología de vanguardia y protocolos auditables. Cada servicio se diseña a la medida tras una auditoría sin costo.</p>
+                      <div class="mk-strip">
+                        <div><b>25<span>+</span></b><span class="l">Años</span></div>
+                        <div><b><span>+</span>120</b><span class="l">Comunidades</span></div>
+                        <div><b>24/7</b><span class="l">Cobertura</span></div>
                       </div>
+                    </div>
+                    <div class="mk-quick">
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><b>Guardias</b><span>Personal capacitado SETEC</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div><b>CCTV 24/7</b><span>Cámaras + monitoreo</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><b>Control de Acceso</b><span>Plumas, biométricos</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16M9 7h2M9 11h2M9 15h2M13 7h2M13 11h2M13 15h2"/></svg></div><b>Torres Verticales</b><span>Edificios y condominios</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M4 21V8l5-3 5 3M14 21V11l5-3v13M8 12h0M8 16h0"/></svg></div><b>Fraccionamientos</b><span>Cotos y residenciales</span></div>
+                      <div class="mk-qc cta"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></div><b>Cotiza Gratis</b><span>Respuesta en &lt;15 min</span></div>
                     </div>
                   </div>
                 </div>
               </div>
-              <p class="ol-case-figure-caption">Home del sitio: trayectoria, ecosistema de seguridad y promesa de auditoría comunicados desde el primer scroll.</p>
-            </div>
+              <figcaption class="ol-case-figure-caption">Home del sitio: hero, propuesta de valor, trayectoria (25+ años, +120 comunidades) y accesos rápidos a servicios y cotización, comunicados desde el primer scroll.</figcaption>
+            </figure>
           </section>
 
           <!-- 02 RETO -->
@@ -622,7 +710,7 @@
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.5v5c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11V6.5L12 2z"/><path d="M9 12l2 2 4-4"/></svg>
                 </div>
                 <h4>Trayectoria que respalda</h4>
-                <p>Hacer evidentes los +20 años y las +120 comunidades como prueba de continuidad operativa, algo que un comité valora por encima del precio.</p>
+                <p>Hacer evidentes los +25 años y las +120 comunidades como prueba de continuidad operativa, algo que un comité valora por encima del precio.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
@@ -869,74 +957,115 @@
           <section class="ol-case-section" id="galeria">
             <span class="ol-case-eyebrow">09 · Galería del sitio</span>
             <h2 class="ol-case-h2">Recorrido por el sitio en operación.</h2>
-            <p class="ol-case-p">Seis pantallas del sitio de SEPRICO —home, los cuatro pilares, trayectoria, cobertura, testimonios y cotización— reproducidas con el mismo sistema de componentes y la misma jerarquía visual que ve el administrador. Cada pantalla está pensada para llevar al comité del interés a la cotización sin costo.</p>
+            <p class="ol-case-p">Siete pantallas del sitio de SEPRICO —los cuatro pilares, diferenciadores, sectores atendidos, trayectoria, cobertura, aliados y cotización— reproducidas con el mismo sistema de componentes y la misma jerarquía visual del sitio en operación. Cada pantalla está pensada para llevar al comité del interés a la cotización sin costo.</p>
 
             <div class="ol-case-gallery">
 
-              <!-- 01 · HOME -->
+              <!-- 01 · MODELO OPERATIVO / 4 PILARES -->
               <figure class="ol-case-figure" style="grid-column:1/-1">
                 <div class="ol-case-figure-frame">
                   <div class="mk">
-                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadacondominios.com</span></div>
-                    <div class="mk-view">
-                      <div class="mk-nav">
-                        <span class="mk-logo">SEPRICO</span>
-                        <span class="mk-menu"><span>Nosotros</span><span>Servicios</span><span>Catálogo</span><span>Blog</span><span class="mk-cta">Cotiza Gratis</span></span>
-                      </div>
-                      <div class="mk-grid2">
-                        <div>
-                          <span class="mk-eyebrow">Seguridad privada profesional · CDMX y Edomex</span>
-                          <h3 class="mk-h">Seguridad Privada para <span class="ac">Condominios</span> en CDMX y Estado de México</h3>
-                          <p class="mk-sub">Soluciones integrales que garantizan tranquilidad: vigilancia 24/7, control de accesos, monitoreo electrónico y protocolos de emergencia adaptados a cada residencial.</p>
-                        </div>
-                        <div>
-                          <p class="mk-ct" style="font-size:12.5px;margin-bottom:.5rem">Acerca de la empresa</p>
-                          <p class="mk-sub" style="margin-top:0">Desde el año 2000 diseñamos soluciones que combinan personal altamente capacitado, tecnología de vanguardia y protocolos auditables. Cada servicio se diseña a la medida tras una auditoría sin costo.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <figcaption class="ol-case-figure-caption">01 · Home — propuesta de valor: trayectoria, ecosistema de seguridad y promesa de auditoría comunicados desde el primer scroll.</figcaption>
-              </figure>
-
-              <!-- 02 · SERVICIOS / PILARES -->
-              <figure class="ol-case-figure" style="grid-column:1/-1">
-                <div class="ol-case-figure-frame">
-                  <div class="mk">
-                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadacondominios.com/servicios</span></div>
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadacondominios.com/#modelo</span></div>
                     <div class="mk-view">
                       <h3 class="mk-sect-h">Cuatro pilares que protegen tu condominio</h3>
-                      <p class="mk-sect-sub">El elemento correcto, en el puesto correcto — personal, tecnología, protocolos y atención al comité trabajando como un solo sistema.</p>
+                      <p class="mk-sect-sub">El elemento correcto, en el puesto correcto — personal, tecnología, protocolos y atención al comité, articulados como un solo sistema responsable.</p>
                       <div class="mk-cards">
                         <div class="mk-card">
+                          <span class="mk-pbadge">Pilar 1</span>
                           <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
                           <p class="mk-ct">Personal de Seguridad</p>
-                          <ul class="mk-bul"><li>Guardias SETEC</li><li>Supervisión rotativa</li><li>Investigación de antecedentes</li></ul>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Vigilancia y patrullaje</span><span>Personal de seguridad</span><span>Entrenamiento continuo</span><span>Investigación de antecedentes</span></div>
                         </div>
                         <div class="mk-card">
+                          <span class="mk-pbadge">Pilar 2</span>
                           <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
                           <p class="mk-ct">Tecnología y Monitoreo</p>
-                          <ul class="mk-bul"><li>CCTV y control biométrico</li><li>Alarmas e intercomunicación</li><li>Centro de monitoreo 24/7</li></ul>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Monitoreo electrónico</span><span>Control de acceso</span><span>Cámaras de vigilancia</span><span>Control biométrico</span><span>Alarmas</span><span>Intercomunicación</span><span>Iluminación segura</span></div>
                         </div>
                         <div class="mk-card">
+                          <span class="mk-pbadge">Pilar 3</span>
                           <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg></div>
                           <p class="mk-ct">Protocolos y Consultoría</p>
-                          <ul class="mk-bul"><li>Análisis de riesgos</li><li>Planes de contingencia</li><li>Auditorías documentadas</li></ul>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Consultoría en seguridad</span><span>Análisis de riesgos</span><span>Planes de contingencia</span><span>Auditorías documentadas</span></div>
                         </div>
                         <div class="mk-card">
+                          <span class="mk-pbadge">Pilar 4</span>
                           <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
                           <p class="mk-ct">Atención al Comité</p>
-                          <ul class="mk-bul"><li>Ejecutivo de cuenta dedicado</li><li>Reportes mensuales</li><li>Bitácora digital en vivo</li></ul>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Ejecutivo de cuenta dedicado</span><span>Reportes mensuales al comité</span><span>Bitácora digital en tiempo real</span><span>Revisión trimestral con KPIs</span></div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <figcaption class="ol-case-figure-caption">02 · Los cuatro pilares — personal, tecnología, protocolos y atención, comparables de un vistazo.</figcaption>
+                <figcaption class="ol-case-figure-caption">01 · Modelo operativo — los cuatro pilares con su detalle de servicios incluidos, comparables de un vistazo.</figcaption>
               </figure>
 
-              <!-- 03 · TRAYECTORIA -->
+              <!-- 02 · DIFERENCIADORES -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadacondominios.com/#diferenciadores</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">¿Por qué los comités eligen SEPRICO?</h3>
+                      <p class="mk-sect-sub">Un modelo de ecosistema sincronizado entre caseta, centro de monitoreo y supervisión en sitio — no el guardia aislado.</p>
+                      <div class="mk-diff">
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.5v5c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11V6.5L12 2z"/><path d="M9 12l2 2 4-4"/></svg></div>
+                          <b>Personal certificado</b>
+                          <p>Selección rigurosa, exámenes psicométricos, capacitación SETEC y evaluación continua de cada elemento.</p>
+                          <span class="mk-dlink">Conocer al equipo →</span>
+                        </div>
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                          <b>Supervisión activa</b>
+                          <p>Supervisores rotativos auditan cada turno con bitácora digital, reportes mensuales y visitas no anunciadas.</p>
+                          <span class="mk-dlink">Ver supervisión →</span>
+                        </div>
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+                          <b>Tecnología integrada</b>
+                          <p>CCTV, control de acceso biométrico, alarmas y rondines en una sola plataforma operativa para el comité.</p>
+                          <span class="mk-dlink">Ver tecnología →</span>
+                        </div>
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.6 6.5L21 9l-5 4.2L17.5 20 12 16.3 6.5 20 8 13.2 3 9l6.4-.5z"/></svg></div>
+                          <b>Trato premium</b>
+                          <p>Imagen impecable, protocolo de cortesía, discreción profesional y trato VIP con cada residente las 24 horas.</p>
+                          <span class="mk-dlink">Conocer más →</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">02 · Diferenciadores — los cuatro argumentos que un comité valora por encima del precio.</figcaption>
+              </figure>
+
+              <!-- 03 · SECTORES ATENDIDOS -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadacondominios.com/sectores</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Protección según el tipo de comunidad</h3>
+                      <p class="mk-sect-sub">Cuatro modelos operativos diferenciados, cada uno con su propio mix de personal, tecnología y protocolos.</p>
+                      <div class="mk-sect-cards">
+                        <div class="mk-scard"><span class="k">Edificios y condominios</span><b>Torres Verticales</b><p>Lobby con alta rotación, amenidades y estacionamiento subterráneo.</p><span class="v">Ver propuesta →</span></div>
+                        <div class="mk-scard"><span class="k">Cotos privados</span><b>Fraccionamientos</b><p>Perímetros amplios, calles internas y caseta de control vehicular.</p><span class="v">Ver propuesta →</span></div>
+                        <div class="mk-scard"><span class="k">Alta gama</span><b>Residenciales Premium</b><p>Trato concierge, discreción VIP y tecnología integral.</p><span class="v">Ver propuesta →</span></div>
+                        <div class="mk-scard"><span class="k">Acceso único</span><b>Cotos Cerrados</b><p>Un solo punto de control con vigilancia activa en áreas comunes.</p><span class="v">Ver propuesta →</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">03 · Sectores atendidos — el sitio segmenta por tipo de comunidad para que cada comité se reconozca.</figcaption>
+              </figure>
+
+              <!-- 04 · TRAYECTORIA -->
               <figure class="ol-case-figure">
                 <div class="ol-case-figure-frame">
                   <div class="mk">
@@ -947,16 +1076,16 @@
                       <div class="mk-stats">
                         <div class="mk-stat"><b>25+</b><span>Años de experiencia</span></div>
                         <div class="mk-stat"><b>+120</b><span>Comunidades protegidas</span></div>
-                        <div class="mk-stat"><b>24/7</b><span>Cobertura continua</span></div>
-                        <div class="mk-stat"><b>Sin costo</b><span>Auditoría inicial</span></div>
+                        <div class="mk-stat"><b>100%</b><span>Certificados SETEC</span></div>
+                        <div class="mk-stat"><b>24/7</b><span>Operación continua</span></div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <figcaption class="ol-case-figure-caption">03 · Trayectoria — cifras al frente como argumento de continuidad operativa.</figcaption>
+                <figcaption class="ol-case-figure-caption">04 · Trayectoria — cifras al frente como argumento de continuidad operativa.</figcaption>
               </figure>
 
-              <!-- 04 · COBERTURA -->
+              <!-- 05 · COBERTURA -->
               <figure class="ol-case-figure">
                 <div class="ol-case-figure-frame">
                   <div class="mk">
@@ -970,48 +1099,54 @@
                     </div>
                   </div>
                 </div>
-                <figcaption class="ol-case-figure-caption">04 · Cobertura — zonas comunicadas con claridad para validar operación cercana.</figcaption>
+                <figcaption class="ol-case-figure-caption">05 · Cobertura — zonas comunicadas con claridad para validar operación cercana.</figcaption>
               </figure>
 
-              <!-- 05 · TESTIMONIOS -->
+              <!-- 06 · ALIADOS / CASOS REALES -->
               <figure class="ol-case-figure" style="grid-column:1/-1">
                 <div class="ol-case-figure-frame">
                   <div class="mk">
-                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadacondominios.com/#testimonios</span></div>
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadacondominios.com/#casos</span></div>
                     <div class="mk-view">
-                      <h3 class="mk-sect-h">Lo que dicen los comités y administradores</h3>
-                      <p class="mk-sect-sub">Comités de vigilancia y administradores de condominios comparten su experiencia.</p>
+                      <h3 class="mk-sect-h">Casos reales · lo que dicen los aliados del sector</h3>
+                      <p class="mk-sect-sub">Empresas del sector que refieren a SEPRICO para seguridad de condominios y residenciales en CDMX y Edomex.</p>
                       <div class="mk-tcards">
                         <div class="mk-tcard">
-                          <div class="mk-trow"><span class="mk-av">LF</span><span><span class="mk-tn">Lic. Laura Fuentes</span><br><span class="mk-tloc">Administradora · Polanco, Miguel Hidalgo</span></span></div>
+                          <span class="mk-ally">Aliado SEPRICO</span>
+                          <div class="mk-trow"><span class="mk-av">ES</span><span><span class="mk-tn">Equipo de Seguridad Industrial</span><br><span class="mk-tloc">Proveedor de equipo de protección</span></span></div>
                           <div class="mk-stars">★★★★★</div>
-                          <p class="mk-quote">"Los reportes mensuales y la bitácora digital nos dan tranquilidad en cada asamblea."</p>
+                          <p class="mk-quote">"Cuando un cliente requiere seguridad para condominios en CDMX, referimos a SEPRICO. Los reportes que entregan al comité son los mejores del sector."</p>
+                          <p class="mk-dom">equipo-de-seguridad-industrial.com</p>
                         </div>
                         <div class="mk-tcard">
-                          <div class="mk-trow"><span class="mk-av">JT</span><span><span class="mk-tn">Ing. Javier Torres</span><br><span class="mk-tloc">Comité · Del Valle, Benito Juárez</span></span></div>
+                          <span class="mk-ally">Aliado SEPRICO</span>
+                          <div class="mk-trow"><span class="mk-av">SP</span><span><span class="mk-tn">Seguridad Privada MX</span><br><span class="mk-tloc">Cobertura corporativa nacional</span></span></div>
                           <div class="mk-stars">★★★★★</div>
-                          <p class="mk-quote">"El ejecutivo de cuenta conoce nuestro condominio. No es un call center, es una persona real."</p>
+                          <p class="mk-quote">"Su enfoque exclusivo en el sector residencial los hace expertos. Para condominios en CDMX y Edomex, la referencia obligada es SEPRICO."</p>
+                          <p class="mk-dom">seguridadprivadamx.com</p>
                         </div>
                         <div class="mk-tcard">
-                          <div class="mk-trow"><span class="mk-av">MS</span><span><span class="mk-tn">Mtra. María Solís</span><br><span class="mk-tloc">Comité · Satélite, Naucalpan</span></span></div>
+                          <span class="mk-ally">Aliado SEPRICO</span>
+                          <div class="mk-trow"><span class="mk-av">GP</span><span><span class="mk-tn">Guardias Privados</span><br><span class="mk-tloc">Directorio de empresas de seguridad</span></span></div>
                           <div class="mk-stars">★★★★★</div>
-                          <p class="mk-quote">"La auditoría sin costo nos mostró huecos que no veíamos. Todo quedó documentado."</p>
+                          <p class="mk-quote">"Su trayectoria desde el año 2000 y la calidad de su personal SETEC son una garantía operativa probada."</p>
+                          <p class="mk-dom">guardias-privados.com</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <figcaption class="ol-case-figure-caption">05 · Testimonios — prueba social del comité, con cargo y comunidad para dar credibilidad.</figcaption>
+                <figcaption class="ol-case-figure-caption">06 · Casos reales — prueba social B2B: aliados del sector que derivan clientes a SEPRICO.</figcaption>
               </figure>
 
-              <!-- 06 · COTIZACIÓN -->
+              <!-- 07 · COTIZACIÓN -->
               <figure class="ol-case-figure" style="grid-column:1/-1">
                 <div class="ol-case-figure-frame">
                   <div class="mk">
                     <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadacondominios.com/contacto</span></div>
                     <div class="mk-view">
                       <h3 class="mk-sect-h">Cotización y auditoría sin costo</h3>
-                      <p class="mk-sect-sub">Diagnóstico de seguridad para tu condominio, sin compromiso.</p>
+                      <p class="mk-sect-sub">Diagnóstico de seguridad para tu condominio, sin compromiso — respuesta en menos de 15 minutos.</p>
                       <div class="mk-trust">
                         <div><b>25+ años</b><span>de experiencia</span></div>
                         <div><b>+120</b><span>comunidades</span></div>
@@ -1027,7 +1162,7 @@
                     </div>
                   </div>
                 </div>
-                <figcaption class="ol-case-figure-caption">06 · Contacto — formulario calificado para el comité, con señales de confianza visibles antes de enviar.</figcaption>
+                <figcaption class="ol-case-figure-caption">07 · Contacto — formulario calificado para el comité, con señales de confianza visibles antes de enviar.</figcaption>
               </figure>
 
             </div>
@@ -1047,6 +1182,16 @@
               <li><strong>Datos estructurados Schema.org</strong> para que motores y agregadores entiendan correctamente la naturaleza del sitio.</li>
               <li><strong>Documentación entregable</strong> al equipo del cliente para mantener y crecer el sitio en el tiempo.</li>
             </ul>
+
+            <figure class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <picture>
+                  <source srcset="/img/seguridad-privada/seprico/patrullaje-condominios-vigilancia-seprico.avif" type="image/avif">
+                  <img src="/img/seguridad-privada/seprico/patrullaje-condominios-vigilancia-seprico.webp" alt="Personal de seguridad privada en patrullaje de vigilancia en un condominio de CDMX y Estado de México" width="1280" height="720" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <figcaption class="ol-case-figure-caption">Patrullaje de vigilancia en condominio, parte de la operación que el sitio documenta para CDMX y Edomex.</figcaption>
+            </figure>
 
             <div class="ol-cs-band">
               <div><b>+25 <span>años</span></b><p>de trayectoria (desde 2000)</p></div>

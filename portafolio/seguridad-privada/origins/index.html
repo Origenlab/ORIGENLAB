@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ORIGINS Private Security · Seguridad privada para condominios en CDMX | OrigenLab</title>
-  <meta name="description" content="Caso de estudio del sitio corporativo de ORIGINS Private Security: empresa especializada en seguridad para condominios y residenciales en CDMX y Zona Metropolitana. Guardias intramuros certificados SSC, control de accesos 24/7 y monitoreo CCTV, con Permiso SSC 0102-15.">
+  <meta name="description" content="Caso de estudio del sitio de ORIGINS Private Security: guardias intramuros certificados SSC para condominios y residenciales en CDMX y zona metropolitana.">
   <link rel="canonical" href="https://origenlab.com/portafolio/seguridad-privada/origins/">
 
   <!-- Open Graph -->
@@ -109,11 +109,60 @@
     .mk-trust div { text-align:center; }
     .mk-trust b { display:block; font-size:1.05rem; font-weight:800; color:var(--mk-indigo); line-height:1; }
     .mk-trust span { display:block; font-size:8px; color:var(--mk-soft); margin-top:.25rem; font-weight:600; }
+    /* --- Hero oscuro (mirror del sitio live) — acento azul ORIGINS --- */
+    .mk-hero { background:linear-gradient(135deg,#0E1726 0%,#0B1220 58%,#0E1726 100%); margin:-1.4rem -1.5rem 1.3rem; padding:1.5rem 1.5rem 1.35rem; border-bottom:1px solid var(--mk-line); }
+    .mk-hero .mk-eyebrow { color:#7FA9FF; }
+    .mk-hero .mk-h { color:#fff; }
+    .mk-hero .mk-h .ac { color:#609BFF; }
+    .mk-hero .mk-sub { color:rgba(226,232,240,.72); }
+    .mk-hb { display:grid; grid-template-columns:1.2fr 1fr; gap:1.4rem; align-items:start; }
+    .mk-hk { font-size:9px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#7FA9FF; margin:0 0 .35rem; }
+    .mk-hp { font-size:10px; color:rgba(226,232,240,.66); line-height:1.55; margin:0; }
+    .mk-strip { display:flex; gap:1.6rem; margin-top:1rem; padding-top:.9rem; border-top:1px solid rgba(255,255,255,.1); }
+    .mk-strip div b { font-size:1.15rem; font-weight:800; color:#fff; letter-spacing:-.02em; line-height:1; }
+    .mk-strip div b span { color:#609BFF; }
+    .mk-strip div .l { display:block; font-size:7.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:rgba(226,232,240,.5); margin-top:.3rem; }
+    /* --- Tira de servicios bajo el hero --- */
+    .mk-quick { display:grid; grid-template-columns:repeat(6,1fr); gap:.5rem; }
+    .mk-qc { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:8px; padding:.6rem .55rem; }
+    .mk-qc .mk-ic { width:24px; height:24px; margin-bottom:.4rem; border-radius:6px; }
+    .mk-qc b { display:block; font-size:9.5px; font-weight:700; color:var(--mk-ink); line-height:1.2; }
+    .mk-qc span { display:block; font-size:7.5px; color:var(--mk-soft); margin-top:.18rem; line-height:1.3; }
+    .mk-qc.cta { background:var(--mk-indigo); border-color:var(--mk-indigo); }
+    .mk-qc.cta b, .mk-qc.cta span { color:#fff; }
+    .mk-qc.cta .mk-ic { background:rgba(255,255,255,.18); color:#fff; }
+    /* --- Listas INCLUYE en cards de pilar --- */
+    .mk-pbadge { float:right; font-size:7.5px; font-weight:700; letter-spacing:.08em; color:var(--mk-indigo); background:var(--mk-indigo-soft); border-radius:5px; padding:.18rem .4rem; }
+    .mk-inc-k { font-size:7.5px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; color:var(--mk-soft); margin:.55rem 0 .35rem; }
+    .mk-inc { display:flex; flex-wrap:wrap; gap:.28rem; }
+    .mk-inc span { font-size:8px; font-weight:600; color:var(--mk-gray); background:var(--mk-bg); border:1px solid var(--mk-line); border-radius:5px; padding:.22rem .42rem .22rem .82rem; position:relative; }
+    .mk-inc span::before { content:''; position:absolute; left:.36rem; top:50%; transform:translateY(-50%); width:4px; height:4px; border-radius:50%; background:var(--mk-indigo); }
+    /* --- Diferenciadores (4 col) --- */
+    .mk-diff { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-dcard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .75rem; }
+    .mk-dcard .mk-ic { margin-bottom:.5rem; }
+    .mk-dcard b { display:block; font-size:11px; font-weight:700; color:var(--mk-ink); margin-bottom:.3rem; }
+    .mk-dcard p { font-size:8.5px; color:var(--mk-gray); line-height:1.5; margin:0 0 .4rem; }
+    .mk-dlink { font-size:8px; font-weight:700; color:var(--mk-indigo); }
+    /* --- Perfiles atendidos --- */
+    .mk-sect-cards { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-scard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .75rem; display:flex; flex-direction:column; }
+    .mk-scard .k { font-size:7.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--mk-indigo); margin-bottom:.3rem; }
+    .mk-scard b { font-size:11.5px; font-weight:700; color:var(--mk-ink); margin-bottom:.3rem; }
+    .mk-scard p { font-size:8.5px; color:var(--mk-gray); line-height:1.5; margin:0 0 .5rem; }
+    .mk-scard .v { font-size:8px; font-weight:700; color:var(--mk-indigo); margin-top:auto; }
+    /* --- Aliados / casos reales --- */
+    .mk-ally { font-size:7.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--mk-indigo); background:var(--mk-indigo-soft); border-radius:5px; padding:.18rem .45rem; display:inline-block; margin-bottom:.45rem; }
+    .mk-dom { font-size:8px; color:var(--mk-soft); margin-top:.35rem; }
     @media (max-width:560px){
       .mk-grid2 { grid-template-columns:1fr; gap:1rem; }
       .mk-cards, .mk-tcards { grid-template-columns:1fr 1fr; }
       .mk-stats, .mk-trust { grid-template-columns:repeat(2,1fr); }
       .mk-h { font-size:1.2rem; }
+      .mk-hb { grid-template-columns:1fr; gap:.8rem; }
+      .mk-quick { grid-template-columns:repeat(3,1fr); }
+      .mk-diff, .mk-sect-cards { grid-template-columns:1fr 1fr; }
+      .mk-strip { flex-wrap:wrap; gap:.9rem; }
     }
     /* Banda de cifras comunicadas (tema oscuro del case body) */
     .ol-cs-band { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; margin:2rem 0 0; }
@@ -124,7 +173,7 @@
     @media (max-width:560px){ .ol-cs-band { grid-template-columns:1fr 1fr; } }
   </style>
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.com/#organization","name":"OrigenLab","url":"https://origenlab.com","logo":"https://origenlab.com/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.com/#website","url":"https://origenlab.com/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.com/#organization"}},{"@type":"BreadcrumbList","@id":"https://origenlab.com/portafolio/seguridad-privada/origins/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.com/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.com/portafolio/"},{"@type":"ListItem","position":3,"name":"Seguridad Privada","item":"https://origenlab.com/portafolio/seguridad-privada/"},{"@type":"ListItem","position":4,"name":"ORIGINS Private Security","item":"https://origenlab.com/portafolio/seguridad-privada/origins/"}]},{"@type":["Organization","SecurityService"],"@id":"https://seguridad-privada.com.mx/#organization","name":"ORIGINS Private Security","url":"https://seguridad-privada.com.mx/","description":"Empresa de seguridad privada especializada en condominios y residenciales en CDMX y Zona Metropolitana. Guardias intramuros certificados SSC, control de accesos 24/7 y monitoreo CCTV, con Permiso SSC 0102-15.","areaServed":{"@type":"Country","name":"México"},"knowsAbout":["Seguridad privada","Guardias intramuros","Control de accesos","Monitoreo CCTV","Seguridad para condominios","Protección ejecutiva"],"slogan":"Seguridad especializada para comunidades residenciales"},{"@type":"CreativeWork","@id":"https://origenlab.com/portafolio/seguridad-privada/origins/#case","name":"ORIGINS Private Security — Caso de estudio","description":"Sitio corporativo para empresa de seguridad privada especializada en condominios y residenciales en CDMX y Zona Metropolitana.","inLanguage":"es-MX","image":"https://origenlab.com/img/seguridad-privada/origins/origins-hero.webp","author":{"@id":"https://origenlab.com/#organization"},"publisher":{"@id":"https://origenlab.com/#organization"},"about":{"@id":"https://seguridad-privada.com.mx/#organization"},"keywords":["seguridad privada","guardias intramuros","condominios","control de accesos","monitoreo CCTV","B2B","CDMX"]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.com/#organization","name":"OrigenLab","url":"https://origenlab.com","logo":"https://origenlab.com/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.com/#website","url":"https://origenlab.com/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.com/#organization"}},{"@type":"BreadcrumbList","@id":"https://origenlab.com/portafolio/seguridad-privada/origins/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.com/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.com/portafolio/"},{"@type":"ListItem","position":3,"name":"Seguridad Privada","item":"https://origenlab.com/portafolio/seguridad-privada/"},{"@type":"ListItem","position":4,"name":"ORIGINS Private Security","item":"https://origenlab.com/portafolio/seguridad-privada/origins/"}]},{"@type":["Organization","SecurityService"],"@id":"https://seguridad-privada.com.mx/#organization","name":"ORIGINS Private Security","legalName":"ORIGINS Private Security S.A. de C.V.","url":"https://seguridad-privada.com.mx/","description":"Empresa de seguridad privada especializada en condominios y residenciales en CDMX y Zona Metropolitana. Guardias intramuros certificados SSC, control de accesos 24/7 y monitoreo CCTV, con Permiso SSC 0102-15.","areaServed":{"@type":"Country","name":"México"},"knowsAbout":["Seguridad privada","Guardias intramuros","Control de accesos","Monitoreo CCTV","Seguridad para condominios","Protección ejecutiva"],"slogan":"Seguridad especializada para comunidades residenciales"},{"@type":"CreativeWork","@id":"https://origenlab.com/portafolio/seguridad-privada/origins/#case","name":"ORIGINS Private Security — Caso de estudio","description":"Sitio corporativo para empresa de seguridad privada especializada en condominios y residenciales en CDMX y Zona Metropolitana.","inLanguage":"es-MX","image":"https://origenlab.com/img/seguridad-privada/origins/origins-hero.webp","author":{"@id":"https://origenlab.com/#organization"},"publisher":{"@id":"https://origenlab.com/#organization"},"about":{"@id":"https://seguridad-privada.com.mx/#organization"},"keywords":["seguridad privada","guardias intramuros","condominios","control de accesos","monitoreo CCTV","B2B","CDMX"]},{"@type":"FAQPage","@id":"https://origenlab.com/portafolio/seguridad-privada/origins/#faq","mainEntity":[{"@type":"Question","name":"¿Cómo se diferencia el sitio de una empresa especializada en condominios?","acceptedAnswer":{"@type":"Answer","text":"El comité no compra una empresa generalista, compra un especialista en su tipo de comunidad. El sitio de ORIGINS lo deja claro desde el inicio: guardias intramuros que conocen a cada residente, protocolos por inmueble y un lenguaje pensado para condominios verticales y horizontales. Esa especialización es el argumento que distingue y convierte."}},{"@type":"Question","name":"¿Cómo se muestran las garantías y SLA sin sonar a promesa comercial?","acceptedAnswer":{"@type":"Answer","text":"Los presentamos como compromisos exigibles, no como eslóganes: reemplazo de personal en menos de 4 horas, supervisión semanal documentada, reportes mensuales auditables. El administrador entiende que son cláusulas que puede exigir por escrito, y eso es justo lo que genera confianza en el sector."}},{"@type":"Question","name":"¿Cómo se hacen visibles las certificaciones y el permiso SSC?","acceptedAnswer":{"@type":"Answer","text":"El permiso SSC y la certificación del personal se tratan como sello de credibilidad, presentes desde el encabezado y reforzados en los puntos de decisión. Visibles donde aportan confianza, sin saturar la lectura ni convertir el sitio en un trámite."}},{"@type":"Question","name":"¿El sitio capta al administrador o comité del condominio?","acceptedAnswer":{"@type":"Answer","text":"Está diseñado para el decisor B2B residencial. El CTA principal es el diagnóstico gratuito en menos de 24 horas, y el formulario pide el contexto que califica el lead —nombre del condominio o residencial, zona o alcaldía y servicio de interés— para que el equipo reciba solicitudes accionables. WhatsApp y teléfono quedan visibles para resolver de inmediato."}},{"@type":"Question","name":"¿Cómo manejan la cobertura por colonias y municipios?","acceptedAnswer":{"@type":"Answer","text":"La cobertura se estructura por zonas de CDMX (Del Valle, Santa Fe, Pedregal, Coyoacán…) y municipios del Estado de México (Naucalpan, Interlomas, Satélite, Huixquilucan…), para que el administrador confirme operación cercana de un vistazo y cada zona tenga su propio espacio sin inflar el menú."}},{"@type":"Question","name":"¿Cuánto cuesta un proyecto como este?","acceptedAnswer":{"@type":"Answer","text":"Depende del alcance: número de pantallas, integraciones, secciones de cobertura y nivel de personalización. Construimos cada propuesta a la medida y la entregamos detallada y por escrito, sin cargos ocultos, antes de comenzar."}},{"@type":"Question","name":"¿En cuánto tiempo está listo?","acceptedAnswer":{"@type":"Answer","text":"Cada proyecto tiene su propio alcance, así que fijamos un calendario comprometido por escrito desde el inicio. Trabajamos con entregas iterativas en un entorno de pruebas para que veas el avance real en cada etapa, sin sorpresas."}},{"@type":"Question","name":"¿Dan acompañamiento después de lanzar el sitio?","acceptedAnswer":{"@type":"Answer","text":"Sí. Entregamos el sitio en operación con documentación para tu equipo y quedamos disponibles para crecerlo: nuevas zonas de cobertura, servicios o casos. La estructura queda lista para escalar conforme crece tu operación."}}]}]}</script>
 </head>
 <body>
 
@@ -215,9 +264,18 @@
                     <li><a href="/portafolio/seguridad-privada/origins/" class="ol-dropdown-link">ORIGINS Private Security</a></li>
                     <li><a href="/portafolio/seguridad-privada/seprico/" class="ol-dropdown-link">SEPRICO</a></li>
                     <li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-dropdown-link">SeguridadPrivadaMX</a></li>
+                    <li><a href="/portafolio/seguridad-privada/seguridadeventos/" class="ol-dropdown-link">SeguridadEventos</a></li>
+                    <li><a href="/portafolio/seguridad-privada/gupri/" class="ol-dropdown-link">GUPRI</a></li>
+                    <li><a href="/portafolio/seguridad-privada/directorio/" class="ol-dropdown-link">Directorio México</a></li>
                   </ul>
                 </div>
               </li>
+              <li class="ol-has-subdrop">
+              <a href="/portafolio/equipo-para-eventos/" class="ol-dropdown-link ol-dropdown-parent">Equipo para Eventos</a>
+              <div class="ol-subdrop"><ul>
+                <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-dropdown-link">PODIUMEX</a></li>
+              </ul></div>
+            </li>
             </ul>
           </div>
         </li>
@@ -278,6 +336,11 @@
         <li><a href="/portafolio/seguridad-privada/origins/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— ORIGINS Private Security</a></li>
         <li><a href="/portafolio/seguridad-privada/seprico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SEPRICO</a></li>
         <li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SeguridadPrivadaMX</a></li>
+        <li><a href="/portafolio/seguridad-privada/seguridadeventos/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SeguridadEventos</a></li>
+        <li><a href="/portafolio/seguridad-privada/gupri/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— GUPRI</a></li>
+        <li><a href="/portafolio/seguridad-privada/directorio/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Directorio México</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/" class="ol-mobile-link ol-mobile-sublink">Equipo para Eventos</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— PODIUMEX</a></li>
       </ul>
     </li>
     <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
@@ -569,12 +632,57 @@
             <p class="ol-case-p">A diferencia de las empresas generalistas, ORIGINS no atiende industria ni comercio: cada protocolo, cada guardia y cada proceso están diseñados para la convivencia en comunidad. Sus <strong>guardias intramuros conocen a cada residente, dominan los protocolos de acceso y entienden que en un condominio la discreción y el trato profesional son tan importantes como la vigilancia misma</strong>.</p>
             <p class="ol-case-p">La empresa opera con <strong>Permiso SSC 0102-15 vigente</strong>, póliza de responsabilidad civil y cumplimiento total de obligaciones laborales ante IMSS e INFONAVIT. Con más de 15 años de experiencia y más de 50 desarrollos protegidos, su comprador es muy específico: administradores de condominio, comités de vigilancia y desarrolladores inmobiliarios que evalúan con rigor antes de cambiar de proveedor.</p>
 
-            <div class="ol-case-figure">
+            <figure class="ol-case-figure">
               <div class="ol-case-figure-frame">
-                <img src="../../../img/seguridad-privada/origins/origins-hero.webp" alt="ORIGINS Private Security — sitio corporativo de seguridad para condominios con guardias intramuros certificados SSC en CDMX" width="1280" height="960" loading="lazy" decoding="async">
+                <picture>
+                  <source srcset="/img/seguridad-privada/origins/seguridad-privada-residencial-condominios-origins.avif" type="image/avif">
+                  <img src="/img/seguridad-privada/origins/seguridad-privada-residencial-condominios-origins.webp" alt="Guardias intramuros de seguridad privada residencial atendiendo a vecinos en un fraccionamiento de la CDMX" width="1280" height="720" loading="lazy" decoding="async">
+                </picture>
               </div>
-              <p class="ol-case-figure-caption">Home del sitio: especialización residencial, Permiso SSC y prueba social (años, comunidades, renovación) comunicados desde el primer scroll.</p>
-            </div>
+              <figcaption class="ol-case-figure-caption">Guardias intramuros de ORIGINS en trato cercano con residentes: la especialización residencial que el sitio transmite desde el primer scroll.</figcaption>
+            </figure>
+
+            <figure class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <div class="mk">
+                  <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridad-privada.com.mx</span></div>
+                  <div class="mk-view">
+                    <div class="mk-nav">
+                      <span class="mk-logo">ORIGINS Private Security</span>
+                      <span class="mk-menu"><span>Inicio</span><span>Servicios</span><span>Zonas</span><span>Nosotros</span><span>Blog</span><span class="mk-cta">Cotizar</span></span>
+                    </div>
+                    <div class="mk-hero">
+                      <div class="mk-hb">
+                        <div>
+                          <span class="mk-eyebrow">Permiso SSC 0102-15</span>
+                          <h3 class="mk-h">Empresa de seguridad privada para <span class="ac">condominios</span> en CDMX — guardias intramuros certificados SSC</h3>
+                          <p class="mk-sub">Control de accesos 24/7 y protocolos diseñados para tu comunidad residencial. Más de 50 desarrollos protegidos en CDMX y Estado de México.</p>
+                        </div>
+                        <div>
+                          <p class="mk-hk">Especialistas en residencial</p>
+                          <p class="mk-hp">Más de 15 años protegiendo condominios verticales y horizontales, fraccionamientos y residenciales privados. Guardias intramuros que conocen a cada residente y dominan los protocolos de tu desarrollo. Lo que firmamos, lo cumplimos.</p>
+                        </div>
+                      </div>
+                      <div class="mk-strip">
+                        <div><b><span>+</span>15</b><span class="l">Años</span></div>
+                        <div><b><span>+</span>50</b><span class="l">Condominios</span></div>
+                        <div><b>24/7</b><span class="l">Operación</span></div>
+                        <div><b>98<span>%</span></b><span class="l">Renovación</span></div>
+                      </div>
+                    </div>
+                    <div class="mk-quick">
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/></svg></div><b>Guardias intramuros</b><span>Certificados SSC</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><b>Control de accesos</b><span>24/7 residentes y visitas</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div><b>Vigilancia CCTV</b><span>Monitoreo 24/7</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/></svg></div><b>Monitoreo de alarmas</b><span>Central certificada UL</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div><b>Zonas de cobertura</b><span>CDMX y Edomex</span></div>
+                      <div class="mk-qc cta"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></div><b>Evaluación gratis</b><span>Sin compromiso</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <figcaption class="ol-case-figure-caption">Home del sitio: hero con propuesta de valor residencial, Permiso SSC, trayectoria (+15 años, +50 condominios, 98% renovación) y accesos rápidos a servicios y evaluación, comunicados desde el primer scroll.</figcaption>
+            </figure>
           </section>
 
           <!-- 02 RETO -->
@@ -736,7 +844,7 @@
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
                 </div>
                 <h4>Formulario para el comité</h4>
-                <p>Campos pensados para el contexto residencial (desarrollo, zona, tipo de condominio) que llegan calificados al equipo comercial.</p>
+                <p>Campos pensados para el contexto residencial (nombre del condominio, zona o alcaldía y servicio de interés) que llegan calificados al equipo comercial.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
@@ -836,164 +944,190 @@
           <section class="ol-case-section" id="galeria">
             <span class="ol-case-eyebrow">09 · Galería del sitio</span>
             <h2 class="ol-case-h2">Recorrido por el sitio en operación.</h2>
-            <p class="ol-case-p">Seis pantallas reales del sitio de ORIGINS —home, servicios, garantías SLA, zonas de cobertura, testimonios y diagnóstico— reproducidas con el mismo sistema de componentes y la misma jerarquía visual que ve el administrador. Cada pantalla está pensada para llevar al comité del interés a la evaluación gratuita.</p>
+            <p class="ol-case-p">Siete pantallas del sitio de ORIGINS —servicios, diferenciadores, perfiles atendidos, trayectoria, zonas de cobertura, aliados del sector y evaluación— reproducidas con el mismo sistema de componentes y la misma jerarquía visual que ve el administrador. Cada pantalla está pensada para llevar al comité del interés a la evaluación gratuita.</p>
 
             <div class="ol-case-gallery">
 
-              <!-- 01 · HOME -->
-              <figure class="ol-case-figure" style="grid-column:1/-1">
-                <div class="ol-case-figure-frame">
-                  <div class="mk">
-                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridad-privada.com.mx</span></div>
-                    <div class="mk-view">
-                      <div class="mk-nav">
-                        <span class="mk-logo">ORIGINS Private Security</span>
-                        <span class="mk-menu"><span>Inicio</span><span>Servicios</span><span>Zonas</span><span>Nosotros</span><span class="mk-cta">Cotizar</span></span>
-                      </div>
-                      <div class="mk-grid2">
-                        <div>
-                          <span class="mk-eyebrow">Permiso SSC 0102-15</span>
-                          <h3 class="mk-h">Seguridad privada para <span class="ac">condominios</span> en CDMX — guardias intramuros certificados SSC</h3>
-                          <p class="mk-sub">Control de accesos 24/7 y protocolos diseñados para tu comunidad residencial. Más de 50 desarrollos protegidos en CDMX y Estado de México.</p>
-                        </div>
-                        <div>
-                          <p class="mk-ct" style="font-size:12.5px;margin-bottom:.5rem">Especialistas en condominios y residenciales</p>
-                          <p class="mk-sub" style="margin-top:0">+15 años protegiendo condominios verticales y horizontales. Guardias intramuros que conocen a cada residente y dominan los protocolos de tu desarrollo.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <figcaption class="ol-case-figure-caption">01 · Home — propuesta de valor: especialización en condominios, permiso SSC y guardias intramuros desde el primer scroll.</figcaption>
-              </figure>
-
-              <!-- 02 · SERVICIOS -->
+              <!-- 01 · SERVICIOS -->
               <figure class="ol-case-figure" style="grid-column:1/-1">
                 <div class="ol-case-figure-frame">
                   <div class="mk">
                     <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridad-privada.com.mx/#servicios</span></div>
                     <div class="mk-view">
                       <h3 class="mk-sect-h">Cómo protegemos tu condominio</h3>
-                      <p class="mk-sect-sub">Guardias intramuros, control de accesos y tecnología de monitoreo, operados como un solo sistema.</p>
+                      <p class="mk-sect-sub">Seguridad residencial, tecnología y monitoreo, y protección especializada — operados como un solo sistema con su detalle de servicios incluidos.</p>
                       <div class="mk-cards">
                         <div class="mk-card">
                           <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/></svg></div>
-                          <p class="mk-ct">Guardias intramuros</p>
-                          <ul class="mk-bul"><li>Certificados SSC vigentes</li><li>Conocen a cada residente</li><li>Supervisión semanal</li></ul>
-                        </div>
-                        <div class="mk-card">
-                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
-                          <p class="mk-ct">Control de accesos</p>
-                          <ul class="mk-bul"><li>Registro de visitantes</li><li>Filtro vehicular y peatonal</li><li>Bitácora digital</li></ul>
+                          <p class="mk-ct">Seguridad residencial</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Guardias intramuros</span><span>Control de accesos</span><span>Patrullaje y rondines</span><span>Certificados SSC</span></div>
                         </div>
                         <div class="mk-card">
                           <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
-                          <p class="mk-ct">Vigilancia CCTV</p>
-                          <ul class="mk-bul"><li>Monitoreo en tiempo real</li><li>Central 24/7</li><li>Acceso remoto</li></ul>
-                        </div>
-                        <div class="mk-card">
-                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/></svg></div>
-                          <p class="mk-ct">Monitoreo de alarmas</p>
-                          <ul class="mk-bul"><li>Central certificada UL</li><li>Operativa 24/7</li><li>Respuesta coordinada</li></ul>
-                        </div>
-                        <div class="mk-card">
-                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 5.4 8 12 8 12s8-6.6 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
-                          <p class="mk-ct">Rastreo GPS satelital</p>
-                          <ul class="mk-bul"><li>Telemetría vehicular</li><li>En tiempo real</li><li>Rondines verificables</li></ul>
+                          <p class="mk-ct">Tecnología y monitoreo</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Vigilancia remota CCTV</span><span>Monitoreo de alarmas</span><span>Central certificada UL</span><span>Rastreo GPS satelital</span></div>
                         </div>
                         <div class="mk-card">
                           <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg></div>
-                          <p class="mk-ct">Seguridad especializada</p>
-                          <ul class="mk-bul"><li>Protocolos a medida</li><li>Consignas por inmueble</li><li>Reportes auditables</li></ul>
+                          <p class="mk-ct">Protección y consultoría</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Protección ejecutiva</span><span>Consultoría de seguridad</span><span>Protocolos de emergencia</span><span>Atención al comité</span></div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <figcaption class="ol-case-figure-caption">02 · Servicios — guardias, accesos y tecnología presentados con estructura uniforme y comparable.</figcaption>
+                <figcaption class="ol-case-figure-caption">01 · Servicios — los tres grupos de seguridad con su detalle de servicios incluidos, comparables de un vistazo.</figcaption>
               </figure>
 
-              <!-- 03 · GARANTÍAS -->
-              <figure class="ol-case-figure">
+              <!-- 02 · DIFERENCIADORES -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
                 <div class="ol-case-figure-frame">
                   <div class="mk">
-                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridad-privada.com.mx/#garantias</span></div>
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridad-privada.com.mx/#nosotros</span></div>
                     <div class="mk-view">
-                      <h3 class="mk-sect-h">Garantías que puedes exigir por escrito</h3>
-                      <p class="mk-sect-sub">No son promesas comerciales: son compromisos contractuales (SLA).</p>
-                      <div class="mk-cards" style="grid-template-columns:repeat(2,1fr)">
-                        <div class="mk-card"><p class="mk-ct">Reemplazo &lt; 4 horas</p><ul class="mk-bul"><li>Si hay falla de personal</li></ul></div>
-                        <div class="mk-card"><p class="mk-ct">Supervisión semanal</p><ul class="mk-bul"><li>Documentada y auditable</li></ul></div>
-                        <div class="mk-card"><p class="mk-ct">100% cumplimiento legal</p><ul class="mk-bul"><li>Permiso SSC vigente</li></ul></div>
-                        <div class="mk-card"><p class="mk-ct">Propuesta &lt; 24 horas</p><ul class="mk-bul"><li>Diagnóstico sin costo</li></ul></div>
+                      <h3 class="mk-sect-h">¿Por qué los comités eligen ORIGINS?</h3>
+                      <p class="mk-sect-sub">Especialización 100% residencial — no somos generalistas, y eso se nota desde el primer día.</p>
+                      <div class="mk-diff">
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.5v5c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11V6.5L12 2z"/><path d="M9 12l2 2 4-4"/></svg></div>
+                          <b>Permiso SSC vigente</b>
+                          <p>Permiso SSC 0102-15 vigente, Ley Federal de Seguridad Privada y registro ante Secretaría de Economía.</p>
+                          <span class="mk-dlink">Registro y permisos →</span>
+                        </div>
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
+                          <b>Personal certificado</b>
+                          <p>Verificación de antecedentes, exámenes psicométricos y capacitación continua de cada guardia SSC.</p>
+                          <span class="mk-dlink">Conocer al equipo →</span>
+                        </div>
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg></div>
+                          <b>Cumplimiento legal</b>
+                          <p>Alta IMSS-INFONAVIT, póliza de responsabilidad civil y facturación fiscal completa.</p>
+                          <span class="mk-dlink">Ver cumplimiento →</span>
+                        </div>
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                          <b>Supervisión y calidad</b>
+                          <p>Supervisión semanal in situ, bitácora digital de incidencias y reportes mensuales a la administración.</p>
+                          <span class="mk-dlink">Cómo trabajamos →</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <figcaption class="ol-case-figure-caption">03 · Garantías — los SLA del cliente presentados como argumento de confianza verificable.</figcaption>
+                <figcaption class="ol-case-figure-caption">02 · Diferenciadores — los cuatro pilares de confianza: permisos, personal, cumplimiento y supervisión documentada.</figcaption>
               </figure>
 
-              <!-- 04 · COBERTURA -->
+              <!-- 03 · PERFILES ATENDIDOS -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridad-privada.com.mx/#para-quien</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Seguridad adaptada a cada responsabilidad</h3>
+                      <p class="mk-sect-sub">Administradores, comités y desarrolladores tienen necesidades distintas — atención diferenciada, no plantilla genérica.</p>
+                      <div class="mk-sect-cards" style="grid-template-columns:repeat(3,1fr)">
+                        <div class="mk-scard"><span class="k">Administración</span><b>Administradores de condominio</b><p>Bitácoras digitales, reportes mensuales y un canal directo con supervisión.</p><span class="v">Ver propuesta →</span></div>
+                        <div class="mk-scard"><span class="k">Vecinos</span><b>Comités vecinales</b><p>Transparencia operativa y guardias que entienden la dinámica de la comunidad.</p><span class="v">Ver propuesta →</span></div>
+                        <div class="mk-scard"><span class="k">Obra nueva</span><b>Desarrolladores inmobiliarios</b><p>Protocolos que escalan del arranque de obra hasta la entrega final del condominio.</p><span class="v">Ver propuesta →</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">03 · Perfiles atendidos — el sitio segmenta por tipo de decisor para que cada uno se reconozca.</figcaption>
+              </figure>
+
+              <!-- 04 · TRAYECTORIA -->
               <figure class="ol-case-figure">
                 <div class="ol-case-figure-frame">
                   <div class="mk">
-                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridad-privada.com.mx/#zonas</span></div>
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridad-privada.com.mx/nosotros</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Trayectoria que respalda</h3>
+                      <p class="mk-sect-sub">Más de quince años cuidando comunidades residenciales, con números verificables.</p>
+                      <div class="mk-stats">
+                        <div class="mk-stat"><b>+15</b><span>Años de experiencia</span></div>
+                        <div class="mk-stat"><b>+50</b><span>Condominios protegidos</span></div>
+                        <div class="mk-stat"><b>98%</b><span>Tasa de renovación</span></div>
+                        <div class="mk-stat"><b>24/7</b><span>Operación continua</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">04 · Trayectoria — cifras al frente como argumento de continuidad operativa.</figcaption>
+              </figure>
+
+              <!-- 05 · COBERTURA -->
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridad-privada.com.mx/zonas</span></div>
                     <div class="mk-view">
                       <h3 class="mk-sect-h">Seguridad en CDMX y Estado de México</h3>
-                      <p class="mk-sect-sub">Cobertura en las 16 alcaldías y municipios conurbados.</p>
+                      <p class="mk-sect-sub">Cobertura en las principales alcaldías y municipios conurbados.</p>
                       <div class="mk-chips">
                         <span class="mk-chip on">Del Valle</span><span class="mk-chip on">Nápoles</span><span class="mk-chip on">Santa Fe</span><span class="mk-chip">Pedregal</span><span class="mk-chip">Coyoacán</span><span class="mk-chip">Tlalpan</span><span class="mk-chip">Naucalpan</span><span class="mk-chip">Interlomas</span><span class="mk-chip">Satélite</span><span class="mk-chip">Atizapán</span><span class="mk-chip">Huixquilucan</span><span class="mk-chip">Metepec</span>
                       </div>
                     </div>
                   </div>
                 </div>
-                <figcaption class="ol-case-figure-caption">04 · Zonas — cobertura por colonia y municipio para validar operación cercana.</figcaption>
+                <figcaption class="ol-case-figure-caption">05 · Zonas — cobertura por colonia y municipio para validar operación cercana.</figcaption>
               </figure>
 
-              <!-- 05 · TESTIMONIOS -->
+              <!-- 06 · ALIADOS DEL SECTOR -->
               <figure class="ol-case-figure" style="grid-column:1/-1">
                 <div class="ol-case-figure-frame">
                   <div class="mk">
-                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridad-privada.com.mx/#testimonios</span></div>
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridad-privada.com.mx/#casos</span></div>
                     <div class="mk-view">
-                      <h3 class="mk-sect-h">Lo que dicen empresas y profesionales del sector</h3>
-                      <p class="mk-sect-sub">Respaldo de empresas verificadas — 4.9 de calificación promedio.</p>
+                      <h3 class="mk-sect-h">Lo que dicen los aliados del sector</h3>
+                      <p class="mk-sect-sub">Empresas del sector que refieren a ORIGINS para seguridad de condominios y residenciales en CDMX y Edomex.</p>
                       <div class="mk-tcards">
                         <div class="mk-tcard">
-                          <div class="mk-trow"><span class="mk-av">MC</span><span><span class="mk-tn">Equipo MESECI</span><br><span class="mk-tloc">meseci.com.mx · Verificada</span></span></div>
+                          <span class="mk-ally">Empresa verificada</span>
+                          <div class="mk-trow"><span class="mk-av">SP</span><span><span class="mk-tn">Equipo SEPRICO</span><br><span class="mk-tloc">Seguridad para condominios</span></span></div>
                           <div class="mk-stars">★★★★★</div>
-                          <p class="mk-quote">"Cuando un cliente necesita seguridad privada en CDMX, ORIGINS es el aliado que recomendamos sin dudar."</p>
+                          <p class="mk-quote">"Compartimos el enfoque de ORIGINS: seguridad especializada para condominios, no soluciones genéricas. Recurrimos a ORIGINS por su cumplimiento normativo y el nivel de sus guardias SSC."</p>
+                          <p class="mk-dom">seguridadprivadacondominios.com</p>
                         </div>
                         <div class="mk-tcard">
-                          <div class="mk-trow"><span class="mk-av">PR</span><span><span class="mk-tn">Equipo Proyecto Red</span><br><span class="mk-tloc">proyectored.com.mx · Verificada</span></span></div>
+                          <span class="mk-ally">Empresa verificada</span>
+                          <div class="mk-trow"><span class="mk-av">SM</span><span><span class="mk-tn">Equipo SeguridadPrivadaMX</span><br><span class="mk-tloc">Seguridad privada para condominios CDMX</span></span></div>
                           <div class="mk-stars">★★★★★</div>
-                          <p class="mk-quote">"Empresa legalmente constituida, personal certificado SSC y una especialización en condominios que pocas tienen."</p>
+                          <p class="mk-quote">"Compartimos la misma filosofía: guardias certificados SSC que entienden la operación real de un condominio. La coordinación con el equipo de ORIGINS es fluida y profesional."</p>
+                          <p class="mk-dom">seguridadprivadamx.com</p>
                         </div>
                         <div class="mk-tcard">
-                          <div class="mk-trow"><span class="mk-av">GM</span><span><span class="mk-tn">Gama de México</span><br><span class="mk-tloc">gamademexico.com · Verificada</span></span></div>
+                          <span class="mk-ally">Empresa verificada</span>
+                          <div class="mk-trow"><span class="mk-av">SE</span><span><span class="mk-tn">Equipo SeguridadEventos</span><br><span class="mk-tloc">Empresa de seguridad para eventos</span></span></div>
                           <div class="mk-stars">★★★★★</div>
-                          <p class="mk-quote">"Cumplen con todos los requisitos normativos y su operación es verdaderamente profesional."</p>
+                          <p class="mk-quote">"Cuando un cliente necesita seguridad privada permanente en CDMX, ORIGINS es el aliado que recomendamos sin dudar por su especialización residencial."</p>
+                          <p class="mk-dom">seguridadeventos.com</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <figcaption class="ol-case-figure-caption">05 · Testimonios — prueba social B2B de empresas verificadas del sector.</figcaption>
+                <figcaption class="ol-case-figure-caption">06 · Aliados — prueba social B2B: empresas verificadas del sector que derivan clientes a ORIGINS.</figcaption>
               </figure>
 
-              <!-- 06 · DIAGNÓSTICO -->
+              <!-- 07 · EVALUACIÓN -->
               <figure class="ol-case-figure" style="grid-column:1/-1">
                 <div class="ol-case-figure-frame">
                   <div class="mk">
-                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridad-privada.com.mx/#contacto</span></div>
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridad-privada.com.mx/contacto</span></div>
                     <div class="mk-view">
-                      <h3 class="mk-sect-h">Solicita tu diagnóstico de seguridad sin costo</h3>
-                      <p class="mk-sect-sub">Evaluación de tu condominio en menos de 24 horas, sin compromiso.</p>
+                      <h3 class="mk-sect-h">Solicita tu evaluación de seguridad sin costo</h3>
+                      <p class="mk-sect-sub">Diagnóstico de tu condominio en menos de 24 horas, sin compromiso.</p>
                       <div class="mk-trust">
                         <div><b>+15</b><span>años</span></div>
                         <div><b>+50</b><span>condominios</span></div>
                         <div><b>98%</b><span>renovación</span></div>
-                        <div><b>4.9</b><span>calificación</span></div>
+                        <div><b>24/7</b><span>operación</span></div>
                       </div>
                       <div class="mk-form">
                         <div class="mk-frow"><div class="mk-field">Nombre completo</div><div class="mk-field">Teléfono</div></div>
@@ -1004,7 +1138,7 @@
                     </div>
                   </div>
                 </div>
-                <figcaption class="ol-case-figure-caption">06 · Contacto — diagnóstico gratuito con señales de confianza visibles antes de enviar.</figcaption>
+                <figcaption class="ol-case-figure-caption">07 · Contacto — evaluación gratuita con señales de confianza visibles antes de enviar.</figcaption>
               </figure>
 
             </div>
@@ -1015,6 +1149,16 @@
             <span class="ol-case-eyebrow">10 · Resultado entregado</span>
             <h2 class="ol-case-h2">Una presencia digital al nivel de su operación.</h2>
             <p class="ol-case-p">El resultado es un sitio que <strong>comunica especialización y confianza desde el primer scroll</strong>, presenta los servicios con la claridad que el comité necesita y abre canales de evaluación sin fricción. La identidad y el tono editorial reflejan la seriedad operativa de ORIGINS y su compromiso con la comunidad residencial.</p>
+
+            <figure class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <picture>
+                  <source srcset="/img/seguridad-privada/origins/guardias-intramuros-patrullaje-origins.avif" type="image/avif">
+                  <img src="/img/seguridad-privada/origins/guardias-intramuros-patrullaje-origins.webp" alt="Oficiales de seguridad privada en patrullaje a pie por calles de un residencial privado en CDMX" width="1280" height="720" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <figcaption class="ol-case-figure-caption">Rondín a pie por el fraccionamiento, parte del servicio que el sitio detalla por zona de cobertura.</figcaption>
+            </figure>
 
             <div class="ol-cs-band">
               <div><b>+15 <span>años</span></b><p>de trayectoria comunicada</p></div>
@@ -1137,7 +1281,7 @@
                 <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
               </button>
               <div class="ol-faq-answer" id="faq-ans-3">
-                <p class="ol-faq-answer-inner">Está diseñado para el decisor B2B residencial. El CTA principal es el diagnóstico gratuito en menos de 24 horas, y el formulario pide el contexto que califica el lead —tipo de inmueble, número de accesos, zona— para que el equipo reciba solicitudes accionables. WhatsApp y teléfono quedan visibles para resolver de inmediato.</p>
+                <p class="ol-faq-answer-inner">Está diseñado para el decisor B2B residencial. El CTA principal es el diagnóstico gratuito en menos de 24 horas, y el formulario pide el contexto que califica el lead —nombre del condominio o residencial, zona o alcaldía y servicio de interés— para que el equipo reciba solicitudes accionables. WhatsApp y teléfono quedan visibles para resolver de inmediato.</p>
               </div>
             </div>
 

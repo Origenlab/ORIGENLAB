@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SeguridadPrivadaMX · Seguridad para condominios con tecnología propia | OrigenLab</title>
-  <meta name="description" content="Caso de estudio del sitio corporativo de SeguridadPrivadaMX: la primera empresa en CDMX enfocada 100% en condominios, con transparencia total y tecnología propia de monitoreo en tiempo real. Vigilancia 24/7, control de accesos, cámaras y cotización en 4 horas.">
+  <meta name="description" content="Caso de estudio del sitio de SeguridadPrivadaMX: seguridad para condominios en CDMX con tecnología propia de monitoreo y cotización en pocas horas.">
   <link rel="canonical" href="https://origenlab.com/portafolio/seguridad-privada/seguridadprivadamx/">
 
   <!-- Open Graph -->
@@ -109,11 +109,60 @@
     .mk-trust div { text-align:center; }
     .mk-trust b { display:block; font-size:1.05rem; font-weight:800; color:var(--mk-indigo); line-height:1; }
     .mk-trust span { display:block; font-size:8px; color:var(--mk-soft); margin-top:.25rem; font-weight:600; }
+    /* --- Hero oscuro (mirror del sitio live) --- */
+    .mk-hero { background:linear-gradient(135deg,#111430 0%,#0C0F24 58%,#141738 100%); margin:-1.4rem -1.5rem 1.3rem; padding:1.5rem 1.5rem 1.35rem; border-bottom:1px solid var(--mk-line); }
+    .mk-hero .mk-eyebrow { color:#A5B4FC; }
+    .mk-hero .mk-h { color:#fff; }
+    .mk-hero .mk-h .ac { color:#818CF8; }
+    .mk-hero .mk-sub { color:rgba(226,232,240,.72); }
+    .mk-hb { display:grid; grid-template-columns:1.2fr 1fr; gap:1.4rem; align-items:start; }
+    .mk-hk { font-size:9px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#A5B4FC; margin:0 0 .35rem; }
+    .mk-hp { font-size:10px; color:rgba(226,232,240,.66); line-height:1.55; margin:0; }
+    .mk-strip { display:flex; gap:1.6rem; margin-top:1rem; padding-top:.9rem; border-top:1px solid rgba(255,255,255,.1); }
+    .mk-strip div b { font-size:1.15rem; font-weight:800; color:#fff; letter-spacing:-.02em; line-height:1; }
+    .mk-strip div b span { color:#818CF8; }
+    .mk-strip div .l { display:block; font-size:7.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:rgba(226,232,240,.5); margin-top:.3rem; }
+    /* --- Tira de servicios bajo el hero --- */
+    .mk-quick { display:grid; grid-template-columns:repeat(6,1fr); gap:.5rem; }
+    .mk-qc { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:8px; padding:.6rem .55rem; }
+    .mk-qc .mk-ic { width:24px; height:24px; margin-bottom:.4rem; border-radius:6px; }
+    .mk-qc b { display:block; font-size:9.5px; font-weight:700; color:var(--mk-ink); line-height:1.2; }
+    .mk-qc span { display:block; font-size:7.5px; color:var(--mk-soft); margin-top:.18rem; line-height:1.3; }
+    .mk-qc.cta { background:var(--mk-indigo); border-color:var(--mk-indigo); }
+    .mk-qc.cta b, .mk-qc.cta span { color:#fff; }
+    .mk-qc.cta .mk-ic { background:rgba(255,255,255,.18); color:#fff; }
+    /* --- Listas INCLUYE en cards --- */
+    .mk-pbadge { float:right; font-size:7.5px; font-weight:700; letter-spacing:.08em; color:var(--mk-indigo); background:var(--mk-indigo-soft); border-radius:5px; padding:.18rem .4rem; }
+    .mk-inc-k { font-size:7.5px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; color:var(--mk-soft); margin:.55rem 0 .35rem; }
+    .mk-inc { display:flex; flex-wrap:wrap; gap:.28rem; }
+    .mk-inc span { font-size:8px; font-weight:600; color:var(--mk-gray); background:var(--mk-bg); border:1px solid var(--mk-line); border-radius:5px; padding:.22rem .42rem .22rem .82rem; position:relative; }
+    .mk-inc span::before { content:''; position:absolute; left:.36rem; top:50%; transform:translateY(-50%); width:4px; height:4px; border-radius:50%; background:var(--mk-indigo); }
+    /* --- Diferenciadores (4 col) --- */
+    .mk-diff { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-dcard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .75rem; }
+    .mk-dcard .mk-ic { margin-bottom:.5rem; }
+    .mk-dcard b { display:block; font-size:11px; font-weight:700; color:var(--mk-ink); margin-bottom:.3rem; }
+    .mk-dcard p { font-size:8.5px; color:var(--mk-gray); line-height:1.5; margin:0 0 .4rem; }
+    .mk-dlink { font-size:8px; font-weight:700; color:var(--mk-indigo); }
+    /* --- Sectores / cobertura por zona --- */
+    .mk-sect-cards { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-scard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .75rem; display:flex; flex-direction:column; }
+    .mk-scard .k { font-size:7.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--mk-indigo); margin-bottom:.3rem; }
+    .mk-scard b { font-size:11.5px; font-weight:700; color:var(--mk-ink); margin-bottom:.3rem; }
+    .mk-scard p { font-size:8.5px; color:var(--mk-gray); line-height:1.5; margin:0 0 .5rem; }
+    .mk-scard .v { font-size:8px; font-weight:700; color:var(--mk-indigo); margin-top:auto; }
+    /* --- Aliados / casos reales --- */
+    .mk-ally { font-size:7.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--mk-indigo); background:var(--mk-indigo-soft); border-radius:5px; padding:.18rem .45rem; display:inline-block; margin-bottom:.45rem; }
+    .mk-dom { font-size:8px; color:var(--mk-soft); margin-top:.35rem; }
     @media (max-width:560px){
       .mk-grid2 { grid-template-columns:1fr; gap:1rem; }
       .mk-cards, .mk-tcards { grid-template-columns:1fr 1fr; }
       .mk-stats, .mk-trust { grid-template-columns:repeat(2,1fr); }
       .mk-h { font-size:1.2rem; }
+      .mk-hb { grid-template-columns:1fr; gap:.8rem; }
+      .mk-quick { grid-template-columns:repeat(3,1fr); }
+      .mk-diff, .mk-sect-cards { grid-template-columns:1fr 1fr; }
+      .mk-strip { flex-wrap:wrap; gap:.9rem; }
     }
 
     /* Banda de cifras comunicadas (tema oscuro del case body) */
@@ -125,7 +174,7 @@
     @media (max-width:560px){ .ol-cs-band { grid-template-columns:1fr 1fr; } }
   </style>
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.com/#organization","name":"OrigenLab","url":"https://origenlab.com","logo":"https://origenlab.com/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.com/#website","url":"https://origenlab.com/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.com/#organization"}},{"@type":"BreadcrumbList","@id":"https://origenlab.com/portafolio/seguridad-privada/seguridadprivadamx/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.com/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.com/portafolio/"},{"@type":"ListItem","position":3,"name":"Seguridad Privada","item":"https://origenlab.com/portafolio/seguridad-privada/"},{"@type":"ListItem","position":4,"name":"SeguridadPrivadaMX","item":"https://origenlab.com/portafolio/seguridad-privada/seguridadprivadamx/"}]},{"@type":["Organization","SecurityService"],"@id":"https://seguridadprivadamx.com/#organization","name":"SeguridadPrivadaMX","url":"https://seguridadprivadamx.com/","description":"Empresa de seguridad privada enfocada 100% en condominios y residenciales en CDMX y Estado de México, con transparencia total y tecnologia propia de monitoreo en tiempo real.","areaServed":{"@type":"Country","name":"Mexico"},"knowsAbout":["Seguridad privada","Seguridad para condominios","Vigilancia 24/7","Camaras y monitoreo","Control de acceso","Tecnologia de monitoreo"],"slogan":"Transparencia total y tecnologia propia para condominios"},{"@type":"CreativeWork","@id":"https://origenlab.com/portafolio/seguridad-privada/seguridadprivadamx/#case","name":"SeguridadPrivadaMX - Caso de estudio","description":"Sitio corporativo para SeguridadPrivadaMX, seguridad para condominios con tecnologia propia en CDMX y Estado de Mexico.","inLanguage":"es-MX","image":"https://origenlab.com/img/seguridad-privada/seguridadprivadamx/seguridadprivadamx-hero.webp","author":{"@id":"https://origenlab.com/#organization"},"publisher":{"@id":"https://origenlab.com/#organization"},"about":{"@id":"https://seguridadprivadamx.com/#organization"},"keywords":["seguridad privada","condominios","tecnologia propia","monitoreo","CDMX","SeguridadPrivadaMX"]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.com/#organization","name":"OrigenLab","url":"https://origenlab.com","logo":"https://origenlab.com/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.com/#website","url":"https://origenlab.com/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.com/#organization"}},{"@type":"BreadcrumbList","@id":"https://origenlab.com/portafolio/seguridad-privada/seguridadprivadamx/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.com/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.com/portafolio/"},{"@type":"ListItem","position":3,"name":"Seguridad Privada","item":"https://origenlab.com/portafolio/seguridad-privada/"},{"@type":"ListItem","position":4,"name":"SeguridadPrivadaMX","item":"https://origenlab.com/portafolio/seguridad-privada/seguridadprivadamx/"}]},{"@type":["Organization","SecurityService"],"@id":"https://seguridadprivadamx.com/#organization","name":"SeguridadPrivadaMX","url":"https://seguridadprivadamx.com/","description":"Empresa de seguridad privada enfocada 100% en condominios y residenciales en CDMX y Estado de México, con transparencia total y tecnologia propia de monitoreo en tiempo real.","areaServed":{"@type":"Country","name":"Mexico"},"knowsAbout":["Seguridad privada","Seguridad para condominios","Vigilancia 24/7","Camaras y monitoreo","Control de acceso","Tecnologia de monitoreo"],"slogan":"Transparencia total y tecnologia propia para condominios"},{"@type":"CreativeWork","@id":"https://origenlab.com/portafolio/seguridad-privada/seguridadprivadamx/#case","name":"SeguridadPrivadaMX - Caso de estudio","description":"Sitio corporativo para SeguridadPrivadaMX, seguridad para condominios con tecnologia propia en CDMX y Estado de Mexico.","inLanguage":"es-MX","image":"https://origenlab.com/img/seguridad-privada/seguridadprivadamx/seguridadprivadamx-hero.webp","author":{"@id":"https://origenlab.com/#organization"},"publisher":{"@id":"https://origenlab.com/#organization"},"about":{"@id":"https://seguridadprivadamx.com/#organization"},"keywords":["seguridad privada","condominios","tecnologia propia","monitoreo","CDMX","SeguridadPrivadaMX"]},{"@type":"FAQPage","@id":"https://origenlab.com/portafolio/seguridad-privada/seguridadprivadamx/#faq","mainEntity":[{"@type":"Question","name":"¿Qué hace que el sitio de una empresa de seguridad privada realmente convierta?","acceptedAnswer":{"@type":"Answer","text":"El comité de un condominio compra confianza. El sitio convierte cuando muestra lo que otros esconden: servicios explicados con claridad, certificaciones visibles, cobertura por zona y una vía de contacto sin fricción. En SeguridadPrivadaMX usamos su mayor diferenciador —transparencia y tecnología propia— como eje de cada pantalla, de modo que el administrador entienda y crea la propuesta en segundos."}},{"@type":"Question","name":"¿Cómo muestran las certificaciones (SSC, REPSE, pólizas) sin saturar el sitio?","acceptedAnswer":{"@type":"Answer","text":"El cumplimiento se trata como argumento de venta, no como letra pequeña. Lo presentamos en bloques de confianza —permiso SSC vigente, REPSE, póliza de responsabilidad civil— jerarquizados para que el comité los identifique sin perderse, y disponibles en detalle para quien quiera profundizar. Visible cuando importa, discreto cuando estorba."}},{"@type":"Question","name":"¿Pueden integrar la app o el monitoreo del cliente al sitio?","acceptedAnswer":{"@type":"Answer","text":"Sí. Cuando el cliente tiene tecnología propia —como la app de monitoreo de SeguridadPrivadaMX— el sitio la presenta como prueba tangible: capturas, accesos y demostraciones que dejan ver el valor antes de contratar. Podemos enlazar a la plataforma, integrar accesos o mostrar el dashboard según convenga al recorrido del comprador."}},{"@type":"Question","name":"¿El sitio capta al comité o al administrador del condominio?","acceptedAnswer":{"@type":"Answer","text":"Está diseñado para el decisor B2B residencial. El formulario pide el contexto que califica el lead —tipo de propiedad, número de unidades, alcaldía— para que el equipo comercial reciba solicitudes accionables, no curiosos. En paralelo, WhatsApp y teléfono quedan visibles en todas las pantallas para quien prefiere resolver de inmediato."}},{"@type":"Question","name":"¿Cómo manejan la cobertura por alcaldías y zonas?","acceptedAnswer":{"@type":"Answer","text":"La cobertura se estructura por zonas de CDMX y Estado de México para que el administrador confirme operación cercana de un vistazo. Esa organización también ayuda a que cada zona tenga su propio espacio dentro del sitio, sin duplicar contenido ni inflar el menú."}},{"@type":"Question","name":"¿Cuánto cuesta un proyecto como este?","acceptedAnswer":{"@type":"Answer","text":"Depende del alcance: número de pantallas, integraciones, secciones de cobertura y nivel de personalización. Construimos cada propuesta a la medida y la entregamos detallada y por escrito, sin cargos ocultos, antes de comenzar."}},{"@type":"Question","name":"¿En cuánto tiempo está listo?","acceptedAnswer":{"@type":"Answer","text":"Cada proyecto tiene su propio alcance, así que fijamos un calendario comprometido por escrito desde el inicio. Trabajamos con entregas iterativas en un entorno de pruebas para que veas el avance real en cada etapa, sin sorpresas."}},{"@type":"Question","name":"¿Dan acompañamiento después de lanzar el sitio?","acceptedAnswer":{"@type":"Answer","text":"Sí. Entregamos el sitio en operación con documentación para tu equipo y quedamos disponibles para crecerlo: nuevas zonas de cobertura, secciones de servicios o casos. La estructura queda lista para escalar conforme crece tu operación."}}]}]}</script>
 </head>
 <body>
 
@@ -216,9 +265,18 @@
                     <li><a href="/portafolio/seguridad-privada/origins/" class="ol-dropdown-link">ORIGINS Private Security</a></li>
                     <li><a href="/portafolio/seguridad-privada/seprico/" class="ol-dropdown-link">SEPRICO</a></li>
                     <li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-dropdown-link">SeguridadPrivadaMX</a></li>
+                    <li><a href="/portafolio/seguridad-privada/seguridadeventos/" class="ol-dropdown-link">SeguridadEventos</a></li>
+                    <li><a href="/portafolio/seguridad-privada/gupri/" class="ol-dropdown-link">GUPRI</a></li>
+                    <li><a href="/portafolio/seguridad-privada/directorio/" class="ol-dropdown-link">Directorio México</a></li>
                   </ul>
                 </div>
               </li>
+              <li class="ol-has-subdrop">
+              <a href="/portafolio/equipo-para-eventos/" class="ol-dropdown-link ol-dropdown-parent">Equipo para Eventos</a>
+              <div class="ol-subdrop"><ul>
+                <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-dropdown-link">PODIUMEX</a></li>
+              </ul></div>
+            </li>
             </ul>
           </div>
         </li>
@@ -279,6 +337,11 @@
         <li><a href="/portafolio/seguridad-privada/origins/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— ORIGINS Private Security</a></li>
         <li><a href="/portafolio/seguridad-privada/seprico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SEPRICO</a></li>
         <li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SeguridadPrivadaMX</a></li>
+        <li><a href="/portafolio/seguridad-privada/seguridadeventos/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SeguridadEventos</a></li>
+        <li><a href="/portafolio/seguridad-privada/gupri/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— GUPRI</a></li>
+        <li><a href="/portafolio/seguridad-privada/directorio/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Directorio México</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/" class="ol-mobile-link ol-mobile-sublink">Equipo para Eventos</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— PODIUMEX</a></li>
       </ul>
     </li>
     <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
@@ -570,12 +633,56 @@
             <p class="ol-case-p">Su gran diferenciador es la <strong>tecnología propia</strong>: el administrador puede ver su condominio en tiempo real desde el celular, con reportes y analítica que convierten la operación en algo visible y verificable. En un sector acostumbrado a la opacidad, esa transparencia es justo lo que el comité busca.</p>
             <p class="ol-case-p">El comprador es exigente —administradores y comités que ya se cansaron de proveedores que prometen y no muestran—. Para ellos, la promesa de <strong>poder ver</strong> vale más que cualquier discurso. El reto era convertir esa promesa en una experiencia digital creíble y profesional.</p>
 
-            <div class="ol-case-figure">
+            <figure class="ol-case-figure">
               <div class="ol-case-figure-frame">
-                <img src="../../../img/seguridad-privada/seguridadprivadamx/seguridadprivadamx-hero.webp" alt="SeguridadPrivadaMX — sitio corporativo de seguridad para condominios con tecnología propia de monitoreo en CDMX" width="1280" height="960" loading="lazy" decoding="async">
+                <picture>
+                  <source srcset="/img/seguridad-privada/seguridadprivadamx/monitoreo-cctv-seguridad-privada-seguridadprivadamx.avif" type="image/avif">
+                  <img src="/img/seguridad-privada/seguridadprivadamx/monitoreo-cctv-seguridad-privada-seguridadprivadamx.webp" alt="Operadores de seguridad privada monitoreando cámaras CCTV en una central de monitoreo 24/7" width="1280" height="720" loading="lazy" decoding="async">
+                </picture>
               </div>
-              <p class="ol-case-figure-caption">Home del sitio: enfoque 100% condominios, tecnología propia y la promesa de transparencia comunicados desde el primer scroll.</p>
-            </div>
+              <figcaption class="ol-case-figure-caption">Central de monitoreo CCTV 24/7: la tecnología propia que diferencia a SeguridadPrivadaMX y que el sitio pone al frente.</figcaption>
+            </figure>
+
+            <figure class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <div class="mk">
+                  <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadamx.com</span></div>
+                  <div class="mk-view">
+                    <div class="mk-nav">
+                      <span class="mk-logo">SeguridadPrivadaMX</span>
+                      <span class="mk-menu"><span>Inicio</span><span>Servicios</span><span>Nosotros</span><span>Blog</span><span>Contacto</span><span class="mk-cta">Cotizar Gratis</span></span>
+                    </div>
+                    <div class="mk-hero">
+                      <div class="mk-hb">
+                        <div>
+                          <span class="mk-eyebrow">Inicio / Seguridad Privada CDMX</span>
+                          <h3 class="mk-h">Seguridad Privada para <span class="ac">Condominios</span> y Residenciales en CDMX</h3>
+                          <p class="mk-sub">La primera empresa de seguridad privada en CDMX que combina tecnología propia, precios transparentes y guardias 100% certificados SSC.</p>
+                        </div>
+                        <div>
+                          <p class="mk-hk">Quiénes somos</p>
+                          <p class="mk-hp">No somos una empresa de seguridad tradicional. Nacimos al ver cómo miles de administradores sufrían con proveedores que prometen mucho y entregan poco. Apostamos por la transparencia total, la tecnología propia y el enfoque 100% en condominios.</p>
+                        </div>
+                      </div>
+                      <div class="mk-strip">
+                        <div><b>12<span>+</span></b><span class="l">Años</span></div>
+                        <div><b><span>+</span>150</b><span class="l">Condominios</span></div>
+                        <div><b>24/7</b><span class="l">Monitoreo</span></div>
+                      </div>
+                    </div>
+                    <div class="mk-quick">
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></div><b>Vigilancia 24/7</b><span>Guardias certificados SSC</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><b>Control de Accesos</b><span>Biométrico y LPR</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div><b>Cámaras y Monitoreo</b><span>4K en la nube</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div><b>Emergencias</b><span>Respuesta &lt;10 min</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div><b>Reportes y Analytics</b><span>Dashboard para admin</span></div>
+                      <div class="mk-qc cta"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></div><b>Cotizar Gratis</b><span>Respuesta en 4 hrs</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <figcaption class="ol-case-figure-caption">Home del sitio: hero con la propuesta de valor (tecnología propia, transparencia y certificación SSC), trayectoria comunicada y accesos rápidos a servicios y cotización desde el primer scroll.</figcaption>
+            </figure>
           </section>
 
           <!-- 02 RETO -->
@@ -836,90 +943,109 @@
           <section class="ol-case-section" id="galeria">
             <span class="ol-case-eyebrow">09 · Galería del sitio</span>
             <h2 class="ol-case-h2">Recorrido por el sitio en operación.</h2>
-            <p class="ol-case-p">Seis pantallas reales del sitio de SeguridadPrivadaMX —home, servicios, promesa, cobertura, testimonios y cotización— reproducidas con el mismo sistema de componentes y la misma jerarquía visual que ve el administrador. Cada pantalla está pensada para que el comité avance del interés a la solicitud sin fricción.</p>
+            <p class="ol-case-p">Siete pantallas del sitio de SeguridadPrivadaMX —servicios, diferenciadores, promesa medible, cobertura por zona, alcaldías, testimonios y cotización— reproducidas con el mismo sistema de componentes y la misma jerarquía visual que ve el administrador. Cada pantalla está pensada para que el comité avance del interés a la solicitud sin fricción.</p>
 
             <div class="ol-case-gallery">
 
-              <!-- 01 · HOME -->
-              <figure class="ol-case-figure" style="grid-column:1/-1">
-                <div class="ol-case-figure-frame">
-                  <div class="mk">
-                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadamx.com</span></div>
-                    <div class="mk-view">
-                      <div class="mk-nav">
-                        <span class="mk-logo">SeguridadPrivadaMX</span>
-                        <span class="mk-menu"><span>Inicio</span><span>Servicios</span><span>Nosotros</span><span>Contacto</span><span class="mk-cta">Cotizar Gratis</span></span>
-                      </div>
-                      <div class="mk-grid2">
-                        <div>
-                          <span class="mk-eyebrow">Inicio / Seguridad Privada CDMX</span>
-                          <h3 class="mk-h">Seguridad Privada para <span class="ac">Condominios</span> y Residenciales en CDMX</h3>
-                          <p class="mk-sub">La primera empresa de seguridad privada en CDMX que combina tecnología propia, precios transparentes y guardias 100% certificados SSC.</p>
-                        </div>
-                        <div>
-                          <p class="mk-ct" style="font-size:12.5px;margin-bottom:.5rem">Expertos en seguridad para condominios y residenciales</p>
-                          <p class="mk-sub" style="margin-top:0">Guardias intramuros certificados SSC y tecnología de vanguardia que permite monitorear el condominio en tiempo real desde el celular.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <figcaption class="ol-case-figure-caption">01 · Home — propuesta de valor: enfoque 100% condominios, tecnología propia y transparencia desde el primer scroll.</figcaption>
-              </figure>
-
-              <!-- 02 · SERVICIOS -->
+              <!-- 01 · SERVICIOS -->
               <figure class="ol-case-figure" style="grid-column:1/-1">
                 <div class="ol-case-figure-frame">
                   <div class="mk">
                     <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadamx.com/#servicios</span></div>
                     <div class="mk-view">
                       <h3 class="mk-sect-h">Servicios de Seguridad Privada para Condominios</h3>
-                      <p class="mk-sect-sub">Soluciones integrales que combinan personal certificado con tecnología avanzada para la protección total de tu comunidad.</p>
+                      <p class="mk-sect-sub">Soluciones integrales que combinan personal certificado con tecnología avanzada para la protección total de tu comunidad residencial.</p>
                       <div class="mk-cards">
                         <div class="mk-card">
                           <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></div>
                           <p class="mk-ct">Vigilancia 24/7</p>
-                          <ul class="mk-bul"><li>Personal certificado SSC</li><li>Supervisión presencial</li><li>Bitácora digital en vivo</li></ul>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Personal certificado SSC</span><span>Sin antecedentes penales</span><span>Supervisión quincenal</span><span>Bitácora digital en vivo</span></div>
                         </div>
                         <div class="mk-card">
                           <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
                           <p class="mk-ct">Control de Accesos</p>
-                          <ul class="mk-bul"><li>Registro de visitantes</li><li>Acceso biométrico</li><li>Control vehicular LPR</li></ul>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Registro digital de visitantes</span><span>Acceso biométrico</span><span>Control vehicular LPR</span><span>Autorización desde app</span></div>
                         </div>
                         <div class="mk-card">
                           <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
                           <p class="mk-ct">Cámaras y Monitoreo</p>
-                          <ul class="mk-bul"><li>Cámaras 4K nocturnas</li><li>Grabación en la nube</li><li>Ver en vivo desde app</li></ul>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Cámaras 4K nocturnas</span><span>Grabación 30 días en la nube</span><span>Detección con IA</span><span>Ver en vivo desde app</span></div>
                         </div>
                         <div class="mk-card">
                           <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
                           <p class="mk-ct">Respuesta a Emergencias</p>
-                          <ul class="mk-bul"><li>Botón de pánico en app</li><li>Coordinación C5 y SSC</li><li>Protocolos de evacuación</li></ul>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Botón de pánico en app</span><span>Coordinación C5 y SSC</span><span>Protocolos de evacuación</span><span>Reporte a administración</span></div>
                         </div>
                         <div class="mk-card">
                           <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M5 17a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2M7 21h10"/><circle cx="8" cy="17" r="1.5"/><circle cx="16" cy="17" r="1.5"/></svg></div>
                           <p class="mk-ct">Patrullaje Vehicular</p>
-                          <ul class="mk-bul"><li>Vehículos rotulados</li><li>Rastreo GPS satelital</li><li>Rondines verificables</li></ul>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Vehículos rotulados</span><span>Rastreo GPS satelital</span><span>Rondines verificables</span><span>Reporte de incidencias</span></div>
                         </div>
                         <div class="mk-card">
                           <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div>
                           <p class="mk-ct">Reportes y Analytics</p>
-                          <ul class="mk-bul"><li>Dashboard para admin</li><li>Estadísticas de accesos</li><li>Historial de incidencias</li></ul>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Dashboard para admin</span><span>Estadísticas de accesos</span><span>Historial de incidencias</span><span>Reportes mensuales</span></div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <figcaption class="ol-case-figure-caption">02 · Servicios — seis líneas con estructura uniforme, comparables de un vistazo para el comité.</figcaption>
+                <figcaption class="ol-case-figure-caption">01 · Servicios — seis líneas con su detalle de servicios incluidos, comparables de un vistazo para el comité.</figcaption>
               </figure>
 
-              <!-- 03 · PROMESA -->
-              <figure class="ol-case-figure">
+              <!-- 02 · DIFERENCIADORES -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
                 <div class="ol-case-figure-frame">
                   <div class="mk">
                     <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadamx.com/#nosotros</span></div>
                     <div class="mk-view">
-                      <h3 class="mk-sect-h">Nuestra Promesa</h3>
+                      <h3 class="mk-sect-h">La empresa que está revolucionando la protección residencial</h3>
+                      <p class="mk-sect-sub">No somos una empresa de seguridad tradicional — cuatro principios que el administrador comprueba, no solo escucha.</p>
+                      <div class="mk-diff">
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                          <b>Transparencia radical</b>
+                          <p>Precios claros desde el primer contacto. Sin letra chica ni cargos sorpresa: lo que ves es lo que pagas.</p>
+                          <span class="mk-dlink">Conocer más →</span>
+                        </div>
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></div>
+                          <b>Tecnología propia</b>
+                          <p>App móvil y dashboard desarrollados en casa: la seguridad moderna necesita herramientas modernas.</p>
+                          <span class="mk-dlink">Ver tecnología →</span>
+                        </div>
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.5v5c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11V6.5L12 2z"/><path d="M9 12l2 2 4-4"/></svg></div>
+                          <b>Cumplimiento 100%</b>
+                          <p>Certificación SSC vigente, pólizas al día y verificación de antecedentes exhaustiva en cada elemento.</p>
+                          <span class="mk-dlink">Ver certificaciones →</span>
+                        </div>
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+                          <b>Respuesta garantizada</b>
+                          <p>No prometemos lo que no podemos cumplir. Los tiempos de respuesta están documentados y garantizados.</p>
+                          <span class="mk-dlink">Ver garantía →</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">02 · Diferenciadores — los cuatro principios que distinguen a SeguridadPrivadaMX de un proveedor tradicional.</figcaption>
+              </figure>
+
+              <!-- 03 · NUESTRA PROMESA -->
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadamx.com/#promesa</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Nuestra promesa</h3>
                       <p class="mk-sect-sub">Compromisos medibles, no eslóganes.</p>
                       <div class="mk-stats">
                         <div class="mk-stat"><b>100%</b><span>Personal certificado SSC</span></div>
@@ -930,81 +1056,104 @@
                     </div>
                   </div>
                 </div>
-                <figcaption class="ol-case-figure-caption">03 · Promesa — compromisos verificables como bloque de confianza.</figcaption>
+                <figcaption class="ol-case-figure-caption">03 · Promesa — compromisos verificables al frente como bloque de confianza.</figcaption>
               </figure>
 
-              <!-- 04 · COBERTURA -->
+              <!-- 04 · COBERTURA POR ZONA -->
               <figure class="ol-case-figure">
                 <div class="ol-case-figure-frame">
                   <div class="mk">
-                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadamx.com/#cobertura</span></div>
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadamx.com/cobertura</span></div>
                     <div class="mk-view">
-                      <h3 class="mk-sect-h">Cobertura en CDMX</h3>
-                      <p class="mk-sect-sub">Servicio en todas las alcaldías y zona conurbada del Estado de México.</p>
-                      <div class="mk-chips">
-                        <span class="mk-chip on">Benito Juárez</span><span class="mk-chip on">Miguel Hidalgo</span><span class="mk-chip on">Coyoacán</span><span class="mk-chip">Cuauhtémoc</span><span class="mk-chip">Tlalpan</span><span class="mk-chip">Álvaro Obregón</span><span class="mk-chip">Azcapotzalco</span><span class="mk-chip">G. A. Madero</span><span class="mk-chip">Iztapalapa</span><span class="mk-chip">Xochimilco</span><span class="mk-chip">Naucalpan</span><span class="mk-chip">Tlalnepantla</span>
+                      <h3 class="mk-sect-h">Cobertura por zona</h3>
+                      <p class="mk-sect-sub">Operación organizada por zona de CDMX y municipios conurbados del Estado de México.</p>
+                      <div class="mk-sect-cards">
+                        <div class="mk-scard"><span class="k">CDMX</span><b>Zona Sur</b><p>Coyoacán, Tlalpan, Xochimilco y Magdalena Contreras.</p><span class="v">Ver zona →</span></div>
+                        <div class="mk-scard"><span class="k">CDMX</span><b>Zona Centro</b><p>Benito Juárez, Cuauhtémoc, Miguel Hidalgo, Polanco y Santa Fe.</p><span class="v">Ver zona →</span></div>
+                        <div class="mk-scard"><span class="k">CDMX</span><b>Zona Poniente</b><p>Álvaro Obregón, Cuajimalpa, Azcapotzalco y G. A. Madero.</p><span class="v">Ver zona →</span></div>
+                        <div class="mk-scard"><span class="k">Conurbado</span><b>Estado de México</b><p>Naucalpan, Tlalnepantla, Atizapán y Cuautitlán Izcalli.</p><span class="v">Ver zona →</span></div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <figcaption class="ol-case-figure-caption">04 · Cobertura — zonas comunicadas con claridad para validar operación cercana.</figcaption>
+                <figcaption class="ol-case-figure-caption">04 · Cobertura por zona — el sitio organiza la operación por zona para que cada administrador confirme servicio cercano.</figcaption>
               </figure>
 
-              <!-- 05 · TESTIMONIOS -->
+              <!-- 05 · ALCALDÍAS -->
               <figure class="ol-case-figure" style="grid-column:1/-1">
                 <div class="ol-case-figure-frame">
                   <div class="mk">
-                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadamx.com/#testimonios</span></div>
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadamx.com/#alcaldias</span></div>
                     <div class="mk-view">
-                      <h3 class="mk-sect-h">Lo Que Dicen Nuestros Clientes</h3>
-                      <p class="mk-sect-sub">Administradores y comités de condominios en CDMX comparten su experiencia.</p>
+                      <h3 class="mk-sect-h">Servicio en todas las alcaldías de CDMX</h3>
+                      <p class="mk-sect-sub">Seguridad privada para condominios en las 16 alcaldías y la zona conurbada del Estado de México.</p>
+                      <div class="mk-chips">
+                        <span class="mk-chip on">Benito Juárez</span><span class="mk-chip on">Miguel Hidalgo</span><span class="mk-chip on">Coyoacán</span><span class="mk-chip on">Cuauhtémoc</span><span class="mk-chip">Álvaro Obregón</span><span class="mk-chip">Tlalpan</span><span class="mk-chip">Azcapotzalco</span><span class="mk-chip">G. A. Madero</span><span class="mk-chip">Iztapalapa</span><span class="mk-chip">Venustiano Carranza</span><span class="mk-chip">Xochimilco</span><span class="mk-chip">Tláhuac</span><span class="mk-chip">Magdalena Contreras</span><span class="mk-chip">Cuajimalpa</span><span class="mk-chip">Milpa Alta</span><span class="mk-chip">Iztacalco</span><span class="mk-chip">Naucalpan</span><span class="mk-chip">Tlalnepantla</span><span class="mk-chip">Atizapán</span><span class="mk-chip">Cuautitlán Izcalli</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">05 · Alcaldías — cobertura comunicada con claridad para que el administrador valide operación cercana.</figcaption>
+              </figure>
+
+              <!-- 06 · CASOS REALES / ALIADOS DEL SECTOR -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadamx.com/#casos</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Lo que dicen nuestros clientes</h3>
+                      <p class="mk-sect-sub">Administradores y residentes de condominios en CDMX comparten su experiencia trabajando con SeguridadPrivadaMX.</p>
                       <div class="mk-tcards">
                         <div class="mk-tcard">
-                          <div class="mk-trow"><span class="mk-av">RM</span><span><span class="mk-tn">Ing. Roberto Méndez</span><br><span class="mk-tloc">Las Lomas, Miguel Hidalgo</span></span></div>
+                          <span class="mk-ally">Comité residencial</span>
+                          <div class="mk-trow"><span class="mk-av">RM</span><span><span class="mk-tn">Administrador de condominio</span><br><span class="mk-tloc">Torre vertical · Miguel Hidalgo</span></span></div>
                           <div class="mk-stars">★★★★★</div>
-                          <p class="mk-quote">"Incidentes disminuyeron. La app es excelente para ver cámaras y autorizar visitantes."</p>
+                          <p class="mk-quote">"Los incidentes disminuyeron de forma notable. La app es excelente para ver cámaras y autorizar visitantes."</p>
                         </div>
                         <div class="mk-tcard">
-                          <div class="mk-trow"><span class="mk-av">AM</span><span><span class="mk-tn">Lic. Ana Martínez</span><br><span class="mk-tloc">Torres del Pedregal, Coyoacán</span></span></div>
+                          <span class="mk-ally">Comité residencial</span>
+                          <div class="mk-trow"><span class="mk-av">AM</span><span><span class="mk-tn">Presidenta del comité</span><br><span class="mk-tloc">Fraccionamiento · Coyoacán</span></span></div>
                           <div class="mk-stars">★★★★★</div>
-                          <p class="mk-quote">"Transparencia total. Lo que cotizan al inicio es exactamente lo que pago, sin sorpresas."</p>
+                          <p class="mk-quote">"Transparencia total. El precio inicial es exactamente lo que pagamos, sin cargos sorpresa."</p>
                         </div>
                         <div class="mk-tcard">
-                          <div class="mk-trow"><span class="mk-av">CR</span><span><span class="mk-tn">Arq. Carlos Ramírez</span><br><span class="mk-tloc">Condominio Vertiz, Benito Juárez</span></span></div>
+                          <span class="mk-ally">Comité residencial</span>
+                          <div class="mk-trow"><span class="mk-av">CR</span><span><span class="mk-tn">Presidente del comité</span><br><span class="mk-tloc">Condominio · Benito Juárez</span></span></div>
                           <div class="mk-stars">★★★★★</div>
-                          <p class="mk-quote">"Emergencia de madrugada, respuesta en minutos. Coordinación perfecta con autoridades."</p>
+                          <p class="mk-quote">"Emergencia de madrugada, respuesta en minutos. La coordinación con las autoridades fue perfecta."</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <figcaption class="ol-case-figure-caption">05 · Testimonios — prueba social del comité, con cargo y comunidad para dar credibilidad.</figcaption>
+                <figcaption class="ol-case-figure-caption">06 · Testimonios — prueba social de administradores y comités residenciales, por rol y comunidad.</figcaption>
               </figure>
 
-              <!-- 06 · COTIZACIÓN -->
+              <!-- 07 · COTIZACIÓN -->
               <figure class="ol-case-figure" style="grid-column:1/-1">
                 <div class="ol-case-figure-frame">
                   <div class="mk">
-                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadamx.com/#cotizar</span></div>
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadamx.com/contacto</span></div>
                     <div class="mk-view">
-                      <h3 class="mk-sect-h">Protege Tu Condominio — Cotización Gratuita</h3>
-                      <p class="mk-sect-sub">Propuesta personalizada para tu comunidad, sin compromiso.</p>
+                      <h3 class="mk-sect-h">Protege tu condominio — cotización gratuita</h3>
+                      <p class="mk-sect-sub">Propuesta personalizada para tu comunidad, sin compromiso — respuesta garantizada en 4 horas hábiles.</p>
                       <div class="mk-trust">
                         <div><b>12 años</b><span>de experiencia</span></div>
                         <div><b>+150</b><span>condominios</span></div>
                         <div><b>24/7</b><span>monitoreo</span></div>
-                        <div><b>98%</b><span>satisfacción</span></div>
+                        <div><b>SSC</b><span>certificación vigente</span></div>
                       </div>
                       <div class="mk-form">
                         <div class="mk-frow"><div class="mk-field">Nombre completo</div><div class="mk-field">Teléfono</div></div>
                         <div class="mk-frow"><div class="mk-field">Tipo de propiedad</div><div class="mk-field">Número de unidades</div></div>
-                        <div class="mk-field">Ubicación (alcaldía)</div>
+                        <div class="mk-field">Ubicación (alcaldía / municipio)</div>
                         <div class="mk-submit">Solicitar cotización gratuita →</div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <figcaption class="ol-case-figure-caption">06 · Contacto — formulario calificado para el comité, con señales de confianza visibles antes de enviar.</figcaption>
+                <figcaption class="ol-case-figure-caption">07 · Contacto — formulario calificado para el comité, con señales de confianza visibles antes de enviar.</figcaption>
               </figure>
 
             </div>
@@ -1015,6 +1164,16 @@
             <span class="ol-case-eyebrow">10 · Resultado entregado</span>
             <h2 class="ol-case-h2">Un sitio que se ve tan moderno como su propuesta.</h2>
             <p class="ol-case-p">El resultado es un sitio que <strong>comunica transparencia, tecnología y rapidez desde el primer scroll</strong>, presenta los servicios con claridad y abre la cotización en cuatro horas sin fricción. El administrador entiende, en segundos, por qué SeguridadPrivadaMX es distinta — y por qué puede comprobarlo.</p>
+
+            <figure class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <picture>
+                  <source srcset="/img/seguridad-privada/seguridadprivadamx/control-de-accesos-condominios-seguridadprivadamx.avif" type="image/avif">
+                  <img src="/img/seguridad-privada/seguridadprivadamx/control-de-accesos-condominios-seguridadprivadamx.webp" alt="Oficial de seguridad privada verificando credenciales en el control de accesos de un condominio" width="1280" height="720" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <figcaption class="ol-case-figure-caption">Control de accesos en condominio, integrado a la operación de monitoreo que el sitio describe.</figcaption>
+            </figure>
 
             <div class="ol-cs-band">
               <div><b>12 <span>años</span></b><p>de trayectoria comunicada</p></div>
@@ -1266,10 +1425,10 @@
         <p class="ol-case-next-title">SEPRICO · Seguridad documentada para condominios</p>
         <span class="ol-case-next-link">Ver caso completo →</span>
       </a>
-      <a href="/portafolio/seguridad-privada/" class="ol-case-next-card">
-        <p class="ol-case-next-eyebrow">Volver al sector</p>
-        <p class="ol-case-next-title">Seguridad Privada · Más proyectos del sector</p>
-        <span class="ol-case-next-link">Ir al portafolio del sector →</span>
+      <a href="/portafolio/seguridad-privada/seguridadeventos/" class="ol-case-next-card">
+        <p class="ol-case-next-eyebrow">Caso siguiente →</p>
+        <p class="ol-case-next-title">SeguridadEventos · Seguridad privada para eventos en México</p>
+        <span class="ol-case-next-link">Ver caso completo →</span>
       </a>
     </div>
   </section>

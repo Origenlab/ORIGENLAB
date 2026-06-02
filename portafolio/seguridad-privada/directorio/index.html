@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Directorio · Empresas de Seguridad Privada en México | OrigenLab</title>
+  <meta name="description" content="Directorio de empresas de seguridad privada en México: un espacio donde OrigenLab da visibilidad y reconocimiento a negocios locales con trayectoria, clientes reales y perfil verificado en Google Business. ¿Es tu empresa? Con gusto te acompañamos a tener tu lugar en internet.">
+  <link rel="canonical" href="https://origenlab.com/portafolio/seguridad-privada/directorio/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://origenlab.com/portafolio/seguridad-privada/directorio/">
+  <meta property="og:title" content="Directorio · Empresas de Seguridad Privada en México">
+  <meta property="og:description" content="Un espacio para los negocios locales de seguridad privada de México: trayectoria, clientes reales y perfil verificado en Google Business. OrigenLab los visibiliza y, si lo desean, los acompaña a tener su sitio.">
+  <meta property="og:image" content="https://origenlab.com/og-image.jpg">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="OrigenLab">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Directorio · Seguridad Privada en México">
+  <meta name="twitter:description" content="Negocios locales de seguridad privada con trayectoria y clientes reales. OrigenLab los visibiliza y los acompaña a tener su lugar en internet.">
+  <meta name="twitter:image" content="https://origenlab.com/og-image.jpg">
+  <link rel="icon" type="image/svg+xml" href="../../../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="../../../_astro/BaseLayout.xeR8R953.css?v20260601d">
+  <link rel="stylesheet" href="../../../_astro/premium-dark.css?v20260601d">
+  <script src="../../../_astro/ol-header.js?v20260601d" defer></script>
+
+  <style>
+    /* ============================================================
+       L9 — DIRECTORIO SEGURIDAD PRIVADA · MÉXICO
+       Componentes compartidos heredados de premium-dark.css.
+       Solo clases nuevas .ol-dir-* + mini-maqueta .ol-dir-mk.
+       Acento de sección: oro #C9A84C (homologado al hub).
+       ============================================================ */
+
+    .ol-page-hero { --page-hero-accent: #C9A84C; }
+    :root { --dir-ac: #C9A84C; --dir-ac-soft: rgba(201,168,76,0.14); }
+
+    /* ---- STATS BAR ---- */
+    .ol-dir-stats { background:#08080E; border-bottom:1px solid rgba(255,255,255,0.06); padding:1.1rem 0; }
+    .ol-dir-stats-inner { width:90%; max-width:1600px; margin:0 auto; display:flex; align-items:center; gap:2rem; flex-wrap:wrap; }
+    .ol-dir-stat { display:flex; align-items:center; gap:0.6rem; }
+    .ol-dir-stat-num { font-size:1.35rem; font-weight:800; color:var(--dir-ac); letter-spacing:-0.03em; line-height:1; }
+    .ol-dir-stat-label { font-size:12px; color:rgba(240,240,245,0.45); font-weight:500; line-height:1.3; }
+    .ol-dir-stat-sep { width:1px; height:28px; background:rgba(255,255,255,0.07); }
+    .ol-dir-stats-note { margin-left:auto; font-size:11px; color:rgba(240,240,245,0.28); font-style:italic; }
+    @media (max-width:680px){ .ol-dir-stats-note{ display:none; } }
+
+    /* ---- FILTERS ---- */
+    .ol-dir-filters-wrap { background:#0A0A14; border-bottom:1px solid rgba(255,255,255,0.06); padding:1.25rem 0; position:sticky; top:56px; z-index:40; }
+    .ol-dir-filters-inner { width:90%; max-width:1600px; margin:0 auto; display:flex; align-items:center; gap:1rem; flex-wrap:wrap; }
+    .ol-dir-filter-label { font-size:10.5px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:rgba(240,240,245,0.35); white-space:nowrap; }
+    .ol-dir-filter-chips { display:flex; gap:0.5rem; flex-wrap:wrap; }
+    .ol-dir-chip { display:inline-flex; align-items:center; gap:0.35rem; padding:0.35rem 0.85rem; border-radius:999px; font-size:12px; font-weight:600; letter-spacing:0.02em; cursor:pointer; border:1px solid rgba(255,255,255,0.1); background:rgba(255,255,255,0.03); color:rgba(240,240,245,0.55); transition:border-color 0.18s, background 0.18s, color 0.18s; user-select:none; }
+    .ol-dir-chip:hover { border-color:rgba(201,168,76,0.4); color:rgba(240,240,245,0.85); background:rgba(201,168,76,0.06); }
+    .ol-dir-chip.active { border-color:var(--dir-ac); background:rgba(201,168,76,0.14); color:#F0F0F5; }
+    .ol-dir-filter-sep { width:1px; height:20px; background:rgba(255,255,255,0.08); flex-shrink:0; }
+    .ol-dir-count-badge { margin-left:auto; font-size:12px; color:rgba(240,240,245,0.35); white-space:nowrap; }
+    .ol-dir-count-badge strong { color:rgba(240,240,245,0.7); font-weight:600; }
+
+    /* ---- DIRECTORY SECTION ---- */
+    .ol-dir-section { background:#08080E; padding:4rem 0 6rem; }
+    .ol-dir-inner { width:90%; max-width:1600px; margin:0 auto; }
+    .ol-dir-layout { display:grid; grid-template-columns:1fr 280px; gap:2rem; align-items:start; }
+    .ol-dir-main { min-width:0; }
+    @media (max-width:1024px){ .ol-dir-layout{ grid-template-columns:1fr; } }
+
+    /* ---- GRID + CARD ---- */
+    .ol-dir-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem; }
+    @media (max-width:1280px){ .ol-dir-grid{ grid-template-columns:repeat(2,1fr); } }
+    @media (max-width:640px){ .ol-dir-grid{ grid-template-columns:1fr; gap:1rem; } }
+
+    .ol-dir-card { background:linear-gradient(180deg,#0C0C18 0%,#0A0A12 100%); border:1px solid rgba(255,255,255,0.07); border-radius:16px; overflow:hidden; display:flex; flex-direction:column; transition:border-color 0.2s ease, transform 0.2s ease; }
+    .ol-dir-card:hover { border-color:rgba(201,168,76,0.32); transform:translateY(-3px); }
+    .ol-dir-card.hidden { display:none; }
+
+    /* maqueta header (preview del sitio que podrían tener) */
+    .ol-dir-prev { position:relative; padding:0.85rem 0.85rem 0; }
+    .ol-dir-prev-badges { position:absolute; top:1.15rem; right:1.15rem; z-index:3; display:flex; gap:0.4rem; flex-wrap:wrap; justify-content:flex-end; }
+    .ol-dir-badge-gb, .ol-dir-badge-noweb { display:inline-flex; align-items:center; gap:0.3rem; font-size:9.5px; font-weight:700; letter-spacing:0.05em; padding:0.25rem 0.55rem; border-radius:6px; backdrop-filter:blur(4px); }
+    .ol-dir-badge-gb { background:rgba(52,168,83,0.16); border:1px solid rgba(52,168,83,0.32); color:#5BC274; }
+    .ol-dir-badge-noweb { background:rgba(201,168,76,0.14); border:1px solid rgba(201,168,76,0.34); color:#E0C46B; }
+
+    /* ---- MINI-MAQUETA .ol-dir-mk ---- */
+    .ol-dir-mk { --mk-ac:#C9A84C; border-radius:11px 11px 0 0; overflow:hidden; border:1px solid var(--mk-line,#E6E8EE); border-bottom:none; box-shadow:0 10px 30px rgba(0,0,0,0.35); }
+    .ol-dir-mk-bar { display:flex; align-items:center; gap:0.5rem; padding:0.45rem 0.7rem; background:#1A1D29; }
+    .ol-dir-mk-bar i { width:7px; height:7px; border-radius:50%; background:rgba(255,255,255,0.22); }
+    .ol-dir-mk-bar i:nth-child(1){ background:#ED6A5E; } .ol-dir-mk-bar i:nth-child(2){ background:#F4BF4F; } .ol-dir-mk-bar i:nth-child(3){ background:#61C554; }
+    .ol-dir-mk-url { flex:1; background:rgba(255,255,255,0.07); border-radius:999px; padding:0.18rem 0.6rem; font-size:9.5px; color:rgba(255,255,255,0.6); text-align:center; font-family:'SFMono-Regular',Menlo,Consolas,monospace; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .ol-dir-mk-lock { color:rgba(255,255,255,0.4); flex-shrink:0; }
+    .ol-dir-mk-view { background:#FFFFFF; padding:0.85rem 0.95rem 1rem; min-height:148px; display:flex; flex-direction:column; }
+    .ol-dir-mk-nav { display:flex; align-items:center; justify-content:space-between; padding-bottom:0.6rem; border-bottom:1px solid #ECEEF3; margin-bottom:0.7rem; }
+    .ol-dir-mk-logo { font-size:11.5px; font-weight:800; color:var(--mk-ac); letter-spacing:-0.01em; max-width:62%; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .ol-dir-mk-pill { font-size:8.5px; font-weight:700; color:#fff; background:var(--mk-ac); padding:0.22rem 0.5rem; border-radius:5px; }
+    .ol-dir-mk-eyebrow { font-size:8px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--mk-ac); }
+    .ol-dir-mk-h { font-size:0.98rem; font-weight:800; letter-spacing:-0.02em; line-height:1.12; color:#0F1729; margin:0.25rem 0 0; }
+    .ol-dir-mk-h span { color:var(--mk-ac); }
+    .ol-dir-mk-chips { display:flex; flex-wrap:wrap; gap:0.3rem; margin-top:auto; padding-top:0.7rem; }
+    .ol-dir-mk-chips span { font-size:8px; font-weight:600; color:#475467; background:#F4F5F8; border:1px solid #E6E8EE; border-radius:999px; padding:0.22rem 0.5rem; }
+    .ol-dir-mk-chips span.on { background:#F7F1DC; border-color:rgba(201,168,76,0.45); color:#9C7B27; }
+
+    /* ---- CARD BODY ---- */
+    .ol-dir-body { padding:1.15rem 1.25rem 1.3rem; display:flex; flex-direction:column; flex:1; }
+    .ol-dir-meta-top { display:flex; align-items:center; justify-content:space-between; gap:0.5rem; margin-bottom:0.5rem; }
+    .ol-dir-num { font-size:10.5px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:rgba(201,168,76,0.7); }
+    .ol-dir-tipo-tag { font-size:9.5px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:rgba(240,240,245,0.4); border:1px solid rgba(255,255,255,0.1); border-radius:5px; padding:0.18rem 0.45rem; }
+    .ol-dir-name { font-size:1.12rem; font-weight:800; color:#F0F0F5; letter-spacing:-0.02em; line-height:1.2; margin:0 0 0.55rem; }
+    .ol-dir-rating { display:inline-flex; align-items:center; gap:0.4rem; font-size:12.5px; color:rgba(240,240,245,0.62); margin-bottom:0.85rem; }
+    .ol-dir-rating b { color:#E0C46B; font-weight:700; }
+    .ol-dir-rating .ol-dir-stars { color:#E0C46B; letter-spacing:1px; font-size:12px; }
+    .ol-dir-rating .ol-dir-rev { color:rgba(240,240,245,0.4); }
+    .ol-dir-data { list-style:none; margin:0 0 1.1rem; padding:0; display:flex; flex-direction:column; gap:0.5rem; }
+    .ol-dir-data li { display:flex; align-items:flex-start; gap:0.55rem; font-size:12.5px; color:rgba(240,240,245,0.58); line-height:1.4; }
+    .ol-dir-data svg { color:rgba(201,168,76,0.6); flex-shrink:0; margin-top:1px; }
+    .ol-dir-data a { color:rgba(240,240,245,0.72); text-decoration:none; }
+    .ol-dir-data a:hover { color:var(--dir-ac); }
+    .ol-dir-cta { margin-top:auto; display:inline-flex; align-items:center; justify-content:center; gap:0.45rem; font-size:12.5px; font-weight:700; color:var(--dir-ac); border:1px solid rgba(201,168,76,0.3); background:rgba(201,168,76,0.05); border-radius:9px; padding:0.7rem 1rem; text-decoration:none; transition:background 0.18s, border-color 0.18s, color 0.18s; }
+    .ol-dir-card:hover .ol-dir-cta { background:var(--dir-ac); border-color:var(--dir-ac); color:#08080E; }
+
+    /* ---- EMPTY STATE ---- */
+    .ol-dir-empty { display:none; text-align:center; padding:4rem 0; color:rgba(240,240,245,0.35); font-size:14px; grid-column:1 / -1; }
+    .ol-dir-empty.visible { display:block; }
+
+    /* ---- SIDEBAR ---- */
+    .ol-dir-sidebar { position:sticky; top:120px; display:flex; flex-direction:column; gap:1rem; }
+    @media (max-width:1024px){ .ol-dir-sidebar{ position:static; display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; } }
+    @media (max-width:600px){ .ol-dir-sidebar{ grid-template-columns:1fr; } }
+    .ol-dir-sb-card { background:#0C0C1A; border:1px solid rgba(255,255,255,0.07); border-radius:14px; padding:1.25rem 1.35rem; }
+    .ol-dir-sb-label { font-size:10px; font-weight:700; letter-spacing:0.13em; text-transform:uppercase; color:rgba(240,240,245,0.28); margin:0 0 0.85rem; display:block; }
+    .ol-dir-sb-steps { list-style:none; margin:0; padding:0; counter-reset:s; display:flex; flex-direction:column; gap:0.9rem; }
+    .ol-dir-sb-steps li { counter-increment:s; position:relative; padding-left:2rem; font-size:12.5px; color:rgba(240,240,245,0.6); line-height:1.5; }
+    .ol-dir-sb-steps li::before { content:counter(s); position:absolute; left:0; top:-1px; width:1.4rem; height:1.4rem; border-radius:50%; background:rgba(201,168,76,0.12); border:1px solid rgba(201,168,76,0.35); color:var(--dir-ac); font-size:10.5px; font-weight:800; display:flex; align-items:center; justify-content:center; }
+    .ol-dir-sb-steps b { color:#F0F0F5; font-weight:700; }
+    .ol-dir-sb-cta { background:linear-gradient(135deg, rgba(201,168,76,0.12) 0%, rgba(201,168,76,0.04) 100%); border:1px solid rgba(201,168,76,0.22); border-radius:14px; padding:1.35rem; text-align:center; }
+    .ol-dir-sb-cta-eyebrow { font-size:10px; font-weight:700; letter-spacing:0.13em; text-transform:uppercase; color:var(--dir-ac); display:block; margin:0 0 0.5rem; }
+    .ol-dir-sb-cta-title { font-size:13.5px; font-weight:800; color:#F0F0F5; letter-spacing:-0.02em; line-height:1.3; margin:0 0 1rem; }
+    .ol-dir-sb-cta-btn { display:block; background:var(--dir-ac); color:#08080E; font-size:12.5px; font-weight:700; text-decoration:none; padding:0.75rem 1rem; border-radius:9px; transition:background 0.18s, transform 0.13s; }
+    .ol-dir-sb-cta-btn:hover { background:#E4C26B; transform:translateY(-1px); }
+
+    /* ---- CALLOUT ---- */
+    .ol-dir-callout { background:linear-gradient(135deg,#0C0C1A 0%,#12121F 100%); border:1px solid rgba(201,168,76,0.2); border-radius:14px; padding:2.25rem 2.5rem; margin:3rem 0 0; display:grid; grid-template-columns:1fr auto; gap:2rem; align-items:center; position:relative; overflow:hidden; }
+    .ol-dir-callout::before { content:''; position:absolute; top:-40%; right:-10%; width:50%; height:200%; background:radial-gradient(ellipse at center, rgba(201,168,76,0.07) 0%, transparent 60%); pointer-events:none; }
+    .ol-dir-callout-eyebrow { font-size:10.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--dir-ac); margin:0 0 0.6rem; }
+    .ol-dir-callout-title { font-size:clamp(1.1rem,2vw,1.45rem); font-weight:800; color:#F0F0F5; letter-spacing:-0.025em; line-height:1.2; margin:0 0 0.65rem; }
+    .ol-dir-callout-desc { font-size:14px; color:rgba(240,240,245,0.55); line-height:1.7; margin:0; max-width:62ch; }
+    .ol-dir-callout-actions { display:flex; flex-direction:column; gap:0.65rem; flex-shrink:0; }
+    .ol-dir-callout-btn { display:inline-flex; align-items:center; justify-content:center; gap:0.5rem; padding:0.85rem 1.5rem; border-radius:9px; font-weight:700; font-size:13.5px; text-decoration:none; white-space:nowrap; transition:background 0.2s, transform 0.13s; }
+    .ol-dir-callout-btn-primary { background:var(--dir-ac); color:#08080E; }
+    .ol-dir-callout-btn-primary:hover { background:#E4C26B; transform:translateY(-1px); }
+    .ol-dir-callout-btn-ghost { background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); color:rgba(240,240,245,0.75); }
+    .ol-dir-callout-btn-ghost:hover { background:rgba(255,255,255,0.08); border-color:rgba(255,255,255,0.18); }
+    @media (max-width:800px){ .ol-dir-callout{ grid-template-columns:1fr; } .ol-dir-callout-actions{ flex-direction:row; } }
+    @media (max-width:480px){ .ol-dir-callout{ padding:1.75rem; } .ol-dir-callout-actions{ flex-direction:column; } }
+
+    /* ---- WHY ---- */
+    .ol-dir-why { background:#0A0A14; padding:5rem 0; border-top:1px solid rgba(255,255,255,0.05); }
+    .ol-dir-why-inner { width:90%; max-width:1600px; margin:0 auto; }
+    .ol-dir-why-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:3rem; }
+    @media (max-width:900px){ .ol-dir-why-grid{ grid-template-columns:1fr; gap:1rem; } }
+    .ol-dir-why-card { background:#0D0D1A; border:1px solid rgba(255,255,255,0.07); border-radius:14px; padding:1.75rem; }
+    .ol-dir-why-num { font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--dir-ac); opacity:0.8; margin:0 0 1rem; }
+    .ol-dir-why-title { font-size:1rem; font-weight:700; color:#F0F0F5; letter-spacing:-0.015em; margin:0 0 0.6rem; line-height:1.3; }
+    .ol-dir-why-desc { font-size:13.5px; color:rgba(240,240,245,0.5); line-height:1.72; margin:0; }
+  </style>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.com/#organization","name":"OrigenLab","url":"https://origenlab.com","logo":"https://origenlab.com/logo.svg","description":"Agencia de desarrollo web profesional en México.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"}},{"@type":"CollectionPage","@id":"https://origenlab.com/portafolio/seguridad-privada/directorio/#page","url":"https://origenlab.com/portafolio/seguridad-privada/directorio/","name":"Directorio · Empresas de Seguridad Privada en México — OrigenLab","inLanguage":"es-MX","isPartOf":{"@type":"WebSite","@id":"https://origenlab.com/#website","url":"https://origenlab.com/","name":"OrigenLab"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.com/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.com/portafolio/"},{"@type":"ListItem","position":3,"name":"Seguridad Privada","item":"https://origenlab.com/portafolio/seguridad-privada/"},{"@type":"ListItem","position":4,"name":"Directorio México","item":"https://origenlab.com/portafolio/seguridad-privada/directorio/"}]}]}</script>
+</head>
+<body>
+
+<a class="ol-skip-link" href="#main">Saltar al contenido</a>
+
+<div class="ol-topbar">
+  <div class="ol-topbar-inner">
+    <div class="ol-topbar-left">
+      <a href="mailto:hola@origenlab.com" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        hola@origenlab.com
+      </a>
+      <span class="ol-topbar-sep"></span>
+      <a href="tel:+525547868402" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +52 55 4786 8402
+      </a>
+    </div>
+    <div class="ol-topbar-center">
+      <span class="ol-topbar-promo">
+        <span class="ol-topbar-dot"></span>
+        Atención personalizada  ·  Ciudad de México
+      </span>
+    </div>
+    <div class="ol-topbar-right">
+      <a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20sitio%20web%20para%20mi%20empresa%20de%20seguridad%20privada." target="_blank" rel="noopener noreferrer" class="ol-topbar-wa">
+        <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true" focusable="false"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+<header class="ol-header" id="ol-header">
+  <div class="ol-header-inner">
+    <a href="/" class="ol-header-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
+    </a>
+    <nav class="ol-nav" aria-label="Navegación principal">
+      <ul class="ol-nav-list">
+        <li><a href="/" class="ol-nav-link">Inicio</a></li>
+        <li class="ol-has-dropdown">
+          <a href="/servicios/" class="ol-nav-link">Servicios
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true" focusable="false"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/servicios/desarrollo-web/" class="ol-dropdown-link">Desarrollo Web</a></li>
+              <li><a href="/servicios/tiendas-en-linea/" class="ol-dropdown-link">Tiendas en Línea</a></li>
+              <li><a href="/servicios/landing-pages/" class="ol-dropdown-link">Landing Pages</a></li>
+              <li><a href="/servicios/rediseno-web/" class="ol-dropdown-link">Rediseño Web</a></li>
+              <li><a href="/servicios/paginas-en-renta/" class="ol-dropdown-link">Páginas en Renta</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="ol-has-dropdown">
+          <a href="/portafolio/" class="ol-nav-link active">Portafolio
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true" focusable="false"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a></li>
+              <li class="ol-has-subdrop">
+                <a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link ol-dropdown-parent">Equipos Contra Incendios</a>
+                <div class="ol-subdrop">
+                  <ul>
+                    <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link">Gama de México</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link">MESECI</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link">LGA Contraincendios</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-dropdown-link">MANEXT</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-dropdown-link">BOMBERO.MX</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-dropdown-link">ProyectoRed</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/directorio/" class="ol-dropdown-link">Directorio México</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="ol-has-subdrop">
+                <a href="/portafolio/seguridad-privada/" class="ol-dropdown-link ol-dropdown-parent">Seguridad Privada</a>
+                <div class="ol-subdrop">
+                  <ul>
+                    <li><a href="/portafolio/seguridad-privada/origins/" class="ol-dropdown-link">ORIGINS Private Security</a></li>
+                    <li><a href="/portafolio/seguridad-privada/seprico/" class="ol-dropdown-link">SEPRICO</a></li>
+                    <li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-dropdown-link">SeguridadPrivadaMX</a></li>
+                    <li><a href="/portafolio/seguridad-privada/seguridadeventos/" class="ol-dropdown-link">SeguridadEventos</a></li>
+                    <li><a href="/portafolio/seguridad-privada/gupri/" class="ol-dropdown-link">GUPRI</a></li>
+                    <li><a href="/portafolio/seguridad-privada/directorio/" class="ol-dropdown-link">Directorio México</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="/nosotros/" class="ol-nav-link">Nosotros</a></li>
+        <li><a href="/blog/" class="ol-nav-link">Blog</a></li>
+        <li><a href="/contacto/" class="ol-nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="/cotizar/" class="ol-header-cta">Cotizar proyecto →</a>
+    <button class="ol-menu-toggle" id="ol-menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+    </button>
+  </div>
+</header>
+
+<div class="ol-mobile-overlay" id="ol-mobile-overlay"></div>
+<nav class="ol-mobile-panel" id="ol-mobile-panel" aria-label="Menú móvil">
+  <div class="ol-mobile-header">
+    <a href="/" class="ol-mobile-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
+    </a>
+    <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú">
+      <svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true" focusable="false"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <ul class="ol-mobile-nav">
+    <li><a href="/" class="ol-mobile-link">Inicio</a></li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu><span>Servicios</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none" aria-hidden="true" focusable="false"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/servicios/desarrollo-web/" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
+        <li><a href="/servicios/paginas-en-renta/" class="ol-mobile-link ol-mobile-sublink">Páginas en Renta</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu><span>Portafolio</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none" aria-hidden="true" focusable="false"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/portafolio/" class="ol-mobile-link ol-mobile-sublink">Todo el Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/" class="ol-mobile-link ol-mobile-sublink">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/directorio/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Directorio México</a></li>
+        <li><a href="/portafolio/seguridad-privada/" class="ol-mobile-link ol-mobile-sublink">Seguridad Privada</a></li>
+        <li><a href="/portafolio/seguridad-privada/origins/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— ORIGINS Private Security</a></li>
+        <li><a href="/portafolio/seguridad-privada/seprico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SEPRICO</a></li>
+        <li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SeguridadPrivadaMX</a></li>
+        <li><a href="/portafolio/seguridad-privada/seguridadeventos/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SeguridadEventos</a></li>
+        <li><a href="/portafolio/seguridad-privada/gupri/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— GUPRI</a></li>
+        <li><a href="/portafolio/seguridad-privada/directorio/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Directorio México</a></li>
+      </ul>
+    </li>
+    <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
+    <li><a href="/blog/" class="ol-mobile-link">Blog</a></li>
+    <li><a href="/contacto/" class="ol-mobile-link">Contacto</a></li>
+  </ul>
+  <div class="ol-mobile-footer">
+    <a href="/cotizar/" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a>
+  </div>
+</nav>
+
+<!-- BREADCRUMB -->
+<nav class="ol-bc-wrap" aria-label="Migas de pan">
+  <div class="ol-bc">
+    <ol class="ol-bc-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/" itemprop="item" class="ol-bc-home"><span itemprop="name">Inicio</span></a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/portafolio/" itemprop="item"><span itemprop="name">Portafolio</span></a>
+        <meta itemprop="position" content="2" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/portafolio/seguridad-privada/" itemprop="item"><span itemprop="name">Seguridad Privada</span></a>
+        <meta itemprop="position" content="3" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item ol-bc-current" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name">Directorio México</span>
+        <meta itemprop="position" content="4" />
+      </li>
+    </ol>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- ============== PAGE HERO ============== -->
+  <section class="ol-page-hero">
+    <div class="ol-page-hero-inner">
+      <div class="ol-page-hero-grid">
+        <div class="ol-page-hero-left">
+          <span class="ol-eyebrow">Directorio · Seguridad Privada · México</span>
+          <h1 class="ol-page-hero-title">Un espacio para las empresas de seguridad privada de México.</h1>
+          <p class="ol-page-hero-sub">Negocios locales que protegen condominios, empresas y comunidades todos los días, con perfil verificado en Google Business. Aquí los reconocemos y les damos un lugar en internet.</p>
+        </div>
+        <div class="ol-page-hero-right">
+          <p class="ol-page-hero-copy">Hay decenas de empresas de seguridad privada en México —guardias intramuros, custodia, vigilancia corporativa— que trabajan todos los días por la tranquilidad de sus clientes. Los encuentran por recomendación y por su perfil en Google Business, pero muchas todavía no tienen un sitio propio donde contar quiénes son.</p>
+          <p class="ol-page-hero-copy">Este directorio reúne a algunas de ellas para darles un espacio. Cada empresa aquí listada ya tiene lo más valioso: un negocio en operación, clientes que confían y reseñas reales. Nuestra forma de reconocerlo es darles visibilidad y, a quien lo desee, acompañarla a tener su propia presencia en internet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== STATS BAR ============== -->
+  <div class="ol-dir-stats">
+    <div class="ol-dir-stats-inner">
+      <div class="ol-dir-stat">
+        <span class="ol-dir-stat-num" id="js-total">10</span>
+        <span class="ol-dir-stat-label">empresas<br>listadas</span>
+      </div>
+      <div class="ol-dir-stat-sep"></div>
+      <div class="ol-dir-stat">
+        <span class="ol-dir-stat-num">100%</span>
+        <span class="ol-dir-stat-label">perfil verificado<br>en Google Business</span>
+      </div>
+      <div class="ol-dir-stat-sep"></div>
+      <div class="ol-dir-stat">
+        <span class="ol-dir-stat-num">MX</span>
+        <span class="ol-dir-stat-label">CDMX y<br>Edo. de México</span>
+      </div>
+      <div class="ol-dir-stat-sep"></div>
+      <div class="ol-dir-stat">
+        <span class="ol-dir-stat-num">3</span>
+        <span class="ol-dir-stat-label">tipos de<br>servicio</span>
+      </div>
+      <span class="ol-dir-stats-note">Actualizado junio 2026 · Fuente: Google Business / Google Maps</span>
+    </div>
+  </div>
+
+  <!-- ============== FILTERS ============== -->
+  <div class="ol-dir-filters-wrap">
+    <div class="ol-dir-filters-inner">
+      <span class="ol-dir-filter-label">Servicio:</span>
+      <div class="ol-dir-filter-chips" id="js-tipo-chips">
+        <button class="ol-dir-chip active" data-tipo="todos">Todos</button>
+        <button class="ol-dir-chip" data-tipo="guardias">Guardias</button>
+        <button class="ol-dir-chip" data-tipo="corporativa">Corporativa</button>
+        <button class="ol-dir-chip" data-tipo="custodia">Custodia</button>
+      </div>
+      <div class="ol-dir-filter-sep"></div>
+      <span class="ol-dir-filter-label">Zona:</span>
+      <div class="ol-dir-filter-chips" id="js-zona-chips">
+        <button class="ol-dir-chip active" data-zona="todas">Todas</button>
+        <button class="ol-dir-chip" data-zona="norte">Norte CDMX</button>
+        <button class="ol-dir-chip" data-zona="oriente">Oriente CDMX</button>
+        <button class="ol-dir-chip" data-zona="sur">Sur CDMX</button>
+        <button class="ol-dir-chip" data-zona="edomex">Edo. de México</button>
+      </div>
+      <span class="ol-dir-count-badge"><strong id="js-visible-count">10</strong> empresas</span>
+    </div>
+  </div>
+
+  <!-- ============== DIRECTORY ============== -->
+  <section class="ol-dir-section">
+    <div class="ol-dir-inner">
+      <div class="ol-dir-layout">
+
+        <!-- MAIN -->
+        <div class="ol-dir-main">
+          <div class="ol-dir-grid" id="js-dir-grid">
+
+            <!-- 01 ARMASEK -->
+            <article class="ol-dir-card" data-tipo="corporativa" data-zona="edomex">
+              <div class="ol-dir-prev">
+                <div class="ol-dir-prev-badges">
+                  <span class="ol-dir-badge-gb"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Business</span>
+                  <span class="ol-dir-badge-noweb">Sin sitio web</span>
+                </div>
+                <div class="ol-dir-mk" style="--mk-ac:#C9A84C">
+                  <div class="ol-dir-mk-bar"><i></i><i></i><i></i><span class="ol-dir-mk-url">armasek.mx</span></div>
+                  <div class="ol-dir-mk-view">
+                    <div class="ol-dir-mk-nav"><span class="ol-dir-mk-logo">ARMASEK</span><span class="ol-dir-mk-pill">Cotizar</span></div>
+                    <div class="ol-dir-mk-eyebrow">Seguridad privada · Edo. de México</div>
+                    <div class="ol-dir-mk-h">Protección <span>integral</span> para tu empresa</div>
+                    <div class="ol-dir-mk-chips"><span class="on">Corporativa</span><span>Industrial</span><span>Patrimonial</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="ol-dir-body">
+                <div class="ol-dir-meta-top"><span class="ol-dir-num">01 — Nezahualcóyotl</span><span class="ol-dir-tipo-tag">Corporativa</span></div>
+                <h2 class="ol-dir-name"><a href="/portafolio/seguridad-privada/directorio/armasek/" style="color:inherit;text-decoration:none;">Armasek</a></h2>
+                <span class="ol-dir-rating"><span class="ol-dir-stars">★★★★★</span> <b>4.8</b> <span class="ol-dir-rev">· 38 reseñas en Google</span></span>
+                <ul class="ol-dir-data">
+                  <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Boulevard de los Continentes 118-A, Nezahualcóyotl</li>
+                  <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+525626653504">56 2665 3504</a></li>
+                </ul>
+                <a href="/portafolio/seguridad-privada/directorio/armasek/" class="ol-dir-cta">Ver perfil completo →</a>
+              </div>
+            </article>
+
+            <!-- 02 GIF SEGURIDAD PRIVADA -->
+            <article class="ol-dir-card" data-tipo="guardias" data-zona="oriente">
+              <div class="ol-dir-prev">
+                <div class="ol-dir-prev-badges">
+                  <span class="ol-dir-badge-gb"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Business</span>
+                  <span class="ol-dir-badge-noweb">Sin sitio web</span>
+                </div>
+                <div class="ol-dir-mk" style="--mk-ac:#C9A84C">
+                  <div class="ol-dir-mk-bar"><i></i><i></i><i></i><span class="ol-dir-mk-url">gif-seguridad.mx</span></div>
+                  <div class="ol-dir-mk-view">
+                    <div class="ol-dir-mk-nav"><span class="ol-dir-mk-logo">GIF Seguridad</span><span class="ol-dir-mk-pill">Cotizar</span></div>
+                    <div class="ol-dir-mk-eyebrow">Seguridad privada · CDMX</div>
+                    <div class="ol-dir-mk-h">Vigilancia <span>profesional</span> 24/7</div>
+                    <div class="ol-dir-mk-chips"><span class="on">Guardias</span><span>Vigilancia</span><span>Control de acceso</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="ol-dir-body">
+                <div class="ol-dir-meta-top"><span class="ol-dir-num">02 — Oriente CDMX</span><span class="ol-dir-tipo-tag">Guardias</span></div>
+                <h2 class="ol-dir-name"><a href="/portafolio/seguridad-privada/directorio/gif-seguridad/" style="color:inherit;text-decoration:none;">GIF Seguridad Privada</a></h2>
+                <span class="ol-dir-rating"><span class="ol-dir-stars">★★★★</span> <b>3.7</b> <span class="ol-dir-rev">· 204 reseñas en Google</span></span>
+                <ul class="ol-dir-data">
+                  <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Sur 71-A 203, Ciudad de México</li>
+                  <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+525571590390">55 7159 0390</a></li>
+                </ul>
+                <a href="/portafolio/seguridad-privada/directorio/gif-seguridad/" class="ol-dir-cta">Ver perfil completo →</a>
+              </div>
+            </article>
+
+            <!-- 03 TCPS -->
+            <article class="ol-dir-card" data-tipo="guardias" data-zona="oriente">
+              <div class="ol-dir-prev">
+                <div class="ol-dir-prev-badges">
+                  <span class="ol-dir-badge-gb"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Business</span>
+                  <span class="ol-dir-badge-noweb">Sin sitio web</span>
+                </div>
+                <div class="ol-dir-mk" style="--mk-ac:#C9A84C">
+                  <div class="ol-dir-mk-bar"><i></i><i></i><i></i><span class="ol-dir-mk-url">tcps.mx</span></div>
+                  <div class="ol-dir-mk-view">
+                    <div class="ol-dir-mk-nav"><span class="ol-dir-mk-logo">TCPS</span><span class="ol-dir-mk-pill">Cotizar</span></div>
+                    <div class="ol-dir-mk-eyebrow">Seguridad privada · Iztapalapa</div>
+                    <div class="ol-dir-mk-h">Guardias <span>capacitados</span> para tu giro</div>
+                    <div class="ol-dir-mk-chips"><span class="on">Guardias</span><span>Vigilancia</span><span>Residencial</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="ol-dir-body">
+                <div class="ol-dir-meta-top"><span class="ol-dir-num">03 — Iztapalapa</span><span class="ol-dir-tipo-tag">Guardias</span></div>
+                <h2 class="ol-dir-name"><a href="/portafolio/seguridad-privada/directorio/tcps/" style="color:inherit;text-decoration:none;">TCPS Seguridad Privada</a></h2>
+                <span class="ol-dir-rating"><span class="ol-dir-stars">★★★★</span> <b>4.1</b> <span class="ol-dir-rev">· 41 reseñas en Google</span></span>
+                <ul class="ol-dir-data">
+                  <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Aries 34, Iztapalapa, CDMX</li>
+                  <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+525563057982">55 6305 7982</a></li>
+                </ul>
+                <a href="/portafolio/seguridad-privada/directorio/tcps/" class="ol-dir-cta">Ver perfil completo →</a>
+              </div>
+            </article>
+
+            <!-- 04 AGAETRA -->
+            <article class="ol-dir-card" data-tipo="guardias" data-zona="norte">
+              <div class="ol-dir-prev">
+                <div class="ol-dir-prev-badges">
+                  <span class="ol-dir-badge-gb"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Business</span>
+                  <span class="ol-dir-badge-noweb">Sin sitio web</span>
+                </div>
+                <div class="ol-dir-mk" style="--mk-ac:#C9A84C">
+                  <div class="ol-dir-mk-bar"><i></i><i></i><i></i><span class="ol-dir-mk-url">agaetra.mx</span></div>
+                  <div class="ol-dir-mk-view">
+                    <div class="ol-dir-mk-nav"><span class="ol-dir-mk-logo">Agaetra Security</span><span class="ol-dir-mk-pill">Cotizar</span></div>
+                    <div class="ol-dir-mk-eyebrow">Seguridad privada · GAM, CDMX</div>
+                    <div class="ol-dir-mk-h">Guardias de <span>confianza</span> para tu negocio</div>
+                    <div class="ol-dir-mk-chips"><span class="on">Guardias</span><span>Vigilancia</span><span>Comercial</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="ol-dir-body">
+                <div class="ol-dir-meta-top"><span class="ol-dir-num">04 — Gustavo A. Madero</span><span class="ol-dir-tipo-tag">Guardias</span></div>
+                <h2 class="ol-dir-name"><a href="/portafolio/seguridad-privada/directorio/agaetra/" style="color:inherit;text-decoration:none;">Agaetra Security</a></h2>
+                <span class="ol-dir-rating"><span class="ol-dir-stars">★★★★★</span> <b>4.5</b> <span class="ol-dir-rev">· 14 reseñas en Google</span></span>
+                <ul class="ol-dir-data">
+                  <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Tecpan de Galeana Mz 154 Lt 24, GAM</li>
+                  <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+525559291369">55 5929 1369</a></li>
+                </ul>
+                <a href="/portafolio/seguridad-privada/directorio/agaetra/" class="ol-dir-cta">Ver perfil completo →</a>
+              </div>
+            </article>
+
+            <!-- 05 PROSECON -->
+            <article class="ol-dir-card" data-tipo="corporativa" data-zona="norte">
+              <div class="ol-dir-prev">
+                <div class="ol-dir-prev-badges">
+                  <span class="ol-dir-badge-gb"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Business</span>
+                  <span class="ol-dir-badge-noweb">Sin sitio web</span>
+                </div>
+                <div class="ol-dir-mk" style="--mk-ac:#C9A84C">
+                  <div class="ol-dir-mk-bar"><i></i><i></i><i></i><span class="ol-dir-mk-url">prosecon.mx</span></div>
+                  <div class="ol-dir-mk-view">
+                    <div class="ol-dir-mk-nav"><span class="ol-dir-mk-logo">Prosecon</span><span class="ol-dir-mk-pill">Cotizar</span></div>
+                    <div class="ol-dir-mk-eyebrow">Seguridad privada · GAM, CDMX</div>
+                    <div class="ol-dir-mk-h">Seguridad <span>empresarial</span> a la medida</div>
+                    <div class="ol-dir-mk-chips"><span class="on">Corporativa</span><span>Guardias</span><span>Patrimonial</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="ol-dir-body">
+                <div class="ol-dir-meta-top"><span class="ol-dir-num">05 — Gustavo A. Madero</span><span class="ol-dir-tipo-tag">Corporativa</span></div>
+                <h2 class="ol-dir-name">Prosecon Seguridad Privada</h2>
+                <span class="ol-dir-rating"><span class="ol-dir-stars">★★★★</span> <b>3.9</b> <span class="ol-dir-rev">· 23 reseñas en Google</span></span>
+                <ul class="ol-dir-data">
+                  <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Av. Francisco Morazán 900, GAM, CDMX</li>
+                  <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+525521583321">55 2158 3321</a></li>
+                </ul>
+                <a href="https://www.google.com/maps/search/Prosecon+Seguridad+Privada+Gustavo+A+Madero" target="_blank" rel="noopener noreferrer" class="ol-dir-cta">Ver en Google Maps →</a>
+              </div>
+            </article>
+
+            <!-- 06 TRUST GROUP -->
+            <article class="ol-dir-card" data-tipo="corporativa" data-zona="edomex">
+              <div class="ol-dir-prev">
+                <div class="ol-dir-prev-badges">
+                  <span class="ol-dir-badge-gb"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Business</span>
+                  <span class="ol-dir-badge-noweb">Sin sitio web</span>
+                </div>
+                <div class="ol-dir-mk" style="--mk-ac:#C9A84C">
+                  <div class="ol-dir-mk-bar"><i></i><i></i><i></i><span class="ol-dir-mk-url">trustgroup.mx</span></div>
+                  <div class="ol-dir-mk-view">
+                    <div class="ol-dir-mk-nav"><span class="ol-dir-mk-logo">Trust Group</span><span class="ol-dir-mk-pill">Cotizar</span></div>
+                    <div class="ol-dir-mk-eyebrow">Seguridad privada · Ecatepec</div>
+                    <div class="ol-dir-mk-h">Confianza que <span>protege</span> tu operación</div>
+                    <div class="ol-dir-mk-chips"><span class="on">Corporativa</span><span>Industrial</span><span>Vigilancia</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="ol-dir-body">
+                <div class="ol-dir-meta-top"><span class="ol-dir-num">06 — Ecatepec</span><span class="ol-dir-tipo-tag">Corporativa</span></div>
+                <h2 class="ol-dir-name">Trust Group</h2>
+                <span class="ol-dir-rating"><span class="ol-dir-stars">★★★★</span> <b>3.8</b> <span class="ol-dir-rev">· 19 reseñas en Google</span></span>
+                <ul class="ol-dir-data">
+                  <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Manuel Ávila Camacho 15, Ecatepec</li>
+                  <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+525521671231">55 2167 1231</a></li>
+                </ul>
+                <a href="https://www.google.com/maps/search/Trust+Group+seguridad+Ecatepec" target="_blank" rel="noopener noreferrer" class="ol-dir-cta">Ver en Google Maps →</a>
+              </div>
+            </article>
+
+            <!-- 07 AMERICA -->
+            <article class="ol-dir-card" data-tipo="guardias" data-zona="norte">
+              <div class="ol-dir-prev">
+                <div class="ol-dir-prev-badges">
+                  <span class="ol-dir-badge-gb"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Business</span>
+                  <span class="ol-dir-badge-noweb">Sin sitio web</span>
+                </div>
+                <div class="ol-dir-mk" style="--mk-ac:#C9A84C">
+                  <div class="ol-dir-mk-bar"><i></i><i></i><i></i><span class="ol-dir-mk-url">america-seguridad.mx</span></div>
+                  <div class="ol-dir-mk-view">
+                    <div class="ol-dir-mk-nav"><span class="ol-dir-mk-logo">America Seguridad</span><span class="ol-dir-mk-pill">Cotizar</span></div>
+                    <div class="ol-dir-mk-eyebrow">Seguridad privada · GAM, CDMX</div>
+                    <div class="ol-dir-mk-h">Guardias que <span>cuidan</span> lo que importa</div>
+                    <div class="ol-dir-mk-chips"><span class="on">Guardias</span><span>Vigilancia</span><span>Residencial</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="ol-dir-body">
+                <div class="ol-dir-meta-top"><span class="ol-dir-num">07 — Gustavo A. Madero</span><span class="ol-dir-tipo-tag">Guardias</span></div>
+                <h2 class="ol-dir-name">America Seguridad Privada</h2>
+                <span class="ol-dir-rating"><span class="ol-dir-stars">★★★★★</span> <b>4.8</b> <span class="ol-dir-rev">· 4 reseñas en Google</span></span>
+                <ul class="ol-dir-data">
+                  <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Cabo Finisterre 16, GAM, CDMX</li>
+                  <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+525557460599">55 5746 0599</a></li>
+                </ul>
+                <a href="https://www.google.com/maps/search/America+seguridad+privada+Gustavo+A+Madero" target="_blank" rel="noopener noreferrer" class="ol-dir-cta">Ver en Google Maps →</a>
+              </div>
+            </article>
+
+            <!-- 08 APSP -->
+            <article class="ol-dir-card" data-tipo="guardias" data-zona="edomex">
+              <div class="ol-dir-prev">
+                <div class="ol-dir-prev-badges">
+                  <span class="ol-dir-badge-gb"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Business</span>
+                  <span class="ol-dir-badge-noweb">Sin sitio web</span>
+                </div>
+                <div class="ol-dir-mk" style="--mk-ac:#C9A84C">
+                  <div class="ol-dir-mk-bar"><i></i><i></i><i></i><span class="ol-dir-mk-url">apsp-security.mx</span></div>
+                  <div class="ol-dir-mk-view">
+                    <div class="ol-dir-mk-nav"><span class="ol-dir-mk-logo">APSP Security</span><span class="ol-dir-mk-pill">Cotizar</span></div>
+                    <div class="ol-dir-mk-eyebrow">Seguridad privada · Ecatepec</div>
+                    <div class="ol-dir-mk-h">Vigilancia <span>cercana</span> y responsable</div>
+                    <div class="ol-dir-mk-chips"><span class="on">Guardias</span><span>Vigilancia</span><span>Comercial</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="ol-dir-body">
+                <div class="ol-dir-meta-top"><span class="ol-dir-num">08 — Ecatepec</span><span class="ol-dir-tipo-tag">Guardias</span></div>
+                <h2 class="ol-dir-name">APSP Security</h2>
+                <span class="ol-dir-rating"><span class="ol-dir-stars">★★★★</span> <b>4.0</b> <span class="ol-dir-rev">· 5 reseñas en Google</span></span>
+                <ul class="ol-dir-data">
+                  <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Plutarco Elías Calles Mz 1 Lt 57, Ecatepec</li>
+                  <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+525570906209">55 7090 6209</a></li>
+                </ul>
+                <a href="https://www.google.com/maps/search/APSP+Security+seguridad+privada+Ecatepec" target="_blank" rel="noopener noreferrer" class="ol-dir-cta">Ver en Google Maps →</a>
+              </div>
+            </article>
+
+            <!-- 09 AAR -->
+            <article class="ol-dir-card" data-tipo="guardias" data-zona="sur">
+              <div class="ol-dir-prev">
+                <div class="ol-dir-prev-badges">
+                  <span class="ol-dir-badge-gb"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Business</span>
+                  <span class="ol-dir-badge-noweb">Sin sitio web</span>
+                </div>
+                <div class="ol-dir-mk" style="--mk-ac:#C9A84C">
+                  <div class="ol-dir-mk-bar"><i></i><i></i><i></i><span class="ol-dir-mk-url">aar-seguridad.mx</span></div>
+                  <div class="ol-dir-mk-view">
+                    <div class="ol-dir-mk-nav"><span class="ol-dir-mk-logo">Corporativo AAR</span><span class="ol-dir-mk-pill">Cotizar</span></div>
+                    <div class="ol-dir-mk-eyebrow">Seguridad privada · Coyoacán</div>
+                    <div class="ol-dir-mk-h">Guardias <span>24 horas</span> para tu comunidad</div>
+                    <div class="ol-dir-mk-chips"><span class="on">Guardias</span><span>Vigilancia</span><span>Residencial</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="ol-dir-body">
+                <div class="ol-dir-meta-top"><span class="ol-dir-num">09 — Coyoacán</span><span class="ol-dir-tipo-tag">Guardias</span></div>
+                <h2 class="ol-dir-name">Corporativo AAR Seguridad Privada</h2>
+                <span class="ol-dir-rating"><span class="ol-dir-stars">★★★★★</span> <b>5.0</b> <span class="ol-dir-rev">· 2 reseñas en Google</span></span>
+                <ul class="ol-dir-data">
+                  <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Calz. de Tlalpan 2268 int. 4, Coyoacán</li>
+                  <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+525551601232">55 5160 1232</a></li>
+                </ul>
+                <a href="https://www.google.com/maps/search/Corporativo+AAR+Seguridad+Privada+Coyoacan" target="_blank" rel="noopener noreferrer" class="ol-dir-cta">Ver en Google Maps →</a>
+              </div>
+            </article>
+
+            <!-- 10 SISTEMAS COORDINADOS -->
+            <article class="ol-dir-card" data-tipo="custodia" data-zona="sur">
+              <div class="ol-dir-prev">
+                <div class="ol-dir-prev-badges">
+                  <span class="ol-dir-badge-gb"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Business</span>
+                  <span class="ol-dir-badge-noweb">Sin sitio web</span>
+                </div>
+                <div class="ol-dir-mk" style="--mk-ac:#C9A84C">
+                  <div class="ol-dir-mk-bar"><i></i><i></i><i></i><span class="ol-dir-mk-url">scsp.mx</span></div>
+                  <div class="ol-dir-mk-view">
+                    <div class="ol-dir-mk-nav"><span class="ol-dir-mk-logo">Sist. Coordinados</span><span class="ol-dir-mk-pill">Cotizar</span></div>
+                    <div class="ol-dir-mk-eyebrow">Seguridad privada · Coyoacán</div>
+                    <div class="ol-dir-mk-h">Custodia y <span>traslado</span> seguro</div>
+                    <div class="ol-dir-mk-chips"><span class="on">Custodia</span><span>Traslados</span><span>Escolta</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="ol-dir-body">
+                <div class="ol-dir-meta-top"><span class="ol-dir-num">10 — Coyoacán</span><span class="ol-dir-tipo-tag">Custodia</span></div>
+                <h2 class="ol-dir-name">Sistemas Coordinados de Seguridad Privada</h2>
+                <span class="ol-dir-rating"><span class="ol-dir-stars">★★★★</span> <b>3.7</b> <span class="ol-dir-rev">· 3 reseñas en Google</span></span>
+                <ul class="ol-dir-data">
+                  <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Calz. Taxqueña 1963 int. 202, Coyoacán</li>
+                  <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+525556413622">55 5641 3622</a></li>
+                </ul>
+                <a href="https://www.google.com/maps/search/Sistemas+Coordinados+de+Seguridad+Privada+Coyoacan" target="_blank" rel="noopener noreferrer" class="ol-dir-cta">Ver en Google Maps →</a>
+              </div>
+            </article>
+
+            <div class="ol-dir-empty" id="js-empty">No hay empresas que coincidan con los filtros seleccionados.</div>
+
+          </div>
+
+          <!-- CALLOUT -->
+          <div class="ol-dir-callout">
+            <div>
+              <p class="ol-dir-callout-eyebrow">¿Tu empresa aparece aquí?</p>
+              <h2 class="ol-dir-callout-title">Tienes el negocio. Te ayudamos con el lugar en internet.</h2>
+              <p class="ol-dir-callout-desc">Si tu empresa de seguridad privada ya tiene clientes y reseñas reales pero todavía no cuenta con un sitio propio, podemos construirlo: una página profesional que cuente quién eres, qué proteges y por qué confiar en ti. El perfil de Google Business te encuentra; el sitio te diferencia.</p>
+            </div>
+            <div class="ol-dir-callout-actions">
+              <a href="https://wa.me/525547868402?text=Hola%2C%20vi%20el%20directorio%20de%20seguridad%20privada%20y%20me%20interesa%20un%20sitio%20web%20para%20mi%20empresa." target="_blank" rel="noopener noreferrer" class="ol-dir-callout-btn ol-dir-callout-btn-primary">Escríbenos por WhatsApp</a>
+              <a href="/contacto/" class="ol-dir-callout-btn ol-dir-callout-btn-ghost">Formulario de contacto</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside class="ol-dir-sidebar">
+          <div class="ol-dir-sb-card">
+            <span class="ol-dir-sb-label">Cómo funciona</span>
+            <ol class="ol-dir-sb-steps">
+              <li><b>Apareces aquí.</b> Damos visibilidad a tu negocio con tus datos de Google Business.</li>
+              <li><b>Lo revisamos juntos.</b> Una llamada corta para entender qué proteges y a quién.</li>
+              <li><b>Tienes tu sitio.</b> Construimos tu página profesional y queda en tus manos.</li>
+            </ol>
+          </div>
+          <div class="ol-dir-sb-cta">
+            <span class="ol-dir-sb-cta-eyebrow">OrigenLab</span>
+            <p class="ol-dir-sb-cta-title">Da el paso de Google Business a tu propio sitio web.</p>
+            <a href="/cotizar/" class="ol-dir-sb-cta-btn">Iniciar mi proyecto →</a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== WHY ============== -->
+  <section class="ol-dir-why">
+    <div class="ol-dir-why-inner">
+      <span class="ol-eyebrow">Por qué un sitio propio</span>
+      <h2 class="ol-page-hero-title" style="max-width:34ch;">El perfil de Google te encuentra. El sitio te hace elegir.</h2>
+      <div class="ol-dir-why-grid">
+        <div class="ol-dir-why-card">
+          <p class="ol-dir-why-num">01 — Confianza</p>
+          <h3 class="ol-dir-why-title">La seguridad se contrata por confianza</h3>
+          <p class="ol-dir-why-desc">Un comité o una empresa que evalúa proveedores de seguridad necesita ver protocolos, cobertura y respaldo antes de decidir. Un perfil de mapa no alcanza para transmitir eso; un sitio propio sí cuenta tu historia completa.</p>
+        </div>
+        <div class="ol-dir-why-card">
+          <p class="ol-dir-why-num">02 — Diferenciación</p>
+          <h3 class="ol-dir-why-title">Te distingue de la competencia</h3>
+          <p class="ol-dir-why-desc">En seguridad privada casi todos ofrecen "guardias y vigilancia". Tu sitio es donde explicas qué te hace distinto: tipo de comunidades que proteges, capacitación, supervisión y la atención que das a cada cliente.</p>
+        </div>
+        <div class="ol-dir-why-card">
+          <p class="ol-dir-why-num">03 — Control</p>
+          <h3 class="ol-dir-why-title">Es tuyo, no de una plataforma</h3>
+          <p class="ol-dir-why-desc">Las reseñas y el perfil viven en Google. Tu sitio vive contigo: tu dominio, tu mensaje, tus formularios de contacto directo. Es el activo digital que sí controlas y que crece con tu operación.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FAQ + FORM ============== -->
+  <section class="ol-faq-section">
+    <div class="ol-faq-inner">
+      <div class="ol-faq-grid">
+
+        <div>
+          <span class="ol-eyebrow">Preguntas frecuentes</span>
+          <h2 class="ol-faq-title">Sobre aparecer en el directorio y tener tu sitio</h2>
+
+          <div class="ol-faq-list" id="ol-faq-list-dir">
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="d0">
+                ¿Cuánto cuesta aparecer en este directorio?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true" focusable="false"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-d0">
+                <p class="ol-faq-answer-inner">Estar listado aquí es nuestra forma de reconocer a los negocios locales de seguridad privada con trayectoria. Si quieres que actualicemos tus datos o que tu empresa aparezca, escríbenos y con gusto lo vemos.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="d1">
+                Ya tengo perfil de Google Business, ¿para qué un sitio?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true" focusable="false"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-d1">
+                <p class="ol-faq-answer-inner">El perfil de Google es excelente para que te encuentren, pero es limitado para contar quién eres. Un sitio propio te da espacio para explicar tus servicios, mostrar tu cobertura, tus protocolos y recibir solicitudes directas — sin competir con los anuncios de otras empresas en el mismo mapa.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="d2">
+                ¿Pueden hacer un sitio para una empresa de seguridad pequeña?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true" focusable="false"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-d2">
+                <p class="ol-faq-answer-inner">Sí. Trabajamos con empresas de todos los tamaños del sector: guardias intramuros, vigilancia corporativa, custodia y traslados. Construimos un sitio a la medida de tu operación, sin paquetes genéricos.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="d3">
+                ¿El sitio funciona bien en celular?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true" focusable="false"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-d3">
+                <p class="ol-faq-answer-inner">Todos los sitios que construimos son completamente responsivos y optimizados para móvil. El administrador, el comité o el cliente que llega desde su celular tiene la misma experiencia que desde escritorio.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="d4">
+                ¿Incluyen formularios de contacto o cotización?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true" focusable="false"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-d4">
+                <p class="ol-faq-answer-inner">Sí. Diseñamos formularios B2B pensados para el sector: solicitud de cotización, evaluación de seguridad y contacto corporativo. Conectados a WhatsApp, correo o tu CRM preferido para que las solicitudes lleguen accionables.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="d5">
+                ¿Cómo inicio el proceso?
+                <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true" focusable="false"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-d5">
+                <p class="ol-faq-answer-inner">Escríbenos por WhatsApp o por el formulario de aquí al lado. Te respondemos con una llamada corta de descubrimiento, sin compromiso. Si hay fit, te entregamos una propuesta detallada por escrito con alcance, entregables y calendario comprometido desde el inicio.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- WhatsApp form -->
+        <div>
+          <div class="ol-faq-form-wrap">
+            <span class="ol-faq-form-badge">
+              <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true" focusable="false"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg>
+              Contáctanos por WhatsApp
+            </span>
+            <h3 class="ol-faq-form-title">¿Tu empresa de seguridad<br>necesita su lugar en internet?</h3>
+            <p class="ol-faq-form-sub">Cuéntanos brevemente qué hace tu empresa y te respondemos con una propuesta clara, por escrito y sin compromiso.</p>
+
+            <form class="ol-faq-form" id="ol-wa-form-dir" novalidate>
+              <div class="ol-faq-form-row">
+                <div class="ol-faq-field">
+                  <label for="dir-nombre">Tu nombre</label>
+                  <input type="text" id="dir-nombre" placeholder="Ej. Ramón Torres" autocomplete="given-name">
+                </div>
+                <div class="ol-faq-field">
+                  <label for="dir-empresa">Empresa</label>
+                  <input type="text" id="dir-empresa" placeholder="Nombre de tu empresa">
+                </div>
+              </div>
+              <div class="ol-faq-field">
+                <label for="dir-tipo">¿Qué servicio ofrece tu empresa?</label>
+                <select id="dir-tipo">
+                  <option value="" disabled selected>Selecciona una opción</option>
+                  <option value="Guardias intramuros y vigilancia">Guardias intramuros y vigilancia</option>
+                  <option value="Seguridad corporativa e industrial">Seguridad corporativa e industrial</option>
+                  <option value="Seguridad residencial y para condominios">Seguridad residencial y para condominios</option>
+                  <option value="Custodia y traslado de valores">Custodia y traslado de valores</option>
+                  <option value="Escolta y protección ejecutiva">Escolta y protección ejecutiva</option>
+                  <option value="Combinación de los anteriores">Combinación de los anteriores</option>
+                </select>
+              </div>
+              <div class="ol-faq-field">
+                <label for="dir-mensaje">¿Algo que quieras que sepamos?</label>
+                <textarea id="dir-mensaje" placeholder="Ej. Llevamos años operando, tenemos clientes pero ningún sitio propio en línea..."></textarea>
+              </div>
+              <button type="submit" class="ol-faq-submit">
+                <svg width="17" height="17" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true" focusable="false"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg>
+                Enviar por WhatsApp
+              </button>
+              <p class="ol-faq-form-note">Al enviar se abrirá WhatsApp con tu mensaje listo. Respondemos en menos de 24 h.</p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== QUICKNAV ============== -->
+  <div class="ol-quicknav">
+    <div class="ol-quicknav-inner">
+      <a href="/portafolio/seguridad-privada/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Casos del Sector</span>
+          <span class="ol-qn-sub">Seguridad privada en operación</span>
+        </div>
+      </a>
+      <a href="/portafolio/equipos-contra-incendios/directorio/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Directorio Incendios</span>
+          <span class="ol-qn-sub">Otro sector listado</span>
+        </div>
+      </a>
+      <a href="/portafolio/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Todo el Portafolio</span>
+          <span class="ol-qn-sub">Más casos por sector</span>
+        </div>
+      </a>
+      <a href="/servicios/desarrollo-web/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Sitios Corporativos</span>
+          <span class="ol-qn-sub">Diseño a medida</span>
+        </div>
+      </a>
+      <a href="/contacto/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Contacto</span>
+          <span class="ol-qn-sub">Escríbenos directo</span>
+        </div>
+      </a>
+      <a href="/nosotros/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Nosotros</span>
+          <span class="ol-qn-sub">Quiénes somos</span>
+        </div>
+      </a>
+      <a href="/cotizar/" class="ol-qn-item ol-qn-cta">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Iniciar Proyecto</span>
+          <span class="ol-qn-sub">Solicitar propuesta</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="ol-footer">
+  <div class="ol-footer-top">
+    <a href="/" class="ol-footer-logo">Origen<span class="ol-footer-logo-dot">.</span>Lab</a>
+    <p class="ol-footer-tagline">Agencia de desarrollo web en México.<br>Creamos sitios que generan resultados.</p>
+    <ul class="ol-footer-contact-list">
+      <li><a href="mailto:hola@origenlab.com" class="ol-fcl-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>hola@origenlab.com</a></li>
+      <li><a href="tel:+525547868402" class="ol-fcl-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+52 55 4786 8402</a></li>
+      <li><a href="https://wa.me/525547868402" target="_blank" rel="noopener noreferrer" class="ol-fcl-item ol-fcl-wa"><svg width="14" height="14" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true" focusable="false"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg>WhatsApp</a></li>
+      <li><span class="ol-fcl-item ol-fcl-static"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Ciudad de México, MX</span></li>
+    </ul>
+  </div>
+  <div class="ol-footer-links">
+    <div>
+      <p class="ol-footer-col-title">Servicios</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/servicios/desarrollo-web/">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/">Rediseño Web</a></li>
+        <li><a href="/servicios/paginas-en-renta/">Páginas en Renta</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Empresa</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/nosotros/">Nosotros</a></li>
+        <li><a href="/portafolio/">Portafolio</a></li>
+        <li><a href="/portafolio/seguridad-privada/">Seguridad Privada</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Contacto</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/contacto/">Formulario de contacto</a></li>
+        <li><a href="mailto:hola@origenlab.com">hola@origenlab.com</a></li>
+        <li><a href="tel:+525547868402">+52 55 4786 8402</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Legal</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/aviso-de-privacidad/">Aviso de privacidad</a></li>
+        <li><a href="/terminos/">Términos de servicio</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ol-footer-bottom">
+    <p class="ol-footer-copy">© 2026 OrigenLab. Todos los derechos reservados.</p>
+    <div class="ol-footer-legal">
+      <a href="/aviso-de-privacidad/">Privacidad</a>
+      <a href="/terminos/">Términos</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WA Bubble -->
+<a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20sitio%20web%20para%20mi%20empresa%20de%20seguridad%20privada%20en%20M%C3%A9xico." target="_blank" rel="noopener noreferrer" class="wa-bubble" aria-label="Contáctanos por WhatsApp">
+  <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff" aria-hidden="true" focusable="false"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 0 0 2.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0 0 16.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"></path></svg>
+</a>
+
+<!-- ============================================================
+     SCRIPTS — filtros + FAQ + WA form
+     ============================================================ -->
+<script>
+(function () {
+  /* ---- FILTERS ---- */
+  var cards = Array.from(document.querySelectorAll('#js-dir-grid .ol-dir-card'));
+  var tipoChips = document.querySelectorAll('#js-tipo-chips .ol-dir-chip');
+  var zonaChips = document.querySelectorAll('#js-zona-chips .ol-dir-chip');
+  var countBadge = document.getElementById('js-visible-count');
+  var emptyEl = document.getElementById('js-empty');
+
+  var activeTipo = 'todos';
+  var activeZona = 'todas';
+
+  function applyFilters() {
+    var visible = 0;
+    cards.forEach(function (card) {
+      var tipoData = card.getAttribute('data-tipo') || '';
+      var zonaData = card.getAttribute('data-zona') || '';
+      var tipoOk = activeTipo === 'todos' || tipoData.includes(activeTipo);
+      var zonaOk = activeZona === 'todas' || zonaData === activeZona;
+      if (tipoOk && zonaOk) { card.classList.remove('hidden'); visible++; }
+      else { card.classList.add('hidden'); }
+    });
+    countBadge.textContent = visible;
+    emptyEl.classList.toggle('visible', visible === 0);
+  }
+
+  tipoChips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      tipoChips.forEach(function (c) { c.classList.remove('active'); });
+      chip.classList.add('active');
+      activeTipo = chip.getAttribute('data-tipo');
+      applyFilters();
+    });
+  });
+
+  zonaChips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      zonaChips.forEach(function (c) { c.classList.remove('active'); });
+      chip.classList.add('active');
+      activeZona = chip.getAttribute('data-zona');
+      applyFilters();
+    });
+  });
+
+  /* ---- FAQ ---- */
+  var faqBtns = document.querySelectorAll('#ol-faq-list-dir .ol-faq-question');
+  faqBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var idx = btn.getAttribute('data-faq');
+      var answer = document.getElementById('faq-ans-' + idx);
+      var isOpen = btn.classList.contains('active');
+      faqBtns.forEach(function (b) {
+        b.classList.remove('active');
+        var a = document.getElementById('faq-ans-' + b.getAttribute('data-faq'));
+        if (a) a.style.maxHeight = null;
+      });
+      if (!isOpen && answer) {
+        btn.classList.add('active');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    });
+  });
+
+  /* ---- WA FORM ---- */
+  document.getElementById('ol-wa-form-dir').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var nombre  = document.getElementById('dir-nombre').value.trim();
+    var empresa = document.getElementById('dir-empresa').value.trim();
+    var tipo    = document.getElementById('dir-tipo').value;
+    var mensaje = document.getElementById('dir-mensaje').value.trim();
+    var partes  = ['Hola OrigenLab, vi el directorio de empresas de seguridad privada en México.'];
+    if (nombre)  partes.push('*Nombre:* ' + nombre);
+    if (empresa) partes.push('*Empresa:* ' + empresa);
+    if (tipo)    partes.push('*Servicio:* ' + tipo);
+    if (mensaje) partes.push('*Comentario:* ' + mensaje);
+    partes.push('Me gustaría saber más sobre tener mi sitio web. ¡Gracias!');
+    var url = 'https://wa.me/525547868402?text=' + encodeURIComponent(partes.join('\n'));
+    window.open(url, '_blank', 'noopener,noreferrer');
+  });
+
+})();
+</script>
+
+</body>
+</html>

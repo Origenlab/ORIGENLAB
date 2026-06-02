@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUPRI · Guardias privados certificados para condominios en México | OrigenLab</title>
+  <meta name="description" content="Caso de estudio del sitio de GUPRI: seguridad para condominios con 30+ años, cumplimiento legal (REPSE, IMSS, STPS) y respuesta en menos de 15 minutos.">
+  <link rel="canonical" href="https://origenlab.com/portafolio/seguridad-privada/gupri/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://origenlab.com/portafolio/seguridad-privada/gupri/">
+  <meta property="og:title" content="GUPRI · Guardias privados certificados para condominios en México | OrigenLab">
+  <meta property="og:description" content="Cómo construimos el sitio de GUPRI: arquitectura, diseño, los servicios y conversión B2B para una empresa de seguridad para condominios con 30 años de trayectoria y cumplimiento legal blindado.">
+  <meta property="og:image" content="https://origenlab.com/img/seguridad-privada/gupri/gupri-hero.webp">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="OrigenLab">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GUPRI · Guardias privados certificados para condominios en México | OrigenLab">
+  <meta name="twitter:description" content="Sitio corporativo B2B para GUPRI, seguridad privada para condominios y residenciales en México con 30 años de trayectoria.">
+  <meta name="twitter:image" content="https://origenlab.com/img/seguridad-privada/gupri/gupri-hero.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../../../favicon.svg">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+
+  <!-- CSS aprobado del sitio -->
+  <link rel="stylesheet" href="../../../_astro/BaseLayout.xeR8R953.css?v20260601d">
+  <link rel="stylesheet" href="../../../_astro/premium-dark.css?v20260601d">
+  <script src="../../../_astro/ol-header.js?v20260601d" defer></script>
+
+  <style>
+    /* ============================================================
+       L4 — CASO · GUPRI
+       Componentes en _astro/premium-dark.css. Aquí: SOLO acentos.
+       Acento: esmeralda #047857 (seguridad institucional / confianza).
+       Doc: /_docs/33, /_docs/34, /_docs/38
+       ============================================================ */
+    :root {
+      --case-accent: #047857;
+      --case-accent-soft: rgba(4,120,87,0.12);
+      --case-accent-line: rgba(4,120,87,0.28);
+    }
+    /* Hero hereda el acento del caso */
+    .hero { --hero-accent: var(--case-accent); --hero-accent-soft: var(--case-accent-soft); --hero-accent-line: var(--case-accent-line); }
+    .hero::before { background: radial-gradient(ellipse at center, rgba(4,120,87,0.09) 0%, transparent 65%); }
+
+    /* ============================================================
+       MOCKUPS FIELES DEL SITIO LIVE (página-específicos)
+       Reproducen las pantallas reales de guardias-privados.com.
+       Sin animaciones (regla 4). Self-contained.
+       ============================================================ */
+    .mk { --mk-indigo:#047857; --mk-ink:#0F1729; --mk-gray:#475467; --mk-soft:#7A8699;
+          --mk-line:#E6E8EE; --mk-bg:#FFFFFF; --mk-bg2:#F6F7FB; --mk-indigo-soft:#D1FAE5;
+          background:var(--mk-bg); display:flex; flex-direction:column; width:100%; }
+    .mk-bar { display:flex; align-items:center; gap:.55rem; padding:.5rem .8rem; background:#1A1D29; border-bottom:1px solid rgba(255,255,255,.06); }
+    .mk-dots { display:flex; gap:5px; }
+    .mk-dots i { width:8px; height:8px; border-radius:50%; background:rgba(255,255,255,.22); }
+    .mk-dots i:nth-child(1){ background:#ED6A5E; } .mk-dots i:nth-child(2){ background:#F4BF4F; } .mk-dots i:nth-child(3){ background:#61C554; }
+    .mk-url { flex:1; background:rgba(255,255,255,.07); border-radius:999px; padding:.22rem .7rem; font-size:10.5px; color:rgba(255,255,255,.62); text-align:center; font-family:'SFMono-Regular',Menlo,Consolas,monospace; letter-spacing:.02em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .mk-view { background:var(--mk-bg); color:var(--mk-ink); padding:1.4rem 1.5rem 1.6rem; }
+    .mk-nav { display:flex; align-items:center; justify-content:space-between; padding-bottom:1rem; border-bottom:1px solid var(--mk-line); margin-bottom:1.3rem; }
+    .mk-logo { font-size:.95rem; font-weight:800; color:var(--mk-indigo); letter-spacing:-.01em; }
+    .mk-menu { display:flex; gap:.85rem; font-size:10.5px; color:var(--mk-gray); font-weight:600; }
+    .mk-menu .mk-cta { background:var(--mk-indigo); color:#fff; padding:.28rem .6rem; border-radius:6px; }
+    .mk-eyebrow { font-size:9.5px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--mk-indigo); }
+    .mk-h { font-size:1.5rem; font-weight:800; letter-spacing:-.02em; line-height:1.1; color:var(--mk-ink); margin:.4rem 0 0; }
+    .mk-h .ac { color:var(--mk-indigo); }
+    .mk-sub { font-size:11.5px; color:var(--mk-gray); line-height:1.55; margin:.6rem 0 0; }
+    .mk-grid2 { display:grid; grid-template-columns:1.1fr 1fr; gap:1.6rem; align-items:start; }
+    .mk-sect-h { font-size:1.05rem; font-weight:800; letter-spacing:-.01em; color:var(--mk-ink); text-align:center; margin:0 0 .25rem; }
+    .mk-sect-sub { font-size:10.5px; color:var(--mk-soft); text-align:center; line-height:1.5; margin:0 auto 1.2rem; max-width:80%; }
+    .mk-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:.7rem; }
+    .mk-card { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.8rem .75rem; }
+    .mk-ic { width:30px; height:30px; border-radius:7px; background:var(--mk-indigo-soft); color:var(--mk-indigo); display:flex; align-items:center; justify-content:center; margin-bottom:.55rem; }
+    .mk-ct { font-size:11.5px; font-weight:700; color:var(--mk-ink); margin:0 0 .35rem; }
+    .mk-bul { list-style:none; margin:0; padding:0; }
+    .mk-bul li { position:relative; font-size:9.5px; color:var(--mk-gray); line-height:1.5; padding-left:.85rem; margin-bottom:.18rem; }
+    .mk-bul li::before { content:''; position:absolute; left:0; top:.42em; width:5px; height:5px; border-radius:50%; background:var(--mk-indigo); opacity:.55; }
+    .mk-stats { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-stat { text-align:center; background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:1rem .5rem; }
+    .mk-stat b { display:block; font-size:1.45rem; font-weight:800; color:var(--mk-indigo); letter-spacing:-.02em; line-height:1; }
+    .mk-stat span { display:block; font-size:9px; color:var(--mk-soft); margin-top:.4rem; line-height:1.35; font-weight:600; }
+    .mk-chips { display:flex; flex-wrap:wrap; gap:.4rem; justify-content:center; }
+    .mk-chip { font-size:9.5px; font-weight:600; color:var(--mk-gray); background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:999px; padding:.3rem .65rem; }
+    .mk-chip.on { background:var(--mk-indigo-soft); border-color:rgba(4,120,87,.25); color:var(--mk-indigo); }
+    .mk-tcards { display:grid; grid-template-columns:repeat(3,1fr); gap:.7rem; }
+    .mk-tcard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .8rem; }
+    .mk-trow { display:flex; align-items:center; gap:.5rem; margin-bottom:.5rem; }
+    .mk-av { width:28px; height:28px; border-radius:50%; background:var(--mk-indigo); color:#fff; font-size:9.5px; font-weight:700; display:flex; align-items:center; justify-content:center; }
+    .mk-tn { font-size:10px; font-weight:700; color:var(--mk-ink); line-height:1.2; }
+    .mk-tloc { font-size:8.5px; color:var(--mk-soft); }
+    .mk-stars { color:#F5A623; font-size:9px; letter-spacing:1px; margin-bottom:.3rem; }
+    .mk-quote { font-size:9.5px; color:var(--mk-gray); line-height:1.5; margin:0; }
+    .mk-form { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:11px; padding:1.1rem 1.1rem 1.2rem; }
+    .mk-field { height:30px; background:var(--mk-bg); border:1px solid var(--mk-line); border-radius:7px; margin-bottom:.55rem; display:flex; align-items:center; padding:0 .6rem; font-size:9.5px; color:var(--mk-soft); }
+    .mk-frow { display:grid; grid-template-columns:1fr 1fr; gap:.55rem; }
+    .mk-submit { background:var(--mk-indigo); color:#fff; font-size:10.5px; font-weight:700; text-align:center; border-radius:7px; padding:.6rem; margin-top:.3rem; }
+    .mk-trust { display:grid; grid-template-columns:repeat(4,1fr); gap:.55rem; margin-bottom:1rem; }
+    .mk-trust div { text-align:center; }
+    .mk-trust b { display:block; font-size:1.05rem; font-weight:800; color:var(--mk-indigo); line-height:1; }
+    .mk-trust span { display:block; font-size:8px; color:var(--mk-soft); margin-top:.25rem; font-weight:600; }
+    /* --- Hero oscuro (mirror del sitio live) — esmeralda --- */
+    .mk-hero { background:linear-gradient(135deg,#0E1726 0%,#0B1220 58%,#0E1726 100%); margin:-1.4rem -1.5rem 1.3rem; padding:1.5rem 1.5rem 1.35rem; border-bottom:1px solid var(--mk-line); }
+    .mk-hero .mk-eyebrow { color:#5EEAD4; }
+    .mk-hero .mk-h { color:#fff; }
+    .mk-hero .mk-h .ac { color:#34D399; }
+    .mk-hero .mk-sub { color:rgba(226,232,240,.72); }
+    .mk-hb { display:grid; grid-template-columns:1.2fr 1fr; gap:1.4rem; align-items:start; }
+    .mk-hk { font-size:9px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#5EEAD4; margin:0 0 .35rem; }
+    .mk-hp { font-size:10px; color:rgba(226,232,240,.66); line-height:1.55; margin:0; }
+    .mk-strip { display:flex; gap:1.6rem; margin-top:1rem; padding-top:.9rem; border-top:1px solid rgba(255,255,255,.1); }
+    .mk-strip div b { font-size:1.15rem; font-weight:800; color:#fff; letter-spacing:-.02em; line-height:1; }
+    .mk-strip div b span { color:#34D399; }
+    .mk-strip div .l { display:block; font-size:7.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:rgba(226,232,240,.5); margin-top:.3rem; }
+    /* --- Sellos de cumplimiento en hero --- */
+    .mk-seals { display:flex; flex-wrap:wrap; gap:.35rem; margin-top:.85rem; }
+    .mk-seal { font-size:8px; font-weight:700; letter-spacing:.04em; color:#5EEAD4; background:rgba(52,211,153,.12); border:1px solid rgba(52,211,153,.28); border-radius:5px; padding:.22rem .5rem .22rem .8rem; position:relative; }
+    .mk-seal::before { content:''; position:absolute; left:.42rem; top:50%; transform:translateY(-50%); width:4px; height:4px; border-radius:50%; background:#34D399; }
+    /* --- Tira de servicios bajo el hero --- */
+    .mk-quick { display:grid; grid-template-columns:repeat(6,1fr); gap:.5rem; }
+    .mk-qc { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:8px; padding:.6rem .55rem; }
+    .mk-qc .mk-ic { width:24px; height:24px; margin-bottom:.4rem; border-radius:6px; }
+    .mk-qc b { display:block; font-size:9.5px; font-weight:700; color:var(--mk-ink); line-height:1.2; }
+    .mk-qc span { display:block; font-size:7.5px; color:var(--mk-soft); margin-top:.18rem; line-height:1.3; }
+    .mk-qc.cta { background:var(--mk-indigo); border-color:var(--mk-indigo); }
+    .mk-qc.cta b, .mk-qc.cta span { color:#fff; }
+    .mk-qc.cta .mk-ic { background:rgba(255,255,255,.18); color:#fff; }
+    /* --- Listas INCLUYE en cards de pilar --- */
+    .mk-pbadge { float:right; font-size:7.5px; font-weight:700; letter-spacing:.08em; color:var(--mk-indigo); background:var(--mk-indigo-soft); border-radius:5px; padding:.18rem .4rem; }
+    .mk-inc-k { font-size:7.5px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; color:var(--mk-soft); margin:.55rem 0 .35rem; }
+    .mk-inc { display:flex; flex-wrap:wrap; gap:.28rem; }
+    .mk-inc span { font-size:8px; font-weight:600; color:var(--mk-gray); background:var(--mk-bg); border:1px solid var(--mk-line); border-radius:5px; padding:.22rem .42rem .22rem .82rem; position:relative; }
+    .mk-inc span::before { content:''; position:absolute; left:.36rem; top:50%; transform:translateY(-50%); width:4px; height:4px; border-radius:50%; background:var(--mk-indigo); }
+    /* --- Diferenciadores (4 col) --- */
+    .mk-diff { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-dcard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .75rem; }
+    .mk-dcard .mk-ic { margin-bottom:.5rem; }
+    .mk-dcard b { display:block; font-size:11px; font-weight:700; color:var(--mk-ink); margin-bottom:.3rem; }
+    .mk-dcard p { font-size:8.5px; color:var(--mk-gray); line-height:1.5; margin:0 0 .4rem; }
+    .mk-dlink { font-size:8px; font-weight:700; color:var(--mk-indigo); }
+    /* --- Sectores atendidos --- */
+    .mk-sect-cards { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-scard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .75rem; display:flex; flex-direction:column; }
+    .mk-scard .k { font-size:7.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--mk-indigo); margin-bottom:.3rem; }
+    .mk-scard b { font-size:11.5px; font-weight:700; color:var(--mk-ink); margin-bottom:.3rem; }
+    .mk-scard p { font-size:8.5px; color:var(--mk-gray); line-height:1.5; margin:0 0 .5rem; }
+    .mk-scard .v { font-size:8px; font-weight:700; color:var(--mk-indigo); margin-top:auto; }
+    /* --- Aliados / casos reales --- */
+    .mk-ally { font-size:7.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--mk-indigo); background:var(--mk-indigo-soft); border-radius:5px; padding:.18rem .45rem; display:inline-block; margin-bottom:.45rem; }
+    .mk-dom { font-size:8px; color:var(--mk-soft); margin-top:.35rem; }
+    @media (max-width:560px){
+      .mk-grid2 { grid-template-columns:1fr; gap:1rem; }
+      .mk-cards, .mk-tcards { grid-template-columns:1fr 1fr; }
+      .mk-stats, .mk-trust { grid-template-columns:repeat(2,1fr); }
+      .mk-h { font-size:1.2rem; }
+      .mk-hb { grid-template-columns:1fr; gap:.8rem; }
+      .mk-quick { grid-template-columns:repeat(3,1fr); }
+      .mk-diff, .mk-sect-cards { grid-template-columns:1fr 1fr; }
+      .mk-strip { flex-wrap:wrap; gap:.9rem; }
+    }
+    /* Banda de cifras comunicadas (tema oscuro del case body) */
+    .ol-cs-band { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; margin:2rem 0 0; }
+    .ol-cs-band div { text-align:center; border:1px solid var(--case-accent-line); border-radius:10px; padding:1.4rem .6rem; background:rgba(4,120,87,0.05); }
+    .ol-cs-band b { display:block; font-size:1.9rem; font-weight:800; color:#fff; letter-spacing:-.02em; line-height:1; }
+    .ol-cs-band b span { color:var(--case-accent); }
+    .ol-cs-band p { margin:.5rem 0 0; font-size:11px; color:rgba(240,240,245,0.55); font-weight:600; line-height:1.4; }
+    @media (max-width:560px){ .ol-cs-band { grid-template-columns:1fr 1fr; } }
+  </style>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.com/#organization","name":"OrigenLab","url":"https://origenlab.com","logo":"https://origenlab.com/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.com/#website","url":"https://origenlab.com/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.com/#organization"}},{"@type":"BreadcrumbList","@id":"https://origenlab.com/portafolio/seguridad-privada/gupri/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.com/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.com/portafolio/"},{"@type":"ListItem","position":3,"name":"Seguridad Privada","item":"https://origenlab.com/portafolio/seguridad-privada/"},{"@type":"ListItem","position":4,"name":"GUPRI","item":"https://origenlab.com/portafolio/seguridad-privada/gupri/"}]},{"@type":["Organization","SecurityService"],"@id":"https://guardias-privados.com/#organization","name":"GUPRI","alternateName":"Guardias Privados","url":"https://guardias-privados.com/","description":"Empresa de seguridad privada para condominios y residenciales en México con más de 30 años de trayectoria. Guardias certificados, control de acceso 24/7, vigilancia y monitoreo CCTV, con cumplimiento legal blindado (REPSE, SSP, IMSS, STPS) y respuesta garantizada en menos de 15 minutos.","foundingDate":"1994","areaServed":[{"@type":"State","name":"Ciudad de México"},{"@type":"State","name":"Estado de México"},{"@type":"State","name":"Jalisco"},{"@type":"State","name":"Nuevo León"},{"@type":"State","name":"Querétaro"}],"knowsAbout":["Seguridad privada","Seguridad para condominios","Guardias residenciales","Control de acceso","Vigilancia 24 horas","Monitoreo CCTV","Cumplimiento REPSE"],"slogan":"Seguridad para condominios con respaldo legal y respuesta garantizada"},{"@type":"CreativeWork","@id":"https://origenlab.com/portafolio/seguridad-privada/gupri/#case","name":"GUPRI — Caso de estudio","description":"Sitio corporativo para GUPRI, empresa de seguridad privada para condominios y residenciales en México.","inLanguage":"es-MX","image":"https://origenlab.com/img/seguridad-privada/gupri/gupri-hero.webp","author":{"@id":"https://origenlab.com/#organization"},"publisher":{"@id":"https://origenlab.com/#organization"},"about":{"@id":"https://guardias-privados.com/#organization"},"keywords":["guardias privados","seguridad para condominios","GUPRI","REPSE","guardias residenciales","CDMX"]},{"@type":"FAQPage","@id":"https://origenlab.com/portafolio/seguridad-privada/gupri/#faq","mainEntity":[{"@type":"Question","name":"¿Cómo comunica el sitio el cumplimiento legal sin saturar al comité?","acceptedAnswer":{"@type":"Answer","text":"El cumplimiento de GUPRI —REPSE, SSP, IMSS y STPS— se trata como argumento de venta, no como letra pequeña. Lo presentamos en bloques de confianza, jerarquizados para que el comité los identifique de un vistazo, y disponibles en detalle para quien quiera profundizar. Es justo el filtro que separa a una empresa formal de un proveedor que pone en riesgo a la comunidad."}},{"@type":"Question","name":"¿Cómo se muestra la respuesta garantizada de 15 minutos?","acceptedAnswer":{"@type":"Answer","text":"La promesa de menos de quince minutos se presenta como un compromiso concreto y medible, no como un eslogan vago. Aparece junto a la trayectoria de treinta años, de modo que el comité asocia experiencia con capacidad real de respuesta: dos argumentos que pesan más que el precio en una decisión de patrimonio."}},{"@type":"Question","name":"¿El sitio diferencia el servicio por tipo de comunidad?","acceptedAnswer":{"@type":"Answer","text":"Sí. El sitio segmenta entre condominios verticales y horizontales, fraccionamientos, calles privadas y conjuntos residenciales, para que cada comité se reconozca y entienda que los protocolos se adaptan a su tipo de desarrollo, no son un paquete genérico."}},{"@type":"Question","name":"¿El sitio capta al comité o al administrador del condominio?","acceptedAnswer":{"@type":"Answer","text":"Está diseñado para el decisor B2B residencial. El CTA principal es la cotización gratuita sin cargos ocultos, y el formulario pide el contexto que califica el lead —tipo de comunidad, número de unidades, ubicación— para que el equipo reciba solicitudes accionables. WhatsApp y teléfono quedan visibles para resolver de inmediato."}},{"@type":"Question","name":"¿Cómo manejan la cobertura en cinco estados?","acceptedAnswer":{"@type":"Answer","text":"La cobertura se estructura por estado —CDMX, Estado de México, Jalisco, Nuevo León y Querétaro— para que el administrador confirme operación con personal local cercano a su comunidad. Esa organización también permite que cada zona tenga su propio espacio dentro del sitio, sin duplicar contenido ni inflar el menú."}},{"@type":"Question","name":"¿Cuánto cuesta un proyecto como este?","acceptedAnswer":{"@type":"Answer","text":"Depende del alcance: número de pantallas, integraciones, secciones de cobertura y nivel de personalización. Construimos cada propuesta a la medida y la entregamos detallada y por escrito, sin cargos ocultos, antes de comenzar."}},{"@type":"Question","name":"¿En cuánto tiempo está listo?","acceptedAnswer":{"@type":"Answer","text":"Cada proyecto tiene su propio alcance, así que fijamos un calendario comprometido por escrito desde el inicio. Trabajamos con entregas iterativas en un entorno de pruebas para que veas el avance real en cada etapa, sin sorpresas."}},{"@type":"Question","name":"¿Dan acompañamiento después de lanzar el sitio?","acceptedAnswer":{"@type":"Answer","text":"Sí. Entregamos el sitio en operación con documentación para tu equipo y quedamos disponibles para crecerlo: nuevas zonas de cobertura, servicios o casos. La estructura queda lista para escalar conforme crece tu operación."}}]}]}</script>
+</head>
+<body>
+
+<a class="ol-skip-link" href="#main">Saltar al contenido</a>
+
+<div class="ol-topbar">
+  <div class="ol-topbar-inner">
+    <div class="ol-topbar-left">
+      <a href="mailto:hola@origenlab.com" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        hola@origenlab.com
+      </a>
+      <span class="ol-topbar-sep"></span>
+      <a href="tel:+525547868402" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        +52 55 4786 8402
+      </a>
+    </div>
+    <div class="ol-topbar-center">
+      <span class="ol-topbar-promo">
+        <span class="ol-topbar-dot"></span>
+        Atención personalizada  ·  Ciudad de México
+      </span>
+    </div>
+    <div class="ol-topbar-right">
+      <a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web" target="_blank" rel="noopener noreferrer" class="ol-topbar-wa">
+        <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor">
+          <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+<header class="ol-header" id="ol-header">
+  <div class="ol-header-inner">
+    <a href="/" class="ol-header-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
+    </a>
+    <nav class="ol-nav" aria-label="Navegación principal">
+      <ul class="ol-nav-list">
+        <li><a href="/" class="ol-nav-link">Inicio</a></li>
+        <li class="ol-has-dropdown">
+          <a href="/servicios/" class="ol-nav-link">
+            Servicios
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/servicios/desarrollo-web/" class="ol-dropdown-link">Desarrollo Web</a></li>
+              <li><a href="/servicios/tiendas-en-linea/" class="ol-dropdown-link">Tiendas en Línea</a></li>
+              <li><a href="/servicios/landing-pages/" class="ol-dropdown-link">Landing Pages</a></li>
+              <li><a href="/servicios/rediseno-web/" class="ol-dropdown-link">Rediseño Web</a></li>
+              <li><a href="/servicios/paginas-en-renta/" class="ol-dropdown-link">Páginas en Renta</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="ol-has-dropdown">
+          <a href="/portafolio/" class="ol-nav-link active">
+            Portafolio
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a></li>
+              <li class="ol-has-subdrop">
+                <a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link ol-dropdown-parent">Equipos Contra Incendios</a>
+                <div class="ol-subdrop">
+                  <ul>
+                    <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link">Gama de México</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link">MESECI</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link">LGA Contraincendios</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-dropdown-link">MANEXT</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-dropdown-link">BOMBERO.MX</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-dropdown-link">ProyectoRed</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/directorio/" class="ol-dropdown-link">Directorio México</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="ol-has-subdrop">
+                <a href="/portafolio/seguridad-privada/" class="ol-dropdown-link ol-dropdown-parent">Seguridad Privada</a>
+                <div class="ol-subdrop">
+                  <ul>
+                    <li><a href="/portafolio/seguridad-privada/origins/" class="ol-dropdown-link">ORIGINS Private Security</a></li>
+                    <li><a href="/portafolio/seguridad-privada/seprico/" class="ol-dropdown-link">SEPRICO</a></li>
+                    <li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-dropdown-link">SeguridadPrivadaMX</a></li>
+                    <li><a href="/portafolio/seguridad-privada/seguridadeventos/" class="ol-dropdown-link">SeguridadEventos</a></li>
+                    <li><a href="/portafolio/seguridad-privada/gupri/" class="ol-dropdown-link">GUPRI</a></li>
+                    <li><a href="/portafolio/seguridad-privada/directorio/" class="ol-dropdown-link">Directorio México</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="ol-has-subdrop">
+              <a href="/portafolio/equipo-para-eventos/" class="ol-dropdown-link ol-dropdown-parent">Equipo para Eventos</a>
+              <div class="ol-subdrop"><ul>
+                <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-dropdown-link">PODIUMEX</a></li>
+              </ul></div>
+            </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="/nosotros/" class="ol-nav-link">Nosotros</a></li>
+        <li><a href="/blog/" class="ol-nav-link">Blog</a></li>
+        <li><a href="/contacto/" class="ol-nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="/cotizar/" class="ol-header-cta">Cotizar proyecto →</a>
+    <button class="ol-menu-toggle" id="ol-menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+    </button>
+  </div>
+</header>
+<div class="ol-mobile-overlay" id="ol-mobile-overlay"></div>
+<nav class="ol-mobile-panel" id="ol-mobile-panel" aria-label="Menú móvil">
+  <div class="ol-mobile-header">
+    <a href="/" class="ol-mobile-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
+    </a>
+    <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú">
+      <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <ul class="ol-mobile-nav">
+    <li><a href="/" class="ol-mobile-link">Inicio</a></li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Servicios</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/servicios/desarrollo-web/" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
+        <li><a href="/servicios/paginas-en-renta/" class="ol-mobile-link ol-mobile-sublink">Páginas en Renta</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Portafolio</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/portafolio/" class="ol-mobile-link ol-mobile-sublink">Todo el Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/" class="ol-mobile-link ol-mobile-sublink">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Gama de México</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MESECI</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— LGA Contraincendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MANEXT</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— BOMBERO.MX</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— ProyectoRed</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/directorio/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Directorio México</a></li>
+        <li><a href="/portafolio/seguridad-privada/" class="ol-mobile-link ol-mobile-sublink">Seguridad Privada</a></li>
+        <li><a href="/portafolio/seguridad-privada/origins/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— ORIGINS Private Security</a></li>
+        <li><a href="/portafolio/seguridad-privada/seprico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SEPRICO</a></li>
+        <li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SeguridadPrivadaMX</a></li>
+        <li><a href="/portafolio/seguridad-privada/seguridadeventos/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SeguridadEventos</a></li>
+        <li><a href="/portafolio/seguridad-privada/gupri/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— GUPRI</a></li>
+        <li><a href="/portafolio/seguridad-privada/directorio/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Directorio México</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/" class="ol-mobile-link ol-mobile-sublink">Equipo para Eventos</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— PODIUMEX</a></li>
+      </ul>
+    </li>
+    <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
+    <li><a href="/blog/" class="ol-mobile-link">Blog</a></li>
+    <li><a href="/contacto/" class="ol-mobile-link">Contacto</a></li>
+  </ul>
+  <div class="ol-mobile-footer">
+    <a href="/cotizar/" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a>
+  </div>
+</nav>
+
+<!-- ============================================================
+     BREADCRUMB
+     ============================================================ -->
+<nav class="ol-bc-wrap" aria-label="Migas de pan">
+  <div class="ol-bc">
+    <ol class="ol-bc-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/" itemprop="item" class="ol-bc-home"><span itemprop="name">Inicio</span></a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/portafolio/" itemprop="item"><span itemprop="name">Portafolio</span></a>
+        <meta itemprop="position" content="2" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/portafolio/seguridad-privada/" itemprop="item"><span itemprop="name">Seguridad Privada</span></a>
+        <meta itemprop="position" content="3" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item ol-bc-current" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name">GUPRI</span>
+        <meta itemprop="position" content="4" />
+      </li>
+    </ol>
+  </div>
+</nav>
+
+<!-- ============================================================
+     MAIN
+     ============================================================ -->
+<main id="main">
+
+  <!-- ============== HERO (componente compartido .hero) ============== -->
+  <section class="hero">
+    <div class="container hero__inner">
+
+      <div class="hero__col1">
+        <span class="hero__eyebrow">Caso de estudio · GUPRI Seguridad Privada</span>
+        <h1 class="hero__title">Guardias privados certificados para condominios.</h1>
+        <p class="hero__sub">Construimos el sitio de GUPRI, una empresa que protege condominios y residenciales en México desde hace más de treinta años. Su diferencia no es prometer vigilancia: es demostrar que está en regla —REPSE, SSP, IMSS, STPS— y que responde a cualquier incidente en menos de quince minutos.</p>
+        <div class="hero__ctas">
+          <a href="https://guardias-privados.com/" target="_blank" rel="noopener noreferrer" class="ol-btn-primary">
+            Visitar el sitio
+            <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+          </a>
+          <a href="#construccion" class="ol-btn-ghost">
+            Cómo se construyó
+            <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__col2">
+        <p class="hero__p1">El comité que contrata seguridad ya escuchó todas las promesas. Lo que rara vez encuentra es una empresa que pueda probar, documento en mano, que cumple la ley: registro REPSE vigente, guardias dados de alta ante el IMSS, capacitación STPS y autorización de la autoridad. Sin eso, el condominio asume el riesgo —legal y patrimonial— de su proveedor.</p>
+        <p class="hero__p2">El sitio de GUPRI pone ese respaldo al frente, junto a su otro argumento decisivo: treinta años operando y una respuesta garantizada en menos de quince minutos. Seguridad privada para condominios en CDMX, Estado de México y el Bajío, explicada con la solidez que una decisión de patrimonio merece.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== CASE SHELL: SIDEBAR + CONTENT ============== -->
+  <section class="ol-case-shell" id="construccion">
+    <div class="ol-case-inner">
+      <div class="ol-case-grid">
+
+        <!-- ============ SIDEBAR ============ -->
+        <aside class="ol-case-sidebar" aria-label="Información del proyecto">
+
+          <div class="ol-side-card">
+            <p class="ol-side-eyebrow">Datos del proyecto</p>
+            <ul class="ol-side-meta">
+              <li><dt>Cliente</dt><dd>GUPRI Seguridad Privada</dd></li>
+              <li><dt>Sector</dt><dd>Seguridad privada · Condominios y residenciales</dd></li>
+              <li><dt>Tipo de sitio</dt><dd>Corporativo B2B · Captación de cotización</dd></li>
+              <li><dt>Modelo de negocio</dt><dd>Seguridad para condominios con cumplimiento legal blindado y respuesta garantizada</dd></li>
+              <li><dt>Trayectoria</dt><dd>30+ años · 500+ condominios protegidos</dd></li>
+              <li><dt>Cobertura</dt><dd>CDMX · Edomex · Guadalajara · Monterrey · Querétaro</dd></li>
+              <li><dt>Sitio en vivo</dt><dd><a href="https://guardias-privados.com/" target="_blank" rel="noopener noreferrer">guardias-privados.com →</a></dd></li>
+            </ul>
+          </div>
+
+          <div class="ol-side-card">
+            <p class="ol-side-eyebrow">Stack y entregables</p>
+            <div>
+              <span class="ol-case-spec-tag">Astro</span>
+              <span class="ol-case-spec-tag">HTML5 / CSS3</span>
+              <span class="ol-case-spec-tag">Inter</span>
+              <span class="ol-case-spec-tag">Schema.org</span>
+              <span class="ol-case-spec-tag">WhatsApp Lead</span>
+              <span class="ol-case-spec-tag">Formularios B2B</span>
+              <span class="ol-case-spec-tag">Hosting CDN</span>
+              <span class="ol-case-spec-tag">Responsivo</span>
+              <span class="ol-case-spec-tag">Multi-estado</span>
+            </div>
+          </div>
+
+          <nav class="ol-side-card" aria-label="Índice del caso">
+            <p class="ol-side-eyebrow">Índice del caso</p>
+            <ul class="ol-side-toc" id="ol-case-toc">
+              <li><a href="#contexto"><span class="num">01</span>Contexto del cliente</a></li>
+              <li><a href="#reto"><span class="num">02</span>El reto</a></li>
+              <li><a href="#arquitectura"><span class="num">03</span>Arquitectura del sitio</a></li>
+              <li><a href="#diseno"><span class="num">04</span>Diseño y sistema visual</a></li>
+              <li><a href="#servicios"><span class="num">05</span>Servicios de seguridad</a></li>
+              <li><a href="#conversion"><span class="num">06</span>Conversión B2B</a></li>
+              <li><a href="#tecnologia"><span class="num">07</span>Tecnología y rendimiento</a></li>
+              <li><a href="#proceso"><span class="num">08</span>Proceso de trabajo</a></li>
+              <li><a href="#galeria"><span class="num">09</span>Galería del sitio</a></li>
+              <li><a href="#resultado"><span class="num">10</span>Resultado entregado</a></li>
+            </ul>
+          </nav>
+
+          <div class="ol-side-cta">
+            <h3 class="ol-side-cta-title">¿Un proyecto similar?</h3>
+            <p class="ol-side-cta-desc">Si tu empresa de seguridad privada necesita un sitio profesional que transmita confianza y capte cotizaciones, podemos construirlo contigo.</p>
+            <a href="/cotizar/" class="ol-side-cta-btn">
+              Cotizar mi proyecto
+              <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+            <a href="https://wa.me/525547868402?text=Hola%2C%20vi%20el%20caso%20de%20GUPRI%20y%20me%20interesa%20un%20proyecto%20similar." target="_blank" rel="noopener noreferrer" class="ol-side-cta-link">o escribir por WhatsApp →</a>
+          </div>
+
+        </aside>
+
+        <!-- ============ CONTENT BODY ============ -->
+        <article class="ol-case-body">
+
+          <!-- 01 CONTEXTO -->
+          <section class="ol-case-section" id="contexto">
+            <span class="ol-case-eyebrow">01 · Contexto del cliente</span>
+            <h2 class="ol-case-h2">Tres décadas protegiendo condominios, no contratos cortos.</h2>
+            <p class="ol-case-lead">GUPRI protege condominios, fraccionamientos y residenciales en México desde hace más de treinta años. En ese tiempo ha resguardado a más de 500 comunidades en las principales ciudades del país y se ha vuelto pionera en protocolos de vigilancia para condominios verticales y horizontales. Su trayectoria no es un adorno: es la prueba de que sus protocolos resisten el paso del tiempo.</p>
+            <p class="ol-case-p">Su comprador es exigente y responsable: <strong>comités, administradores y presidentes de mesa directiva</strong> que firman un contrato a nombre de toda la comunidad y no pueden permitirse un proveedor informal. Para ellos lo decisivo no es el precio más bajo, sino el <strong>respaldo</strong> —¿está en regla?, ¿los guardias tienen IMSS?, ¿quién responde si pasa algo?—.</p>
+            <p class="ol-case-p">Antes de este proyecto, la presencia digital de GUPRI no transmitía ni su trayectoria de tres décadas, ni la solidez de su cumplimiento legal, ni su promesa más concreta: una respuesta garantizada en menos de quince minutos. El sitio tenía que dejar eso claro desde la primera pantalla.</p>
+
+            <figure class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <picture>
+                  <source srcset="/img/seguridad-privada/gupri/guardias-seguridad-privada-condominios-gupri.avif" type="image/avif">
+                  <img src="/img/seguridad-privada/gupri/guardias-seguridad-privada-condominios-gupri.webp" alt="Guardias de seguridad privada certificados resguardando el acceso vehicular de un condominio residencial en México" width="1280" height="720" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <figcaption class="ol-case-figure-caption">Operación real de GUPRI: control de acceso vehicular en condominio con guardia certificado — la base del respaldo que el sitio comunica.</figcaption>
+            </figure>
+
+            <figure class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <div class="mk">
+                  <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">guardias-privados.com</span></div>
+                  <div class="mk-view">
+                    <div class="mk-nav">
+                      <span class="mk-logo">GUPRI</span>
+                      <span class="mk-menu"><span>Inicio</span><span>Servicios</span><span>Nosotros</span><span>Cobertura</span><span>Testimonios</span><span class="mk-cta">Cotizar</span></span>
+                    </div>
+                    <div class="mk-hero">
+                      <div class="mk-hb">
+                        <div>
+                          <span class="mk-eyebrow">Empresa 100% mexicana certificada</span>
+                          <h3 class="mk-h">Seguridad privada para <span class="ac">condominios</span> y guardias residenciales en México</h3>
+                          <p class="mk-sub">Protegemos tu patrimonio y el de tu comunidad con guardias certificados, vigilancia 24/7 y tecnología de vanguardia. Más de 500 condominios confían en nosotros.</p>
+                          <div class="mk-seals"><span class="mk-seal">Registro REPSE</span><span class="mk-seal">Autorizados SSP</span><span class="mk-seal">Guardias certificados</span></div>
+                        </div>
+                        <div>
+                          <p class="mk-hk">Respaldo y experiencia</p>
+                          <p class="mk-hp">Más de 30 años especializados exclusivamente en condominios y residenciales. Registro REPSE vigente, autorización SSP, alta ante IMSS y capacitación STPS, con respuesta garantizada en menos de 15 minutos ante cualquier incidente.</p>
+                          <div class="mk-strip">
+                            <div><b>30<span>+</span></b><span class="l">Años</span></div>
+                            <div><b>500<span>+</span></b><span class="l">Condominios</span></div>
+                            <div><b>15<span> min</span></b><span class="l">Respuesta</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mk-quick">
+                      <div class="mk-qc">
+                        <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></div>
+                        <b>Condominios</b><span>Verticales y horizontales</span>
+                      </div>
+                      <div class="mk-qc">
+                        <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
+                        <b>Residenciales</b><span>Fraccionamientos</span>
+                      </div>
+                      <div class="mk-qc">
+                        <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+                        <b>Control acceso</b><span>Vehicular y peatonal</span>
+                      </div>
+                      <div class="mk-qc">
+                        <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+                        <b>Vigilancia 24h</b><span>Rondines programados</span>
+                      </div>
+                      <div class="mk-qc">
+                        <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+                        <b>Monitoreo CCTV</b><span>Central de control</span>
+                      </div>
+                      <div class="mk-qc cta">
+                        <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+                        <b>Cotizar gratis</b><span>Sin cargos ocultos</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <figcaption class="ol-case-figure-caption">Home del sitio: hero con propuesta de valor, sellos de cumplimiento (REPSE, SSP), trayectoria de tres décadas y acceso directo a cotización.</figcaption>
+            </figure>
+          </section>
+
+          <!-- 02 RETO -->
+          <section class="ol-case-section" id="reto">
+            <span class="ol-case-eyebrow">02 · El reto</span>
+            <h2 class="ol-case-h2">Vender respaldo, no sólo presencia.</h2>
+            <p class="ol-case-p">El reto fue traducir a una experiencia digital lo que distingue a GUPRI de un proveedor informal: <strong>cumplimiento legal verificable</strong> y <strong>respuesta garantizada</strong>. El comité necesitaba ver, en segundos, que contratar a GUPRI lo protege también de un riesgo que pocos consideran —el laboral y legal de un proveedor que no está en regla—.</p>
+
+            <div class="ol-case-cards">
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.5v5c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11V6.5L12 2z"/><path d="M9 12l2 2 4-4"/></svg>
+                </div>
+                <h4>Cumplimiento al frente</h4>
+                <p>Poner REPSE, SSP, IMSS y STPS como el primer argumento —lo que blinda al condominio frente a responsabilidad laboral y legal, no como letra pequeña—.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+                </div>
+                <h4>Respuesta medible</h4>
+                <p>Comunicar la promesa de menos de quince minutos como un compromiso concreto y verificable, no como un eslogan vago de "atención inmediata".</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 3 5-6"/></svg>
+                </div>
+                <h4>Trayectoria que respalda</h4>
+                <p>Hacer evidentes los +30 años y las +500 comunidades como prueba de continuidad operativa, algo que un comité valora por encima del precio.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                </div>
+                <h4>Canal directo al comité</h4>
+                <p>Abrir cotización sin cargos ocultos con un formulario pensado para el comité y un acceso por WhatsApp para resolver dudas antes de decidir.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 03 ARQUITECTURA -->
+          <section class="ol-case-section" id="arquitectura">
+            <span class="ol-case-eyebrow">03 · Arquitectura del sitio</span>
+            <h2 class="ol-case-h2">Una estructura que guía al comité hacia la decisión.</h2>
+            <p class="ol-case-p">La arquitectura resuelve el recorrido real del decisor de un condominio: <strong>entiende la propuesta, valida los servicios, comprueba cumplimiento y trayectoria, confirma cobertura en su ciudad y solicita una cotización sin cargos ocultos</strong>.</p>
+
+            <div class="ol-case-arch">
+              <div class="ol-arch-step">
+                <p class="num">CAPA 01</p>
+                <h4>Home corporativa</h4>
+                <p>Propuesta de valor centrada en trayectoria, cumplimiento legal y respuesta garantizada, con acceso directo a cotización.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">CAPA 02</p>
+                <h4>Catálogo de servicios</h4>
+                <p>Condominios, guardias residenciales, control de acceso, vigilancia 24/7, consultoría y monitoreo CCTV, cada uno con página propia.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">CAPA 03</p>
+                <h4>Por qué elegirnos</h4>
+                <p>Los pilares de confianza —cumplimiento, guardias capacitados, respuesta inmediata y sin cargos ocultos— como argumento de decisión.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">CAPA 04</p>
+                <h4>Cobertura por estado</h4>
+                <p>CDMX, Estado de México, Jalisco, Nuevo León y Querétaro, para que el administrador confirme operación cercana a su comunidad.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">CAPA 05</p>
+                <h4>Testimonios y trayectoria</h4>
+                <p>Voces de comités y administradores reales, con la historia de tres décadas como respaldo institucional.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">CAPA 06</p>
+                <h4>Contacto y cotización</h4>
+                <p>Formulario para el comité, WhatsApp y teléfono visibles, con la promesa de cotización transparente y sin cargos ocultos.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 04 DISEÑO -->
+          <section class="ol-case-section" id="diseno">
+            <span class="ol-case-eyebrow">04 · Diseño y sistema visual</span>
+            <h2 class="ol-case-h2">Institucional, sólido y centrado en la confianza.</h2>
+            <p class="ol-case-p">El diseño evita la estética de alarma —candados, tonos militares, urgencia artificial— y opta por un lenguaje institucional que comunica solidez. <strong>El cumplimiento es protagonista</strong>: los sellos REPSE, SSP, IMSS y STPS se presentan como elementos visuales de confianza, no como texto perdido al pie.</p>
+            <p class="ol-case-p">Un sistema de componentes consistente —tarjetas de servicio, pilares de confianza, indicadores de trayectoria y cobertura— mantiene la misma jerarquía en la home, las páginas de servicio y las de cobertura, para que el comité navegue sin reaprender la página.</p>
+
+            <div class="ol-case-cards">
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+                </div>
+                <h4>Solidez, no ansiedad</h4>
+                <p>Base oscura con un acento esmeralda que transmite seriedad y confianza, sin recurrir a clichés que generan miedo.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.5v5c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11V6.5L12 2z"/><path d="M9 12l2 2 4-4"/></svg>
+                </div>
+                <h4>El cumplimiento visible</h4>
+                <p>REPSE, SSP, IMSS y STPS representados como sellos de confianza — el diferenciador legal de GUPRI, hecho diseño.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                </div>
+                <h4>Servicios, un lenguaje</h4>
+                <p>Cada servicio comparte estructura visual, de modo que el comité los entiende y compara sin reaprender la página.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <h4>Cobertura con nombre</h4>
+                <p>Cinco estados comunicados con claridad para que el administrador confirme operación cercana a su comunidad.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 05 SERVICIOS -->
+          <section class="ol-case-section" id="servicios">
+            <span class="ol-case-eyebrow">05 · Servicios de seguridad</span>
+            <h2 class="ol-case-h2">Un catálogo completo, especializado en condominios.</h2>
+            <p class="ol-case-p">El núcleo del sitio es el catálogo de servicios de GUPRI, construido alrededor de su especialidad —el condominio— pero con cobertura para todo el espectro de necesidades. Cada servicio se presenta con la misma estructura, de modo que el comité entiende el alcance completo sin perderse en tecnicismos.</p>
+
+            <div class="ol-case-arch">
+              <div class="ol-arch-step">
+                <p class="num">SERVICIO 01</p>
+                <h4>Seguridad para condominios</h4>
+                <p>Protección integral para condominios verticales y horizontales: guardias intramuros 24/7, control de acceso vehicular y peatonal, registro digital de visitantes y rondines programados.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">SERVICIO 02</p>
+                <h4>Guardias residenciales</h4>
+                <p>Personal especializado para fraccionamientos, calles privadas y conjuntos residenciales, con protocolos de atención a residentes y reportes diarios.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">SERVICIO 03</p>
+                <h4>Control de acceso</h4>
+                <p>Filtro vehicular y peatonal con tecnología biométrica, lectura de placas e integración con CCTV, más registro digital de visitantes.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">SERVICIO 04</p>
+                <h4>Vigilancia 24 horas</h4>
+                <p>Rondines estratégicos programados, supervisión continua y protocolo de emergencias con coordinación directa con autoridades locales.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">SERVICIO 05</p>
+                <h4>Monitoreo CCTV</h4>
+                <p>Supervisión de cámaras desde central de control las 24 horas, grabación en la nube y alertas inmediatas ante cualquier incidente.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">SERVICIO 06</p>
+                <h4>Consultoría</h4>
+                <p>Evaluación de riesgos, diseño de protocolos de emergencia y capacitación para el personal del condominio, con el mismo respaldo legal y operativo.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 06 CONVERSIÓN -->
+          <section class="ol-case-section" id="conversion">
+            <span class="ol-case-eyebrow">06 · Conversión B2B</span>
+            <h2 class="ol-case-h2">Del interés del comité a una cotización real.</h2>
+            <p class="ol-case-p">Un sitio de servicios de seguridad se mide por <strong>la calidad de las cotizaciones que llegan al equipo</strong>. El de GUPRI acompaña al comité desde la primera pantalla hasta la solicitud, reduciendo la fricción y reforzando el argumento que cierra la decisión: transparencia, sin cargos ocultos.</p>
+
+            <div class="ol-case-cards">
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                </div>
+                <h4>Cotización transparente</h4>
+                <p>CTA principal sin cargos ocultos: la cotización incluye uniformes, equipo, capacitación y seguros, justo lo que el administrador quiere confirmar.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg>
+                </div>
+                <h4>WhatsApp directo</h4>
+                <p>Canal paralelo siempre visible para que el comité resuelva dudas concretas sin esperar a una llamada.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.5v5c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11V6.5L12 2z"/><path d="M9 12l2 2 4-4"/></svg>
+                </div>
+                <h4>Confianza antes de enviar</h4>
+                <p>Sellos REPSE, IMSS y SSP visibles junto al formulario, para que el comité llegue al envío con la duda legal ya resuelta.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
+                </div>
+                <h4>Formulario para el comité</h4>
+                <p>Campos pensados para el contexto residencial (comunidad, zona, tipo) que llegan calificados al equipo comercial.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 07 TECNOLOGÍA -->
+          <section class="ol-case-section" id="tecnologia">
+            <span class="ol-case-eyebrow">07 · Tecnología y rendimiento</span>
+            <h2 class="ol-case-h2">Velocidad y estabilidad, sin frameworks pesados.</h2>
+            <p class="ol-case-p">El sitio se construyó sobre una base ligera y moderna, priorizando <strong>tiempos de carga, estabilidad visual y eficiencia en móvil</strong> —donde el administrador suele revisar proveedores—. La arquitectura favorece HTML estático servido desde CDN, con interactividad selectiva sólo donde aporta valor.</p>
+
+            <div class="ol-case-spec">
+              <dl>
+                <div class="ol-case-spec-row">
+                  <dt>Generador</dt>
+                  <dd>Astro · arquitectura estática-primero, hidratación selectiva, salida HTML pura para máximo rendimiento.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Estilo</dt>
+                  <dd>CSS3 con design tokens propios — variables CSS para colores, tipografía, espaciado y radios. Sin frameworks visuales pesados.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Tipografía</dt>
+                  <dd>Inter (300–900) cargada vía Google Fonts con preconnect — render no bloqueante.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Imágenes</dt>
+                  <dd>WebP responsivo con dimensiones explícitas, <code>loading="lazy"</code> y <code>decoding="async"</code> para evitar layout shift.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Datos estructurados</dt>
+                  <dd>Schema.org en JSON-LD: Organization, WebSite, BreadcrumbList y SecurityService según corresponde a cada plantilla.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Accesibilidad</dt>
+                  <dd>Skip-link a contenido, ARIA labels en navegación, contraste alto en texto, foco visible en componentes interactivos.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Responsivo</dt>
+                  <dd>Layout fluido desde 360 px; menú móvil con overlay, dropdowns colapsables y CTAs adaptados al pulgar.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Hosting</dt>
+                  <dd>CDN global con HTTPS, compresión Brotli, caché agresivo en estáticos y dominio propio bajo certificado válido.</dd>
+                </div>
+              </dl>
+            </div>
+          </section>
+
+          <!-- 08 PROCESO -->
+          <section class="ol-case-section" id="proceso">
+            <span class="ol-case-eyebrow">08 · Proceso de trabajo</span>
+            <h2 class="ol-case-h2">De la conversación inicial al sitio entregado.</h2>
+            <p class="ol-case-p">El proyecto siguió la metodología de OrigenLab: descubrimiento → estrategia → diseño → desarrollo → pruebas → lanzamiento → acompañamiento. Cada etapa se documenta con entregables específicos para que el cliente sepa siempre qué espera y qué recibe.</p>
+
+            <div class="ol-case-arch">
+              <div class="ol-arch-step">
+                <p class="num">PASO 01</p>
+                <h4>Descubrimiento</h4>
+                <p>Entendimos el modelo de GUPRI: especialización en condominios, cumplimiento legal, la trayectoria de 30 años y el perfil del comité.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">PASO 02</p>
+                <h4>Estrategia de contenido</h4>
+                <p>Definimos la arquitectura, los mensajes por sección y el recorrido de conversión hacia la cotización sin cargos ocultos.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">PASO 03</p>
+                <h4>Diseño visual</h4>
+                <p>Sistema de componentes institucional y sólido, con el cumplimiento como protagonista, aprobado antes de programar.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">PASO 04</p>
+                <h4>Desarrollo</h4>
+                <p>Construcción en Astro con HTML estático, componentes reutilizables y datos estructurados Schema.org.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">PASO 05</p>
+                <h4>Pruebas</h4>
+                <p>Revisión de rendimiento, accesibilidad y comportamiento responsivo, con avances visibles para el cliente.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">PASO 06</p>
+                <h4>Lanzamiento y acompañamiento</h4>
+                <p>Publicación bajo dominio propio con SSL y CDN, más documentación y acompañamiento para crecer el sitio.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 09 GALERÍA -->
+          <section class="ol-case-section" id="galeria">
+            <span class="ol-case-eyebrow">09 · Galería del sitio</span>
+            <h2 class="ol-case-h2">Recorrido por el sitio en operación.</h2>
+            <p class="ol-case-p">Siete pantallas del sitio de GUPRI —servicios, diferenciadores, sectores atendidos, trayectoria, cobertura, aliados del sector y cotización— reproducidas con el mismo sistema de componentes y la misma jerarquía visual que ve el administrador. Cada pantalla está pensada para llevar al comité del interés a la cotización sin cargos ocultos.</p>
+
+            <div class="ol-case-gallery">
+
+              <!-- 01 · SERVICIOS -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">guardias-privados.com/#servicios</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Soluciones de seguridad privada para condominios</h3>
+                      <p class="mk-sect-sub">Servicios integrales de vigilancia y protección, adaptados a las necesidades de cada condominio y residencial.</p>
+                      <div class="mk-cards">
+                        <div class="mk-card">
+                          <span class="mk-pbadge">01</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></div>
+                          <p class="mk-ct">Seguridad para Condominios</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Guardias intramuros 24/7</span><span>Control de acceso vehicular y peatonal</span><span>Rondines programados</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">02</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
+                          <p class="mk-ct">Guardias Residenciales</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Fraccionamientos y privadas</span><span>Atención a residentes</span><span>Reportes diarios</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">03</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+                          <p class="mk-ct">Control de Acceso</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Filtro vehicular y peatonal</span><span>Registro digital de visitantes</span><span>Credencialización</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">04</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+                          <p class="mk-ct">Vigilancia 24 Horas</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Rondines estratégicos</span><span>Protocolo de emergencias</span><span>Coordinación con autoridades</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">05</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg></div>
+                          <p class="mk-ct">Consultoría</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Análisis de riesgos</span><span>Diseño de protocolos</span><span>Planes de contingencia</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">06</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+                          <p class="mk-ct">Monitoreo CCTV</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Central de control 24/7</span><span>Grabación en la nube</span><span>Alertas inmediatas</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">01 · Servicios — seis líneas comparables de un vistazo, cada una con su detalle de servicios incluidos.</figcaption>
+              </figure>
+
+              <!-- 02 · DIFERENCIADORES -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">guardias-privados.com/#por-que-gupri</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">GUPRI: la mejor opción en seguridad para condominios</h3>
+                      <p class="mk-sect-sub">Empresa 100% mexicana con más de 30 años especializada exclusivamente en seguridad para condominios y residenciales.</p>
+                      <div class="mk-diff">
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.5v5c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11V6.5L12 2z"/><path d="M9 12l2 2 4-4"/></svg></div>
+                          <b>100% Cumplimiento Legal</b>
+                          <p>Registro REPSE vigente, autorización SSP, alta ante IMSS y capacitación STPS. Cumplimiento legal garantizado.</p>
+                          <span class="mk-dlink">Ver respaldo →</span>
+                        </div>
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
+                          <b>Guardias Capacitados</b>
+                          <p>Personal con capacitación continua, verificación de antecedentes y certificación oficial.</p>
+                          <span class="mk-dlink">Conocer al equipo →</span>
+                        </div>
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+                          <b>Respuesta Inmediata</b>
+                          <p>Tiempo de respuesta garantizado menor a 15 minutos ante cualquier incidente.</p>
+                          <span class="mk-dlink">Ver protocolo →</span>
+                        </div>
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+                          <b>Sin Cargos Ocultos</b>
+                          <p>Cotización transparente: incluimos uniformes, equipo, capacitación y seguros.</p>
+                          <span class="mk-dlink">Cotizar gratis →</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">02 · Diferenciadores — los cuatro argumentos que un comité valora por encima del precio.</figcaption>
+              </figure>
+
+              <!-- 03 · SECTORES ATENDIDOS -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">guardias-privados.com/#sectores</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Protección según el tipo de comunidad</h3>
+                      <p class="mk-sect-sub">Protocolos diferenciados para cada tipo de desarrollo residencial, con su propio mix de personal y tecnología.</p>
+                      <div class="mk-sect-cards">
+                        <div class="mk-scard"><span class="k">Edificios</span><b>Condominios Verticales</b><p>Lobby con alta rotación, amenidades y estacionamiento subterráneo.</p><span class="v">Ver propuesta →</span></div>
+                        <div class="mk-scard"><span class="k">Cotos privados</span><b>Fraccionamientos</b><p>Perímetros amplios, calles internas y caseta de control vehicular.</p><span class="v">Ver propuesta →</span></div>
+                        <div class="mk-scard"><span class="k">Horizontal</span><b>Residenciales</b><p>Calles privadas y conjuntos con atención directa a cada residente.</p><span class="v">Ver propuesta →</span></div>
+                        <div class="mk-scard"><span class="k">Más allá</span><b>Corporativa e Industrial</b><p>Vigilancia para corporativos e industria con el mismo respaldo legal.</p><span class="v">Ver propuesta →</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">03 · Sectores atendidos — el sitio segmenta por tipo de comunidad para que cada comité se reconozca.</figcaption>
+              </figure>
+
+              <!-- 04 · TRAYECTORIA -->
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">guardias-privados.com/nosotros</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Trayectoria que respalda</h3>
+                      <p class="mk-sect-sub">Tres décadas y números que respaldan cada turno.</p>
+                      <div class="mk-stats">
+                        <div class="mk-stat"><b>30+</b><span>Años de experiencia</span></div>
+                        <div class="mk-stat"><b>500+</b><span>Condominios protegidos</span></div>
+                        <div class="mk-stat"><b>98%</b><span>Retención de clientes</span></div>
+                        <div class="mk-stat"><b>15 min</b><span>Respuesta máxima</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">04 · Trayectoria — cifras al frente como argumento de continuidad operativa.</figcaption>
+              </figure>
+
+              <!-- 05 · COBERTURA -->
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">guardias-privados.com/#cobertura</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Presencia en las principales ciudades</h3>
+                      <p class="mk-sect-sub">Operación con personal local en cinco estados del país.</p>
+                      <div class="mk-chips">
+                        <span class="mk-chip on">Ciudad de México</span><span class="mk-chip on">Estado de México</span><span class="mk-chip on">Guadalajara</span><span class="mk-chip on">Monterrey</span><span class="mk-chip on">Querétaro</span><span class="mk-chip">Coyoacán</span><span class="mk-chip">Miguel Hidalgo</span><span class="mk-chip">Huixquilucan</span><span class="mk-chip">Zapopan</span><span class="mk-chip">San Pedro Garza García</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">05 · Cobertura — estados comunicados con claridad para validar operación cercana.</figcaption>
+              </figure>
+
+              <!-- 06 · ALIADOS / CASOS REALES -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">guardias-privados.com/#testimonios</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Lo que dicen comités, administradores y aliados</h3>
+                      <p class="mk-sect-sub">Perfiles por rol y empresas del sector que respaldan la operación de GUPRI en condominios y residenciales.</p>
+                      <div class="mk-tcards">
+                        <div class="mk-tcard">
+                          <div class="mk-trow"><span class="mk-av">PC</span><span><span class="mk-tn">Presidencia del comité</span><br><span class="mk-tloc">Residencial vertical · Coyoacán, CDMX</span></span></div>
+                          <div class="mk-stars">★★★★★</div>
+                          <p class="mk-quote">"Desde que contratamos a GUPRI, los incidentes bajaron y el control de acceso es impecable. La comunicación con el comité es excelente."</p>
+                        </div>
+                        <div class="mk-tcard">
+                          <div class="mk-trow"><span class="mk-av">AD</span><span><span class="mk-tn">Administración profesional</span><br><span class="mk-tloc">Fraccionamiento horizontal · Zapopan, Jalisco</span></span></div>
+                          <div class="mk-stars">★★★★★</div>
+                          <p class="mk-quote">"GUPRI tiene todo en regla: REPSE, IMSS, uniformes. Los guardias son profesionales y el servicio, transparente y sin sorpresas."</p>
+                        </div>
+                        <div class="mk-tcard">
+                          <span class="mk-ally">Aliado del sector</span>
+                          <div class="mk-trow"><span class="mk-av">SP</span><span><span class="mk-tn">Seguridad Privada MX</span><br><span class="mk-tloc">Directorio de empresas de seguridad</span></span></div>
+                          <div class="mk-stars">★★★★★</div>
+                          <p class="mk-quote">"Para seguridad de condominios con cumplimiento legal blindado, GUPRI es una referencia confiable en CDMX y el Bajío."</p>
+                          <p class="mk-dom">seguridadprivadamx.com</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">06 · Voces del sector — testimonios por rol del comité y aliados con dominio verificable, sin nombres propios inventados.</figcaption>
+              </figure>
+
+              <!-- 07 · COTIZACIÓN -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">guardias-privados.com/contacto</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Solicita tu cotización gratis, sin cargos ocultos</h3>
+                      <p class="mk-sect-sub">Incluye uniformes, equipo, capacitación y seguros. Respuesta garantizada en menos de 15 minutos.</p>
+                      <div class="mk-trust">
+                        <div><b>REPSE</b><span>vigente</span></div>
+                        <div><b>30+ años</b><span>de experiencia</span></div>
+                        <div><b>15 min</b><span>respuesta</span></div>
+                        <div><b>500+</b><span>condominios</span></div>
+                      </div>
+                      <div class="mk-form">
+                        <div class="mk-frow"><div class="mk-field">Nombre del administrador</div><div class="mk-field">Teléfono</div></div>
+                        <div class="mk-frow"><div class="mk-field">Nombre del condominio</div><div class="mk-field">Número de unidades</div></div>
+                        <div class="mk-field">Ubicación (alcaldía / municipio)</div>
+                        <div class="mk-submit">Solicitar cotización gratis →</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">07 · Contacto — formulario calificado para el comité, con señales de cumplimiento visibles antes de enviar.</figcaption>
+              </figure>
+
+            </div>
+          </section>
+
+          <!-- 10 RESULTADO -->
+          <section class="ol-case-section" id="resultado">
+            <span class="ol-case-eyebrow">10 · Resultado entregado</span>
+            <h2 class="ol-case-h2">Un sitio que respalda, no sólo promete.</h2>
+            <p class="ol-case-p">El resultado es un sitio que <strong>comunica trayectoria, cumplimiento y respuesta desde el primer scroll</strong>, presenta el catálogo de servicios con claridad y abre canales de cotización sin fricción. El comité entiende, en pocos segundos, por qué GUPRI protege mejor — y por qué hacerlo no pone en riesgo a la comunidad.</p>
+            <ul class="ol-case-list">
+              <li><strong>Sitio corporativo en operación</strong> bajo dominio propio, certificado SSL, hosting CDN y dominio gestionado.</li>
+              <li><strong>Catálogo de servicios</strong> presentado con un sistema visual consistente y comparable.</li>
+              <li><strong>Cumplimiento legal —REPSE, SSP, IMSS, STPS—</strong> elevado a primer argumento del sitio.</li>
+              <li><strong>Respuesta garantizada en 15 minutos</strong> comunicada como compromiso concreto y verificable.</li>
+              <li><strong>Formulario de cotización sin cargos ocultos</strong> con campos del contexto residencial, enrutado al equipo comercial.</li>
+              <li><strong>Canal paralelo por WhatsApp y teléfono</strong> visibles en todas las pantallas del sitio.</li>
+              <li><strong>Datos estructurados Schema.org</strong> para que motores y agregadores entiendan correctamente la naturaleza del sitio.</li>
+            </ul>
+
+            <figure class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <picture>
+                  <source srcset="/img/seguridad-privada/gupri/patrullaje-vigilancia-condominios-gupri.avif" type="image/avif">
+                  <img src="/img/seguridad-privada/gupri/patrullaje-vigilancia-condominios-gupri.webp" alt="Personal de seguridad privada en patrullaje preventivo dentro de un condominio residencial" width="1280" height="720" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <figcaption class="ol-case-figure-caption">Patrullaje preventivo dentro del desarrollo: una de las rutinas que el sitio presenta al comité como evidencia de servicio.</figcaption>
+            </figure>
+
+            <div class="ol-cs-band">
+              <div><b>30 <span>+</span></b><p>años de trayectoria</p></div>
+              <div><b>500<span>+</span></b><p>condominios protegidos</p></div>
+              <div><b>15 <span>min</span></b><p>respuesta garantizada</p></div>
+              <div><b>5</b><p>estados con cobertura</p></div>
+            </div>
+            <p class="ol-case-figure-caption" style="margin-top:.7rem">Cifras que el sitio pone al frente para respaldar la promesa — trayectoria, escala, compromiso y cobertura, ordenados como argumento de confianza.</p>
+          </section>
+
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="ol-cta-hero">
+    <div class="ol-cta-hero-inner">
+      <div class="ol-cta-hero-card">
+
+        <div class="ol-cta-hero-left">
+          <p class="ol-cta-hero-eyebrow">Iniciar proyecto</p>
+          <h2 class="ol-cta-hero-title">¿Tu empresa de seguridad privada necesita un sitio al nivel de su operación?</h2>
+          <p class="ol-cta-hero-blurb">Si ofreces guardias intramuros, monitoreo, control de accesos o protección ejecutiva — podemos construir contigo un sitio profesional, claro y orientado a conversión. Sin plantillas, sin atajos, hecho para el comprador del sector.</p>
+          <div class="ol-cta-hero-actions">
+            <a href="/cotizar/" class="ol-btn-primary">
+              Cotizar proyecto
+              <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+            <a href="https://wa.me/525547868402?text=Hola%2C%20vi%20el%20caso%20de%20GUPRI%20y%20quiero%20un%20proyecto%20similar." target="_blank" rel="noopener noreferrer" class="ol-btn-ghost">
+              <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg>
+              Hablar por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="ol-cta-hero-right">
+          <div class="ol-cta-hero-promises">
+            <p class="ol-cta-hero-promises-title">Lo que recibes con OrigenLab</p>
+            <ul class="ol-cta-hero-promises-list">
+              <li>Descubrimiento técnico antes de cualquier propuesta visual</li>
+              <li>Diseño y desarrollo a medida — sin plantillas ni atajos</li>
+              <li>Servicios bien explicados con cobertura y certificaciones visibles</li>
+              <li>Formularios B2B, WhatsApp y CRM integrados al flujo</li>
+              <li>Estructura escalable para crecer con tu operación</li>
+              <li>Acompañamiento post-entrega con tu equipo</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ — componente compartido (.ol-faq-*) en premium-dark.css -->
+  <section class="ol-faq-section">
+    <div class="ol-faq-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Preguntas Frecuentes</span>
+          <h2 class="ol-section-title">Todo lo que necesitas saber<br>antes de empezar</h2>
+          <p class="ol-section-sub">Resolvemos las dudas más comunes sobre nuestros proyectos web. ¿No encuentras tu respuesta? Escríbenos directo.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Sabemos que contratar una agencia de desarrollo web implica una decisión importante. Por eso reunimos aquí las preguntas que más nos hacen antes de arrancar un proyecto — sobre costos, tiempos, procesos y lo que incluye cada entrega. Queremos que llegues a la primera llamada con claridad, no con dudas.</p>
+          <p class="ol-sh-copy">Si tu pregunta no está aquí, escríbenos directo. Respondemos de manera personalizada y sin compromiso. Cada proyecto es distinto y preferimos una conversación real a una respuesta genérica.</p>
+        </div>
+      </div>
+
+      <div class="ol-faq-grid">
+
+        <!-- Columna izquierda: Acordeón FAQ -->
+        <div>
+          <p class="ol-faq-col-label">Preguntas frecuentes</p>
+          <div class="ol-faq-list" id="ol-faq-list">
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="0">
+                ¿Cómo comunica el sitio el cumplimiento legal sin saturar al comité?
+                <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-0">
+                <p class="ol-faq-answer-inner">El cumplimiento de GUPRI —REPSE, SSP, IMSS y STPS— se trata como argumento de venta, no como letra pequeña. Lo presentamos en bloques de confianza, jerarquizados para que el comité los identifique de un vistazo, y disponibles en detalle para quien quiera profundizar. Es justo el filtro que separa a una empresa formal de un proveedor que pone en riesgo a la comunidad.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="1">
+                ¿Cómo se muestra la respuesta garantizada de 15 minutos?
+                <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-1">
+                <p class="ol-faq-answer-inner">La promesa de menos de quince minutos se presenta como un compromiso concreto y medible, no como un eslogan vago. Aparece junto a la trayectoria de treinta años, de modo que el comité asocia experiencia con capacidad real de respuesta: dos argumentos que pesan más que el precio en una decisión de patrimonio.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="2">
+                ¿El sitio diferencia el servicio por tipo de comunidad?
+                <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-2">
+                <p class="ol-faq-answer-inner">Sí. El sitio segmenta entre condominios verticales y horizontales, fraccionamientos, calles privadas y conjuntos residenciales, para que cada comité se reconozca y entienda que los protocolos se adaptan a su tipo de desarrollo, no son un paquete genérico.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="3">
+                ¿El sitio capta al comité o al administrador del condominio?
+                <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-3">
+                <p class="ol-faq-answer-inner">Está diseñado para el decisor B2B residencial. El CTA principal es la cotización gratuita sin cargos ocultos, y el formulario pide el contexto que califica el lead —tipo de comunidad, número de unidades, ubicación— para que el equipo reciba solicitudes accionables. WhatsApp y teléfono quedan visibles para resolver de inmediato.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="4">
+                ¿Cómo manejan la cobertura en cinco estados?
+                <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-4">
+                <p class="ol-faq-answer-inner">La cobertura se estructura por estado —CDMX, Estado de México, Jalisco, Nuevo León y Querétaro— para que el administrador confirme operación con personal local cercano a su comunidad. Esa organización también permite que cada zona tenga su propio espacio dentro del sitio, sin duplicar contenido ni inflar el menú.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="5">
+                ¿Cuánto cuesta un proyecto como este?
+                <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-5">
+                <p class="ol-faq-answer-inner">Depende del alcance: número de pantallas, integraciones, secciones de cobertura y nivel de personalización. Construimos cada propuesta a la medida y la entregamos detallada y por escrito, sin cargos ocultos, antes de comenzar.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="6">
+                ¿En cuánto tiempo está listo?
+                <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-6">
+                <p class="ol-faq-answer-inner">Cada proyecto tiene su propio alcance, así que fijamos un calendario comprometido por escrito desde el inicio. Trabajamos con entregas iterativas en un entorno de pruebas para que veas el avance real en cada etapa, sin sorpresas.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="7">
+                ¿Dan acompañamiento después de lanzar el sitio?
+                <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-7">
+                <p class="ol-faq-answer-inner">Sí. Entregamos el sitio en operación con documentación para tu equipo y quedamos disponibles para crecerlo: nuevas zonas de cobertura, servicios o casos. La estructura queda lista para escalar conforme crece tu operación.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Columna derecha: Formulario WhatsApp -->
+        <div>
+          <div class="ol-faq-form-wrap">
+            <span class="ol-faq-form-badge">
+              <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+              Contáctanos por WhatsApp
+            </span>
+            <h3 class="ol-faq-form-title">¿Listo para empezar<br>tu proyecto?</h3>
+            <p class="ol-faq-form-sub">Cuéntanos brevemente qué necesitas y te respondemos con una propuesta clara, por escrito y sin compromiso.</p>
+
+            <form class="ol-faq-form" id="ol-wa-form" novalidate>
+              <div class="ol-faq-form-row">
+                <div class="ol-faq-field">
+                  <label for="faq-nombre">Tu nombre</label>
+                  <input type="text" id="faq-nombre" placeholder="Ej. Carlos García" autocomplete="given-name">
+                </div>
+                <div class="ol-faq-field">
+                  <label for="faq-empresa">Empresa / Negocio</label>
+                  <input type="text" id="faq-empresa" placeholder="Nombre de tu empresa">
+                </div>
+              </div>
+              <div class="ol-faq-field">
+                <label for="faq-tipo">Tipo de proyecto</label>
+                <select id="faq-tipo">
+                  <option value="" disabled selected>Selecciona una opción</option>
+                  <option value="Sitio web corporativo">Sitio web corporativo</option>
+                  <option value="Tienda en línea / E-commerce">Tienda en línea / E-commerce</option>
+                  <option value="Landing page">Landing page</option>
+                  <option value="Rediseño de sitio existente">Rediseño de sitio existente</option>
+                  <option value="Portafolio profesional">Portafolio profesional</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+              <div class="ol-faq-field">
+                <label for="faq-mensaje">¿Qué necesitas?</label>
+                <textarea id="faq-mensaje" placeholder="Describe brevemente tu proyecto o la duda que tienes..."></textarea>
+              </div>
+              <button type="submit" class="ol-faq-submit">
+                <svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+                Enviar por WhatsApp
+              </button>
+              <p class="ol-faq-form-note">Al enviar, se abrirá WhatsApp con tu mensaje listo. Respondemos en menos de 24 h.</p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+  (function() {
+    /* FAQ toggle se maneja en ol-header.js (universal). Solo el form WhatsApp aquí. */
+    var waForm = document.getElementById('ol-wa-form');
+    if (waForm) waForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var nombre = document.getElementById('faq-nombre').value.trim();
+      var empresa = document.getElementById('faq-empresa').value.trim();
+      var tipo = document.getElementById('faq-tipo').value;
+      var mensaje = document.getElementById('faq-mensaje').value.trim();
+      var partes = ['Hola OrigenLab, me contacto desde el caso de estudio de GUPRI.'];
+      if (nombre) partes.push('*Nombre:* ' + nombre);
+      if (empresa) partes.push('*Empresa:* ' + empresa);
+      if (tipo) partes.push('*Tipo de proyecto:* ' + tipo);
+      if (mensaje) partes.push('*Descripción:* ' + mensaje);
+      partes.push('Me gustaría recibir más información. ¡Gracias!');
+      var url = 'https://wa.me/525547868402?text=' + encodeURIComponent(partes.join('\n'));
+      window.open(url, '_blank', 'noopener,noreferrer');
+    });
+  })();
+  </script>
+
+  <!-- ============== CASO SIGUIENTE / VOLVER AL SECTOR ============== -->
+  <section class="ol-case-next">
+    <div class="ol-case-next-inner">
+      <a href="/portafolio/seguridad-privada/seguridadeventos/" class="ol-case-next-card">
+        <p class="ol-case-next-eyebrow">← Caso anterior</p>
+        <p class="ol-case-next-title">SeguridadEventos · Seguridad privada para eventos en México</p>
+        <span class="ol-case-next-link">Ver caso completo →</span>
+      </a>
+      <a href="/portafolio/seguridad-privada/" class="ol-case-next-card">
+        <p class="ol-case-next-eyebrow">Volver al sector</p>
+        <p class="ol-case-next-title">Seguridad Privada · Más proyectos del sector</p>
+        <span class="ol-case-next-link">Ir al portafolio del sector →</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="ol-footer">
+  <div class="ol-footer-top">
+    <a href="/" class="ol-footer-logo">
+      Origen<span class="ol-footer-logo-dot">.</span>Lab
+    </a>
+    <p class="ol-footer-tagline">
+      Agencia de desarrollo web en México.<br>
+      Creamos sitios que generan resultados.
+    </p>
+    <ul class="ol-footer-contact-list">
+      <li>
+        <a href="mailto:hola@origenlab.com" class="ol-fcl-item">
+          <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          hola@origenlab.com
+        </a>
+      </li>
+      <li>
+        <a href="tel:+525547868402" class="ol-fcl-item">
+          <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +52 55 4786 8402
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/525547868402" target="_blank" rel="noopener noreferrer" class="ol-fcl-item ol-fcl-wa">
+          <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg>
+          WhatsApp
+        </a>
+      </li>
+      <li>
+        <span class="ol-fcl-item ol-fcl-static">
+          <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Ciudad de México, MX
+        </span>
+      </li>
+    </ul>
+  </div>
+  <div class="ol-footer-links">
+    <div>
+      <p class="ol-footer-col-title">Servicios</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/servicios/desarrollo-web/">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/">Rediseño Web</a></li>
+        <li><a href="/servicios/paginas-en-renta/">Páginas en Renta</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Empresa</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/nosotros/">Nosotros</a></li>
+        <li><a href="/portafolio/">Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/">Equipos Contra Incendios</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Contacto</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/contacto/">Formulario de contacto</a></li>
+        <li><a href="mailto:hola@origenlab.com">hola@origenlab.com</a></li>
+        <li><a href="tel:+525547868402">+52 55 4786 8402</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Legal</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/aviso-de-privacidad/">Aviso de privacidad</a></li>
+        <li><a href="/terminos/">Términos de servicio</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ol-footer-bottom">
+    <p class="ol-footer-copy">© 2026 OrigenLab. Todos los derechos reservados.</p>
+    <div class="ol-footer-legal">
+      <a href="/aviso-de-privacidad/">Privacidad</a>
+      <a href="/terminos/">Términos</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WA Bubble -->
+<a href="https://wa.me/525547868402?text=Hola%2C%20vi%20el%20caso%20de%20GUPRI%20y%20me%20interesa%20un%20proyecto%20similar." target="_blank" rel="noopener noreferrer" class="wa-bubble" aria-label="Contáctanos por WhatsApp">
+  <svg aria-hidden="true" focusable="false" viewBox="0 0 32 32" width="26" height="26" fill="#fff">
+    <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 0 0 2.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0 0 16.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"></path>
+  </svg>
+</a>
+
+<!-- ============================================================
+     SCRIPTS — header móvil + scroll + TOC activo
+     ============================================================ -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var toggle   = document.getElementById('ol-menu-toggle');
+    var panel    = document.getElementById('ol-mobile-panel');
+    var overlay  = document.getElementById('ol-mobile-overlay');
+    var closeBtn = document.getElementById('ol-mobile-close');
+    var header   = document.getElementById('ol-header');
+
+    function openMenu() {
+      toggle.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+      panel.classList.add('open');
+      overlay.classList.add('visible');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      panel.classList.remove('open');
+      overlay.classList.remove('visible');
+      document.body.style.overflow = '';
+    }
+
+    if (toggle)   toggle.addEventListener('click', function () { panel.classList.contains('open') ? closeMenu() : openMenu(); });
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    if (overlay)  overlay.addEventListener('click', closeMenu);
+
+    var mobileLinks = panel ? panel.querySelectorAll('a') : [];
+    for (var i = 0; i < mobileLinks.length; i++) mobileLinks[i].addEventListener('click', closeMenu);
+
+    var subToggles = document.querySelectorAll('[data-submenu]');
+    for (var j = 0; j < subToggles.length; j++) {
+      subToggles[j].addEventListener('click', function () {
+        this.classList.toggle('expanded');
+        var sub = this.nextElementSibling;
+        if (sub) sub.classList.toggle('open');
+      });
+    }
+
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 10) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    }, { passive: true });
+
+    /* ---- TOC activo según sección visible ---- */
+    var tocLinks = document.querySelectorAll('#ol-case-toc a');
+    var sections = [];
+    tocLinks.forEach(function(link){
+      var id = link.getAttribute('href').slice(1);
+      var sec = document.getElementById(id);
+      if (sec) sections.push({ id: id, el: sec, link: link });
+    });
+
+    function setActive() {
+      var top = window.scrollY + 140;
+      var current = null;
+      sections.forEach(function(s){
+        if (s.el.offsetTop <= top) current = s;
+      });
+      tocLinks.forEach(function(l){ l.classList.remove('active'); });
+      if (current) current.link.classList.add('active');
+    }
+    if (sections.length) {
+      setActive();
+      window.addEventListener('scroll', setActive, { passive: true });
+    }
+
+    /* ---- Smooth scroll para anchors internos ---- */
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      a.addEventListener('click', function(e){
+        var hash = a.getAttribute('href');
+        if (hash.length > 1) {
+          var target = document.getElementById(hash.slice(1));
+          if (target) {
+            e.preventDefault();
+            window.scrollTo({ top: target.offsetTop - 100, behavior: 'smooth' });
+            history.replaceState(null, '', hash);
+          }
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

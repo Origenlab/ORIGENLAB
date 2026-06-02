@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Caso · MANEXT — Mantenimiento de Extintores · Servicios Certificados | OrigenLab</title>
-  <meta name="description" content="Caso de estudio del sitio corporativo de MANEXT, empresa especializada en recarga, mantenimiento preventivo, prueba hidrostática y capacitación de extintores. Cumplimiento NOM-154-SCFI y NOM-002-STPS, con cobertura en CDMX y Zona Metropolitana del Valle de México.">
+  <title>Caso · MANEXT — Venta y Mantenimiento de Extintores desde 1943 | OrigenLab</title>
+  <meta name="description" content="Caso de estudio del sitio corporativo de MANEXT, distribuidor con mayor trayectoria de la CDMX (desde 1943) en venta, recarga, mantenimiento preventivo, prueba hidrostática, capacitación y señalización de extintores. Cumplimiento NOM-154-SCFI y NOM-002-STPS, con cobertura en CDMX y Zona Metropolitana del Valle de México.">
   <link rel="canonical" href="https://origenlab.com/portafolio/equipos-contra-incendios/manext/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://origenlab.com/portafolio/equipos-contra-incendios/manext/">
-  <meta property="og:title" content="Caso · MANEXT — Mantenimiento de Extintores · Servicios Certificados | OrigenLab">
-  <meta property="og:description" content="Cómo construimos el sitio corporativo de MANEXT: arquitectura, diseño, programación de servicios y conversión B2B para una empresa de servicios técnicos certificados bajo NOM-154 y NOM-002-STPS.">
-  <meta property="og:image" content="https://origenlab.com/img/equipos-contra-incendios/manext/manext-home-venta-extintores-cdmx-nom.avif">
+  <meta property="og:title" content="Caso · MANEXT — Venta y Mantenimiento de Extintores desde 1943 | OrigenLab">
+  <meta property="og:description" content="Cómo construimos el sitio corporativo de MANEXT: arquitectura, diseño, catálogo de servicios y conversión B2B para el distribuidor con mayor trayectoria de la CDMX (desde 1943), bajo NOM-154-SCFI y NOM-002-STPS.">
+  <meta property="og:image" content="https://origenlab.com/img/equipos-contra-incendios/manext/manext-hero.webp">
   <meta property="og:locale" content="es_MX">
   <meta property="og:site_name" content="OrigenLab">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Caso · MANEXT — Mantenimiento de Extintores · Servicios Certificados | OrigenLab">
-  <meta name="twitter:description" content="Sitio corporativo B2B para empresa de servicios técnicos especializada en extintores. NOM-154 · NOM-002-STPS · CDMX y ZMVM.">
-  <meta name="twitter:image" content="https://origenlab.com/img/equipos-contra-incendios/manext/manext-home-venta-extintores-cdmx-nom.avif">
+  <meta name="twitter:title" content="Caso · MANEXT — Venta y Mantenimiento de Extintores desde 1943 | OrigenLab">
+  <meta name="twitter:description" content="Sitio corporativo B2B para el distribuidor de extintores con mayor trayectoria de la CDMX (desde 1943). Venta, recarga, hidrostática, capacitación. NOM-154 · NOM-002-STPS · CDMX y ZMVM.">
+  <meta name="twitter:image" content="https://origenlab.com/img/equipos-contra-incendios/manext/manext-hero.webp">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="../../../favicon.svg">
@@ -53,9 +53,116 @@
     /* Check de listas hereda el acento del caso (shared usa hex Gama por defecto) */
     .ol-case-list li::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23B45309' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E"); }
     .ol-cta-hero-promises-list li::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23B45309' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E"); }
+
+    /* ── Maquetas .mk (browser-mockups del sitio del cliente · tema claro · sin animaciones) ── */
+    .mk { --mk-indigo:#B45309; --mk-ink:#0F1729; --mk-gray:#475467; --mk-soft:#7A8699;
+          --mk-line:#E6E8EE; --mk-bg:#FFFFFF; --mk-bg2:#F6F7FB; --mk-indigo-soft:#F7EDE2;
+          border-radius:10px; overflow:hidden; border:1px solid var(--mk-line); background:var(--mk-bg); }
+    .mk-bar { display:flex; align-items:center; gap:.55rem; padding:.5rem .8rem; background:#1A1D29; border-bottom:1px solid rgba(255,255,255,.06); }
+    .mk-dots { display:flex; gap:5px; }
+    .mk-dots i { width:8px; height:8px; border-radius:50%; background:rgba(255,255,255,.22); }
+    .mk-dots i:nth-child(1){ background:#ED6A5E; } .mk-dots i:nth-child(2){ background:#F4BF4F; } .mk-dots i:nth-child(3){ background:#61C554; }
+    .mk-url { flex:1; background:rgba(255,255,255,.07); border-radius:999px; padding:.22rem .7rem; font-size:10.5px; color:rgba(255,255,255,.62); text-align:center; font-family:'SFMono-Regular',Menlo,Consolas,monospace; letter-spacing:.02em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .mk-view { background:var(--mk-bg); color:var(--mk-ink); padding:1.4rem 1.5rem 1.6rem; }
+    .mk-nav { display:flex; align-items:center; justify-content:space-between; padding-bottom:1rem; border-bottom:1px solid var(--mk-line); margin-bottom:1.3rem; }
+    .mk-logo { font-size:.95rem; font-weight:800; color:var(--mk-indigo); letter-spacing:-.01em; }
+    .mk-menu { display:flex; gap:.85rem; font-size:10.5px; color:var(--mk-gray); font-weight:600; align-items:center; }
+    .mk-menu .mk-cta { background:var(--mk-indigo); color:#fff; padding:.28rem .6rem; border-radius:6px; }
+    .mk-eyebrow { font-size:9.5px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--mk-indigo); }
+    .mk-h { font-size:1.5rem; font-weight:800; letter-spacing:-.02em; line-height:1.1; color:var(--mk-ink); margin:.4rem 0 0; }
+    .mk-h .ac { color:var(--mk-indigo); }
+    .mk-sub { font-size:11.5px; color:var(--mk-gray); line-height:1.55; margin:.6rem 0 0; }
+    .mk-grid2 { display:grid; grid-template-columns:1.1fr 1fr; gap:1.6rem; align-items:start; }
+    .mk-sect-h { font-size:1.05rem; font-weight:800; letter-spacing:-.01em; color:var(--mk-ink); text-align:center; margin:0 0 .25rem; }
+    .mk-sect-sub { font-size:10.5px; color:var(--mk-soft); text-align:center; line-height:1.5; margin:0 auto 1.2rem; max-width:80%; }
+    .mk-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:.7rem; }
+    .mk-card { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.8rem .75rem; }
+    .mk-ic { width:30px; height:30px; border-radius:7px; background:var(--mk-indigo-soft); color:var(--mk-indigo); display:flex; align-items:center; justify-content:center; margin-bottom:.55rem; }
+    .mk-ct { font-size:11.5px; font-weight:700; color:var(--mk-ink); margin:0 0 .35rem; }
+    .mk-bul { list-style:none; margin:0; padding:0; }
+    .mk-bul li { position:relative; font-size:9.5px; color:var(--mk-gray); line-height:1.5; padding-left:.85rem; margin-bottom:.18rem; }
+    .mk-bul li::before { content:''; position:absolute; left:0; top:.42em; width:5px; height:5px; border-radius:50%; background:var(--mk-indigo); opacity:.55; }
+    .mk-stats { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-stat { text-align:center; background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:1rem .5rem; }
+    .mk-stat b { display:block; font-size:1.45rem; font-weight:800; color:var(--mk-indigo); letter-spacing:-.02em; line-height:1; }
+    .mk-stat span { display:block; font-size:9px; color:var(--mk-soft); margin-top:.4rem; line-height:1.35; font-weight:600; }
+    .mk-chips { display:flex; flex-wrap:wrap; gap:.4rem; justify-content:center; }
+    .mk-chip { font-size:9.5px; font-weight:600; color:var(--mk-gray); background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:999px; padding:.3rem .65rem; }
+    .mk-chip.on { background:var(--mk-indigo-soft); border-color:rgba(180,83,9,.25); color:var(--mk-indigo); }
+    .mk-tcards { display:grid; grid-template-columns:repeat(3,1fr); gap:.7rem; }
+    .mk-tcard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .8rem; }
+    .mk-trow { display:flex; align-items:center; gap:.5rem; margin-bottom:.5rem; }
+    .mk-av { width:28px; height:28px; border-radius:50%; background:var(--mk-indigo); color:#fff; font-size:9.5px; font-weight:700; display:flex; align-items:center; justify-content:center; flex:0 0 28px; }
+    .mk-tn { font-size:10px; font-weight:700; color:var(--mk-ink); line-height:1.2; }
+    .mk-tloc { font-size:8.5px; color:var(--mk-soft); }
+    .mk-stars { color:#F5A623; font-size:9px; letter-spacing:1px; margin-bottom:.3rem; }
+    .mk-quote { font-size:9.5px; color:var(--mk-gray); line-height:1.5; margin:0; }
+    .mk-form { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:11px; padding:1.1rem 1.1rem 1.2rem; }
+    .mk-field { height:30px; background:var(--mk-bg); border:1px solid var(--mk-line); border-radius:7px; margin-bottom:.55rem; display:flex; align-items:center; padding:0 .6rem; font-size:9.5px; color:var(--mk-soft); }
+    .mk-frow { display:grid; grid-template-columns:1fr 1fr; gap:.55rem; }
+    .mk-submit { background:var(--mk-indigo); color:#fff; font-size:10.5px; font-weight:700; text-align:center; border-radius:7px; padding:.6rem; margin-top:.3rem; }
+    .mk-trust { display:grid; grid-template-columns:repeat(4,1fr); gap:.55rem; margin-bottom:1rem; }
+    .mk-trust div { text-align:center; }
+    .mk-trust b { display:block; font-size:1.05rem; font-weight:800; color:var(--mk-indigo); line-height:1; }
+    .mk-trust span { display:block; font-size:8px; color:var(--mk-soft); margin-top:.25rem; font-weight:600; }
+    /* --- Hero oscuro (mirror del sitio live · acento ámbar industrial) --- */
+    .mk-hero { background:linear-gradient(135deg,#1A1206 0%,#120D08 58%,#1A1206 100%); margin:-1.4rem -1.5rem 1.3rem; padding:1.5rem 1.5rem 1.35rem; border-bottom:1px solid var(--mk-line); }
+    .mk-hero .mk-eyebrow { color:#F0A350; }
+    .mk-hero .mk-h { color:#fff; }
+    .mk-hero .mk-h .ac { color:#E0913E; }
+    .mk-hero .mk-sub { color:rgba(240,232,222,.74); }
+    .mk-hb { display:grid; grid-template-columns:1.2fr 1fr; gap:1.4rem; align-items:start; }
+    .mk-hk { font-size:9px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#F0A350; margin:0 0 .35rem; }
+    .mk-hp { font-size:10px; color:rgba(240,232,222,.66); line-height:1.55; margin:0; }
+    .mk-strip { display:flex; gap:1.6rem; margin-top:1rem; padding-top:.9rem; border-top:1px solid rgba(255,255,255,.1); }
+    .mk-strip div b { font-size:1.15rem; font-weight:800; color:#fff; letter-spacing:-.02em; line-height:1; }
+    .mk-strip div b span { color:#E0913E; }
+    .mk-strip div .l { display:block; font-size:7.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:rgba(240,232,222,.5); margin-top:.3rem; }
+    /* --- Tira de servicios bajo el hero --- */
+    .mk-quick { display:grid; grid-template-columns:repeat(6,1fr); gap:.5rem; }
+    .mk-qc { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:8px; padding:.6rem .55rem; }
+    .mk-qc .mk-ic { width:24px; height:24px; margin-bottom:.4rem; border-radius:6px; }
+    .mk-qc b { display:block; font-size:9.5px; font-weight:700; color:var(--mk-ink); line-height:1.2; }
+    .mk-qc span { display:block; font-size:7.5px; color:var(--mk-soft); margin-top:.18rem; line-height:1.3; }
+    .mk-qc.cta { background:var(--mk-indigo); border-color:var(--mk-indigo); }
+    .mk-qc.cta b, .mk-qc.cta span { color:#fff; }
+    .mk-qc.cta .mk-ic { background:rgba(255,255,255,.18); color:#fff; }
+    /* --- Listas INCLUYE en cards de servicio/producto --- */
+    .mk-pbadge { float:right; font-size:7.5px; font-weight:700; letter-spacing:.08em; color:var(--mk-indigo); background:var(--mk-indigo-soft); border-radius:5px; padding:.18rem .4rem; }
+    .mk-inc-k { font-size:7.5px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; color:var(--mk-soft); margin:.55rem 0 .35rem; }
+    .mk-inc { display:flex; flex-wrap:wrap; gap:.28rem; }
+    .mk-inc span { font-size:8px; font-weight:600; color:var(--mk-gray); background:var(--mk-bg); border:1px solid var(--mk-line); border-radius:5px; padding:.22rem .42rem .22rem .82rem; position:relative; }
+    .mk-inc span::before { content:''; position:absolute; left:.36rem; top:50%; transform:translateY(-50%); width:4px; height:4px; border-radius:50%; background:var(--mk-indigo); }
+    /* --- Diferenciadores (4 col) --- */
+    .mk-diff { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-dcard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .75rem; }
+    .mk-dcard .mk-ic { margin-bottom:.5rem; }
+    .mk-dcard b { display:block; font-size:11px; font-weight:700; color:var(--mk-ink); margin-bottom:.3rem; }
+    .mk-dcard p { font-size:8.5px; color:var(--mk-gray); line-height:1.5; margin:0 0 .4rem; }
+    .mk-dlink { font-size:8px; font-weight:700; color:var(--mk-indigo); }
+    /* --- Sectores atendidos --- */
+    .mk-sect-cards { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-scard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .75rem; display:flex; flex-direction:column; }
+    .mk-scard .k { font-size:7.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--mk-indigo); margin-bottom:.3rem; }
+    .mk-scard b { font-size:11.5px; font-weight:700; color:var(--mk-ink); margin-bottom:.3rem; }
+    .mk-scard p { font-size:8.5px; color:var(--mk-gray); line-height:1.5; margin:0 0 .5rem; }
+    .mk-scard .v { font-size:8px; font-weight:700; color:var(--mk-indigo); margin-top:auto; }
+    /* --- Aliados / casos reales --- */
+    .mk-ally { font-size:7.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--mk-indigo); background:var(--mk-indigo-soft); border-radius:5px; padding:.18rem .45rem; display:inline-block; margin-bottom:.45rem; }
+    .mk-dom { font-size:8px; color:var(--mk-soft); margin-top:.35rem; }
+    @media (max-width:640px){
+      .mk-grid2 { grid-template-columns:1fr; gap:1rem; }
+      .mk-cards, .mk-tcards { grid-template-columns:1fr 1fr; }
+      .mk-stats, .mk-trust { grid-template-columns:repeat(2,1fr); }
+      .mk-h { font-size:1.2rem; }
+      .mk-hb { grid-template-columns:1fr; gap:.8rem; }
+      .mk-quick { grid-template-columns:repeat(3,1fr); }
+      .mk-diff, .mk-sect-cards { grid-template-columns:1fr 1fr; }
+      .mk-strip { flex-wrap:wrap; gap:.9rem; }
+    }
   </style>
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.com/#organization","name":"OrigenLab","url":"https://origenlab.com","logo":"https://origenlab.com/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.com/#website","url":"https://origenlab.com/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.com/#organization"}},{"@type":"BreadcrumbList","@id":"https://origenlab.com/portafolio/equipos-contra-incendios/manext/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.com/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.com/portafolio/"},{"@type":"ListItem","position":3,"name":"Equipos Contra Incendios","item":"https://origenlab.com/portafolio/equipos-contra-incendios/"},{"@type":"ListItem","position":4,"name":"MANEXT","item":"https://origenlab.com/portafolio/equipos-contra-incendios/manext/"}]},{"@type":"Organization","@id":"https://mantenimientodeextintores.mx/#organization","name":"MANEXT","url":"https://mantenimientodeextintores.mx/","description":"Empresa mexicana especializada en recarga, mantenimiento preventivo, prueba hidrostática y capacitación de extintores con cumplimiento NOM-154-SCFI y NOM-002-STPS, con cobertura en CDMX y Zona Metropolitana del Valle de México.","areaServed":{"@type":"AdministrativeArea","name":"Ciudad de México y Zona Metropolitana del Valle de México"},"knowsAbout":["Mantenimiento de extintores","Recarga de extintores","Prueba hidrostática","Capacitación NOM-002-STPS","NOM-154-SCFI","Servicios técnicos certificados"]},{"@type":"CreativeWork","@id":"https://origenlab.com/portafolio/equipos-contra-incendios/manext/#case","name":"MANEXT — Caso de estudio","description":"Empresa mexicana especializada en recarga, mantenimiento preventivo, prueba hidrostática y capacitación de extintores con cumplimiento NOM-154-SCFI y NOM-002-STPS, con cobertura en CDMX y Zona Metropolitana del Valle de México.","inLanguage":"es-MX","image":"https://origenlab.com/img/equipos-contra-incendios/manext/manext-home-venta-extintores-cdmx-nom.avif","author":{"@id":"https://origenlab.com/#organization"},"publisher":{"@id":"https://origenlab.com/#organization"},"about":{"@id":"https://mantenimientodeextintores.mx/#organization"},"keywords":["mantenimiento de extintores","recarga de extintores","prueba hidrostática","NOM-154-SCFI","NOM-002-STPS","servicios técnicos","B2B","CDMX","ZMVM"]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.com/#organization","name":"OrigenLab","url":"https://origenlab.com","logo":"https://origenlab.com/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.com/#website","url":"https://origenlab.com/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.com/#organization"}},{"@type":"BreadcrumbList","@id":"https://origenlab.com/portafolio/equipos-contra-incendios/manext/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.com/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.com/portafolio/"},{"@type":"ListItem","position":3,"name":"Equipos Contra Incendios","item":"https://origenlab.com/portafolio/equipos-contra-incendios/"},{"@type":"ListItem","position":4,"name":"MANEXT","item":"https://origenlab.com/portafolio/equipos-contra-incendios/manext/"}]},{"@type":"Organization","@id":"https://mantenimientodeextintores.mx/#organization","name":"MANEXT","url":"https://mantenimientodeextintores.mx/","description":"Distribuidor con mayor trayectoria de la Ciudad de México (desde 1943) en venta, recarga, mantenimiento preventivo, prueba hidrostática, capacitación y señalización de extintores, con cumplimiento NOM-154-SCFI y NOM-002-STPS y cobertura en CDMX y Zona Metropolitana del Valle de México.","foundingDate":"1943","areaServed":{"@type":"AdministrativeArea","name":"Ciudad de México y Zona Metropolitana del Valle de México"},"knowsAbout":["Venta de extintores","Mantenimiento de extintores","Recarga de extintores","Prueba hidrostática","Capacitación NOM-002-STPS","Señalización NOM-026-STPS","NOM-154-SCFI","Servicios técnicos certificados"]},{"@type":"CreativeWork","@id":"https://origenlab.com/portafolio/equipos-contra-incendios/manext/#case","name":"MANEXT — Caso de estudio","description":"Distribuidor con mayor trayectoria de la Ciudad de México (desde 1943) en venta, recarga, mantenimiento preventivo, prueba hidrostática, capacitación y señalización de extintores con cumplimiento NOM-154-SCFI y NOM-002-STPS, con cobertura en CDMX y Zona Metropolitana del Valle de México.","inLanguage":"es-MX","image":"https://origenlab.com/img/equipos-contra-incendios/manext/manext-hero.webp","author":{"@id":"https://origenlab.com/#organization"},"publisher":{"@id":"https://origenlab.com/#organization"},"about":{"@id":"https://mantenimientodeextintores.mx/#organization"},"keywords":["venta de extintores","mantenimiento de extintores","recarga de extintores","prueba hidrostática","capacitación de brigadas","NOM-154-SCFI","NOM-002-STPS","servicios técnicos","B2B","CDMX","ZMVM"]}]}</script>
 </head>
 <body>
 
@@ -146,9 +253,18 @@
                     <li><a href="/portafolio/seguridad-privada/origins/" class="ol-dropdown-link">ORIGINS Private Security</a></li>
                     <li><a href="/portafolio/seguridad-privada/seprico/" class="ol-dropdown-link">SEPRICO</a></li>
                     <li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-dropdown-link">SeguridadPrivadaMX</a></li>
+                    <li><a href="/portafolio/seguridad-privada/seguridadeventos/" class="ol-dropdown-link">SeguridadEventos</a></li>
+                    <li><a href="/portafolio/seguridad-privada/gupri/" class="ol-dropdown-link">GUPRI</a></li>
+                    <li><a href="/portafolio/seguridad-privada/directorio/" class="ol-dropdown-link">Directorio México</a></li>
                   </ul>
                 </div>
               </li>
+              <li class="ol-has-subdrop">
+              <a href="/portafolio/equipo-para-eventos/" class="ol-dropdown-link ol-dropdown-parent">Equipo para Eventos</a>
+              <div class="ol-subdrop"><ul>
+                <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-dropdown-link">PODIUMEX</a></li>
+              </ul></div>
+            </li>
             </ul>
           </div>
         </li>
@@ -209,6 +325,11 @@
         <li><a href="/portafolio/seguridad-privada/origins/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— ORIGINS Private Security</a></li>
         <li><a href="/portafolio/seguridad-privada/seprico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SEPRICO</a></li>
         <li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SeguridadPrivadaMX</a></li>
+        <li><a href="/portafolio/seguridad-privada/seguridadeventos/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SeguridadEventos</a></li>
+        <li><a href="/portafolio/seguridad-privada/gupri/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— GUPRI</a></li>
+        <li><a href="/portafolio/seguridad-privada/directorio/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Directorio México</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/" class="ol-mobile-link ol-mobile-sublink">Equipo para Eventos</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— PODIUMEX</a></li>
       </ul>
     </li>
     <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
@@ -259,9 +380,9 @@
     <div class="container hero__inner">
 
       <div class="hero__col1">
-        <span class="hero__eyebrow">Caso de estudio · Servicios técnicos certificados</span>
+        <span class="hero__eyebrow">Caso de estudio · Venta y servicio de extintores</span>
         <h1 class="hero__title">MANEXT<br>Mantenimiento<br>de extintores.</h1>
-        <p class="hero__sub">Sitio corporativo para empresa especializada en recarga, mantenimiento preventivo, prueba hidrostática y capacitación. Cumplimiento NOM-154-SCFI y NOM-002-STPS, con cobertura en CDMX y Zona Metropolitana del Valle de México.</p>
+        <p class="hero__sub">Sitio corporativo para el distribuidor con mayor trayectoria de la CDMX —desde 1943— especializado en venta, recarga, mantenimiento preventivo, prueba hidrostática, capacitación y señalización. Cumplimiento NOM-154-SCFI y NOM-002-STPS, con cobertura en CDMX y Zona Metropolitana del Valle de México.</p>
         <div class="hero__ctas">
           <a href="https://mantenimientodeextintores.mx/" target="_blank" rel="noopener noreferrer" class="ol-btn-primary">
             Visitar el sitio
@@ -291,21 +412,21 @@
           <span class="ol-co-eyebrow">La empresa</span>
           <h2 class="ol-co-title">Que tu extintor funcione <em>el día que importa</em>.</h2>
         </div>
-        <p class="ol-co-lead">MANEXT es una empresa mexicana especializada en el <strong>mantenimiento integral de extintores</strong>: recarga, revisión preventiva, prueba hidrostática y capacitación, bajo cumplimiento de la NOM-154-SCFI y la NOM-002-STPS.</p>
+        <p class="ol-co-lead">MANEXT es la empresa con mayor trayectoria en <strong>venta y mantenimiento de extintores</strong> de la Ciudad de México: ocho décadas de operación continua desde 1943. Distribuidor autorizado bajo NOM-154-SCFI que resuelve el cumplimiento de extremo a extremo —venta, recarga, prueba hidrostática, capacitación y señalización— alineado a la NOM-002-STPS.</p>
       </div>
 
       <div class="ol-co-stats">
         <div class="ol-co-stat">
-          <p class="ol-co-stat-val">NOM-154</p>
-          <p class="ol-co-stat-label">SCFI — extintores: servicio y mantenimiento</p>
+          <p class="ol-co-stat-val">Desde 1943</p>
+          <p class="ol-co-stat-label">más de 80 años de operación continua</p>
         </div>
         <div class="ol-co-stat">
-          <p class="ol-co-stat-val">NOM-002</p>
-          <p class="ol-co-stat-label">STPS — prevención y protección contra incendios</p>
+          <p class="ol-co-stat-val">+10,000</p>
+          <p class="ol-co-stat-label">clientes en CDMX y Estado de México</p>
         </div>
         <div class="ol-co-stat">
-          <p class="ol-co-stat-val">Servicio integral</p>
-          <p class="ol-co-stat-label">recarga, prueba hidrostática y capacitación</p>
+          <p class="ol-co-stat-val">NOM-154 · NOM-002</p>
+          <p class="ol-co-stat-label">SCFI extintores · STPS protección contra incendios</p>
         </div>
         <div class="ol-co-stat">
           <p class="ol-co-stat-val">CDMX · ZMVM</p>
@@ -316,8 +437,8 @@
       <div class="ol-co-split">
         <div class="ol-co-panel">
           <p class="ol-co-panel-k">Qué hace</p>
-          <h3 class="ol-co-panel-h">Mantenimiento que mantiene vigente tu protección.</h3>
-          <p class="ol-co-panel-p">MANEXT atiende a <strong>empresas, industria e instituciones</strong> que deben conservar sus extintores operativos y en regla: recarga, revisión preventiva, prueba hidrostática quinquenal y capacitación al personal usuario, con la documentación que exige cada norma.</p>
+          <h3 class="ol-co-panel-h">Venta y servicio que mantienen vigente tu protección.</h3>
+          <p class="ol-co-panel-p">MANEXT atiende a <strong>empresas, comercios, industria e instituciones</strong> que necesitan su parque de extintores operativo y en regla: venta de equipo certificado, recarga, revisión preventiva, prueba hidrostática quinquenal, capacitación de brigadas y señalización, con la documentación que exige cada norma.</p>
         </div>
         <div class="ol-co-panel">
           <p class="ol-co-panel-k">Cómo lo hace</p>
@@ -328,19 +449,24 @@
 
       <div class="ol-co-sub">
         <p class="ol-co-sub-eyebrow">Servicios</p>
-        <h3 class="ol-co-sub-h">Mantenimiento integral de extintores.</h3>
-        <p class="ol-co-sub-p">Todo lo que un extintor necesita para seguir siendo confiable y cumplir norma.</p>
+        <h3 class="ol-co-sub-h">Venta, mantenimiento y recarga de extintores.</h3>
+        <p class="ol-co-sub-p">Cobertura integral del ciclo de vida del extintor con un solo proveedor certificado.</p>
 
         <div class="ol-co-lines">
           <div class="ol-co-line">
             <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l1 4H8l1-4z"/><path d="M8 7h8v13a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V7z"/><path d="M11 12h2"/></svg></div>
+            <h4 class="ol-co-line-h">Venta de extintores</h4>
+            <p class="ol-co-line-p">Equipo certificado NOM-154-SCFI para clases A, B, C y K, con instalación incluida.</p>
+          </div>
+          <div class="ol-co-line">
+            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 4v5h5"/></svg></div>
             <h4 class="ol-co-line-h">Recarga de extintores</h4>
-            <p class="ol-co-line-p">Recarga de todas las clases con agente certificado y trazabilidad del servicio.</p>
+            <p class="ol-co-line-p">Recarga anual por pesaje certificado de todas las clases, con collar de garantía.</p>
           </div>
           <div class="ol-co-line">
             <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
-            <h4 class="ol-co-line-h">Revisión preventiva</h4>
-            <p class="ol-co-line-p">Inspección periódica del estado, presión y vigencia de cada equipo en sitio.</p>
+            <h4 class="ol-co-line-h">Mantenimiento preventivo</h4>
+            <p class="ol-co-line-p">Pólizas anuales y visita a domicilio para mantener cada equipo vigente y en norma.</p>
           </div>
           <div class="ol-co-line">
             <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
@@ -349,39 +475,34 @@
           </div>
           <div class="ol-co-line">
             <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
-            <h4 class="ol-co-line-h">Capacitación</h4>
-            <p class="ol-co-line-p">Formación al personal usuario en uso y manejo de extintores conforme a la NOM-002-STPS.</p>
+            <h4 class="ol-co-line-h">Capacitación y brigadas</h4>
+            <p class="ol-co-line-p">Cursos contra incendio y formación de brigadas con constancias DC-3 válidas ante STPS.</p>
           </div>
           <div class="ol-co-line">
-            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 15h6M9 18h4"/></svg></div>
-            <h4 class="ol-co-line-h">Documentación NOM</h4>
-            <p class="ol-co-line-p">Registros y constancias que respaldan inspecciones de Protección Civil y auditorías.</p>
-          </div>
-          <div class="ol-co-line">
-            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 4v5h5"/></svg></div>
-            <h4 class="ol-co-line-h">Programa recurrente</h4>
-            <p class="ol-co-line-p">Calendario de servicio para que el equipo nunca quede vencido ni fuera de norma.</p>
+            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 7v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V7z"/></svg></div>
+            <h4 class="ol-co-line-h">Señalamiento y equipamiento</h4>
+            <p class="ol-co-line-p">Señales fotoluminiscentes, gabinetes y detectores conforme a la NOM-026-STPS y NOM-003-SEGOB.</p>
           </div>
         </div>
       </div>
 
       <div class="ol-co-sub">
         <p class="ol-co-sub-eyebrow">Por qué elegir a MANEXT</p>
-        <h3 class="ol-co-sub-h">Mantenimiento que evita multas y salva vidas.</h3>
+        <h3 class="ol-co-sub-h">Trayectoria que evita multas y salva vidas.</h3>
 
         <div class="ol-co-why">
           <div class="ol-co-why-item">
             <div class="ol-co-why-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
             <div>
-              <h4 class="ol-co-why-h">Cumplimiento NOM</h4>
-              <p class="ol-co-why-p">Servicio conforme a NOM-154-SCFI y NOM-002-STPS, listo para inspección.</p>
+              <h4 class="ol-co-why-h">Experiencia comprobada</h4>
+              <p class="ol-co-why-p">Ocho décadas de operación continua desde 1943, con más de 10,000 clientes.</p>
             </div>
           </div>
           <div class="ol-co-why-item">
             <div class="ol-co-why-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
             <div>
               <h4 class="ol-co-why-h">Servicio integral</h4>
-              <p class="ol-co-why-p">Recarga, prueba hidrostática y capacitación con un solo proveedor especializado.</p>
+              <p class="ol-co-why-p">Venta, recarga, prueba hidrostática y capacitación con un solo proveedor especializado.</p>
             </div>
           </div>
           <div class="ol-co-why-item">
@@ -410,6 +531,7 @@
         <div class="ol-co-band-tags">
           <span class="ol-co-band-tag">NOM-154-SCFI</span>
           <span class="ol-co-band-tag">NOM-002-STPS</span>
+          <span class="ol-co-band-tag">Venta</span>
           <span class="ol-co-band-tag">Recarga</span>
           <span class="ol-co-band-tag">Hidrostática</span>
           <span class="ol-co-band-tag">Capacitación</span>
@@ -437,10 +559,10 @@
           <div class="ol-side-card">
             <p class="ol-side-eyebrow">Datos del proyecto</p>
             <ul class="ol-side-meta">
-              <li><dt>Cliente</dt><dd>MANEXT</dd></li>
-              <li><dt>Sector</dt><dd>Servicios técnicos · Mantenimiento de extintores</dd></li>
-              <li><dt>Tipo de sitio</dt><dd>Corporativo B2B · Servicios certificados</dd></li>
-              <li><dt>Modelo de negocio</dt><dd>Servicios técnicos recurrentes y proyectos por evento</dd></li>
+              <li><dt>Cliente</dt><dd>MANEXT — desde 1943</dd></li>
+              <li><dt>Sector</dt><dd>Venta y mantenimiento de extintores</dd></li>
+              <li><dt>Tipo de sitio</dt><dd>Corporativo B2B · Catálogo y servicios certificados</dd></li>
+              <li><dt>Modelo de negocio</dt><dd>Distribuidor + servicios técnicos recurrentes</dd></li>
               <li><dt>Cumplimiento</dt><dd>NOM-154-SCFI · NOM-002-STPS</dd></li>
               <li><dt>Cobertura</dt><dd>CDMX · Zona Metropolitana del Valle de México (ZMVM)</dd></li>
               <li><dt>Sitio en vivo</dt><dd><a href="https://mantenimientodeextintores.mx/" target="_blank" rel="noopener noreferrer">mantenimientodeextintores.mx →</a></dd></li>
@@ -497,17 +619,51 @@
           <!-- 01 CONTEXTO -->
           <section class="ol-case-section" id="contexto">
             <span class="ol-case-eyebrow">01 · Contexto del cliente</span>
-            <h2 class="ol-case-h2">Empresa de servicios técnicos certificados en mantenimiento de extintores.</h2>
-            <p class="ol-case-lead">MANEXT es una empresa mexicana especializada en el mantenimiento integral de extintores: recarga, revisión preventiva, prueba hidrostática quinquenal y capacitación al personal usuario, bajo cumplimiento de la NOM-154-SCFI-2005 y la NOM-002-STPS-2010.</p>
-            <p class="ol-case-p">Su cliente típico no es el consumidor final: es una <strong>jefatura de protección civil, una coordinación de seguridad e higiene, una administración de inmueble corporativo o un responsable de mantenimiento de planta industrial</strong> que necesita garantizar que el equipo contra incendios de su instalación esté operativo, vigente y plenamente documentado ante una verificación de la autoridad o de su propio corporativo.</p>
-            <p class="ol-case-p">MANEXT atiende oficinas corporativas, plantas industriales, edificios de uso mixto, hoteles, hospitales, instituciones educativas, centros comerciales y unidades habitacionales en Ciudad de México y la Zona Metropolitana del Valle de México. Antes de este proyecto, la presencia digital de MANEXT no comunicaba la formalidad operativa de la empresa, ni la profundidad de su catálogo de servicios, ni el respaldo normativo bajo el cual trabaja.</p>
+            <h2 class="ol-case-h2">Ocho décadas de experiencia en extintores, una sola carpeta lista para inspección.</h2>
+            <p class="ol-case-lead">MANEXT es la empresa con mayor trayectoria en venta y mantenimiento de extintores de la Ciudad de México: ocho décadas de operación continua desde 1943, con cobertura en CDMX y Estado de México. Vende equipo certificado bajo NOM-154-SCFI y resuelve el cumplimiento de extremo a extremo: recarga, prueba hidrostática, capacitación de brigadas y la documentación que solicita Protección Civil.</p>
+            <p class="ol-case-p">Su cliente no busca solo un cilindro: es un <strong>responsable de seguridad e higiene, una jefatura de mantenimiento corporativo, una coordinación de protección civil o una administración de inmueble</strong> que necesita que su parque de extintores esté operativo, vigente y plenamente documentado ante una verificación de la autoridad o de su aseguradora.</p>
+            <p class="ol-case-p">MANEXT atiende corporativos, hospitales, hoteles, restaurantes, industrias, data centers, condominios, escuelas, centros comerciales y laboratorios en CDMX y el área metropolitana, con más de 10,000 clientes a lo largo de su historia. Antes de este proyecto, su presencia digital no comunicaba ni esa trayectoria, ni la profundidad de su catálogo de equipo y servicios, ni el respaldo normativo de extremo a extremo bajo el cual trabaja.</p>
 
-            <div class="ol-case-figure">
+            <figure class="ol-case-figure">
               <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/manext/manext-nosotros-80-anos-proteccion-cdmx.avif" alt="MANEXT — 80 años de experiencia en recarga y mantenimiento de extintores en CDMX" width="1543" height="854" loading="lazy" decoding="async">
+                <div class="mk">
+                  <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">mantenimientodeextintores.mx</span></div>
+                  <div class="mk-view">
+                    <div class="mk-nav">
+                      <span class="mk-logo">MANEXT</span>
+                      <span class="mk-menu"><span>Servicios</span><span>Extintores</span><span>Nosotros</span><span>Blog</span><span>Contacto</span><span class="mk-cta">Cotización gratuita</span></span>
+                    </div>
+                    <div class="mk-hero">
+                      <div class="mk-hb">
+                        <div>
+                          <span class="mk-eyebrow">Cobertura nacional · Entrega 48 h en CDMX</span>
+                          <h3 class="mk-h">Venta de extintores certificados en CDMX <span class="ac">desde 1943</span></h3>
+                          <p class="mk-sub">Distribuidor autorizado NOM-154-SCFI. Asesoría técnica gratuita, instalación incluida, recarga y mantenimiento anual a domicilio, con la documentación que tu inspección va a pedir.</p>
+                        </div>
+                        <div>
+                          <p class="mk-hk">Quiénes somos</p>
+                          <p class="mk-hp">Ocho décadas protegiendo empresas, comercios y familias mexicanas. Cada extintor cumple NOM-154-SCFI y NOM-002-STPS, llega con instalación, señalización fotoluminiscente y la carpeta oficial para Protección Civil — sin costos sorpresa.</p>
+                        </div>
+                      </div>
+                      <div class="mk-strip">
+                        <div><b>80<span>+</span></b><span class="l">Años desde 1943</span></div>
+                        <div><b><span>+</span>10,000</b><span class="l">Clientes en México</span></div>
+                        <div><b>24/7</b><span class="l">Cobertura 365 días</span></div>
+                      </div>
+                    </div>
+                    <div class="mk-quick">
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l1 4H8l1-4z"/><path d="M8 7h8v13a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V7z"/></svg></div><b>Venta</b><span>Extintores certificados</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><b>Mantenimiento</b><span>Pólizas anuales</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 4v5h5"/></svg></div><b>Recarga</b><span>Pesaje certificado</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><b>Hidrostática</b><span>Prueba quinquenal</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg></div><b>Capacitación</b><span>Brigadas DC-3</span></div>
+                      <div class="mk-qc cta"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></div><b>Cotización</b><span>Respuesta &lt;24 h</span></div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <p class="ol-case-figure-caption">Sección institucional: cumplimiento normativo, capacidad operativa y respaldo técnico comunicados desde el primer scroll.</p>
-            </div>
+              <figcaption class="ol-case-figure-caption">Home del sitio: hero con propuesta de valor, trayectoria (80+ años, +10,000 clientes) y accesos rápidos a venta, mantenimiento y cotización, comunicados desde el primer scroll.</figcaption>
+            </figure>
           </section>
 
           <!-- 02 RETO -->
@@ -592,13 +748,6 @@
                 <p>Formulario corporativo con campos relevantes para cotización formal, atención por correo, teléfono y acceso paralelo por WhatsApp.</p>
               </div>
             </div>
-
-            <div class="ol-case-figure">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/manext/manext-catalogo-extintores-nom-154-scfi.avif" alt="MANEXT — catálogo de extintores certificados NOM-154-SCFI" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <p class="ol-case-figure-caption">Servicios organizados por línea de operación: recarga, mantenimiento, prueba hidrostática, capacitación y venta de equipo nuevo.</p>
-            </div>
           </section>
 
           <!-- 04 DISEÑO -->
@@ -638,13 +787,6 @@
                 <p>Componente específico para destacar NOM-154-SCFI, NOM-002-STPS y normas asociadas en cada ficha — refuerza credibilidad sin saturar la jerarquía visual.</p>
               </div>
             </div>
-
-            <div class="ol-case-figure">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/manext/manext-extintores-nom-154-cdmx-asesoria.avif" alt="MANEXT — extintores NOM-154 con asesoría técnica especializada en CDMX" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <p class="ol-case-figure-caption">Sistema de tarjetas, badges normativos y jerarquía técnica aplicados de forma consistente en todo el catálogo de servicios.</p>
-            </div>
           </section>
 
           <!-- 05 SERVICIOS -->
@@ -662,13 +804,6 @@
               <li><strong>Venta de extintores nuevos:</strong> equipo certificado bajo NOM-154-SCFI con factura, constancia y soporte técnico — para reemplazo de unidades vencidas o ampliación del parque del inmueble.</li>
               <li><strong>Señalización de seguridad:</strong> letreros y placas de identificación de extintores y rutas de evacuación conforme a la NOM-003-SEGOB y NOM-026-STPS, integrados al servicio cuando el cliente lo requiere.</li>
             </ul>
-
-            <div class="ol-case-figure">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/manext/manext-servicios-recarga-mantenimiento-extintores.avif" alt="MANEXT — servicios de recarga y mantenimiento preventivo de extintores" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <p class="ol-case-figure-caption">Ficha de servicio con alcance, normativa aplicable, entregables documentales y CTA contextual de cotización formal.</p>
-            </div>
           </section>
 
           <!-- 06 CONVERSIÓN -->
@@ -751,13 +886,6 @@
                 </div>
               </dl>
             </div>
-
-            <div class="ol-case-figure">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/manext/manext-certificaciones-proteccion-civil-nom.avif" alt="MANEXT — certificaciones de protección civil y cumplimiento NOM" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <p class="ol-case-figure-caption">Comportamiento responsivo: desktop, tablet y móvil compartiendo sistema de componentes.</p>
-            </div>
           </section>
 
           <!-- 08 PROCESO -->
@@ -808,54 +936,287 @@
           <!-- 09 GALERÍA -->
           <section class="ol-case-section" id="galeria">
             <span class="ol-case-eyebrow">09 · Galería del sitio</span>
-            <h2 class="ol-case-h2">Pantallas y secciones del sitio en operación.</h2>
-            <p class="ol-case-p">Una recorrida por las pantallas principales del sitio: home, catálogo de servicios, sección institucional, ficha de servicio, módulo de programa anual y contacto B2B — todas construidas con el mismo sistema de componentes y la misma jerarquía visual.</p>
+            <h2 class="ol-case-h2">Recorrido por el sitio en operación.</h2>
+            <p class="ol-case-p">Ocho pantallas del sitio de MANEXT —servicios con su detalle, catálogo de extintores por tipo de fuego, por qué MANEXT, sectores atendidos, cobertura, trayectoria, aliados del sector y cotización— reproducidas con el mismo sistema de componentes y la misma jerarquía visual del sitio en operación. Cada pantalla está pensada para llevar al responsable de seguridad del interés a la cotización gratuita.</p>
 
             <div class="ol-case-gallery">
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/manext/manext-home-venta-extintores-cdmx-nom.avif" alt="MANEXT — pantalla 01: home venta de extintores en CDMX con NOM" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">01 · Hero principal con propuesta de valor y acceso al programa anual.</figcaption>
-              </figure>
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/manext/manext-nosotros-80-anos-proteccion-cdmx.avif" alt="MANEXT — pantalla 02: 80 años de protección contra incendios en CDMX" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">02 · Sección institucional con respaldo normativo y operativo.</figcaption>
-              </figure>
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/manext/manext-catalogo-extintores-nom-154-scfi.avif" alt="MANEXT — pantalla 03: catálogo extintores certificados NOM-154-SCFI" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">03 · Catálogo organizado por línea de servicio técnico.</figcaption>
-              </figure>
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/manext/manext-extintores-nom-154-cdmx-asesoria.avif" alt="MANEXT — pantalla 04: extintores NOM-154 con asesoría en CDMX" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">04 · Sistema de tarjetas con badges normativos.</figcaption>
-              </figure>
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/manext/manext-servicios-recarga-mantenimiento-extintores.avif" alt="MANEXT — pantalla 05: servicios de recarga y mantenimiento de extintores" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">05 · Ficha de servicio técnico con alcance, normativa y entregables.</figcaption>
-              </figure>
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/manext/manext-certificaciones-proteccion-civil-nom.avif" alt="MANEXT — pantalla 06: certificaciones protección civil y NOM" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">06 · Comportamiento responsivo en distintos dispositivos.</figcaption>
-              </figure>
-            </div>
 
-            <figure class="ol-case-figure" style="margin-top:1.25rem;">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/manext/manext-contacto-cotizacion-extintores-cdmx.avif" alt="MANEXT — pantalla 07: contacto y cotización de extintores en CDMX" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <figcaption class="ol-case-figure-caption">07 · Módulo de contacto B2B con formulario corporativo y zona de cobertura ZMVM.</figcaption>
-            </figure>
+              <!-- 01 · SERVICIOS (con INCLUYE) -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">mantenimientodeextintores.mx/servicios</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Venta, mantenimiento y recarga certificados</h3>
+                      <p class="mk-sect-sub">Cobertura integral del ciclo de vida del extintor con un solo proveedor — cada línea con su detalle de alcance y normativa.</p>
+                      <div class="mk-cards">
+                        <div class="mk-card">
+                          <span class="mk-pbadge">Venta</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l1 4H8l1-4z"/><path d="M8 7h8v13a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V7z"/></svg></div>
+                          <p class="mk-ct">Venta de extintores</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Equipo certificado NOM-154</span><span>Instalación incluida</span><span>Soporte metálico</span><span>Documentación oficial</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">Servicio</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+                          <p class="mk-ct">Mantenimiento preventivo</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Pólizas anuales</span><span>Visita a domicilio</span><span>Alineado a NOM-002-STPS</span><span>Bitácora actualizada</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">Servicio</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 4v5h5"/></svg></div>
+                          <p class="mk-ct">Recarga de extintores</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Pesaje certificado</span><span>PQS, CO₂, AFFF y más</span><span>Collar de garantía</span><span>Etiqueta de inspección</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">Servicio</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+                          <p class="mk-ct">Prueba hidrostática</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Ensayo quinquenal</span><span>Cilindros de alta presión</span><span>Dictamen y marcado</span><span>Constancia de vigencia</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">Formación</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+                          <p class="mk-ct">Capacitación y brigadas</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Curso básico contra incendios</span><span>Formación de brigadas</span><span>Simulacros con fuego real</span><span>Constancias DC-3 STPS</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">Equipo</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 7v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V7z"/></svg></div>
+                          <p class="mk-ct">Señalamiento y equipamiento</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Señales fotoluminiscentes</span><span>Gabinetes para extintores</span><span>Detectores de humo</span><span>Conforme NOM-026-STPS</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">01 · Servicios — seis líneas con su detalle de "Incluye", comparables de un vistazo por el responsable de seguridad.</figcaption>
+              </figure>
+
+              <!-- 02 · CATÁLOGO DE EXTINTORES -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">mantenimientodeextintores.mx/extintores</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">El agente adecuado para cada clase de fuego</h3>
+                      <p class="mk-sect-sub">Catálogo certificado NOM-154-SCFI: cada equipo seleccionado según el tipo de riesgo de la instalación.</p>
+                      <div class="mk-cards">
+                        <div class="mk-card">
+                          <span class="mk-pbadge">Clases A·B·C</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l1 4H8l1-4z"/><path d="M8 7h8v13a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V7z"/></svg></div>
+                          <p class="mk-ct">Polvo Químico Seco (PQS)</p>
+                          <ul class="mk-bul"><li>El más versátil del mercado</li><li>0.75 kg a 13 kg</li><li>Oficinas, negocios y hogares</li></ul>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">Clases B·C</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+                          <p class="mk-ct">Dióxido de Carbono (CO₂)</p>
+                          <ul class="mk-bul"><li>No deja residuos</li><li>No conductor de electricidad</li><li>Data centers y servidores</li></ul>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">Clase K</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v3M12 3v3M16 3v3M4 11h16M5 11v7a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-7"/></svg></div>
+                          <p class="mk-ct">Agente Húmedo (Tipo K)</p>
+                          <ul class="mk-bul"><li>Obligatorio en cocinas</li><li>Aceites y grasas</li><li>Cumple NOM-002-STPS</li></ul>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">Clases A·B</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11z"/></svg></div>
+                          <p class="mk-ct">Espuma (AFFF)</p>
+                          <ul class="mk-bul"><li>Película supresora de vapores</li><li>Previene re-ignición</li><li>Industrias e hidrocarburos</li></ul>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">Clase A</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2s6 5 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z"/></svg></div>
+                          <p class="mk-ct">Agua a Presión</p>
+                          <ul class="mk-bul"><li>Alto poder de enfriamiento</li><li>6 L y 9 L</li><li>Oficinas, escuelas, almacenes</li></ul>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">Clases A·B·C</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/></svg></div>
+                          <p class="mk-ct">Agentes Limpios</p>
+                          <ul class="mk-bul"><li>Cero residuos post-descarga</li><li>No afecta la capa de ozono</li><li>Áreas críticas y electrónicos</li></ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">02 · Catálogo de extintores — seis agentes por clase de fuego, con uso recomendado para que el cliente valide el equipo correcto.</figcaption>
+              </figure>
+
+              <!-- 03 · POR QUÉ MANEXT (diferenciadores) -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">mantenimientodeextintores.mx/nosotros</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">¿Por qué las empresas eligen MANEXT?</h3>
+                      <p class="mk-sect-sub">No vendemos un cilindro: resolvemos el cumplimiento de extremo a extremo, año con año.</p>
+                      <div class="mk-diff">
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.5v5c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11V6.5L12 2z"/><path d="M9 12l2 2 4-4"/></svg></div>
+                          <b>Experiencia comprobada</b>
+                          <p>Ocho décadas de operación continua desde 1943, con más de 10,000 clientes en CDMX y el Estado de México.</p>
+                          <span class="mk-dlink">Conocer la empresa →</span>
+                        </div>
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                          <b>Certificaciones oficiales</b>
+                          <p>Cumplimiento garantizado con NOM-154-SCFI y NOM-002-STPS y documentación completa para Protección Civil.</p>
+                          <span class="mk-dlink">Ver certificaciones →</span>
+                        </div>
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+                          <b>Cobertura total</b>
+                          <p>Servicio 24/7/365 con entrega e instalación en 48 horas en CDMX y el área metropolitana.</p>
+                          <span class="mk-dlink">Ver cobertura →</span>
+                        </div>
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 13h6M9 17h4"/></svg></div>
+                          <b>Carpeta lista para auditoría</b>
+                          <p>Ficha técnica, certificado de conformidad, garantía y etiqueta de inspección con cada equipo y servicio.</p>
+                          <span class="mk-dlink">Conocer más →</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">03 · Por qué MANEXT — los cuatro argumentos que un responsable de seguridad valora por encima del precio.</figcaption>
+              </figure>
+
+              <!-- 04 · SECTORES -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">mantenimientodeextintores.mx/#sectores</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Soluciones por sector</h3>
+                      <p class="mk-sect-sub">Instalación de extintores y señalamiento certificado para cada tipo de inmueble y operación.</p>
+                      <div class="mk-sect-cards">
+                        <div class="mk-scard"><span class="k">Oficinas y edificios</span><b>Corporativos</b><p>Parque distribuido por piso, señalización y mantenimiento programado.</p><span class="v">Ver propuesta →</span></div>
+                        <div class="mk-scard"><span class="k">Instituciones de salud</span><b>Hospitales</b><p>Áreas críticas, capacitación de brigadas y carpeta para acreditación.</p><span class="v">Ver propuesta →</span></div>
+                        <div class="mk-scard"><span class="k">Cocinas comerciales</span><b>Restaurantes</b><p>Equipo Tipo K obligatorio, recarga anual y señalización NOM.</p><span class="v">Ver propuesta →</span></div>
+                        <div class="mk-scard"><span class="k">Centros de datos y TI</span><b>Data Centers</b><p>CO₂ y agentes limpios que no dañan equipo electrónico sensible.</p><span class="v">Ver propuesta →</span></div>
+                        <div class="mk-scard"><span class="k">Manufactura y producción</span><b>Industrias</b><p>Análisis de riesgo, espuma AFFF y programa de cumplimiento STPS.</p><span class="v">Ver propuesta →</span></div>
+                        <div class="mk-scard"><span class="k">Sector hotelero</span><b>Hoteles</b><p>Cobertura por áreas, rutas de evacuación y simulacros con fuego real.</p><span class="v">Ver propuesta →</span></div>
+                        <div class="mk-scard"><span class="k">Residenciales</span><b>Condominios</b><p>Documentación para administración y áreas comunes señalizadas.</p><span class="v">Ver propuesta →</span></div>
+                        <div class="mk-scard"><span class="k">Instituciones educativas</span><b>Escuelas</b><p>Brigadas, agua a presión clase A y carpeta de protección civil.</p><span class="v">Ver propuesta →</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">04 · Sectores atendidos — el sitio segmenta por giro para que cada responsable se reconozca y entienda que la solución se adapta a su inmueble.</figcaption>
+              </figure>
+
+              <!-- 05 · COBERTURA -->
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">mantenimientodeextintores.mx/#cobertura</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Cobertura operativa</h3>
+                      <p class="mk-sect-sub">CDMX y zona metropolitana, con entrega en 48 h.</p>
+                      <div class="mk-chips">
+                        <span class="mk-chip on">Ciudad de México</span><span class="mk-chip on">Estado de México</span><span class="mk-chip">Naucalpan</span><span class="mk-chip">Tlalnepantla</span><span class="mk-chip">Ecatepec</span><span class="mk-chip">Interlomas</span><span class="mk-chip">Santa Fe</span><span class="mk-chip">Atizapán</span><span class="mk-chip">Querétaro</span><span class="mk-chip">Puebla</span><span class="mk-chip">Aguascalientes</span><span class="mk-chip">Baja California</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">05 · Cobertura — zonas comunicadas con claridad para validar entrega cercana antes de cotizar.</figcaption>
+              </figure>
+
+              <!-- 06 · TRAYECTORIA -->
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">mantenimientodeextintores.mx/nosotros</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Trayectoria que respalda</h3>
+                      <p class="mk-sect-sub">Más de ocho décadas en el sector, con números verificables.</p>
+                      <div class="mk-stats">
+                        <div class="mk-stat"><b>1943</b><span>Año de fundación</span></div>
+                        <div class="mk-stat"><b>+10,000</b><span>Clientes en México</span></div>
+                        <div class="mk-stat"><b>100%</b><span>Satisfacción del cliente</span></div>
+                        <div class="mk-stat"><b>24/7</b><span>Operación 365 días</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">06 · Trayectoria — cifras al frente como argumento de continuidad operativa.</figcaption>
+              </figure>
+
+              <!-- 07 · ALIADOS / CASOS REALES -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">mantenimientodeextintores.mx/#testimonios</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Lo que dicen los aliados del sector</h3>
+                      <p class="mk-sect-sub">Empresas de protección contra incendios que refieren a MANEXT para venta, recarga y certificación en CDMX.</p>
+                      <div class="mk-tcards">
+                        <div class="mk-tcard">
+                          <span class="mk-ally">Empresa del sector</span>
+                          <div class="mk-trow"><span class="mk-av">FM</span><span><span class="mk-tn">Firefighter México</span><br><span class="mk-tloc">Protección contra incendios · CDMX</span></span></div>
+                          <div class="mk-stars">★★★★★</div>
+                          <p class="mk-quote">"Reconocemos el nivel de MANEXT. Su equipo técnico, la documentación NOM y su tiempo de respuesta son de los más sólidos del mercado en CDMX."</p>
+                          <p class="mk-dom">firefighter.mx</p>
+                        </div>
+                        <div class="mk-tcard">
+                          <span class="mk-ally">Empresa del sector</span>
+                          <div class="mk-trow"><span class="mk-av">FF</span><span><span class="mk-tn">Firefighter.com.mx</span><br><span class="mk-tloc">Equipo contra incendios · CDMX</span></span></div>
+                          <div class="mk-stars">★★★★★</div>
+                          <p class="mk-quote">"Extintores certificados NOM-154-SCFI, mantenimiento preventivo documentado y una logística que funciona. Los referimos con nuestros clientes corporativos."</p>
+                          <p class="mk-dom">firefighter.com.mx</p>
+                        </div>
+                        <div class="mk-tcard">
+                          <span class="mk-ally">Empresa del sector</span>
+                          <div class="mk-trow"><span class="mk-av">MC</span><span><span class="mk-tn">Monitores Contra Incendios</span><br><span class="mk-tloc">Sistemas fijos · CDMX</span></span></div>
+                          <div class="mk-stars">★★★★★</div>
+                          <p class="mk-quote">"Extintores certificados con documentación impecable, recargas a tiempo y un servicio postventa que en este sector vale oro."</p>
+                          <p class="mk-dom">monitorescontraincendios.com</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">07 · Aliados del sector — prueba social B2B: empresas de protección contra incendios que derivan clientes a MANEXT.</figcaption>
+              </figure>
+
+              <!-- 08 · COTIZACIÓN -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">mantenimientodeextintores.mx/contacto</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Solicita tu cotización gratuita</h3>
+                      <p class="mk-sect-sub">Respuesta en menos de 24 horas, sin compromiso, con precio real y disponibilidad en stock.</p>
+                      <div class="mk-trust">
+                        <div><b>NOM-154</b><span>cumplimiento</span></div>
+                        <div><b>NOM-002</b><span>protección civil</span></div>
+                        <div><b>48 h</b><span>entrega CDMX</span></div>
+                        <div><b>WhatsApp</b><span>canal directo</span></div>
+                      </div>
+                      <div class="mk-form">
+                        <div class="mk-frow"><div class="mk-field">Nombre completo</div><div class="mk-field">Teléfono</div></div>
+                        <div class="mk-field">Empresa o negocio</div>
+                        <div class="mk-field">¿Qué necesitas? (extintores, recarga, capacitación…)</div>
+                        <div class="mk-field">Cuéntanos más</div>
+                        <div class="mk-submit">Solicitar cotización por WhatsApp →</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">08 · Contacto — formulario de cotización con selector de servicio y señales de cumplimiento visibles antes de enviar.</figcaption>
+              </figure>
+
+            </div>
           </section>
 
           <!-- 10 RESULTADO -->

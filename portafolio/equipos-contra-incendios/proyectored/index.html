@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Caso · ProyectoRed — Sistemas de Protección Contra Incendios · Ingeniería y Proyectos | OrigenLab</title>
-  <meta name="description" content="Caso de estudio del sitio corporativo de ProyectoRed, empresa mexicana especializada en diseño, suministro e instalación de sistemas de protección contra incendios para industria, comercio y gobierno.">
+  <title>Caso · ProyectoRed — Integrador de Cableado Estructurado, Fibra Óptica y Redes | OrigenLab</title>
+  <meta name="description" content="Caso de estudio del sitio corporativo de ProyectoRed, integrador mexicano de cableado estructurado, fibra óptica, redes inalámbricas y videovigilancia con casi dos décadas de experiencia y cobertura nacional.">
   <link rel="canonical" href="https://origenlab.com/portafolio/equipos-contra-incendios/proyectored/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://origenlab.com/portafolio/equipos-contra-incendios/proyectored/">
-  <meta property="og:title" content="Caso · ProyectoRed — Sistemas de Protección Contra Incendios | OrigenLab">
-  <meta property="og:description" content="Cómo construimos el sitio corporativo de ProyectoRed: arquitectura, diseño, portafolio de proyectos y conversión B2B para ingeniería de protección contra incendios en México.">
-  <meta property="og:image" content="https://origenlab.com/img/equipos-contra-incendios/proyectored/proyectored-home-equipos-contra-incendios-cdmx.avif">
+  <meta property="og:title" content="Caso · ProyectoRed — Integrador de Cableado Estructurado y Redes | OrigenLab">
+  <meta property="og:description" content="Cómo construimos el sitio corporativo de ProyectoRed: arquitectura, diseño, portafolio de proyectos y conversión B2B para un integrador de cableado estructurado, fibra óptica y telecomunicaciones en México.">
+  <meta property="og:image" content="https://origenlab.com/img/equipos-contra-incendios/proyectored/proyectored-hero.webp">
   <meta property="og:locale" content="es_MX">
   <meta property="og:site_name" content="OrigenLab">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Caso · ProyectoRed — Sistemas de Protección Contra Incendios | OrigenLab">
-  <meta name="twitter:description" content="Sitio corporativo B2B para empresa de ingeniería y proyectos de protección contra incendios en México.">
-  <meta name="twitter:image" content="https://origenlab.com/img/equipos-contra-incendios/proyectored/proyectored-home-equipos-contra-incendios-cdmx.avif">
+  <meta name="twitter:title" content="Caso · ProyectoRed — Integrador de Cableado Estructurado y Redes | OrigenLab">
+  <meta name="twitter:description" content="Sitio corporativo B2B para un integrador de cableado estructurado, fibra óptica, redes y telecomunicaciones en México.">
+  <meta name="twitter:image" content="https://origenlab.com/img/equipos-contra-incendios/proyectored/proyectored-hero.webp">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="../../../favicon.svg">
@@ -38,7 +38,7 @@
     /* ============================================================
        L4 — CASO · PROYECTORED
        Componentes en _astro/premium-dark.css. Aquí: SOLO acentos.
-       Acento: rojo carmesí #B91C1C (ingeniería de fuego).
+       Acento: rojo carmesí #B91C1C (integrador de cableado estructurado / TI).
        Doc: /_docs/COMPONENTS.md y /_docs/LAYOUTS.md (sección L4)
        ============================================================ */
     :root {
@@ -53,9 +53,118 @@
     /* Check de listas hereda el acento del caso (shared usa hex Gama por defecto) */
     .ol-case-list li::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23B91C1C' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E"); }
     .ol-cta-hero-promises-list li::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23B91C1C' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E"); }
+
+    /* ── Maquetas .mk (browser-mockups del sitio del cliente · tema claro · sin animaciones) ── */
+    .mk { --mk-indigo:#B91C1C; --mk-ink:#0F1729; --mk-gray:#475467; --mk-soft:#7A8699;
+          --mk-line:#E6E8EE; --mk-bg:#FFFFFF; --mk-bg2:#F6F7FB; --mk-indigo-soft:#FBEAEA;
+          border-radius:10px; overflow:hidden; border:1px solid var(--mk-line); background:var(--mk-bg); }
+    .mk-bar { display:flex; align-items:center; gap:.55rem; padding:.5rem .8rem; background:#1A1D29; border-bottom:1px solid rgba(255,255,255,.06); }
+    .mk-dots { display:flex; gap:5px; }
+    .mk-dots i { width:8px; height:8px; border-radius:50%; background:rgba(255,255,255,.22); }
+    .mk-dots i:nth-child(1){ background:#ED6A5E; } .mk-dots i:nth-child(2){ background:#F4BF4F; } .mk-dots i:nth-child(3){ background:#61C554; }
+    .mk-url { flex:1; background:rgba(255,255,255,.07); border-radius:999px; padding:.22rem .7rem; font-size:10.5px; color:rgba(255,255,255,.62); text-align:center; font-family:'SFMono-Regular',Menlo,Consolas,monospace; letter-spacing:.02em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .mk-view { background:var(--mk-bg); color:var(--mk-ink); padding:1.4rem 1.5rem 1.6rem; }
+    .mk-nav { display:flex; align-items:center; justify-content:space-between; padding-bottom:1rem; border-bottom:1px solid var(--mk-line); margin-bottom:1.3rem; }
+    .mk-logo { font-size:.95rem; font-weight:800; color:var(--mk-indigo); letter-spacing:-.01em; }
+    .mk-menu { display:flex; gap:.85rem; font-size:10.5px; color:var(--mk-gray); font-weight:600; align-items:center; }
+    .mk-menu .mk-cta { background:var(--mk-indigo); color:#fff; padding:.28rem .6rem; border-radius:6px; }
+    .mk-eyebrow { font-size:9.5px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--mk-indigo); }
+    .mk-h { font-size:1.5rem; font-weight:800; letter-spacing:-.02em; line-height:1.1; color:var(--mk-ink); margin:.4rem 0 0; }
+    .mk-h .ac { color:var(--mk-indigo); }
+    .mk-sub { font-size:11.5px; color:var(--mk-gray); line-height:1.55; margin:.6rem 0 0; }
+    .mk-grid2 { display:grid; grid-template-columns:1.1fr 1fr; gap:1.6rem; align-items:start; }
+    .mk-sect-h { font-size:1.05rem; font-weight:800; letter-spacing:-.01em; color:var(--mk-ink); text-align:center; margin:0 0 .25rem; }
+    .mk-sect-sub { font-size:10.5px; color:var(--mk-soft); text-align:center; line-height:1.5; margin:0 auto 1.2rem; max-width:80%; }
+    .mk-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:.7rem; }
+    .mk-card { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.8rem .75rem; }
+    .mk-ic { width:30px; height:30px; border-radius:7px; background:var(--mk-indigo-soft); color:var(--mk-indigo); display:flex; align-items:center; justify-content:center; margin-bottom:.55rem; }
+    .mk-ct { font-size:11.5px; font-weight:700; color:var(--mk-ink); margin:0 0 .35rem; }
+    .mk-bul { list-style:none; margin:0; padding:0; }
+    .mk-bul li { position:relative; font-size:9.5px; color:var(--mk-gray); line-height:1.5; padding-left:.85rem; margin-bottom:.18rem; }
+    .mk-bul li::before { content:''; position:absolute; left:0; top:.42em; width:5px; height:5px; border-radius:50%; background:var(--mk-indigo); opacity:.55; }
+    .mk-stats { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-stat { text-align:center; background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:1rem .5rem; }
+    .mk-stat b { display:block; font-size:1.45rem; font-weight:800; color:var(--mk-indigo); letter-spacing:-.02em; line-height:1; }
+    .mk-stat span { display:block; font-size:9px; color:var(--mk-soft); margin-top:.4rem; line-height:1.35; font-weight:600; }
+    .mk-chips { display:flex; flex-wrap:wrap; gap:.4rem; justify-content:center; }
+    .mk-chip { font-size:9.5px; font-weight:600; color:var(--mk-gray); background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:999px; padding:.3rem .65rem; }
+    .mk-chip.on { background:var(--mk-indigo-soft); border-color:rgba(185,28,28,.25); color:var(--mk-indigo); }
+    .mk-tcards { display:grid; grid-template-columns:repeat(3,1fr); gap:.7rem; }
+    .mk-tcard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .8rem; }
+    .mk-trow { display:flex; align-items:center; gap:.5rem; margin-bottom:.5rem; }
+    .mk-av { width:28px; height:28px; border-radius:50%; background:var(--mk-indigo); color:#fff; font-size:9.5px; font-weight:700; display:flex; align-items:center; justify-content:center; flex:0 0 28px; }
+    .mk-tn { font-size:10px; font-weight:700; color:var(--mk-ink); line-height:1.2; }
+    .mk-tloc { font-size:8.5px; color:var(--mk-soft); }
+    .mk-stars { color:#F5A623; font-size:9px; letter-spacing:1px; margin-bottom:.3rem; }
+    .mk-quote { font-size:9.5px; color:var(--mk-gray); line-height:1.5; margin:0; }
+    .mk-form { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:11px; padding:1.1rem 1.1rem 1.2rem; }
+    .mk-field { height:30px; background:var(--mk-bg); border:1px solid var(--mk-line); border-radius:7px; margin-bottom:.55rem; display:flex; align-items:center; padding:0 .6rem; font-size:9.5px; color:var(--mk-soft); }
+    .mk-frow { display:grid; grid-template-columns:1fr 1fr; gap:.55rem; }
+    .mk-submit { background:var(--mk-indigo); color:#fff; font-size:10.5px; font-weight:700; text-align:center; border-radius:7px; padding:.6rem; margin-top:.3rem; }
+    .mk-trust { display:grid; grid-template-columns:repeat(4,1fr); gap:.55rem; margin-bottom:1rem; }
+    .mk-trust div { text-align:center; }
+    .mk-trust b { display:block; font-size:1.05rem; font-weight:800; color:var(--mk-indigo); line-height:1; }
+    .mk-trust span { display:block; font-size:8px; color:var(--mk-soft); margin-top:.25rem; font-weight:600; }
+    /* --- Hero oscuro (mirror del sitio live · azul medianoche #191970 de la marca real) --- */
+    .mk-hero { background:linear-gradient(135deg,#1A1F4D 0%,#12153A 58%,#1A1F4D 100%); margin:-1.4rem -1.5rem 1.3rem; padding:1.5rem 1.5rem 1.35rem; border-bottom:1px solid var(--mk-line); }
+    .mk-hero .mk-eyebrow { color:#8AA0FF; }
+    .mk-hero .mk-h { color:#fff; }
+    .mk-hero .mk-h .ac { color:#A9BBFF; }
+    .mk-hero .mk-sub { color:rgba(226,232,240,.72); }
+    .mk-hb { display:grid; grid-template-columns:1.2fr 1fr; gap:1.4rem; align-items:start; }
+    .mk-hk { font-size:9px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#8AA0FF; margin:0 0 .35rem; }
+    .mk-hp { font-size:10px; color:rgba(226,232,240,.66); line-height:1.55; margin:0; }
+    .mk-strip { display:flex; gap:1.6rem; margin-top:1rem; padding-top:.9rem; border-top:1px solid rgba(255,255,255,.1); }
+    .mk-strip div b { font-size:1.15rem; font-weight:800; color:#fff; letter-spacing:-.02em; line-height:1; }
+    .mk-strip div b span { color:#A9BBFF; }
+    .mk-strip div .l { display:block; font-size:7.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:rgba(226,232,240,.5); margin-top:.3rem; }
+    /* --- Tira de servicios bajo el hero (hero usa azul, las cards de servicio mantienen el acento del caso) --- */
+    .mk-hero-logo { color:#fff; }
+    .mk-hero .mk-menu .mk-cta { background:#3A46A8; }
+    .mk-quick { display:grid; grid-template-columns:repeat(6,1fr); gap:.5rem; }
+    .mk-qc { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:8px; padding:.6rem .55rem; }
+    .mk-qc .mk-ic { width:24px; height:24px; margin-bottom:.4rem; border-radius:6px; }
+    .mk-qc b { display:block; font-size:9.5px; font-weight:700; color:var(--mk-ink); line-height:1.2; }
+    .mk-qc span { display:block; font-size:7.5px; color:var(--mk-soft); margin-top:.18rem; line-height:1.3; }
+    .mk-qc.cta { background:var(--mk-indigo); border-color:var(--mk-indigo); }
+    .mk-qc.cta b, .mk-qc.cta span { color:#fff; }
+    .mk-qc.cta .mk-ic { background:rgba(255,255,255,.18); color:#fff; }
+    /* --- Listas INCLUYE en cards de servicio --- */
+    .mk-pbadge { float:right; font-size:7.5px; font-weight:700; letter-spacing:.08em; color:var(--mk-indigo); background:var(--mk-indigo-soft); border-radius:5px; padding:.18rem .4rem; }
+    .mk-inc-k { font-size:7.5px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; color:var(--mk-soft); margin:.55rem 0 .35rem; }
+    .mk-inc { display:flex; flex-wrap:wrap; gap:.28rem; }
+    .mk-inc span { font-size:8px; font-weight:600; color:var(--mk-gray); background:var(--mk-bg); border:1px solid var(--mk-line); border-radius:5px; padding:.22rem .42rem .22rem .82rem; position:relative; }
+    .mk-inc span::before { content:''; position:absolute; left:.36rem; top:50%; transform:translateY(-50%); width:4px; height:4px; border-radius:50%; background:var(--mk-indigo); }
+    /* --- Diferenciadores / estándares (4 col) --- */
+    .mk-diff { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-dcard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .75rem; }
+    .mk-dcard .mk-ic { margin-bottom:.5rem; }
+    .mk-dcard b { display:block; font-size:11px; font-weight:700; color:var(--mk-ink); margin-bottom:.3rem; }
+    .mk-dcard p { font-size:8.5px; color:var(--mk-gray); line-height:1.5; margin:0 0 .4rem; }
+    .mk-dlink { font-size:8px; font-weight:700; color:var(--mk-indigo); }
+    /* --- Sectores / proyectos (4 col) --- */
+    .mk-sect-cards { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-scard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .75rem; display:flex; flex-direction:column; }
+    .mk-scard .k { font-size:7.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--mk-indigo); margin-bottom:.3rem; }
+    .mk-scard b { font-size:11.5px; font-weight:700; color:var(--mk-ink); margin-bottom:.3rem; }
+    .mk-scard p { font-size:8.5px; color:var(--mk-gray); line-height:1.5; margin:0 0 .5rem; }
+    .mk-scard .v { font-size:8px; font-weight:700; color:var(--mk-indigo); margin-top:auto; }
+    /* --- Aliados / marcas / proyectos reales --- */
+    .mk-ally { font-size:7.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--mk-indigo); background:var(--mk-indigo-soft); border-radius:5px; padding:.18rem .45rem; display:inline-block; margin-bottom:.45rem; }
+    .mk-dom { font-size:8px; color:var(--mk-soft); margin-top:.35rem; }
+    @media (max-width:640px){
+      .mk-grid2 { grid-template-columns:1fr; gap:1rem; }
+      .mk-cards, .mk-tcards { grid-template-columns:1fr 1fr; }
+      .mk-stats, .mk-trust { grid-template-columns:repeat(2,1fr); }
+      .mk-h { font-size:1.2rem; }
+      .mk-hb { grid-template-columns:1fr; gap:.8rem; }
+      .mk-quick { grid-template-columns:repeat(3,1fr); }
+      .mk-diff, .mk-sect-cards { grid-template-columns:1fr 1fr; }
+      .mk-strip { flex-wrap:wrap; gap:.9rem; }
+    }
   </style>
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.com/#organization","name":"OrigenLab","url":"https://origenlab.com","logo":"https://origenlab.com/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.com/#website","url":"https://origenlab.com/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.com/#organization"}},{"@type":"BreadcrumbList","@id":"https://origenlab.com/portafolio/equipos-contra-incendios/proyectored/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.com/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.com/portafolio/"},{"@type":"ListItem","position":3,"name":"Equipos Contra Incendios","item":"https://origenlab.com/portafolio/equipos-contra-incendios/"},{"@type":"ListItem","position":4,"name":"Proyecto Red","item":"https://origenlab.com/portafolio/equipos-contra-incendios/proyectored/"}]},{"@type":"Organization","@id":"https://proyectored.com.mx/#organization","name":"Proyecto Red","url":"https://proyectored.com.mx/","description":"Integrador especializado en venta, instalación y mantenimiento de sistemas contra incendio para empresas, plantas industriales, restaurantes y edificios en CDMX y Estado de México.","areaServed":{"@type":"AdministrativeArea","name":"Ciudad de México y Estado de México"},"knowsAbout":["Sistemas contra incendio","Rociadores","Alarmas","Detectores","Paneles de control","Redes hidráulicas","Instalación","Mantenimiento","NOM","NFPA"]},{"@type":"CreativeWork","@id":"https://origenlab.com/portafolio/equipos-contra-incendios/proyectored/#case","name":"Proyecto Red — Caso de estudio","description":"Integrador especializado en venta, instalación y mantenimiento de sistemas contra incendio para empresas, plantas industriales, restaurantes y edificios en CDMX y Estado de México.","inLanguage":"es-MX","image":"https://origenlab.com/img/equipos-contra-incendios/proyectored/proyectored-home-equipos-contra-incendios-cdmx.avif","author":{"@id":"https://origenlab.com/#organization"},"publisher":{"@id":"https://origenlab.com/#organization"},"about":{"@id":"https://proyectored.com.mx/#organization"},"keywords":["sistemas contra incendio","rociadores","alarmas","integrador","instalación","mantenimiento","NOM","NFPA","B2B"]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.com/#organization","name":"OrigenLab","url":"https://origenlab.com","logo":"https://origenlab.com/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.com/#website","url":"https://origenlab.com/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.com/#organization"}},{"@type":"BreadcrumbList","@id":"https://origenlab.com/portafolio/equipos-contra-incendios/proyectored/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.com/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.com/portafolio/"},{"@type":"ListItem","position":3,"name":"Equipos Contra Incendios","item":"https://origenlab.com/portafolio/equipos-contra-incendios/"},{"@type":"ListItem","position":4,"name":"Proyecto Red","item":"https://origenlab.com/portafolio/equipos-contra-incendios/proyectored/"}]},{"@type":["Organization","ProfessionalService"],"@id":"https://proyectored.mx/#organization","name":"ProyectoRed","url":"https://proyectored.mx/","slogan":"Conectamos tu mundo con soluciones tecnológicas y servicios de excelencia.","description":"Empresa integradora de cableado estructurado, fibra óptica, redes inalámbricas, telecomunicaciones y videovigilancia con casi dos décadas de experiencia, ejecutando proyectos de alta complejidad en todo México.","areaServed":{"@type":"Country","name":"México"},"brand":["Panduit","Dahua","Cisco Webex","Hubbell"],"knowsAbout":["Cableado estructurado","Fibra óptica monomodo y multimodo","Redes inalámbricas","Enlaces punto a punto y multipunto","Videovigilancia IP","Sistemas de seguridad","Sistemas eléctricos","Mantenimiento y migración de red","Switch core","Salas de videoconferencia","ANSI/TIA-568","ISO/IEC 11801","Panduit","Dahua","Cisco Webex"]},{"@type":"CreativeWork","@id":"https://origenlab.com/portafolio/equipos-contra-incendios/proyectored/#case","name":"ProyectoRed — Caso de estudio","description":"Cómo OrigenLab construyó el sitio corporativo de ProyectoRed, integrador de cableado estructurado, fibra óptica, redes inalámbricas y videovigilancia en México: arquitectura, diseño, portafolio de proyectos y conversión B2B.","inLanguage":"es-MX","image":"https://origenlab.com/img/equipos-contra-incendios/proyectored/proyectored-hero.webp","author":{"@id":"https://origenlab.com/#organization"},"publisher":{"@id":"https://origenlab.com/#organization"},"about":{"@id":"https://proyectored.mx/#organization"},"keywords":["cableado estructurado","fibra óptica","redes inalámbricas","videovigilancia","telecomunicaciones","integrador","Panduit","Dahua","Cisco Webex","ANSI/TIA","ISO/IEC 11801","B2B"]},{"@type":"FAQPage","@id":"https://origenlab.com/portafolio/equipos-contra-incendios/proyectored/#faq","mainEntity":[{"@type":"Question","name":"¿Qué servicios ofrece ProyectoRed como integrador de TI?","acceptedAnswer":{"@type":"Answer","text":"ProyectoRed integra seis líneas: cableado estructurado (cobre y fibra óptica), sistemas eléctricos, redes inalámbricas, sistemas de seguridad y videovigilancia, mantenimiento y migración de red, y espacios tecnológicos como salas de videoconferencia."}},{"@type":"Question","name":"¿Bajo qué estándares ejecuta sus proyectos de cableado?","acceptedAnswer":{"@type":"Answer","text":"Los proyectos de cableado estructurado se ejecutan bajo los estándares internacionales ANSI/TIA/EIA-568 A, B, C y D e ISO/IEC 11801, listos para certificación de canal."}},{"@type":"Question","name":"¿Con qué marcas y fabricantes trabaja ProyectoRed?","acceptedAnswer":{"@type":"Answer","text":"ProyectoRed integra infraestructura Panduit, videovigilancia y seguridad Dahua, soluciones de colaboración Cisco Webex y conectividad Hubbell."}},{"@type":"Question","name":"¿En qué zonas del país ejecuta proyectos?","acceptedAnswer":{"@type":"Answer","text":"ProyectoRed tiene cobertura nacional, con proyectos ejecutados en Ciudad de México, Estado de México, Monterrey, Guadalajara, Querétaro, León, Veracruz, Irapuato, Ciudad del Carmen, Cuautitlán y Tlaxcala, entre otros."}},{"@type":"Question","name":"¿Cuántos años de experiencia tiene la empresa?","acceptedAnswer":{"@type":"Answer","text":"ProyectoRed acumula casi dos décadas ejecutando proyectos de conectividad, comunicación y seguridad de alta complejidad en todo México."}}]}]}</script>
 </head>
 <body>
 
@@ -146,9 +255,18 @@
                     <li><a href="/portafolio/seguridad-privada/origins/" class="ol-dropdown-link">ORIGINS Private Security</a></li>
                     <li><a href="/portafolio/seguridad-privada/seprico/" class="ol-dropdown-link">SEPRICO</a></li>
                     <li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-dropdown-link">SeguridadPrivadaMX</a></li>
+                    <li><a href="/portafolio/seguridad-privada/seguridadeventos/" class="ol-dropdown-link">SeguridadEventos</a></li>
+                    <li><a href="/portafolio/seguridad-privada/gupri/" class="ol-dropdown-link">GUPRI</a></li>
+                    <li><a href="/portafolio/seguridad-privada/directorio/" class="ol-dropdown-link">Directorio México</a></li>
                   </ul>
                 </div>
               </li>
+              <li class="ol-has-subdrop">
+              <a href="/portafolio/equipo-para-eventos/" class="ol-dropdown-link ol-dropdown-parent">Equipo para Eventos</a>
+              <div class="ol-subdrop"><ul>
+                <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-dropdown-link">PODIUMEX</a></li>
+              </ul></div>
+            </li>
             </ul>
           </div>
         </li>
@@ -209,6 +327,11 @@
         <li><a href="/portafolio/seguridad-privada/origins/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— ORIGINS Private Security</a></li>
         <li><a href="/portafolio/seguridad-privada/seprico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SEPRICO</a></li>
         <li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SeguridadPrivadaMX</a></li>
+        <li><a href="/portafolio/seguridad-privada/seguridadeventos/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SeguridadEventos</a></li>
+        <li><a href="/portafolio/seguridad-privada/gupri/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— GUPRI</a></li>
+        <li><a href="/portafolio/seguridad-privada/directorio/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Directorio México</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/" class="ol-mobile-link ol-mobile-sublink">Equipo para Eventos</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— PODIUMEX</a></li>
       </ul>
     </li>
     <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
@@ -259,9 +382,9 @@
     <div class="container hero__inner">
 
       <div class="hero__col1">
-        <span class="hero__eyebrow">Caso de estudio · Ingeniería Contra Incendios</span>
-        <h1 class="hero__title">ProyectoRed<br>Sistemas de protección<br>con respaldo técnico.</h1>
-        <p class="hero__sub">Empresa mexicana especializada en el diseño, suministro e instalación de sistemas de protección contra incendios para industria, comercio y gobierno — bajo normas NFPA, NOM y estándares internacionales.</p>
+        <span class="hero__eyebrow">Caso de estudio · Integrador de Cableado Estructurado</span>
+        <h1 class="hero__title">ProyectoRed<br>Conectividad con<br>respaldo técnico.</h1>
+        <p class="hero__sub">Integrador mexicano de cableado estructurado, fibra óptica, redes inalámbricas, telecomunicaciones y videovigilancia — bajo estándares ANSI/TIA e ISO/IEC, con casi dos décadas de experiencia y cobertura nacional.</p>
         <div class="hero__ctas">
           <a href="https://proyectored.mx/" target="_blank" rel="noopener noreferrer" class="ol-btn-primary">
             Visitar el sitio
@@ -275,8 +398,8 @@
       </div>
 
       <div class="hero__col2">
-        <p class="hero__p1">Plataforma corporativa diseñada para que directores de seguridad, gerentes de planta, coordinadores de obra y responsables de compras encuentren en un solo recorrido la capacidad técnica de ProyectoRed: ingeniería de sistemas, catálogo de soluciones, portafolio de proyectos ejecutados y canales directos de contacto institucional.</p>
-        <p class="hero__p2">El sitio comunica desde el primer scroll la solidez técnica y la experiencia sectorial de la empresa — sin ambigüedades, sin exceso de información, con una jerarquía visual que prioriza credibilidad y guía al visitante calificado hacia la solicitud de cotización formal. Arquitectura, diseño y redacción técnica construidos para el comprador de proyectos industriales en México.</p>
+        <p class="hero__p1">Plataforma corporativa diseñada para que responsables de TI, gerentes de sistemas, coordinadores de obra y áreas de compras encuentren en un solo recorrido la capacidad técnica de ProyectoRed: líneas de servicio, estándares de ingeniería, marcas integradas, portafolio de proyectos ejecutados y canales directos de contacto.</p>
+        <p class="hero__p2">El sitio comunica desde el primer scroll la solidez técnica y la trayectoria de la empresa — sin ambigüedades, sin exceso de información, con una jerarquía visual que prioriza credibilidad y guía al visitante calificado hacia la solicitud de cotización. Arquitectura, diseño y redacción técnica construidos para el comprador de proyectos de conectividad en México.</p>
       </div>
 
     </div>
@@ -289,78 +412,78 @@
       <div class="ol-co-head">
         <div>
           <span class="ol-co-eyebrow">La empresa</span>
-          <h2 class="ol-co-title">Sistemas de protección contra incendios, <em>de la ingeniería a la obra</em>.</h2>
+          <h2 class="ol-co-title">Integración de redes y telecomunicaciones, <em>del diseño a la puesta en marcha</em>.</h2>
         </div>
-        <p class="ol-co-lead">ProyectoRed es una empresa mexicana con trayectoria en el <strong>diseño, suministro e instalación de sistemas de protección contra incendios</strong> para industria, comercio y gobierno — bajo normas NFPA, NOM, FM y UL.</p>
+        <p class="ol-co-lead">ProyectoRed es una empresa integradora de <strong>cableado estructurado, fibra óptica, redes inalámbricas, seguridad y telecomunicaciones</strong> con casi dos décadas de experiencia ejecutando proyectos de alta complejidad en todo México.</p>
       </div>
 
       <div class="ol-co-stats">
         <div class="ol-co-stat">
-          <p class="ol-co-stat-val">Diseño a obra</p>
-          <p class="ol-co-stat-label">ingeniería, suministro e instalación integrados</p>
+          <p class="ol-co-stat-val">19+ años</p>
+          <p class="ol-co-stat-label">de experiencia en proyectos de conectividad</p>
         </div>
         <div class="ol-co-stat">
-          <p class="ol-co-stat-val">NFPA · NOM</p>
-          <p class="ol-co-stat-label">FM y UL — estándares nacionales e internacionales</p>
+          <p class="ol-co-stat-val">ANSI · ISO</p>
+          <p class="ol-co-stat-label">ANSI/TIA-568 e ISO/IEC 11801 — estándar internacional</p>
         </div>
         <div class="ol-co-stat">
-          <p class="ol-co-stat-val">Sistemas fijos</p>
-          <p class="ol-co-stat-label">rociadores, detección, supresión y agente limpio</p>
+          <p class="ol-co-stat-val">6 líneas</p>
+          <p class="ol-co-stat-label">cableado, eléctricos, redes, seguridad, mantenimiento y espacios</p>
         </div>
         <div class="ol-co-stat">
-          <p class="ol-co-stat-val">CDMX · República</p>
-          <p class="ol-co-stat-label">Ciudad de México, Área Metropolitana y nacional</p>
+          <p class="ol-co-stat-val">Nacional</p>
+          <p class="ol-co-stat-label">proyectos ejecutados en distintos estados de la República</p>
         </div>
       </div>
 
       <div class="ol-co-split">
         <div class="ol-co-panel">
           <p class="ol-co-panel-k">Qué hace</p>
-          <h3 class="ol-co-panel-h">Proyectos llave en mano de protección contra incendios.</h3>
-          <p class="ol-co-panel-p">ProyectoRed atiende a <strong>industria, comercio y gobierno</strong> con sistemas completos: rociadores automáticos, detección y alarma, supresión por agente limpio y extinción por CO₂. Del cálculo de ingeniería a la instalación y puesta en marcha.</p>
+          <h3 class="ol-co-panel-h">Soluciones tecnológicas llave en mano.</h3>
+          <p class="ol-co-panel-p">ProyectoRed atiende a <strong>empresas e industria</strong> con infraestructura completa: cableado estructurado de cobre y fibra óptica, redes inalámbricas, videovigilancia IP, sistemas eléctricos y salas tecnológicas. Del diseño y la instalación al mantenimiento y la migración.</p>
         </div>
         <div class="ol-co-panel">
           <p class="ol-co-panel-k">Cómo lo hace</p>
-          <h3 class="ol-co-panel-h">Ingeniería propia, norma como columna vertebral.</h3>
-          <p class="ol-co-panel-p">Cada proyecto se diseña bajo <strong>NFPA, NOM-002, FM y UL</strong>, con cálculo hidráulico, selección de equipo y documentación técnica. Un solo integrador responsable del diseño, el suministro y la instalación.</p>
+          <h3 class="ol-co-panel-h">Norma internacional y marcas líderes.</h3>
+          <p class="ol-co-panel-p">Cada proyecto se ejecuta bajo <strong>ANSI/TIA-568 e ISO/IEC 11801</strong>, con infraestructura Panduit, seguridad Dahua y colaboración Cisco Webex. Un solo integrador responsable del diseño, el suministro y la instalación.</p>
         </div>
       </div>
 
       <div class="ol-co-sub">
-        <p class="ol-co-sub-eyebrow">Sistemas y soluciones</p>
-        <h3 class="ol-co-sub-h">Protección activa para entornos críticos.</h3>
-        <p class="ol-co-sub-p">Sistemas fijos diseñados a medida para cada riesgo, industria y normativa aplicable.</p>
+        <p class="ol-co-sub-eyebrow">Líneas de servicio</p>
+        <h3 class="ol-co-sub-h">Conectividad integral para la empresa.</h3>
+        <p class="ol-co-sub-p">Seis líneas de servicio que cubren la infraestructura tecnológica de principio a fin.</p>
 
         <div class="ol-co-lines">
           <div class="ol-co-line">
-            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M7 6v3M12 6v3M17 6v3"/><path d="M7 12l-1 3M12 12l0 3M17 12l1 3"/></svg></div>
-            <h4 class="ol-co-line-h">Rociadores automáticos</h4>
-            <p class="ol-co-line-p">Redes de rociadores con cálculo hidráulico para protección de áreas industriales y edificios.</p>
+            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M6 7h.01M6 11h.01"/></svg></div>
+            <h4 class="ol-co-line-h">Cableado estructurado</h4>
+            <p class="ol-co-line-p">Diseño e instalación de cobre categoría 6/6A y fibra óptica monomodo y multimodo, con gabinetes y racks.</p>
           </div>
           <div class="ol-co-line">
-            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><path d="m5 5 2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></div>
-            <h4 class="ol-co-line-h">Detección y alarma</h4>
-            <p class="ol-co-line-p">Sistemas de detección temprana y alarma para respuesta inmediata ante conato de incendio.</p>
+            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+            <h4 class="ol-co-line-h">Sistemas eléctricos</h4>
+            <p class="ol-co-line-p">Instalación eléctrica, alimentación de equipos, canalización y obra para soportar la infraestructura de red.</p>
           </div>
           <div class="ol-co-line">
-            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4-1 7-4 7-9V5l-7-3-7 3v8c0 5 3 8 7 9z"/><path d="M12 8v4"/></svg></div>
-            <h4 class="ol-co-line-h">Supresión por agente limpio</h4>
-            <p class="ol-co-line-p">Sistemas de agente limpio para proteger equipos, datos y activos sin dañarlos.</p>
+            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg></div>
+            <h4 class="ol-co-line-h">Redes inalámbricas</h4>
+            <p class="ol-co-line-p">Redes WiFi empresariales y enlaces punto a punto y multipunto, con estudio de sitio previo.</p>
           </div>
           <div class="ol-co-line">
-            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M9 7h6M12 11v6"/></svg></div>
-            <h4 class="ol-co-line-h">Extinción por CO₂</h4>
-            <p class="ol-co-line-p">Supresión por dióxido de carbono para riesgos especiales y atmósferas industriales.</p>
-          </div>
-          <div class="ol-co-line">
-            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6l2 5-3 2a12 12 0 0 0 5 5l2-3 5 2v6a2 2 0 0 1-2 2A18 18 0 0 1 2 5a2 2 0 0 1 2-2z" opacity="0"/><path d="M14 2v6h6"/><path d="M4 2h10l6 6v14H4z"/><path d="M8 13h8M8 17h5"/></svg></div>
-            <h4 class="ol-co-line-h">Ingeniería de proyecto</h4>
-            <p class="ol-co-line-p">Diseño, cálculo y memoria técnica conforme a norma para cada instalación.</p>
+            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+            <h4 class="ol-co-line-h">Sistemas de seguridad</h4>
+            <p class="ol-co-line-p">Videovigilancia IP con equipo Dahua, control de acceso y seguridad perimetral integrados.</p>
           </div>
           <div class="ol-co-line">
             <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.6 5.6l-6 6a1.4 1.4 0 0 0 2 2l6-6a4 4 0 0 0 5.6-5.6l-2.1 2.1-2-2 2.1-2.1z"/></svg></div>
-            <h4 class="ol-co-line-h">Suministro e instalación</h4>
-            <p class="ol-co-line-p">Provisión de equipo y montaje en sitio con puesta en marcha y pruebas finales.</p>
+            <h4 class="ol-co-line-h">Mantenimiento y migración</h4>
+            <p class="ol-co-line-p">Mantenimiento de red, migración de switch core y enlaces de fibra óptica MTP con continuidad operativa.</p>
+          </div>
+          <div class="ol-co-line">
+            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3M7 9l3 3-3 3M13 15h4"/></svg></div>
+            <h4 class="ol-co-line-h">Espacios tecnológicos</h4>
+            <p class="ol-co-line-p">Salas de videoconferencia Webex Room Cisco, sites de telecomunicaciones e integración audiovisual.</p>
           </div>
         </div>
       </div>
@@ -373,29 +496,29 @@
           <div class="ol-co-why-item">
             <div class="ol-co-why-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
             <div>
-              <h4 class="ol-co-why-h">Diseño + obra integrados</h4>
-              <p class="ol-co-why-p">Ingeniería, suministro e instalación con un solo responsable del resultado.</p>
+              <h4 class="ol-co-why-h">Diseño + instalación integrados</h4>
+              <p class="ol-co-why-p">Ingeniería, suministro, instalación y mantenimiento con un solo responsable del resultado.</p>
             </div>
           </div>
           <div class="ol-co-why-item">
             <div class="ol-co-why-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
             <div>
-              <h4 class="ol-co-why-h">Norma NFPA, NOM, FM y UL</h4>
-              <p class="ol-co-why-p">Proyectos bajo estándar nacional e internacional, listos para auditoría.</p>
+              <h4 class="ol-co-why-h">Estándar ANSI/TIA e ISO/IEC</h4>
+              <p class="ol-co-why-p">Cableado certificado bajo norma internacional, listo para certificación de canal.</p>
             </div>
           </div>
           <div class="ol-co-why-item">
             <div class="ol-co-why-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
             <div>
-              <h4 class="ol-co-why-h">Soluciones a medida</h4>
-              <p class="ol-co-why-p">Sistemas dimensionados al riesgo real de cada industria, no plantillas genéricas.</p>
+              <h4 class="ol-co-why-h">Marcas líderes integradas</h4>
+              <p class="ol-co-why-p">Infraestructura Panduit, seguridad Dahua, colaboración Cisco Webex y conectividad Hubbell.</p>
             </div>
           </div>
           <div class="ol-co-why-item">
             <div class="ol-co-why-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
             <div>
               <h4 class="ol-co-why-h">Experiencia comprobada</h4>
-              <p class="ol-co-why-p">Trayectoria en proyectos para industria, comercio y gobierno en todo el país.</p>
+              <p class="ol-co-why-p">Casi dos décadas de proyectos de conectividad y seguridad de alta complejidad en todo el país.</p>
             </div>
           </div>
         </div>
@@ -403,15 +526,15 @@
 
       <div class="ol-co-band">
         <div>
-          <p class="ol-co-band-k">Marco normativo</p>
-          <h3 class="ol-co-band-h">Proyectos bajo NFPA, NOM-002, FM y UL.</h3>
-          <p class="ol-co-band-p">Los estándares que rigen el diseño e instalación de sistemas de protección contra incendios. ProyectoRed los aplica desde el cálculo de ingeniería hasta la puesta en marcha.</p>
+          <p class="ol-co-band-k">Marco técnico</p>
+          <h3 class="ol-co-band-h">Proyectos bajo ANSI/TIA-568 e ISO/IEC 11801.</h3>
+          <p class="ol-co-band-p">Los estándares internacionales que rigen el diseño e instalación de cableado estructurado. ProyectoRed los aplica desde el diseño de la red hasta la certificación de canal y la puesta en marcha.</p>
         </div>
         <div class="ol-co-band-tags">
-          <span class="ol-co-band-tag">NFPA</span>
-          <span class="ol-co-band-tag">NOM-002</span>
-          <span class="ol-co-band-tag">FM</span>
-          <span class="ol-co-band-tag">UL</span>
+          <span class="ol-co-band-tag">ANSI/TIA-568</span>
+          <span class="ol-co-band-tag">ISO/IEC 11801</span>
+          <span class="ol-co-band-tag">Panduit</span>
+          <span class="ol-co-band-tag">Dahua</span>
         </div>
       </div>
 
@@ -422,7 +545,7 @@
   <div class="ol-co-divider">
     <p class="ol-co-divider-k">Detrás del sitio</p>
     <h2 class="ol-co-divider-h">Cómo construimos su plataforma digital</h2>
-    <p class="ol-co-divider-p">El proyecto web que OrigenLab desarrolló para presentar su capacidad de ingeniería y portafolio técnico ante industria y gobierno.</p>
+    <p class="ol-co-divider-p">El proyecto web que OrigenLab desarrolló para presentar su capacidad técnica y portafolio de proyectos de conectividad ante empresas e industria.</p>
   </div>
 
   <!-- ============== CASE SHELL: SIDEBAR + CONTENT ============== -->
@@ -437,12 +560,12 @@
             <p class="ol-side-eyebrow">Datos del proyecto</p>
             <ul class="ol-side-meta">
               <li><dt>Cliente</dt><dd>ProyectoRed</dd></li>
-              <li><dt>Sector</dt><dd>Equipos contra incendios · Ingeniería de proyectos</dd></li>
+              <li><dt>Sector</dt><dd>Cableado estructurado · TI y telecomunicaciones</dd></li>
               <li><dt>Tipo de sitio</dt><dd>Corporativo B2B · Portafolio técnico</dd></li>
-              <li><dt>Modelo de negocio</dt><dd>Diseño, suministro e instalación de sistemas</dd></li>
-              <li><dt>Especialidad</dt><dd>Rociadores · Detección · Supresión · Agente limpio</dd></li>
-              <li><dt>Normatividad</dt><dd>NFPA · NOM-002 · FM · UL</dd></li>
-              <li><dt>Cobertura</dt><dd>Ciudad de México · Área Metropolitana · República</dd></li>
+              <li><dt>Modelo de negocio</dt><dd>Integración de redes — diseño, instalación y mantenimiento</dd></li>
+              <li><dt>Especialidad</dt><dd>Cableado · Fibra óptica · Redes WiFi · Videovigilancia</dd></li>
+              <li><dt>Estándares</dt><dd>ANSI/TIA-568 · ISO/IEC 11801</dd></li>
+              <li><dt>Cobertura</dt><dd>Cobertura nacional · proyectos en toda la República</dd></li>
               <li><dt>Sitio en vivo</dt><dd><a href="https://proyectored.mx/" target="_blank" rel="noopener noreferrer">proyectored.mx →</a></dd></li>
             </ul>
           </div>
@@ -481,7 +604,7 @@
 
           <div class="ol-side-cta">
             <h3 class="ol-side-cta-title">¿Un proyecto similar?</h3>
-            <p class="ol-side-cta-desc">Si tu empresa diseña, instala o distribuye sistemas de protección contra incendios y necesitas un sitio de alto nivel técnico, podemos construirlo contigo.</p>
+            <p class="ol-side-cta-desc">Si tu empresa integra, instala o da mantenimiento a redes, cableado estructurado o telecomunicaciones y necesitas un sitio de alto nivel técnico, podemos construirlo contigo.</p>
             <a href="/cotizar/" class="ol-side-cta-btn">
               Cotizar mi proyecto
               <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
@@ -497,25 +620,59 @@
           <!-- 01 CONTEXTO -->
           <section class="ol-case-section" id="contexto">
             <span class="ol-case-eyebrow">01 · Contexto del cliente</span>
-            <h2 class="ol-case-h2">Ingeniería de protección contra incendios con experiencia comprobada en México.</h2>
-            <p class="ol-case-lead">ProyectoRed es una empresa mexicana con trayectoria en el diseño, suministro e instalación de sistemas de protección contra incendios — rociadores automáticos, detección y alarma, sistemas de supresión por agente limpio, extinción por CO₂ y soluciones a medida para entornos industriales, comerciales y gubernamentales.</p>
-            <p class="ol-case-p">La empresa atiende a un perfil técnico y corporativo muy definido: <strong>directores de seguridad, gerentes de planta, responsables de mantenimiento, coordinadores de obra, comités de compras y áreas de ingeniería</strong> de empresas medianas y grandes que requieren proyectos de protección contra incendios ejecutados bajo norma, con respaldo documental y con un interlocutor técnico capacitado desde la primera reunión.</p>
-            <p class="ol-case-p">Su operación abarca Ciudad de México y el Área Metropolitana, con proyectos en distintos estados de la República. Antes de este proyecto, ProyectoRed carecía de una presencia digital que reflejara su nivel técnico, su experiencia en proyectos ejecutados ni la solidez del equipo detrás de cada instalación.</p>
+            <h2 class="ol-case-h2">Integración de cableado estructurado y redes con experiencia comprobada en México.</h2>
+            <p class="ol-case-lead">ProyectoRed es una empresa mexicana integradora de cableado estructurado, fibra óptica, redes inalámbricas, seguridad y telecomunicaciones — con casi dos décadas implementando, con experiencia, eficiencia y honradez, soluciones de valor agregado para empresas e industria en todo el país.</p>
+            <p class="ol-case-p">La empresa atiende a un perfil técnico y corporativo muy definido: <strong>responsables de TI, gerentes de sistemas, jefes de infraestructura, coordinadores de obra, comités de compras y áreas de ingeniería</strong> de empresas medianas y grandes que requieren proyectos de conectividad ejecutados bajo norma, con respaldo documental y con un interlocutor técnico capacitado desde la primera reunión.</p>
+            <p class="ol-case-p">Su operación tiene cobertura nacional, con proyectos ejecutados en distintos estados de la República. Antes de este proyecto, ProyectoRed carecía de una presencia digital que reflejara su nivel técnico, su experiencia en proyectos ejecutados ni la solidez del equipo detrás de cada instalación.</p>
 
-            <div class="ol-case-figure">
+            <figure class="ol-case-figure">
               <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/proyectored/proyectored-servicios-proteccion-contra-incendios.avif" alt="ProyectoRed — servicios integrales de protección contra incendios en CDMX" width="1543" height="854" loading="lazy" decoding="async">
+                <div class="mk">
+                  <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">proyectored.mx</span></div>
+                  <div class="mk-view">
+                    <div class="mk-nav">
+                      <span class="mk-logo">ProyectoRed</span>
+                      <span class="mk-menu"><span>Inicio</span><span>Conócenos</span><span>Servicios</span><span>Contacto</span><span class="mk-cta">Contáctanos</span></span>
+                    </div>
+                    <div class="mk-hero">
+                      <div class="mk-hb">
+                        <div>
+                          <span class="mk-eyebrow">Integrador de cableado estructurado · Telecomunicaciones</span>
+                          <h3 class="mk-h">Conectamos tu mundo con <span class="ac">soluciones tecnológicas</span> y servicios de excelencia</h3>
+                          <p class="mk-sub">Cableado estructurado, fibra óptica, redes inalámbricas y sistemas de seguridad para empresas en todo México — bajo estándares ANSI/TIA y con marcas líderes como Panduit y Dahua.</p>
+                        </div>
+                        <div>
+                          <p class="mk-hk">Nuestra historia</p>
+                          <p class="mk-hp">ProyectoRed es una empresa integradora de cableado estructurado, fibra óptica, seguridad y telecomunicaciones con 19 años de experiencia. Implementamos con experiencia, eficiencia y honradez soluciones de valor agregado para nuestros clientes.</p>
+                        </div>
+                      </div>
+                      <div class="mk-strip">
+                        <div><b>19<span>+</span></b><span class="l">Años</span></div>
+                        <div><b>Panduit</b><span class="l">Certificados</span></div>
+                        <div><b>Nacional</b><span class="l">Cobertura</span></div>
+                      </div>
+                    </div>
+                    <div class="mk-quick">
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M6 7h.01M6 11h.01"/></svg></div><b>Cableado Estructurado</b><span>Cobre y fibra óptica</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></div><b>Sistemas Eléctricos</b><span>Instalación y obra</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg></div><b>Redes Inalámbricas</b><span>Punto a punto y multipunto</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div><b>Sistemas de Seguridad</b><span>Videovigilancia Dahua</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.6 5.6l-6 6a1.4 1.4 0 0 0 2 2l6-6a4 4 0 0 0 5.6-5.6l-2.1 2.1-2-2 2.1-2.1z"/></svg></div><b>Mantenimiento y Migración</b><span>Switch core y enlaces</span></div>
+                      <div class="mk-qc cta"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></div><b>Contáctanos</b><span>Cotiza tu proyecto</span></div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <p class="ol-case-figure-caption">Sección de especialidades: sistemas, normatividad y capacidades técnicas comunicadas desde el primer scroll.</p>
-            </div>
+              <figcaption class="ol-case-figure-caption">Home del sitio: hero corporativo, eslogan de marca, trayectoria (19 años, certificación Panduit) y accesos rápidos a las seis líneas de servicio — comunicados desde el primer scroll.</figcaption>
+            </figure>
           </section>
 
           <!-- 02 RETO -->
           <section class="ol-case-section" id="reto">
             <span class="ol-case-eyebrow">02 · El reto</span>
             <h2 class="ol-case-h2">Posicionar la experiencia técnica antes de la primera llamada.</h2>
-            <p class="ol-case-p">El comprador de sistemas contra incendios llega al sitio con preguntas muy específicas: <strong>¿tienen experiencia real en mi tipo de instalación?</strong>, <strong>¿trabajan bajo norma NFPA o NOM?</strong>, <strong>¿con qué marcas y proveedores certificados trabajan?</strong>, <strong>¿puedo ver proyectos similares al mío ya ejecutados?</strong>.</p>
-            <p class="ol-case-p">El reto del proyecto fue construir un sitio que respondiera a esas preguntas con evidencia concreta — no con frases genéricas — antes de que el visitante considerara llamar o escribir. La confianza en el sector de ingeniería se construye con trayectoria visible, no con promesas.</p>
+            <p class="ol-case-p">El comprador de proyectos de conectividad llega al sitio con preguntas muy específicas: <strong>¿tienen experiencia real en mi tipo de proyecto?</strong>, <strong>¿trabajan bajo norma ANSI/TIA o ISO/IEC?</strong>, <strong>¿con qué marcas y fabricantes certificados trabajan?</strong>, <strong>¿puedo ver proyectos similares al mío ya ejecutados?</strong>.</p>
+            <p class="ol-case-p">El reto del proyecto fue construir un sitio que respondiera a esas preguntas con evidencia concreta — no con frases genéricas — antes de que el visitante considerara llamar o escribir. La confianza en el sector de TI se construye con trayectoria visible, no con promesas.</p>
 
             <div class="ol-case-cards">
               <div class="ol-case-card">
@@ -523,28 +680,28 @@
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.5v5c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11V6.5L12 2z"/><path d="M9 12l2 2 4-4"/></svg>
                 </div>
                 <h4>Credibilidad técnica</h4>
-                <p>Comunicar dominio normativo (NFPA, NOM-002, FM, UL) y experiencia sectorial sin depender de que el visitante lo solicite: visible desde la home, no oculto en un PDF.</p>
+                <p>Comunicar dominio normativo (ANSI/TIA-568, ISO/IEC 11801) y experiencia sectorial sin depender de que el visitante lo solicite: visible desde la home, no oculto en un PDF.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
                 </div>
                 <h4>Portafolio ejecutado</h4>
-                <p>Mostrar proyectos reales con contexto — sector, tipo de sistema, alcance — para que el comprador identifique casos similares al suyo antes de cotizar.</p>
+                <p>Mostrar proyectos reales con contexto — cliente, tipo de solución, alcance — para que el comprador identifique casos similares al suyo antes de cotizar.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M3 21a9 9 0 0 1 18 0"/></svg>
                 </div>
-                <h4>Equipo visible</h4>
-                <p>Presentar al equipo técnico con nombre, rol y especialidad — el comprador industrial necesita saber con quién trabaja antes de firmar un proyecto de seguridad.</p>
+                <h4>Marcas y respaldo</h4>
+                <p>Presentar las marcas y certificaciones integradas — Panduit, Dahua, Cisco Webex, Hubbell — porque el comprador de TI valida el respaldo del fabricante antes de adjudicar.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
                 </div>
                 <h4>Canal de cotización formal</h4>
-                <p>Formulario orientado a proyectos con campos de datos técnicos — tipo de inmueble, superficie, sistema requerido, normatividad aplicable — para calificar el prospecto desde el primer contacto.</p>
+                <p>Formulario orientado a proyectos con campos de datos técnicos — tipo de inmueble, servicio requerido, ubicación del proyecto, alcance — para calificar el prospecto desde el primer contacto.</p>
               </div>
             </div>
           </section>
@@ -553,46 +710,39 @@
           <section class="ol-case-section" id="arquitectura">
             <span class="ol-case-eyebrow">03 · Arquitectura del sitio</span>
             <h2 class="ol-case-h2">Estructura orientada al recorrido del comprador técnico.</h2>
-            <p class="ol-case-p">La arquitectura de información se construyó sobre la base del recorrido real del comprador: <strong>llega desde una referencia o búsqueda sectorial, valida que la empresa tenga experiencia en su tipo de proyecto, revisa la normatividad con la que trabajan, consulta proyectos similares ejecutados y abre contacto formal</strong>. Cada capa del sitio atiende un momento específico de ese proceso.</p>
+            <p class="ol-case-p">La arquitectura de información se construyó sobre la base del recorrido real del comprador: <strong>llega desde una referencia o búsqueda sectorial, valida que la empresa tenga experiencia en su tipo de proyecto, revisa los estándares y marcas con las que trabajan, consulta proyectos similares ejecutados y abre contacto formal</strong>. Cada capa del sitio atiende un momento específico de ese proceso.</p>
 
             <div class="ol-case-arch">
               <div class="ol-arch-step">
                 <p class="num">CAPA 01</p>
                 <h4>Home corporativa</h4>
-                <p>Propuesta de valor clara, especialidades técnicas en un vistazo, sectores atendidos, normatividad aplicable y acceso directo al portafolio y al contacto.</p>
+                <p>Propuesta de valor clara, líneas de servicio en un vistazo, marcas integradas, estándares aplicables y acceso directo al portafolio y al contacto.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">CAPA 02</p>
-                <h4>Servicios y sistemas</h4>
-                <p>Cada sistema (rociadores, detección, supresión, agente limpio, CO₂, extinción especial) tiene su propia sección con descripción técnica, aplicaciones y normativa.</p>
+                <h4>Líneas de servicio</h4>
+                <p>Cada línea (cableado estructurado, sistemas eléctricos, redes inalámbricas, seguridad, mantenimiento y migración, espacios tecnológicos) tiene su propia sección con descripción técnica y alcance.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">CAPA 03</p>
                 <h4>Portafolio de proyectos</h4>
-                <p>Casos ejecutados organizados por sector (industria, comercio, hospitales, gobierno, centros de datos) con descripción del alcance y sistemas instalados.</p>
+                <p>Casos ejecutados organizados por tipo de solución (cableado, fibra óptica, videovigilancia, salas Webex) con descripción del alcance y la marca integrada.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">CAPA 04</p>
-                <h4>Empresa y equipo</h4>
-                <p>Historia, valores, equipo técnico y certificaciones corporativas — la sección que convierte la revisión del portafolio en confianza suficiente para iniciar contacto.</p>
+                <h4>Empresa y trayectoria</h4>
+                <p>Historia, valores, trayectoria de casi dos décadas y marcas certificadas — la sección que convierte la revisión del portafolio en confianza suficiente para iniciar contacto.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">CAPA 05</p>
-                <h4>Sectores atendidos</h4>
-                <p>Páginas por vertical (industrial, comercial, hospitalario, gubernamental, data centers) con casos representativos y requisitos normativos específicos de cada sector.</p>
+                <h4>Marcas y estándares</h4>
+                <p>Panduit, Dahua, Cisco Webex y Hubbell, con los estándares ANSI/TIA-568 e ISO/IEC 11801 como sello de respaldo técnico de cada proyecto.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">CAPA 06</p>
                 <h4>Contacto técnico</h4>
-                <p>Formulario de cotización con campos orientados a proyectos: tipo de inmueble, superficie aproximada, sistema requerido, norma aplicable y zona de instalación.</p>
+                <p>Formulario de cotización con campos orientados a proyectos: tipo de inmueble, servicio requerido, ubicación del proyecto y descripción del alcance.</p>
               </div>
-            </div>
-
-            <div class="ol-case-figure">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/proyectored/proyectored-catalogo-equipos-nom-nfpa-cdmx.avif" alt="ProyectoRed — catálogo de equipos contra incendios certificados NOM y NFPA" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <p class="ol-case-figure-caption">Sección de sistemas: cada especialidad con descripción técnica, aplicaciones y normatividad correspondiente.</p>
             </div>
           </section>
 
@@ -600,8 +750,8 @@
           <section class="ol-case-section" id="diseno">
             <span class="ol-case-eyebrow">04 · Diseño y sistema visual</span>
             <h2 class="ol-case-h2">Sobriedad técnica, sin renunciar a la fuerza visual de la marca.</h2>
-            <p class="ol-case-p">El diseño parte de una premisa clara: <strong>una empresa de ingeniería de seguridad no necesita efectos, gradientes decorativos ni recursos visuales de moda</strong>. Necesita tipografía legible, jerarquía de datos precisa y fotografía de instalación que comunique escala y profesionalismo. La paleta usa el carmesí de la marca como acento puntual de señalización — nunca como decoración — sobre una base oscura que favorece la concentración y el contraste técnico.</p>
-            <p class="ol-case-p">Cada componente del sistema visual — encabezados de sección, tarjetas de servicio, fichas de proyecto, tablas de normatividad, bloques del equipo técnico — comparte el mismo lenguaje, garantizando que el comprador sienta coherencia y seriedad institucional en cada pantalla del sitio.</p>
+            <p class="ol-case-p">El diseño parte de una premisa clara: <strong>un integrador de redes no necesita efectos, gradientes decorativos ni recursos visuales de moda</strong>. Necesita tipografía legible, jerarquía de datos precisa y maquetas que comuniquen escala y profesionalismo. La paleta usa el carmesí del acento como señalización puntual — nunca como decoración — sobre una base oscura que favorece la concentración y el contraste técnico.</p>
+            <p class="ol-case-p">Cada componente del sistema visual — encabezados de sección, tarjetas de servicio, fichas de proyecto, tablas de estándares, bloques de marcas integradas — comparte el mismo lenguaje, garantizando que el comprador sienta coherencia y seriedad institucional en cada pantalla del sitio.</p>
 
             <div class="ol-case-cards">
               <div class="ol-case-card">
@@ -609,36 +759,29 @@
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V4h16v3"/><path d="M9 20h6"/><path d="M12 4v16"/></svg>
                 </div>
                 <h4>Tipografía Inter</h4>
-                <p>Familia geométrica neutral, ideal para datos técnicos, normativas, especificaciones de sistemas y tablas comparativas que dominan el contenido de ingeniería.</p>
+                <p>Familia geométrica neutral, ideal para datos técnicos, estándares, especificaciones de servicio y tablas comparativas que dominan el contenido de ingeniería.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="10.5" r="2.5"/><circle cx="8.5" cy="7.5" r="2.5"/><circle cx="6.5" cy="12.5" r="2.5"/><path d="M12 22a10 10 0 1 1 9.96-9.13.5.5 0 0 1-.5.54H17a3 3 0 0 0-3 3v.5a2 2 0 0 1-2 2"/></svg>
                 </div>
                 <h4>Paleta técnica</h4>
-                <p>Carmesí como acento de señalización y marca, fondos oscuros que favorecen la lectura de especificaciones, contrastes altos en datos normativos y CTAs.</p>
+                <p>Carmesí como acento de señalización, fondos oscuros que favorecen la lectura de especificaciones, contrastes altos en datos de estándares y CTAs.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
                 </div>
                 <h4>Sistema modular</h4>
-                <p>Componentes reutilizables para fichas de proyecto, tarjetas de sistema y bloques de equipo que mantienen coherencia en todas las páginas del sitio.</p>
+                <p>Componentes reutilizables para fichas de proyecto, tarjetas de servicio y bloques de marca que mantienen coherencia en todas las páginas del sitio.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                 </div>
-                <h4>Badges de norma</h4>
-                <p>Componente dedicado para destacar NFPA, NOM-002, FM y UL en cada sección relevante — credibilidad técnica sin saturar la jerarquía visual de la página.</p>
+                <h4>Badges de estándar</h4>
+                <p>Componente dedicado para destacar ANSI/TIA-568, ISO/IEC 11801 y las marcas integradas en cada sección relevante — credibilidad técnica sin saturar la jerarquía visual de la página.</p>
               </div>
-            </div>
-
-            <div class="ol-case-figure">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/proyectored/proyectored-extintores-pqs-co2-afff-tipo-k.avif" alt="ProyectoRed — extintores PQS, CO2, AFFF y tipo K disponibles en CDMX" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <p class="ol-case-figure-caption">Sistema de tarjetas de proyecto con badges normativos aplicados de forma consistente en todo el portafolio.</p>
             </div>
           </section>
 
@@ -646,30 +789,23 @@
           <section class="ol-case-section" id="portafolio">
             <span class="ol-case-eyebrow">05 · Portafolio de proyectos</span>
             <h2 class="ol-case-h2">La experiencia ejecutada como principal argumento de venta.</h2>
-            <p class="ol-case-p">En ingeniería contra incendios, ningún texto supera a un caso real documentado. Por eso el núcleo del sitio de ProyectoRed es su portafolio de proyectos — organizado por sector, con ficha técnica de cada instalación y datos suficientes para que el comprador confirme que la empresa ya ha resuelto proyectos comparables al suyo.</p>
+            <p class="ol-case-p">En integración de redes, ningún texto supera a un caso real documentado. Por eso el núcleo del sitio de ProyectoRed es su portafolio de proyectos — organizado por tipo de solución, con ficha técnica de cada proyecto y datos suficientes para que el comprador confirme que la empresa ya ha resuelto proyectos comparables al suyo.</p>
 
             <ul class="ol-case-list">
-              <li><strong>Sector industrial:</strong> instalaciones en plantas de manufactura, almacenes, terminales logísticas y centros de distribución con sistemas de rociadores ESFR y cobertura total bajo NFPA 13.</li>
-              <li><strong>Sector comercial:</strong> proyectos en centros comerciales, hoteles y edificios de oficinas con sistemas de detección inteligente, alarma y rociadores convencionales integrados.</li>
-              <li><strong>Hospitales y salud:</strong> instalaciones con supresión por agente limpio en áreas críticas, sistemas de detección de alta sensibilidad y cumplimiento estricto de NOM-002 y NFPA 72.</li>
-              <li><strong>Gobierno y educativo:</strong> proyectos ejecutados en dependencias federales, planteles universitarios y recintos culturales con normativa pública aplicable.</li>
-              <li><strong>Centros de datos:</strong> supresión especializada con gas inerte o Novec 1230 para protección de equipos críticos sin daño colateral por agua.</li>
-              <li><strong>Descripción técnica por ficha:</strong> sistema instalado, normativa seguida, superficie protegida, tipo de riesgo y status del proyecto — toda la información que el comprador necesita para comparar.</li>
+              <li><strong>Cableado estructurado y red WiFi:</strong> instalación de cableado estructurado para red WiFi en planta industrial Nestlé, con cobertura en sedes de Veracruz y CDMX.</li>
+              <li><strong>Migración de fibra óptica:</strong> migración de switch core y 26 enlaces de fibra óptica MTP, con cableado estructurado para red WiFi, manteniendo continuidad operativa.</li>
+              <li><strong>Salas de videoconferencia:</strong> instalación de salas Webex Room Cisco en Monterrey, Guadalajara, León, Cuautitlán, CDMX y Tlaxcala.</li>
+              <li><strong>Videovigilancia y mantenimiento:</strong> instalación de sistema de videovigilancia IP y mantenimiento a red de cableado estructurado en Irapuato.</li>
+              <li><strong>Cableado multisede:</strong> instalación de cableado estructurado en Ciudad del Carmen, CDMX, Querétaro y Monterrey para distintos clientes corporativos.</li>
+              <li><strong>Descripción técnica por ficha:</strong> tipo de solución, marca integrada, ubicación, alcance y status del proyecto — toda la información que el comprador necesita para comparar.</li>
             </ul>
-
-            <div class="ol-case-figure">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/proyectored/proyectored-categorias-equipo-bomberos-senalizacion.avif" alt="ProyectoRed — categorías: equipo para bomberos y señalización de emergencia" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <p class="ol-case-figure-caption">Portafolio organizado por sector: cada proyecto con sistema instalado, normativa, alcance y fotografía de la instalación.</p>
-            </div>
           </section>
 
           <!-- 06 CONVERSIÓN -->
           <section class="ol-case-section" id="conversion">
             <span class="ol-case-eyebrow">06 · Conversión B2B</span>
             <h2 class="ol-case-h2">Un canal directo entre el responsable técnico y el equipo de proyectos.</h2>
-            <p class="ol-case-p">En proyectos de ingeniería contra incendios, la calidad del primer contacto define el tono de toda la relación comercial. Por eso el sistema de conversión del sitio de ProyectoRed está diseñado para <strong>calificar al prospecto desde el formulario</strong> y darle al equipo técnico la información mínima para preparar una primera respuesta de valor — no una respuesta genérica.</p>
+            <p class="ol-case-p">En proyectos de integración de redes, la calidad del primer contacto define el tono de toda la relación comercial. Por eso el sistema de conversión del sitio de ProyectoRed está diseñado para <strong>calificar al prospecto desde el formulario</strong> y darle al equipo técnico la información mínima para preparar una primera respuesta de valor — no una respuesta genérica.</p>
 
             <div class="ol-case-cards">
               <div class="ol-case-card">
@@ -677,21 +813,21 @@
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="14" x2="15" y2="14"/></svg>
                 </div>
                 <h4>Formulario técnico de proyecto</h4>
-                <p>Campos orientados a ingeniería: tipo de inmueble, superficie a proteger, sistema requerido, normativa aplicable, zona y breve descripción del proyecto — información suficiente para una respuesta útil.</p>
+                <p>Campos orientados a ingeniería: empresa, responsable de TI, servicio requerido, ubicación del proyecto y breve descripción del alcance — información suficiente para una respuesta útil.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg>
                 </div>
                 <h4>WhatsApp de proyecto</h4>
-                <p>Acceso directo por WhatsApp con mensaje precargado por tipo de sistema — el botón persiste en todo el recorrido sin interrumpir la lectura técnica del visitante.</p>
+                <p>Acceso directo por WhatsApp con mensaje precargado por tipo de servicio — el botón persiste en todo el recorrido sin interrumpir la lectura técnica del visitante.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 </div>
                 <h4>Teléfono siempre visible</h4>
-                <p>Número comercial en topbar, header y footer — el responsable de seguridad que ya revisó el portafolio no necesita buscar el teléfono: lo tiene a la vista desde cualquier pantalla.</p>
+                <p>Número comercial en topbar, header y footer — el responsable de TI que ya revisó el portafolio no necesita buscar el teléfono: lo tiene a la vista desde cualquier pantalla.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
@@ -745,13 +881,6 @@
                 </div>
               </dl>
             </div>
-
-            <div class="ol-case-figure">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/proyectored/proyectored-blog-guias-seguridad-contra-incendios.avif" alt="ProyectoRed — blog con guías técnicas de seguridad contra incendios" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <p class="ol-case-figure-caption">Comportamiento responsivo completo: desktop, tablet y móvil con el mismo sistema de componentes y jerarquía visual.</p>
-            </div>
           </section>
 
           <!-- 08 PROCESO -->
@@ -764,22 +893,22 @@
               <div class="ol-arch-step">
                 <p class="num">FASE 01</p>
                 <h4>Descubrimiento</h4>
-                <p>Sesión técnica con el equipo de ProyectoRed: sistemas que ofrecen, sectores que atienden, perfil de comprador, proyectos de referencia y diferenciadores frente a la competencia.</p>
+                <p>Sesión técnica con el equipo de ProyectoRed: líneas de servicio que ofrecen, marcas que integran, perfil de comprador, proyectos de referencia y diferenciadores frente a la competencia.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">FASE 02</p>
                 <h4>Estrategia</h4>
-                <p>Arquitectura de información, mapa de contenidos por sector, jerarquía de mensajes y estrategia de conversión B2B orientada al comprador técnico industrial.</p>
+                <p>Arquitectura de información, mapa de contenidos por línea de servicio, jerarquía de mensajes y estrategia de conversión B2B orientada al comprador técnico de TI.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">FASE 03</p>
                 <h4>Diseño visual</h4>
-                <p>Sistema de design tokens, componentes base (header, tarjetas de sistema, fichas de proyecto, formulario técnico) y prototipos para validación con el cliente.</p>
+                <p>Sistema de design tokens, componentes base (header, tarjetas de servicio, fichas de proyecto, formulario técnico) y prototipos para validación con el cliente.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">FASE 04</p>
                 <h4>Desarrollo</h4>
-                <p>Construcción sobre Astro con componentes reutilizables, portafolio de proyectos, secciones por sector, formulario de cotización técnica y datos estructurados Schema.org.</p>
+                <p>Construcción sobre Astro con componentes reutilizables, portafolio de proyectos, secciones por línea de servicio, formulario de cotización técnica y datos estructurados Schema.org.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">FASE 05</p>
@@ -797,69 +926,242 @@
           <!-- 09 GALERÍA -->
           <section class="ol-case-section" id="galeria">
             <span class="ol-case-eyebrow">09 · Galería del sitio</span>
-            <h2 class="ol-case-h2">Pantallas y secciones del sitio en operación.</h2>
-            <p class="ol-case-p">Un recorrido por las pantallas principales del sitio de ProyectoRed: home corporativa, sección de sistemas, portafolio de proyectos, sección de equipo y módulo de contacto técnico — todas construidas con el mismo sistema de componentes y jerarquía visual.</p>
+            <h2 class="ol-case-h2">Recorrido por el sitio en operación.</h2>
+            <p class="ol-case-p">Siete pantallas del sitio de ProyectoRed —home corporativa, líneas de servicio con su detalle, estándares y certificaciones, marcas integradas, proyectos recientes, cobertura nacional y contacto— reproducidas con el mismo sistema de componentes y la misma jerarquía visual del sitio en operación. Cada pantalla está pensada para llevar al comprador del interés a la solicitud de contacto.</p>
 
             <div class="ol-case-gallery">
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/proyectored/proyectored-home-equipos-contra-incendios-cdmx.avif" alt="ProyectoRed — pantalla 01: home equipos contra incendios en CDMX" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">01 · Hero corporativo con propuesta de valor y especialidades del sector.</figcaption>
-              </figure>
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/proyectored/proyectored-servicios-proteccion-contra-incendios.avif" alt="ProyectoRed — pantalla 02: servicios de protección contra incendios" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">02 · Especialidades técnicas y normatividad aplicable por sistema.</figcaption>
-              </figure>
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/proyectored/proyectored-catalogo-equipos-nom-nfpa-cdmx.avif" alt="ProyectoRed — pantalla 03: catálogo equipos NOM y NFPA en CDMX" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">03 · Sistemas organizados por tipo: rociadores, detección, supresión y agente limpio.</figcaption>
-              </figure>
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/proyectored/proyectored-extintores-pqs-co2-afff-tipo-k.avif" alt="ProyectoRed — pantalla 04: extintores PQS, CO2, AFFF y tipo K" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">04 · Portafolio de proyectos con tarjetas técnicas y badges de normativa.</figcaption>
-              </figure>
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/proyectored/proyectored-categorias-equipo-bomberos-senalizacion.avif" alt="ProyectoRed — pantalla 05: categorías equipo bomberos y señalización" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">05 · Ficha de proyecto con sector, sistema, normativa y alcance de la instalación.</figcaption>
-              </figure>
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/proyectored/proyectored-blog-guias-seguridad-contra-incendios.avif" alt="ProyectoRed — pantalla 06: blog guías de seguridad contra incendios" width="1543" height="854" loading="lazy" decoding="async">
-                </div>
-                <figcaption class="ol-case-figure-caption">06 · Comportamiento responsivo en desktop, tablet y móvil.</figcaption>
-              </figure>
-            </div>
 
-            <figure class="ol-case-figure" style="margin-top:1.25rem;">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/proyectored/proyectored-contacto-cotizacion-equipos-cdmx.avif" alt="ProyectoRed — pantalla 07: contacto y cotización de equipos contra incendios CDMX" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <figcaption class="ol-case-figure-caption">07 · Módulo de contacto técnico con formulario de cotización orientado a proyectos de ingeniería.</figcaption>
-            </figure>
+              <!-- 01 · LÍNEAS DE SERVICIO -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">proyectored.mx/servicios-2</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Una amplia gama de servicios tecnológicos</h3>
+                      <p class="mk-sect-sub">Soluciones integrales de conectividad, comunicación y seguridad — cada línea con su detalle de alcance.</p>
+                      <div class="mk-cards">
+                        <div class="mk-card">
+                          <span class="mk-pbadge">Servicio</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4M6 7h.01M6 11h.01"/></svg></div>
+                          <p class="mk-ct">Cableado Estructurado</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Diseño e instalación</span><span>Cobre categoría 6/6A</span><span>Fibra óptica monomodo y multimodo</span><span>Gabinetes y racks</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">Servicio</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+                          <p class="mk-ct">Sistemas Eléctricos</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Instalación eléctrica</span><span>Alimentación de equipos</span><span>Canalización</span><span>Obra y acometidas</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">Servicio</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg></div>
+                          <p class="mk-ct">Redes Inalámbricas</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Redes WiFi empresariales</span><span>Enlaces punto a punto</span><span>Enlaces multipunto</span><span>Site survey</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">Servicio</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+                          <p class="mk-ct">Sistemas de Seguridad</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Videovigilancia IP</span><span>Cámaras Dahua</span><span>Control de acceso</span><span>Seguridad perimetral</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">Servicio</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.6 5.6l-6 6a1.4 1.4 0 0 0 2 2l6-6a4 4 0 0 0 5.6-5.6l-2.1 2.1-2-2 2.1-2.1z"/></svg></div>
+                          <p class="mk-ct">Mantenimiento y Migración</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Mantenimiento de red</span><span>Migración de switch core</span><span>Enlaces de fibra MTP</span><span>Videovigilancia</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <span class="mk-pbadge">Servicio</span>
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3M7 9l3 3-3 3M13 15h4"/></svg></div>
+                          <p class="mk-ct">Espacios Tecnológicos</p>
+                          <p class="mk-inc-k">Incluye</p>
+                          <div class="mk-inc"><span>Salas de videoconferencia</span><span>Webex Room Cisco</span><span>Site de telecomunicaciones</span><span>Integración AV</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">01 · Servicios — las seis líneas de ProyectoRed con su detalle de alcance, comparables de un vistazo por el comprador.</figcaption>
+              </figure>
+
+              <!-- 02 · ESTÁNDARES Y DIFERENCIADORES -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">proyectored.mx/cableado-estructurado</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Estándares e ingeniería que respaldan cada proyecto</h3>
+                      <p class="mk-sect-sub">Implementamos con experiencia, eficiencia y honradez — bajo norma internacional, no soluciones improvisadas.</p>
+                      <div class="mk-diff">
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.5v5c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11V6.5L12 2z"/><path d="M9 12l2 2 4-4"/></svg></div>
+                          <b>Norma internacional</b>
+                          <p>Cableado certificado bajo ANSI/TIA/EIA-568 A, B, C y D e ISO/IEC 11801, listo para certificación de canal.</p>
+                          <span class="mk-dlink">Ver estándares →</span>
+                        </div>
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+                          <b>19 años de experiencia</b>
+                          <p>Casi dos décadas ejecutando proyectos de alta complejidad de conectividad, comunicación y seguridad en todo México.</p>
+                          <span class="mk-dlink">Conocer la empresa →</span>
+                        </div>
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+                          <b>Marcas líderes</b>
+                          <p>Infraestructura Panduit certificada, seguridad Dahua y soluciones de colaboración Cisco Webex integradas en sitio.</p>
+                          <span class="mk-dlink">Ver marcas →</span>
+                        </div>
+                        <div class="mk-dcard">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.6 5.6l-6 6a1.4 1.4 0 0 0 2 2l6-6a4 4 0 0 0 5.6-5.6l-2.1 2.1-2-2 2.1-2.1z"/></svg></div>
+                          <b>Soluciones llave en mano</b>
+                          <p>Diseño, instalación, migración y mantenimiento con un solo integrador responsable del proyecto completo.</p>
+                          <span class="mk-dlink">Conocer más →</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">02 · Diferenciadores — los argumentos técnicos que un responsable de TI valora: norma, trayectoria y marcas certificadas.</figcaption>
+              </figure>
+
+              <!-- 03 · MARCAS / CERTIFICACIONES -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">proyectored.mx/servicios-2#certificaciones</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Marcas y certificaciones</h3>
+                      <p class="mk-sect-sub">Infraestructura y seguridad con fabricantes líderes mundiales del sector de telecomunicaciones.</p>
+                      <div class="mk-sect-cards">
+                        <div class="mk-scard"><span class="k">Infraestructura</span><b>Panduit</b><p>Líder mundial en infraestructura de red; cableado estructurado certificado.</p><span class="v">Partner certificado →</span></div>
+                        <div class="mk-scard"><span class="k">Seguridad</span><b>Dahua</b><p>Videovigilancia IP, NVR, cámaras PTZ y térmicas, control de acceso y VMS.</p><span class="v">Línea de seguridad →</span></div>
+                        <div class="mk-scard"><span class="k">Colaboración</span><b>Cisco Webex</b><p>Salas de videoconferencia Webex Room para espacios tecnológicos.</p><span class="v">Espacios tech →</span></div>
+                        <div class="mk-scard"><span class="k">Conectividad</span><b>Hubbell</b><p>Soluciones de conectividad y conectores para cableado de alto desempeño.</p><span class="v">Ver marca →</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">03 · Marcas — los fabricantes que ProyectoRed integra, presentados como sello de respaldo técnico.</figcaption>
+              </figure>
+
+              <!-- 04 · TRAYECTORIA -->
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">proyectored.mx/conocenos</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Trayectoria que respalda</h3>
+                      <p class="mk-sect-sub">Casi dos décadas conectando empresas, con números verificables.</p>
+                      <div class="mk-stats">
+                        <div class="mk-stat"><b>19+</b><span>Años de experiencia</span></div>
+                        <div class="mk-stat"><b>6</b><span>Líneas de servicio</span></div>
+                        <div class="mk-stat"><b>ANSI·ISO</b><span>Bajo norma</span></div>
+                        <div class="mk-stat"><b>Nacional</b><span>Cobertura</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">04 · Trayectoria — cifras al frente como argumento de continuidad operativa y experiencia.</figcaption>
+              </figure>
+
+              <!-- 05 · COBERTURA -->
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">proyectored.mx/contacto</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Cobertura nacional</h3>
+                      <p class="mk-sect-sub">Proyectos ejecutados en distintos estados de la República.</p>
+                      <div class="mk-chips">
+                        <span class="mk-chip on">Ciudad de México</span><span class="mk-chip on">Estado de México</span><span class="mk-chip on">Monterrey</span><span class="mk-chip">Guadalajara</span><span class="mk-chip">Querétaro</span><span class="mk-chip">León</span><span class="mk-chip">Veracruz</span><span class="mk-chip">Irapuato</span><span class="mk-chip">Ciudad del Carmen</span><span class="mk-chip">Cuautitlán</span><span class="mk-chip">Tlaxcala</span><span class="mk-chip">Nacional</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">05 · Cobertura — estados donde ProyectoRed ya ejecutó proyectos, para validar el alcance nacional.</figcaption>
+              </figure>
+
+              <!-- 06 · PROYECTOS RECIENTES -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">proyectored.mx/conocenos#proyectos</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Proyectos recientes</h3>
+                      <p class="mk-sect-sub">Casos ejecutados que demuestran experiencia real en proyectos de alta complejidad.</p>
+                      <div class="mk-tcards">
+                        <div class="mk-tcard">
+                          <span class="mk-ally">Proyecto ejecutado</span>
+                          <div class="mk-trow"><span class="mk-av">CE</span><span><span class="mk-tn">Cableado estructurado · Red WiFi</span><br><span class="mk-tloc">Planta Nestlé · Veracruz y CDMX</span></span></div>
+                          <p class="mk-quote">Instalación de cableado estructurado para red WiFi de planta industrial, con cobertura en dos sedes.</p>
+                          <p class="mk-dom">Certificado Panduit</p>
+                        </div>
+                        <div class="mk-tcard">
+                          <span class="mk-ally">Proyecto ejecutado</span>
+                          <div class="mk-trow"><span class="mk-av">FO</span><span><span class="mk-tn">Migración de switch core</span><br><span class="mk-tloc">26 enlaces de fibra óptica MTP · CDMX</span></span></div>
+                          <p class="mk-quote">Migración de switch core y 26 enlaces de fibra óptica MTP con cableado estructurado para red WiFi.</p>
+                          <p class="mk-dom">Fibra MTP</p>
+                        </div>
+                        <div class="mk-tcard">
+                          <span class="mk-ally">Proyecto ejecutado</span>
+                          <div class="mk-trow"><span class="mk-av">WX</span><span><span class="mk-tn">Salas Webex Room Cisco</span><br><span class="mk-tloc">Monterrey, Guadalajara, León, CDMX y más</span></span></div>
+                          <p class="mk-quote">Instalación de salas de videoconferencia Webex Room Cisco en seis ciudades de la República.</p>
+                          <p class="mk-dom">Cisco Webex</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">06 · Proyectos recientes — casos reales del sitio (Nestlé, migración de fibra, salas Webex) como prueba de experiencia.</figcaption>
+              </figure>
+
+              <!-- 07 · CONTACTO -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">proyectored.mx/contacto</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">¿Listo para llevar tu conectividad al siguiente nivel?</h3>
+                      <p class="mk-sect-sub">Canal directo con el equipo de proyectos, con los datos que se necesitan para una primera respuesta de valor.</p>
+                      <div class="mk-trust">
+                        <div><b>19+ años</b><span>de experiencia</span></div>
+                        <div><b>Panduit</b><span>certificados</span></div>
+                        <div><b>ANSI·ISO</b><span>bajo norma</span></div>
+                        <div><b>Nacional</b><span>cobertura</span></div>
+                      </div>
+                      <div class="mk-form">
+                        <div class="mk-frow"><div class="mk-field">Empresa</div><div class="mk-field">Responsable de TI</div></div>
+                        <div class="mk-frow"><div class="mk-field">Servicio requerido</div><div class="mk-field">Ubicación del proyecto</div></div>
+                        <div class="mk-field">Descripción del proyecto</div>
+                        <div class="mk-submit">Contáctanos hoy mismo →</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">07 · Contacto — formulario calificado para el responsable de TI, con señales de confianza visibles antes de enviar.</figcaption>
+              </figure>
+
+            </div>
           </section>
 
           <!-- 10 RESULTADO -->
           <section class="ol-case-section" id="resultado">
             <span class="ol-case-eyebrow">10 · Resultado entregado</span>
             <h2 class="ol-case-h2">Una plataforma corporativa al nivel de la operación técnica de ProyectoRed.</h2>
-            <p class="ol-case-p">El resultado es un sitio que <strong>demuestra experiencia antes de la primera llamada</strong>, organiza el portafolio de proyectos ejecutados con profundidad técnica suficiente para calificar al comprador, y abre canales de cotización formal diseñados para el proceso de compra de proyectos de ingeniería. El comprador que llega al sitio de ProyectoRed sale con la certeza de que está ante una empresa seria, técnicamente competente y con trayectoria comprobada en su sector.</p>
+            <p class="ol-case-p">El resultado es un sitio que <strong>demuestra experiencia antes de la primera llamada</strong>, organiza el portafolio de proyectos ejecutados con profundidad técnica suficiente para calificar al comprador, y abre canales de cotización formal diseñados para el proceso de compra de proyectos de TI. El comprador que llega al sitio de ProyectoRed sale con la certeza de que está ante una empresa seria, técnicamente competente y con trayectoria comprobada en su sector.</p>
             <ul class="ol-case-list">
               <li><strong>Sitio corporativo en operación</strong> bajo dominio propio, certificado SSL, CDN global y dominio gestionado.</li>
-              <li><strong>Portafolio de proyectos estructurado</strong> por sector con ficha técnica, normativa y alcance de cada instalación.</li>
-              <li><strong>Secciones por sistema</strong> con descripción técnica, aplicaciones y normatividad específica (NFPA, NOM, FM, UL).</li>
-              <li><strong>Formulario de cotización técnica</strong> con campos orientados a proyectos de ingeniería, enrutado al equipo comercial.</li>
+              <li><strong>Portafolio de proyectos estructurado</strong> por tipo de solución con ficha técnica, marca y alcance de cada proyecto.</li>
+              <li><strong>Secciones por línea de servicio</strong> con descripción técnica, aplicaciones y estándares específicos (ANSI/TIA-568, ISO/IEC 11801).</li>
+              <li><strong>Formulario de cotización técnica</strong> con campos orientados a proyectos de conectividad, enrutado al equipo comercial.</li>
               <li><strong>Canal paralelo por WhatsApp y teléfono</strong> visibles en todas las pantallas del sitio.</li>
               <li><strong>Datos estructurados Schema.org</strong> para que motores y agregadores entiendan la naturaleza corporativa del sitio.</li>
-              <li><strong>Sistema de componentes escalable</strong> que permite agregar proyectos, sistemas y sectores sin rehacer el diseño base.</li>
+              <li><strong>Sistema de componentes escalable</strong> que permite agregar proyectos, servicios y marcas sin rehacer el diseño base.</li>
               <li><strong>Documentación entregable</strong> al equipo de ProyectoRed para mantener y ampliar el sitio de forma autónoma.</li>
             </ul>
           </section>
@@ -877,8 +1179,8 @@
 
         <div class="ol-cta-hero-left">
           <p class="ol-cta-hero-eyebrow">Iniciar proyecto</p>
-          <h2 class="ol-cta-hero-title">¿Tu empresa de protección contra incendios necesita un sitio al nivel de su operación técnica?</h2>
-          <p class="ol-cta-hero-blurb">Si diseñas, instalas, distribuyes o mantienes sistemas contra incendios — podemos construir contigo un sitio corporativo técnico, con portafolio real, canales B2B y estructura escalable. Sin plantillas, sin atajos, hecho para tu comprador.</p>
+          <h2 class="ol-cta-hero-title">¿Tu empresa de redes y telecomunicaciones necesita un sitio al nivel de su operación técnica?</h2>
+          <p class="ol-cta-hero-blurb">Si diseñas, instalas, integras o das mantenimiento a redes, cableado estructurado, fibra óptica o videovigilancia — podemos construir contigo un sitio corporativo técnico, con portafolio real, canales B2B y estructura escalable. Sin plantillas, sin atajos, hecho para tu comprador.</p>
           <div class="ol-cta-hero-actions">
             <a href="/cotizar/" class="ol-btn-primary">
               Cotizar proyecto
@@ -920,7 +1222,7 @@
           <p class="ol-section-sub">Resolvemos las dudas más comunes sobre nuestros proyectos web. ¿No encuentras tu respuesta? Escríbenos directo.</p>
         </div>
         <div class="ol-sh-right">
-          <p class="ol-sh-copy">Sabemos que contratar una agencia de desarrollo web implica una decisión importante. Por eso reunimos aquí las preguntas que más nos hacen antes de arrancar un proyecto — sobre costos, tiempos, procesos y lo que incluye cada entrega. Queremos que llegues a la primera llamada con claridad, no con dudas.</p>
+          <p class="ol-sh-copy">Reunimos aquí las preguntas que más nos hacen sobre este tipo de proyecto — sitios corporativos B2B para integradores de redes, cableado estructurado y telecomunicaciones — sobre proceso, alcance, portafolio técnico y lo que incluye cada entrega. Queremos que llegues a la primera llamada con claridad, no con dudas.</p>
           <p class="ol-sh-copy">Si tu pregunta no está aquí, escríbenos directo. Respondemos de manera personalizada y sin compromiso. Cada proyecto es distinto y preferimos una conversación real a una respuesta genérica.</p>
         </div>
       </div>
@@ -934,47 +1236,47 @@
 
             <div class="ol-faq-item">
               <button class="ol-faq-question" data-faq="0">
-                ¿Cuánto cuesta un sitio web profesional?
+                ¿Construyen sitios para integradores de redes y telecomunicaciones?
                 <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
               </button>
               <div class="ol-faq-answer" id="faq-ans-0">
-                <p class="ol-faq-answer-inner">El costo depende del alcance, funcionalidad y diseño de cada proyecto. Cada cotización se construye a la medida según pantallas, integraciones, complejidad del portafolio y nivel de personalización. Siempre entregamos una propuesta detallada y por escrito, sin cargos ocultos, antes de comenzar.</p>
+                <p class="ol-faq-answer-inner">Sí. El caso de ProyectoRed es exactamente eso: un sitio corporativo B2B para un integrador de cableado estructurado, fibra óptica, redes inalámbricas y videovigilancia. Construimos plataformas que comunican capacidad técnica, estándares y portafolio de proyectos ante un comprador de TI.</p>
               </div>
             </div>
 
             <div class="ol-faq-item">
               <button class="ol-faq-question" data-faq="1">
-                ¿Cuánto tiempo tarda en estar listo mi sitio web?
+                ¿Cuánto tiempo tarda en estar listo un proyecto así?
                 <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
               </button>
               <div class="ol-faq-answer" id="faq-ans-1">
-                <p class="ol-faq-answer-inner">Los plazos varían según la complejidad de cada proyecto. Trabajamos con calendario comprometido por escrito desde el inicio, con entregas iterativas en entorno de pruebas para ver el avance real durante todo el desarrollo.</p>
+                <p class="ol-faq-answer-inner">Depende de la complejidad del sitio y la profundidad del portafolio de proyectos. Trabajamos con calendario por escrito desde el inicio, con entregas iterativas en entorno de pruebas para que veas el avance real durante todo el desarrollo.</p>
               </div>
             </div>
 
             <div class="ol-faq-item">
               <button class="ol-faq-question" data-faq="2">
-                ¿Trabajan con empresas fuera de Ciudad de México?
+                ¿Pueden reflejar los estándares técnicos del cliente (ANSI/TIA, ISO/IEC)?
                 <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
               </button>
               <div class="ol-faq-answer" id="faq-ans-2">
-                <p class="ol-faq-answer-inner">Sí. Trabajamos con clientes en todo México — Monterrey, Guadalajara, Puebla y muchas otras ciudades — así como proyectos para empresas en Estados Unidos y Latinoamérica. Todo el proceso se gestiona de forma remota, ágil y completamente en línea.</p>
+                <p class="ol-faq-answer-inner">Sí. En el sitio de ProyectoRed integramos badges y secciones dedicadas a los estándares ANSI/TIA-568 e ISO/IEC 11801, así como a las marcas que el cliente integra. El comprador técnico valida norma y respaldo de fabricante antes de cotizar, y el sitio se lo muestra desde el inicio.</p>
               </div>
             </div>
 
             <div class="ol-faq-item">
               <button class="ol-faq-question" data-faq="3">
-                ¿Qué incluye el precio del sitio web?
+                ¿Cómo presentan el portafolio de proyectos ejecutados?
                 <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
               </button>
               <div class="ol-faq-answer" id="faq-ans-3">
-                <p class="ol-faq-answer-inner">Nuestras propuestas incluyen diseño personalizado, desarrollo front-end, versión responsiva completa (móvil y desktop), integración de formularios de contacto y cotización, optimización de velocidad y entrega de archivos finales. El dominio y hosting pueden incluirse según el plan elegido.</p>
+                <p class="ol-faq-answer-inner">Organizamos los proyectos por tipo de solución (cableado, fibra óptica, videovigilancia, salas Webex) con ficha técnica de cada uno: marca integrada, ubicación, alcance y status. Así el comprador identifica casos comparables al suyo antes de levantar el teléfono.</p>
               </div>
             </div>
 
             <div class="ol-faq-item">
               <button class="ol-faq-question" data-faq="4">
-                ¿Puedo ver avances antes de pagar el total?
+                ¿Puedo ver avances antes de la entrega final?
                 <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
               </button>
               <div class="ol-faq-answer" id="faq-ans-4">
@@ -988,27 +1290,27 @@
                 <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
               </button>
               <div class="ol-faq-answer" id="faq-ans-5">
-                <p class="ol-faq-answer-inner">Todos nuestros proyectos incluyen un periodo de ajustes post-entrega. Para cambios posteriores ofrecemos planes de mantenimiento mensual o cotizaciones por proyecto. Nos mantenemos disponibles para crecer contigo en el tiempo.</p>
+                <p class="ol-faq-answer-inner">Todos nuestros proyectos incluyen un periodo de ajustes post-entrega. Para agregar proyectos, servicios o marcas más adelante, ofrecemos planes de mantenimiento o trabajo por proyecto. Nos mantenemos disponibles para crecer contigo en el tiempo.</p>
               </div>
             </div>
 
             <div class="ol-faq-item">
               <button class="ol-faq-question" data-faq="6">
-                ¿Necesito tener dominio y hosting propios?
+                ¿El sitio funciona bien para un comprador que entra desde campo o red corporativa?
                 <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
               </button>
               <div class="ol-faq-answer" id="faq-ans-6">
-                <p class="ol-faq-answer-inner">No necesariamente. Podemos asesorarte en la elección del dominio y hosting ideales para tu proyecto, o trabajar con los que ya tienes. También ofrecemos gestión completa de infraestructura para que tú no te preocupes por aspectos técnicos.</p>
+                <p class="ol-faq-answer-inner">Sí. El sitio se construyó sobre una base estática-primero, con imágenes optimizadas y layout fluido desde 360 px. Carga rápido y se ve estable lo mismo en una red corporativa con acceso restringido que en un teléfono usado en sitio durante un levantamiento.</p>
               </div>
             </div>
 
             <div class="ol-faq-item">
               <button class="ol-faq-question" data-faq="7">
-                ¿Hacen tiendas en línea y e-commerce?
+                ¿Pueden agregar nuevas líneas de servicio o marcas más adelante?
                 <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
               </button>
               <div class="ol-faq-answer" id="faq-ans-7">
-                <p class="ol-faq-answer-inner">Sí — hacemos e-commerce todo el tiempo. Desarrollamos tiendas en línea con catálogo de productos, carrito de compras, pasarelas de pago (OXXO, tarjeta, transferencia) y panel de administración para que gestiones tu inventario fácilmente.</p>
+                <p class="ol-faq-answer-inner">Sí. El sitio usa un sistema de componentes escalable, así que agregar una nueva línea de servicio, una marca integrada o un proyecto al portafolio no implica rehacer el diseño base. La estructura crece con la operación del integrador.</p>
               </div>
             </div>
 
