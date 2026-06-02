@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Supresión por Agentes Limpios y CO2 para Centros de Datos: Guía NFPA 2001/12 Proyecto Red | OrigenLab</title>
-  <meta name="description" content="Guía técnica sobre sistemas de supresión por agentes limpios (FM-200/HFC-227ea, Novec 1230, inergén) y CO2 para centros de datos, cuartos eléctricos y telecom. NFPA 2001 y NFPA 12, ventajas frente al agua y diseño por Proyecto Red.">
+  <title>Supresión por Agentes Limpios y CO₂ para Centros de Datos | Proyecto Red</title>
+  <meta name="description" content="FM-200, Novec 1230, inergén y CO₂ bajo NFPA 2001 y NFPA 12: cómo apagar el fuego sin mojar servidores, cuartos eléctricos y telecom. Proyecto Red, integrador PCI en CDMX y México.">
   <link rel="canonical" href="https://origenlab.com/blog/supresion-agentes-limpios-co2-centros-datos-proyecto-red/">
   <meta property="og:title" content="Supresión por Agentes Limpios y CO₂ para Centros de Datos · Proyecto Red">
   <meta property="og:description" content="FM-200, Novec 1230, inergén y CO₂ bajo NFPA 2001/12: cómo proteger CPD, cuartos eléctricos y telecom sin daño por agua.">
@@ -16,8 +16,8 @@
   <meta name="twitter:title" content="Supresión por Agentes Limpios y CO₂ para Centros de Datos · Proyecto Red">
   <meta name="twitter:description" content="FM-200, Novec 1230, inergén y CO₂ bajo NFPA 2001/12. Diseño e instalación por Proyecto Red.">
   <meta name="twitter:image" content="https://origenlab.com/img/equipos-contra-incendios/proyectored/proyectored-servicios-proteccion-contra-incendios.avif">
-  <link rel="stylesheet" href="../../_astro/BaseLayout.xeR8R953.css?v20260601a">
-  <link rel="stylesheet" href="../../_astro/premium-dark.css?v20260601a">
+  <link rel="stylesheet" href="../../_astro/BaseLayout.xeR8R953.css?v20260601b">
+  <link rel="stylesheet" href="../../_astro/premium-dark.css?v20260601b">
   <style>
     :root {
       --blog-accent: #7F1D1D;
@@ -215,19 +215,70 @@
           "@id": "https://proyectored.mx/#org",
           "name": "Proyecto Red",
           "url": "https://proyectored.mx",
+          "sameAs": ["https://proyectored.mx"],
           "description": "Integrador de sistemas de protección contra incendios en México. Diseño, ingeniería, instalación y mantenimiento bajo NFPA y NOM.",
-          "areaServed": "MX",
+          "areaServed": ["Ciudad de México", "México"],
           "knowsAbout": [
             "Supresión por agentes limpios NFPA 2001",
             "Sistemas de CO2 NFPA 12",
-            "FM-200 HFC-227ea",
+            "FM-200 (HFC-227ea)",
             "Novec 1230",
-            "Inergén gas inerte",
-            "Protección de centros de datos",
+            "Inergén (IG-541) y gases inertes",
+            "Inundación total y aplicación local",
+            "Cálculo de concentración de agente",
+            "Prueba de integridad de recinto (Door Fan Test)",
+            "Protección de centros de datos y cuartos eléctricos",
+            "Detección cruzada y secuencia de descarga",
             "NOM-002-STPS"
           ]
         },
-        "keywords": ["supresión agentes limpios", "NFPA 2001", "NFPA 12", "FM-200", "Novec 1230", "inergén", "CO2 contra incendio", "centros de datos", "protección contra incendios México"]
+        "keywords": ["supresión agentes limpios", "NFPA 2001", "NFPA 12", "FM-200", "Novec 1230", "inergén", "CO2 contra incendio", "centros de datos", "protección contra incendios México", "PCI CDMX"]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://origenlab.com/blog/supresion-agentes-limpios-co2-centros-datos-proyecto-red/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuál es el mejor agente limpio para un centro de datos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Para un CPD nuevo, el Novec 1230 es la opción preferida por su amplio margen de seguridad para personas y su potencial de calentamiento global cercano a 1. El FM-200 sigue siendo válido y ocupa poco espacio de cilindros. En sites grandes con operadores permanentes, el inergén (IG-541) gana porque baja el oxígeno a un nivel respirable. La elección depende del volumen, la ocupación y el espacio para cilindros."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Es seguro un sistema de agente limpio con personas dentro?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Los agentes limpios bajo NFPA 2001 (FM-200, Novec 1230, inergén) se diseñan a una concentración por debajo del nivel de efecto adverso para personas y permiten una salida segura. El CO₂ es la excepción: alcanza concentraciones letales y solo se usa en espacios normalmente no ocupados, con los controles de seguridad que exige la NFPA 12."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Por qué se necesita la prueba de integridad de recinto (Door Fan Test)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Un agente gaseoso solo extingue si el cuarto retiene la concentración el tiempo de retención requerido, típicamente 10 minutos. Si hay fugas por debajo de puertas, pasamuros sin sellar o ductos abiertos, el agente se escapa en segundos y el sistema falla aunque esté bien cargado. El Door Fan Test presuriza el recinto y mide la fuga para predecir esa retención."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿En cuánto tiempo descarga un sistema de agente limpio?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Los agentes halocarbonados como FM-200 y Novec 1230 alcanzan la concentración de diseño en 10 segundos o menos, según la NFPA 2001. Los gases inertes como el inergén descargan en un tiempo mayor por su forma de extinción. Antes de la descarga corre una secuencia con detección cruzada, alarma predescarga y retardo con aborto manual."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Por qué no usar rociadores en un cuarto eléctrico o telecom?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El agua sobre equipo energizado es un riesgo eléctrico y deja la electrónica inservible aunque el fuego haya sido pequeño. Después viene el secado, la limpieza y la recertificación, que detienen la operación mucho más tiempo que el propio incendio. Un agente limpio apaga rápido, no deja residuo conductor y permite reanudar al ventilar el recinto."
+            }
+          }
+        ]
       },
       {
         "@type": "BreadcrumbList",
@@ -243,6 +294,8 @@
   </script>
 </head>
 <body>
+
+<div class="ol-read-progress" id="ol-read-progress"></div>
 
 <!-- TOPBAR -->
 <div class="ol-topbar">
@@ -262,7 +315,7 @@
       <ul class="ol-nav-list">
         <li><a href="/" class="ol-nav-link">Inicio</a></li>
         <li class="ol-has-dropdown">
-          <a href="/servicios/" class="ol-nav-link active">
+          <a href="/servicios/" class="ol-nav-link">
             Servicios
             <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
@@ -303,6 +356,8 @@
                 <div class="ol-subdrop">
                   <ul>
                     <li><a href="/portafolio/seguridad-privada/origins/" class="ol-dropdown-link">ORIGINS Private Security</a></li>
+                    <li><a href="/portafolio/seguridad-privada/seprico/" class="ol-dropdown-link">SEPRICO</a></li>
+                    <li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-dropdown-link">SeguridadPrivadaMX</a></li>
                   </ul>
                 </div>
               </li>
@@ -310,7 +365,7 @@
           </div>
         </li>
         <li><a href="/nosotros/" class="ol-nav-link">Nosotros</a></li>
-        <li><a href="/blog/" class="ol-nav-link">Blog</a></li>
+        <li><a href="/blog/" class="ol-nav-link active">Blog</a></li>
         <li><a href="/contacto/" class="ol-nav-link">Contacto</a></li>
       </ul>
     </nav>
@@ -364,10 +419,12 @@
         <li><a href="/portafolio/equipos-contra-incendios/directorio/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Directorio México</a></li>
         <li><a href="/portafolio/seguridad-privada/" class="ol-mobile-link ol-mobile-sublink">Seguridad Privada</a></li>
         <li><a href="/portafolio/seguridad-privada/origins/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— ORIGINS Private Security</a></li>
+        <li><a href="/portafolio/seguridad-privada/seprico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SEPRICO</a></li>
+        <li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SeguridadPrivadaMX</a></li>
       </ul>
     </li>
     <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
-    <li><a href="/blog/" class="ol-mobile-link">Blog</a></li>
+    <li><a href="/blog/" class="ol-mobile-link active">Blog</a></li>
     <li><a href="/contacto/" class="ol-mobile-link">Contacto</a></li>
   </ul>
   <div class="ol-mobile-footer">
@@ -419,15 +476,15 @@
     </figure>
 
     <!-- INTRO -->
-    <p>Hay espacios donde apagar un incendio con agua es casi tan costoso como no apagarlo: un centro de procesamiento de datos donde cada servidor vale una fortuna, un cuarto eléctrico de media tensión, un MDF de telecomunicaciones, una sala de control de proceso. En todos ellos, una descarga de rociadores controlaría el fuego, sí, pero destruiría el equipo electrónico y dejaría la operación detenida.</p>
+    <p>Hay cuartos donde apagar el fuego con agua sale casi tan caro como dejarlo arder. Un site donde cada rack vale una fortuna y guarda datos que no se recuperan. Un cuarto eléctrico de media tensión. Un MDF de telecom. Una sala de control de proceso. En todos ellos un rociador haría su trabajo —controlar el fuego— pero al precio de freír la electrónica y dejarte la operación parada por semanas. El agua aquí no es la solución: es parte del problema.</p>
 
-    <p>Para estos casos existen los <strong>sistemas de supresión por inundación total</strong>: agentes que llenan el volumen del cuarto y extinguen el fuego sin dejar residuo conductor ni humedad. Los principales son los <strong>agentes limpios</strong> (FM-200/HFC-227ea, Novec 1230, inergén y otros gases inertes) bajo <span class="ol-art-norm-badge">NFPA 2001</span>, y el <strong>dióxido de carbono (CO₂)</strong> bajo <span class="ol-art-norm-badge">NFPA 12</span>.</p>
+    <p>Para estos casos existe otra familia: los <strong>sistemas de supresión por inundación total</strong>. Llenan el volumen del cuarto con un gas que extingue el fuego sin dejar residuo conductor ni una gota de humedad. Los principales son los <strong>agentes limpios</strong> —FM-200/HFC-227ea, Novec 1230, inergén y otros gases inertes— bajo <span class="ol-art-norm-badge">NFPA 2001</span>, y el <strong>dióxido de carbono (CO₂)</strong> bajo <span class="ol-art-norm-badge">NFPA 12</span>.</p>
 
-    <p>En <strong>Proyecto Red</strong>, integradora mexicana de sistemas PCI, el diseño e instalación de supresión especial es un servicio de alta especialización: requiere cálculo de concentración, prueba de integridad de recinto, integración con detección cruzada y un diseño riguroso de seguridad para las personas. Esta guía recorre cada agente, cuándo usar cada uno y cómo se diseña el sistema completo.</p>
+    <p>En <strong>Proyecto Red</strong>, integrador mexicano de sistemas PCI con base en CDMX y proyectos en todo el país, esto es de lo más especializado que hacemos: cálculo de concentración, prueba de integridad del recinto, integración con detección cruzada y un diseño de seguridad de personas que no admite atajos. Aquí vas a ver cada agente, cuándo conviene cada uno y cómo se arma el sistema completo de principio a fin.</p>
 
     <!-- 1 -->
     <h2 id="s1">1. Por qué el agua no siempre es la respuesta</h2>
-    <p>Los rociadores son la columna vertebral de la protección contra incendios y resuelven la inmensa mayoría de los riesgos. Pero en ciertos espacios el agua presenta tres problemas insalvables.</p>
+    <p>Que quede claro: los rociadores son la columna vertebral de la protección contra incendios y resuelven la enorme mayoría de los riesgos de un edificio. No estamos en contra del agua. Pero si proteges un site o un cuarto eléctrico, el agua te enfrenta a tres problemas que no tienen vuelta atrás:</p>
 
     <ul>
       <li><strong>Daño al equipo:</strong> la electrónica, los servidores y los tableros energizados quedan inservibles al contacto con agua, aunque el fuego haya sido pequeño.</li>
@@ -435,13 +492,13 @@
       <li><strong>Tiempo de recuperación:</strong> tras una descarga de agua, el secado, la limpieza y la recertificación del equipo detienen la operación por mucho más tiempo que el incendio mismo.</li>
     </ul>
 
-    <p>La supresión por agente gaseoso resuelve los tres: extingue rápido, no deja residuo y permite reanudar la operación una vez ventilado el recinto.</p>
+    <p>La supresión por gas resuelve los tres de un golpe: extingue rápido, no deja residuo y, una vez ventilado el cuarto, vuelves a operar. Para una operación que no se puede dar el lujo de parar, esa es toda la diferencia.</p>
 
     <blockquote>En un centro de datos, el objetivo no es solo apagar el fuego: es apagarlo sin destruir lo que el fuego todavía no alcanzó. Ahí es donde el agente limpio reemplaza al agua.</blockquote>
 
     <!-- 2 -->
     <h2 id="s2">2. Cómo extingue un agente limpio</h2>
-    <p>Los agentes limpios actúan por dos mecanismos según su naturaleza. Entender cuál usa cada agente es clave para diseñar correctamente la concentración y el sistema de descarga.</p>
+    <p>No todos los agentes apagan el fuego de la misma forma, y eso no es un detalle de manual: define cuánta concentración necesitas y cómo dimensionas la descarga. Hay dos mecanismos según la naturaleza del agente.</p>
 
     <ul class="ol-checklist">
       <li><strong>Agentes halocarbonados (FM-200, Novec 1230):</strong> extinguen principalmente por absorción de calor — interrumpen la reacción de combustión al enfriar la flama por debajo del umbral de sostenimiento.</li>
@@ -451,7 +508,7 @@
 
     <!-- 3 -->
     <h2 id="s3">3. Comparativa de agentes de supresión</h2>
-    <p>La selección del agente es la decisión de ingeniería central. Depende del tipo de espacio, la presencia de personas, las restricciones ambientales y los requisitos de la aseguradora. La siguiente tabla resume las características principales.</p>
+    <p>Aquí se toma la decisión de ingeniería más importante del proyecto: qué agente. La respuesta depende de tu espacio, de si hay gente dentro, de restricciones ambientales y de lo que pida tu aseguradora. No hay un "mejor" universal; hay un mejor para tu caso. Esta tabla pone las cartas sobre la mesa.</p>
 
     <table class="ol-art-spec-table" role="table">
       <thead>
@@ -503,24 +560,24 @@
     </table>
 
     <div class="ol-art-warn">
-      <strong>⚠ Seguridad ante todo:</strong> El CO₂ alcanza concentraciones de extinción que son letales para las personas. La <span class="ol-art-norm-badge">NFPA 12</span> exige alarmas predescarga, retardo, señalización, vías de evacuación despejadas y, en muchos casos, aborto manual. Nunca se diseña un sistema de CO₂ para un espacio normalmente ocupado sin estos controles. Proyecto Red prioriza agentes limpios respirables siempre que la aplicación lo permite.
+      <strong>⚠ Seguridad ante todo:</strong> el CO₂ apaga a concentraciones que matan a una persona. No es una advertencia teórica: ha habido muertos en cuartos con CO₂ mal protegidos. Por eso la <span class="ol-art-norm-badge">NFPA 12</span> exige alarma predescarga, retardo, señalización, vías de evacuación libres y, en muchos casos, aborto manual. Jamás se diseña CO₂ para un espacio normalmente ocupado sin esos controles. Cuando la aplicación lo permite, priorizamos agentes limpios respirables.
     </div>
 
     <!-- 4 -->
     <h2 id="s4">4. Agentes limpios en detalle (NFPA 2001)</h2>
 
     <h3>4.1 FM-200 (HFC-227ea)</h3>
-    <p>El agente halocarbonado más extendido durante décadas. Se almacena licuado a presión, descarga en menos de 10 segundos y extingue por enfriamiento de la flama. Requiere poco espacio de almacenamiento de cilindros, lo que lo hace atractivo en cuartos pequeños. Su limitación es el potencial de calentamiento global, que motivó el desarrollo de alternativas.</p>
+    <p>El caballo de batalla del sector durante décadas. Se guarda licuado a presión, descarga en menos de 10 segundos y apaga enfriando la flama. Su gran ventaja: ocupa poco espacio de cilindros, así que cabe bien en cuartos chicos donde no sobra metro cuadrado. Su punto débil es ambiental —su potencial de calentamiento global es alto—, y justo eso empujó el desarrollo de las alternativas que vienen abajo.</p>
 
     <h3>4.2 Novec 1230</h3>
-    <p>Cetona fluorada con un margen de seguridad muy amplio entre la concentración de diseño y el nivel de efecto adverso para personas (NOAEL), y con un potencial de calentamiento global cercano a 1 y vida atmosférica de días. Se almacena como líquido y se vaporiza al descargar. Es la opción preferida en proyectos nuevos donde se valora la sostenibilidad y la seguridad del ocupante.</p>
+    <p>Una cetona fluorada con un margen de seguridad enorme entre la concentración de diseño y el nivel de efecto adverso para personas (NOAEL). Su potencial de calentamiento global ronda 1 y su vida atmosférica es de días, no de siglos. Se almacena como líquido y se vaporiza al descargar. Si hoy diseñas un site nuevo y te importan la sostenibilidad y la seguridad de quien trabaja dentro, suele ser el agente que recomendamos.</p>
 
     <h3>4.3 Inergén y gases inertes</h3>
-    <p>El inergén (IG-541) es una mezcla de nitrógeno, argón y CO₂ que extingue reduciendo el oxígeno a un nivel que no sostiene la combustión pero que aún permite respirar y evacuar. Al ser gases naturales de la atmósfera, su impacto ambiental es nulo. Requiere mayor volumen de almacenamiento de cilindros de alta presión, lo que exige un cuarto de agente dedicado.</p>
+    <p>El inergén (IG-541) es una mezcla de nitrógeno, argón y CO₂ que apaga bajando el oxígeno justo a un nivel que el fuego ya no sostiene, pero que tú sí puedes respirar para salir. Como son gases que ya están en el aire, su impacto ambiental es prácticamente nulo. El costo de esa elegancia: necesita muchos más cilindros de alta presión, y eso obliga a destinar un cuarto de agente dedicado. En un site grande con operadores permanentes, ese metraje vale la pena.</p>
 
     <!-- 5 -->
     <h2 id="s5">5. Sistemas de CO₂ (NFPA 12)</h2>
-    <p>El CO₂ sigue siendo la mejor opción para ciertos riesgos específicos, siempre bajo los estrictos controles de seguridad de la <span class="ol-art-norm-badge">NFPA 12</span>. Existen dos configuraciones.</p>
+    <p>A pesar de su riesgo para las personas, el CO₂ sigue ganando en ciertos riesgos específicos —donde no hay gente y donde el costo del agente importa—, siempre bajo los controles férreos de la <span class="ol-art-norm-badge">NFPA 12</span>. Se monta en dos configuraciones:</p>
 
     <ul class="ol-checklist">
       <li><strong>Inundación total:</strong> el CO₂ llena un recinto cerrado normalmente no ocupado (cuartos de turbinas, bodegas de líquidos, hornos).</li>
@@ -531,7 +588,7 @@
 
     <!-- 6 -->
     <h2 id="s6">6. Cálculo de concentración y cantidad de agente</h2>
-    <p>El diseño de un sistema de inundación total parte del volumen neto del recinto y la concentración de diseño del agente, ajustada por la temperatura mínima esperada. La <span class="ol-art-norm-badge">NFPA 2001</span> define el método de cálculo.</p>
+    <p>Aquí no se improvisa. Todo el sistema parte de dos datos: el volumen neto del recinto y la concentración de diseño del agente, ajustada por la temperatura mínima que esperas en ese cuarto. La <span class="ol-art-norm-badge">NFPA 2001</span> da el método. Para halocarbonados, la masa de agente sale de esta fórmula:</p>
 
     <div class="ol-calc-box">
       <strong>Masa de agente para inundación total (halocarbonado):</strong>
@@ -546,21 +603,21 @@
       La concentración de diseño = concentración de extinción × factor de seguridad
     </div>
 
-    <p>El cálculo determina cuántos cilindros se necesitan y el dimensionamiento de la red de tubería y boquillas para lograr la concentración requerida en todo el volumen en el tiempo de descarga normado (típicamente ≤10 s en halocarbonados).</p>
+    <p>De ese número sale todo lo demás: cuántos cilindros instalas y cómo dimensionas la tubería y las boquillas para que el agente llegue parejo a todo el volumen en el tiempo normado —típicamente 10 segundos o menos en halocarbonados—. Si el cálculo está mal, o sobra agente caro, o falta y el fuego sobrevive.</p>
 
     <!-- 7 -->
     <h2 id="s7">7. Hermeticidad del recinto y prueba de integridad</h2>
-    <p>Un agente gaseoso solo funciona si el recinto retiene la concentración el tiempo suficiente (tiempo de retención, típicamente 10 minutos). Si el cuarto tiene fugas por debajo de puertas, pasamuros sin sellar o ductos abiertos, el agente se escapa y el sistema falla aunque esté correctamente cargado.</p>
+    <p>Este es el punto donde más sistemas caros se vuelven inútiles. Un agente gaseoso solo apaga si el cuarto retiene la concentración el tiempo de retención requerido —típicamente 10 minutos—. Si hay un hueco bajo la puerta, un pasamuros sin sellar o un ducto abierto, el gas se va y el fuego se queda. Puedes tener los cilindros perfectamente cargados y aun así fallar.</p>
 
-    <p>Por eso la <span class="ol-art-norm-badge">NFPA 2001</span> exige la <strong>prueba de integridad de recinto (Door Fan Test)</strong>: se presuriza el cuarto con un ventilador calibrado y se mide la tasa de fuga para predecir el tiempo de retención del agente. Proyecto Red incluye esta prueba en la puesta en marcha y documenta el resultado.</p>
+    <p>Por eso la <span class="ol-art-norm-badge">NFPA 2001</span> obliga a hacer la <strong>prueba de integridad de recinto (Door Fan Test)</strong>: se presuriza el cuarto con un ventilador calibrado y se mide cuánto fuga, para predecir cuánto tiempo aguantará el agente dentro. La incluimos en la puesta en marcha y entregamos el resultado por escrito — porque sellar el cuarto es tan importante como elegir el agente.</p>
 
     <div class="ol-art-warn">
-      <strong>⚠ Error frecuente en campo:</strong> Instalar un sistema de agente limpio en un cuarto con fugas no selladas. El sistema descarga correctamente pero el agente se disipa en segundos, dejando el fuego sin controlar. El sellado de pasamuros, la prueba Door Fan y los dampers de cierre de HVAC son tan importantes como el propio agente.
+      <strong>⚠ Error frecuente en campo:</strong> montar un sistema de agente limpio en un cuarto con fugas que nadie selló. El día del incendio el sistema descarga perfecto, el agente se disipa en segundos por los huecos, y el fuego sigue ahí. Gastaste en cilindros para nada. Sellar pasamuros, hacer el Door Fan y poner dampers que cierren el HVAC pesan tanto como el agente que compraste.
     </div>
 
     <!-- 8 -->
     <h2 id="s8">8. Integración con detección y secuencia de descarga</h2>
-    <p>Un sistema de supresión por gas nunca se dispara a la ligera: una descarga implica costo de recarga y riesgo para las personas. Por eso la liberación se condiciona a una <strong>detección cruzada</strong> y a una secuencia controlada, gestionada por el panel de detección.</p>
+    <p>Un sistema de gas no se dispara por las dudas. Cada descarga cuesta una recarga y mete riesgo para la gente que esté dentro, así que la liberación se condiciona a una <strong>detección cruzada</strong> —no un detector, dos— y a una secuencia ordenada que gobierna el panel de detección. Así corre, paso a paso:</p>
 
     <div class="ol-phase-block">
       <div class="ol-phase-num">1</div>
@@ -604,7 +661,7 @@
 
     <!-- 9 -->
     <h2 id="s9">9. Espacios típicos y su solución de supresión</h2>
-    <p>Cada espacio crítico tiene un agente y una configuración óptimos. La experiencia de Proyecto Red cubre los siguientes casos.</p>
+    <p>Cada cuarto crítico pide su propio agente y su propia configuración; lo que va perfecto en un site no necesariamente sirve para una bodega de turbinas. Estos son los casos que más vemos en campo y lo que recomendamos para cada uno:</p>
 
     <table class="ol-art-spec-table" role="table">
       <thead>
@@ -657,7 +714,7 @@
 
     <!-- 10 -->
     <h2 id="s10">10. Componentes de un sistema de supresión gaseosa</h2>
-    <p>Más allá del agente, el sistema completo integra una serie de componentes que Proyecto Red especifica con listado UL/FM.</p>
+    <p>El agente es solo el protagonista; detrás hay un reparto completo que tiene que funcionar a la primera. Estos son los componentes, todos con listado UL/FM:</p>
 
     <ul class="ol-checklist">
       <li><strong>Cilindros de agente:</strong> contenedores presurizados con válvula de descarga y manómetro supervisado.</li>
@@ -671,7 +728,7 @@
 
     <!-- 11 -->
     <h2 id="s11">11. Pruebas, recarga y mantenimiento</h2>
-    <p>Un sistema de supresión gaseosa debe estar listo para una sola oportunidad. Su mantenimiento exige rigor a lo largo de toda su vida útil.</p>
+    <p>Un sistema de supresión por gas trabaja para un solo momento, y nunca sabes cuándo llega. No tiene segunda oportunidad: o está listo, o no sirvió de nada. Por eso su mantenimiento exige disciplina durante toda la vida útil:</p>
 
     <div class="ol-phase-block">
       <div class="ol-phase-num">1</div>
@@ -706,8 +763,26 @@
     </div>
 
     <!-- 12 -->
+    <h2 id="faq">Preguntas frecuentes</h2>
+
+    <h3>¿Cuál es el mejor agente limpio para un centro de datos?</h3>
+    <p>Para un CPD nuevo, el Novec 1230 suele ganar por su amplio margen de seguridad para personas y su potencial de calentamiento global cercano a 1. El FM-200 sigue siendo válido y ocupa pocos cilindros. En sites grandes con operadores permanentes, el inergén (IG-541) conviene porque deja el oxígeno respirable. La elección final depende del volumen, la ocupación y el espacio para cilindros.</p>
+
+    <h3>¿Es seguro un sistema de agente limpio con personas dentro?</h3>
+    <p>Sí. Los agentes limpios bajo <span class="ol-art-norm-badge">NFPA 2001</span> —FM-200, Novec 1230, inergén— se diseñan a una concentración por debajo del nivel de efecto adverso para personas y permiten salir con seguridad. El CO₂ es la excepción: apaga a concentraciones letales y solo se usa en espacios normalmente no ocupados, con los controles que exige la <span class="ol-art-norm-badge">NFPA 12</span>.</p>
+
+    <h3>¿Por qué se necesita la prueba de integridad de recinto (Door Fan Test)?</h3>
+    <p>Porque un gas solo extingue si el cuarto retiene la concentración el tiempo de retención requerido, típicamente 10 minutos. Si hay fugas bajo puertas, pasamuros sin sellar o ductos abiertos, el agente se escapa en segundos y el sistema falla aunque esté bien cargado. El Door Fan Test presuriza el recinto y mide la fuga para predecir esa retención.</p>
+
+    <h3>¿En cuánto tiempo descarga un sistema de agente limpio?</h3>
+    <p>Los halocarbonados como FM-200 y Novec 1230 alcanzan la concentración de diseño en 10 segundos o menos, según la <span class="ol-art-norm-badge">NFPA 2001</span>. Los gases inertes como el inergén tardan algo más por su forma de extinguir. Antes de la descarga corre una secuencia con detección cruzada, alarma predescarga y un retardo con aborto manual.</p>
+
+    <h3>¿Por qué no usar rociadores en un cuarto eléctrico o telecom?</h3>
+    <p>El agua sobre equipo energizado es un riesgo eléctrico y deja la electrónica inservible aunque el fuego haya sido pequeño. Después vienen el secado, la limpieza y la recertificación, que paran la operación mucho más tiempo que el propio incendio. Un agente limpio apaga rápido, no deja residuo conductor y te permite reanudar al ventilar el recinto.</p>
+
+    <!-- 12 -->
     <h2 id="s12">12. ¿Por qué elegir a Proyecto Red?</h2>
-    <p>La supresión por agente gaseoso es la disciplina más exigente de la protección contra incendios: combina cálculo de concentración, ingeniería de recinto, integración con detección y un diseño de seguridad de personas que no admite errores. Proyecto Red la aborda como <strong>integrador</strong>, no como vendedor de cilindros.</p>
+    <p>La supresión por gas es la disciplina más exigente de toda la protección contra incendios: junta cálculo de concentración, ingeniería de recinto, integración con detección y un diseño de seguridad de personas que no perdona errores. La abordamos como <strong>integrador</strong>, no como quien te vende cilindros y se va. Operamos desde la Ciudad de México con proyectos en todo el país.</p>
 
     <ul class="ol-checklist">
       <li><strong>Ingeniería de concentración:</strong> cálculo de agente bajo NFPA 2001/12 ajustado al volumen y temperatura reales.</li>
@@ -789,6 +864,7 @@
           <li><a href="#s9">Espacios típicos</a></li>
           <li><a href="#s10">Componentes del sistema</a></li>
           <li><a href="#s11">Pruebas y mantenimiento</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
           <li><a href="#s12">¿Por qué Proyecto Red?</a></li>
         </ol>
       </nav>
@@ -803,65 +879,78 @@
 
 </main><!-- /.ol-article-body -->
 
-<!-- RELATED POSTS -->
-<section class="ol-related-grid" aria-label="Artículos relacionados">
-  <div class="ol-related-inner">
-    <h2 class="ol-related-title">Más artículos sobre protección contra incendios</h2>
-    <div class="ol-blog-grid" style="--cols: 3;">
-
-      <article class="ol-blog-card">
-        <div class="ol-blog-card-body">
-          <a href="/blog/sistemas-deteccion-alarma-incendio-nfpa-72-proyecto-red/" class="ol-blog-card-category">Detección PCI</a>
-          <h3 class="ol-blog-card-title"><a href="/blog/sistemas-deteccion-alarma-incendio-nfpa-72-proyecto-red/">Sistemas de detección y alarma de incendio NFPA 72</a></h3>
-          <p class="ol-blog-card-excerpt">Paneles direccionables, detectores, estaciones manuales y notificación bajo NFPA 72, y su integración con la supresión.</p>
-          <a href="/blog/sistemas-deteccion-alarma-incendio-nfpa-72-proyecto-red/" class="ol-blog-card-link">Leer artículo →</a>
+  <section class="ol-art-nextread" aria-label="Artículos relacionados">
+    <div class="ol-art-nextread-inner">
+      <div class="ol-art-nextread-head">
+        <div>
+          <p class="ol-art-nextread-label">Te puede interesar</p>
+          <h2 class="ol-art-nextread-title">Más proveedores del sector</h2>
         </div>
-      </article>
+        <a href="/blog/" class="ol-art-nextread-all">Ver todos los artículos <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="ol-art-nextread-grid">
+        <a href="/blog/sistemas-deteccion-alarma-incendio-nfpa-72-proyecto-red/" class="ol-art-nextread-card">
+          <div class="ol-art-nextread-thumb"><span class="ol-art-nextread-num">01</span></div>
+          <div class="ol-art-nextread-body">
+            <div class="ol-art-nextread-top"><span class="ol-blog-cat pci">Detección PCI</span><span class="ol-art-nextread-meta">15 min</span></div>
+            <h3 class="ol-art-nextread-h">Detección y alarma de incendio NFPA 72</h3>
+            <p class="ol-art-nextread-excerpt">Paneles direccionables, detectores, estaciones manuales y notificación bajo NFPA 72, y su integración con la supresión.</p>
+            <span class="ol-art-nextread-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+        <a href="/blog/red-hidrantes-gabinetes-nfpa-14-meseci/" class="ol-art-nextread-card">
+          <div class="ol-art-nextread-thumb"><span class="ol-art-nextread-num">02</span></div>
+          <div class="ol-art-nextread-body">
+            <div class="ol-art-nextread-top"><span class="ol-blog-cat pci">PCI</span><span class="ol-art-nextread-meta">14 min</span></div>
+            <h3 class="ol-art-nextread-h">Red de hidrantes y gabinetes NFPA 14</h3>
+            <p class="ol-art-nextread-excerpt">Cómo MESECI diseña y abastece redes de hidrantes, gabinetes y mangueras bajo NFPA 14 para industria y comercio.</p>
+            <span class="ol-art-nextread-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+        <a href="/blog/proteccion-incendios-refinerias-terminales-combustible/" class="ol-art-nextread-card">
+          <div class="ol-art-nextread-thumb"><span class="ol-art-nextread-num">03</span></div>
+          <div class="ol-art-nextread-body">
+            <div class="ol-art-nextread-top"><span class="ol-blog-cat industrial">Industrial</span><span class="ol-art-nextread-meta">16 min</span></div>
+            <h3 class="ol-art-nextread-h">Protección contra incendios en refinerías y terminales</h3>
+            <p class="ol-art-nextread-excerpt">Monitores, espuma y equipo certificado UL/FM de Gama de México para refinerías, petroquímica y terminales de combustible.</p>
+            <span class="ol-art-nextread-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
 
-      <article class="ol-blog-card">
-        <div class="ol-blog-card-body">
-          <a href="/blog/proyecto-red-sistemas-contra-incendio-integrales/" class="ol-blog-card-category">Integrador PCI</a>
-          <h3 class="ol-blog-card-title"><a href="/blog/proyecto-red-sistemas-contra-incendio-integrales/">Proyecto Red: integrador de sistemas PCI en México</a></h3>
-          <p class="ol-blog-card-excerpt">Quién es Proyecto Red, qué sistemas integra y por qué la diferencia entre distribuidor e integrador importa en proyectos de alta complejidad.</p>
-          <a href="/blog/proyecto-red-sistemas-contra-incendio-integrales/" class="ol-blog-card-link">Leer artículo →</a>
+  <section class="ol-blog-cta-band">
+    <div class="ol-blog-cta-band-inner">
+      <div>
+        <p class="ol-blog-cta-band-label">¿Listo para actuar?</p>
+        <h2 class="ol-blog-cta-band-title">Lo que lees aquí lo aplicamos<br>en cada proyecto.</h2>
+        <p class="ol-blog-cta-band-sub">Si tu empresa necesita un sitio web que comunique la misma solidez técnica que Proyecto Red proyecta, la respuesta más rápida es una conversación directa. Sin compromiso, sin ventas de presión.</p>
+      </div>
+      <div class="ol-blog-cta-band-actions">
+        <a href="/cotizar/" class="ol-blog-cta-band-btn"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M12 5l7 7-7 7"/></svg>Cotizar mi proyecto</a>
+        <a href="https://wa.me/525547868402?text=Hola%2C%20vi%20el%20blog%20de%20OrigenLab%20y%20quiero%20platicar%20sobre%20mi%20proyecto" target="_blank" rel="noopener noreferrer" class="ol-blog-cta-band-wa"><svg width="14" height="14" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true" focusable="false"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>Escribirnos por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="ol-quicknav">
+    <div class="ol-quicknav-inner">
+      <a href="/servicios/desarrollo-web/" class="ol-qn-item"><div class="ol-qn-text"><span class="ol-qn-title">Sitios Corporativos</span><span class="ol-qn-sub">Diseño a medida</span></div></a>
+      <a href="/servicios/tiendas-en-linea/" class="ol-qn-item"><div class="ol-qn-text"><span class="ol-qn-title">Tienda en Línea</span><span class="ol-qn-sub">Vende desde el día uno</span></div></a>
+      <a href="/servicios/landing-pages/" class="ol-qn-item"><div class="ol-qn-text"><span class="ol-qn-title">Landing Pages</span><span class="ol-qn-sub">Más leads, más ventas</span></div></a>
+      <a href="/servicios/rediseno-web/" class="ol-qn-item"><div class="ol-qn-text"><span class="ol-qn-title">Rediseño Web</span><span class="ol-qn-sub">Actualiza tu presencia</span></div></a>
+      <a href="/servicios/paginas-en-renta/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Páginas en Renta</span>
+          <span class="ol-qn-sub">Listas para publicar</span>
         </div>
-      </article>
-
-      <article class="ol-blog-card">
-        <div class="ol-blog-card-body">
-          <a href="/blog/diseno-instalacion-mantenimiento-sistemas-pci-proyecto-red/" class="ol-blog-card-category">Ingeniería PCI</a>
-          <h3 class="ol-blog-card-title"><a href="/blog/diseno-instalacion-mantenimiento-sistemas-pci-proyecto-red/">Diseño, instalación y mantenimiento de sistemas PCI</a></h3>
-          <p class="ol-blog-card-excerpt">El ciclo completo de un sistema PCI: cálculo hidráulico, instalación en campo y programa de inspección NFPA 25.</p>
-          <a href="/blog/diseno-instalacion-mantenimiento-sistemas-pci-proyecto-red/" class="ol-blog-card-link">Leer artículo →</a>
-        </div>
-      </article>
-
+      </a>
+      <a href="/portafolio/" class="ol-qn-item"><div class="ol-qn-text"><span class="ol-qn-title">Portafolio</span><span class="ol-qn-sub">Proyectos realizados</span></div></a>
+      <a href="/nosotros/" class="ol-qn-item"><div class="ol-qn-text"><span class="ol-qn-title">Nosotros</span><span class="ol-qn-sub">Quiénes somos</span></div></a>
+      <a href="/cotizar/" class="ol-qn-item ol-qn-cta"><div class="ol-qn-text"><span class="ol-qn-title">Cotizar Proyecto</span><span class="ol-qn-sub">Respuesta en 24 h</span></div></a>
     </div>
   </div>
-</section>
-
-<!-- NEXT READ -->
-<section class="ol-nextread" aria-label="Continúa leyendo">
-  <div class="ol-nextread-inner">
-    <span class="ol-nextread-eyebrow">Continúa leyendo</span>
-    <div class="ol-nextread-links">
-      <a href="/blog/sistemas-deteccion-alarma-incendio-nfpa-72-proyecto-red/" class="ol-nextread-link">Sistemas de detección y alarma de incendio NFPA 72 →</a>
-      <a href="/blog/proyecto-red-sistemas-contra-incendio-integrales/" class="ol-nextread-link">Proyecto Red: integrador de sistemas PCI en México →</a>
-      <a href="/blog/diseno-instalacion-mantenimiento-sistemas-pci-proyecto-red/" class="ol-nextread-link">Diseño, instalación y mantenimiento de sistemas PCI →</a>
-    </div>
-  </div>
-</section>
-
-<!-- CTA BAR -->
-<section class="ol-cta-bar">
-  <div class="ol-cta-bar-inner">
-    <div class="ol-cta-bar-copy">
-      <h2 class="ol-cta-bar-title">¿Tu empresa necesita un sitio web profesional?</h2>
-      <p class="ol-cta-bar-sub">Diseñamos y desarrollamos sitios que generan resultados reales.</p>
-    </div>
-    <a href="/contacto/" class="btn-primary">Solicitar cotización →</a>
-  </div>
-</section>
 
 <!-- FOOTER -->
 <footer class="ol-footer">
@@ -900,6 +989,14 @@
   </div>
 </footer>
 
-<script src="../../_astro/ol-header.js?v20260601a"></script>
+<script src="../../_astro/ol-header.js?v20260601b"></script>
+<script>
+(function(){
+  var bar=document.getElementById("ol-read-progress");
+  if(!bar)return;
+  function upd(){var s=document.documentElement,h=s.scrollHeight-s.clientHeight,p=h>0?(window.scrollY/h*100):0;bar.style.width=Math.min(p,100)+"%";}
+  window.addEventListener("scroll",upd,{passive:true});upd();
+})();
+</script>
 </body>
 </html>

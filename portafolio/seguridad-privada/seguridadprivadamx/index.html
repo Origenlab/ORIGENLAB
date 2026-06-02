@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SeguridadPrivadaMX · Seguridad para condominios con tecnología propia | OrigenLab</title>
+  <meta name="description" content="Caso de estudio del sitio corporativo de SeguridadPrivadaMX: la primera empresa en CDMX enfocada 100% en condominios, con transparencia total y tecnología propia de monitoreo en tiempo real. Vigilancia 24/7, control de accesos, cámaras y cotización en 4 horas.">
+  <link rel="canonical" href="https://origenlab.com/portafolio/seguridad-privada/seguridadprivadamx/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://origenlab.com/portafolio/seguridad-privada/seguridadprivadamx/">
+  <meta property="og:title" content="SeguridadPrivadaMX · Seguridad para condominios con tecnología propia | OrigenLab">
+  <meta property="og:description" content="Cómo construimos el sitio corporativo de SeguridadPrivadaMX: arquitectura, diseño, servicios y conversión B2B para una empresa de seguridad con tecnología propia y transparencia radical.">
+  <meta property="og:image" content="https://origenlab.com/img/seguridad-privada/seguridadprivadamx/seguridadprivadamx-hero.webp">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="OrigenLab">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SeguridadPrivadaMX · Seguridad para condominios con tecnología propia | OrigenLab">
+  <meta name="twitter:description" content="Sitio corporativo B2B para SeguridadPrivadaMX, seguridad para condominios con tecnología propia en CDMX.">
+  <meta name="twitter:image" content="https://origenlab.com/img/seguridad-privada/seguridadprivadamx/seguridadprivadamx-hero.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../../../favicon.svg">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+
+  <!-- CSS aprobado del sitio -->
+  <link rel="stylesheet" href="../../../_astro/BaseLayout.xeR8R953.css?v20260601b">
+  <link rel="stylesheet" href="../../../_astro/premium-dark.css?v20260601b">
+  <script src="../../../_astro/ol-header.js?v20260601b" defer></script>
+
+  <style>
+    /* ============================================================
+       L4 — CASO · SEGURIDADPRIVADAMX
+       Componentes en _astro/premium-dark.css. Aquí: SOLO acentos.
+       Acento: indigo #4F46E5 (tecnologia / confianza).
+       Doc: /_docs/COMPONENTS.md y /_docs/LAYOUTS.md (sección L4)
+       ============================================================ */
+    :root {
+      --case-accent: #4F46E5;
+      --case-accent-soft: rgba(79,70,229,0.12);
+      --case-accent-line: rgba(79,70,229,0.28);
+    }
+    /* Hero hereda el acento del caso */
+    .hero { --hero-accent: var(--case-accent); --hero-accent-soft: var(--case-accent-soft); --hero-accent-line: var(--case-accent-line); }
+    .hero::before { background: radial-gradient(ellipse at center, rgba(79,70,229,0.08) 0%, transparent 65%); }
+
+    /* ============================================================
+       MOCKUPS FIELES DEL SITIO LIVE (página-específicos)
+       Reproducen las pantallas reales de seguridadprivadamx.com con
+       su tema claro. Sin animaciones (regla 4). Self-contained.
+       ============================================================ */
+    .mk { --mk-indigo:#4F46E5; --mk-ink:#0F1729; --mk-gray:#475467; --mk-soft:#7A8699;
+          --mk-line:#E6E8EE; --mk-bg:#FFFFFF; --mk-bg2:#F6F7FB; --mk-indigo-soft:#EEF0FF;
+          background:var(--mk-bg); display:flex; flex-direction:column; width:100%; }
+    .mk-bar { display:flex; align-items:center; gap:.55rem; padding:.5rem .8rem; background:#1A1D29; border-bottom:1px solid rgba(255,255,255,.06); }
+    .mk-dots { display:flex; gap:5px; }
+    .mk-dots i { width:8px; height:8px; border-radius:50%; background:rgba(255,255,255,.22); }
+    .mk-dots i:nth-child(1){ background:#ED6A5E; } .mk-dots i:nth-child(2){ background:#F4BF4F; } .mk-dots i:nth-child(3){ background:#61C554; }
+    .mk-url { flex:1; background:rgba(255,255,255,.07); border-radius:999px; padding:.22rem .7rem; font-size:10.5px; color:rgba(255,255,255,.62); text-align:center; font-family:'SFMono-Regular',Menlo,Consolas,monospace; letter-spacing:.02em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .mk-view { background:var(--mk-bg); color:var(--mk-ink); padding:1.4rem 1.5rem 1.6rem; }
+    .mk-nav { display:flex; align-items:center; justify-content:space-between; padding-bottom:1rem; border-bottom:1px solid var(--mk-line); margin-bottom:1.3rem; }
+    .mk-logo { font-size:.95rem; font-weight:800; color:var(--mk-indigo); letter-spacing:-.01em; }
+    .mk-menu { display:flex; gap:.85rem; font-size:10.5px; color:var(--mk-gray); font-weight:600; }
+    .mk-menu .mk-cta { background:var(--mk-indigo); color:#fff; padding:.28rem .6rem; border-radius:6px; }
+    .mk-eyebrow { font-size:9.5px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--mk-indigo); }
+    .mk-h { font-size:1.5rem; font-weight:800; letter-spacing:-.02em; line-height:1.1; color:var(--mk-ink); margin:.4rem 0 0; }
+    .mk-h .ac { color:var(--mk-indigo); }
+    .mk-sub { font-size:11.5px; color:var(--mk-gray); line-height:1.55; margin:.6rem 0 0; }
+    .mk-grid2 { display:grid; grid-template-columns:1.1fr 1fr; gap:1.6rem; align-items:start; }
+    .mk-sect-h { font-size:1.05rem; font-weight:800; letter-spacing:-.01em; color:var(--mk-ink); text-align:center; margin:0 0 .25rem; }
+    .mk-sect-sub { font-size:10.5px; color:var(--mk-soft); text-align:center; line-height:1.5; margin:0 auto 1.2rem; max-width:80%; }
+    .mk-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:.7rem; }
+    .mk-card { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.8rem .75rem; }
+    .mk-ic { width:30px; height:30px; border-radius:7px; background:var(--mk-indigo-soft); color:var(--mk-indigo); display:flex; align-items:center; justify-content:center; margin-bottom:.55rem; }
+    .mk-ct { font-size:11.5px; font-weight:700; color:var(--mk-ink); margin:0 0 .35rem; }
+    .mk-bul { list-style:none; margin:0; padding:0; }
+    .mk-bul li { position:relative; font-size:9.5px; color:var(--mk-gray); line-height:1.5; padding-left:.85rem; margin-bottom:.18rem; }
+    .mk-bul li::before { content:''; position:absolute; left:0; top:.42em; width:5px; height:5px; border-radius:50%; background:var(--mk-indigo); opacity:.55; }
+    .mk-stats { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-stat { text-align:center; background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:1rem .5rem; }
+    .mk-stat b { display:block; font-size:1.45rem; font-weight:800; color:var(--mk-indigo); letter-spacing:-.02em; line-height:1; }
+    .mk-stat span { display:block; font-size:9px; color:var(--mk-soft); margin-top:.4rem; line-height:1.35; font-weight:600; }
+    .mk-chips { display:flex; flex-wrap:wrap; gap:.4rem; justify-content:center; }
+    .mk-chip { font-size:9.5px; font-weight:600; color:var(--mk-gray); background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:999px; padding:.3rem .65rem; }
+    .mk-chip.on { background:var(--mk-indigo-soft); border-color:rgba(79,70,229,.25); color:var(--mk-indigo); }
+    .mk-tcards { display:grid; grid-template-columns:repeat(3,1fr); gap:.7rem; }
+    .mk-tcard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .8rem; }
+    .mk-trow { display:flex; align-items:center; gap:.5rem; margin-bottom:.5rem; }
+    .mk-av { width:28px; height:28px; border-radius:50%; background:var(--mk-indigo); color:#fff; font-size:9.5px; font-weight:700; display:flex; align-items:center; justify-content:center; }
+    .mk-tn { font-size:10px; font-weight:700; color:var(--mk-ink); line-height:1.2; }
+    .mk-tloc { font-size:8.5px; color:var(--mk-soft); }
+    .mk-stars { color:#F5A623; font-size:9px; letter-spacing:1px; margin-bottom:.3rem; }
+    .mk-quote { font-size:9.5px; color:var(--mk-gray); line-height:1.5; margin:0; }
+    .mk-form { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:11px; padding:1.1rem 1.1rem 1.2rem; }
+    .mk-field { height:30px; background:var(--mk-bg); border:1px solid var(--mk-line); border-radius:7px; margin-bottom:.55rem; display:flex; align-items:center; padding:0 .6rem; font-size:9.5px; color:var(--mk-soft); }
+    .mk-frow { display:grid; grid-template-columns:1fr 1fr; gap:.55rem; }
+    .mk-submit { background:var(--mk-indigo); color:#fff; font-size:10.5px; font-weight:700; text-align:center; border-radius:7px; padding:.6rem; margin-top:.3rem; }
+    .mk-trust { display:grid; grid-template-columns:repeat(4,1fr); gap:.55rem; margin-bottom:1rem; }
+    .mk-trust div { text-align:center; }
+    .mk-trust b { display:block; font-size:1.05rem; font-weight:800; color:var(--mk-indigo); line-height:1; }
+    .mk-trust span { display:block; font-size:8px; color:var(--mk-soft); margin-top:.25rem; font-weight:600; }
+    @media (max-width:560px){
+      .mk-grid2 { grid-template-columns:1fr; gap:1rem; }
+      .mk-cards, .mk-tcards { grid-template-columns:1fr 1fr; }
+      .mk-stats, .mk-trust { grid-template-columns:repeat(2,1fr); }
+      .mk-h { font-size:1.2rem; }
+    }
+
+    /* Banda de cifras comunicadas (tema oscuro del case body) */
+    .ol-cs-band { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; margin:2rem 0 0; }
+    .ol-cs-band div { text-align:center; border:1px solid var(--case-accent-line); border-radius:10px; padding:1.4rem .6rem; background:rgba(79,70,229,0.05); }
+    .ol-cs-band b { display:block; font-size:1.9rem; font-weight:800; color:#fff; letter-spacing:-.02em; line-height:1; }
+    .ol-cs-band b span { color:var(--case-accent); }
+    .ol-cs-band p { margin:.5rem 0 0; font-size:11px; color:rgba(240,240,245,0.55); font-weight:600; line-height:1.4; }
+    @media (max-width:560px){ .ol-cs-band { grid-template-columns:1fr 1fr; } }
+  </style>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.com/#organization","name":"OrigenLab","url":"https://origenlab.com","logo":"https://origenlab.com/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.com/#website","url":"https://origenlab.com/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.com/#organization"}},{"@type":"BreadcrumbList","@id":"https://origenlab.com/portafolio/seguridad-privada/seguridadprivadamx/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.com/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.com/portafolio/"},{"@type":"ListItem","position":3,"name":"Seguridad Privada","item":"https://origenlab.com/portafolio/seguridad-privada/"},{"@type":"ListItem","position":4,"name":"SeguridadPrivadaMX","item":"https://origenlab.com/portafolio/seguridad-privada/seguridadprivadamx/"}]},{"@type":["Organization","SecurityService"],"@id":"https://seguridadprivadamx.com/#organization","name":"SeguridadPrivadaMX","url":"https://seguridadprivadamx.com/","description":"Empresa de seguridad privada enfocada 100% en condominios y residenciales en CDMX y Estado de México, con transparencia total y tecnologia propia de monitoreo en tiempo real.","areaServed":{"@type":"Country","name":"Mexico"},"knowsAbout":["Seguridad privada","Seguridad para condominios","Vigilancia 24/7","Camaras y monitoreo","Control de acceso","Tecnologia de monitoreo"],"slogan":"Transparencia total y tecnologia propia para condominios"},{"@type":"CreativeWork","@id":"https://origenlab.com/portafolio/seguridad-privada/seguridadprivadamx/#case","name":"SeguridadPrivadaMX - Caso de estudio","description":"Sitio corporativo para SeguridadPrivadaMX, seguridad para condominios con tecnologia propia en CDMX y Estado de Mexico.","inLanguage":"es-MX","image":"https://origenlab.com/img/seguridad-privada/seguridadprivadamx/seguridadprivadamx-hero.webp","author":{"@id":"https://origenlab.com/#organization"},"publisher":{"@id":"https://origenlab.com/#organization"},"about":{"@id":"https://seguridadprivadamx.com/#organization"},"keywords":["seguridad privada","condominios","tecnologia propia","monitoreo","CDMX","SeguridadPrivadaMX"]}]}</script>
+</head>
+<body>
+
+<a class="ol-skip-link" href="#main">Saltar al contenido</a>
+
+<div class="ol-topbar">
+  <div class="ol-topbar-inner">
+    <div class="ol-topbar-left">
+      <a href="mailto:hola@origenlab.com" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        hola@origenlab.com
+      </a>
+      <span class="ol-topbar-sep"></span>
+      <a href="tel:+525547868402" class="ol-topbar-contact">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        +52 55 4786 8402
+      </a>
+    </div>
+    <div class="ol-topbar-center">
+      <span class="ol-topbar-promo">
+        <span class="ol-topbar-dot"></span>
+        Atención personalizada  ·  Ciudad de México
+      </span>
+    </div>
+    <div class="ol-topbar-right">
+      <a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web" target="_blank" rel="noopener noreferrer" class="ol-topbar-wa">
+        <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor">
+          <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+<header class="ol-header" id="ol-header">
+  <div class="ol-header-inner">
+    <a href="/" class="ol-header-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
+    </a>
+    <nav class="ol-nav" aria-label="Navegación principal">
+      <ul class="ol-nav-list">
+        <li><a href="/" class="ol-nav-link">Inicio</a></li>
+        <li class="ol-has-dropdown">
+          <a href="/servicios/" class="ol-nav-link">
+            Servicios
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/servicios/desarrollo-web/" class="ol-dropdown-link">Desarrollo Web</a></li>
+              <li><a href="/servicios/tiendas-en-linea/" class="ol-dropdown-link">Tiendas en Línea</a></li>
+              <li><a href="/servicios/landing-pages/" class="ol-dropdown-link">Landing Pages</a></li>
+              <li><a href="/servicios/rediseno-web/" class="ol-dropdown-link">Rediseño Web</a></li>
+              <li><a href="/servicios/paginas-en-renta/" class="ol-dropdown-link">Páginas en Renta</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="ol-has-dropdown">
+          <a href="/portafolio/" class="ol-nav-link active">
+            Portafolio
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a></li>
+              <li class="ol-has-subdrop">
+                <a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link ol-dropdown-parent">Equipos Contra Incendios</a>
+                <div class="ol-subdrop">
+                  <ul>
+                    <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link">Gama de México</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link">MESECI</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link">LGA Contraincendios</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-dropdown-link">MANEXT</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-dropdown-link">BOMBERO.MX</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-dropdown-link">ProyectoRed</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/directorio/" class="ol-dropdown-link">Directorio México</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="ol-has-subdrop">
+                <a href="/portafolio/seguridad-privada/" class="ol-dropdown-link ol-dropdown-parent">Seguridad Privada</a>
+                <div class="ol-subdrop">
+                  <ul>
+                    <li><a href="/portafolio/seguridad-privada/origins/" class="ol-dropdown-link">ORIGINS Private Security</a></li>
+                    <li><a href="/portafolio/seguridad-privada/seprico/" class="ol-dropdown-link">SEPRICO</a></li>
+                    <li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-dropdown-link">SeguridadPrivadaMX</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="/nosotros/" class="ol-nav-link">Nosotros</a></li>
+        <li><a href="/blog/" class="ol-nav-link">Blog</a></li>
+        <li><a href="/contacto/" class="ol-nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="/cotizar/" class="ol-header-cta">Cotizar proyecto →</a>
+    <button class="ol-menu-toggle" id="ol-menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+      <span class="ol-ham-line"></span>
+    </button>
+  </div>
+</header>
+<div class="ol-mobile-overlay" id="ol-mobile-overlay"></div>
+<nav class="ol-mobile-panel" id="ol-mobile-panel" aria-label="Menú móvil">
+  <div class="ol-mobile-header">
+    <a href="/" class="ol-mobile-logo">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
+    </a>
+    <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú">
+      <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <ul class="ol-mobile-nav">
+    <li><a href="/" class="ol-mobile-link">Inicio</a></li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Servicios</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/servicios/desarrollo-web/" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
+        <li><a href="/servicios/paginas-en-renta/" class="ol-mobile-link ol-mobile-sublink">Páginas en Renta</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Portafolio</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/portafolio/" class="ol-mobile-link ol-mobile-sublink">Todo el Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/" class="ol-mobile-link ol-mobile-sublink">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Gama de México</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MESECI</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— LGA Contraincendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MANEXT</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— BOMBERO.MX</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— ProyectoRed</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/directorio/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Directorio México</a></li>
+        <li><a href="/portafolio/seguridad-privada/" class="ol-mobile-link ol-mobile-sublink">Seguridad Privada</a></li>
+        <li><a href="/portafolio/seguridad-privada/origins/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— ORIGINS Private Security</a></li>
+        <li><a href="/portafolio/seguridad-privada/seprico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SEPRICO</a></li>
+        <li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SeguridadPrivadaMX</a></li>
+      </ul>
+    </li>
+    <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
+    <li><a href="/blog/" class="ol-mobile-link">Blog</a></li>
+    <li><a href="/contacto/" class="ol-mobile-link">Contacto</a></li>
+  </ul>
+  <div class="ol-mobile-footer">
+    <a href="/cotizar/" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a>
+  </div>
+</nav>
+
+<!-- ============================================================
+     BREADCRUMB
+     ============================================================ -->
+<nav class="ol-bc-wrap" aria-label="Migas de pan">
+  <div class="ol-bc">
+    <ol class="ol-bc-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/" itemprop="item" class="ol-bc-home"><span itemprop="name">Inicio</span></a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/portafolio/" itemprop="item"><span itemprop="name">Portafolio</span></a>
+        <meta itemprop="position" content="2" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/portafolio/seguridad-privada/" itemprop="item"><span itemprop="name">Seguridad Privada</span></a>
+        <meta itemprop="position" content="3" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item ol-bc-current" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name">SeguridadPrivadaMX</span>
+        <meta itemprop="position" content="4" />
+      </li>
+    </ol>
+  </div>
+</nav>
+
+<!-- ============================================================
+     MAIN
+     ============================================================ -->
+<main id="main">
+
+  <!-- ============== HERO (componente compartido .hero) ============== -->
+  <section class="hero">
+    <div class="container hero__inner">
+
+      <div class="hero__col1">
+        <span class="hero__eyebrow">Caso de estudio · SeguridadPrivadaMX</span>
+        <h1 class="hero__title">Seguridad para condominios, con tecnología propia.</h1>
+        <p class="hero__sub">Construimos el sitio de SeguridadPrivadaMX, la primera empresa en CDMX enfocada 100% en condominios que apostó por la transparencia y la tecnología propia: el administrador ve su comunidad en tiempo real, desde el celular.</p>
+        <div class="hero__ctas">
+          <a href="https://seguridadprivadamx.com/" target="_blank" rel="noopener noreferrer" class="ol-btn-primary">
+            Visitar el sitio
+            <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+          </a>
+          <a href="#construccion" class="ol-btn-ghost">
+            Cómo se construyó
+            <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__col2">
+        <p class="hero__p1">El administrador de un condominio ya no quiere reportes en papel ni explicaciones a medias: quiere ver. SeguridadPrivadaMX nació de esa idea —transparencia total y tecnología propia—, y el sitio tenía que comunicarlo sin sonar a una promesa más del montón.</p>
+        <p class="hero__p2">Cada sección habla a ese administrador: vigilancia 24/7, control de accesos, cámaras y monitoreo, respuesta a emergencias, patrullaje y reportes con analítica. Seguridad privada para condominios en CDMX y Estado de México, con cotización gratuita en cuatro horas.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== CASE SHELL: SIDEBAR + CONTENT ============== -->
+  <section class="ol-case-shell" id="construccion">
+    <div class="ol-case-inner">
+      <div class="ol-case-grid">
+
+        <!-- ============ SIDEBAR ============ -->
+        <aside class="ol-case-sidebar" aria-label="Información del proyecto">
+
+          <div class="ol-side-card">
+            <p class="ol-side-eyebrow">Datos del proyecto</p>
+            <ul class="ol-side-meta">
+              <li><dt>Cliente</dt><dd>SeguridadPrivadaMX</dd></li>
+              <li><dt>Sector</dt><dd>Seguridad privada · Condominios y residenciales</dd></li>
+              <li><dt>Tipo de sitio</dt><dd>Corporativo B2B · Captación de cotización</dd></li>
+              <li><dt>Modelo de negocio</dt><dd>Enfoque 100% en condominios, con tecnología propia de monitoreo</dd></li>
+              <li><dt>Diferencia</dt><dd>Transparencia radical · cotización en 4 horas</dd></li>
+              <li><dt>Cobertura</dt><dd>CDMX (Sur, Centro, Poniente) · Estado de México</dd></li>
+              <li><dt>Sitio en vivo</dt><dd><a href="https://seguridadprivadamx.com/" target="_blank" rel="noopener noreferrer">seguridadprivadamx.com →</a></dd></li>
+            </ul>
+          </div>
+
+          <div class="ol-side-card">
+            <p class="ol-side-eyebrow">Stack y entregables</p>
+            <div>
+              <span class="ol-case-spec-tag">Astro</span>
+              <span class="ol-case-spec-tag">HTML5 / CSS3</span>
+              <span class="ol-case-spec-tag">Inter</span>
+              <span class="ol-case-spec-tag">Schema.org</span>
+              <span class="ol-case-spec-tag">WhatsApp Lead</span>
+              <span class="ol-case-spec-tag">Formularios B2B</span>
+              <span class="ol-case-spec-tag">Hosting CDN</span>
+              <span class="ol-case-spec-tag">Responsivo</span>
+              <span class="ol-case-spec-tag">Multi-zona</span>
+            </div>
+          </div>
+
+          <nav class="ol-side-card" aria-label="Índice del caso">
+            <p class="ol-side-eyebrow">Índice del caso</p>
+            <ul class="ol-side-toc" id="ol-case-toc">
+              <li><a href="#contexto"><span class="num">01</span>Contexto del cliente</a></li>
+              <li><a href="#reto"><span class="num">02</span>El reto</a></li>
+              <li><a href="#arquitectura"><span class="num">03</span>Arquitectura del sitio</a></li>
+              <li><a href="#diseno"><span class="num">04</span>Diseño y sistema visual</a></li>
+              <li><a href="#servicios"><span class="num">05</span>Servicios del cliente</a></li>
+              <li><a href="#conversion"><span class="num">06</span>Conversión B2B</a></li>
+              <li><a href="#tecnologia"><span class="num">07</span>Tecnología y rendimiento</a></li>
+              <li><a href="#proceso"><span class="num">08</span>Proceso de trabajo</a></li>
+              <li><a href="#galeria"><span class="num">09</span>Galería del sitio</a></li>
+              <li><a href="#resultado"><span class="num">10</span>Resultado entregado</a></li>
+            </ul>
+          </nav>
+
+          <div class="ol-side-cta">
+            <h3 class="ol-side-cta-title">¿Un proyecto similar?</h3>
+            <p class="ol-side-cta-desc">Si tu empresa de seguridad privada necesita un sitio profesional que transmita confianza y capte cotizaciones, podemos construirlo contigo.</p>
+            <a href="/cotizar/" class="ol-side-cta-btn">
+              Cotizar mi proyecto
+              <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+            <a href="https://wa.me/525547868402?text=Hola%2C%20vi%20el%20caso%20de%20SeguridadPrivadaMX%20y%20me%20interesa%20un%20proyecto%20similar." target="_blank" rel="noopener noreferrer" class="ol-side-cta-link">o escribir por WhatsApp →</a>
+          </div>
+
+        </aside>
+
+        <!-- ============ CONTENT BODY ============ -->
+        <article class="ol-case-body">
+
+          <!-- 01 CONTEXTO -->
+          <section class="ol-case-section" id="contexto">
+            <span class="ol-case-eyebrow">01 · Contexto del cliente</span>
+            <h2 class="ol-case-h2">La primera empresa de seguridad que decidió mostrarlo todo.</h2>
+            <p class="ol-case-lead">SeguridadPrivadaMX se define como la primera empresa en la Ciudad de México que decidió hacer las cosas diferentes: transparencia total, tecnología propia y un enfoque 100% en condominios y residenciales. No es una empresa de seguridad tradicional —y su sitio tenía que dejarlo claro desde el primer segundo—.</p>
+            <p class="ol-case-p">Su gran diferenciador es la <strong>tecnología propia</strong>: el administrador puede ver su condominio en tiempo real desde el celular, con reportes y analítica que convierten la operación en algo visible y verificable. En un sector acostumbrado a la opacidad, esa transparencia es justo lo que el comité busca.</p>
+            <p class="ol-case-p">El comprador es exigente —administradores y comités que ya se cansaron de proveedores que prometen y no muestran—. Para ellos, la promesa de <strong>poder ver</strong> vale más que cualquier discurso. El reto era convertir esa promesa en una experiencia digital creíble y profesional.</p>
+
+            <div class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <img src="../../../img/seguridad-privada/seguridadprivadamx/seguridadprivadamx-hero.webp" alt="SeguridadPrivadaMX — sitio corporativo de seguridad para condominios con tecnología propia de monitoreo en CDMX" width="1280" height="960" loading="lazy" decoding="async">
+              </div>
+              <p class="ol-case-figure-caption">Home del sitio: enfoque 100% condominios, tecnología propia y la promesa de transparencia comunicados desde el primer scroll.</p>
+            </div>
+          </section>
+
+          <!-- 02 RETO -->
+          <section class="ol-case-section" id="reto">
+            <span class="ol-case-eyebrow">02 · El reto</span>
+            <h2 class="ol-case-h2">Comunicar una promesa distinta sin sonar a promesa.</h2>
+            <p class="ol-case-p">El reto fue traducir a la web cuatro compromisos que SeguridadPrivadaMX hace de forma explícita. El comité necesitaba entenderlos en segundos y, sobre todo, creerlos —porque cualquiera puede decir "somos diferentes"; el sitio tenía que demostrarlo—.</p>
+
+            <div class="ol-case-cards">
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                </div>
+                <h4>Transparencia radical</h4>
+                <p>Mostrar la operación, no esconderla: reportes, analítica y acceso del administrador como argumento central del sitio.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+                </div>
+                <h4>Tecnología propia</h4>
+                <p>Comunicar la app de monitoreo en tiempo real como diferenciador real —ver el condominio desde el celular, no esperar un reporte mensual—.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.5v5c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11V6.5L12 2z"/><path d="M9 12l2 2 4-4"/></svg>
+                </div>
+                <h4>Cumplimiento 100%</h4>
+                <p>Hacer visible el cumplimiento legal y operativo como base no negociable, no como letra pequeña.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                </div>
+                <h4>Respuesta garantizada</h4>
+                <p>Convertir la promesa de cotización en cuatro horas en un CTA visible que reduce la fricción del primer contacto.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 03 ARQUITECTURA -->
+          <section class="ol-case-section" id="arquitectura">
+            <span class="ol-case-eyebrow">03 · Arquitectura del sitio</span>
+            <h2 class="ol-case-h2">Una estructura que invita a comprobar, no sólo a leer.</h2>
+            <p class="ol-case-p">La arquitectura acompaña el recorrido del administrador: <strong>entiende la propuesta, valida los servicios, descubre la tecnología propia, confirma cobertura y trayectoria, y solicita una cotización gratuita</strong> —con la transparencia como hilo conductor de cada pantalla—.</p>
+
+            <div class="ol-case-arch">
+              <div class="ol-arch-step">
+                <p class="num">CAPA 01</p>
+                <h4>Home corporativa</h4>
+                <p>Propuesta centrada en transparencia y tecnología propia, con acceso directo a servicios, cobertura y cotización gratuita.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">CAPA 02</p>
+                <h4>Servicios</h4>
+                <p>Vigilancia, control de accesos, cámaras y monitoreo, emergencias, patrullaje y reportes — cada uno explicado para el condominio.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">CAPA 03</p>
+                <h4>Tecnología propia</h4>
+                <p>La app de monitoreo en tiempo real como sección destacada: lo que distingue a SeguridadPrivadaMX de un proveedor tradicional.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">CAPA 04</p>
+                <h4>Nosotros</h4>
+                <p>La historia de una empresa que nació para hacer las cosas diferentes, con transparencia y enfoque exclusivo en condominios.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">CAPA 05</p>
+                <h4>Cobertura</h4>
+                <p>Zonas Sur, Centro y Poniente de CDMX y Estado de México, para que el administrador confirme operación cercana.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">CAPA 06</p>
+                <h4>Contacto y cotización</h4>
+                <p>Formulario para el comité con promesa de cotización en cuatro horas, más WhatsApp y teléfono visibles.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 04 DISEÑO -->
+          <section class="ol-case-section" id="diseno">
+            <span class="ol-case-eyebrow">04 · Diseño y sistema visual</span>
+            <h2 class="ol-case-h2">Moderno y claro, a la altura de su tecnología.</h2>
+            <p class="ol-case-p">El diseño refleja el carácter tecnológico y transparente de la marca: <strong>limpio, moderno y directo</strong>, sin la estética anticuada del sector. La interfaz comunica que detrás hay tecnología real, no un folleto digitalizado.</p>
+            <p class="ol-case-p">Un sistema de componentes coherente —tarjetas de servicio, indicadores de cobertura, bloques de promesa— mantiene la misma jerarquía en la home, los servicios y la sección de tecnología.</p>
+
+            <div class="ol-case-cards">
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                </div>
+                <h4>Estética tecnológica</h4>
+                <p>Lenguaje visual moderno que respalda la promesa de tecnología propia, lejos del cliché del sector seguridad.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                </div>
+                <h4>Transparencia visible</h4>
+                <p>Reportes y monitoreo representados como piezas de confianza — la promesa de "poder ver", hecha diseño.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
+                </div>
+                <h4>Servicios comparables</h4>
+                <p>Tarjetas con la misma estructura para que el comité entienda y compare los servicios sin reaprender la página.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <h4>Cobertura por zona</h4>
+                <p>CDMX por zonas y Estado de México comunicadas con claridad para validar operación cercana a la comunidad.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 05 SERVICIOS -->
+          <section class="ol-case-section" id="servicios">
+            <span class="ol-case-eyebrow">05 · Servicios del cliente</span>
+            <h2 class="ol-case-h2">Seis servicios, una sola promesa: visibilidad total.</h2>
+            <p class="ol-case-p">El núcleo del sitio es la oferta de servicios, presentada con una estructura uniforme y siempre conectada al diferenciador de la marca: cada servicio se puede ver y verificar a través de su tecnología propia.</p>
+            <ul class="ol-case-list">
+              <li><strong>Vigilancia 24/7:</strong> personal en sitio las 24 horas, con presencia continua y protocolos para comunidades residenciales.</li>
+              <li><strong>Control de accesos:</strong> filtros de entrada para residentes, visitantes y proveedores, con registro verificable.</li>
+              <li><strong>Cámaras y monitoreo:</strong> videovigilancia conectada a la plataforma propia, visible para el administrador en tiempo real.</li>
+              <li><strong>Respuesta a emergencias:</strong> protocolos de reacción inmediata coordinados desde el centro de monitoreo.</li>
+              <li><strong>Patrullaje vehicular:</strong> recorridos para desarrollos con perímetro amplio o varios accesos.</li>
+              <li><strong>Reportes y analytics:</strong> informes con datos y métricas que convierten la seguridad en algo medible para el comité.</li>
+            </ul>
+          </section>
+
+          <!-- 06 CONVERSIÓN -->
+          <section class="ol-case-section" id="conversion">
+            <span class="ol-case-eyebrow">06 · Conversión B2B</span>
+            <h2 class="ol-case-h2">De la curiosidad del comité a una cotización en horas.</h2>
+            <p class="ol-case-p">El sitio se mide por <strong>la calidad de las cotizaciones que llegan al equipo</strong>. El de SeguridadPrivadaMX usa su mayor promesa —rapidez y transparencia— como motor de conversión desde la primera pantalla.</p>
+
+            <div class="ol-case-cards">
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+                </div>
+                <h4>Cotización en 4 horas</h4>
+                <p>La promesa de respuesta garantizada se convierte en el CTA principal: rapidez como ventaja competitiva visible.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg>
+                </div>
+                <h4>WhatsApp directo</h4>
+                <p>Canal paralelo siempre visible para que el administrador resuelva dudas concretas de inmediato.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+                </div>
+                <h4>Demostración de tecnología</h4>
+                <p>La app y los reportes se muestran como prueba tangible: el comité ve el valor antes de contratar.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
+                </div>
+                <h4>Formulario para el comité</h4>
+                <p>Campos del contexto residencial (comunidad, zona, tipo) que llegan calificados al equipo comercial.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 07 TECNOLOGÍA -->
+          <section class="ol-case-section" id="tecnologia">
+            <span class="ol-case-eyebrow">07 · Tecnología y rendimiento</span>
+            <h2 class="ol-case-h2">Velocidad y estabilidad, sin frameworks pesados.</h2>
+            <p class="ol-case-p">El sitio se construyó sobre una base ligera y moderna, priorizando <strong>tiempos de carga, estabilidad visual y eficiencia en móvil</strong> —donde el administrador suele revisar proveedores—. La arquitectura favorece HTML estático servido desde CDN, con interactividad selectiva sólo donde aporta valor.</p>
+
+            <div class="ol-case-spec">
+              <dl>
+                <div class="ol-case-spec-row">
+                  <dt>Generador</dt>
+                  <dd>Astro · arquitectura estática-primero, hidratación selectiva, salida HTML pura para máximo rendimiento.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Estilo</dt>
+                  <dd>CSS3 con design tokens propios — variables CSS para colores, tipografía, espaciado y radios. Sin frameworks visuales pesados.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Tipografía</dt>
+                  <dd>Inter (300–900) cargada vía Google Fonts con preconnect — render no bloqueante.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Imágenes</dt>
+                  <dd>WebP responsivo con dimensiones explícitas, <code>loading="lazy"</code> y <code>decoding="async"</code> para evitar layout shift.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Datos estructurados</dt>
+                  <dd>Schema.org en JSON-LD: Organization, WebSite, BreadcrumbList y SecurityService según corresponde a cada plantilla.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Accesibilidad</dt>
+                  <dd>Skip-link a contenido, ARIA labels en navegación, contraste alto en texto, foco visible en componentes interactivos.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Responsivo</dt>
+                  <dd>Layout fluido desde 360 px; menú móvil con overlay, dropdowns colapsables y CTAs adaptados al pulgar.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Hosting</dt>
+                  <dd>CDN global con HTTPS, compresión Brotli, caché agresivo en estáticos y dominio propio bajo certificado válido.</dd>
+                </div>
+              </dl>
+            </div>
+          </section>
+
+          <!-- 08 PROCESO -->
+          <section class="ol-case-section" id="proceso">
+            <span class="ol-case-eyebrow">08 · Proceso de trabajo</span>
+            <h2 class="ol-case-h2">De la conversación inicial al sitio entregado.</h2>
+            <p class="ol-case-p">El proyecto siguió la metodología de OrigenLab: descubrimiento → estrategia → diseño → desarrollo → pruebas → lanzamiento → acompañamiento. Cada etapa se documenta con entregables específicos para que el cliente sepa siempre qué espera y qué recibe.</p>
+
+            <div class="ol-case-arch">
+              <div class="ol-arch-step">
+                <p class="num">PASO 01</p>
+                <h4>Descubrimiento</h4>
+                <p>Entendimos la propuesta de SeguridadPrivadaMX: transparencia, tecnología propia, enfoque 100% condominios y el perfil del administrador.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">PASO 02</p>
+                <h4>Estrategia de contenido</h4>
+                <p>Definimos la arquitectura, los mensajes por sección y el recorrido de conversión hacia la cotización gratuita.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">PASO 03</p>
+                <h4>Diseño visual</h4>
+                <p>Sistema de componentes moderno y tecnológico, con la transparencia como protagonista, aprobado antes de programar.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">PASO 04</p>
+                <h4>Desarrollo</h4>
+                <p>Construcción en Astro con HTML estático, componentes reutilizables y datos estructurados Schema.org.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">PASO 05</p>
+                <h4>Pruebas</h4>
+                <p>Revisión de rendimiento, accesibilidad y comportamiento responsivo, con avances visibles para el cliente.</p>
+              </div>
+              <div class="ol-arch-step">
+                <p class="num">PASO 06</p>
+                <h4>Lanzamiento y acompañamiento</h4>
+                <p>Publicación bajo dominio propio con SSL y CDN, más documentación y acompañamiento para crecer el sitio.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 09 GALERÍA -->
+          <section class="ol-case-section" id="galeria">
+            <span class="ol-case-eyebrow">09 · Galería del sitio</span>
+            <h2 class="ol-case-h2">Recorrido por el sitio en operación.</h2>
+            <p class="ol-case-p">Seis pantallas reales del sitio de SeguridadPrivadaMX —home, servicios, promesa, cobertura, testimonios y cotización— reproducidas con el mismo sistema de componentes y la misma jerarquía visual que ve el administrador. Cada pantalla está pensada para que el comité avance del interés a la solicitud sin fricción.</p>
+
+            <div class="ol-case-gallery">
+
+              <!-- 01 · HOME -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadamx.com</span></div>
+                    <div class="mk-view">
+                      <div class="mk-nav">
+                        <span class="mk-logo">SeguridadPrivadaMX</span>
+                        <span class="mk-menu"><span>Inicio</span><span>Servicios</span><span>Nosotros</span><span>Contacto</span><span class="mk-cta">Cotizar Gratis</span></span>
+                      </div>
+                      <div class="mk-grid2">
+                        <div>
+                          <span class="mk-eyebrow">Inicio / Seguridad Privada CDMX</span>
+                          <h3 class="mk-h">Seguridad Privada para <span class="ac">Condominios</span> y Residenciales en CDMX</h3>
+                          <p class="mk-sub">La primera empresa de seguridad privada en CDMX que combina tecnología propia, precios transparentes y guardias 100% certificados SSC.</p>
+                        </div>
+                        <div>
+                          <p class="mk-ct" style="font-size:12.5px;margin-bottom:.5rem">Expertos en seguridad para condominios y residenciales</p>
+                          <p class="mk-sub" style="margin-top:0">Guardias intramuros certificados SSC y tecnología de vanguardia que permite monitorear el condominio en tiempo real desde el celular.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">01 · Home — propuesta de valor: enfoque 100% condominios, tecnología propia y transparencia desde el primer scroll.</figcaption>
+              </figure>
+
+              <!-- 02 · SERVICIOS -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadamx.com/#servicios</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Servicios de Seguridad Privada para Condominios</h3>
+                      <p class="mk-sect-sub">Soluciones integrales que combinan personal certificado con tecnología avanzada para la protección total de tu comunidad.</p>
+                      <div class="mk-cards">
+                        <div class="mk-card">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                          <p class="mk-ct">Vigilancia 24/7</p>
+                          <ul class="mk-bul"><li>Personal certificado SSC</li><li>Supervisión presencial</li><li>Bitácora digital en vivo</li></ul>
+                        </div>
+                        <div class="mk-card">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+                          <p class="mk-ct">Control de Accesos</p>
+                          <ul class="mk-bul"><li>Registro de visitantes</li><li>Acceso biométrico</li><li>Control vehicular LPR</li></ul>
+                        </div>
+                        <div class="mk-card">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+                          <p class="mk-ct">Cámaras y Monitoreo</p>
+                          <ul class="mk-bul"><li>Cámaras 4K nocturnas</li><li>Grabación en la nube</li><li>Ver en vivo desde app</li></ul>
+                        </div>
+                        <div class="mk-card">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+                          <p class="mk-ct">Respuesta a Emergencias</p>
+                          <ul class="mk-bul"><li>Botón de pánico en app</li><li>Coordinación C5 y SSC</li><li>Protocolos de evacuación</li></ul>
+                        </div>
+                        <div class="mk-card">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M5 17a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2M7 21h10"/><circle cx="8" cy="17" r="1.5"/><circle cx="16" cy="17" r="1.5"/></svg></div>
+                          <p class="mk-ct">Patrullaje Vehicular</p>
+                          <ul class="mk-bul"><li>Vehículos rotulados</li><li>Rastreo GPS satelital</li><li>Rondines verificables</li></ul>
+                        </div>
+                        <div class="mk-card">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div>
+                          <p class="mk-ct">Reportes y Analytics</p>
+                          <ul class="mk-bul"><li>Dashboard para admin</li><li>Estadísticas de accesos</li><li>Historial de incidencias</li></ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">02 · Servicios — seis líneas con estructura uniforme, comparables de un vistazo para el comité.</figcaption>
+              </figure>
+
+              <!-- 03 · PROMESA -->
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadamx.com/#nosotros</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Nuestra Promesa</h3>
+                      <p class="mk-sect-sub">Compromisos medibles, no eslóganes.</p>
+                      <div class="mk-stats">
+                        <div class="mk-stat"><b>100%</b><span>Personal certificado SSC</span></div>
+                        <div class="mk-stat"><b>4 hrs</b><span>Máximo para cotización</span></div>
+                        <div class="mk-stat"><b>&lt;10 min</b><span>Respuesta a emergencias</span></div>
+                        <div class="mk-stat"><b>16</b><span>Alcaldías CDMX</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">03 · Promesa — compromisos verificables como bloque de confianza.</figcaption>
+              </figure>
+
+              <!-- 04 · COBERTURA -->
+              <figure class="ol-case-figure">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadamx.com/#cobertura</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Cobertura en CDMX</h3>
+                      <p class="mk-sect-sub">Servicio en todas las alcaldías y zona conurbada del Estado de México.</p>
+                      <div class="mk-chips">
+                        <span class="mk-chip on">Benito Juárez</span><span class="mk-chip on">Miguel Hidalgo</span><span class="mk-chip on">Coyoacán</span><span class="mk-chip">Cuauhtémoc</span><span class="mk-chip">Tlalpan</span><span class="mk-chip">Álvaro Obregón</span><span class="mk-chip">Azcapotzalco</span><span class="mk-chip">G. A. Madero</span><span class="mk-chip">Iztapalapa</span><span class="mk-chip">Xochimilco</span><span class="mk-chip">Naucalpan</span><span class="mk-chip">Tlalnepantla</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">04 · Cobertura — zonas comunicadas con claridad para validar operación cercana.</figcaption>
+              </figure>
+
+              <!-- 05 · TESTIMONIOS -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadamx.com/#testimonios</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Lo Que Dicen Nuestros Clientes</h3>
+                      <p class="mk-sect-sub">Administradores y comités de condominios en CDMX comparten su experiencia.</p>
+                      <div class="mk-tcards">
+                        <div class="mk-tcard">
+                          <div class="mk-trow"><span class="mk-av">RM</span><span><span class="mk-tn">Ing. Roberto Méndez</span><br><span class="mk-tloc">Las Lomas, Miguel Hidalgo</span></span></div>
+                          <div class="mk-stars">★★★★★</div>
+                          <p class="mk-quote">"Incidentes disminuyeron. La app es excelente para ver cámaras y autorizar visitantes."</p>
+                        </div>
+                        <div class="mk-tcard">
+                          <div class="mk-trow"><span class="mk-av">AM</span><span><span class="mk-tn">Lic. Ana Martínez</span><br><span class="mk-tloc">Torres del Pedregal, Coyoacán</span></span></div>
+                          <div class="mk-stars">★★★★★</div>
+                          <p class="mk-quote">"Transparencia total. Lo que cotizan al inicio es exactamente lo que pago, sin sorpresas."</p>
+                        </div>
+                        <div class="mk-tcard">
+                          <div class="mk-trow"><span class="mk-av">CR</span><span><span class="mk-tn">Arq. Carlos Ramírez</span><br><span class="mk-tloc">Condominio Vertiz, Benito Juárez</span></span></div>
+                          <div class="mk-stars">★★★★★</div>
+                          <p class="mk-quote">"Emergencia de madrugada, respuesta en minutos. Coordinación perfecta con autoridades."</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">05 · Testimonios — prueba social del comité, con cargo y comunidad para dar credibilidad.</figcaption>
+              </figure>
+
+              <!-- 06 · COTIZACIÓN -->
+              <figure class="ol-case-figure" style="grid-column:1/-1">
+                <div class="ol-case-figure-frame">
+                  <div class="mk">
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridadprivadamx.com/#cotizar</span></div>
+                    <div class="mk-view">
+                      <h3 class="mk-sect-h">Protege Tu Condominio — Cotización Gratuita</h3>
+                      <p class="mk-sect-sub">Propuesta personalizada para tu comunidad, sin compromiso.</p>
+                      <div class="mk-trust">
+                        <div><b>12 años</b><span>de experiencia</span></div>
+                        <div><b>+150</b><span>condominios</span></div>
+                        <div><b>24/7</b><span>monitoreo</span></div>
+                        <div><b>98%</b><span>satisfacción</span></div>
+                      </div>
+                      <div class="mk-form">
+                        <div class="mk-frow"><div class="mk-field">Nombre completo</div><div class="mk-field">Teléfono</div></div>
+                        <div class="mk-frow"><div class="mk-field">Tipo de propiedad</div><div class="mk-field">Número de unidades</div></div>
+                        <div class="mk-field">Ubicación (alcaldía)</div>
+                        <div class="mk-submit">Solicitar cotización gratuita →</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="ol-case-figure-caption">06 · Contacto — formulario calificado para el comité, con señales de confianza visibles antes de enviar.</figcaption>
+              </figure>
+
+            </div>
+          </section>
+
+          <!-- 10 RESULTADO -->
+          <section class="ol-case-section" id="resultado">
+            <span class="ol-case-eyebrow">10 · Resultado entregado</span>
+            <h2 class="ol-case-h2">Un sitio que se ve tan moderno como su propuesta.</h2>
+            <p class="ol-case-p">El resultado es un sitio que <strong>comunica transparencia, tecnología y rapidez desde el primer scroll</strong>, presenta los servicios con claridad y abre la cotización en cuatro horas sin fricción. El administrador entiende, en segundos, por qué SeguridadPrivadaMX es distinta — y por qué puede comprobarlo.</p>
+
+            <div class="ol-cs-band">
+              <div><b>12 <span>años</span></b><p>de trayectoria comunicada</p></div>
+              <div><b>+150</b><p>condominios protegidos</p></div>
+              <div><b>16</b><p>alcaldías de cobertura</p></div>
+              <div><b>98<span>%</span></b><p>satisfacción declarada</p></div>
+            </div>
+            <p class="ol-case-figure-caption" style="margin-top:.7rem">Cifras que el sitio pone al frente para respaldar la promesa — trayectoria, alcance y respaldo del cliente, ordenados como argumento de confianza.</p>
+            <ul class="ol-case-list">
+              <li><strong>Sitio corporativo en operación</strong> bajo dominio propio, certificado SSL, hosting CDN y dominio gestionado.</li>
+              <li><strong>Diferenciador de tecnología propia</strong> y transparencia elevado a argumento principal del sitio.</li>
+              <li><strong>Servicios estructurados</strong> con un sistema visual consistente y comparable.</li>
+              <li><strong>Formulario de cotización en 4 horas</strong> con campos del contexto residencial, enrutado al equipo comercial.</li>
+              <li><strong>Canal paralelo por WhatsApp y teléfono</strong> visibles en todas las pantallas del sitio.</li>
+              <li><strong>Datos estructurados Schema.org</strong> para que motores y agregadores entiendan correctamente la naturaleza del sitio.</li>
+              <li><strong>Documentación entregable</strong> al equipo del cliente para mantener y crecer el sitio en el tiempo.</li>
+            </ul>
+          </section>
+
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="ol-cta-hero">
+    <div class="ol-cta-hero-inner">
+      <div class="ol-cta-hero-card">
+
+        <div class="ol-cta-hero-left">
+          <p class="ol-cta-hero-eyebrow">Iniciar proyecto</p>
+          <h2 class="ol-cta-hero-title">¿Tu empresa de seguridad privada necesita un sitio al nivel de su operación?</h2>
+          <p class="ol-cta-hero-blurb">Si ofreces guardias intramuros, monitoreo, control de accesos o protección ejecutiva — podemos construir contigo un sitio profesional, claro y orientado a conversión. Sin plantillas, sin atajos, hecho para el comprador del sector.</p>
+          <div class="ol-cta-hero-actions">
+            <a href="/cotizar/" class="ol-btn-primary">
+              Cotizar proyecto
+              <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+            <a href="https://wa.me/525547868402?text=Hola%2C%20vi%20el%20caso%20de%20SeguridadPrivadaMX%20y%20quiero%20un%20proyecto%20similar." target="_blank" rel="noopener noreferrer" class="ol-btn-ghost">
+              <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg>
+              Hablar por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="ol-cta-hero-right">
+          <div class="ol-cta-hero-promises">
+            <p class="ol-cta-hero-promises-title">Lo que recibes con OrigenLab</p>
+            <ul class="ol-cta-hero-promises-list">
+              <li>Descubrimiento técnico antes de cualquier propuesta visual</li>
+              <li>Diseño y desarrollo a medida — sin plantillas ni atajos</li>
+              <li>Servicios bien explicados con cobertura y certificaciones visibles</li>
+              <li>Formularios B2B, WhatsApp y CRM integrados al flujo</li>
+              <li>Estructura escalable para crecer con tu operación</li>
+              <li>Acompañamiento post-entrega con tu equipo</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ — componente compartido (.ol-faq-*) en premium-dark.css -->
+  <section class="ol-faq-section">
+    <div class="ol-faq-inner">
+
+      <div class="ol-sh">
+        <div class="ol-sh-left">
+          <span class="ol-eyebrow">Preguntas Frecuentes</span>
+          <h2 class="ol-section-title">Todo lo que necesitas saber<br>antes de empezar</h2>
+          <p class="ol-section-sub">Resolvemos las dudas más comunes sobre nuestros proyectos web. ¿No encuentras tu respuesta? Escríbenos directo.</p>
+        </div>
+        <div class="ol-sh-right">
+          <p class="ol-sh-copy">Sabemos que contratar una agencia de desarrollo web implica una decisión importante. Por eso reunimos aquí las preguntas que más nos hacen antes de arrancar un proyecto — sobre costos, tiempos, procesos y lo que incluye cada entrega. Queremos que llegues a la primera llamada con claridad, no con dudas.</p>
+          <p class="ol-sh-copy">Si tu pregunta no está aquí, escríbenos directo. Respondemos de manera personalizada y sin compromiso. Cada proyecto es distinto y preferimos una conversación real a una respuesta genérica.</p>
+        </div>
+      </div>
+
+      <div class="ol-faq-grid">
+
+        <!-- Columna izquierda: Acordeón FAQ -->
+        <div>
+          <p class="ol-faq-col-label">Preguntas frecuentes</p>
+          <div class="ol-faq-list" id="ol-faq-list">
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="0">
+                ¿Qué hace que el sitio de una empresa de seguridad privada realmente convierta?
+                <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-0">
+                <p class="ol-faq-answer-inner">El comité de un condominio compra confianza. El sitio convierte cuando muestra lo que otros esconden: servicios explicados con claridad, certificaciones visibles, cobertura por zona y una vía de contacto sin fricción. En SeguridadPrivadaMX usamos su mayor diferenciador —transparencia y tecnología propia— como eje de cada pantalla, de modo que el administrador entienda y crea la propuesta en segundos.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="1">
+                ¿Cómo muestran las certificaciones (SSC, REPSE, pólizas) sin saturar el sitio?
+                <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-1">
+                <p class="ol-faq-answer-inner">El cumplimiento se trata como argumento de venta, no como letra pequeña. Lo presentamos en bloques de confianza —permiso SSC vigente, REPSE, póliza de responsabilidad civil— jerarquizados para que el comité los identifique sin perderse, y disponibles en detalle para quien quiera profundizar. Visible cuando importa, discreto cuando estorba.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="2">
+                ¿Pueden integrar la app o el monitoreo del cliente al sitio?
+                <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-2">
+                <p class="ol-faq-answer-inner">Sí. Cuando el cliente tiene tecnología propia —como la app de monitoreo de SeguridadPrivadaMX— el sitio la presenta como prueba tangible: capturas, accesos y demostraciones que dejan ver el valor antes de contratar. Podemos enlazar a la plataforma, integrar accesos o mostrar el dashboard según convenga al recorrido del comprador.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="3">
+                ¿El sitio capta al comité o al administrador del condominio?
+                <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-3">
+                <p class="ol-faq-answer-inner">Está diseñado para el decisor B2B residencial. El formulario pide el contexto que califica el lead —tipo de propiedad, número de unidades, alcaldía— para que el equipo comercial reciba solicitudes accionables, no curiosos. En paralelo, WhatsApp y teléfono quedan visibles en todas las pantallas para quien prefiere resolver de inmediato.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="4">
+                ¿Cómo manejan la cobertura por alcaldías y zonas?
+                <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-4">
+                <p class="ol-faq-answer-inner">La cobertura se estructura por zonas de CDMX y Estado de México para que el administrador confirme operación cercana de un vistazo. Esa organización también ayuda a que cada zona tenga su propio espacio dentro del sitio, sin duplicar contenido ni inflar el menú.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="5">
+                ¿Cuánto cuesta un proyecto como este?
+                <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-5">
+                <p class="ol-faq-answer-inner">Depende del alcance: número de pantallas, integraciones, secciones de cobertura y nivel de personalización. Construimos cada propuesta a la medida y la entregamos detallada y por escrito, sin cargos ocultos, antes de comenzar.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="6">
+                ¿En cuánto tiempo está listo?
+                <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-6">
+                <p class="ol-faq-answer-inner">Cada proyecto tiene su propio alcance, así que fijamos un calendario comprometido por escrito desde el inicio. Trabajamos con entregas iterativas en un entorno de pruebas para que veas el avance real en cada etapa, sin sorpresas.</p>
+              </div>
+            </div>
+
+            <div class="ol-faq-item">
+              <button class="ol-faq-question" data-faq="7">
+                ¿Dan acompañamiento después de lanzar el sitio?
+                <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              </button>
+              <div class="ol-faq-answer" id="faq-ans-7">
+                <p class="ol-faq-answer-inner">Sí. Entregamos el sitio en operación con documentación para tu equipo y quedamos disponibles para crecerlo: nuevas zonas de cobertura, secciones de servicios o casos. La estructura queda lista para escalar conforme crece tu operación.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Columna derecha: Formulario WhatsApp -->
+        <div>
+          <div class="ol-faq-form-wrap">
+            <span class="ol-faq-form-badge">
+              <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+              Contáctanos por WhatsApp
+            </span>
+            <h3 class="ol-faq-form-title">¿Listo para empezar<br>tu proyecto?</h3>
+            <p class="ol-faq-form-sub">Cuéntanos brevemente qué necesitas y te respondemos con una propuesta clara, por escrito y sin compromiso.</p>
+
+            <form class="ol-faq-form" id="ol-wa-form" novalidate>
+              <div class="ol-faq-form-row">
+                <div class="ol-faq-field">
+                  <label for="faq-nombre">Tu nombre</label>
+                  <input type="text" id="faq-nombre" placeholder="Ej. Carlos García" autocomplete="given-name">
+                </div>
+                <div class="ol-faq-field">
+                  <label for="faq-empresa">Empresa / Negocio</label>
+                  <input type="text" id="faq-empresa" placeholder="Nombre de tu empresa">
+                </div>
+              </div>
+              <div class="ol-faq-field">
+                <label for="faq-tipo">Tipo de proyecto</label>
+                <select id="faq-tipo">
+                  <option value="" disabled selected>Selecciona una opción</option>
+                  <option value="Sitio web corporativo">Sitio web corporativo</option>
+                  <option value="Tienda en línea / E-commerce">Tienda en línea / E-commerce</option>
+                  <option value="Landing page">Landing page</option>
+                  <option value="Rediseño de sitio existente">Rediseño de sitio existente</option>
+                  <option value="Portafolio profesional">Portafolio profesional</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+              <div class="ol-faq-field">
+                <label for="faq-mensaje">¿Qué necesitas?</label>
+                <textarea id="faq-mensaje" placeholder="Describe brevemente tu proyecto o la duda que tienes..."></textarea>
+              </div>
+              <button type="submit" class="ol-faq-submit">
+                <svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/></svg>
+                Enviar por WhatsApp
+              </button>
+              <p class="ol-faq-form-note">Al enviar, se abrirá WhatsApp con tu mensaje listo. Respondemos en menos de 24 h.</p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+  (function() {
+    /* FAQ toggle se maneja en ol-header.js (universal). Solo el form WhatsApp aquí. */
+    var waForm = document.getElementById('ol-wa-form');
+    if (waForm) waForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var nombre = document.getElementById('faq-nombre').value.trim();
+      var empresa = document.getElementById('faq-empresa').value.trim();
+      var tipo = document.getElementById('faq-tipo').value;
+      var mensaje = document.getElementById('faq-mensaje').value.trim();
+      var partes = ['Hola OrigenLab, me contacto desde el caso de estudio de SeguridadPrivadaMX.'];
+      if (nombre) partes.push('*Nombre:* ' + nombre);
+      if (empresa) partes.push('*Empresa:* ' + empresa);
+      if (tipo) partes.push('*Tipo de proyecto:* ' + tipo);
+      if (mensaje) partes.push('*Descripción:* ' + mensaje);
+      partes.push('Me gustaría recibir más información. ¡Gracias!');
+      var url = 'https://wa.me/525547868402?text=' + encodeURIComponent(partes.join('\n'));
+      window.open(url, '_blank', 'noopener,noreferrer');
+    });
+  })();
+  </script>
+
+  <!-- ============== NEXT CASE NAV ============== -->
+
+  <!-- ============== CASO SIGUIENTE / VOLVER AL SECTOR ============== -->
+  <section class="ol-case-next">
+    <div class="ol-case-next-inner">
+      <a href="/portafolio/seguridad-privada/seprico/" class="ol-case-next-card">
+        <p class="ol-case-next-eyebrow">← Caso anterior</p>
+        <p class="ol-case-next-title">SEPRICO · Seguridad documentada para condominios</p>
+        <span class="ol-case-next-link">Ver caso completo →</span>
+      </a>
+      <a href="/portafolio/seguridad-privada/" class="ol-case-next-card">
+        <p class="ol-case-next-eyebrow">Volver al sector</p>
+        <p class="ol-case-next-title">Seguridad Privada · Más proyectos del sector</p>
+        <span class="ol-case-next-link">Ir al portafolio del sector →</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="ol-footer">
+  <div class="ol-footer-top">
+    <a href="/" class="ol-footer-logo">
+      Origen<span class="ol-footer-logo-dot">.</span>Lab
+    </a>
+    <p class="ol-footer-tagline">
+      Agencia de desarrollo web en México.<br>
+      Creamos sitios que generan resultados.
+    </p>
+    <ul class="ol-footer-contact-list">
+      <li>
+        <a href="mailto:hola@origenlab.com" class="ol-fcl-item">
+          <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          hola@origenlab.com
+        </a>
+      </li>
+      <li>
+        <a href="tel:+525547868402" class="ol-fcl-item">
+          <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +52 55 4786 8402
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/525547868402" target="_blank" rel="noopener noreferrer" class="ol-fcl-item ol-fcl-wa">
+          <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg>
+          WhatsApp
+        </a>
+      </li>
+      <li>
+        <span class="ol-fcl-item ol-fcl-static">
+          <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Ciudad de México, MX
+        </span>
+      </li>
+    </ul>
+  </div>
+  <div class="ol-footer-links">
+    <div>
+      <p class="ol-footer-col-title">Servicios</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/servicios/desarrollo-web/">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/">Rediseño Web</a></li>
+        <li><a href="/servicios/paginas-en-renta/">Páginas en Renta</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Empresa</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/nosotros/">Nosotros</a></li>
+        <li><a href="/portafolio/">Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/">Equipos Contra Incendios</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Contacto</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/contacto/">Formulario de contacto</a></li>
+        <li><a href="mailto:hola@origenlab.com">hola@origenlab.com</a></li>
+        <li><a href="tel:+525547868402">+52 55 4786 8402</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ol-footer-col-title">Legal</p>
+      <ul class="ol-footer-col-list">
+        <li><a href="/aviso-de-privacidad/">Aviso de privacidad</a></li>
+        <li><a href="/terminos/">Términos de servicio</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ol-footer-bottom">
+    <p class="ol-footer-copy">© 2026 OrigenLab. Todos los derechos reservados.</p>
+    <div class="ol-footer-legal">
+      <a href="/aviso-de-privacidad/">Privacidad</a>
+      <a href="/terminos/">Términos</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WA Bubble -->
+<a href="https://wa.me/525547868402?text=Hola%2C%20vi%20el%20caso%20de%20SeguridadPrivadaMX%20y%20me%20interesa%20un%20proyecto%20similar." target="_blank" rel="noopener noreferrer" class="wa-bubble" aria-label="Contáctanos por WhatsApp">
+  <svg aria-hidden="true" focusable="false" viewBox="0 0 32 32" width="26" height="26" fill="#fff">
+    <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 0 0 2.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0 0 16.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"></path>
+  </svg>
+</a>
+
+<!-- ============================================================
+     SCRIPTS — header móvil + scroll + TOC activo
+     ============================================================ -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var toggle   = document.getElementById('ol-menu-toggle');
+    var panel    = document.getElementById('ol-mobile-panel');
+    var overlay  = document.getElementById('ol-mobile-overlay');
+    var closeBtn = document.getElementById('ol-mobile-close');
+    var header   = document.getElementById('ol-header');
+
+    function openMenu() {
+      toggle.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+      panel.classList.add('open');
+      overlay.classList.add('visible');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      panel.classList.remove('open');
+      overlay.classList.remove('visible');
+      document.body.style.overflow = '';
+    }
+
+    if (toggle)   toggle.addEventListener('click', function () { panel.classList.contains('open') ? closeMenu() : openMenu(); });
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    if (overlay)  overlay.addEventListener('click', closeMenu);
+
+    var mobileLinks = panel ? panel.querySelectorAll('a') : [];
+    for (var i = 0; i < mobileLinks.length; i++) mobileLinks[i].addEventListener('click', closeMenu);
+
+    var subToggles = document.querySelectorAll('[data-submenu]');
+    for (var j = 0; j < subToggles.length; j++) {
+      subToggles[j].addEventListener('click', function () {
+        this.classList.toggle('expanded');
+        var sub = this.nextElementSibling;
+        if (sub) sub.classList.toggle('open');
+      });
+    }
+
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 10) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    }, { passive: true });
+
+    /* ---- TOC activo según sección visible ---- */
+    var tocLinks = document.querySelectorAll('#ol-case-toc a');
+    var sections = [];
+    tocLinks.forEach(function(link){
+      var id = link.getAttribute('href').slice(1);
+      var sec = document.getElementById(id);
+      if (sec) sections.push({ id: id, el: sec, link: link });
+    });
+
+    function setActive() {
+      var top = window.scrollY + 140;
+      var current = null;
+      sections.forEach(function(s){
+        if (s.el.offsetTop <= top) current = s;
+      });
+      tocLinks.forEach(function(l){ l.classList.remove('active'); });
+      if (current) current.link.classList.add('active');
+    }
+    if (sections.length) {
+      setActive();
+      window.addEventListener('scroll', setActive, { passive: true });
+    }
+
+    /* ---- Smooth scroll para anchors internos ---- */
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      a.addEventListener('click', function(e){
+        var hash = a.getAttribute('href');
+        if (hash.length > 1) {
+          var target = document.getElementById(hash.slice(1));
+          if (target) {
+            e.preventDefault();
+            window.scrollTo({ top: target.offsetTop - 100, behavior: 'smooth' });
+            history.replaceState(null, '', hash);
+          }
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
