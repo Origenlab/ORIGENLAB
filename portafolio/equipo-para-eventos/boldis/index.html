@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ORIGINS Private Security · Seguridad privada para condominios en CDMX | OrigenLab</title>
-  <meta name="description" content="Caso de estudio del sitio de ORIGINS Private Security: guardias intramuros certificados SSC para condominios y residenciales en CDMX y zona metropolitana.">
-  <link rel="canonical" href="https://origenlab.com/portafolio/seguridad-privada/origins/">
+  <title>BOLDIS · Caso de estudio | OrigenLab</title>
+  <meta name="description" content="Caso de estudio del sitio de BOLDIS — renta y venta de bolas disco e iluminación para eventos en CDMX y Estado de México, con catálogo por tamaño e instalación incluida.">
+  <link rel="canonical" href="https://origenlab.com/portafolio/equipo-para-eventos/boldis/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://origenlab.com/portafolio/seguridad-privada/origins/">
-  <meta property="og:title" content="ORIGINS Private Security · Seguridad privada para condominios en CDMX | OrigenLab">
-  <meta property="og:description" content="Cómo construimos el sitio corporativo de ORIGINS Private Security: arquitectura, diseño, servicios y conversión B2B para una empresa de seguridad especializada en condominios.">
-  <meta property="og:image" content="https://origenlab.com/img/seguridad-privada/origins/origins-hero.webp">
+  <meta property="og:url" content="https://origenlab.com/portafolio/equipo-para-eventos/boldis/">
+  <meta property="og:title" content="BOLDIS · Caso de estudio | OrigenLab">
+  <meta property="og:description" content="Cómo construimos el sitio de BOLDIS: catálogo de bolas disco por tamaño, renta y venta, instalación incluida y cobertura en CDMX y Estado de México.">
+  <meta property="og:image" content="https://origenlab.com/og-image.jpg">
   <meta property="og:locale" content="es_MX">
   <meta property="og:site_name" content="OrigenLab">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="ORIGINS Private Security · Seguridad privada para condominios en CDMX | OrigenLab">
-  <meta name="twitter:description" content="Sitio corporativo B2B para empresa de seguridad privada especializada en condominios en CDMX.">
-  <meta name="twitter:image" content="https://origenlab.com/img/seguridad-privada/origins/origins-hero.webp">
+  <meta name="twitter:title" content="BOLDIS · Caso de estudio | OrigenLab">
+  <meta name="twitter:description" content="Sitio de catálogo para un especialista en bolas disco e iluminación para eventos — renta y venta con instalación incluida en CDMX y Estado de México.">
+  <meta name="twitter:image" content="https://origenlab.com/og-image.jpg">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="../../../favicon.svg">
@@ -36,32 +36,24 @@
 
   <style>
     /* ============================================================
-       L4 — CASO · ORIGINS PRIVATE SECURITY
+       L4 — CASO · BOLDIS
        Componentes en _astro/premium-dark.css. Aquí: SOLO acentos.
-       Acento: azul corporativo #2563EB (seguridad / confianza).
+       Acento: rojo BOLDIS #E63946 (rojo sobre negro).
        Doc: /_docs/COMPONENTS.md y /_docs/LAYOUTS.md (sección L4)
        ============================================================ */
     :root {
-      --case-accent: #2563EB;
-      --case-accent-soft: rgba(37,99,235,0.12);
-      --case-accent-line: rgba(37,99,235,0.28);
+      --case-accent: #E63946;
+      --case-accent-soft: rgba(230,57,70,0.12);
+      --case-accent-line: rgba(230,57,70,0.28);
     }
     /* Hero hereda el acento del caso */
     .hero { --hero-accent: var(--case-accent); --hero-accent-soft: var(--case-accent-soft); --hero-accent-line: var(--case-accent-line); }
-    .hero::before { background: radial-gradient(ellipse at center, rgba(37,99,235,0.08) 0%, transparent 65%); }
+    .hero::before { background: radial-gradient(ellipse at center, rgba(230,57,70,0.08) 0%, transparent 65%); }
 
-    /* Check de listas hereda el acento del caso (shared usa hex Gama por defecto) */
-    .ol-case-list li::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563EB' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E"); }
-    .ol-cta-hero-promises-list li::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563EB' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E"); }
-
-    /* ============================================================
-       MOCKUPS FIELES DEL SITIO LIVE (página-específicos)
-       Reproducen las pantallas reales de seguridad-privada.com.mx.
-       Sin animaciones (regla 4). Self-contained.
-       ============================================================ */
-    .mk { --mk-indigo:#2563EB; --mk-ink:#0F1729; --mk-gray:#475467; --mk-soft:#7A8699;
-          --mk-line:#E6E8EE; --mk-bg:#FFFFFF; --mk-bg2:#F6F7FB; --mk-indigo-soft:#E7EEFE;
-          background:var(--mk-bg); display:flex; flex-direction:column; width:100%; }
+    /* ── Maquetas .mk (browser-mockups del sitio del cliente · tema claro · sin animaciones) ── */
+    .mk { --mk-indigo:#E63946; --mk-ink:#0F1729; --mk-gray:#475467; --mk-soft:#7A8699;
+          --mk-line:#E6E8EE; --mk-bg:#FFFFFF; --mk-bg2:#F6F7FB; --mk-indigo-soft:#FDE7E9;
+          border-radius:10px; overflow:hidden; border:1px solid var(--mk-line); background:var(--mk-bg); }
     .mk-bar { display:flex; align-items:center; gap:.55rem; padding:.5rem .8rem; background:#1A1D29; border-bottom:1px solid rgba(255,255,255,.06); }
     .mk-dots { display:flex; gap:5px; }
     .mk-dots i { width:8px; height:8px; border-radius:50%; background:rgba(255,255,255,.22); }
@@ -70,7 +62,7 @@
     .mk-view { background:var(--mk-bg); color:var(--mk-ink); padding:1.4rem 1.5rem 1.6rem; }
     .mk-nav { display:flex; align-items:center; justify-content:space-between; padding-bottom:1rem; border-bottom:1px solid var(--mk-line); margin-bottom:1.3rem; }
     .mk-logo { font-size:.95rem; font-weight:800; color:var(--mk-indigo); letter-spacing:-.01em; }
-    .mk-menu { display:flex; gap:.85rem; font-size:10.5px; color:var(--mk-gray); font-weight:600; }
+    .mk-menu { display:flex; gap:.85rem; font-size:10.5px; color:var(--mk-gray); font-weight:600; align-items:center; }
     .mk-menu .mk-cta { background:var(--mk-indigo); color:#fff; padding:.28rem .6rem; border-radius:6px; }
     .mk-eyebrow { font-size:9.5px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--mk-indigo); }
     .mk-h { font-size:1.5rem; font-weight:800; letter-spacing:-.02em; line-height:1.1; color:var(--mk-ink); margin:.4rem 0 0; }
@@ -92,11 +84,11 @@
     .mk-stat span { display:block; font-size:9px; color:var(--mk-soft); margin-top:.4rem; line-height:1.35; font-weight:600; }
     .mk-chips { display:flex; flex-wrap:wrap; gap:.4rem; justify-content:center; }
     .mk-chip { font-size:9.5px; font-weight:600; color:var(--mk-gray); background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:999px; padding:.3rem .65rem; }
-    .mk-chip.on { background:var(--mk-indigo-soft); border-color:rgba(37,99,235,.25); color:var(--mk-indigo); }
+    .mk-chip.on { background:var(--mk-indigo-soft); border-color:rgba(230,57,70,.25); color:var(--mk-indigo); }
     .mk-tcards { display:grid; grid-template-columns:repeat(3,1fr); gap:.7rem; }
     .mk-tcard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .8rem; }
     .mk-trow { display:flex; align-items:center; gap:.5rem; margin-bottom:.5rem; }
-    .mk-av { width:28px; height:28px; border-radius:50%; background:var(--mk-indigo); color:#fff; font-size:9.5px; font-weight:700; display:flex; align-items:center; justify-content:center; }
+    .mk-av { width:28px; height:28px; border-radius:50%; background:var(--mk-indigo); color:#fff; font-size:9.5px; font-weight:700; display:flex; align-items:center; justify-content:center; flex:0 0 28px; }
     .mk-tn { font-size:10px; font-weight:700; color:var(--mk-ink); line-height:1.2; }
     .mk-tloc { font-size:8.5px; color:var(--mk-soft); }
     .mk-stars { color:#F5A623; font-size:9px; letter-spacing:1px; margin-bottom:.3rem; }
@@ -109,20 +101,20 @@
     .mk-trust div { text-align:center; }
     .mk-trust b { display:block; font-size:1.05rem; font-weight:800; color:var(--mk-indigo); line-height:1; }
     .mk-trust span { display:block; font-size:8px; color:var(--mk-soft); margin-top:.25rem; font-weight:600; }
-    /* --- Hero oscuro (mirror del sitio live) — acento azul ORIGINS --- */
-    .mk-hero { background:linear-gradient(135deg,#0E1726 0%,#0B1220 58%,#0E1726 100%); margin:-1.4rem -1.5rem 1.3rem; padding:1.5rem 1.5rem 1.35rem; border-bottom:1px solid var(--mk-line); }
-    .mk-hero .mk-eyebrow { color:#7FA9FF; }
+    /* --- Hero oscuro (mirror del sitio live · acentos derivados del rojo #E63946 sobre negro) --- */
+    .mk-hero { background:linear-gradient(135deg,#161011 0%,#0E0909 58%,#161011 100%); margin:-1.4rem -1.5rem 1.3rem; padding:1.5rem 1.5rem 1.35rem; border-bottom:1px solid var(--mk-line); }
+    .mk-hero .mk-eyebrow { color:#F08A93; }
     .mk-hero .mk-h { color:#fff; }
-    .mk-hero .mk-h .ac { color:#609BFF; }
-    .mk-hero .mk-sub { color:rgba(226,232,240,.72); }
+    .mk-hero .mk-h .ac { color:#F25C68; }
+    .mk-hero .mk-sub { color:rgba(238,224,224,.74); }
     .mk-hb { display:grid; grid-template-columns:1.2fr 1fr; gap:1.4rem; align-items:start; }
-    .mk-hk { font-size:9px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#7FA9FF; margin:0 0 .35rem; }
-    .mk-hp { font-size:10px; color:rgba(226,232,240,.66); line-height:1.55; margin:0; }
+    .mk-hk { font-size:9px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#F08A93; margin:0 0 .35rem; }
+    .mk-hp { font-size:10px; color:rgba(238,224,224,.68); line-height:1.55; margin:0; }
     .mk-strip { display:flex; gap:1.6rem; margin-top:1rem; padding-top:.9rem; border-top:1px solid rgba(255,255,255,.1); }
     .mk-strip div b { font-size:1.15rem; font-weight:800; color:#fff; letter-spacing:-.02em; line-height:1; }
-    .mk-strip div b span { color:#609BFF; }
-    .mk-strip div .l { display:block; font-size:7.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:rgba(226,232,240,.5); margin-top:.3rem; }
-    /* --- Tira de servicios bajo el hero --- */
+    .mk-strip div b span { color:#F25C68; }
+    .mk-strip div .l { display:block; font-size:7.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:rgba(238,224,224,.52); margin-top:.3rem; }
+    /* --- Tira de categorías bajo el hero --- */
     .mk-quick { display:grid; grid-template-columns:repeat(6,1fr); gap:.5rem; }
     .mk-qc { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:8px; padding:.6rem .55rem; }
     .mk-qc .mk-ic { width:24px; height:24px; margin-bottom:.4rem; border-radius:6px; }
@@ -131,20 +123,20 @@
     .mk-qc.cta { background:var(--mk-indigo); border-color:var(--mk-indigo); }
     .mk-qc.cta b, .mk-qc.cta span { color:#fff; }
     .mk-qc.cta .mk-ic { background:rgba(255,255,255,.18); color:#fff; }
-    /* --- Listas INCLUYE en cards de pilar --- */
+    /* --- Listas INCLUYE en cards de categoría --- */
     .mk-pbadge { float:right; font-size:7.5px; font-weight:700; letter-spacing:.08em; color:var(--mk-indigo); background:var(--mk-indigo-soft); border-radius:5px; padding:.18rem .4rem; }
     .mk-inc-k { font-size:7.5px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; color:var(--mk-soft); margin:.55rem 0 .35rem; }
     .mk-inc { display:flex; flex-wrap:wrap; gap:.28rem; }
     .mk-inc span { font-size:8px; font-weight:600; color:var(--mk-gray); background:var(--mk-bg); border:1px solid var(--mk-line); border-radius:5px; padding:.22rem .42rem .22rem .82rem; position:relative; }
     .mk-inc span::before { content:''; position:absolute; left:.36rem; top:50%; transform:translateY(-50%); width:4px; height:4px; border-radius:50%; background:var(--mk-indigo); }
-    /* --- Diferenciadores (4 col) --- */
-    .mk-diff { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    /* --- Diferenciadores (3 col) --- */
+    .mk-diff { display:grid; grid-template-columns:repeat(3,1fr); gap:.7rem; }
     .mk-dcard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .75rem; }
     .mk-dcard .mk-ic { margin-bottom:.5rem; }
     .mk-dcard b { display:block; font-size:11px; font-weight:700; color:var(--mk-ink); margin-bottom:.3rem; }
     .mk-dcard p { font-size:8.5px; color:var(--mk-gray); line-height:1.5; margin:0 0 .4rem; }
     .mk-dlink { font-size:8px; font-weight:700; color:var(--mk-indigo); }
-    /* --- Perfiles atendidos --- */
+    /* --- Sectores / industrias atendidas --- */
     .mk-sect-cards { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
     .mk-scard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .75rem; display:flex; flex-direction:column; }
     .mk-scard .k { font-size:7.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--mk-indigo); margin-bottom:.3rem; }
@@ -154,26 +146,20 @@
     /* --- Aliados / casos reales --- */
     .mk-ally { font-size:7.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--mk-indigo); background:var(--mk-indigo-soft); border-radius:5px; padding:.18rem .45rem; display:inline-block; margin-bottom:.45rem; }
     .mk-dom { font-size:8px; color:var(--mk-soft); margin-top:.35rem; }
-    @media (max-width:560px){
+    @media (max-width:640px){
       .mk-grid2 { grid-template-columns:1fr; gap:1rem; }
       .mk-cards, .mk-tcards { grid-template-columns:1fr 1fr; }
       .mk-stats, .mk-trust { grid-template-columns:repeat(2,1fr); }
       .mk-h { font-size:1.2rem; }
       .mk-hb { grid-template-columns:1fr; gap:.8rem; }
       .mk-quick { grid-template-columns:repeat(3,1fr); }
-      .mk-diff, .mk-sect-cards { grid-template-columns:1fr 1fr; }
+      .mk-diff { grid-template-columns:1fr; }
+      .mk-sect-cards { grid-template-columns:1fr 1fr; }
       .mk-strip { flex-wrap:wrap; gap:.9rem; }
     }
-    /* Banda de cifras comunicadas (tema oscuro del case body) */
-    .ol-cs-band { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; margin:2rem 0 0; }
-    .ol-cs-band div { text-align:center; border:1px solid var(--case-accent-line); border-radius:10px; padding:1.4rem .6rem; background:rgba(37,99,235,0.05); }
-    .ol-cs-band b { display:block; font-size:1.9rem; font-weight:800; color:#fff; letter-spacing:-.02em; line-height:1; }
-    .ol-cs-band b span { color:var(--case-accent); }
-    .ol-cs-band p { margin:.5rem 0 0; font-size:11px; color:rgba(240,240,245,0.55); font-weight:600; line-height:1.4; }
-    @media (max-width:560px){ .ol-cs-band { grid-template-columns:1fr 1fr; } }
   </style>
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.com/#organization","name":"OrigenLab","url":"https://origenlab.com","logo":"https://origenlab.com/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.com/#website","url":"https://origenlab.com/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.com/#organization"}},{"@type":"BreadcrumbList","@id":"https://origenlab.com/portafolio/seguridad-privada/origins/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.com/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.com/portafolio/"},{"@type":"ListItem","position":3,"name":"Seguridad Privada","item":"https://origenlab.com/portafolio/seguridad-privada/"},{"@type":"ListItem","position":4,"name":"ORIGINS Private Security","item":"https://origenlab.com/portafolio/seguridad-privada/origins/"}]},{"@type":["Organization","SecurityService"],"@id":"https://seguridad-privada.com.mx/#organization","name":"ORIGINS Private Security","legalName":"ORIGINS Private Security S.A. de C.V.","url":"https://seguridad-privada.com.mx/","description":"Empresa de seguridad privada especializada en condominios y residenciales en CDMX y Zona Metropolitana. Guardias intramuros certificados SSC, control de accesos 24/7 y monitoreo CCTV, con Permiso SSC 0102-15.","areaServed":{"@type":"Country","name":"México"},"knowsAbout":["Seguridad privada","Guardias intramuros","Control de accesos","Monitoreo CCTV","Seguridad para condominios","Protección ejecutiva"],"slogan":"Seguridad especializada para comunidades residenciales"},{"@type":"CreativeWork","@id":"https://origenlab.com/portafolio/seguridad-privada/origins/#case","name":"ORIGINS Private Security — Caso de estudio","description":"Sitio corporativo para empresa de seguridad privada especializada en condominios y residenciales en CDMX y Zona Metropolitana.","inLanguage":"es-MX","image":"https://origenlab.com/img/seguridad-privada/origins/origins-hero.webp","author":{"@id":"https://origenlab.com/#organization"},"publisher":{"@id":"https://origenlab.com/#organization"},"about":{"@id":"https://seguridad-privada.com.mx/#organization"},"keywords":["seguridad privada","guardias intramuros","condominios","control de accesos","monitoreo CCTV","B2B","CDMX"]},{"@type":"FAQPage","@id":"https://origenlab.com/portafolio/seguridad-privada/origins/#faq","mainEntity":[{"@type":"Question","name":"¿Cómo se diferencia el sitio de una empresa especializada en condominios?","acceptedAnswer":{"@type":"Answer","text":"El comité no compra una empresa generalista, compra un especialista en su tipo de comunidad. El sitio de ORIGINS lo deja claro desde el inicio: guardias intramuros que conocen a cada residente, protocolos por inmueble y un lenguaje pensado para condominios verticales y horizontales. Esa especialización es el argumento que distingue y convierte."}},{"@type":"Question","name":"¿Cómo se muestran las garantías y SLA sin sonar a promesa comercial?","acceptedAnswer":{"@type":"Answer","text":"Los presentamos como compromisos exigibles, no como eslóganes: reemplazo de personal en menos de 4 horas, supervisión semanal documentada, reportes mensuales auditables. El administrador entiende que son cláusulas que puede exigir por escrito, y eso es justo lo que genera confianza en el sector."}},{"@type":"Question","name":"¿Cómo se hacen visibles las certificaciones y el permiso SSC?","acceptedAnswer":{"@type":"Answer","text":"El permiso SSC y la certificación del personal se tratan como sello de credibilidad, presentes desde el encabezado y reforzados en los puntos de decisión. Visibles donde aportan confianza, sin saturar la lectura ni convertir el sitio en un trámite."}},{"@type":"Question","name":"¿El sitio capta al administrador o comité del condominio?","acceptedAnswer":{"@type":"Answer","text":"Está diseñado para el decisor B2B residencial. El CTA principal es el diagnóstico gratuito en menos de 24 horas, y el formulario pide el contexto que califica el lead —nombre del condominio o residencial, zona o alcaldía y servicio de interés— para que el equipo reciba solicitudes accionables. WhatsApp y teléfono quedan visibles para resolver de inmediato."}},{"@type":"Question","name":"¿Cómo manejan la cobertura por colonias y municipios?","acceptedAnswer":{"@type":"Answer","text":"La cobertura se estructura por zonas de CDMX (Del Valle, Santa Fe, Pedregal, Coyoacán…) y municipios del Estado de México (Naucalpan, Interlomas, Satélite, Huixquilucan…), para que el administrador confirme operación cercana de un vistazo y cada zona tenga su propio espacio sin inflar el menú."}},{"@type":"Question","name":"¿Cuánto cuesta un proyecto como este?","acceptedAnswer":{"@type":"Answer","text":"Depende del alcance: número de pantallas, integraciones, secciones de cobertura y nivel de personalización. Construimos cada propuesta a la medida y la entregamos detallada y por escrito, sin cargos ocultos, antes de comenzar."}},{"@type":"Question","name":"¿En cuánto tiempo está listo?","acceptedAnswer":{"@type":"Answer","text":"Cada proyecto tiene su propio alcance, así que fijamos un calendario comprometido por escrito desde el inicio. Trabajamos con entregas iterativas en un entorno de pruebas para que veas el avance real en cada etapa, sin sorpresas."}},{"@type":"Question","name":"¿Dan acompañamiento después de lanzar el sitio?","acceptedAnswer":{"@type":"Answer","text":"Sí. Entregamos el sitio en operación con documentación para tu equipo y quedamos disponibles para crecerlo: nuevas zonas de cobertura, servicios o casos. La estructura queda lista para escalar conforme crece tu operación."}}]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.com/#organization","name":"OrigenLab","url":"https://origenlab.com","logo":"https://origenlab.com/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.com/#website","url":"https://origenlab.com/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.com/#organization"}},{"@type":"BreadcrumbList","@id":"https://origenlab.com/portafolio/equipo-para-eventos/boldis/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.com/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.com/portafolio/"},{"@type":"ListItem","position":3,"name":"Equipo para Eventos","item":"https://origenlab.com/portafolio/equipo-para-eventos/"},{"@type":"ListItem","position":4,"name":"BOLDIS","item":"https://origenlab.com/portafolio/equipo-para-eventos/boldis/"}]},{"@type":"LocalBusiness","@id":"https://bolasdisco.com/#organization","name":"BOLDIS","legalName":"BOLDIS — Iluminación para Eventos","url":"https://bolasdisco.com/","email":"contacto@boldis.com.mx","description":"Renta y venta de bolas disco profesionales e iluminación para eventos en CDMX y Estado de México, con instalación profesional incluida.","areaServed":[{"@type":"AdministrativeArea","name":"Ciudad de México"},{"@type":"AdministrativeArea","name":"Estado de México"},{"@type":"City","name":"Naucalpan"},{"@type":"City","name":"Tlalnepantla"},{"@type":"City","name":"Huixquilucan"}],"address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressRegion":"CDMX","addressCountry":"MX"},"geo":{"@type":"GeoCoordinates","latitude":19.4326,"longitude":-99.1332},"knowsAbout":["Bolas disco","Renta de bolas disco","Iluminación para eventos","Motores giratorios","Luces LED RGB","Bodas","XV años","Conciertos"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Catálogo de bolas disco","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Product","name":"Bola Disco Pequeña 30 cm"}},{"@type":"Offer","itemOffered":{"@type":"Product","name":"Bola Disco Mediana 50 cm"}},{"@type":"Offer","itemOffered":{"@type":"Product","name":"Bola Disco Grande 80 cm"}},{"@type":"Offer","itemOffered":{"@type":"Product","name":"Bola Disco LED RGB 60 cm"}},{"@type":"Offer","itemOffered":{"@type":"Product","name":"Bola Disco Jumbo 150 cm"}},{"@type":"Offer","itemOffered":{"@type":"Product","name":"Bola Disco Gigante 200 cm"}}]}},{"@type":"FAQPage","@id":"https://origenlab.com/portafolio/equipo-para-eventos/boldis/#faqpage","mainEntity":[{"@type":"Question","name":"¿BOLDIS renta o vende las bolas disco?","acceptedAnswer":{"@type":"Answer","text":"BOLDIS ofrece ambas opciones: renta para un evento puntual y venta para quien quiere su propio equipo. El sitio distingue ambos caminos desde la primera pantalla y permite cotizar cualquiera de los dos por modelo y tamaño."}},{"@type":"Question","name":"¿La instalación está incluida?","acceptedAnswer":{"@type":"Answer","text":"Sí. La instalación profesional está incluida: BOLDIS coloca la bola disco, el motor giratorio y la iluminación el día del evento, dejando todo listo para la pista."}},{"@type":"Question","name":"¿Qué zonas cubre BOLDIS?","acceptedAnswer":{"@type":"Answer","text":"BOLDIS da cobertura total en Ciudad de México y Estado de México, incluyendo alcaldías de la CDMX y municipios como Naucalpan, Tlalnepantla y Huixquilucan."}},{"@type":"Question","name":"¿Qué tamaños de bola disco hay disponibles?","acceptedAnswer":{"@type":"Answer","text":"El catálogo incluye seis tamaños: Pequeña 30 cm, Mediana 50 cm, Grande 80 cm, LED RGB 60 cm, Jumbo 150 cm y Gigante 200 cm — desde eventos íntimos hasta conciertos y mega eventos."}}]},{"@type":"CreativeWork","@id":"https://origenlab.com/portafolio/equipo-para-eventos/boldis/#case","name":"BOLDIS — Caso de estudio","description":"Renta y venta de bolas disco profesionales e iluminación para eventos en CDMX y Estado de México, con catálogo por tamaño e instalación profesional incluida.","inLanguage":"es-MX","image":"https://origenlab.com/og-image.jpg","author":{"@id":"https://origenlab.com/#organization"},"publisher":{"@id":"https://origenlab.com/#organization"},"about":{"@id":"https://bolasdisco.com/#organization"},"keywords":["bolas disco","iluminación para eventos","renta CDMX","Estado de México","equipo para eventos"]}]}</script>
 </head>
 <body>
 
@@ -199,7 +185,7 @@
     <div class="ol-topbar-center">
       <span class="ol-topbar-promo">
         <span class="ol-topbar-dot"></span>
-        Atención personalizada  ·  Ciudad de México
+        Atención personalizada  ·  Ciudad de México
       </span>
     </div>
     <div class="ol-topbar-right">
@@ -271,12 +257,14 @@
                 </div>
               </li>
               <li class="ol-has-subdrop">
-              <a href="/portafolio/equipo-para-eventos/" class="ol-dropdown-link ol-dropdown-parent">Equipo para Eventos</a>
-              <div class="ol-subdrop"><ul>
-                <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-dropdown-link">PODIUMEX</a></li>
-                <li><a href="/portafolio/equipo-para-eventos/boldis/" class="ol-dropdown-link">BOLDIS</a></li>
-              </ul></div>
-            </li>
+                <a href="/portafolio/equipo-para-eventos/" class="ol-dropdown-link ol-dropdown-parent">Equipo para Eventos</a>
+                <div class="ol-subdrop">
+                  <ul>
+                    <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-dropdown-link">PODIUMEX</a></li>
+                    <li><a href="/portafolio/equipo-para-eventos/boldis/" class="ol-dropdown-link">BOLDIS</a></li>
+                  </ul>
+                </div>
+              </li>
             </ul>
           </div>
         </li>
@@ -371,12 +359,12 @@
       </li>
       <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
       <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <a href="/portafolio/seguridad-privada/" itemprop="item"><span itemprop="name">Seguridad Privada</span></a>
+        <a href="/portafolio/equipo-para-eventos/" itemprop="item"><span itemprop="name">Equipo para Eventos</span></a>
         <meta itemprop="position" content="3" />
       </li>
       <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
       <li class="ol-bc-item ol-bc-current" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <span itemprop="name">ORIGINS Private Security</span>
+        <span itemprop="name">BOLDIS</span>
         <meta itemprop="position" content="4" />
       </li>
     </ol>
@@ -393,11 +381,11 @@
     <div class="container hero__inner">
 
       <div class="hero__col1">
-        <span class="hero__eyebrow">Caso de estudio · ORIGINS Private Security</span>
-        <h1 class="hero__title">Seguridad privada para condominios en CDMX.</h1>
-        <p class="hero__sub">Construimos el sitio de una empresa que hace una sola cosa, y la hace bien: cuidar condominios en CDMX y su Zona Metropolitana. Guardias intramuros certificados SSC, control de accesos 24/7 y monitoreo CCTV, con Permiso SSC 0102-15 vigente.</p>
+        <span class="hero__eyebrow">Caso de estudio · Equipo para Eventos</span>
+        <h1 class="hero__title">BOLDIS<br>Bolas disco<br>e iluminación.</h1>
+        <p class="hero__sub">Especialista en bolas disco profesionales e iluminación para eventos — catálogo por tamaño de 30 cm a 200 cm, renta y venta con instalación profesional incluida, y cobertura total en CDMX y Estado de México.</p>
         <div class="hero__ctas">
-          <a href="https://seguridad-privada.com.mx/" target="_blank" rel="noopener noreferrer" class="ol-btn-primary">
+          <a href="https://bolasdisco.com/" target="_blank" rel="noopener noreferrer" class="ol-btn-primary">
             Visitar el sitio
             <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
           </a>
@@ -409,8 +397,8 @@
       </div>
 
       <div class="hero__col2">
-        <p class="hero__p1">Cuando un administrador o un comité de vigilancia busca empresa de seguridad, no quiere promesas: quiere saber si el personal está certificado, si cubren su zona y con quién hablar. El sitio responde esas tres preguntas de inmediato y abre la puerta a una evaluación sin costo, sin rodeos.</p>
-        <p class="hero__p2">Cada texto, cada sección y cada jerarquía se pensó para ese lector: seguridad privada para condominios, guardias intramuros certificados SSC, control de accesos y monitoreo CCTV en CDMX y Estado de México. Un sitio rápido, claro y honesto, que transmite confianza desde el primer vistazo.</p>
+        <p class="hero__p1">Plataforma de catálogo diseñada para que novios y wedding planners, coordinadores de eventos corporativos, productores de conciertos y gerentes de antros encuentren la bola disco exacta para su pista — con claridad de tamaño, tecnología LED RGB, cobertura e instalación incluida, y un canal de cotización que distingue renta de venta.</p>
+        <p class="hero__p2">Arquitectura de contenidos, jerarquía visual y redacción enfocada construidas con criterio editorial profesional para el mercado mexicano: bolas disco profesionales, iluminación para eventos, motores giratorios, luces LED RGB y cobertura en CDMX y Estado de México. Sitio rápido, indexable y profesional.</p>
       </div>
 
     </div>
@@ -423,113 +411,113 @@
       <div class="ol-co-head">
         <div>
           <span class="ol-co-eyebrow">La empresa</span>
-          <h2 class="ol-co-title">Seguridad residencial que hace <em>una sola cosa, y la hace bien</em>.</h2>
+          <h2 class="ol-co-title">Bolas disco e iluminación <em>para eventos</em>, con instalación incluida.</h2>
         </div>
-        <p class="ol-co-lead">ORIGINS Private Security se dedica exclusivamente a <strong>comunidades residenciales</strong> — condominios, fraccionamientos y residenciales privados en CDMX y su Zona Metropolitana — con guardias intramuros certificados SSC y Permiso SSC 0102-15 vigente.</p>
+        <p class="ol-co-lead">BOLDIS es un <strong>especialista mono-producto en bolas disco e iluminación para eventos</strong>: catálogo por tamaño, motores giratorios, luces LED RGB e instalación profesional incluida. No es un proveedor genérico de mobiliario — renta, vende e instala la bola disco que enciende cada pista de baile.</p>
       </div>
 
       <div class="ol-co-stats">
         <div class="ol-co-stat">
-          <p class="ol-co-stat-val">Permiso SSC</p>
-          <p class="ol-co-stat-label">0102-15 vigente ante la Secretaría de Seguridad Ciudadana</p>
+          <p class="ol-co-stat-val">6 tamaños</p>
+          <p class="ol-co-stat-label">de 30 cm a 200 cm para cada tipo de evento</p>
         </div>
         <div class="ol-co-stat">
-          <p class="ol-co-stat-val">100% residencial</p>
-          <p class="ol-co-stat-label">solo condominios, nada de industria ni comercio</p>
+          <p class="ol-co-stat-val">Instalación</p>
+          <p class="ol-co-stat-label">profesional incluida el día del evento</p>
         </div>
         <div class="ol-co-stat">
-          <p class="ol-co-stat-val">24/7</p>
-          <p class="ol-co-stat-label">control de accesos y vigilancia continua</p>
+          <p class="ol-co-stat-val">LED RGB</p>
+          <p class="ol-co-stat-label">tecnología inteligente multicolor disponible</p>
         </div>
         <div class="ol-co-stat">
-          <p class="ol-co-stat-val">CDMX · ZMVM</p>
-          <p class="ol-co-stat-label">Ciudad de México y Zona Metropolitana</p>
+          <p class="ol-co-stat-val">CDMX · Edomex</p>
+          <p class="ol-co-stat-label">cobertura total en Ciudad de México y Estado de México</p>
         </div>
       </div>
 
       <div class="ol-co-split">
         <div class="ol-co-panel">
           <p class="ol-co-panel-k">Qué hace</p>
-          <h3 class="ol-co-panel-h">Proteger comunidades donde la gente vive.</h3>
-          <p class="ol-co-panel-p">ORIGINS cuida <strong>condominios verticales y horizontales, fraccionamientos y residenciales privados</strong> con guardias intramuros, control de accesos y monitoreo CCTV. Un servicio diseñado para la convivencia de una comunidad, no para una nave industrial.</p>
+          <h3 class="ol-co-panel-h">Bolas disco para pistas donde nada puede verse improvisado.</h3>
+          <p class="ol-co-panel-p">BOLDIS pone al alcance de novios, wedding planners, empresas, productores y antros un <strong>catálogo de bolas disco profesionales</strong>: tamaños desde 30 cm para eventos íntimos hasta 200 cm para estadios y mega eventos, con motores giratorios y luces LED RGB. No despacha equipo genérico — entrega la pieza correcta, en renta o en venta, lista para encender la pista.</p>
         </div>
         <div class="ol-co-panel">
           <p class="ol-co-panel-k">Cómo lo hace</p>
-          <h3 class="ol-co-panel-h">Especialización total, personal certificado.</h3>
-          <p class="ol-co-panel-p">Al dedicarse <strong>únicamente a lo residencial</strong>, su personal certificado SSC entiende el trato con residentes, visitantes y comité. Protocolos pensados para condominio y respaldo legal con Permiso SSC 0102-15 vigente.</p>
+          <h3 class="ol-co-panel-h">Renta, venta e instalación incluida.</h3>
+          <p class="ol-co-panel-p">BOLDIS opera con un <strong>modelo flexible de renta y venta</strong>, instalación profesional incluida y cobertura total en CDMX y Estado de México. Cada requerimiento se resuelve por tamaño, tipo de evento y sede, para que el cliente reciba la bola disco correcta — montada y lista el día del evento.</p>
         </div>
       </div>
 
       <div class="ol-co-sub">
-        <p class="ol-co-sub-eyebrow">Servicios</p>
-        <h3 class="ol-co-sub-h">Vigilancia integral para tu comunidad.</h3>
-        <p class="ol-co-sub-p">Todo lo que un condominio necesita para sentirse seguro, con protocolos y personal especializado.</p>
+        <p class="ol-co-sub-eyebrow">Líneas de producto</p>
+        <h3 class="ol-co-sub-h">Catálogo de bolas disco por tamaño.</h3>
+        <p class="ol-co-sub-p">Seis tamaños de bola disco con un caso de uso propio, disponibles en renta y venta, con tecnología LED RGB e instalación profesional incluida.</p>
 
         <div class="ol-co-lines">
           <div class="ol-co-line">
-            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg></div>
-            <h4 class="ol-co-line-h">Guardias intramuros</h4>
-            <p class="ol-co-line-p">Personal certificado SSC dentro de la comunidad, capacitado para el trato residencial.</p>
+            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/></svg></div>
+            <h4 class="ol-co-line-h">Pequeña 30 cm</h4>
+            <p class="ol-co-line-p">Bola disco compacta para eventos íntimos y decoración — la chispa justa para reuniones y espacios pequeños.</p>
           </div>
           <div class="ol-co-line">
-            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="m10.85 12.15 7.15-7.15"/><path d="m18 5 2 2M15 8l2 2"/></svg></div>
-            <h4 class="ol-co-line-h">Control de accesos 24/7</h4>
-            <p class="ol-co-line-p">Registro y autorización de residentes, visitantes y proveedores las 24 horas.</p>
+            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7"/></svg></div>
+            <h4 class="ol-co-line-h">Mediana 50 cm</h4>
+            <p class="ol-co-line-p">Tamaño versátil para bodas y eventos medianos, con presencia escénica sin saturar el salón.</p>
           </div>
           <div class="ol-co-line">
-            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
-            <h4 class="ol-co-line-h">Monitoreo CCTV</h4>
-            <p class="ol-co-line-p">Videovigilancia de áreas comunes, accesos y perímetro para respuesta inmediata.</p>
+            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/></svg></div>
+            <h4 class="ol-co-line-h">Grande 80 cm</h4>
+            <p class="ol-co-line-p">Bola disco de gran formato para bodas premium y XV años, protagonista absoluta de la pista.</p>
           </div>
           <div class="ol-co-line">
-            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20M2 12h20"/></svg></div>
-            <h4 class="ol-co-line-h">Rondines y bitácora</h4>
-            <p class="ol-co-line-p">Recorridos programados con registro de novedades para trazabilidad del servicio.</p>
+            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7"/><path d="M12 5v14M5 12h14"/></svg></div>
+            <h4 class="ol-co-line-h">LED RGB 60 cm</h4>
+            <p class="ol-co-line-p">Tecnología inteligente multicolor: iluminación LED RGB programable para escenas dinámicas en cada momento.</p>
           </div>
           <div class="ol-co-line">
-            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg></div>
-            <h4 class="ol-co-line-h">Protocolos de emergencia</h4>
-            <p class="ol-co-line-p">Respuesta coordinada ante incidentes, con líneas de contacto y procedimientos claros.</p>
+            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg></div>
+            <h4 class="ol-co-line-h">Jumbo 150 cm</h4>
+            <p class="ol-co-line-p">Formato espectacular para conciertos y eventos corporativos de gran escala, visible desde toda la sede.</p>
           </div>
           <div class="ol-co-line">
-            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-            <h4 class="ol-co-line-h">Atención al comité</h4>
-            <p class="ol-co-line-p">Interlocución directa con administración y comité para ajustar el servicio a la comunidad.</p>
+            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg></div>
+            <h4 class="ol-co-line-h">Gigante 200 cm</h4>
+            <p class="ol-co-line-p">La pieza mayor del catálogo, pensada para estadios y mega eventos — impacto visual a gran distancia.</p>
           </div>
         </div>
       </div>
 
       <div class="ol-co-sub">
-        <p class="ol-co-sub-eyebrow">Por qué elegir a ORIGINS</p>
-        <h3 class="ol-co-sub-h">La ventaja de hacer una sola cosa.</h3>
+        <p class="ol-co-sub-eyebrow">Por qué elegir a BOLDIS</p>
+        <h3 class="ol-co-sub-h">Lo que distingue a un especialista en bolas disco.</h3>
 
         <div class="ol-co-why">
           <div class="ol-co-why-item">
             <div class="ol-co-why-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
             <div>
-              <h4 class="ol-co-why-h">Especialización 100% residencial</h4>
-              <p class="ol-co-why-p">Sin distraerse en industria ni comercio: todo el foco en condominios y residenciales.</p>
+              <h4 class="ol-co-why-h">Servicio transparente y profesional</h4>
+              <p class="ol-co-why-p">Cotización inmediata, opciones claras de renta y venta, y un trato directo de principio a fin.</p>
             </div>
           </div>
           <div class="ol-co-why-item">
             <div class="ol-co-why-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
             <div>
-              <h4 class="ol-co-why-h">Personal certificado SSC</h4>
-              <p class="ol-co-why-p">Guardias formados y acreditados, capacitados para el trato con residentes.</p>
+              <h4 class="ol-co-why-h">Calidad profesional garantizada</h4>
+              <p class="ol-co-why-p">Bolas disco con motores giratorios y luces LED RGB de calidad profesional, listas para cualquier evento.</p>
             </div>
           </div>
           <div class="ol-co-why-item">
             <div class="ol-co-why-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
             <div>
-              <h4 class="ol-co-why-h">Permiso SSC vigente</h4>
-              <p class="ol-co-why-p">Operación legal y documentada con Permiso SSC 0102-15 ante la autoridad.</p>
+              <h4 class="ol-co-why-h">Instalación profesional incluida</h4>
+              <p class="ol-co-why-p">El equipo de BOLDIS instala la bola disco, el motor y la iluminación el día del evento — sin costo adicional.</p>
             </div>
           </div>
           <div class="ol-co-why-item">
             <div class="ol-co-why-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
             <div>
-              <h4 class="ol-co-why-h">Cobertura metropolitana</h4>
-              <p class="ol-co-why-p">Presencia en CDMX y Zona Metropolitana para comunidades de toda la zona.</p>
+              <h4 class="ol-co-why-h">Cobertura total CDMX y Edomex</h4>
+              <p class="ol-co-why-p">Servicio en toda la Ciudad de México y Estado de México, incluyendo alcaldías y municipios del área metropolitana.</p>
             </div>
           </div>
         </div>
@@ -537,15 +525,15 @@
 
       <div class="ol-co-band">
         <div>
-          <p class="ol-co-band-k">Respaldo legal</p>
-          <h3 class="ol-co-band-h">Permiso SSC 0102-15 vigente.</h3>
-          <p class="ol-co-band-p">Operación autorizada y supervisada por la Secretaría de Seguridad Ciudadana, con personal certificado. Seguridad privada formal, no improvisada.</p>
+          <p class="ol-co-band-k">Respaldo</p>
+          <h3 class="ol-co-band-h">Bolas disco para bodas, XV años, conciertos y antros de todo el Valle de México.</h3>
+          <p class="ol-co-band-p">De bodas elegantes a fiestas temáticas retro, de eventos corporativos a conciertos masivos y discotecas — BOLDIS enciende la pista con la bola disco del tamaño correcto, en renta o en venta, con instalación incluida.</p>
         </div>
         <div class="ol-co-band-tags">
-          <span class="ol-co-band-tag">Permiso SSC</span>
-          <span class="ol-co-band-tag">Guardias certificados</span>
-          <span class="ol-co-band-tag">24/7</span>
-          <span class="ol-co-band-tag">CDMX · ZMVM</span>
+          <span class="ol-co-band-tag">Renta</span>
+          <span class="ol-co-band-tag">Venta</span>
+          <span class="ol-co-band-tag">Instalación incluida</span>
+          <span class="ol-co-band-tag">Especialista mono-producto</span>
         </div>
       </div>
 
@@ -556,7 +544,7 @@
   <div class="ol-co-divider">
     <p class="ol-co-divider-k">Detrás del sitio</p>
     <h2 class="ol-co-divider-h">Cómo construimos su plataforma digital</h2>
-    <p class="ol-co-divider-p">El proyecto web que OrigenLab desarrolló para captar cotizaciones de administradores y comités con la confianza que el servicio transmite.</p>
+    <p class="ol-co-divider-p">El proyecto web que OrigenLab desarrolló para llevar esta operación al nivel digital que su producto merece.</p>
   </div>
 
   <!-- ============== CASE SHELL: SIDEBAR + CONTENT ============== -->
@@ -570,13 +558,13 @@
           <div class="ol-side-card">
             <p class="ol-side-eyebrow">Datos del proyecto</p>
             <ul class="ol-side-meta">
-              <li><dt>Cliente</dt><dd>ORIGINS Private Security</dd></li>
-              <li><dt>Sector</dt><dd>Seguridad privada · Condominios y residenciales</dd></li>
-              <li><dt>Tipo de sitio</dt><dd>Corporativo B2B · Captación de cotización</dd></li>
-              <li><dt>Modelo de negocio</dt><dd>Guardias intramuros especializados en comunidades residenciales</dd></li>
-              <li><dt>Permiso</dt><dd>SSC 0102-15 (vigente)</dd></li>
-              <li><dt>Cobertura</dt><dd>CDMX · Zona Metropolitana (EdoMex)</dd></li>
-              <li><dt>Sitio en vivo</dt><dd><a href="https://seguridad-privada.com.mx/" target="_blank" rel="noopener noreferrer">seguridad-privada.com.mx →</a></dd></li>
+              <li><dt>Cliente</dt><dd>BOLDIS</dd></li>
+              <li><dt>Sector</dt><dd>Equipo para Eventos</dd></li>
+              <li><dt>Tipo de sitio</dt><dd>Sitio corporativo + catálogo</dd></li>
+              <li><dt>Modelo de negocio</dt><dd>Especialista · Renta + Venta + Instalación</dd></li>
+              <li><dt>Producto</dt><dd>Bolas disco e iluminación</dd></li>
+              <li><dt>Cobertura</dt><dd>CDMX · Estado de México</dd></li>
+              <li><dt>Sitio en vivo</dt><dd><a href="https://bolasdisco.com/" target="_blank" rel="noopener noreferrer">bolasdisco.com →</a></dd></li>
             </ul>
           </div>
 
@@ -591,7 +579,7 @@
               <span class="ol-case-spec-tag">Formularios B2B</span>
               <span class="ol-case-spec-tag">Hosting CDN</span>
               <span class="ol-case-spec-tag">Responsivo</span>
-              <span class="ol-case-spec-tag">Multi-zona</span>
+              <span class="ol-case-spec-tag">Catálogo de producto</span>
             </div>
           </div>
 
@@ -602,8 +590,8 @@
               <li><a href="#reto"><span class="num">02</span>El reto</a></li>
               <li><a href="#arquitectura"><span class="num">03</span>Arquitectura del sitio</a></li>
               <li><a href="#diseno"><span class="num">04</span>Diseño y sistema visual</a></li>
-              <li><a href="#servicios"><span class="num">05</span>Servicios del cliente</a></li>
-              <li><a href="#conversion"><span class="num">06</span>Conversión B2B</a></li>
+              <li><a href="#catalogo"><span class="num">05</span>Catálogo de bolas disco</a></li>
+              <li><a href="#conversion"><span class="num">06</span>Conversión renta + venta</a></li>
               <li><a href="#tecnologia"><span class="num">07</span>Tecnología y rendimiento</a></li>
               <li><a href="#proceso"><span class="num">08</span>Proceso de trabajo</a></li>
               <li><a href="#galeria"><span class="num">09</span>Galería del sitio</a></li>
@@ -613,12 +601,12 @@
 
           <div class="ol-side-cta">
             <h3 class="ol-side-cta-title">¿Un proyecto similar?</h3>
-            <p class="ol-side-cta-desc">Si tu empresa de seguridad privada necesita un sitio profesional que transmita confianza y capte cotizaciones, podemos construirlo contigo.</p>
+            <p class="ol-side-cta-desc">Si tu empresa renta, vende o instala equipo para eventos y necesitas un sitio profesional con catálogo, podemos construirlo contigo.</p>
             <a href="/cotizar/" class="ol-side-cta-btn">
               Cotizar mi proyecto
               <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
             </a>
-            <a href="https://wa.me/525547868402?text=Hola%2C%20vi%20el%20caso%20de%20ORIGINS%20y%20me%20interesa%20un%20proyecto%20similar." target="_blank" rel="noopener noreferrer" class="ol-side-cta-link">o escribir por WhatsApp →</a>
+            <a href="https://wa.me/525547868402?text=Hola%20OrigenLab%2C%20vi%20el%20caso%20de%20BOLDIS%20y%20quiero%20un%20proyecto%20web%20para%20mi%20empresa%20de%20equipo%20para%20eventos." target="_blank" rel="noopener noreferrer" class="ol-side-cta-link">o escribir por WhatsApp →</a>
           </div>
 
         </aside>
@@ -629,99 +617,88 @@
           <!-- 01 CONTEXTO -->
           <section class="ol-case-section" id="contexto">
             <span class="ol-case-eyebrow">01 · Contexto del cliente</span>
-            <h2 class="ol-case-h2">Especialistas en seguridad para condominios y residenciales.</h2>
-            <p class="ol-case-lead">ORIGINS Private Security hace algo poco común en el sector: se dedica únicamente a comunidades residenciales. Nada de industria ni comercio —solo condominios verticales y horizontales, fraccionamientos y residenciales privados en la Ciudad de México y su Zona Metropolitana.</p>
-            <p class="ol-case-p">A diferencia de las empresas generalistas, ORIGINS no atiende industria ni comercio: cada protocolo, cada guardia y cada proceso están diseñados para la convivencia en comunidad. Sus <strong>guardias intramuros conocen a cada residente, dominan los protocolos de acceso y entienden que en un condominio la discreción y el trato profesional son tan importantes como la vigilancia misma</strong>.</p>
-            <p class="ol-case-p">La empresa opera con <strong>Permiso SSC 0102-15 vigente</strong>, póliza de responsabilidad civil y cumplimiento total de obligaciones laborales ante IMSS e INFONAVIT. Con más de 15 años de experiencia y más de 50 desarrollos protegidos, su comprador es muy específico: administradores de condominio, comités de vigilancia y desarrolladores inmobiliarios que evalúan con rigor antes de cambiar de proveedor.</p>
-
-            <figure class="ol-case-figure">
-              <div class="ol-case-figure-frame">
-                <picture>
-                  <source srcset="/img/seguridad-privada/origins/seguridad-privada-residencial-condominios-origins.avif" type="image/avif">
-                  <img src="/img/seguridad-privada/origins/seguridad-privada-residencial-condominios-origins.webp" alt="Guardias intramuros de seguridad privada residencial atendiendo a vecinos en un fraccionamiento de la CDMX" width="1280" height="720" loading="lazy" decoding="async">
-                </picture>
-              </div>
-              <figcaption class="ol-case-figure-caption">Guardias intramuros de ORIGINS en trato cercano con residentes: la especialización residencial que el sitio transmite desde el primer scroll.</figcaption>
-            </figure>
+            <h2 class="ol-case-h2">Especialista en bolas disco e iluminación para eventos.</h2>
+            <p class="ol-case-lead">BOLDIS renta, vende e instala bolas disco profesionales e iluminación para eventos en CDMX y Estado de México — con catálogo por tamaño, motores giratorios, luces LED RGB e instalación profesional incluida. No es un proveedor genérico de equipo: es un especialista mono-producto que domina la bola disco de principio a fin.</p>
+            <p class="ol-case-p">El cliente atiende a un decisor muy específico: <strong>novios y wedding planners, coordinadores de eventos corporativos, productores de conciertos, gerentes de antros y discotecas, y organizadores de XV años y fiestas temáticas</strong> que necesitan la bola disco exacta para su pista, montada a tiempo y lista para encender el momento.</p>
+            <p class="ol-case-p">Su operación cubre por completo la Ciudad de México y el Estado de México, con instalación incluida y cotización inmediata. Antes de este proyecto, la presencia digital de BOLDIS no comunicaba ni la profundidad de su catálogo por tamaño, ni la diferencia entre rentar y comprar, ni la ventaja de la instalación profesional incluida.</p>
 
             <figure class="ol-case-figure">
               <div class="ol-case-figure-frame">
                 <div class="mk">
-                  <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridad-privada.com.mx</span></div>
+                  <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">bolasdisco.com</span></div>
                   <div class="mk-view">
                     <div class="mk-nav">
-                      <span class="mk-logo">ORIGINS Private Security</span>
-                      <span class="mk-menu"><span>Inicio</span><span>Servicios</span><span>Zonas</span><span>Nosotros</span><span>Blog</span><span class="mk-cta">Cotizar</span></span>
+                      <span class="mk-logo">BOL<span style="font-weight:600;color:var(--mk-soft);font-size:.7em">DIS</span></span>
+                      <span class="mk-menu"><span>Catálogo</span><span>Renta</span><span>Venta</span><span>Cobertura</span><span>Contacto</span><span class="mk-cta">Cotizar por WhatsApp</span></span>
                     </div>
                     <div class="mk-hero">
                       <div class="mk-hb">
                         <div>
-                          <span class="mk-eyebrow">Permiso SSC 0102-15</span>
-                          <h3 class="mk-h">Empresa de seguridad privada para <span class="ac">condominios</span> en CDMX — guardias intramuros certificados SSC</h3>
-                          <p class="mk-sub">Control de accesos 24/7 y protocolos diseñados para tu comunidad residencial. Más de 50 desarrollos protegidos en CDMX y Estado de México.</p>
+                          <span class="mk-eyebrow">Especialista en bolas disco</span>
+                          <h3 class="mk-h">Bolas Disco e Iluminación para Eventos en <span class="ac">CDMX</span></h3>
+                          <p class="mk-sub">Renta y venta de bolas disco profesionales. Seis tamaños de 30 cm a 200 cm, motores giratorios, luces LED RGB e instalación profesional incluida en cada evento.</p>
                         </div>
                         <div>
-                          <p class="mk-hk">Especialistas en residencial</p>
-                          <p class="mk-hp">Más de 15 años protegiendo condominios verticales y horizontales, fraccionamientos y residenciales privados. Guardias intramuros que conocen a cada residente y dominan los protocolos de tu desarrollo. Lo que firmamos, lo cumplimos.</p>
+                          <p class="mk-hk">Acerca de la empresa</p>
+                          <p class="mk-hp">Rentamos y vendemos bolas disco de 30 cm, 50 cm, 80 cm, LED RGB 60 cm, Jumbo 150 cm y Gigante 200 cm. Motores giratorios, iluminación LED RGB e instalación profesional incluida. Cobertura total en Ciudad de México y Estado de México, con cotización inmediata por modelo y tipo de evento.</p>
                         </div>
                       </div>
                       <div class="mk-strip">
-                        <div><b><span>+</span>15</b><span class="l">Años</span></div>
-                        <div><b><span>+</span>50</b><span class="l">Condominios</span></div>
-                        <div><b>24/7</b><span class="l">Operación</span></div>
-                        <div><b>98<span>%</span></b><span class="l">Renovación</span></div>
+                        <div><b>6<span> tamaños</span></b><span class="l">Catálogo completo</span></div>
+                        <div><b>LED<span> RGB</span></b><span class="l">Iluminación inteligente</span></div>
+                        <div><b>Renta<span>/</span>Venta</b><span class="l">Modelo flexible</span></div>
                       </div>
                     </div>
                     <div class="mk-quick">
-                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/></svg></div><b>Guardias intramuros</b><span>Certificados SSC</span></div>
-                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><b>Control de accesos</b><span>24/7 residentes y visitas</span></div>
-                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div><b>Vigilancia CCTV</b><span>Monitoreo 24/7</span></div>
-                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/></svg></div><b>Monitoreo de alarmas</b><span>Central certificada UL</span></div>
-                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div><b>Zonas de cobertura</b><span>CDMX y Edomex</span></div>
-                      <div class="mk-qc cta"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></div><b>Evaluación gratis</b><span>Sin compromiso</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="6"/></svg></div><b>Pequeña</b><span>30 cm · íntimo</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/></svg></div><b>Grande</b><span>80 cm · premium</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7"/><path d="M12 5v14M5 12h14"/></svg></div><b>LED RGB</b><span>Multicolor 60 cm</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/></svg></div><b>Gigante</b><span>200 cm · mega</span></div>
+                      <div class="mk-qc"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 2l3 3M12 2L9 5"/><rect x="5" y="8" width="14" height="12" rx="2"/></svg></div><b>Instalación</b><span>Incluida</span></div>
+                      <div class="mk-qc cta"><div class="mk-ic"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></div><b>Cotizar Ahora</b><span>Renta o venta</span></div>
                     </div>
                   </div>
                 </div>
               </div>
-              <figcaption class="ol-case-figure-caption">Home del sitio: hero con propuesta de valor residencial, Permiso SSC, trayectoria (+15 años, +50 condominios, 98% renovación) y accesos rápidos a servicios y evaluación, comunicados desde el primer scroll.</figcaption>
+              <figcaption class="ol-case-figure-caption">Home del sitio: hero con la promesa "Bolas Disco e Iluminación para Eventos en CDMX", párrafo "acerca" con el catálogo por tamaño, instalación incluida y accesos rápidos a los modelos y a la cotización — comunicados desde el primer scroll.</figcaption>
             </figure>
           </section>
 
           <!-- 02 RETO -->
           <section class="ol-case-section" id="reto">
             <span class="ol-case-eyebrow">02 · El reto</span>
-            <h2 class="ol-case-h2">Transmitir especialización y cumplimiento a un comprador exigente.</h2>
-            <p class="ol-case-p">El administrador o el comité de vigilancia no llega al sitio buscando inspiración. Llega buscando respuestas concretas: <strong>¿se especializan en condominios o son generalistas?</strong>, <strong>¿sus guardias están certificados ante la SSC?</strong>, <strong>¿cumplen con sus obligaciones legales?</strong>, <strong>¿cubren mi zona y con quién hablo para una evaluación?</strong>.</p>
-            <p class="ol-case-p">El reto del proyecto fue diseñar un sitio que respondiera esas preguntas en los primeros segundos de navegación, transmitiendo seriedad institucional y un trato discreto y profesional —el tono que un condominio residencial espera de su proveedor de seguridad—.</p>
+            <h2 class="ol-case-h2">Comunicar un catálogo por tamaño sin parecer genérico.</h2>
+            <p class="ol-case-p">El decisor de una bola disco no llega al sitio buscando inspiración. Llega buscando respuestas concretas: <strong>¿qué tamaño necesito para mi evento?</strong>, <strong>¿puedo rentarla o comprarla?</strong>, <strong>¿la instalación está incluida?</strong>, <strong>¿llegan a mi zona en CDMX o Estado de México?</strong>.</p>
+            <p class="ol-case-p">El reto del proyecto fue diseñar un sitio que respondiera a esas cuatro preguntas en menos de quince segundos de navegación, comunicando un catálogo por tamaño —de 30 cm a 200 cm— y por tipo de evento, la diferencia entre renta y venta, la instalación incluida y la cobertura, sin verse como un proveedor genérico de equipo para fiestas.</p>
 
             <div class="ol-case-cards">
               <div class="ol-case-card">
                 <div class="icon">
-                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/></svg>
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg>
                 </div>
-                <h4>Especialización residencial</h4>
-                <p>Dejar claro, desde el hero, que ORIGINS trabaja exclusivamente con comunidades residenciales —no como eslogan, sino como eje de toda la propuesta de valor—.</p>
-              </div>
-              <div class="ol-case-card">
-                <div class="icon">
-                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.5v5c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11V6.5L12 2z"/><path d="M9 12l2 2 4-4"/></svg>
-                </div>
-                <h4>Cumplimiento visible</h4>
-                <p>Comunicar el Permiso SSC 0102-15, la póliza de responsabilidad civil y el cumplimiento ante IMSS-INFONAVIT como garantías exigibles, no como letra pequeña.</p>
+                <h4>Catálogo por tamaño</h4>
+                <p>Estructurar los seis tamaños de bola disco (30, 50, 80 cm, LED RGB 60 cm, Jumbo 150 y Gigante 200 cm) con su caso de uso por tipo de evento.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
                 </div>
-                <h4>Cobertura clara</h4>
-                <p>Hacer evidente la operación en alcaldías de CDMX y municipios del Estado de México para que el administrador valide cobertura antes de solicitar evaluación.</p>
+                <h4>Renta vs venta</h4>
+                <p>Hacer evidente que el cliente puede rentar para un evento o comprar su propio equipo, con un canal de cotización que distingue ambos caminos.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <h4>Instalación incluida</h4>
+                <p>Destacar la instalación profesional incluida como diferenciador real frente a la simple renta de equipo, comunicada con jerarquía visual.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
                 </div>
-                <h4>Canal directo</h4>
-                <p>Abrir un canal de evaluación sin costo con formulario pensado para el comité y un acceso paralelo por WhatsApp para resolver dudas de inmediato.</p>
+                <h4>Cobertura y canal directo</h4>
+                <p>Mostrar la cobertura total en CDMX y Estado de México y abrir un canal de cotización inmediata con WhatsApp y formularios B2B para corporativo y bodas.</p>
               </div>
             </div>
           </section>
@@ -729,39 +706,39 @@
           <!-- 03 ARQUITECTURA -->
           <section class="ol-case-section" id="arquitectura">
             <span class="ol-case-eyebrow">03 · Arquitectura del sitio</span>
-            <h2 class="ol-case-h2">Estructura pensada para el administrador del condominio.</h2>
-            <p class="ol-case-p">Antes de diseñar una sola pantalla se definió una arquitectura de información que resuelve el recorrido típico del decisor residencial: <strong>llega buscando un proveedor serio, valida especialización y certificaciones, confirma cobertura en su zona, entiende los servicios y las garantías, y abre canal para una evaluación sin costo</strong>.</p>
+            <h2 class="ol-case-h2">Estructura pensada para el decisor del evento.</h2>
+            <p class="ol-case-p">Antes de diseñar una sola pantalla, el equipo definió una arquitectura de información que resuelve el recorrido típico del decisor: <strong>llega buscando una bola disco para un evento concreto, ubica el tamaño correcto, decide entre rentar o comprar, valida que llegue a su zona con instalación incluida y abre canal para cotizar con fecha y sede</strong>.</p>
 
             <div class="ol-case-arch">
               <div class="ol-arch-step">
                 <p class="num">CAPA 01</p>
                 <h4>Home corporativa</h4>
-                <p>Hero con propuesta de valor residencial, Permiso SSC, indicadores de experiencia (años, comunidades, renovación) y acceso directo a servicios y evaluación.</p>
+                <p>Encabezado con la promesa de marca, catálogo por tamaño, instalación incluida y acceso directo a la cotización en renta o venta.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">CAPA 02</p>
-                <h4>Servicios</h4>
-                <p>Tres grupos —Seguridad Residencial, Tecnología y Monitoreo, Protección y Consultoría— cada uno con sus servicios explicados para el contexto del condominio.</p>
+                <h4>Catálogo por tamaño</h4>
+                <p>Cada tamaño (30, 50, 80 cm, LED RGB 60 cm, Jumbo 150 y Gigante 200 cm) con su caso de uso, motor giratorio e iluminación LED RGB.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">CAPA 03</p>
-                <h4>Zonas de cobertura</h4>
-                <p>Páginas por alcaldía y municipio (Miguel Hidalgo, Cuauhtémoc, Benito Juárez, Naucalpan, etc.) para que el administrador confirme cobertura y mejore la cercanía local.</p>
+                <h4>Renta y venta</h4>
+                <p>Sección que distingue el modelo de renta para un evento puntual del de venta para quien quiere su propio equipo.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">CAPA 04</p>
-                <h4>Nosotros</h4>
-                <p>Sección institucional con permisos, registros, pólizas y la forma de operar: supervisión documentada, bitácoras digitales y reportes a la administración.</p>
+                <h4>Aplicaciones por evento</h4>
+                <p>Bodas, XV años, eventos corporativos, fiestas temáticas, conciertos, antros, eventos privados y sesiones de foto y video.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">CAPA 05</p>
-                <h4>Garantías y proceso</h4>
-                <p>Garantías operativas exigibles por escrito (reemplazo, supervisión, cumplimiento) y el proceso de arranque, del diagnóstico a la operación continua.</p>
+                <h4>Zonas de servicio</h4>
+                <p>Cobertura total en CDMX y Estado de México, con alcaldías y municipios del área metropolitana e instalación incluida.</p>
               </div>
               <div class="ol-arch-step">
                 <p class="num">CAPA 06</p>
-                <h4>Contacto y emergencias</h4>
-                <p>Formulario de evaluación sin costo, WhatsApp y teléfono visibles, más un directorio de emergencias como recurso de valor para la comunidad.</p>
+                <h4>Proceso, FAQ y cotización</h4>
+                <p>Proceso de renta en cuatro pasos, preguntas frecuentes y formulario que distingue renta de venta, más acceso paralelo por WhatsApp.</p>
               </div>
             </div>
           </section>
@@ -769,91 +746,92 @@
           <!-- 04 DISEÑO -->
           <section class="ol-case-section" id="diseno">
             <span class="ol-case-eyebrow">04 · Diseño y sistema visual</span>
-            <h2 class="ol-case-h2">Identidad seria y discreta, sin clichés de seguridad.</h2>
-            <p class="ol-case-p">El diseño parte de una premisa: <strong>el comité de un condominio no se convence con candados, escudos estridentes ni estética militar</strong>. Se convence con tipografía limpia, jerarquía clara, datos verificables y un tono profesional y discreto —el mismo que espera del guardia que cuidará su comunidad—.</p>
-            <p class="ol-case-p">Cada componente —encabezados, tarjetas de servicio, badges de certificación, indicadores de cobertura, formularios— se diseñó con el mismo lenguaje visual, garantizando consistencia entre la home, las páginas de servicio y las de zona.</p>
+            <h2 class="ol-case-h2">Rojo sobre negro: la energía de la pista de baile.</h2>
+            <p class="ol-case-p">El diseño parte de una premisa simple: <strong>una bola disco se vende con energía, no con frialdad</strong>. La identidad usa rojo sobre negro, contrastes intensos y fotografía de producto en eventos reales que deja a la bola disco encendida como protagonista. El rojo aparece donde aporta jerarquía —acentos, CTA, badges— sobre una base oscura que evoca la pista de baile.</p>
+            <p class="ol-case-p">Cada componente del sistema —encabezados, tarjetas de tamaño, badges de cobertura, formularios de cotización, secciones de aplicaciones— se diseñó con el mismo lenguaje, garantizando consistencia entre la home, el catálogo y las páginas de cada tamaño.</p>
 
             <div class="ol-case-cards">
               <div class="ol-case-card">
                 <div class="icon">
-                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
                 </div>
-                <h4>Confianza, no alarma</h4>
-                <p>Paleta sobria sobre base oscura, con un azul corporativo como acento de confianza. Nada que genere ansiedad; todo que transmita control y seriedad.</p>
+                <h4>Tipografía Inter</h4>
+                <p>Familia geométrica neutral con excelente legibilidad en pantallas y soporte completo para tamaños, medidas y unidades del catálogo.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
-                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.5v5c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11V6.5L12 2z"/></svg>
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="10.5" r="2.5"/><circle cx="8.5" cy="7.5" r="2.5"/><circle cx="6.5" cy="12.5" r="2.5"/><path d="M12 22a10 10 0 1 1 9.96-9.13.5.5 0 0 1-.5.54H17a3 3 0 0 0-3 3v.5a2 2 0 0 1-2 2"/></svg>
                 </div>
-                <h4>Badges de certificación</h4>
-                <p>El Permiso SSC y los registros se tratan como sellos visuales jerarquizados, presentes donde el decisor los necesita para validar.</p>
+                <h4>Paleta rojo sobre negro</h4>
+                <p>Rojo como acento de marca y jerarquía, fondos oscuros para presentar el producto encendido, contrastes altos para tamaños y datos.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
-                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></svg>
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
                 </div>
-                <h4>Tarjetas de servicio</h4>
-                <p>Sistema de tarjetas uniforme para guardias, control de accesos, monitoreo y protección — fácil de leer y de comparar para el comité.</p>
+                <h4>Sistema de tarjetas</h4>
+                <p>Componente único de tarjeta de tamaño, reutilizable en home, listados de catálogo y aplicaciones por evento — coherencia total.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
-                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                 </div>
-                <h4>Cercanía local</h4>
-                <p>Cada zona se comunica con nombre propio (alcaldía / municipio), reforzando que ORIGINS opera cerca y conoce el contexto de cada comunidad.</p>
+                <h4>Badges de respaldo</h4>
+                <p>Componente específico para destacar instalación incluida, LED RGB y cobertura CDMX/Edomex en cada tamaño — refuerza confianza sin saturar.</p>
               </div>
             </div>
           </section>
 
-          <!-- 05 SERVICIOS -->
-          <section class="ol-case-section" id="servicios">
-            <span class="ol-case-eyebrow">05 · Servicios del cliente</span>
-            <h2 class="ol-case-h2">Cada servicio presentado en el lenguaje del condominio.</h2>
-            <p class="ol-case-p">El núcleo del sitio es la oferta de servicios, organizada en tres grupos que cubren la seguridad integral de una comunidad residencial. Cada servicio se explica con el detalle que el administrador necesita para evaluar, manteniendo siempre la misma estructura para facilitar la comparación.</p>
+          <!-- 05 CATÁLOGO -->
+          <section class="ol-case-section" id="catalogo">
+            <span class="ol-case-eyebrow">05 · Catálogo de bolas disco</span>
+            <h2 class="ol-case-h2">Producto presentado con la profundidad que el decisor necesita.</h2>
+            <p class="ol-case-p">El núcleo del sitio es el catálogo. Cada tamaño de bola disco está documentado con la información que el decisor necesita para elegir por sede, tipo de evento y aforo. La estructura de cada ficha sigue siempre el mismo patrón, lo que permite comparar tamaños sin tener que reaprender la página cada vez.</p>
+
             <ul class="ol-case-list">
-              <li><strong>Guardias intramuros:</strong> personal certificado SSC con verificación de antecedentes y exámenes psicométricos, capacitado específicamente para entornos residenciales.</li>
-              <li><strong>Control de accesos:</strong> filtros de entrada 24/7 para residentes, visitantes y proveedores, con bitácoras digitales de incidencias.</li>
-              <li><strong>Patrullaje y rondines:</strong> recorridos documentados dentro del desarrollo, con protocolos definidos para condominios verticales y horizontales.</li>
-              <li><strong>Vigilancia CCTV y monitoreo 24/7:</strong> videovigilancia en tiempo real y monitoreo de alarmas desde central certificada UL operativa todo el día.</li>
-              <li><strong>Tecnología de seguridad:</strong> alarmas, sistemas integrados y rastreo GPS satelital como refuerzo de la seguridad física.</li>
-              <li><strong>Protección ejecutiva y consultoría:</strong> protección personal y asesoría de seguridad para residentes y comités que lo requieren.</li>
+              <li><strong>Pequeña 30 cm:</strong> eventos íntimos y decoración — la chispa justa para reuniones y espacios pequeños.</li>
+              <li><strong>Mediana 50 cm:</strong> bodas y eventos medianos, con presencia escénica sin saturar el salón.</li>
+              <li><strong>Grande 80 cm:</strong> bodas premium y XV años, protagonista absoluta de la pista de baile.</li>
+              <li><strong>LED RGB 60 cm:</strong> tecnología inteligente multicolor con iluminación LED RGB programable para escenas dinámicas.</li>
+              <li><strong>Jumbo 150 cm:</strong> conciertos y eventos corporativos de gran escala, visible desde toda la sede.</li>
+              <li><strong>Gigante 200 cm:</strong> estadios y mega eventos — impacto visual a gran distancia, con motor giratorio profesional.</li>
             </ul>
           </section>
 
           <!-- 06 CONVERSIÓN -->
           <section class="ol-case-section" id="conversion">
-            <span class="ol-case-eyebrow">06 · Conversión B2B</span>
-            <h2 class="ol-case-h2">Un canal directo entre el comité y el equipo de ORIGINS.</h2>
-            <p class="ol-case-p">Un sitio de servicios de seguridad no se mide por carrito ni checkout: se mide por <strong>la calidad de las solicitudes de evaluación que llegan al equipo</strong>. Por eso el sitio integra un sistema de conversión pensado para el decisor residencial desde la primera pantalla.</p>
+            <span class="ol-case-eyebrow">06 · Conversión renta + venta</span>
+            <h2 class="ol-case-h2">Un canal directo entre el decisor y el equipo de BOLDIS.</h2>
+            <p class="ol-case-p">Un sitio de especialista con doble modelo no se mide por carrito de compra: se mide por <strong>calidad de las cotizaciones que llegan al equipo, bien clasificadas entre renta y venta</strong>. Por eso el sitio de BOLDIS integra un sistema de conversión pensado para ambos caminos desde la primera pantalla.</p>
 
             <div class="ol-case-cards">
               <div class="ol-case-card">
                 <div class="icon">
-                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="14" x2="15" y2="14"/></svg>
                 </div>
-                <h4>Evaluación sin costo</h4>
-                <p>CTA principal claro: "Solicitar evaluación gratis", sin fricción ni compromiso de firma — la oferta que el administrador quiere escuchar primero.</p>
+                <h4>Cotización por modelo y evento</h4>
+                <p>Campos relevantes para el evento: tamaño de bola disco, renta o venta, fecha, sede y ciudad — clasificados desde el envío para una respuesta inmediata.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg>
                 </div>
                 <h4>WhatsApp directo</h4>
-                <p>Canal paralelo siempre visible para dudas rápidas del comité, con respuesta comprometida en menos de 24 horas.</p>
+                <p>Acceso directo por WhatsApp para coordinadores con poco tiempo — el botón persistente acompaña al usuario en todo el recorrido sin invadir el contenido.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
-                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
                 </div>
-                <h4>Formulario para el comité</h4>
-                <p>Campos pensados para el contexto residencial (nombre del condominio, zona o alcaldía y servicio de interés) que llegan calificados al equipo comercial.</p>
+                <h4>Formularios B2B</h4>
+                <p>Formularios B2B para eventos corporativos y bodas, con campos de empresa o planner, tipo de evento, fecha y sede — listos para cotizar a la medida.</p>
               </div>
               <div class="ol-case-card">
                 <div class="icon">
-                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                 </div>
-                <h4>Respuesta garantizada</h4>
-                <p>Promesa de propuesta personalizada en menos de 24 horas, comunicada junto al formulario para reducir la incertidumbre del decisor.</p>
+                <h4>Correo institucional</h4>
+                <p>Correo de contacto expuesto sin ofuscamiento, listo para que áreas de compras de empresa y wedding planners envíen su requerimiento con tamaño y fecha.</p>
               </div>
             </div>
           </section>
@@ -861,8 +839,8 @@
           <!-- 07 TECNOLOGÍA -->
           <section class="ol-case-section" id="tecnologia">
             <span class="ol-case-eyebrow">07 · Tecnología y rendimiento</span>
-            <h2 class="ol-case-h2">Velocidad y estabilidad, sin frameworks pesados.</h2>
-            <p class="ol-case-p">El sitio se construyó sobre una base ligera y moderna, priorizando <strong>tiempos de carga, estabilidad visual y eficiencia en móvil</strong> —donde el administrador suele revisar proveedores—. La arquitectura favorece HTML estático servido desde CDN, con interactividad selectiva sólo donde aporta valor.</p>
+            <h2 class="ol-case-h2">Velocidad extrema, sin frameworks pesados.</h2>
+            <p class="ol-case-p">El sitio se construyó sobre una base ligera y moderna, priorizando <strong>tiempos de carga, estabilidad visual y eficiencia en cualquier red</strong> —donde muchas veces el novio o el coordinador navega desde un móvil, entre montajes, revisando catálogo a contrarreloj—. La arquitectura técnica favorece HTML estático servido desde CDN, con interactividad selectiva sólo donde aporta valor.</p>
 
             <div class="ol-case-spec">
               <dl>
@@ -884,7 +862,11 @@
                 </div>
                 <div class="ol-case-spec-row">
                   <dt>Datos estructurados</dt>
-                  <dd>Schema.org en JSON-LD: Organization, WebSite, BreadcrumbList y SecurityService según corresponde a cada plantilla.</dd>
+                  <dd>Schema.org en JSON-LD enriquecido: Organization, WebSite, BreadcrumbList, LocalBusiness con datos geográficos y catálogo de producto, y FAQPage según corresponde.</dd>
+                </div>
+                <div class="ol-case-spec-row">
+                  <dt>Datos geográficos</dt>
+                  <dd>Cobertura CDMX y Estado de México declarada con <code>areaServed</code> y coordenadas, para que la operación local quede clara en buscadores y agregadores.</dd>
                 </div>
                 <div class="ol-case-spec-row">
                   <dt>Accesibilidad</dt>
@@ -906,38 +888,38 @@
           <section class="ol-case-section" id="proceso">
             <span class="ol-case-eyebrow">08 · Proceso de trabajo</span>
             <h2 class="ol-case-h2">De la conversación inicial al sitio entregado.</h2>
-            <p class="ol-case-p">El proyecto siguió la metodología estándar de OrigenLab: descubrimiento → estrategia → diseño → desarrollo → pruebas → lanzamiento → acompañamiento. Cada etapa se documenta con entregables específicos para que el cliente sepa siempre qué espera y qué recibe.</p>
+            <p class="ol-case-p">El proyecto siguió la metodología estándar de OrigenLab: descubrimiento → arquitectura de catálogo → diseño → desarrollo → pruebas → lanzamiento → acompañamiento, con calendario por escrito desde el inicio. En paralelo, el sitio refleja el proceso de renta de BOLDIS en cuatro pasos —cotización, selección de modelo, confirmación de fecha y sede, e instalación el día del evento— para que el decisor sepa qué espera de cada etapa.</p>
 
             <div class="ol-case-arch">
               <div class="ol-arch-step">
-                <p class="num">PASO 01</p>
+                <p class="num">FASE 01</p>
                 <h4>Descubrimiento</h4>
-                <p>Entendimos el modelo de ORIGINS: especialización residencial, certificaciones, zonas de operación y el perfil del comprador (administrador y comité).</p>
+                <p>Sesión inicial con el equipo de BOLDIS: catálogo por tamaño, perfil de decisor, diferencia renta/venta, instalación incluida y referencias del sector eventos.</p>
               </div>
               <div class="ol-arch-step">
-                <p class="num">PASO 02</p>
-                <h4>Estrategia de contenido</h4>
-                <p>Definimos la arquitectura, los mensajes clave por sección y el recorrido de conversión hacia la evaluación sin costo.</p>
+                <p class="num">FASE 02</p>
+                <h4>Arquitectura de catálogo</h4>
+                <p>Mapa de contenidos, estructura del catálogo por tamaño, definición de las páginas de modelo, jerarquía de mensajes y estrategia de conversión renta + venta.</p>
               </div>
               <div class="ol-arch-step">
-                <p class="num">PASO 03</p>
+                <p class="num">FASE 03</p>
                 <h4>Diseño visual</h4>
-                <p>Sistema de componentes serio y discreto, con badges de certificación y tarjetas de servicio aprobadas antes de programar.</p>
+                <p>Sistema de design tokens rojo sobre negro, componentes base (header, tarjetas, fichas, formularios) y prototipos de las plantillas principales para validación.</p>
               </div>
               <div class="ol-arch-step">
-                <p class="num">PASO 04</p>
-                <h4>Desarrollo</h4>
-                <p>Construcción en Astro con HTML estático, componentes reutilizables y datos estructurados Schema.org.</p>
+                <p class="num">FASE 04</p>
+                <h4>Desarrollo a medida</h4>
+                <p>Construcción modular sobre Astro con componentes reutilizables, integración del catálogo por tamaño, formularios de cotización y datos estructurados.</p>
               </div>
               <div class="ol-arch-step">
-                <p class="num">PASO 05</p>
+                <p class="num">FASE 05</p>
                 <h4>Pruebas</h4>
-                <p>Revisión de rendimiento, accesibilidad y comportamiento responsivo en entorno de pruebas, con avances visibles para el cliente.</p>
+                <p>Auditoría técnica, validación responsiva, revisión de accesibilidad, pruebas cruzadas en navegadores y verificación de formularios.</p>
               </div>
               <div class="ol-arch-step">
-                <p class="num">PASO 06</p>
-                <h4>Lanzamiento y acompañamiento</h4>
-                <p>Publicación bajo dominio propio con SSL y CDN, más documentación y acompañamiento para mantener y crecer el sitio.</p>
+                <p class="num">FASE 06</p>
+                <h4>Lanzamiento</h4>
+                <p>Configuración de dominio, certificado SSL, despliegue en CDN y entrega de credenciales, junto con acompañamiento al equipo del cliente.</p>
               </div>
             </div>
           </section>
@@ -945,202 +927,189 @@
           <!-- 09 GALERÍA -->
           <section class="ol-case-section" id="galeria">
             <span class="ol-case-eyebrow">09 · Galería del sitio</span>
-            <h2 class="ol-case-h2">Recorrido por el sitio en operación.</h2>
-            <p class="ol-case-p">Siete pantallas del sitio de ORIGINS —servicios, diferenciadores, perfiles atendidos, trayectoria, zonas de cobertura, aliados del sector y evaluación— reproducidas con el mismo sistema de componentes y la misma jerarquía visual que ve el administrador. Cada pantalla está pensada para llevar al comité del interés a la evaluación gratuita.</p>
+            <h2 class="ol-case-h2">Pantallas y secciones del sitio en operación.</h2>
+            <p class="ol-case-p">Seis pantallas del sitio de BOLDIS —home, catálogo por tamaño, promesa y cifras, cobertura, testimonios por rol y cotización— reproducidas con el mismo sistema de componentes y la misma jerarquía visual del sitio en operación. Cada pantalla está pensada para llevar al decisor del interés a la solicitud de cotización, en renta o en venta.</p>
 
             <div class="ol-case-gallery">
 
-              <!-- 01 · SERVICIOS -->
+              <!-- 01 · HOME -->
               <figure class="ol-case-figure" style="grid-column:1/-1">
                 <div class="ol-case-figure-frame">
                   <div class="mk">
-                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridad-privada.com.mx/#servicios</span></div>
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">bolasdisco.com</span></div>
                     <div class="mk-view">
-                      <h3 class="mk-sect-h">Cómo protegemos tu condominio</h3>
-                      <p class="mk-sect-sub">Seguridad residencial, tecnología y monitoreo, y protección especializada — operados como un solo sistema con su detalle de servicios incluidos.</p>
-                      <div class="mk-cards">
-                        <div class="mk-card">
-                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/></svg></div>
-                          <p class="mk-ct">Seguridad residencial</p>
-                          <p class="mk-inc-k">Incluye</p>
-                          <div class="mk-inc"><span>Guardias intramuros</span><span>Control de accesos</span><span>Patrullaje y rondines</span><span>Certificados SSC</span></div>
+                      <div class="mk-grid2">
+                        <div>
+                          <span class="mk-eyebrow">Especialista en bolas disco</span>
+                          <h3 class="mk-h">Bolas Disco e Iluminación para Eventos en <span class="ac">CDMX</span></h3>
+                          <p class="mk-sub">Renta y venta de bolas disco profesionales. Seis tamaños, motores giratorios, luces LED RGB e instalación profesional incluida en cada evento.</p>
+                          <ul class="mk-bul" style="margin-top:.8rem">
+                            <li>Seis tamaños: de 30 cm para íntimo a 200 cm para mega eventos</li>
+                            <li>Tecnología LED RGB multicolor disponible</li>
+                            <li>Instalación profesional incluida el día del evento</li>
+                            <li>Cobertura total en CDMX y Estado de México</li>
+                          </ul>
                         </div>
-                        <div class="mk-card">
-                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
-                          <p class="mk-ct">Tecnología y monitoreo</p>
-                          <p class="mk-inc-k">Incluye</p>
-                          <div class="mk-inc"><span>Vigilancia remota CCTV</span><span>Monitoreo de alarmas</span><span>Central certificada UL</span><span>Rastreo GPS satelital</span></div>
-                        </div>
-                        <div class="mk-card">
-                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg></div>
-                          <p class="mk-ct">Protección y consultoría</p>
-                          <p class="mk-inc-k">Incluye</p>
-                          <div class="mk-inc"><span>Protección ejecutiva</span><span>Consultoría de seguridad</span><span>Protocolos de emergencia</span><span>Atención al comité</span></div>
+                        <div class="mk-form">
+                          <div class="mk-trust" style="margin-bottom:.8rem;grid-template-columns:repeat(2,1fr)">
+                            <div><b>6</b><span>tamaños</span></div>
+                            <div><b>LED RGB</b><span>iluminación</span></div>
+                            <div><b>Incluida</b><span>instalación</span></div>
+                            <div><b>CDMX</b><span>+ Edomex</span></div>
+                          </div>
+                          <div class="mk-submit">Cotizar mi bola disco →</div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <figcaption class="ol-case-figure-caption">01 · Servicios — los tres grupos de seguridad con su detalle de servicios incluidos, comparables de un vistazo.</figcaption>
+                <figcaption class="ol-case-figure-caption">01 · Home — la promesa de marca "Bolas Disco e Iluminación para Eventos en CDMX", con el catálogo por tamaño, respaldo de cifras y acceso a cotización visible de inmediato.</figcaption>
               </figure>
 
-              <!-- 02 · DIFERENCIADORES -->
+              <!-- 02 · CATÁLOGO POR TAMAÑO -->
               <figure class="ol-case-figure" style="grid-column:1/-1">
                 <div class="ol-case-figure-frame">
                   <div class="mk">
-                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridad-privada.com.mx/#nosotros</span></div>
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">bolasdisco.com/catalogo</span></div>
                     <div class="mk-view">
-                      <h3 class="mk-sect-h">¿Por qué los comités eligen ORIGINS?</h3>
-                      <p class="mk-sect-sub">Especialización 100% residencial — no somos generalistas, y eso se nota desde el primer día.</p>
-                      <div class="mk-diff">
-                        <div class="mk-dcard">
-                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.5v5c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11V6.5L12 2z"/><path d="M9 12l2 2 4-4"/></svg></div>
-                          <b>Permiso SSC vigente</b>
-                          <p>Permiso SSC 0102-15 vigente, Ley Federal de Seguridad Privada y registro ante Secretaría de Economía.</p>
-                          <span class="mk-dlink">Registro y permisos →</span>
+                      <h3 class="mk-sect-h">Catálogo de bolas disco por tamaño</h3>
+                      <p class="mk-sect-sub">Seis tamaños para cada tipo de evento. Selecciona un modelo para conocer su caso de uso y solicitar cotización en renta o venta.</p>
+                      <div class="mk-cards" style="grid-template-columns:repeat(3,1fr)">
+                        <div class="mk-card">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="6"/></svg></div>
+                          <p class="mk-ct">Pequeña 30 cm</p>
+                          <p class="mk-inc-k">Ideal para</p>
+                          <div class="mk-inc"><span>Eventos íntimos</span><span>Decoración</span><span>Renta o venta</span></div>
                         </div>
-                        <div class="mk-dcard">
-                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
-                          <b>Personal certificado</b>
-                          <p>Verificación de antecedentes, exámenes psicométricos y capacitación continua de cada guardia SSC.</p>
-                          <span class="mk-dlink">Conocer al equipo →</span>
+                        <div class="mk-card">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7"/></svg></div>
+                          <p class="mk-ct">Mediana 50 cm</p>
+                          <p class="mk-inc-k">Ideal para</p>
+                          <div class="mk-inc"><span>Bodas</span><span>Eventos medianos</span><span>Renta o venta</span></div>
                         </div>
-                        <div class="mk-dcard">
-                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg></div>
-                          <b>Cumplimiento legal</b>
-                          <p>Alta IMSS-INFONAVIT, póliza de responsabilidad civil y facturación fiscal completa.</p>
-                          <span class="mk-dlink">Ver cumplimiento →</span>
+                        <div class="mk-card">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/></svg></div>
+                          <p class="mk-ct">Grande 80 cm</p>
+                          <p class="mk-inc-k">Ideal para</p>
+                          <div class="mk-inc"><span>Bodas premium</span><span>XV años</span><span>Renta o venta</span></div>
                         </div>
-                        <div class="mk-dcard">
-                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></div>
-                          <b>Supervisión y calidad</b>
-                          <p>Supervisión semanal in situ, bitácora digital de incidencias y reportes mensuales a la administración.</p>
-                          <span class="mk-dlink">Cómo trabajamos →</span>
+                        <div class="mk-card">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7"/><path d="M12 5v14M5 12h14"/></svg></div>
+                          <p class="mk-ct">LED RGB 60 cm</p>
+                          <p class="mk-inc-k">Ideal para</p>
+                          <div class="mk-inc"><span>Multicolor</span><span>Escenas dinámicas</span><span>Renta o venta</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/></svg></div>
+                          <p class="mk-ct">Jumbo 150 cm</p>
+                          <p class="mk-inc-k">Ideal para</p>
+                          <div class="mk-inc"><span>Conciertos</span><span>Corporativos</span><span>Renta o venta</span></div>
+                        </div>
+                        <div class="mk-card">
+                          <div class="mk-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg></div>
+                          <p class="mk-ct">Gigante 200 cm</p>
+                          <p class="mk-inc-k">Ideal para</p>
+                          <div class="mk-inc"><span>Estadios</span><span>Mega eventos</span><span>Renta o venta</span></div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <figcaption class="ol-case-figure-caption">02 · Diferenciadores — los cuatro pilares de confianza: permisos, personal, cumplimiento y supervisión documentada.</figcaption>
+                <figcaption class="ol-case-figure-caption">02 · Catálogo — los seis tamaños de bola disco con su caso de uso por tipo de evento, comparables de un vistazo por el decisor.</figcaption>
               </figure>
 
-              <!-- 03 · PERFILES ATENDIDOS -->
+              <!-- 03 · PROMESA / CIFRAS -->
               <figure class="ol-case-figure" style="grid-column:1/-1">
                 <div class="ol-case-figure-frame">
                   <div class="mk">
-                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridad-privada.com.mx/#para-quien</span></div>
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">bolasdisco.com/#por-que-boldis</span></div>
                     <div class="mk-view">
-                      <h3 class="mk-sect-h">Seguridad adaptada a cada responsabilidad</h3>
-                      <p class="mk-sect-sub">Administradores, comités y desarrolladores tienen necesidades distintas — atención diferenciada, no plantilla genérica.</p>
-                      <div class="mk-sect-cards" style="grid-template-columns:repeat(3,1fr)">
-                        <div class="mk-scard"><span class="k">Administración</span><b>Administradores de condominio</b><p>Bitácoras digitales, reportes mensuales y un canal directo con supervisión.</p><span class="v">Ver propuesta →</span></div>
-                        <div class="mk-scard"><span class="k">Vecinos</span><b>Comités vecinales</b><p>Transparencia operativa y guardias que entienden la dinámica de la comunidad.</p><span class="v">Ver propuesta →</span></div>
-                        <div class="mk-scard"><span class="k">Obra nueva</span><b>Desarrolladores inmobiliarios</b><p>Protocolos que escalan del arranque de obra hasta la entrega final del condominio.</p><span class="v">Ver propuesta →</span></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <figcaption class="ol-case-figure-caption">03 · Perfiles atendidos — el sitio segmenta por tipo de decisor para que cada uno se reconozca.</figcaption>
-              </figure>
-
-              <!-- 04 · TRAYECTORIA -->
-              <figure class="ol-case-figure">
-                <div class="ol-case-figure-frame">
-                  <div class="mk">
-                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridad-privada.com.mx/nosotros</span></div>
-                    <div class="mk-view">
-                      <h3 class="mk-sect-h">Trayectoria que respalda</h3>
-                      <p class="mk-sect-sub">Más de quince años cuidando comunidades residenciales, con números verificables.</p>
+                      <h3 class="mk-sect-h">Por qué elegir a BOLDIS</h3>
+                      <p class="mk-sect-sub">Servicio transparente y profesional, calidad garantizada e instalación incluida. Catálogo completo por tamaño con cobertura total en CDMX y Estado de México.</p>
                       <div class="mk-stats">
-                        <div class="mk-stat"><b>+15</b><span>Años de experiencia</span></div>
-                        <div class="mk-stat"><b>+50</b><span>Condominios protegidos</span></div>
-                        <div class="mk-stat"><b>98%</b><span>Tasa de renovación</span></div>
-                        <div class="mk-stat"><b>24/7</b><span>Operación continua</span></div>
+                        <div class="mk-stat"><b>Incluida</b><span>Instalación profesional</span></div>
+                        <div class="mk-stat"><b>LED RGB</b><span>Iluminación inteligente</span></div>
+                        <div class="mk-stat"><b>CDMX + Edomex</b><span>Cobertura total</span></div>
+                        <div class="mk-stat"><b>Renta y venta</b><span>Modelo flexible</span></div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <figcaption class="ol-case-figure-caption">04 · Trayectoria — cifras al frente como argumento de continuidad operativa.</figcaption>
+                <figcaption class="ol-case-figure-caption">03 · Promesa — las señales que el decisor valora: instalación incluida, iluminación LED RGB, cobertura total y modelo flexible de renta y venta.</figcaption>
               </figure>
 
-              <!-- 05 · COBERTURA -->
+              <!-- 04 · COBERTURA -->
               <figure class="ol-case-figure">
                 <div class="ol-case-figure-frame">
                   <div class="mk">
-                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridad-privada.com.mx/zonas</span></div>
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">bolasdisco.com/#cobertura</span></div>
                     <div class="mk-view">
-                      <h3 class="mk-sect-h">Seguridad en CDMX y Estado de México</h3>
-                      <p class="mk-sect-sub">Cobertura en las principales alcaldías y municipios conurbados.</p>
+                      <h3 class="mk-sect-h">Cobertura total CDMX y Estado de México</h3>
+                      <p class="mk-sect-sub">Servicio en toda la Ciudad de México y el Estado de México, con instalación incluida.</p>
                       <div class="mk-chips">
-                        <span class="mk-chip on">Del Valle</span><span class="mk-chip on">Nápoles</span><span class="mk-chip on">Santa Fe</span><span class="mk-chip">Pedregal</span><span class="mk-chip">Coyoacán</span><span class="mk-chip">Tlalpan</span><span class="mk-chip">Naucalpan</span><span class="mk-chip">Interlomas</span><span class="mk-chip">Satélite</span><span class="mk-chip">Atizapán</span><span class="mk-chip">Huixquilucan</span><span class="mk-chip">Metepec</span>
+                        <span class="mk-chip on">CDMX</span><span class="mk-chip">Estado de México</span><span class="mk-chip">Naucalpan</span><span class="mk-chip">Tlalnepantla</span><span class="mk-chip">Huixquilucan</span><span class="mk-chip">Instalación incluida</span>
                       </div>
                     </div>
                   </div>
                 </div>
-                <figcaption class="ol-case-figure-caption">05 · Zonas — cobertura por colonia y municipio para validar operación cercana.</figcaption>
+                <figcaption class="ol-case-figure-caption">04 · Cobertura — CDMX y Estado de México con alcaldías y municipios del área metropolitana, comunicados para validar el servicio antes de cotizar.</figcaption>
               </figure>
 
-              <!-- 06 · ALIADOS DEL SECTOR -->
-              <figure class="ol-case-figure" style="grid-column:1/-1">
+              <!-- 05 · TESTIMONIOS -->
+              <figure class="ol-case-figure">
                 <div class="ol-case-figure-frame">
                   <div class="mk">
-                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridad-privada.com.mx/#casos</span></div>
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">bolasdisco.com/#testimonios</span></div>
                     <div class="mk-view">
-                      <h3 class="mk-sect-h">Lo que dicen los aliados del sector</h3>
-                      <p class="mk-sect-sub">Empresas del sector que refieren a ORIGINS para seguridad de condominios y residenciales en CDMX y Edomex.</p>
-                      <div class="mk-tcards">
+                      <h3 class="mk-sect-h">Lo que dicen nuestros clientes</h3>
+                      <p class="mk-sect-sub">Decisores de eventos de todo el Valle de México que confían en BOLDIS para encender su pista.</p>
+                      <div class="mk-tcards" style="grid-template-columns:1fr">
                         <div class="mk-tcard">
-                          <span class="mk-ally">Empresa verificada</span>
-                          <div class="mk-trow"><span class="mk-av">SP</span><span><span class="mk-tn">Equipo SEPRICO</span><br><span class="mk-tloc">Seguridad para condominios</span></span></div>
+                          <div class="mk-trow"><span class="mk-av">WP</span><span><span class="mk-tn">Wedding planner</span><br><span class="mk-tloc">Boda en jardín</span></span></div>
                           <div class="mk-stars">★★★★★</div>
-                          <p class="mk-quote">"Compartimos el enfoque de ORIGINS: seguridad especializada para condominios, no soluciones genéricas. Recurrimos a ORIGINS por su cumplimiento normativo y el nivel de sus guardias SSC."</p>
-                          <p class="mk-dom">seguridadprivadacondominios.com</p>
+                          <p class="mk-quote">"Rentamos la bola disco grande con LED RGB. La instalaron a tiempo y la pista quedó justo como la imaginamos para los novios."</p>
                         </div>
                         <div class="mk-tcard">
-                          <span class="mk-ally">Empresa verificada</span>
-                          <div class="mk-trow"><span class="mk-av">SM</span><span><span class="mk-tn">Equipo SeguridadPrivadaMX</span><br><span class="mk-tloc">Seguridad privada para condominios CDMX</span></span></div>
+                          <div class="mk-trow"><span class="mk-av">CE</span><span><span class="mk-tn">Coordinador</span><br><span class="mk-tloc">Evento corporativo</span></span></div>
                           <div class="mk-stars">★★★★★</div>
-                          <p class="mk-quote">"Compartimos la misma filosofía: guardias certificados SSC que entienden la operación real de un condominio. La coordinación con el equipo de ORIGINS es fluida y profesional."</p>
-                          <p class="mk-dom">seguridadprivadamx.com</p>
+                          <p class="mk-quote">"Para nuestra fiesta de fin de año pedimos la Jumbo. Instalación incluida, cotización clara y todo funcionando desde el primer momento."</p>
                         </div>
                         <div class="mk-tcard">
-                          <span class="mk-ally">Empresa verificada</span>
-                          <div class="mk-trow"><span class="mk-av">SE</span><span><span class="mk-tn">Equipo SeguridadEventos</span><br><span class="mk-tloc">Empresa de seguridad para eventos</span></span></div>
+                          <div class="mk-trow"><span class="mk-av">PR</span><span><span class="mk-tn">Productor</span><br><span class="mk-tloc">Concierto</span></span></div>
                           <div class="mk-stars">★★★★★</div>
-                          <p class="mk-quote">"Cuando un cliente necesita seguridad privada permanente en CDMX, ORIGINS es el aliado que recomendamos sin dudar por su especialización residencial."</p>
-                          <p class="mk-dom">seguridadeventos.com</p>
+                          <p class="mk-quote">"La Gigante de 200 cm se veía desde todo el recinto. Servicio profesional de principio a fin y cobertura sin problema en Edomex."</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <figcaption class="ol-case-figure-caption">06 · Aliados — prueba social B2B: empresas verificadas del sector que derivan clientes a ORIGINS.</figcaption>
+                <figcaption class="ol-case-figure-caption">05 · Testimonios — prueba social por rol (wedding planner, coordinador corporativo, productor de concierto) que respalda la decisión del cliente.</figcaption>
               </figure>
 
-              <!-- 07 · EVALUACIÓN -->
+              <!-- 06 · COTIZACIÓN -->
               <figure class="ol-case-figure" style="grid-column:1/-1">
                 <div class="ol-case-figure-frame">
                   <div class="mk">
-                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">seguridad-privada.com.mx/contacto</span></div>
+                    <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-url">bolasdisco.com/cotizar</span></div>
                     <div class="mk-view">
-                      <h3 class="mk-sect-h">Solicita tu evaluación de seguridad sin costo</h3>
-                      <p class="mk-sect-sub">Diagnóstico de tu condominio en menos de 24 horas, sin compromiso.</p>
+                      <h3 class="mk-sect-h">Cotiza tu bola disco en renta o venta</h3>
+                      <p class="mk-sect-sub">Canal directo con el equipo de BOLDIS — o escríbenos por WhatsApp para coordinar tu evento de inmediato.</p>
                       <div class="mk-trust">
-                        <div><b>+15</b><span>años</span></div>
-                        <div><b>+50</b><span>condominios</span></div>
-                        <div><b>98%</b><span>renovación</span></div>
-                        <div><b>24/7</b><span>operación</span></div>
+                        <div><b>6</b><span>tamaños</span></div>
+                        <div><b>LED RGB</b><span>disponible</span></div>
+                        <div><b>Incluida</b><span>instalación</span></div>
+                        <div><b>CDMX</b><span>+ Edomex</span></div>
                       </div>
                       <div class="mk-form">
-                        <div class="mk-frow"><div class="mk-field">Nombre completo</div><div class="mk-field">Teléfono</div></div>
-                        <div class="mk-frow"><div class="mk-field">Tipo de inmueble</div><div class="mk-field">Número de accesos</div></div>
-                        <div class="mk-field">Zona / alcaldía</div>
-                        <div class="mk-submit">Solicitar evaluación gratis →</div>
+                        <div class="mk-frow"><div class="mk-field">Tamaño / Modelo</div><div class="mk-field">Renta o venta</div></div>
+                        <div class="mk-frow"><div class="mk-field">Tipo de evento</div><div class="mk-field">Fecha del evento</div></div>
+                        <div class="mk-frow"><div class="mk-field">Sede / Ciudad</div><div class="mk-field">Contacto</div></div>
+                        <div class="mk-submit">Solicitar Cotización →</div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <figcaption class="ol-case-figure-caption">07 · Contacto — evaluación gratuita con señales de confianza visibles antes de enviar.</figcaption>
+                <figcaption class="ol-case-figure-caption">06 · Cotización — formulario que distingue renta de venta con tamaño, tipo de evento, fecha y sede, y señales de confianza (tamaños, LED RGB, instalación incluida, cobertura) visibles antes de enviar.</figcaption>
               </figure>
 
             </div>
@@ -1149,33 +1118,15 @@
           <!-- 10 RESULTADO -->
           <section class="ol-case-section" id="resultado">
             <span class="ol-case-eyebrow">10 · Resultado entregado</span>
-            <h2 class="ol-case-h2">Una presencia digital al nivel de su operación.</h2>
-            <p class="ol-case-p">El resultado es un sitio que <strong>comunica especialización y confianza desde el primer scroll</strong>, presenta los servicios con la claridad que el comité necesita y abre canales de evaluación sin fricción. La identidad y el tono editorial reflejan la seriedad operativa de ORIGINS y su compromiso con la comunidad residencial.</p>
-
-            <figure class="ol-case-figure">
-              <div class="ol-case-figure-frame">
-                <picture>
-                  <source srcset="/img/seguridad-privada/origins/guardias-intramuros-patrullaje-origins.avif" type="image/avif">
-                  <img src="/img/seguridad-privada/origins/guardias-intramuros-patrullaje-origins.webp" alt="Oficiales de seguridad privada en patrullaje a pie por calles de un residencial privado en CDMX" width="1280" height="720" loading="lazy" decoding="async">
-                </picture>
-              </div>
-              <figcaption class="ol-case-figure-caption">Rondín a pie por el fraccionamiento, parte del servicio que el sitio detalla por zona de cobertura.</figcaption>
-            </figure>
-
-            <div class="ol-cs-band">
-              <div><b>+15 <span>años</span></b><p>de trayectoria comunicada</p></div>
-              <div><b>+50</b><p>condominios protegidos</p></div>
-              <div><b>98<span>%</span></b><p>tasa de renovación</p></div>
-              <div><b>4.9</b><p>calificación promedio</p></div>
-            </div>
-            <p class="ol-case-figure-caption" style="margin-top:.7rem">Cifras que el sitio pone al frente para respaldar la promesa — trayectoria, alcance y satisfacción, ordenados como argumento de confianza.</p>
+            <h2 class="ol-case-h2">Una presencia digital al nivel de un especialista.</h2>
+            <p class="ol-case-p">El resultado es un sitio que <strong>presenta el catálogo por tamaño con claridad desde el primer scroll</strong>, hace visible la cobertura total en CDMX y Estado de México, y abre un canal de cotización inmediata que distingue renta de venta sin fricción. La identidad rojo sobre negro y el tono enfocado reflejan, finalmente, la energía de la pista de baile y la presentación profesional de un especialista en bolas disco e iluminación.</p>
             <ul class="ol-case-list">
               <li><strong>Sitio corporativo en operación</strong> bajo dominio propio, certificado SSL, hosting CDN y dominio gestionado.</li>
-              <li><strong>Sistema de componentes reutilizable</strong> que permite ampliar servicios y zonas sin rehacer el diseño.</li>
-              <li><strong>Servicios y zonas estructurados</strong> con plantilla consistente para facilitar la comparación del decisor.</li>
-              <li><strong>Formulario de evaluación sin costo</strong> con campos del contexto residencial, enrutado al equipo comercial.</li>
-              <li><strong>Canal paralelo por WhatsApp y teléfono</strong> visibles en todas las pantallas del sitio.</li>
-              <li><strong>Datos estructurados Schema.org</strong> para que motores y agregadores entiendan correctamente la naturaleza del sitio.</li>
+              <li><strong>Sistema de componentes reutilizable</strong> que permite ampliar tamaños y líneas de iluminación sin rehacer el diseño.</li>
+              <li><strong>Catálogo de bolas disco estructurado</strong> con plantilla de ficha consistente para los seis tamaños.</li>
+              <li><strong>Formulario de cotización renta + venta</strong> con campos relevantes (tamaño, tipo de evento, fecha, sede) y enrutado al equipo.</li>
+              <li><strong>Canal directo por WhatsApp y formularios B2B</strong> visibles en todas las pantallas del sitio.</li>
+              <li><strong>Datos estructurados Schema.org enriquecidos</strong> con cobertura geográfica y catálogo de producto para que motores y agregadores entiendan el sitio.</li>
               <li><strong>Documentación entregable</strong> al equipo del cliente para mantener y crecer el sitio en el tiempo.</li>
             </ul>
           </section>
@@ -1186,20 +1137,21 @@
     </div>
   </section>
 
+  <!-- ============== CTA HERO — invitar a iniciar proyecto ============== -->
   <section class="ol-cta-hero">
     <div class="ol-cta-hero-inner">
       <div class="ol-cta-hero-card">
 
         <div class="ol-cta-hero-left">
           <p class="ol-cta-hero-eyebrow">Iniciar proyecto</p>
-          <h2 class="ol-cta-hero-title">¿Tu empresa de seguridad privada necesita un sitio al nivel de su operación?</h2>
-          <p class="ol-cta-hero-blurb">Si ofreces guardias intramuros, monitoreo, control de accesos o protección ejecutiva — podemos construir contigo un sitio profesional, claro y orientado a conversión. Sin plantillas, sin atajos, hecho para el comprador del sector.</p>
+          <h2 class="ol-cta-hero-title">¿Tu empresa de equipo para eventos necesita un sitio al nivel de su producto?</h2>
+          <p class="ol-cta-hero-blurb">Si rentas, vendes o instalas equipo para eventos —bolas disco, iluminación, mobiliario, escenarios, producción— podemos construir contigo un sitio profesional, con catálogo claro y orientado a conversión. Sin plantillas, sin atajos, hecho para tu comprador.</p>
           <div class="ol-cta-hero-actions">
             <a href="/cotizar/" class="ol-btn-primary">
               Cotizar proyecto
               <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
             </a>
-            <a href="https://wa.me/525547868402?text=Hola%2C%20vi%20el%20caso%20de%20ORIGINS%20y%20quiero%20un%20proyecto%20similar." target="_blank" rel="noopener noreferrer" class="ol-btn-ghost">
+            <a href="https://wa.me/525547868402?text=Hola%20OrigenLab%2C%20vi%20el%20caso%20de%20BOLDIS%20y%20quiero%20un%20proyecto%20web%20para%20mi%20empresa%20de%20equipo%20para%20eventos." target="_blank" rel="noopener noreferrer" class="ol-btn-ghost">
               <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"/></svg>
               Hablar por WhatsApp
             </a>
@@ -1210,9 +1162,9 @@
           <div class="ol-cta-hero-promises">
             <p class="ol-cta-hero-promises-title">Lo que recibes con OrigenLab</p>
             <ul class="ol-cta-hero-promises-list">
-              <li>Descubrimiento técnico antes de cualquier propuesta visual</li>
+              <li>Descubrimiento del producto antes de cualquier propuesta visual</li>
               <li>Diseño y desarrollo a medida — sin plantillas ni atajos</li>
-              <li>Servicios bien explicados con cobertura y certificaciones visibles</li>
+              <li>Catálogo estructurado con fichas, tamaños y aplicaciones</li>
               <li>Formularios B2B, WhatsApp y CRM integrados al flujo</li>
               <li>Estructura escalable para crecer con tu operación</li>
               <li>Acompañamiento post-entrega con tu equipo</li>
@@ -1249,81 +1201,81 @@
 
             <div class="ol-faq-item">
               <button class="ol-faq-question" data-faq="0">
-                ¿Cómo se diferencia el sitio de una empresa especializada en condominios?
+                ¿BOLDIS renta o vende las bolas disco?
                 <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
               </button>
               <div class="ol-faq-answer" id="faq-ans-0">
-                <p class="ol-faq-answer-inner">El comité no compra una empresa generalista, compra un especialista en su tipo de comunidad. El sitio de ORIGINS lo deja claro desde el inicio: guardias intramuros que conocen a cada residente, protocolos por inmueble y un lenguaje pensado para condominios verticales y horizontales. Esa especialización es el argumento que distingue y convierte.</p>
+                <p class="ol-faq-answer-inner">BOLDIS ofrece ambas opciones: renta para un evento puntual y venta para quien quiere su propio equipo. El sitio distingue ambos caminos desde la primera pantalla y permite cotizar cualquiera de los dos por modelo y tamaño.</p>
               </div>
             </div>
 
             <div class="ol-faq-item">
               <button class="ol-faq-question" data-faq="1">
-                ¿Cómo se muestran las garantías y SLA sin sonar a promesa comercial?
+                ¿La instalación está incluida?
                 <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
               </button>
               <div class="ol-faq-answer" id="faq-ans-1">
-                <p class="ol-faq-answer-inner">Los presentamos como compromisos exigibles, no como eslóganes: reemplazo de personal en menos de 4 horas, supervisión semanal documentada, reportes mensuales auditables. El administrador entiende que son cláusulas que puede exigir por escrito, y eso es justo lo que genera confianza en el sector.</p>
+                <p class="ol-faq-answer-inner">Sí. La instalación profesional está incluida: BOLDIS coloca la bola disco, el motor giratorio y la iluminación el día del evento, dejando todo listo para la pista.</p>
               </div>
             </div>
 
             <div class="ol-faq-item">
               <button class="ol-faq-question" data-faq="2">
-                ¿Cómo se hacen visibles las certificaciones y el permiso SSC?
+                ¿Qué zonas cubre BOLDIS?
                 <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
               </button>
               <div class="ol-faq-answer" id="faq-ans-2">
-                <p class="ol-faq-answer-inner">El permiso SSC y la certificación del personal se tratan como sello de credibilidad, presentes desde el encabezado y reforzados en los puntos de decisión. Visibles donde aportan confianza, sin saturar la lectura ni convertir el sitio en un trámite.</p>
+                <p class="ol-faq-answer-inner">BOLDIS da cobertura total en Ciudad de México y Estado de México, incluyendo alcaldías de la CDMX y municipios como Naucalpan, Tlalnepantla y Huixquilucan, con instalación incluida.</p>
               </div>
             </div>
 
             <div class="ol-faq-item">
               <button class="ol-faq-question" data-faq="3">
-                ¿El sitio capta al administrador o comité del condominio?
+                ¿Qué tamaños de bola disco hay disponibles?
                 <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
               </button>
               <div class="ol-faq-answer" id="faq-ans-3">
-                <p class="ol-faq-answer-inner">Está diseñado para el decisor B2B residencial. El CTA principal es el diagnóstico gratuito en menos de 24 horas, y el formulario pide el contexto que califica el lead —nombre del condominio o residencial, zona o alcaldía y servicio de interés— para que el equipo reciba solicitudes accionables. WhatsApp y teléfono quedan visibles para resolver de inmediato.</p>
+                <p class="ol-faq-answer-inner">El catálogo incluye seis tamaños: Pequeña 30 cm, Mediana 50 cm, Grande 80 cm, LED RGB 60 cm, Jumbo 150 cm y Gigante 200 cm — desde eventos íntimos hasta conciertos y mega eventos.</p>
               </div>
             </div>
 
             <div class="ol-faq-item">
               <button class="ol-faq-question" data-faq="4">
-                ¿Cómo manejan la cobertura por colonias y municipios?
+                ¿Cuánto cuesta un sitio web profesional?
                 <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
               </button>
               <div class="ol-faq-answer" id="faq-ans-4">
-                <p class="ol-faq-answer-inner">La cobertura se estructura por zonas de CDMX (Del Valle, Santa Fe, Pedregal, Coyoacán…) y municipios del Estado de México (Naucalpan, Interlomas, Satélite, Huixquilucan…), para que el administrador confirme operación cercana de un vistazo y cada zona tenga su propio espacio sin inflar el menú.</p>
+                <p class="ol-faq-answer-inner">El costo depende del alcance, funcionalidad y diseño de cada proyecto. Cada cotización se construye a la medida según pantallas, integraciones, complejidad de catálogo y nivel de personalización. Siempre entregamos una propuesta detallada y por escrito, sin cargos ocultos, antes de comenzar.</p>
               </div>
             </div>
 
             <div class="ol-faq-item">
               <button class="ol-faq-question" data-faq="5">
-                ¿Cuánto cuesta un proyecto como este?
+                ¿Cuánto tiempo tarda en estar listo mi sitio web?
                 <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
               </button>
               <div class="ol-faq-answer" id="faq-ans-5">
-                <p class="ol-faq-answer-inner">Depende del alcance: número de pantallas, integraciones, secciones de cobertura y nivel de personalización. Construimos cada propuesta a la medida y la entregamos detallada y por escrito, sin cargos ocultos, antes de comenzar.</p>
+                <p class="ol-faq-answer-inner">Los plazos varían según la complejidad de cada proyecto. Trabajamos con calendario comprometido por escrito desde el inicio, con entregas iterativas en entorno de pruebas para ver el avance real durante todo el proyecto.</p>
               </div>
             </div>
 
             <div class="ol-faq-item">
               <button class="ol-faq-question" data-faq="6">
-                ¿En cuánto tiempo está listo?
+                ¿Trabajan con empresas fuera de Ciudad de México?
                 <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
               </button>
               <div class="ol-faq-answer" id="faq-ans-6">
-                <p class="ol-faq-answer-inner">Cada proyecto tiene su propio alcance, así que fijamos un calendario comprometido por escrito desde el inicio. Trabajamos con entregas iterativas en un entorno de pruebas para que veas el avance real en cada etapa, sin sorpresas.</p>
+                <p class="ol-faq-answer-inner">Sí. Trabajamos con clientes en todo México — Monterrey, Guadalajara, Puebla y muchas otras ciudades — así como proyectos para empresas en Estados Unidos y Latinoamérica. Todo el proceso se gestiona de forma remota, ágil y completamente en línea.</p>
               </div>
             </div>
 
             <div class="ol-faq-item">
               <button class="ol-faq-question" data-faq="7">
-                ¿Dan acompañamiento después de lanzar el sitio?
+                ¿Qué incluye el desarrollo del sitio web?
                 <span class="ol-faq-icon"><svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
               </button>
               <div class="ol-faq-answer" id="faq-ans-7">
-                <p class="ol-faq-answer-inner">Sí. Entregamos el sitio en operación con documentación para tu equipo y quedamos disponibles para crecerlo: nuevas zonas de cobertura, servicios o casos. La estructura queda lista para escalar conforme crece tu operación.</p>
+                <p class="ol-faq-answer-inner">Nuestras propuestas incluyen diseño personalizado, desarrollo front-end y back-end, versión responsiva (móvil y desktop), integración de formularios de contacto, optimización de velocidad y entrega de archivos finales. El dominio y hosting pueden incluirse según el plan elegido.</p>
               </div>
             </div>
 
@@ -1390,7 +1342,7 @@
       var empresa = document.getElementById('faq-empresa').value.trim();
       var tipo = document.getElementById('faq-tipo').value;
       var mensaje = document.getElementById('faq-mensaje').value.trim();
-      var partes = ['Hola OrigenLab, me contacto desde el caso de estudio de ORIGINS Private Security.'];
+      var partes = ['Hola OrigenLab, me contacto desde el caso de estudio de BOLDIS.'];
       if (nombre) partes.push('*Nombre:* ' + nombre);
       if (empresa) partes.push('*Empresa:* ' + empresa);
       if (tipo) partes.push('*Tipo de proyecto:* ' + tipo);
@@ -1403,22 +1355,68 @@
   </script>
 
   <!-- ============== NEXT CASE NAV ============== -->
-
-  <!-- ============== CASO SIGUIENTE / VOLVER AL SECTOR ============== -->
   <section class="ol-case-next">
     <div class="ol-case-next-inner">
-      <a href="/portafolio/seguridad-privada/seprico/" class="ol-case-next-card">
-        <p class="ol-case-next-eyebrow">Caso siguiente →</p>
-        <p class="ol-case-next-title">SEPRICO · Seguridad documentada para condominios</p>
-        <span class="ol-case-next-link">Ver caso completo →</span>
+      <a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-case-next-card">
+        <p class="ol-case-next-eyebrow">← Caso anterior</p>
+        <p class="ol-case-next-title">PODIUMEX</p>
+        <span class="ol-case-next-link">Ver caso anterior →</span>
       </a>
-      <a href="/portafolio/equipos-contra-incendios/" class="ol-case-next-card">
-        <p class="ol-case-next-eyebrow">Otro sector</p>
-        <p class="ol-case-next-title">Equipos Contra Incendios · Casos de estudio</p>
-        <span class="ol-case-next-link">Ver el sector →</span>
+      <a href="/portafolio/equipo-para-eventos/" class="ol-case-next-card">
+        <p class="ol-case-next-eyebrow">Volver al sector</p>
+        <p class="ol-case-next-title">Más empresas del sector equipo para eventos</p>
+        <span class="ol-case-next-link">Ir al portafolio del sector →</span>
       </a>
     </div>
   </section>
+
+  <!-- ============== QUICKNAV BOTTOM ============== -->
+  <div class="ol-quicknav">
+    <div class="ol-quicknav-inner">
+      <a href="/portafolio/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Todo el Portafolio</span>
+          <span class="ol-qn-sub">Más casos por sector</span>
+        </div>
+      </a>
+      <a href="/portafolio/equipo-para-eventos/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Equipo para Eventos</span>
+          <span class="ol-qn-sub">Otros casos del sector</span>
+        </div>
+      </a>
+      <a href="/servicios/desarrollo-web/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Sitios Corporativos</span>
+          <span class="ol-qn-sub">Diseño a medida</span>
+        </div>
+      </a>
+      <a href="/servicios/tiendas-en-linea/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Tienda en Línea</span>
+          <span class="ol-qn-sub">E-commerce profesional</span>
+        </div>
+      </a>
+      <a href="/nosotros/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Nosotros</span>
+          <span class="ol-qn-sub">Quiénes somos</span>
+        </div>
+      </a>
+      <a href="/contacto/" class="ol-qn-item">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Contacto</span>
+          <span class="ol-qn-sub">Escríbenos directo</span>
+        </div>
+      </a>
+      <a href="/cotizar/" class="ol-qn-item ol-qn-cta">
+        <div class="ol-qn-text">
+          <span class="ol-qn-title">Iniciar Proyecto</span>
+          <span class="ol-qn-sub">Solicitar propuesta</span>
+        </div>
+      </a>
+    </div>
+  </div>
 
 </main>
 
@@ -1477,7 +1475,7 @@
       <ul class="ol-footer-col-list">
         <li><a href="/nosotros/">Nosotros</a></li>
         <li><a href="/portafolio/">Portafolio</a></li>
-        <li><a href="/portafolio/equipos-contra-incendios/">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/">Equipo para Eventos</a></li>
         <li><a href="/blog/">Blog</a></li>
       </ul>
     </div>
@@ -1507,7 +1505,7 @@
 </footer>
 
 <!-- WA Bubble -->
-<a href="https://wa.me/525547868402?text=Hola%2C%20vi%20el%20caso%20de%20ORIGINS%20y%20me%20interesa%20un%20proyecto%20similar." target="_blank" rel="noopener noreferrer" class="wa-bubble" aria-label="Contáctanos por WhatsApp">
+<a href="https://wa.me/525547868402?text=Hola%20OrigenLab%2C%20vi%20el%20caso%20de%20BOLDIS%20y%20quiero%20un%20proyecto%20web%20para%20mi%20empresa%20de%20equipo%20para%20eventos." target="_blank" rel="noopener noreferrer" class="wa-bubble" aria-label="Contáctanos por WhatsApp">
   <svg aria-hidden="true" focusable="false" viewBox="0 0 32 32" width="26" height="26" fill="#fff">
     <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 0 0 2.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0 0 16.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0z"></path>
   </svg>
