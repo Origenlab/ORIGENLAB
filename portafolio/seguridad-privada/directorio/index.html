@@ -21,9 +21,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
-  <link rel="stylesheet" href="../../../_astro/BaseLayout.xeR8R953.css?v20260601d">
-  <link rel="stylesheet" href="../../../_astro/premium-dark.css?v20260601d">
-  <script src="../../../_astro/ol-header.js?v20260601d" defer></script>
+  <link rel="stylesheet" href="../../../_astro/BaseLayout.xeR8R953.css?v20260603b">
+  <link rel="stylesheet" href="../../../_astro/premium-dark.css?v20260603b">
+  <script src="../../../_astro/ol-header.js?v20260603b" defer></script>
 
   <style>
     /* ============================================================
@@ -81,7 +81,16 @@
     .ol-dir-badge-gb { background:rgba(52,168,83,0.16); border:1px solid rgba(52,168,83,0.32); color:#5BC274; }
     .ol-dir-badge-noweb { background:rgba(201,168,76,0.14); border:1px solid rgba(201,168,76,0.34); color:#E0C46B; }
 
-    /* ---- MINI-MAQUETA .ol-dir-mk ---- */
+    /* ---- FOTO REAL (banner) ---- */
+    .ol-dir-photo { position:relative; aspect-ratio:16/10; border-radius:11px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.35); background:#0A0A12; }
+    .ol-dir-photo img { width:100%; height:100%; object-fit:cover; display:block; transition:transform 0.4s ease; }
+    .ol-dir-card:hover .ol-dir-photo img { transform:scale(1.04); }
+    .ol-dir-photo::after { content:''; position:absolute; inset:0; background:linear-gradient(180deg, rgba(8,8,16,0) 38%, rgba(8,8,16,0.55) 72%, rgba(8,8,16,0.9) 100%); pointer-events:none; }
+    .ol-dir-photo-cap { position:absolute; left:0; right:0; bottom:0; z-index:2; padding:0.7rem 0.9rem; }
+    .ol-dir-photo-eyebrow { display:inline-flex; align-items:center; gap:0.4rem; font-size:9px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#FFFFFF; }
+    .ol-dir-photo-eyebrow svg { color:var(--dir-ac,#C9A84C); flex-shrink:0; }
+
+    /* ---- MINI-MAQUETA .ol-dir-mk (legacy, sin uso tras migración a foto) ---- */
     .ol-dir-mk { --mk-ac:#C9A84C; border-radius:11px 11px 0 0; overflow:hidden; border:1px solid var(--mk-line,#E6E8EE); border-bottom:none; box-shadow:0 10px 30px rgba(0,0,0,0.35); }
     .ol-dir-mk-bar { display:flex; align-items:center; gap:0.5rem; padding:0.45rem 0.7rem; background:#1A1D29; }
     .ol-dir-mk-bar i { width:7px; height:7px; border-radius:50%; background:rgba(255,255,255,0.22); }
@@ -262,6 +271,11 @@
                     <li><a href="/portafolio/equipo-para-eventos/pantalla-led/" class="ol-dropdown-link">PantallaLED</a></li>
                     <li><a href="/portafolio/equipo-para-eventos/inflapy/" class="ol-dropdown-link">INFLAPY</a></li>
                     <li><a href="/portafolio/equipo-para-eventos/eventech/" class="ol-dropdown-link">EVENTECH</a></li>
+                    <li><a href="/portafolio/equipo-para-eventos/redeil/" class="ol-dropdown-link">REDEIL</a></li>
+                    <li><a href="/portafolio/equipo-para-eventos/resoil/" class="ol-dropdown-link">RESOIL</a></li>
+                    <li><a href="/portafolio/equipo-para-eventos/rentadeiluminacion/" class="ol-dropdown-link">REDEIL Iluminación</a></li>
+                    <li><a href="/portafolio/equipo-para-eventos/soeve/" class="ol-dropdown-link">SOEVE</a></li>
+                    <li><a href="/portafolio/equipo-para-eventos/mededul/" class="ol-dropdown-link">MEDEDUL</a></li>
                   </ul>
                 </div>
               </li>
@@ -327,6 +341,11 @@
         <li><a href="/portafolio/equipo-para-eventos/pantalla-led/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— PantallaLED</a></li>
         <li><a href="/portafolio/equipo-para-eventos/inflapy/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— INFLAPY</a></li>
         <li><a href="/portafolio/equipo-para-eventos/eventech/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— EVENTECH</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/redeil/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— REDEIL</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/resoil/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— RESOIL</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/rentadeiluminacion/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— REDEIL Iluminación</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/soeve/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SOEVE</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/mededul/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MEDEDUL</a></li>
       </ul>
     </li>
     <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
@@ -449,14 +468,9 @@
                   <span class="ol-dir-badge-gb"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Business</span>
                   <span class="ol-dir-badge-noweb">Sin sitio web</span>
                 </div>
-                <div class="ol-dir-mk" style="--mk-ac:#C9A84C">
-                  <div class="ol-dir-mk-bar"><i></i><i></i><i></i><span class="ol-dir-mk-url">armasek.mx</span></div>
-                  <div class="ol-dir-mk-view">
-                    <div class="ol-dir-mk-nav"><span class="ol-dir-mk-logo">ARMASEK</span><span class="ol-dir-mk-pill">Cotizar</span></div>
-                    <div class="ol-dir-mk-eyebrow">Seguridad privada · Edo. de México</div>
-                    <div class="ol-dir-mk-h">Protección <span>integral</span> para tu empresa</div>
-                    <div class="ol-dir-mk-chips"><span class="on">Corporativa</span><span>Industrial</span><span>Patrimonial</span></div>
-                  </div>
+                <div class="ol-dir-photo">
+                  <img src="/img/seguridad-privada/seprico/control-de-accesos-seguridad-privada-seprico.webp" alt="Control de accesos de seguridad privada corporativa — imagen ilustrativa del sector" width="800" height="500" loading="lazy" decoding="async">
+                  <div class="ol-dir-photo-cap"><span class="ol-dir-photo-eyebrow"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Seguridad privada · Edo. de México</span></div>
                 </div>
               </div>
               <div class="ol-dir-body">
@@ -478,14 +492,9 @@
                   <span class="ol-dir-badge-gb"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Business</span>
                   <span class="ol-dir-badge-noweb">Sin sitio web</span>
                 </div>
-                <div class="ol-dir-mk" style="--mk-ac:#C9A84C">
-                  <div class="ol-dir-mk-bar"><i></i><i></i><i></i><span class="ol-dir-mk-url">gif-seguridad.mx</span></div>
-                  <div class="ol-dir-mk-view">
-                    <div class="ol-dir-mk-nav"><span class="ol-dir-mk-logo">GIF Seguridad</span><span class="ol-dir-mk-pill">Cotizar</span></div>
-                    <div class="ol-dir-mk-eyebrow">Seguridad privada · CDMX</div>
-                    <div class="ol-dir-mk-h">Vigilancia <span>profesional</span> 24/7</div>
-                    <div class="ol-dir-mk-chips"><span class="on">Guardias</span><span>Vigilancia</span><span>Control de acceso</span></div>
-                  </div>
+                <div class="ol-dir-photo">
+                  <img src="/img/seguridad-privada/origins/guardias-intramuros-patrullaje-origins.webp" alt="Guardias de seguridad privada en patrullaje intramuros — imagen ilustrativa del sector" width="800" height="500" loading="lazy" decoding="async">
+                  <div class="ol-dir-photo-cap"><span class="ol-dir-photo-eyebrow"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Seguridad privada · CDMX</span></div>
                 </div>
               </div>
               <div class="ol-dir-body">
@@ -507,14 +516,9 @@
                   <span class="ol-dir-badge-gb"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Business</span>
                   <span class="ol-dir-badge-noweb">Sin sitio web</span>
                 </div>
-                <div class="ol-dir-mk" style="--mk-ac:#C9A84C">
-                  <div class="ol-dir-mk-bar"><i></i><i></i><i></i><span class="ol-dir-mk-url">tcps.mx</span></div>
-                  <div class="ol-dir-mk-view">
-                    <div class="ol-dir-mk-nav"><span class="ol-dir-mk-logo">TCPS</span><span class="ol-dir-mk-pill">Cotizar</span></div>
-                    <div class="ol-dir-mk-eyebrow">Seguridad privada · Iztapalapa</div>
-                    <div class="ol-dir-mk-h">Guardias <span>capacitados</span> para tu giro</div>
-                    <div class="ol-dir-mk-chips"><span class="on">Guardias</span><span>Vigilancia</span><span>Residencial</span></div>
-                  </div>
+                <div class="ol-dir-photo">
+                  <img src="/img/seguridad-privada/gupri/guardias-seguridad-privada-condominios-gupri.webp" alt="Guardias de seguridad privada en condominios — imagen ilustrativa del sector" width="800" height="500" loading="lazy" decoding="async">
+                  <div class="ol-dir-photo-cap"><span class="ol-dir-photo-eyebrow"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Seguridad privada · Iztapalapa</span></div>
                 </div>
               </div>
               <div class="ol-dir-body">
@@ -536,14 +540,9 @@
                   <span class="ol-dir-badge-gb"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Business</span>
                   <span class="ol-dir-badge-noweb">Sin sitio web</span>
                 </div>
-                <div class="ol-dir-mk" style="--mk-ac:#C9A84C">
-                  <div class="ol-dir-mk-bar"><i></i><i></i><i></i><span class="ol-dir-mk-url">agaetra.mx</span></div>
-                  <div class="ol-dir-mk-view">
-                    <div class="ol-dir-mk-nav"><span class="ol-dir-mk-logo">Agaetra Security</span><span class="ol-dir-mk-pill">Cotizar</span></div>
-                    <div class="ol-dir-mk-eyebrow">Seguridad privada · GAM, CDMX</div>
-                    <div class="ol-dir-mk-h">Guardias de <span>confianza</span> para tu negocio</div>
-                    <div class="ol-dir-mk-chips"><span class="on">Guardias</span><span>Vigilancia</span><span>Comercial</span></div>
-                  </div>
+                <div class="ol-dir-photo">
+                  <img src="/img/seguridad-privada/seguridadeventos/guardias-evento-masivo-seguridadeventos.webp" alt="Guardias de seguridad privada en operación — imagen ilustrativa del sector" width="800" height="500" loading="lazy" decoding="async">
+                  <div class="ol-dir-photo-cap"><span class="ol-dir-photo-eyebrow"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Seguridad privada · GAM, CDMX</span></div>
                 </div>
               </div>
               <div class="ol-dir-body">
@@ -565,14 +564,9 @@
                   <span class="ol-dir-badge-gb"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Business</span>
                   <span class="ol-dir-badge-noweb">Sin sitio web</span>
                 </div>
-                <div class="ol-dir-mk" style="--mk-ac:#C9A84C">
-                  <div class="ol-dir-mk-bar"><i></i><i></i><i></i><span class="ol-dir-mk-url">prosecon.mx</span></div>
-                  <div class="ol-dir-mk-view">
-                    <div class="ol-dir-mk-nav"><span class="ol-dir-mk-logo">Prosecon</span><span class="ol-dir-mk-pill">Cotizar</span></div>
-                    <div class="ol-dir-mk-eyebrow">Seguridad privada · GAM, CDMX</div>
-                    <div class="ol-dir-mk-h">Seguridad <span>empresarial</span> a la medida</div>
-                    <div class="ol-dir-mk-chips"><span class="on">Corporativa</span><span>Guardias</span><span>Patrimonial</span></div>
-                  </div>
+                <div class="ol-dir-photo">
+                  <img src="/img/seguridad-privada/seguridadprivadamx/monitoreo-cctv-seguridad-privada-seguridadprivadamx.webp" alt="Monitoreo CCTV de seguridad privada empresarial — imagen ilustrativa del sector" width="800" height="500" loading="lazy" decoding="async">
+                  <div class="ol-dir-photo-cap"><span class="ol-dir-photo-eyebrow"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Seguridad privada · GAM, CDMX</span></div>
                 </div>
               </div>
               <div class="ol-dir-body">
@@ -594,14 +588,9 @@
                   <span class="ol-dir-badge-gb"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Business</span>
                   <span class="ol-dir-badge-noweb">Sin sitio web</span>
                 </div>
-                <div class="ol-dir-mk" style="--mk-ac:#C9A84C">
-                  <div class="ol-dir-mk-bar"><i></i><i></i><i></i><span class="ol-dir-mk-url">trustgroup.mx</span></div>
-                  <div class="ol-dir-mk-view">
-                    <div class="ol-dir-mk-nav"><span class="ol-dir-mk-logo">Trust Group</span><span class="ol-dir-mk-pill">Cotizar</span></div>
-                    <div class="ol-dir-mk-eyebrow">Seguridad privada · Ecatepec</div>
-                    <div class="ol-dir-mk-h">Confianza que <span>protege</span> tu operación</div>
-                    <div class="ol-dir-mk-chips"><span class="on">Corporativa</span><span>Industrial</span><span>Vigilancia</span></div>
-                  </div>
+                <div class="ol-dir-photo">
+                  <img src="/img/seguridad-privada/seguridadprivadamx/control-de-accesos-condominios-seguridadprivadamx.webp" alt="Control de accesos de seguridad privada en condominios — imagen ilustrativa del sector" width="800" height="500" loading="lazy" decoding="async">
+                  <div class="ol-dir-photo-cap"><span class="ol-dir-photo-eyebrow"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Seguridad privada · Ecatepec</span></div>
                 </div>
               </div>
               <div class="ol-dir-body">
@@ -623,14 +612,9 @@
                   <span class="ol-dir-badge-gb"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Business</span>
                   <span class="ol-dir-badge-noweb">Sin sitio web</span>
                 </div>
-                <div class="ol-dir-mk" style="--mk-ac:#C9A84C">
-                  <div class="ol-dir-mk-bar"><i></i><i></i><i></i><span class="ol-dir-mk-url">america-seguridad.mx</span></div>
-                  <div class="ol-dir-mk-view">
-                    <div class="ol-dir-mk-nav"><span class="ol-dir-mk-logo">America Seguridad</span><span class="ol-dir-mk-pill">Cotizar</span></div>
-                    <div class="ol-dir-mk-eyebrow">Seguridad privada · GAM, CDMX</div>
-                    <div class="ol-dir-mk-h">Guardias que <span>cuidan</span> lo que importa</div>
-                    <div class="ol-dir-mk-chips"><span class="on">Guardias</span><span>Vigilancia</span><span>Residencial</span></div>
-                  </div>
+                <div class="ol-dir-photo">
+                  <img src="/img/seguridad-privada/gupri/patrullaje-vigilancia-condominios-gupri.webp" alt="Patrullaje y vigilancia de seguridad privada en condominios — imagen ilustrativa del sector" width="800" height="500" loading="lazy" decoding="async">
+                  <div class="ol-dir-photo-cap"><span class="ol-dir-photo-eyebrow"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Seguridad privada · GAM, CDMX</span></div>
                 </div>
               </div>
               <div class="ol-dir-body">
@@ -652,14 +636,9 @@
                   <span class="ol-dir-badge-gb"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Business</span>
                   <span class="ol-dir-badge-noweb">Sin sitio web</span>
                 </div>
-                <div class="ol-dir-mk" style="--mk-ac:#C9A84C">
-                  <div class="ol-dir-mk-bar"><i></i><i></i><i></i><span class="ol-dir-mk-url">apsp-security.mx</span></div>
-                  <div class="ol-dir-mk-view">
-                    <div class="ol-dir-mk-nav"><span class="ol-dir-mk-logo">APSP Security</span><span class="ol-dir-mk-pill">Cotizar</span></div>
-                    <div class="ol-dir-mk-eyebrow">Seguridad privada · Ecatepec</div>
-                    <div class="ol-dir-mk-h">Vigilancia <span>cercana</span> y responsable</div>
-                    <div class="ol-dir-mk-chips"><span class="on">Guardias</span><span>Vigilancia</span><span>Comercial</span></div>
-                  </div>
+                <div class="ol-dir-photo">
+                  <img src="/img/seguridad-privada/seprico/patrullaje-condominios-vigilancia-seprico.webp" alt="Vigilancia y patrullaje de seguridad privada — imagen ilustrativa del sector" width="800" height="500" loading="lazy" decoding="async">
+                  <div class="ol-dir-photo-cap"><span class="ol-dir-photo-eyebrow"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Seguridad privada · Ecatepec</span></div>
                 </div>
               </div>
               <div class="ol-dir-body">
@@ -681,14 +660,9 @@
                   <span class="ol-dir-badge-gb"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Business</span>
                   <span class="ol-dir-badge-noweb">Sin sitio web</span>
                 </div>
-                <div class="ol-dir-mk" style="--mk-ac:#C9A84C">
-                  <div class="ol-dir-mk-bar"><i></i><i></i><i></i><span class="ol-dir-mk-url">aar-seguridad.mx</span></div>
-                  <div class="ol-dir-mk-view">
-                    <div class="ol-dir-mk-nav"><span class="ol-dir-mk-logo">Corporativo AAR</span><span class="ol-dir-mk-pill">Cotizar</span></div>
-                    <div class="ol-dir-mk-eyebrow">Seguridad privada · Coyoacán</div>
-                    <div class="ol-dir-mk-h">Guardias <span>24 horas</span> para tu comunidad</div>
-                    <div class="ol-dir-mk-chips"><span class="on">Guardias</span><span>Vigilancia</span><span>Residencial</span></div>
-                  </div>
+                <div class="ol-dir-photo">
+                  <img src="/img/seguridad-privada/origins/seguridad-privada-residencial-condominios-origins.webp" alt="Seguridad privada residencial en condominios — imagen ilustrativa del sector" width="800" height="500" loading="lazy" decoding="async">
+                  <div class="ol-dir-photo-cap"><span class="ol-dir-photo-eyebrow"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Seguridad privada · Coyoacán</span></div>
                 </div>
               </div>
               <div class="ol-dir-body">
@@ -710,14 +684,9 @@
                   <span class="ol-dir-badge-gb"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Google Business</span>
                   <span class="ol-dir-badge-noweb">Sin sitio web</span>
                 </div>
-                <div class="ol-dir-mk" style="--mk-ac:#C9A84C">
-                  <div class="ol-dir-mk-bar"><i></i><i></i><i></i><span class="ol-dir-mk-url">scsp.mx</span></div>
-                  <div class="ol-dir-mk-view">
-                    <div class="ol-dir-mk-nav"><span class="ol-dir-mk-logo">Sist. Coordinados</span><span class="ol-dir-mk-pill">Cotizar</span></div>
-                    <div class="ol-dir-mk-eyebrow">Seguridad privada · Coyoacán</div>
-                    <div class="ol-dir-mk-h">Custodia y <span>traslado</span> seguro</div>
-                    <div class="ol-dir-mk-chips"><span class="on">Custodia</span><span>Traslados</span><span>Escolta</span></div>
-                  </div>
+                <div class="ol-dir-photo">
+                  <img src="/img/seguridad-privada/seguridadeventos/seguridad-privada-eventos-control-de-accesos.webp" alt="Control de accesos y custodia de seguridad privada — imagen ilustrativa del sector" width="800" height="500" loading="lazy" decoding="async">
+                  <div class="ol-dir-photo-cap"><span class="ol-dir-photo-eyebrow"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Seguridad privada · Coyoacán</span></div>
                 </div>
               </div>
               <div class="ol-dir-body">

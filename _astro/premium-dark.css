@@ -4703,6 +4703,24 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 @media (max-width: 720px) { .ol-case-gallery { grid-template-columns: 1fr; } }
 .ol-case-gallery .ol-case-figure { margin: 0; }
 
+/* Variante 3 columnas — galería de thumbnails uniformes (perfiles de directorio) */
+.ol-case-gallery-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.5rem; }
+.ol-case-gallery-3 .ol-case-figure { margin: 0; }
+.ol-case-gallery-3 .ol-case-figure-frame { aspect-ratio: 4 / 3; }
+.ol-case-gallery-3 .ol-case-figure-frame img { width: 100%; height: 100%; transition: transform 0.4s ease; }
+.ol-case-gallery-3 .ol-case-figure:hover .ol-case-figure-frame img { transform: scale(1.05); }
+/* Pocas imágenes: evitar columnas vacías (1 foto = acotada, 2 = 2 col) */
+@media (min-width: 561px) {
+  .ol-case-gallery-3:not(:has(.ol-case-figure:nth-child(3))) { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 680px; }
+  .ol-case-gallery-3:not(:has(.ol-case-figure:nth-child(2))) { grid-template-columns: minmax(0, 400px); max-width: none; }
+}
+/* Tablet: 3+ imágenes bajan a 2 col */
+@media (max-width: 900px) and (min-width: 561px) {
+  .ol-case-gallery-3:has(.ol-case-figure:nth-child(3)) { grid-template-columns: repeat(2, 1fr); }
+}
+/* Móvil: siempre 1 col */
+@media (max-width: 560px) { .ol-case-gallery-3 { grid-template-columns: 1fr !important; max-width: none !important; } }
+
 
 /* ============================================================
    CTA HERO CARD — .ol-cta-hero-*
