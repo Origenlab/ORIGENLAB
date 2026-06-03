@@ -58,6 +58,11 @@
     .ol-brand-card { background: var(--surface-2,#161616); border: 1px solid var(--border,#2a2a2a); border-top: 3px solid var(--blog-accent); border-radius: 8px; padding: 1.25rem 1.5rem; margin: .9rem 0; }
     .ol-brand-card h4 { color: var(--blog-accent); font-size: 1rem; margin: 0 0 .5rem; }
     .ol-brand-card p { font-size: .88rem; color: var(--text-muted,#ccc); margin: 0 0 .4rem; }
+      .ol-art-featured { position:relative; border-radius:16px; overflow:hidden; border:1px solid rgba(185,28,28,.18); background:#0C0C18; box-shadow:0 30px 80px rgba(0,0,0,.45); margin:0 0 1rem; }
+    .ol-art-featured.inline { margin:2.75rem 0; }
+    .ol-art-featured img { width:100%; height:auto; display:block; aspect-ratio:21/9; object-fit:cover; }
+    @media (max-width:760px){ .ol-art-featured img { aspect-ratio:16/10; } }
+    .ol-art-featured-caption { position:absolute; left:1.25rem; bottom:1.25rem; display:inline-flex; align-items:center; gap:.45rem; font-size:11px; font-weight:700; letter-spacing:.06em; padding:.45rem .9rem; border-radius:999px; background:rgba(8,8,14,.72); border:1px solid rgba(185,28,28,.3); color:#F08A7E; backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); }
   </style>
 </head>
 <body>
@@ -128,6 +133,8 @@
                 <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-dropdown-link">PODIUMEX</a></li>
                 <li><a href="/portafolio/equipo-para-eventos/boldis/" class="ol-dropdown-link">BOLDIS</a></li>
                 <li><a href="/portafolio/equipo-para-eventos/pantalla-led/" class="ol-dropdown-link">PantallaLED</a></li>
+                <li><a href="/portafolio/equipo-para-eventos/inflapy/" class="ol-dropdown-link">INFLAPY</a></li>
+                <li><a href="/portafolio/equipo-para-eventos/eventech/" class="ol-dropdown-link">EVENTECH</a></li>
               </ul></div>
             </li>
             </ul>
@@ -197,6 +204,8 @@
         <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— PODIUMEX</a></li>
         <li><a href="/portafolio/equipo-para-eventos/boldis/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— BOLDIS</a></li>
         <li><a href="/portafolio/equipo-para-eventos/pantalla-led/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— PantallaLED</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/inflapy/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— INFLAPY</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/eventech/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— EVENTECH</a></li>
       </ul>
     </li>
     <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
@@ -232,6 +241,14 @@
 
 <div class="ol-article-body">
   <main class="ol-art-content">
+    <figure class="ol-art-featured">
+      <picture>
+        <source srcset="../../img/equipos-contra-incendios/bomberos-equipo-proteccion-personal-epp-01.avif" type="image/avif">
+        <img src="../../img/equipos-contra-incendios/bomberos-equipo-proteccion-personal-epp-01.webp" alt="Equipo de protección personal (EPP) para bomberos certificado bajo norma NFPA" loading="lazy" decoding="async">
+      </picture>
+      <figcaption class="ol-art-featured-caption">Equipo de protección personal para bomberos, certificado bajo norma NFPA.</figcaption>
+    </figure>
+
 
     <section class="ol-art-section">
       <h2>BOMBERO.MX: el distribuidor que el mercado de bomberos necesitaba</h2>
@@ -335,7 +352,15 @@
     </section>
 
     <section class="ol-art-section">
-      <h2>El catálogo por línea de EPP</h2>
+          <figure class="ol-art-featured inline">
+      <picture>
+        <source srcset="../../img/equipos-contra-incendios/equipo-bombero-traje-estructural-scba-01.avif" type="image/avif">
+        <img src="../../img/equipos-contra-incendios/equipo-bombero-traje-estructural-scba-01.webp" alt="Equipo de respiración autónoma SCBA y traje estructural para bomberos certificado NFPA" loading="lazy" decoding="async">
+      </picture>
+      <figcaption class="ol-art-featured-caption">Equipo de respiración autónoma (SCBA) y traje estructural certificado NFPA.</figcaption>
+    </figure>
+
+    <h2>El catálogo por línea de EPP</h2>
       <p>
         El equipo de un bombero estructural completo comprende múltiples categorías de EPP, cada una con su propia normativa NFPA. BOMBERO.MX cubre todas estas categorías:
       </p>

@@ -153,6 +153,11 @@
       margin: 0.2rem 0.15rem;
       letter-spacing: 0.04em;
     }
+      .ol-art-featured { position:relative; border-radius:16px; overflow:hidden; border:1px solid rgba(185,28,28,.18); background:#0C0C18; box-shadow:0 30px 80px rgba(0,0,0,.45); margin:0 0 1rem; }
+    .ol-art-featured.inline { margin:2.75rem 0; }
+    .ol-art-featured img { width:100%; height:auto; display:block; aspect-ratio:21/9; object-fit:cover; }
+    @media (max-width:760px){ .ol-art-featured img { aspect-ratio:16/10; } }
+    .ol-art-featured-caption { position:absolute; left:1.25rem; bottom:1.25rem; display:inline-flex; align-items:center; gap:.45rem; font-size:11px; font-weight:700; letter-spacing:.06em; padding:.45rem .9rem; border-radius:999px; background:rgba(8,8,14,.72); border:1px solid rgba(185,28,28,.3); color:#F08A7E; backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); }
   </style>
 </head>
 <body>
@@ -233,6 +238,8 @@
                 <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-dropdown-link">PODIUMEX</a></li>
                 <li><a href="/portafolio/equipo-para-eventos/boldis/" class="ol-dropdown-link">BOLDIS</a></li>
                 <li><a href="/portafolio/equipo-para-eventos/pantalla-led/" class="ol-dropdown-link">PantallaLED</a></li>
+                <li><a href="/portafolio/equipo-para-eventos/inflapy/" class="ol-dropdown-link">INFLAPY</a></li>
+                <li><a href="/portafolio/equipo-para-eventos/eventech/" class="ol-dropdown-link">EVENTECH</a></li>
               </ul></div>
             </li>
             </ul>
@@ -302,6 +309,8 @@
         <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— PODIUMEX</a></li>
         <li><a href="/portafolio/equipo-para-eventos/boldis/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— BOLDIS</a></li>
         <li><a href="/portafolio/equipo-para-eventos/pantalla-led/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— PantallaLED</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/inflapy/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— INFLAPY</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/eventech/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— EVENTECH</a></li>
       </ul>
     </li>
     <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
@@ -341,6 +350,14 @@
 <!-- CUERPO DEL ARTÍCULO -->
 <div class="ol-article-body">
   <main class="ol-art-content">
+    <figure class="ol-art-featured">
+      <picture>
+        <source srcset="../../img/equipos-contra-incendios/bomberos-respuesta-emergencia-incendio-01.avif" type="image/avif">
+        <img src="../../img/equipos-contra-incendios/bomberos-respuesta-emergencia-incendio-01.webp" alt="Brigada de bomberos en respuesta a una emergencia con equipo contra incendios" loading="lazy" decoding="async">
+      </picture>
+      <figcaption class="ol-art-featured-caption">Brigada de bomberos respondiendo a una emergencia con equipo certificado.</figcaption>
+    </figure>
+
 
     <!-- SECCIÓN 1: INTRODUCCIÓN -->
     <section class="ol-art-section">
@@ -416,7 +433,15 @@
 
     <!-- SECCIÓN 4: CATÁLOGO DE PRODUCTOS -->
     <section class="ol-art-section">
-      <h2>Catálogo de productos: de extintores a sistemas integrales</h2>
+          <figure class="ol-art-featured inline">
+      <picture>
+        <source srcset="../../img/equipos-contra-incendios/equipo-proteccion-contra-incendios-04.avif" type="image/avif">
+        <img src="../../img/equipos-contra-incendios/equipo-proteccion-contra-incendios-04.webp" alt="Equipo de protección contra incendios para entornos industriales" loading="lazy" decoding="async">
+      </picture>
+      <figcaption class="ol-art-featured-caption">Equipo de protección contra incendios para entornos industriales.</figcaption>
+    </figure>
+
+    <h2>Catálogo de productos: de extintores a sistemas integrales</h2>
       <p>
         El portafolio de MESECI cubre prácticamente todas las categorías de equipo activo de protección contra incendios. A diferencia de distribuidores especializados en una sola línea, MESECI funciona como ventanilla única para proyectos que requieren distintos tipos de equipo coordinados en un solo sistema.
       </p>

@@ -59,6 +59,11 @@
     .ol-phase-num { flex-shrink: 0; width: 34px; height: 34px; background: var(--blog-accent); color: #fff; font-weight: 900; font-size: .9rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
     .ol-phase-body h4 { margin: 0 0 .3rem; font-size: .95rem; color: var(--text,#e8e8e8); font-weight: 700; }
     .ol-phase-body p { margin: 0; font-size: .87rem; color: var(--text-muted,#ccc); }
+      .ol-art-featured { position:relative; border-radius:16px; overflow:hidden; border:1px solid rgba(185,28,28,.18); background:#0C0C18; box-shadow:0 30px 80px rgba(0,0,0,.45); margin:0 0 1rem; }
+    .ol-art-featured.inline { margin:2.75rem 0; }
+    .ol-art-featured img { width:100%; height:auto; display:block; aspect-ratio:21/9; object-fit:cover; }
+    @media (max-width:760px){ .ol-art-featured img { aspect-ratio:16/10; } }
+    .ol-art-featured-caption { position:absolute; left:1.25rem; bottom:1.25rem; display:inline-flex; align-items:center; gap:.45rem; font-size:11px; font-weight:700; letter-spacing:.06em; padding:.45rem .9rem; border-radius:999px; background:rgba(8,8,14,.72); border:1px solid rgba(185,28,28,.3); color:#F08A7E; backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); }
   </style>
 </head>
 <body>
@@ -129,6 +134,8 @@
                 <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-dropdown-link">PODIUMEX</a></li>
                 <li><a href="/portafolio/equipo-para-eventos/boldis/" class="ol-dropdown-link">BOLDIS</a></li>
                 <li><a href="/portafolio/equipo-para-eventos/pantalla-led/" class="ol-dropdown-link">PantallaLED</a></li>
+                <li><a href="/portafolio/equipo-para-eventos/inflapy/" class="ol-dropdown-link">INFLAPY</a></li>
+                <li><a href="/portafolio/equipo-para-eventos/eventech/" class="ol-dropdown-link">EVENTECH</a></li>
               </ul></div>
             </li>
             </ul>
@@ -198,6 +205,8 @@
         <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— PODIUMEX</a></li>
         <li><a href="/portafolio/equipo-para-eventos/boldis/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— BOLDIS</a></li>
         <li><a href="/portafolio/equipo-para-eventos/pantalla-led/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— PantallaLED</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/inflapy/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— INFLAPY</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/eventech/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— EVENTECH</a></li>
       </ul>
     </li>
     <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
@@ -233,6 +242,14 @@
 
 <div class="ol-article-body">
   <main class="ol-art-content">
+    <figure class="ol-art-featured">
+      <picture>
+        <source srcset="../../img/equipos-contra-incendios/sistema-alarma-deteccion-contra-incendios-03.avif" type="image/avif">
+        <img src="../../img/equipos-contra-incendios/sistema-alarma-deteccion-contra-incendios-03.webp" alt="Sistema de detección y alarma contra incendios bajo norma NFPA 72" loading="lazy" decoding="async">
+      </picture>
+      <figcaption class="ol-art-featured-caption">Sistema de detección y alarma contra incendios bajo norma NFPA 72.</figcaption>
+    </figure>
+
 
     <section class="ol-art-section">
       <h2>¿Qué es un integrador de sistemas PCI y por qué es distinto a un distribuidor?</h2>
@@ -286,7 +303,15 @@
     </section>
 
     <section class="ol-art-section">
-      <h2>El marco normativo de Proyecto Red</h2>
+          <figure class="ol-art-featured inline">
+      <picture>
+        <source srcset="../../img/equipos-contra-incendios/bomberos-respuesta-emergencia-incendio-04.avif" type="image/avif">
+        <img src="../../img/equipos-contra-incendios/bomberos-respuesta-emergencia-incendio-04.webp" alt="Brigada de bomberos en respuesta a una emergencia con equipo contra incendios" loading="lazy" decoding="async">
+      </picture>
+      <figcaption class="ol-art-featured-caption">Brigada de bomberos respondiendo a una emergencia con equipo certificado.</figcaption>
+    </figure>
+
+    <h2>El marco normativo de Proyecto Red</h2>
       <div style="margin: 1rem 0 1.5rem;">
         <span class="ol-art-norm-badge">NFPA 13</span>
         <span class="ol-art-norm-badge">NFPA 13R</span>
