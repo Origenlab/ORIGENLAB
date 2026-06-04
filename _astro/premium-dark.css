@@ -2298,6 +2298,7 @@ select:focus-visible,
 .ol-blog-cat.estrategia   { background: rgba(245,158,11,0.1);  border-color: rgba(245,158,11,0.2);  color: #FBBF24; }
 .ol-blog-cat.pci          { background: rgba(220,38,38,0.10);  border-color: rgba(220,38,38,0.25);  color: #F87171; }
 .ol-blog-cat.seguridad    { background: rgba(37,99,235,0.10);  border-color: rgba(37,99,235,0.25);  color: #60A5FA; }
+.ol-blog-cat.eventos      { background: rgba(124,58,237,0.12); border-color: rgba(124,58,237,0.28); color: #A78BFA; }
 
 /* ---- PCI SECTOR (featured) ---- */
 .ol-blog-sector {
