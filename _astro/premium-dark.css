@@ -1137,12 +1137,12 @@ body { padding-top: calc(42px + 88px) !important; }
 /* ============================================================
    WA BUBBLE
    ============================================================ */
-.wa-bubble[data-astro-cid-q7trxeqo] {
+.wa-bubble {
   background: #1A3A2A !important;
   border: 1px solid rgba(37,211,102,0.25) !important;
   box-shadow: 0 4px 20px rgba(37,211,102,0.15) !important;
 }
-.wa-bubble[data-astro-cid-q7trxeqo]:hover {
+.wa-bubble:hover {
   background: #25D366 !important;
   box-shadow: 0 8px 32px rgba(37,211,102,0.35) !important;
 }
@@ -4327,7 +4327,7 @@ select:focus-visible,
 
 /* ----- WA bubble — tighter margin on phones ----- */
 @media (max-width: 480px) {
-  .wa-bubble[data-astro-cid-q7trxeqo] {
+  .wa-bubble {
     bottom: 1.25rem !important;
     right: 1.25rem !important;
     width: 50px !important;
@@ -4400,7 +4400,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-cta-primary:hover { transform: translateY(-1px) !important; }
 .ol-cta-secondary:hover { transform: translateY(-1px) !important; }
 .ol-cta-final-primary:hover { transform: translateY(-1px) !important; }
-.wa-bubble[data-astro-cid-q7trxeqo]:hover { transform: scale(1.08) !important; }
+.wa-bubble:hover { transform: scale(1.08) !important; }
 
 /* ============================================================
    NESTED DROPDOWN (FLYOUT) — Submenu de 2do nivel
