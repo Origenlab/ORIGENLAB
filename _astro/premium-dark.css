@@ -1218,6 +1218,22 @@ body { padding-top: calc(42px + 88px) !important; }
   max-width: 1600px;
   margin: 0 auto;
 }
+/* Servicios — detalle (sección + contenedor homologado) */
+.ol-servicios-page {
+  background: #08080E;
+  padding: 6rem 0;
+  position: relative;
+}
+.ol-servicios-page-inner {
+  width: 90%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* Utility: separación estándar entre encabezado .ol-sh y su grid */
+.ol-mt-section { margin-top: 4rem; }
+@media (max-width: 768px) { .ol-mt-section { margin-top: 2.5rem; } }
+
 /* 2-col section header */
 .ol-sh {
   display: grid;
@@ -4107,6 +4123,7 @@ select:focus-visible,
   .ol-testimonials-inner,
   .ol-faq-inner,
   .ol-related-inner,
+  .ol-servicios-page-inner,
   .ol-page-hero-inner {
     width: 92%;
   }
@@ -4119,6 +4136,7 @@ select:focus-visible,
   .ol-testimonials-inner,
   .ol-faq-inner,
   .ol-related-inner,
+  .ol-servicios-page-inner,
   .ol-page-hero-inner {
     width: 94%;
   }
@@ -4132,6 +4150,7 @@ select:focus-visible,
   .ol-process,
   .ol-testimonials,
   .ol-faq-section,
+  .ol-servicios-page,
   .ol-related      { padding: 4rem 0; }
   .ol-cta-bar      { padding: 3.5rem 0; }
   .ol-cta-final    { padding: 5rem 0; }
@@ -4144,6 +4163,7 @@ select:focus-visible,
   .ol-process,
   .ol-testimonials,
   .ol-faq-section,
+  .ol-servicios-page,
   .ol-related      { padding: 3rem 0; }
   .ol-cta-bar      { padding: 3rem 0; }
   .ol-cta-final    { padding: 4rem 0; }

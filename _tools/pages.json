@@ -1,0 +1,6 @@
+[
+  { "path": "/",                                              "name": "home",            "full": true },
+  { "path": "/servicios/",                                    "name": "servicios",       "full": true },
+  { "path": "/servicios/paginas-en-renta/",                   "name": "paginas-en-renta","full": true },
+  { "path": "/servicios/paginas-en-renta/mespic/",            "name": "demo-mespic",     "full": true }
+]
