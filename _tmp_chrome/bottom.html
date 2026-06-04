@@ -1,0 +1,67 @@
+
+<!-- CTA BAND -->
+<section class="ol-cta-hero-section" style="padding:4rem 1.5rem">
+  <div class="ol-container" style="max-width:700px;margin:auto;text-align:center">
+    <p class="ol-cta-hero-eyebrow">Desarrollado por OrigenLab</p>
+    <h2 class="ol-cta-hero-title">¿Tu empresa necesita un sitio web que realmente funcione?</h2>
+    <p class="ol-cta-hero-sub">Construimos sitios rápidos, modernos y pensados para generar resultados reales — en CDMX, Monterrey, Guadalajara y el Bajío.</p>
+    <div class="ol-cta-hero-actions">
+      <a href="/contacto/" class="btn-primary">Iniciar proyecto</a>
+      <a href="/portafolio/" class="btn-outline">Ver portafolio</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="ol-footer">
+  <div class="ol-footer-inner">
+    <div class="ol-footer-brand">
+      <a href="/" class="ol-logo" aria-label="OrigenLab">
+        <span class="ol-logo-mark" aria-hidden="true">OL</span>
+        <span class="ol-logo-text">OrigenLab</span>
+      </a>
+      <p class="ol-footer-tagline">Agencia mexicana de desarrollo web y diseño digital.</p>
+    </div>
+    <nav class="ol-footer-nav" aria-label="Navegación del pie de página">
+      <div class="ol-footer-col">
+        <span class="ol-footer-col-title">Servicios</span>
+        <a href="/servicios/desarrollo-web/" class="ol-footer-link">Desarrollo web</a>
+        <a href="/servicios/landing-pages/" class="ol-footer-link">Landing pages</a>
+        <a href="/servicios/tiendas-en-linea/" class="ol-footer-link">E-commerce</a>
+        <a href="/servicios/rediseno-web/" class="ol-footer-link">Rediseño web</a>
+      </div>
+      <div class="ol-footer-col">
+        <span class="ol-footer-col-title">Empresa</span>
+        <a href="/nosotros/" class="ol-footer-link">Nosotros</a>
+        <a href="/portafolio/" class="ol-footer-link">Portafolio</a>
+        <a href="/blog/" class="ol-footer-link">Blog</a>
+        <a href="/contacto/" class="ol-footer-link">Contacto</a>
+      </div>
+      <div class="ol-footer-col">
+        <span class="ol-footer-col-title">Legal</span>
+        <a href="/aviso-de-privacidad/" class="ol-footer-link">Aviso de privacidad</a>
+        <a href="/terminos/" class="ol-footer-link">Términos de uso</a>
+      </div>
+    </nav>
+  </div>
+  <div class="ol-footer-bottom">
+    <p>© 2025 OrigenLab · Todos los derechos reservados · Ciudad de México, México</p>
+  </div>
+</footer>
+
+<script src="/_astro/ol-header.js?v20260603b" defer></script>
+<script>
+(function(){
+  var pb=document.getElementById('pb');
+  if(!pb)return;
+  function upd(){
+    var s=document.documentElement;
+    var pct=(s.scrollTop/(s.scrollHeight-s.clientHeight))*100;
+    pb.style.width=Math.min(pct,100)+'%';
+    pb.setAttribute('aria-valuenow',Math.round(pct));
+  }
+  window.addEventListener('scroll',upd,{passive:true});
+})();
+</script>
+</body>
+</html>
