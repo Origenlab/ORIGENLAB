@@ -1811,7 +1811,7 @@ body { padding-top: calc(42px + 88px) !important; }
   align-items: center;
   gap: 0.6rem;
   font-size: 13.5px;
-  color: rgba(240,240,245,0.45);
+  color: rgba(240,240,245,0.58);
   text-decoration: none;
 }
 .ol-footer-contact-list li a:hover { color: #C9A84C; }
