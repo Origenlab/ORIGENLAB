@@ -3773,7 +3773,7 @@ select:focus-visible,
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(201,168,76,0.65);
+  color: rgba(201,168,76,0.85);
   margin-bottom: 0.3rem;
 }
 .ol-art-author-info .name {
