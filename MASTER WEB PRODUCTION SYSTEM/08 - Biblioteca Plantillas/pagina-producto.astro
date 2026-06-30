@@ -1,0 +1,78 @@
+---
+{/* pagina-producto.astro — ruta dinámica de FICHA DE PRODUCTO (L4) desde la colección `productos`. Origen: BOMBERO (productos/[...slug]) + getStaticPaths */}
+
+// ============================================================================
+// FICHA DE PRODUCTO (L4) — ruta dinámica schema-driven.
+// Copia a src/pages/productos/[...slug].astro
+//
+// Genera UNA página por entrada de la Content Collection `productos`
+// (ver _scaffold/content.config.ts — esquema Zod .strict()). El layout
+// (ProductLayout) hace TODO el render; esta página solo: (1) declara los paths,
+// (2) mapea frontmatter→props, (3) renderiza el cuerpo MDX con <Content/>.
+//
+// Toda entidad repetible = Content Collection (D1). Nada de fichas .astro
+// sueltas (anti-patrón EVENTECH/RENTADEILUMINACION).
+//
+// CONTRATO DE DATOS (campos garantizados por la colección `productos`):
+//   title, description, category, image, price?, sku?, brand?, gallery?,
+//   relatedProducts?, relatedServices?, faqs?, featured, order, draft, seo*.
+//
+// BLOQUES OPCIONALES DE FICHA (specs, applications, certifications, badge,
+// features): NO vienen en el schema base. Si tu catálogo los necesita, AÑÁDELOS
+// a la colección `productos` en content.config.ts y descomenta abajo. ProductLayout
+// ya los acepta como props opcionales (no rompe si faltan).
+// ============================================================================
+
+import { getCollection, getEntries, render } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import ProductLayout from "@layouts/ProductLayout.astro";
+
+export async function getStaticPaths() {
+  const productos = await getCollection("productos", ({ data }) => !data.draft);
+  return productos.map((entry) => ({
+    // El id del archivo (sin extensión) ES el slug de la URL.
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+type Props = { entry: CollectionEntry<"productos"> };
+const { entry } = Astro.props;
+const d = entry.data;
+
+// Resuelve las referencias tipadas a productos/servicios relacionados (interlinking).
+const relatedRefs = [...(d.relatedProducts ?? []), ...(d.relatedServices ?? [])];
+const relatedEntries = relatedRefs.length ? await getEntries(relatedRefs as any) : [];
+const related = relatedEntries.map((r: any) => ({
+  label: r.data.title,
+  href: `/${r.collection === "servicios" ? "servicios" : "productos"}/${r.id}`,
+  description: r.data.description,
+}));
+
+// Renderiza el cuerpo markdown/MDX del archivo (va al <slot/> del layout).
+const { Content } = await render(entry);
+---
+
+<ProductLayout
+  slug={entry.id}
+  title={d.title}
+  description={d.description}
+  category={d.category}
+  seoTitle={d.seoTitle}
+  seoDescription={d.seoDescription}
+  image={d.image}
+  price={d.price}
+  gallery={d.gallery?.map((src) => ({ src, alt: d.title }))}
+  faqs={d.faqs?.map((f) => ({ q: f.question, a: f.answer }))}
+  related={related}
+>
+  {/*
+    Campos de ficha enriquecida (descomenta tras añadirlos a la colección):
+    badge={d.badge}
+    features={d.features}
+    specs={d.specs}
+    applications={d.applications}
+    certifications={d.certifications}
+  */}
+  <Content />
+</ProductLayout>

@@ -1,0 +1,120 @@
+---
+{/* pagina-home.astro — HOME (L1): hero + categorías + prueba social + CTA WhatsApp. Origen: PROYECTORED (orquestador limpio) + patrón D2 */}
+
+// ============================================================================
+// HOME — Nivel L1. "Orquestador limpio" (PROYECTORED): la página importa
+// secciones/datos y los compone; cero lógica de negocio aquí. Copia este archivo
+// a src/pages/index.astro y rellena los marcadores {{...}}.
+//
+// pageType="home" → buildSchema emite Organization + WebSite + LocalBusiness
+// (el grafo global, solo en home; B2). El resto del sitio emite su schema propio.
+//
+// Estructura canónica de home (D2): hero → categorías → prueba social → CTA.
+// ============================================================================
+
+import PageLayout from "@layouts/PageLayout.astro";
+import Hero from "@components/Hero.astro";
+import SectionHeading from "@components/SectionHeading.astro";
+import ProductCard from "@components/ProductCard.astro";
+import CTABanner from "@components/CTABanner.astro";
+import { SITE, TAXONOMY, waUrl } from "@config/site";
+
+const waLink = waUrl();
+
+// Prueba social: SOLO testimonios reales/verificables. Si no hay reseñas
+// verificables NO se inventan (B4) y NO se emite aggregateRating en schema.
+const testimonials: { name: string; role?: string; text: string }[] = [
+  // { name: '{{CLIENTE_1}}', role: '{{ROL/EMPRESA}}', text: '{{TESTIMONIO_VERIFICABLE}}' },
+];
+---
+
+<PageLayout
+  title={SITE.description}
+  description={SITE.description}
+  pageType="home"
+>
+  {/* ── HERO (L1) ── */}
+  <Hero
+    badge="{{HERO_BADGE}}"
+    title="{{HERO_TITULO}}"
+    subtitle="{{HERO_SUBTITULO_1_FRASE}}"
+    ctas={[
+      { text: "Cotizar por WhatsApp", href: waLink, variant: "primary", whatsapp: true },
+      { text: "Ver catálogo", href: "/productos", variant: "outline" },
+    ]}
+  />
+
+  {/* ── CATEGORÍAS (desde TAXONOMY — fuente única, nunca hardcodear) ── */}
+  <section class="home-cats">
+    <div class="container">
+      <SectionHeading
+        eyebrow="{{EYEBROW_CATEGORIAS}}"
+        title="{{TITULO_CATEGORIAS}}"
+        desc="{{INTRO_CATEGORIAS_1_2_FRASES}}"
+      />
+      <div class="home-cats__grid">
+        {TAXONOMY.categories.map((cat) => (
+          <ProductCard
+            title={cat.label}
+            href={cat.href}
+            badge={cat.badge}
+            description={`{{DESCRIPCION_${cat.slug}}}`}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ── PRUEBA SOCIAL (solo si hay testimonios verificables) ── */}
+  {testimonials.length > 0 && (
+    <section class="home-social">
+      <div class="container">
+        <SectionHeading eyebrow="Clientes" title="Lo que dicen de nosotros" />
+        <div class="home-social__grid">
+          {testimonials.map((t) => (
+            <figure class="home-social__card">
+              <blockquote>{t.text}</blockquote>
+              <figcaption>{t.name}{t.role && <span> · {t.role}</span>}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {/* ── Señales de confianza (E-E-A-T): cobertura, años, certificaciones ── */}
+  <section class="home-trust">
+    <div class="container home-trust__grid">
+      <div class="home-trust__item"><strong>{{DATO_1_NUM}}</strong><span>{{DATO_1_LABEL}}</span></div>
+      <div class="home-trust__item"><strong>{{DATO_2_NUM}}</strong><span>{{DATO_2_LABEL}}</span></div>
+      <div class="home-trust__item"><strong>{{DATO_3_NUM}}</strong><span>{{DATO_3_LABEL}}</span></div>
+    </div>
+  </section>
+
+  {/* ── CTA de cierre (WhatsApp-first) ── */}
+  <CTABanner
+    heading="{{CTA_FINAL_TITULO}}"
+    desc="{{CTA_FINAL_TEXTO}}"
+    btns={[{ label: "Cotizar por WhatsApp", href: waLink, icon: "wa", primary: true, external: true }]}
+  />
+</PageLayout>
+
+<style>
+  /* CSS vanilla con tokens (tokens.css = fuente única). */
+  .home-cats, .home-social, .home-trust { padding: var(--space-12) 0; }
+  .home-cats__grid, .home-social__grid {
+    display: grid; grid-template-columns: 1fr; gap: var(--space-5); margin-top: var(--space-8);
+  }
+  .home-social__card { padding: var(--space-5); border: 1px solid var(--color-border); border-radius: var(--radius-lg); }
+  .home-social__card blockquote { margin: 0 0 var(--space-3); font-size: var(--text-lg); }
+  .home-social__card figcaption { color: var(--color-text-muted); font-size: var(--text-sm); }
+  .home-trust { background: var(--color-surface); }
+  .home-trust__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); text-align: center; }
+  .home-trust__item strong { display: block; font-size: var(--text-fluid-3xl); color: var(--color-primary); font-family: var(--font-heading); }
+  .home-trust__item span { color: var(--color-text-muted); font-size: var(--text-sm); }
+
+  @media (min-width: 768px) {
+    .home-cats__grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+    .home-social__grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+  }
+</style>
