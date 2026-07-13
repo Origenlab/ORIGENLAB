@@ -36,6 +36,7 @@ La metodología industrial completa está en [[01 - La Fabrica de Sitios]].
 
 - [[Manual Operativo]] — guía end-to-end para construir un sitio usando solo el Vault.
 - [[Roadmap de Optimizacion]] — plan priorizado (impacto × esfuerzo) para evolucionar el ecosistema.
+- [[2026-07-10-Programa-SEO-NeuronWriter-Portafolio]] — programa operativo para auditar, priorizar y optimizar el portafolio URL por URL.
 - [[03 - Mapa de Conocimiento]] — dónde vive el conocimiento hoy y qué centraliza este Vault.
 - [[diagnostico-por-proyecto]] · [[patrones-canonicos]] — base de evidencia (31 proyectos).
 

@@ -9,7 +9,7 @@ Sitio HTML estático servido en GitHub Pages (`Frankoropeza/origenlab` → orige
 ## Reglas duras (no negociar)
 
 1. **NO mencionar SEO** en el sitio (copy, alt, metadatos visibles). OrigenLab vende diseño + velocidad + conversión.
-2. **NO precios** en ninguna página. Cero cifras.
+2. **Precios — regla actualizada 2026-07-13.** SÍ se muestran en las 3 cards de paquetes del home (`#paquetes`): Esencial $2,000 MXN · Profesional $3,000 MXN · Élite $5,000 MXN. Fuera de esas 3 cards, el resto del sitio (servicios, casos de estudio, blog) sigue sin cifras salvo que se indique lo contrario explícitamente.
 3. **NO plazos** ("en 2 semanas", "entrega en X"). Reemplazar por "calendario por escrito desde el inicio".
 4. **NO animaciones excepto botones** (cards, imágenes, íconos JAMÁS animan).
 5. **NO duplicar CSS por página.** Si un patrón existe en >1 página, vive en premium-dark.css con variables CSS para overrides.

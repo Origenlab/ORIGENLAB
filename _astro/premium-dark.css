@@ -5783,3 +5783,149 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 
 @media (max-width:900px){ .ol-stats{ grid-template-columns:repeat(2,1fr);} }
 @media (max-width:520px){ .ol-stat{ padding:1.25rem 1rem;} .ol-stat-num{ font-size:1.9rem;} .ol-credband{ padding:4rem 0;} }
+
+/* ============================================================
+   .ol-packages — Paquetes / niveles de alcance (home)
+   Reemplaza el bloque "Por qué OrigenLab" bajo el hero. 2026-07-13.
+   Namespaced y aditivo: no afecta otras páginas (.ol-credband/.ol-stat
+   siguen vivos, los usa /contacto/). Sin animaciones en cards (regla 4)
+   — .ol-pkg-card hereda el bloqueo global [class*="card"]; solo
+   .ol-pkg-cta anima vía su propio :hover.
+   ============================================================ */
+.ol-packages { background:#0D0D16; padding:5.5rem 0; position:relative; }
+.ol-packages::before { content:''; position:absolute; top:0; left:0; right:0; height:1px; background:linear-gradient(90deg, transparent, rgba(201,168,76,0.2), transparent); }
+.ol-packages-inner { width:90%; max-width:1600px; margin:0 auto; }
+
+.ol-pkg-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; align-items:stretch; }
+
+.ol-pkg-card {
+  display:flex; flex-direction:column;
+  background:#0C0C18;
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:16px;
+  padding:2rem 1.85rem 1.85rem;
+  position:relative;
+}
+.ol-pkg-featured { border-color:rgba(201,168,76,0.45); background:linear-gradient(180deg, rgba(201,168,76,0.07) 0%, #0C0C18 24%); }
+
+.ol-pkg-badge {
+  position:absolute; top:-13px; left:1.85rem;
+  display:inline-flex; align-items:center;
+  padding:0.35rem 0.85rem;
+  background:#C9A84C; color:#08080E;
+  font-size:11px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase;
+  border-radius:999px;
+}
+
+.ol-pkg-head { display:flex; align-items:baseline; gap:0.65rem; margin-bottom:0.35rem; }
+.ol-pkg-num { font-size:11px; font-weight:700; letter-spacing:0.14em; color:rgba(201,168,76,0.45); text-transform:uppercase; }
+.ol-pkg-name { font-size:1.5rem; font-weight:800; color:#F0F0F5; letter-spacing:-0.02em; margin:0; }
+
+.ol-pkg-price { font-size:2.2rem; font-weight:800; color:#C9A84C; letter-spacing:-0.01em; margin:0.55rem 0 0.9rem; line-height:1; text-align:center; }
+.ol-pkg-price-cur { font-size:0.75rem; font-weight:700; color:rgba(201,168,76,0.65); letter-spacing:0.08em; margin-left:0.25rem; }
+
+/* Precio destacado — card "Más elegido" (Profesional). Diseño tipo chip
+   con fondo, borde y sombra estática (sin animación, regla 4). */
+.ol-pkg-featured .ol-pkg-price {
+  display:block;
+  width:fit-content;
+  margin:0.7rem auto 1.1rem;
+  padding:0.55rem 1.6rem;
+  font-size:2.85rem;
+  color:#F6DA8A;
+  background:linear-gradient(180deg, rgba(201,168,76,0.20) 0%, rgba(201,168,76,0.06) 100%);
+  border:1px solid rgba(201,168,76,0.55);
+  border-radius:14px;
+  box-shadow:0 10px 28px -10px rgba(201,168,76,0.45), inset 0 1px 0 rgba(255,255,255,0.08);
+}
+.ol-pkg-featured .ol-pkg-price-cur { color:rgba(246,218,138,0.75); }
+.ol-pkg-tagline { font-size:14.5px; font-weight:600; color:#C9A84C; margin:0 0 1rem; line-height:1.4; }
+.ol-pkg-desc { font-size:13.5px; color:rgba(240,240,245,0.55); line-height:1.75; margin:0 0 1.1rem; }
+
+.ol-pkg-fit {
+  font-size:12.5px; color:rgba(240,240,245,0.65); line-height:1.6;
+  margin:0 0 1.25rem; padding:0.85rem 1rem;
+  background:rgba(255,255,255,0.03); border-left:2px solid rgba(201,168,76,0.4);
+  border-radius:0 8px 8px 0;
+}
+.ol-pkg-fit strong { color:#F0F0F5; }
+
+.ol-pkg-list { list-style:none; padding:1.1rem 0 0; margin:0 0 1.5rem; display:flex; flex-direction:column; gap:0.5rem; border-top:1px solid rgba(255,255,255,0.06); flex-grow:1; }
+.ol-pkg-list li { font-size:12.5px; color:rgba(240,240,245,0.55); line-height:1.55; padding-left:1.1rem; position:relative; }
+.ol-pkg-list li::before { content:'→'; position:absolute; left:0; top:1px; font-size:10px; color:rgba(201,168,76,0.5); }
+
+.ol-pkg-cta {
+  display:inline-flex; align-items:center; justify-content:center; gap:0.45rem;
+  font-size:13px; font-weight:600; letter-spacing:0.02em;
+  color:#C9A84C; text-decoration:none;
+  padding:0.75rem 1.25rem;
+  border:1px solid rgba(201,168,76,0.3); border-radius:8px;
+  background:rgba(201,168,76,0.05);
+  margin-top:auto; text-align:center;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+.ol-pkg-cta:hover { background:#C9A84C; border-color:#C9A84C; color:#08080E; }
+.ol-pkg-featured .ol-pkg-cta { background:#C9A84C; border-color:#C9A84C; color:#08080E; }
+.ol-pkg-featured .ol-pkg-cta:hover { background:#E0C169; border-color:#E0C169; }
+
+.ol-pkg-note { margin:2.5rem 0 0; font-size:13px; color:rgba(240,240,245,0.45); text-align:center; line-height:1.6; }
+.ol-pkg-note a { color:#C9A84C; font-weight:600; text-decoration:underline; text-underline-offset:2px; }
+
+/* Interlinking card → detalle / detalle → volver (home + /paquetes/) */
+.ol-pkg-more { display:block; text-align:center; margin-top:0.65rem; font-size:12px; font-weight:600; color:rgba(240,240,245,0.4); text-decoration:none; }
+.ol-pkg-more:hover { color:#C9A84C; text-decoration:underline; text-underline-offset:2px; }
+.ol-pkg-detail-back { display:inline-flex; align-items:center; gap:0.35rem; font-size:12px; font-weight:600; color:rgba(240,240,245,0.4); text-decoration:none; margin-bottom:1.1rem; }
+.ol-pkg-detail-back:hover { color:#C9A84C; }
+
+@media (max-width:1100px){ .ol-pkg-grid{ grid-template-columns:1fr; } .ol-pkg-featured{ order:-1; } }
+@media (max-width:520px){ .ol-packages{ padding:4rem 0; } .ol-pkg-card{ padding:1.5rem 1.35rem 1.5rem; } }
+
+/* ============================================================
+   .ol-pkg-detail — módulo 2 columnas por paquete (texto + maqueta
+   de referencia .mk). Vive en /paquetes/. Solo botón/CTA anima.
+   2026-07-13.
+   ============================================================ */
+.ol-pkg-detail-section { background:#0D0D16; padding:1rem 0 5.5rem; }
+.ol-pkg-detail-row { display:grid; grid-template-columns:1.05fr 0.95fr; gap:3.5rem; align-items:center; padding:3.5rem 0; border-top:1px solid rgba(255,255,255,0.07); }
+.ol-pkg-detail-row:first-child { border-top:none; padding-top:0; }
+
+.ol-pkg-detail-kicker { display:block; font-size:11px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:rgba(201,168,76,0.55); margin-bottom:0.6rem; }
+
+/* Fila destacada (paquete "Más elegido") — mismo layout, divisor más cálido
+   + tag inline junto al kicker. Sin reordenar columnas (regla: sin zig zag). */
+.ol-pkg-detail-row--featured { border-top-color:rgba(201,168,76,0.25); }
+.ol-pkg-detail-headrow { display:flex; align-items:center; gap:0.65rem; margin-bottom:0.6rem; }
+.ol-pkg-detail-headrow .ol-pkg-detail-kicker { margin-bottom:0; }
+.ol-pkg-detail-tag {
+  display:inline-flex; align-items:center;
+  padding:0.25rem 0.6rem;
+  background:#C9A84C; color:#08080E;
+  font-size:10px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase;
+  border-radius:999px;
+}
+
+.ol-pkg-detail-title { font-size:2.75rem; font-weight:800; color:#F0F0F5; letter-spacing:-0.02em; margin:0 0 0.4rem; line-height:1.05; }
+.ol-pkg-detail-price { font-size:2.1rem; font-weight:800; color:#C9A84C; letter-spacing:-0.01em; margin:0 0 0.9rem; }
+.ol-pkg-detail-tagline { font-size:15px; font-weight:600; color:rgba(240,240,245,0.75); margin:0 0 1rem; line-height:1.4; }
+.ol-pkg-detail-desc { font-size:14.5px; color:rgba(240,240,245,0.58); line-height:1.8; margin:0 0 1.25rem; }
+
+.ol-pkg-detail-feat-label { font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:rgba(240,240,245,0.4); margin:1.75rem 0 1rem; padding-top:1.5rem; border-top:1px solid rgba(255,255,255,0.07); }
+.ol-pkg-detail-feat-list { list-style:none; margin:0 0 1.75rem; padding:0; display:flex; flex-direction:column; gap:1.1rem; }
+.ol-pkg-detail-feat-list li { padding-left:1.15rem; position:relative; }
+.ol-pkg-detail-feat-list li::before { content:''; position:absolute; left:0; top:0.5em; width:6px; height:6px; border-radius:50%; background:#C9A84C; }
+.ol-pkg-detail-feat-list strong { display:block; font-size:13.5px; font-weight:700; color:#F0F0F5; margin-bottom:0.25rem; }
+.ol-pkg-detail-feat-list span { display:block; font-size:13px; color:rgba(240,240,245,0.5); line-height:1.65; }
+
+.ol-pkg-detail-visual { display:flex; flex-direction:column; align-items:center; }
+.ol-pkg-detail-visual .mk-frame { width:100%; max-width:460px; margin-top:0.9rem; }
+.ol-pkg-detail-visual .mk { box-shadow:0 30px 60px -20px rgba(0,0,0,0.5); }
+.ol-pkg-detail-caption { margin:1.1rem 0 0; font-size:12.5px; color:rgba(240,240,245,0.4); text-align:center; font-style:italic; max-width:380px; }
+
+@media (max-width:900px){
+  .ol-pkg-detail-row { grid-template-columns:1fr; gap:2rem; padding:2.75rem 0; }
+  .ol-pkg-detail-visual { order:-1; }
+}
+@media (max-width:520px){
+  .ol-pkg-detail-title { font-size:2.1rem; }
+  .ol-pkg-detail-price { font-size:1.7rem; }
+}
