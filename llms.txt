@@ -25,8 +25,9 @@ OrigenLab diseña y desarrolla sitios web estáticos de alto rendimiento: HTML/C
 - [Equipo para eventos](https://origenlab.com/portafolio/equipo-para-eventos/): sitios para renta de equipo y producción de eventos.
 
 ## Guías y recursos
-- [¿Cuánto cuesta una página web en México?](https://origenlab.com/blog/cuanto-cuesta-pagina-web-mexico/): rangos de precio reales y qué incluye cada nivel.
-- [¿Cuánto cuesta un sitio web en México (2026)?](https://origenlab.com/blog/cuanto-cuesta-sitio-web-mexico-2026/): guía de precios actualizada.
+- [Cómo elegir una agencia de diseño web en México](https://origenlab.com/blog/como-elegir-agencia-diseno-web-mexico/): los criterios para elegir bien tu agencia web.
+- [Agencia vs. Freelancer para tu sitio web](https://origenlab.com/blog/agencia-vs-freelancer-sitio-web/): costo, continuidad, alcance y riesgo comparados.
+- [8 señales de una buena agencia de desarrollo web](https://origenlab.com/blog/senales-buena-agencia-desarrollo-web-mexico/): cómo distinguir una agencia que sí entrega.
 - [Astro vs WordPress: cuál elegir](https://origenlab.com/blog/astro-vs-wordpress-cual-elegir/): comparativa de tecnologías para tu sitio.
 - [Landing page vs sitio corporativo](https://origenlab.com/blog/landing-page-vs-sitio-corporativo/): cuál necesita tu negocio.
 - [Mercado Pago vs Stripe para e-commerce en México](https://origenlab.com/blog/mercado-pago-vs-stripe-ecommerce-mexico/): qué pasarela conviene.
