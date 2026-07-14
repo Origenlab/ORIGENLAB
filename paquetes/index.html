@@ -33,7 +33,7 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"></noscript>
   <!-- CSS -->
   <link rel="stylesheet" href="../_astro/BaseLayout.xeR8R953.css?v20260604f">
-  <link rel="stylesheet" href="../_astro/premium-dark.css?v20260713a">
+  <link rel="stylesheet" href="../_astro/premium-dark.css?v20260713b">
   <script src="../_astro/ol-header.js?v20260604b" defer></script>
   <!-- Componentes en _astro/premium-dark.css -->
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.com/#organization","name":"OrigenLab","url":"https://origenlab.com","logo":"https://origenlab.com/logo.svg","description":"Agencia mexicana de desarrollo web. Sitios corporativos, e-commerce, landing pages y rediseño a medida.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressRegion":"CDMX","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","email":"hola@origenlab.com","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.com/#website","url":"https://origenlab.com/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.com/#organization"}},{"@type":"WebPage","@id":"https://origenlab.com/paquetes/#page","url":"https://origenlab.com/paquetes/","name":"Paquetes de Diseño y Desarrollo Web | OrigenLab","description":"Tres niveles de alcance para tu sitio web: Esencial, Profesional y Élite. Diseño 100% a medida, sin plantillas, con precio claro desde el primer momento.","inLanguage":"es-MX","isPartOf":{"@id":"https://origenlab.com/#website"},"about":{"@id":"https://origenlab.com/#organization"}},{"@type":"Service","@id":"https://origenlab.com/paquetes/#service","serviceType":"Diseño y desarrollo web","name":"Paquetes de Diseño y Desarrollo Web","provider":{"@id":"https://origenlab.com/#organization"},"areaServed":{"@type":"Country","name":"México"},"url":"https://origenlab.com/paquetes/","hasOfferCatalog":{"@type":"OfferCatalog","name":"Paquetes OrigenLab","itemListElement":[{"@type":"Offer","name":"Esencial","price":"2000","priceCurrency":"MXN","url":"https://origenlab.com/paquetes/#esencial"},{"@type":"Offer","name":"Profesional","price":"3000","priceCurrency":"MXN","url":"https://origenlab.com/paquetes/#profesional"},{"@type":"Offer","name":"Élite","price":"5000","priceCurrency":"MXN","url":"https://origenlab.com/paquetes/#elite"}]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.com/"},{"@type":"ListItem","position":2,"name":"Paquetes","item":"https://origenlab.com/paquetes/"}]}]}</script><script type="application/ld+json">{
@@ -200,7 +200,19 @@
             </ul>
           </div>
         </li>
-                <li><a href="/paquetes/" class="ol-nav-link active">Paquetes</a></li>
+                        <li class="ol-has-dropdown">
+          <a href="/paquetes/" class="ol-nav-link active">
+            Paquetes
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/paquetes/esencial/" class="ol-dropdown-link">Esencial</a></li>
+              <li><a href="/paquetes/profesional/" class="ol-dropdown-link">Profesional</a></li>
+              <li><a href="/paquetes/elite/" class="ol-dropdown-link">Élite</a></li>
+            </ul>
+          </div>
+        </li>
 <li class="ol-has-dropdown">
           <a href="/portafolio/" class="ol-nav-link">
             Portafolio
@@ -296,7 +308,17 @@
         <li><a href="/servicios/paginas-en-renta/" class="ol-mobile-link ol-mobile-sublink">Páginas en Renta</a></li>
       </ul>
     </li>
-        <li><a href="/paquetes/" class="ol-mobile-link active">Paquetes</a></li>
+            <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle active" data-submenu>
+        <span>Paquetes</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/paquetes/esencial/" class="ol-mobile-link ol-mobile-sublink">Esencial</a></li>
+        <li><a href="/paquetes/profesional/" class="ol-mobile-link ol-mobile-sublink">Profesional</a></li>
+        <li><a href="/paquetes/elite/" class="ol-mobile-link ol-mobile-sublink">Élite</a></li>
+      </ul>
+    </li>
 <li>
       <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
         <span>Portafolio</span>
@@ -376,8 +398,8 @@
 
         <div class="ol-page-hero-left">
           <span class="ol-eyebrow">Paquetes</span>
-          <h1 class="ol-page-hero-title">Elige el alcance que tu<br>negocio necesita hoy.</h1>
-          <p class="ol-page-hero-sub">Tres niveles de alcance, un mismo estándar de calidad — sin plantillas, sin paquetes genéricos.</p>
+          <h1 class="ol-page-hero-title">Paquetes de Diseño y Desarrollo Web</h1>
+          <p class="ol-page-hero-sub">Elige el alcance que tu negocio necesita hoy: tres niveles, un mismo estándar de calidad — sin plantillas, sin paquetes genéricos.</p>
         </div>
 
         <div class="ol-page-hero-right">
@@ -490,8 +512,7 @@
             <li>Dominio, hosting y certificado SSL incluidos durante 1 año</li>
             <li>Diseño 100% a medida — sin plantillas ni page builders</li>
           </ul>
-          <a href="/cotizar/?paquete=Esencial" class="ol-pkg-cta">Cotizar Esencial &rarr;</a>
-          <a href="#detalle-esencial" class="ol-pkg-more">Ver detalle completo &darr;</a>
+          <a href="/paquetes/esencial/" class="ol-pkg-cta ol-pkg-cta--full">Ver paquete Esencial &rarr;</a>
         </div>
 
         <div class="ol-pkg-card ol-pkg-featured" id="profesional">
@@ -511,8 +532,7 @@
             <li>Dominio, hosting y certificado SSL incluidos durante 1 año</li>
             <li>Diseño 100% a medida en cada sección — sin plantillas ni page builders</li>
           </ul>
-          <a href="/cotizar/?paquete=Profesional" class="ol-pkg-cta">Cotizar Profesional &rarr;</a>
-          <a href="#detalle-profesional" class="ol-pkg-more">Ver detalle completo &darr;</a>
+          <a href="/paquetes/profesional/" class="ol-pkg-cta ol-pkg-cta--full">Ver paquete Profesional &rarr;</a>
         </div>
 
         <div class="ol-pkg-card" id="elite">
@@ -532,8 +552,7 @@
             <li>Diseño y contenido respaldados por estudios de mercado reales</li>
             <li>Dominio, hosting y certificado SSL incluidos durante 1 año</li>
           </ul>
-          <a href="/cotizar/?paquete=Elite" class="ol-pkg-cta">Cotizar Élite &rarr;</a>
-          <a href="#detalle-elite" class="ol-pkg-more">Ver detalle completo &darr;</a>
+          <a href="/paquetes/elite/" class="ol-pkg-cta ol-pkg-cta--full">Ver paquete Élite &rarr;</a>
         </div>
 
       </div>
@@ -592,6 +611,7 @@
           </ul>
 
           <a href="/cotizar/?paquete=Esencial" class="ol-pkg-cta">Cotizar Esencial &rarr;</a>
+          <a href="/paquetes/esencial/" class="ol-pkg-more">Ver página completa de Esencial &rarr;</a>
         </div>
 
         <div class="ol-pkg-detail-visual">
@@ -684,6 +704,7 @@
           </ul>
 
           <a href="/cotizar/?paquete=Profesional" class="ol-pkg-cta">Cotizar Profesional &rarr;</a>
+          <a href="/paquetes/profesional/" class="ol-pkg-more">Ver página completa de Profesional &rarr;</a>
         </div>
 
         <div class="ol-pkg-detail-visual">
@@ -792,6 +813,7 @@
           </ul>
 
           <a href="/cotizar/?paquete=Elite" class="ol-pkg-cta">Cotizar Élite &rarr;</a>
+          <a href="/paquetes/elite/" class="ol-pkg-more">Ver página completa de Élite &rarr;</a>
         </div>
 
         <div class="ol-pkg-detail-visual">

@@ -20,7 +20,7 @@
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"></noscript>
  <link rel="stylesheet" href="../../../../_astro/BaseLayout.xeR8R953.css?v20260605a">
- <link rel="stylesheet" href="../../../../_astro/premium-dark.css?v20260713a">
+ <link rel="stylesheet" href="../../../../_astro/premium-dark.css?v20260713b">
  <script src="../../../../_astro/ol-header.js?v20260604b" defer></script>
  <style>
   :root { --case-accent:#C0392B; --case-accent-soft:rgba(192,57,43,0.12); --case-accent-line:rgba(192,57,43,0.28); }
@@ -64,7 +64,19 @@
    <ul class="ol-nav-list">
     <li><a href="/" class="ol-nav-link">Inicio</a></li>
     <li class="ol-has-dropdown"><a href="/servicios/" class="ol-nav-link">Servicios<svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true" focusable="false"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><div class="ol-dropdown"><ul><li><a href="/servicios/desarrollo-web/" class="ol-dropdown-link">Desarrollo Web</a></li><li><a href="/servicios/tiendas-en-linea/" class="ol-dropdown-link">Tiendas en Línea</a></li><li><a href="/servicios/landing-pages/" class="ol-dropdown-link">Landing Pages</a></li><li><a href="/servicios/rediseno-web/" class="ol-dropdown-link">Rediseño Web</a></li><li><a href="/servicios/paginas-en-renta/" class="ol-dropdown-link">Páginas en Renta</a></li></ul></div></li>
-            <li><a href="/paquetes/" class="ol-nav-link">Paquetes</a></li>
+                    <li class="ol-has-dropdown">
+          <a href="/paquetes/" class="ol-nav-link">
+            Paquetes
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/paquetes/esencial/" class="ol-dropdown-link">Esencial</a></li>
+              <li><a href="/paquetes/profesional/" class="ol-dropdown-link">Profesional</a></li>
+              <li><a href="/paquetes/elite/" class="ol-dropdown-link">Élite</a></li>
+            </ul>
+          </div>
+        </li>
 <li class="ol-has-dropdown"><a href="/portafolio/" class="ol-nav-link active">Portafolio<svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true" focusable="false"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><div class="ol-dropdown"><ul><li><a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a></li><li class="ol-has-subdrop"><a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link ol-dropdown-parent">Equipos Contra Incendios</a><div class="ol-subdrop"><ul><li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link">Gama de México</a></li><li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link">MESECI</a></li><li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link">LGA Contraincendios</a></li><li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-dropdown-link">MANEXT</a></li><li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-dropdown-link">BOMBERO.MX</a></li><li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-dropdown-link">ProyectoRed</a></li><li><a href="/portafolio/equipos-contra-incendios/directorio/" class="ol-dropdown-link">Directorio México</a></li></ul></div></li><li class="ol-has-subdrop"><a href="/portafolio/seguridad-privada/" class="ol-dropdown-link ol-dropdown-parent">Seguridad Privada</a><div class="ol-subdrop"><ul><li><a href="/portafolio/seguridad-privada/origins/" class="ol-dropdown-link">ORIGINS Private Security</a></li><li><a href="/portafolio/seguridad-privada/seprico/" class="ol-dropdown-link">SEPRICO</a></li><li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-dropdown-link">SeguridadPrivadaMX</a></li><li><a href="/portafolio/seguridad-privada/seguridadeventos/" class="ol-dropdown-link">SeguridadEventos</a></li><li><a href="/portafolio/seguridad-privada/gupri/" class="ol-dropdown-link">GUPRI</a></li><li><a href="/portafolio/seguridad-privada/directorio/" class="ol-dropdown-link">Directorio México</a></li></ul></div></li></ul></div></li>
     <li><a href="/nosotros/" class="ol-nav-link">Nosotros</a></li>
     <li><a href="/blog/" class="ol-nav-link">Blog</a></li>
@@ -84,7 +96,17 @@
  <ul class="ol-mobile-nav">
   <li><a href="/" class="ol-mobile-link">Inicio</a></li>
   <li><button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu><span>Servicios</span><svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none" aria-hidden="true" focusable="false"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><ul class="ol-mobile-submenu"><li><a href="/servicios/desarrollo-web/" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li><li><a href="/servicios/tiendas-en-linea/" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li><li><a href="/servicios/landing-pages/" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li><li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li></ul></li>
-      <li><a href="/paquetes/" class="ol-mobile-link">Paquetes</a></li>
+          <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Paquetes</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/paquetes/esencial/" class="ol-mobile-link ol-mobile-sublink">Esencial</a></li>
+        <li><a href="/paquetes/profesional/" class="ol-mobile-link ol-mobile-sublink">Profesional</a></li>
+        <li><a href="/paquetes/elite/" class="ol-mobile-link ol-mobile-sublink">Élite</a></li>
+      </ul>
+    </li>
 <li><button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu><span>Portafolio</span><svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none" aria-hidden="true" focusable="false"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><ul class="ol-mobile-submenu"><li><a href="/portafolio/" class="ol-mobile-link ol-mobile-sublink">Todo el Portafolio</a></li><li><a href="/portafolio/equipos-contra-incendios/" class="ol-mobile-link ol-mobile-sublink">Equipos Contra Incendios</a></li><li><a href="/portafolio/equipos-contra-incendios/directorio/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Directorio México</a></li></ul></li>
   <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
   <li><a href="/blog/" class="ol-mobile-link">Blog</a></li>

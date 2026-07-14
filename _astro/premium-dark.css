@@ -4695,6 +4695,19 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-case-card h4 { font-size: 0.98rem; font-weight: 700; color: #F0F0F5; margin: 0 0 0.4rem; letter-spacing: -0.01em; }
 .ol-case-card p { font-size: 13.5px; color: rgba(240,240,245,0.55); line-height: 1.65; margin: 0; }
 
+/* Páginas de Paquetes: reusan .ol-sh / .ol-features-grid / .ol-types-grid / .ol-faq-grid
+   (mismos componentes que L3) pero anidados dentro de la columna angosta de .ol-case-body.
+   Estas 3 reglas sólo reducen columnas cuando ese anidamiento ocurre — el comportamiento
+   full-bleed de esas clases en Servicios y demás páginas L3 no cambia. */
+.ol-case-body .ol-sh { grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 2.5rem; }
+.ol-case-body .ol-features-grid,
+.ol-case-body .ol-types-grid { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 640px) {
+  .ol-case-body .ol-features-grid,
+  .ol-case-body .ol-types-grid { grid-template-columns: 1fr; }
+}
+.ol-case-body .ol-faq-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+
 /* Lista de bullets con check */
 .ol-case-list { list-style: none; padding: 0; margin: 1.25rem 0 0; display: flex; flex-direction: column; gap: 0.85rem; }
 .ol-case-list li { font-size: 14.5px; color: rgba(240,240,245,0.7); line-height: 1.65; padding-left: 1.75rem; position: relative; }
@@ -5867,6 +5880,9 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-pkg-cta:hover { background:#C9A84C; border-color:#C9A84C; color:#08080E; }
 .ol-pkg-featured .ol-pkg-cta { background:#C9A84C; border-color:#C9A84C; color:#08080E; }
 .ol-pkg-featured .ol-pkg-cta:hover { background:#E0C169; border-color:#E0C169; }
+/* Card CTA → página del paquete (home + hub): sólido dorado, full-width, llamativo */
+.ol-pkg-cta--full { display:flex; width:100%; background:#C9A84C; border-color:#C9A84C; color:#08080E; font-size:14px; padding:0.85rem 1.25rem; }
+.ol-pkg-cta--full:hover { background:#E0C169; border-color:#E0C169; color:#08080E; }
 
 .ol-pkg-note { margin:2.5rem 0 0; font-size:13px; color:rgba(240,240,245,0.45); text-align:center; line-height:1.6; }
 .ol-pkg-note a { color:#C9A84C; font-weight:600; text-decoration:underline; text-underline-offset:2px; }

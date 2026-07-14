@@ -33,7 +33,7 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"></noscript>
   <!-- CSS -->
   <link rel="stylesheet" href="../../_astro/BaseLayout.xeR8R953.css?v20260604f">
-  <link rel="stylesheet" href="../../_astro/premium-dark.css?v20260713a">
+  <link rel="stylesheet" href="../../_astro/premium-dark.css?v20260713b">
   <script src="../../_astro/ol-header.js?v20260604b" defer></script>
   <!-- Componentes en _astro/premium-dark.css -->
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.com/#organization","name":"OrigenLab","url":"https://origenlab.com","logo":"https://origenlab.com/logo.svg","description":"Agencia mexicana de desarrollo web. Sitios corporativos, e-commerce, landing pages y rediseño a medida.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressRegion":"CDMX","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","email":"hola@origenlab.com","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.com/#website","url":"https://origenlab.com/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.com/#organization"}},{"@type":"WebPage","@id":"https://origenlab.com/paquetes/elite/#page","url":"https://origenlab.com/paquetes/elite/","name":"Paquete Élite — Sitio con Robot de IA y Estudio de Mercado | OrigenLab","description":"Paquete Élite de OrigenLab: hasta 25 secciones a medida, diseño y contenido respaldados por estudios de mercado y un robot de IA entrenado con tu empresa que atiende y canaliza a tus clientes 24/7.","inLanguage":"es-MX","isPartOf":{"@id":"https://origenlab.com/#website"},"about":{"@id":"https://origenlab.com/#organization"},"breadcrumb":{"@id":"https://origenlab.com/paquetes/elite/#breadcrumb"}},{"@type":"Service","@id":"https://origenlab.com/paquetes/elite/#service","serviceType":"Diseño y desarrollo web","name":"Paquete Élite","description":"El nivel más completo de OrigenLab: hasta 25 secciones a medida — 5 principales y hasta 20 dedicadas a servicios o productos — con formularios en todo el sitio, 3 correos electrónicos, diseño y contenido respaldados por estudios de mercado, un blog que arranca con 100 artículos y suma 4 nuevos cada semana, y un robot de IA entrenado con la empresa que atiende y canaliza a los clientes 24/7. Dominio, hosting y certificado SSL incluidos.","provider":{"@id":"https://origenlab.com/#organization"},"areaServed":{"@type":"Country","name":"México"},"url":"https://origenlab.com/paquetes/elite/","offers":{"@type":"Offer","name":"Paquete Élite","price":"5000","priceCurrency":"MXN","priceValidUntil":"2026-12-31","availability":"https://schema.org/InStock","url":"https://origenlab.com/paquetes/elite/","seller":{"@id":"https://origenlab.com/#organization"}}},{"@type":"BreadcrumbList","@id":"https://origenlab.com/paquetes/elite/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.com/"},{"@type":"ListItem","position":2,"name":"Paquetes","item":"https://origenlab.com/paquetes/"},{"@type":"ListItem","position":3,"name":"Élite","item":"https://origenlab.com/paquetes/elite/"}]}]}</script>
@@ -206,7 +206,19 @@
             </ul>
           </div>
         </li>
-        <li><a href="/paquetes/" class="ol-nav-link active">Paquetes</a></li>
+                <li class="ol-has-dropdown">
+          <a href="/paquetes/" class="ol-nav-link active">
+            Paquetes
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/paquetes/esencial/" class="ol-dropdown-link">Esencial</a></li>
+              <li><a href="/paquetes/profesional/" class="ol-dropdown-link">Profesional</a></li>
+              <li><a href="/paquetes/elite/" class="ol-dropdown-link">Élite</a></li>
+            </ul>
+          </div>
+        </li>
 <li class="ol-has-dropdown">
           <a href="/portafolio/" class="ol-nav-link">
             Portafolio
@@ -302,7 +314,17 @@
         <li><a href="/servicios/paginas-en-renta/" class="ol-mobile-link ol-mobile-sublink">Páginas en Renta</a></li>
       </ul>
     </li>
-        <li><a href="/paquetes/" class="ol-mobile-link active">Paquetes</a></li>
+            <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle active" data-submenu>
+        <span>Paquetes</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/paquetes/esencial/" class="ol-mobile-link ol-mobile-sublink">Esencial</a></li>
+        <li><a href="/paquetes/profesional/" class="ol-mobile-link ol-mobile-sublink">Profesional</a></li>
+        <li><a href="/paquetes/elite/" class="ol-mobile-link ol-mobile-sublink">Élite</a></li>
+      </ul>
+    </li>
 <li>
       <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
         <span>Portafolio</span>
@@ -385,8 +407,8 @@
 
         <div class="ol-page-hero-left">
           <span class="ol-eyebrow">Paquete 03 · Élite</span>
-          <h1 class="ol-page-hero-title">Autoridad de marca para el líder de tu sector.</h1>
-          <p class="ol-page-hero-sub">El nivel más completo: hasta 25 secciones, diseño respaldado por estudios de mercado reales y un robot de inteligencia artificial entrenado con tu empresa que atiende y canaliza a tus clientes — sin descanso.</p>
+          <h1 class="ol-page-hero-title">Paquete Élite — Sitio Web con Robot de IA</h1>
+          <p class="ol-page-hero-sub">Autoridad de marca para el líder de tu sector: hasta 25 secciones, diseño respaldado por estudios de mercado reales y un robot de inteligencia artificial entrenado con tu empresa que atiende y canaliza a tus clientes — sin descanso.</p>
           <p class="ol-pkgpg-price">$5,000 <span>MXN</span></p>
           <p class="ol-pkgpg-price-note">Diseño 100% a medida con respaldo de estudios de mercado — sin plantillas.</p>
           <div class="ol-pkgpg-actions">
@@ -564,9 +586,52 @@
     </div>
   </section>
 
-  <!-- ============== FEATURES — qué incluye ============== -->
-  <section class="ol-features" id="incluye">
-    <div class="ol-features-inner">
+  <!-- ============== SIDEBAR + CUERPO — Incluye / Robot IA / Arquitectura / Contenido / Compara / FAQ ============== -->
+  <section class="ol-case-shell">
+    <div class="ol-case-inner">
+      <div class="ol-case-grid">
+
+        <aside class="ol-case-sidebar" aria-label="Resumen del paquete">
+          <div class="ol-side-card">
+            <p class="ol-side-eyebrow">Resumen del paquete</p>
+            <ul class="ol-side-meta">
+              <li><dt>Inversión</dt><dd>$5,000 MXN</dd></li>
+              <li><dt>Alcance</dt><dd>Hasta 25 secciones · 5 principales + hasta 20 de servicios/productos</dd></li>
+              <li><dt>Ideal para</dt><dd>Líderes de sector con ciclos de venta B2B largos</dd></li>
+              <li><dt>Robot IA</dt><dd>Entrenado con tu empresa, atención 24/7</dd></li>
+              <li><dt>Blog</dt><dd>100 artículos de arranque + 4 nuevos cada semana</dd></li>
+              <li><dt>Entrega</dt><dd>Calendario por escrito desde el inicio</dd></li>
+              <li><dt>Incluye</dt><dd>3 correos propios, dominio, hosting y SSL por 1 año</dd></li>
+            </ul>
+          </div>
+
+          <nav class="ol-side-card" aria-label="Índice del paquete">
+            <p class="ol-side-eyebrow">Índice</p>
+            <ul class="ol-side-toc" id="ol-case-toc">
+              <li><a href="#incluye"><span class="num">01</span>Qué incluye</a></li>
+              <li><a href="#diferenciador"><span class="num">02</span>El diferenciador</a></li>
+              <li><a href="#arquitectura"><span class="num">03</span>La arquitectura</a></li>
+              <li><a href="#contenido"><span class="num">04</span>Contenido</a></li>
+              <li><a href="#compara"><span class="num">05</span>Compara niveles</a></li>
+              <li><a href="#faq"><span class="num">06</span>Preguntas frecuentes</a></li>
+            </ul>
+          </nav>
+
+          <div class="ol-side-cta">
+            <h3 class="ol-side-cta-title">¿Listo para liderar tu sector?</h3>
+            <p class="ol-side-cta-desc">Cotiza en línea o escríbenos por WhatsApp — te respondemos con una propuesta clara y sin compromiso.</p>
+            <a href="/cotizar/?paquete=Elite" class="ol-side-cta-btn">
+              Cotizar Élite
+              <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+            <a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20el%20Paquete%20%C3%89lite%20de%20OrigenLab" target="_blank" rel="noopener noreferrer" class="ol-side-cta-link">o escribir por WhatsApp &rarr;</a>
+          </div>
+        </aside>
+
+        <article class="ol-case-body">
+
+      <!-- ============== FEATURES — qué incluye ============== -->
+      <section class="ol-case-section" id="incluye">
 
       <div class="ol-sh">
         <div class="ol-sh-left">
@@ -631,12 +696,10 @@
         </article>
 
       </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- ============== ROBOT IA — destacado (el diferenciador de Élite) ============== -->
-  <section class="ol-types">
-    <div class="ol-types-inner">
+      <!-- ============== ROBOT IA — destacado (el diferenciador de Élite) ============== -->
+      <section class="ol-case-section" id="diferenciador">
 
       <div class="ol-sh">
         <div class="ol-sh-left">
@@ -674,12 +737,10 @@
         </article>
 
       </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- ============== TYPES — la arquitectura de hasta 25 secciones ============== -->
-  <section class="ol-types">
-    <div class="ol-types-inner">
+      <!-- ============== TYPES — la arquitectura de hasta 25 secciones ============== -->
+      <section class="ol-case-section" id="arquitectura">
 
       <div class="ol-sh">
         <div class="ol-sh-left">
@@ -738,12 +799,10 @@
         </article>
 
       </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- ============== BLOG — un blog que se actualiza solo ============== -->
-  <section class="ol-types">
-    <div class="ol-types-inner">
+      <!-- ============== BLOG — un blog que se actualiza solo ============== -->
+      <section class="ol-case-section" id="contenido">
 
       <div class="ol-sh">
         <div class="ol-sh-left">
@@ -781,12 +840,10 @@
         </article>
 
       </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- ============== NEXT LEVEL — cross-sell ============== -->
-  <section class="ol-types">
-    <div class="ol-types-inner">
+      <!-- ============== NEXT LEVEL — cross-sell ============== -->
+      <section class="ol-case-section" id="compara">
 
       <div class="ol-sh">
         <div class="ol-sh-left">
@@ -818,12 +875,10 @@
         </article>
 
       </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- ============== FAQ ============== -->
-  <section class="ol-faq-section">
-    <div class="ol-faq-inner">
+      <!-- ============== FAQ ============== -->
+      <section class="ol-case-section" id="faq">
 
       <div class="ol-sh">
         <div class="ol-sh-left">
@@ -949,6 +1004,11 @@
             </form>
           </div>
         </div>
+
+      </div>
+      </section>
+
+        </article>
 
       </div>
     </div>
@@ -1127,53 +1187,50 @@
 
 <!-- ============================================================
      SCRIPTS
+     El menú mobile (toggle + submenús + header scrolled) ya lo
+     inicializa /_astro/ol-header.js — no se duplica aquí.
      ============================================================ -->
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    var toggle   = document.getElementById('ol-menu-toggle');
-    var panel    = document.getElementById('ol-mobile-panel');
-    var overlay  = document.getElementById('ol-mobile-overlay');
-    var closeBtn = document.getElementById('ol-mobile-close');
-    var header   = document.getElementById('ol-header');
 
-    function openMenu() {
-      toggle.classList.add('open');
-      toggle.setAttribute('aria-expanded', 'true');
-      panel.classList.add('open');
-      overlay.classList.add('visible');
-      document.body.style.overflow = 'hidden';
-    }
-    function closeMenu() {
-      toggle.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-      panel.classList.remove('open');
-      overlay.classList.remove('visible');
-      document.body.style.overflow = '';
-    }
+    /* ---- Sidebar: TOC activo según sección visible ---- */
+    var tocLinks = document.querySelectorAll('#ol-case-toc a');
+    var sections = [];
+    tocLinks.forEach(function (link) {
+      var id = link.getAttribute('href').slice(1);
+      var sec = document.getElementById(id);
+      if (sec) sections.push({ id: id, el: sec, link: link });
+    });
 
-    if (toggle)   toggle.addEventListener('click', function () { panel.classList.contains('open') ? closeMenu() : openMenu(); });
-    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
-    if (overlay)  overlay.addEventListener('click', closeMenu);
-
-    var mobileLinks = panel ? panel.querySelectorAll('a') : [];
-    for (var i = 0; i < mobileLinks.length; i++) mobileLinks[i].addEventListener('click', closeMenu);
-
-    var subToggles = document.querySelectorAll('[data-submenu]');
-    for (var j = 0; j < subToggles.length; j++) {
-      subToggles[j].addEventListener('click', function () {
-        this.classList.toggle('expanded');
-        var sub = this.nextElementSibling;
-        if (sub) sub.classList.toggle('open');
+    function setActiveToc() {
+      var top = window.scrollY + 140;
+      var current = null;
+      sections.forEach(function (s) {
+        if (s.el.offsetTop <= top) current = s;
       });
+      tocLinks.forEach(function (l) { l.classList.remove('active'); });
+      if (current) current.link.classList.add('active');
+    }
+    if (sections.length) {
+      setActiveToc();
+      window.addEventListener('scroll', setActiveToc, { passive: true });
     }
 
-    window.addEventListener('scroll', function () {
-      if (window.pageYOffset > 10) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    }, { passive: true });
+    /* ---- Smooth scroll para anchors internos (TOC, "Ver qué incluye", etc.) ---- */
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var hash = a.getAttribute('href');
+        if (hash.length > 1) {
+          var target = document.getElementById(hash.slice(1));
+          if (target) {
+            e.preventDefault();
+            window.scrollTo({ top: target.offsetTop - 100, behavior: 'smooth' });
+            history.replaceState(null, '', hash);
+          }
+        }
+      });
+    });
+
   });
 </script>
 

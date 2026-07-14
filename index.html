@@ -84,8 +84,8 @@ a{color:inherit;text-decoration:none}img{max-width:100%;height:auto;display:bloc
 <noscript><link rel="stylesheet" href="_astro/BaseLayout.xeR8R953.css?v20260604f"></noscript>
 <link rel="preload" as="style" href="_astro/index@_@astro.BX4RFBkr.css?v20260426g" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="_astro/index@_@astro.BX4RFBkr.css?v20260426g"></noscript>
-<link rel="preload" as="style" href="_astro/premium-dark.css?v20260713a" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="_astro/premium-dark.css?v20260713a"></noscript>
+<link rel="preload" as="style" href="_astro/premium-dark.css?v20260713b" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="_astro/premium-dark.css?v20260713b"></noscript>
 <script src="_astro/ol-header.js?v20260604b" defer></script>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -530,7 +530,19 @@ a{color:inherit;text-decoration:none}img{max-width:100%;height:auto;display:bloc
             </ul>
           </div>
         </li>
-                <li><a href="/paquetes/" class="ol-nav-link">Paquetes</a></li>
+                        <li class="ol-has-dropdown">
+          <a href="/paquetes/" class="ol-nav-link">
+            Paquetes
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/paquetes/esencial/" class="ol-dropdown-link">Esencial</a></li>
+              <li><a href="/paquetes/profesional/" class="ol-dropdown-link">Profesional</a></li>
+              <li><a href="/paquetes/elite/" class="ol-dropdown-link">Élite</a></li>
+            </ul>
+          </div>
+        </li>
 <li class="ol-has-dropdown">
           <a href="/portafolio/" class="ol-nav-link">
             Portafolio
@@ -626,7 +638,17 @@ a{color:inherit;text-decoration:none}img{max-width:100%;height:auto;display:bloc
         <li><a href="/servicios/paginas-en-renta/" class="ol-mobile-link ol-mobile-sublink">Páginas en Renta</a></li>
       </ul>
     </li>
-        <li><a href="/paquetes/" class="ol-mobile-link">Paquetes</a></li>
+            <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Paquetes</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/paquetes/esencial/" class="ol-mobile-link ol-mobile-sublink">Esencial</a></li>
+        <li><a href="/paquetes/profesional/" class="ol-mobile-link ol-mobile-sublink">Profesional</a></li>
+        <li><a href="/paquetes/elite/" class="ol-mobile-link ol-mobile-sublink">Élite</a></li>
+      </ul>
+    </li>
 <li>
       <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
         <span>Portafolio</span>
@@ -809,8 +831,7 @@ Nos diferenciamos por usar tecnología moderna — Astro, Next.js y arquitectura
           <li>Dominio, hosting y certificado SSL incluidos durante 1 año</li>
           <li>Diseño 100% a medida — sin plantillas ni page builders</li>
         </ul>
-        <a href="/cotizar/?paquete=Esencial" class="ol-pkg-cta">Cotizar Esencial &rarr;</a>
-        <a href="/paquetes/#detalle-esencial" class="ol-pkg-more">Ver detalle completo &rarr;</a>
+        <a href="/paquetes/esencial/" class="ol-pkg-cta ol-pkg-cta--full">Ver paquete Esencial &rarr;</a>
       </div>
 
       <div class="ol-pkg-card ol-pkg-featured">
@@ -830,8 +851,7 @@ Nos diferenciamos por usar tecnología moderna — Astro, Next.js y arquitectura
           <li>Dominio, hosting y certificado SSL incluidos durante 1 año</li>
           <li>Diseño 100% a medida en cada sección — sin plantillas ni page builders</li>
         </ul>
-        <a href="/cotizar/?paquete=Profesional" class="ol-pkg-cta">Cotizar Profesional &rarr;</a>
-        <a href="/paquetes/#detalle-profesional" class="ol-pkg-more">Ver detalle completo &rarr;</a>
+        <a href="/paquetes/profesional/" class="ol-pkg-cta ol-pkg-cta--full">Ver paquete Profesional &rarr;</a>
       </div>
 
       <div class="ol-pkg-card">
@@ -851,8 +871,7 @@ Nos diferenciamos por usar tecnología moderna — Astro, Next.js y arquitectura
           <li>Diseño y contenido respaldados por estudios de mercado reales</li>
           <li>Dominio, hosting y certificado SSL incluidos durante 1 año</li>
         </ul>
-        <a href="/cotizar/?paquete=Elite" class="ol-pkg-cta">Cotizar Élite &rarr;</a>
-        <a href="/paquetes/#detalle-elite" class="ol-pkg-more">Ver detalle completo &rarr;</a>
+        <a href="/paquetes/elite/" class="ol-pkg-cta ol-pkg-cta--full">Ver paquete Élite &rarr;</a>
       </div>
 
     </div>
