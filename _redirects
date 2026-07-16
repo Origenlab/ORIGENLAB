@@ -1,0 +1,26 @@
+# Cloudflare Pages — _redirects
+# Se evalúa ANTES de servir el asset y ANTES del 404.
+#
+# Blindaje de internos: aunque el .gitignore ya los des-trackeó (2026-07-15),
+# estas reglas cortan el acceso por URL de forma determinista — incluso si
+# alguien vuelve a commitear uno por accidente, o si queda un objeto rancio
+# en caché. Cloudflare Pages sirve el repo TAL CUAL: todo lo trackeado es
+# público en origenlab.com/<ruta>.
+#
+# Verificado 2026-07-15: estas rutas estaban devolviendo HTTP 200 con
+# contenido interno real (fichas de cliente, auditorías, leads de CRM).
+
+/CLAUDE.md                                      /   302
+/AGENTS.md                                      /   302
+/_REPORTE_HEADERS.txt                           /   302
+/Campana_MesasPicnic_CRM_Leads_2026-06-08.xlsx  /   302
+/ANALISIS-FIREFIGHTERSMX-vs-EJEMPLOS-2026-06-23.md  /  302
+/_docs/*                                        /   302
+/CONSULTORIO-WEB/*                              /   302
+/MASTER WEB PRODUCTION SYSTEM/*                 /   302
+/MEJORA-ORIGENLAB/*                             /   302
+/_AUDITORIA/*                                   /   302
+/_branding/*                                    /   302
+/_reports/*                                     /   302
+/_tools/*                                       /   302
+/_backup-2026-04-21/*                           /   302
