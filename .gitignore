@@ -10,6 +10,9 @@ graphify-out/
 node_modules/
 
 # Internos / estrategia — solo local, NO publicar en Cloudflare Pages
+# OJO: Cloudflare Pages sirve el repo TAL CUAL. Todo lo trackeado queda
+# público en origenlab.com/<ruta>. Verificado 2026-07-15: CLAUDE.md y
+# _docs/46 estaban accesibles con HTTP 200 desde el 2026-06-04.
 _borradores-offpage-*.md
 _AUDITORIA/
 MEJORA-ORIGENLAB/
@@ -18,6 +21,24 @@ _reports/
 MASTER WEB PRODUCTION SYSTEM/
 Estudio_de_Mercado_*.docx
 automate_whatsapp.html
+_docs/
+CLAUDE.md
+AGENTS.md
+CONSULTORIO-WEB/
+*.plugin
+_REPORTE_HEADERS.txt
+ANALISIS-*.md
+*.xlsx
+*.docx
+*.csv
+
+# Scripts de desarrollo / deploy — no son contenido del sitio
+_add_paquetes_nav.py
+_finish-git-setup.sh
+_push-github.sh
+_push-origenlab-com.sh
+_serve.sh
+_cleanup-huerfanos.sh
 
 # Herramientas de deploy / secretos — NO publicar
 _tools/

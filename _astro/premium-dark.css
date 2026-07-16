@@ -4899,12 +4899,12 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-svc-process::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(201,168,76,0.15), transparent); }
 .ol-svc-process-inner { width: 90%; max-width: 1600px; margin: 0 auto; }
 .ol-svc-process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative; }
-.ol-svc-process-steps::before { content: ''; position: absolute; top: 27px; left: calc(12.5% + 30px); right: calc(12.5% + 30px); height: 1px; background: linear-gradient(90deg, rgba(201,168,76,0.15), rgba(201,168,76,0.35) 50%, rgba(201,168,76,0.15)); }
+.ol-svc-process-steps::before { content: ''; position: absolute; top: 27px; left: calc(12.5% + 30px); right: calc(12.5% + 30px); height: 1px; background: linear-gradient(90deg, color-mix(in srgb, var(--case-accent, #C9A84C) 15%, transparent), color-mix(in srgb, var(--case-accent, #C9A84C) 35%, transparent) 50%, color-mix(in srgb, var(--case-accent, #C9A84C) 15%, transparent)); }
 .ol-svc-process-step { padding: 0 2rem; text-align: center; position: relative; }
-.ol-svc-process-num { width: 56px; height: 56px; background: #0C0C18; border: 1px solid rgba(201,168,76,0.28); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; font-size: 17px; font-weight: 800; color: #C9A84C; position: relative; z-index: 1; }
+.ol-svc-process-num { width: 56px; height: 56px; background: #0C0C18; border: 1px solid var(--case-accent-line, rgba(201,168,76,0.28)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; font-size: 17px; font-weight: 800; color: var(--case-accent, #C9A84C); position: relative; z-index: 1; }
 .ol-svc-process-title { font-size: 1.0625rem; font-weight: 700; color: #F0F0F5; margin: 0 0 0.75rem; letter-spacing: -0.01em; }
 .ol-svc-process-desc { font-size: 14px; color: rgba(240,240,245,0.58); line-height: 1.72; margin: 0 0 1rem; }
-.ol-svc-process-time { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(201,168,76,0.75); margin: 0; }
+.ol-svc-process-time { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: color-mix(in srgb, var(--case-accent, #C9A84C) 75%, #fff); margin: 0; }
 @media (max-width: 900px) { .ol-svc-process-steps { grid-template-columns: repeat(2, 1fr); gap: 3rem 1.5rem; } .ol-svc-process-steps::before { display: none; } }
 @media (max-width: 520px) { .ol-svc-process-steps { grid-template-columns: 1fr; } .ol-svc-process-step { padding: 0; } }
 
@@ -5945,3 +5945,92 @@ img:hover, picture:hover, figure:hover, figure:hover * {
   .ol-pkg-detail-title { font-size:2.1rem; }
   .ol-pkg-detail-price { font-size:1.7rem; }
 }
+
+/* ════════════════════════════════════════════════════════════
+   .ol-clisvc-* — SERVICIOS DEL CLIENTE (L4 caso + L10 servicios)
+   Rejilla de líneas de servicio de la empresa del portafolio.
+   Se tematiza SOLO con --case-accent / --case-accent-soft / --case-accent-line.
+   Sin animaciones (regla 4). Sin precios (regla 2). Sin plazos (regla 3).
+   Doc: /_docs/47 — Layout L10.
+   ════════════════════════════════════════════════════════════ */
+.ol-clisvc { background: #08080F; padding: 5rem 0; position: relative; }
+.ol-clisvc::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent); }
+.ol-clisvc-inner { width: 90%; max-width: 1600px; margin: 0 auto; }
+
+.ol-clisvc-head { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 3.5rem; align-items: end; }
+@media (max-width: 880px) { .ol-clisvc-head { grid-template-columns: 1fr; gap: 1.5rem; align-items: start; } }
+.ol-clisvc-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--case-accent, #C9A84C); display: inline-block; padding: 0.35rem 0.85rem;
+  border: 1px solid var(--case-accent-line, rgba(201,168,76,0.28)); border-radius: 999px;
+  background: var(--case-accent-soft, rgba(201,168,76,0.12)); margin: 0 0 1.4rem; }
+.ol-clisvc-title { font-size: clamp(1.75rem, 3.1vw, 2.5rem); font-weight: 800; color: #F4F4F8;
+  letter-spacing: -0.03em; line-height: 1.1; margin: 0; }
+.ol-clisvc-title em { font-style: normal; color: var(--case-accent, #C9A84C); }
+.ol-clisvc-lead { font-size: 1.05rem; color: rgba(240,240,245,0.66); line-height: 1.8; margin: 0; }
+.ol-clisvc-lead strong { color: rgba(240,240,245,0.9); font-weight: 600; }
+
+.ol-clisvc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; margin-top: 2.75rem; }
+@media (max-width: 980px) { .ol-clisvc-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px) { .ol-clisvc-grid { grid-template-columns: 1fr; } }
+
+.ol-clisvc-card { background: #0C0C18; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px;
+  display: flex; flex-direction: column; overflow: hidden; }
+.ol-clisvc-body { padding: 1.5rem 1.75rem 1.9rem; display: flex; flex-direction: column; flex: 1; }
+
+/* Foto real del inflable (assets del cliente) */
+.ol-clisvc-media { position: relative; aspect-ratio: 16 / 9; overflow: hidden;
+  background: #08080F; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.ol-clisvc-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* Velo inferior: liga la foto (clara, exteriores) con la card oscura */
+.ol-clisvc-media::after { content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, transparent 45%, rgba(12,12,24,0.55) 100%); }
+.ol-clisvc-media-num { position: absolute; top: 0.75rem; right: 0.85rem; z-index: 1;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #F4F4F8;
+  font-variant-numeric: tabular-nums; padding: 0.25rem 0.55rem; border-radius: 6px;
+  background: rgba(6,6,13,0.72); border: 1px solid rgba(255,255,255,0.14); }
+
+.ol-clisvc-card-top { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin: 0 0 1.25rem; }
+.ol-clisvc-ic { width: 46px; height: 46px; border-radius: 11px; flex-shrink: 0;
+  background: var(--case-accent-soft, rgba(201,168,76,0.12));
+  border: 1px solid var(--case-accent-line, rgba(201,168,76,0.28));
+  display: flex; align-items: center; justify-content: center; color: var(--case-accent, #C9A84C); }
+.ol-clisvc-num { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: rgba(240,240,245,0.35);
+  font-variant-numeric: tabular-nums; }
+.ol-clisvc-k { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+  color: color-mix(in srgb, var(--case-accent, #C9A84C) 62%, #fff); margin: 0 0 0.5rem; }
+.ol-clisvc-h { font-size: 1.2rem; font-weight: 700; color: #F4F4F8; letter-spacing: -0.02em; margin: 0 0 0.7rem; }
+.ol-clisvc-p { font-size: 14px; color: rgba(240,240,245,0.6); line-height: 1.75; margin: 0 0 1.4rem; }
+.ol-clisvc-p strong { color: rgba(240,240,245,0.88); font-weight: 600; }
+
+/* Ficha técnica del servicio: clave / valor */
+.ol-clisvc-spec { list-style: none; margin: 0 0 1.5rem; padding: 1.1rem 0 0;
+  border-top: 1px solid rgba(255,255,255,0.07); display: grid; gap: 0.6rem; }
+.ol-clisvc-spec li { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+.ol-clisvc-spec dt, .ol-clisvc-spec-k { font-size: 12.5px; color: rgba(240,240,245,0.45); margin: 0; }
+.ol-clisvc-spec-v { font-size: 12.5px; font-weight: 600; color: rgba(240,240,245,0.85); margin: 0; text-align: right; }
+
+/* Chips de modelos incluidos */
+.ol-clisvc-chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.6rem; }
+.ol-clisvc-chip { font-size: 11.5px; font-weight: 600; color: rgba(240,240,245,0.72);
+  padding: 0.32rem 0.7rem; border: 1px solid rgba(255,255,255,0.12); border-radius: 999px;
+  background: rgba(255,255,255,0.03); }
+
+.ol-clisvc-link { margin-top: auto; display: inline-flex; align-items: center; gap: 0.45rem;
+  font-size: 13px; font-weight: 700; color: var(--case-accent, #C9A84C); text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--case-accent, #C9A84C) 40%, transparent);
+  padding-bottom: 0.2rem; align-self: flex-start; }
+.ol-clisvc-link:hover { border-bottom-color: var(--case-accent, #C9A84C); }
+
+/* Pie de sección: qué incluye siempre + salida al catálogo */
+.ol-clisvc-foot { margin-top: 1.1rem; background: linear-gradient(120deg, var(--case-accent-soft, rgba(201,168,76,0.12)), transparent 62%);
+  border: 1px solid var(--case-accent-line, rgba(201,168,76,0.28)); border-radius: 16px;
+  padding: 1.6rem 1.9rem; display: grid; grid-template-columns: 1fr auto; gap: 1.5rem; align-items: center; }
+@media (max-width: 860px) { .ol-clisvc-foot { grid-template-columns: 1fr; } }
+.ol-clisvc-foot-k { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--case-accent, #C9A84C); margin: 0 0 0.6rem; }
+.ol-clisvc-foot-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.ol-clisvc-foot-tag { font-size: 12px; font-weight: 600; color: #F4F4F8; padding: 0.4rem 0.85rem;
+  border: 1px solid rgba(255,255,255,0.14); border-radius: 999px; background: rgba(255,255,255,0.04);
+  display: inline-flex; align-items: center; gap: 0.4rem; }
+.ol-clisvc-foot-tag svg { color: var(--case-accent, #C9A84C); flex-shrink: 0; }
