@@ -47,3 +47,6 @@ _tools/
 .~lock.*#
 ~$*
 _PROMPT-GITHUB-CHROME.md
+
+# Cache local de wrangler (contiene datos de cuenta Cloudflare) — NO publicar
+.wrangler/
