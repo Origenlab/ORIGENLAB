@@ -26,6 +26,21 @@
 /_qa.py                                         /   302
 /_backup-2026-04-21/*                           /   302
 
+# ── Artefactos de la migración a Astro 6 (rama `canonical-astro6-migration`) ──
+# El 2026-07-17 `dist/` y `src/` se commitearon a main por error y Cloudflare
+# los publicó: 173 páginas duplicadas en /dist/… (HTTP 200, sin noindex, con
+# robots.txt en Allow) y los .md fuente de los 172 artículos en /src/.
+# Ya están des-trackeados; estas reglas cubren lo que Google alcanzara a ver.
+#
+# /dist/* va con 301 al original —no a la home— porque cada URL tiene su gemela
+# exacta en la raíz: el 301 consolida la señal en la página correcta.
+/dist/*                                         /:splat   301
+/src/*                                          /         302
+/_migration/*                                   /         302
+/package-lock.json                              /         302
+/package.json                                   /         302
+/astro.config.mjs                               /         302
+
 # ── 301 de artículos renombrados (antes eran páginas HTML con meta-refresh) ──
 # Un 301 transmite autoridad mejor que un meta-refresh, que Google trata como
 # redirección "blanda". Migrado 2026-07-15; los 22 HTML se eliminaron.

@@ -50,3 +50,17 @@ _PROMPT-GITHUB-CHROME.md
 
 # Cache local de wrangler (contiene datos de cuenta Cloudflare) — NO publicar
 .wrangler/
+
+# ── Migración a Astro 6 — vive en la rama `canonical-astro6-migration` ──
+# NUNCA en main. Cloudflare Pages sirve main TAL CUAL desde la raíz: cada
+# archivo trackeado queda público. El 2026-07-17 `dist/` se coló en main y
+# publicó 173 páginas duplicadas (origenlab.com/dist/blog/...) e indexables,
+# más los .md fuente en /src/. Verificado con HTTP 200 en producción.
+dist/
+src/
+_migration/
+package-lock.json
+package.json
+astro.config.mjs
+tsconfig.json
+.astro/

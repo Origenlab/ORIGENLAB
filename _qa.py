@@ -33,8 +33,26 @@ def sin_comentarios(s):
     return re.sub(r'<!--.*?-->', '', s, flags=re.S)
 
 tracked = set(subprocess.check_output(['git', 'ls-files'], text=True).split('\n'))
-# `dist/` es el build de Astro, no fuente: si se cuela, duplica todos los
-# canonicals contra sus propias páginas. Se excluye igual que _backup.
+
+# ── Guardia de artefactos de build ────────────────────────────────────────
+# LECCIÓN CARA (2026-07-17): la versión anterior de este script EXCLUÍA `dist/`
+# del escaneo "porque duplicaba los canonicals". Excluir el síntoma apagó la
+# alarma: `dist/` llevaba trackeado en main desde el commit 52eb87e y Cloudflare
+# publicaba 173 páginas duplicadas en origenlab.com/dist/… con HTTP 200, sin
+# noindex y con robots.txt en Allow. El QA daba verde.
+#
+# Regla: en main NO se versiona nada de la migración. Si aparece, es FALLO —
+# nunca una exclusión. La migración vive en `canonical-astro6-migration`.
+ARTEFACTOS = ('dist/', 'src/', '_migration/', 'node_modules/', '.astro/')
+colados = sorted(p for p in tracked if p.startswith(ARTEFACTOS)) + \
+          sorted(p for p in tracked if p in ('package.json', 'package-lock.json',
+                                             'astro.config.mjs', 'tsconfig.json'))
+if colados:
+    raiz = Counter(p.split('/')[0] for p in colados)
+    bad(f"{len(colados)} archivos de build/migración TRACKEADOS en main "
+        f"({', '.join(f'{k}: {v}' for k, v in raiz.most_common())}) — "
+        f"Cloudflare los publica tal cual. `git rm -r --cached <dir>`")
+
 pages = sorted(p for p in tracked
                if p.endswith('index.html')
                and not p.startswith(('dist/', '_backup', 'node_modules/')))
