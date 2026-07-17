@@ -21,9 +21,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="../../../_astro/BaseLayout.xeR8R953.css?v20260717c">
-  <link rel="stylesheet" href="../../../_astro/premium-dark.css?v20260717c">
-  <script src="../../../_astro/ol-header.js?v20260717c" defer></script>
+  <link rel="stylesheet" href="../../../_astro/BaseLayout.xeR8R953.css?v20260717d">
+  <link rel="stylesheet" href="../../../_astro/premium-dark.css?v20260717d">
+  <script src="../../../_astro/ol-header.js?v20260717d" defer></script>
 
   <style>
     /* ============================================================
@@ -41,21 +41,21 @@
     .ol-dir-stats-inner { width:90%; max-width:1600px; margin:0 auto; display:flex; align-items:center; gap:2rem; flex-wrap:wrap; }
     .ol-dir-stat { display:flex; align-items:center; gap:0.6rem; }
     .ol-dir-stat-num { font-size:1.35rem; font-weight:800; color:var(--dir-ac); letter-spacing:-0.03em; line-height:1; }
-    .ol-dir-stat-label { font-size:12px; color:rgba(240,240,245,0.45); font-weight:500; line-height:1.3; }
+    .ol-dir-stat-label { font-size:12px; color:rgba(240,240,245,.58); font-weight:500; line-height:1.3; }
     .ol-dir-stat-sep { width:1px; height:28px; background:rgba(255,255,255,0.07); }
-    .ol-dir-stats-note { margin-left:auto; font-size:11px; color:rgba(240,240,245,0.28); font-style:italic; }
+    .ol-dir-stats-note { margin-left:auto; font-size:11px; color:rgba(240,240,245,.58); font-style:italic; }
     @media (max-width:680px){ .ol-dir-stats-note{ display:none; } }
 
     /* ---- FILTERS ---- */
     .ol-dir-filters-wrap { background:#0A0A14; border-bottom:1px solid rgba(255,255,255,0.06); padding:1.25rem 0; position:sticky; top:56px; z-index:40; }
     .ol-dir-filters-inner { width:90%; max-width:1600px; margin:0 auto; display:flex; align-items:center; gap:1rem; flex-wrap:wrap; }
-    .ol-dir-filter-label { font-size:10.5px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:rgba(240,240,245,0.35); white-space:nowrap; }
+    .ol-dir-filter-label { font-size:10.5px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:rgba(240,240,245,.58); white-space:nowrap; }
     .ol-dir-filter-chips { display:flex; gap:0.5rem; flex-wrap:wrap; }
     .ol-dir-chip { display:inline-flex; align-items:center; gap:0.35rem; padding:0.35rem 0.85rem; border-radius:999px; font-size:12px; font-weight:600; letter-spacing:0.02em; cursor:pointer; border:1px solid rgba(255,255,255,0.1); background:rgba(255,255,255,0.03); color:rgba(240,240,245,0.55); transition:border-color 0.18s, background 0.18s, color 0.18s; user-select:none; }
     .ol-dir-chip:hover { border-color:rgba(201,168,76,0.4); color:rgba(240,240,245,0.85); background:rgba(201,168,76,0.06); }
     .ol-dir-chip.active { border-color:var(--dir-ac); background:rgba(201,168,76,0.14); color:#F0F0F5; }
     .ol-dir-filter-sep { width:1px; height:20px; background:rgba(255,255,255,0.08); flex-shrink:0; }
-    .ol-dir-count-badge { margin-left:auto; font-size:12px; color:rgba(240,240,245,0.35); white-space:nowrap; }
+    .ol-dir-count-badge { margin-left:auto; font-size:12px; color:rgba(240,240,245,.58); white-space:nowrap; }
     .ol-dir-count-badge strong { color:rgba(240,240,245,0.7); font-weight:600; }
 
     /* ---- DIRECTORY SECTION ---- */
@@ -112,12 +112,12 @@
     .ol-dir-body { padding:1.15rem 1.25rem 1.3rem; display:flex; flex-direction:column; flex:1; }
     .ol-dir-meta-top { display:flex; align-items:center; justify-content:space-between; gap:0.5rem; margin-bottom:0.5rem; }
     .ol-dir-num { font-size:10.5px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:rgba(201,168,76,0.7); }
-    .ol-dir-tipo-tag { font-size:9.5px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:rgba(240,240,245,0.4); border:1px solid rgba(255,255,255,0.1); border-radius:5px; padding:0.18rem 0.45rem; }
+    .ol-dir-tipo-tag { font-size:9.5px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:rgba(240,240,245,.58); border:1px solid rgba(255,255,255,0.1); border-radius:5px; padding:0.18rem 0.45rem; }
     .ol-dir-name { font-size:1.12rem; font-weight:800; color:#F0F0F5; letter-spacing:-0.02em; line-height:1.2; margin:0 0 0.55rem; }
     .ol-dir-rating { display:inline-flex; align-items:center; gap:0.4rem; font-size:12.5px; color:rgba(240,240,245,0.62); margin-bottom:0.85rem; }
     .ol-dir-rating b { color:#E0C46B; font-weight:700; }
     .ol-dir-rating .ol-dir-stars { color:#E0C46B; letter-spacing:1px; font-size:12px; }
-    .ol-dir-rating .ol-dir-rev { color:rgba(240,240,245,0.4); }
+    .ol-dir-rating .ol-dir-rev { color:rgba(240,240,245,.58); }
     .ol-dir-data { list-style:none; margin:0 0 1.1rem; padding:0; display:flex; flex-direction:column; gap:0.5rem; }
     .ol-dir-data li { display:flex; align-items:flex-start; gap:0.55rem; font-size:12.5px; color:rgba(240,240,245,0.58); line-height:1.4; }
     .ol-dir-data svg { color:rgba(201,168,76,0.6); flex-shrink:0; margin-top:1px; }
@@ -127,7 +127,7 @@
     .ol-dir-card:hover .ol-dir-cta { background:var(--dir-ac); border-color:var(--dir-ac); color:#08080E; }
 
     /* ---- EMPTY STATE ---- */
-    .ol-dir-empty { display:none; text-align:center; padding:4rem 0; color:rgba(240,240,245,0.35); font-size:14px; grid-column:1 / -1; }
+    .ol-dir-empty { display:none; text-align:center; padding:4rem 0; color:rgba(240,240,245,.58); font-size:14px; grid-column:1 / -1; }
     .ol-dir-empty.visible { display:block; }
 
     /* ---- SIDEBAR ---- */
@@ -135,7 +135,7 @@
     @media (max-width:1024px){ .ol-dir-sidebar{ position:static; display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; } }
     @media (max-width:600px){ .ol-dir-sidebar{ grid-template-columns:1fr; } }
     .ol-dir-sb-card { background:#0C0C1A; border:1px solid rgba(255,255,255,0.07); border-radius:14px; padding:1.25rem 1.35rem; }
-    .ol-dir-sb-label { font-size:10px; font-weight:700; letter-spacing:0.13em; text-transform:uppercase; color:rgba(240,240,245,0.28); margin:0 0 0.85rem; display:block; }
+    .ol-dir-sb-label { font-size:10px; font-weight:700; letter-spacing:0.13em; text-transform:uppercase; color:rgba(240,240,245,.58); margin:0 0 0.85rem; display:block; }
     .ol-dir-sb-steps { list-style:none; margin:0; padding:0; counter-reset:s; display:flex; flex-direction:column; gap:0.9rem; }
     .ol-dir-sb-steps li { counter-increment:s; position:relative; padding-left:2rem; font-size:12.5px; color:rgba(240,240,245,0.6); line-height:1.5; }
     .ol-dir-sb-steps li::before { content:counter(s); position:absolute; left:0; top:-1px; width:1.4rem; height:1.4rem; border-radius:50%; background:rgba(201,168,76,0.12); border:1px solid rgba(201,168,76,0.35); color:var(--dir-ac); font-size:10.5px; font-weight:800; display:flex; align-items:center; justify-content:center; }

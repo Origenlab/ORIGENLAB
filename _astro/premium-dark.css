@@ -1355,7 +1355,7 @@ body { padding-top: calc(42px + 88px) !important; }
 }
 .ol-svc-desc {
   font-size: 13.5px;
-  color: rgba(240,240,245,0.48);
+  color: rgba(240,240,245,0.58);
   line-height: 1.75;
   margin: 0 0 1.25rem;
   flex-grow: 1;
@@ -1697,7 +1697,7 @@ body { padding-top: calc(42px + 88px) !important; }
 }
 .ol-cta-final-sub {
   font-size: 1.0625rem;
-  color: rgba(240,240,245,0.48);
+  color: rgba(240,240,245,0.58);
   line-height: 1.75;
   margin: 0 0 3rem;
 }
@@ -1871,7 +1871,7 @@ body { padding-top: calc(42px + 88px) !important; }
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(240,240,245,0.4);
+  color: rgba(240,240,245,0.58);
   margin: 0 0 0.65rem;
 }
 .ol-footer-col-list {
@@ -1884,7 +1884,7 @@ body { padding-top: calc(42px + 88px) !important; }
 }
 .ol-footer-col-list li a {
   font-size: 13.5px;
-  color: rgba(240,240,245,0.42);
+  color: rgba(240,240,245,0.58);
   text-decoration: none;
   line-height: 1.4;
 }
@@ -1915,7 +1915,7 @@ body { padding-top: calc(42px + 88px) !important; }
   color: rgba(240,240,245,0.58);
   text-decoration: none;
 }
-.ol-footer-legal a:hover { color: rgba(240,240,245,0.45); }
+.ol-footer-legal a:hover { color: rgba(240,240,245,0.58); }
 
 /* Responsive */
 @media (max-width: 1024px) {
@@ -2165,7 +2165,7 @@ select:focus-visible,
 }
 .ol-page-hero-copy {
   font-size: 15px;
-  color: rgba(240,240,245,0.48);
+  color: rgba(240,240,245,0.58);
   line-height: 1.8;
   margin: 0;
 }
@@ -2429,7 +2429,7 @@ select:focus-visible,
 .ol-sec-card:hover .ol-sec-card-title { color: #F87171; }
 .ol-sec-card-company {
   font-size: 11.5px;
-  color: rgba(240,240,245,0.4);
+  color: rgba(240,240,245,0.58);
 }
 
 /* Thumbnail imagen en ol-sec-card */
@@ -2463,7 +2463,7 @@ select:focus-visible,
 
 .ol-blog-featured-meta {
   font-size: 11.5px;
-  color: rgba(240,240,245,0.35);
+  color: rgba(240,240,245,0.58);
   font-weight: 500;
 }
 .ol-blog-featured-title {
@@ -2666,7 +2666,7 @@ select:focus-visible,
 }
 .ol-blog-card-meta {
   font-size: 11px;
-  color: rgba(240,240,245,0.3);
+  color: rgba(240,240,245,0.58);
   font-weight: 500;
 }
 .ol-blog-card-title {
@@ -2756,7 +2756,7 @@ select:focus-visible,
 .ol-blog-pg-next svg { pointer-events: none; }
 .ol-blog-pg-info {
   font-size: 12px;
-  color: rgba(240,240,245,0.28);
+  color: rgba(240,240,245,0.58);
   white-space: nowrap;
 }
 @media (max-width: 480px) {
@@ -2883,7 +2883,7 @@ select:focus-visible,
 .ol-sb-cat-count {
   font-size: 11px;
   font-weight: 700;
-  color: rgba(240,240,245,0.25);
+  color: rgba(240,240,245,0.58);
   background: rgba(255,255,255,0.04);
   border-radius: 999px;
   padding: 0.15rem 0.55rem;
@@ -2990,7 +2990,7 @@ select:focus-visible,
 .ol-sb-recent-item:hover .ol-sb-recent-title { color: #C9A84C; }
 .ol-sb-recent-meta {
   font-size: 11px;
-  color: rgba(240,240,245,0.28);
+  color: rgba(240,240,245,0.58);
 }
 
 /* Sidebar nav */
@@ -3029,7 +3029,7 @@ select:focus-visible,
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 999px;
   font-size: 11px;
-  color: rgba(240,240,245,0.4);
+  color: rgba(240,240,245,0.58);
   padding: 0.2rem 0.65rem;
   cursor: pointer;
   text-decoration: none;
@@ -3188,7 +3188,7 @@ select:focus-visible,
 }
 .ol-art-hero-copy {
   font-size: 15px;
-  color: rgba(240,240,245,0.48);
+  color: rgba(240,240,245,0.58);
   line-height: 1.8;
   margin: 0;
 }
@@ -3283,7 +3283,7 @@ select:focus-visible,
 }
 .ol-art-meta-author-role {
   font-size: 11.5px;
-  color: rgba(240,240,245,0.4);
+  color: rgba(240,240,245,0.58);
 }
 .ol-art-meta-sep {
   width: 1px;
@@ -3292,7 +3292,7 @@ select:focus-visible,
 }
 .ol-art-meta-item {
   font-size: 12.5px;
-  color: rgba(240,240,245,0.45);
+  color: rgba(240,240,245,0.58);
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
@@ -3333,7 +3333,7 @@ select:focus-visible,
 .ol-art-stat-num .accent { color: #C9A84C; }
 .ol-art-stat-label {
   font-size: 11.5px;
-  color: rgba(240,240,245,0.4);
+  color: rgba(240,240,245,0.58);
   margin-top: 0.5rem;
   line-height: 1.4;
 }
@@ -4010,7 +4010,7 @@ select:focus-visible,
 }
 .ol-art-nextread-meta {
   font-size: 11px;
-  color: rgba(240,240,245,0.3);
+  color: rgba(240,240,245,0.58);
 }
 .ol-art-nextread-h {
   font-size: 1rem;
@@ -4582,7 +4582,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-faq-field { display: flex; flex-direction: column; gap: 0.4rem; }
 .ol-faq-field label { font-size: 11.5px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; color: rgba(240,240,245,0.58); }
 .ol-faq-field input, .ol-faq-field select, .ol-faq-field textarea { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 0.7rem 0.9rem; font-size: 0.9rem; font-family: 'Inter', -apple-system, sans-serif; color: #F0F0F5; outline: none; width: 100%; box-sizing: border-box; }
-.ol-faq-field input::placeholder, .ol-faq-field textarea::placeholder { color: rgba(240,240,245,0.25); }
+.ol-faq-field input::placeholder, .ol-faq-field textarea::placeholder { color: rgba(240,240,245,0.58); }
 .ol-faq-field select option { background: #131320; color: #F0F0F5; }
 .ol-faq-field input:focus, .ol-faq-field select:focus, .ol-faq-field textarea:focus { border-color: rgba(201,168,76,0.45); background: rgba(201,168,76,0.04); }
 .ol-faq-field textarea { resize: vertical; min-height: 90px; }
@@ -4626,7 +4626,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-article-card-cat { font-size: 10.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold, #C9A84C); margin: 0; }
 .ol-article-card-title { font-size: 1.15rem; font-weight: 700; color: #F0F0F5; line-height: 1.3; letter-spacing: -0.015em; margin: 0; }
 .ol-article-card-excerpt { font-size: 14px; color: rgba(240,240,245,0.55); line-height: 1.65; margin: 0; }
-.ol-article-card-meta { font-size: 12px; color: rgba(240,240,245,0.4); margin: auto 0 0; padding-top: 0.5rem; }
+.ol-article-card-meta { font-size: 12px; color: rgba(240,240,245,0.58); margin: auto 0 0; padding-top: 0.5rem; }
 
 
 /* ============================================================
@@ -4654,7 +4654,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-side-meta { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.85rem; }
 .ol-side-meta li { display: flex; flex-direction: column; gap: 0.2rem; padding-bottom: 0.85rem; border-bottom: 1px solid rgba(255,255,255,0.05); }
 .ol-side-meta li:last-child { border-bottom: none; padding-bottom: 0; }
-.ol-side-meta dt { font-size: 10.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(240,240,245,0.4); margin: 0; }
+.ol-side-meta dt { font-size: 10.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(240,240,245,0.58); margin: 0; }
 .ol-side-meta dd { font-size: 14px; color: #F0F0F5; line-height: 1.5; margin: 0; }
 .ol-side-meta a { color: #F0F0F5; text-decoration: none; border-bottom: 1px dotted var(--case-accent-line, rgba(201,168,76,0.3)); transition: color 0.18s; }
 .ol-side-meta a:hover { color: var(--case-accent, #C9A84C); }
@@ -4785,7 +4785,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-cta-hero-blurb { font-size: 15px; color: rgba(240,240,245,0.62); line-height: 1.78; margin: 0 0 2rem; }
 .ol-cta-hero-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.5rem; }
 .ol-cta-hero-promises { display: flex; flex-direction: column; gap: 1rem; }
-.ol-cta-hero-promises-title { font-size: 10.5px; color: rgba(240,240,245,0.45); font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; margin: 0 0 0.5rem; }
+.ol-cta-hero-promises-title { font-size: 10.5px; color: rgba(240,240,245,0.58); font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; margin: 0 0 0.5rem; }
 .ol-cta-hero-promises-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.85rem; }
 .ol-cta-hero-promises-list li { font-size: 14px; color: rgba(240,240,245,0.78); display: flex; align-items: flex-start; gap: 0.7rem; line-height: 1.55; }
 .ol-cta-hero-promises-list li::before {
@@ -4851,7 +4851,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-page-hero-title { font-size: clamp(2.8rem, 5vw, 4.5rem); font-weight: 900; color: #F0F0F5; letter-spacing: -0.035em; line-height: 1.04; margin: 0 0 1.5rem; }
 .ol-page-hero-sub { font-size: 1.0625rem; color: rgba(240,240,245,0.5); line-height: 1.75; margin: 0; }
 .ol-page-hero-right { display: flex; flex-direction: column; gap: 1.25rem; padding-top: 0.25rem; }
-.ol-page-hero-copy { font-size: 15px; color: rgba(240,240,245,0.48); line-height: 1.8; margin: 0; }
+.ol-page-hero-copy { font-size: 15px; color: rgba(240,240,245,0.58); line-height: 1.8; margin: 0; }
 
 /* ============================================================
    OVERVIEW — Imagen real + intro 2 columnas
@@ -4880,7 +4880,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-stack-item { background: #0C0C18; border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 1.75rem 1.25rem; text-align: center; }
 .ol-stack-cat { font-size: 10.5px; color: rgba(201,168,76,0.85); text-transform: uppercase; letter-spacing: 0.14em; margin: 0 0 0.5rem; font-weight: 700; }
 .ol-stack-tech { font-size: 1rem; font-weight: 700; color: #F0F0F5; margin: 0 0 0.4rem; letter-spacing: -0.01em; }
-.ol-stack-desc { font-size: 12.5px; color: rgba(240,240,245,0.48); line-height: 1.55; margin: 0; }
+.ol-stack-desc { font-size: 12.5px; color: rgba(240,240,245,0.58); line-height: 1.55; margin: 0; }
 @media (max-width: 1100px) { .ol-stack-grid { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 560px) { .ol-stack-grid { grid-template-columns: repeat(2, 1fr); } }
 
@@ -4895,7 +4895,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-type-num { font-size: 10.5px; color: rgba(201,168,76,0.7); font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; margin: 0; }
 .ol-type-title { font-size: 1.125rem; font-weight: 700; color: #F0F0F5; margin: 0; letter-spacing: -0.01em; }
 .ol-type-desc { font-size: 14px; color: rgba(240,240,245,0.55); line-height: 1.7; margin: 0; flex: 1; }
-.ol-type-meta { font-size: 12.5px; color: rgba(240,240,245,0.48); padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; gap: 1rem; }
+.ol-type-meta { font-size: 12.5px; color: rgba(240,240,245,0.58); padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; gap: 1rem; }
 .ol-type-meta strong { color: #C9A84C; font-weight: 600; }
 @media (max-width: 980px) { .ol-types-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 640px) { .ol-types-grid { grid-template-columns: 1fr; } }
@@ -5023,7 +5023,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 }
 .ol-contact-desc {
   font-size: 15px;
-  color: rgba(240,240,245,0.48);
+  color: rgba(240,240,245,0.58);
   line-height: 1.8;
   margin: 0 0 2.5rem;
 }
@@ -5063,7 +5063,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(240,240,245,0.3);
+  color: rgba(240,240,245,0.58);
   margin-bottom: 0.2rem;
 }
 .ol-ci-val {
@@ -5128,7 +5128,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
   border-radius: 999px;
   font-size: 12.5px;
   font-weight: 500;
-  color: rgba(240,240,245,0.45);
+  color: rgba(240,240,245,0.58);
   cursor: pointer;
   background: transparent;
   font-family: inherit;
@@ -5175,7 +5175,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 }
 .ol-form-group input::placeholder,
 .ol-form-group textarea::placeholder {
-  color: rgba(240,240,245,0.2);
+  color: rgba(240,240,245,0.58);
 }
 .ol-form-group input:focus,
 .ol-form-group textarea:focus,
@@ -5201,7 +5201,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 }
 .ol-form-note {
   font-size: 11.5px;
-  color: rgba(240,240,245,0.28);
+  color: rgba(240,240,245,0.58);
   margin-top: 0.35rem;
 }
 .ol-required { color: #C9A84C; }
@@ -5261,7 +5261,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 }
 .ol-success-copy {
   font-size: 14.5px;
-  color: rgba(240,240,245,0.45);
+  color: rgba(240,240,245,0.58);
   line-height: 1.75;
 }
 
@@ -5460,7 +5460,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 }
 .ol-about-value-desc {
   font-size: 13px;
-  color: rgba(240,240,245,0.48);
+  color: rgba(240,240,245,0.58);
   line-height: 1.65;
   margin: 0;
 }
@@ -6003,7 +6003,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
   background: var(--case-accent-soft, rgba(201,168,76,0.12));
   border: 1px solid var(--case-accent-line, rgba(201,168,76,0.28));
   display: flex; align-items: center; justify-content: center; color: var(--case-accent, #C9A84C); }
-.ol-clisvc-num { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: rgba(240,240,245,0.35);
+.ol-clisvc-num { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: rgba(240,240,245,0.58);
   font-variant-numeric: tabular-nums; }
 .ol-clisvc-k { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
   color: color-mix(in srgb, var(--case-accent, #C9A84C) 62%, #fff); margin: 0 0 0.5rem; }
@@ -6015,7 +6015,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-clisvc-spec { list-style: none; margin: 0 0 1.5rem; padding: 1.1rem 0 0;
   border-top: 1px solid rgba(255,255,255,0.07); display: grid; gap: 0.6rem; }
 .ol-clisvc-spec li { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
-.ol-clisvc-spec dt, .ol-clisvc-spec-k { font-size: 12.5px; color: rgba(240,240,245,0.45); margin: 0; }
+.ol-clisvc-spec dt, .ol-clisvc-spec-k { font-size: 12.5px; color: rgba(240,240,245,0.58); margin: 0; }
 .ol-clisvc-spec-v { font-size: 12.5px; font-weight: 600; color: rgba(240,240,245,0.85); margin: 0; text-align: right; }
 
 /* Chips de modelos incluidos */
@@ -6122,7 +6122,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 }
 .ol-breadcrumb-item { display: inline-flex; align-items: center; color: rgba(240,240,245,0.58); }
 .ol-breadcrumb-item + .ol-breadcrumb-item::before {
-  content: '\203A'; margin-right: 0.5rem; color: rgba(240,240,245,0.3);
+  content: '\203A'; margin-right: 0.5rem; color: rgba(240,240,245,0.58);
 }
 .ol-breadcrumb-item a { color: rgba(240,240,245,0.58); text-decoration: none; }
 .ol-breadcrumb-item a:hover { color: #C9A84C; }
