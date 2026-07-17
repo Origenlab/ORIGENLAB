@@ -4666,7 +4666,12 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-side-cta { background: linear-gradient(135deg, #110E1A 0%, #1A1326 100%); border: 1px solid var(--case-accent-line, rgba(201,168,76,0.28)); border-radius: 14px; padding: 1.5rem; }
 .ol-side-cta-title { font-size: 1rem; font-weight: 700; color: #F0F0F5; margin: 0 0 0.5rem; letter-spacing: -0.01em; }
 .ol-side-cta-desc { font-size: 13px; color: rgba(240,240,245,0.6); line-height: 1.6; margin: 0 0 1.25rem; }
-.ol-side-cta-btn { display: flex; align-items: center; justify-content: center; gap: 0.4rem; width: 100%; padding: 0.75rem 1rem; background: var(--case-accent, #C9A84C); color: #fff; border-radius: 8px; font-size: 13px; font-weight: 700; text-decoration: none; transition: background 0.22s, transform 0.15s; }
+/* La tinta se hereda de --case-accent-ink, igual que .ol-btn-primary. Iba a
+   `color:#fff` y sobre el oro de marca daba 2.28:1 — el MISMO fallo que se
+   arregló en .ol-btn-primary, que se quedó sin arreglar aquí porque se corrigió
+   la clase que se había medido en vez de buscar el patrón. Lo encontró axe en
+   /paquetes/elite/, no una revisión del CSS. */
+.ol-side-cta-btn { display: flex; align-items: center; justify-content: center; gap: 0.4rem; width: 100%; padding: 0.75rem 1rem; background: var(--case-accent, #C9A84C); color: var(--case-accent-ink, #0A0A12); border-radius: 8px; font-size: 13px; font-weight: 700; text-decoration: none; transition: background 0.22s, transform 0.15s; }
 .ol-side-cta-btn:hover { filter: brightness(1.08); transform: translateY(-1px); }
 .ol-side-cta-link { display: block; text-align: center; font-size: 12px; color: rgba(240,240,245,0.5); margin-top: 0.85rem; text-decoration: none; transition: color 0.18s; }
 .ol-side-cta-link:hover { color: #F0F0F5; }
