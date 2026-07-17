@@ -160,6 +160,42 @@ def css_desnudo(s):
 suelto = [p for p in reales if css_desnudo(leer(p))]
 (bad if suelto else ok)(f"CSS que se pintaría como texto: {len(suelto)} {suelto[:3] if suelto else ''}")
 
+# ── Clases sin CSS ────────────────────────────────────────────────────────
+# Cómo se coló: el sitio tiene DOS marcados para las mismas piezas y las reglas
+# del segundo nunca se escribieron — ni aquí ni en ORIGENLAB-ASTRO. Resultado:
+# 154 páginas con el footer apilado y 124 con el artículo a sangre, durante
+# meses. Ninguna auditoría lo vio: todas leían el HTML, y el HTML era correcto.
+#
+# Este check NO marca las 99 clases sin regla: la mayoría hereda estilos
+# aceptables y marcarlas todas sería ruido que se acaba ignorando. Vigila solo
+# las ESTRUCTURALES —las que sin CSS colapsan el layout— y ya están todas
+# resueltas, así que cualquier positivo aquí es una regresión real.
+#
+# OJO con el regex: usar tokens exactos de `class="..."`, NUNCA `\b`. El guion
+# es límite de palabra, así que `\bol-logo\b` casa con `ol-logo-img` y da falsos
+# positivos. Me pasó al comprobar este mismo arreglo.
+h1("Clases sin CSS")
+import glob as _glob
+_css = ''.join(open(f, encoding='utf-8').read()
+               for f in ['_astro/premium-dark.css', '_astro/BaseLayout.xeR8R953.css']
+               + _glob.glob('_astro/index*.css'))
+_definidas = set(re.findall(r'\.(ol-[a-z0-9-]+)', _css))
+ESTRUCTURALES = ['ol-footer-inner', 'ol-footer-brand', 'ol-footer-nav', 'ol-footer-col',
+                 'ol-footer-link', 'ol-logo', 'ol-logo-mark', 'ol-logo-text',
+                 'ol-breadcrumb-list', 'ol-breadcrumb-item', 'ol-art-shell', 'ol-art-grid',
+                 'ol-art-toc', 'ol-side-card-head', 'ol-footer-col-list']
+def _usa(h, c):
+    return any(c in m.split() for m in re.findall(r'class="([^"]*)"', sin_comentarios(h)))
+_huerfanas = []
+for _c in ESTRUCTURALES:
+    if _c in _definidas:
+        continue
+    _n = sum(1 for p in reales if _usa(leer(p), _c))
+    if _n:
+        _huerfanas.append(f"{_c} ({_n} pág)")
+(bad if _huerfanas else ok)(
+    f"clases estructurales usadas SIN regla en el CSS: {len(_huerfanas)} {_huerfanas[:4] if _huerfanas else ''}")
+
 # ── Assets ────────────────────────────────────────────────────────────────
 h1("Assets")
 for nombre, patron in [('premium-dark.css', r'premium-dark\.css\?v[0-9a-z]+'),

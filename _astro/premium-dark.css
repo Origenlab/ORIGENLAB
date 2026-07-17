@@ -6058,8 +6058,20 @@ img:hover, picture:hover, figure:hover, figure:hover * {
      · `.ol-container` también: lleva max-width inline en cada uso.
 
    Los valores NO se inventan: replican `.ol-case-*` y `.ol-footer-top`, que
-   resuelven este mismo layout. Bloque aditivo — las clases son disjuntas de
-   las del chrome que ya funciona, así que las 125 páginas sanas no se tocan.
+   resuelven este mismo layout.
+
+   ALCANCE REAL (medido con coincidencia exacta de token de clase; un regex con
+   \b NO sirve: el guion es límite de palabra y `ol-logo` casa con `ol-logo-img`,
+   que fue justo el falso positivo que me hizo creer que tocaba la home):
+
+     · `.ol-footer-*`, `.ol-logo*`  → 124 páginas .mx + 30 más. Esas 30 tienen
+       el mismo marcado y el mismo defecto: no son daño colateral, son parte
+       del problema. La home y las otras 124 del footer bueno usan
+       `.ol-footer-top`/`.ol-footer-logo` y NO las alcanza ninguna regla nueva
+       (verificado en vivo: 0 elementos).
+     · `.ol-footer-col-list li a` → sí toca a las 125 buenas, a propósito: es
+       el arreglo de contraste de abajo.
+
    La migración a Astro unificará ambos marcados; hasta entonces, esto es lo
    que hace que la mitad del sitio se vea como se diseñó.
    ────────────────────────────────────────────────────────────────────────── */
