@@ -24,3 +24,29 @@
 /_reports/*                                     /   302
 /_tools/*                                       /   302
 /_backup-2026-04-21/*                           /   302
+
+# ── 301 de artículos renombrados (antes eran páginas HTML con meta-refresh) ──
+# Un 301 transmite autoridad mejor que un meta-refresh, que Google trata como
+# redirección "blanda". Migrado 2026-07-15; los 22 HTML se eliminaron.
+/blog/alvifire-iztacalco-guia-tecnica/                         /blog/alvifire-iztacalco-guia-extintores/                  301
+/blog/caybe-extintores-sistemas-ci-guia-tecnica/               /blog/caybe-extintores-sistemas-ci-guia-extintores/        301
+/blog/central-mexicana-extinguidores-guia-tecnica/             /blog/central-mexicana-extinguidores-guia-extintores/      301
+/blog/cuanto-cuesta-pagina-web-mexico/                         /blog/                                                     301
+/blog/cuanto-cuesta-sitio-web-mexico-2026/                     /blog/                                                     301
+/blog/equipos-y-servicios-mf-guia-tecnica/                     /blog/equipos-y-servicios-mf-guia-extintores/              301
+/blog/extinguidores-leon-tlalpan-guia-tecnica/                 /blog/extinguidores-leon-tlalpan-guia-extintores/          301
+/blog/extintores-aztahuacan-guia-tecnica/                      /blog/extintores-aztahuacan-guia-extintores/               301
+/blog/extintores-casa-guajardo-milpa-alta-guia-tecnica/        /blog/extintores-casa-guajardo-milpa-alta-guia-extintores/ 301
+/blog/extintores-corona-azcapotzalco-guia-tecnica/             /blog/extintores-corona-azcapotzalco-guia-extintores/      301
+/blog/extintores-cuauhtemoc-iztapalapa-guia-tecnica/           /blog/extintores-cuauhtemoc-iztapalapa-guia-extintores/    301
+/blog/extintores-ecoin-iztacalco-guia-tecnica/                 /blog/extintores-ecoin-iztacalco-guia-extintores/          301
+/blog/extintores-emmvira-guia-tecnica/                         /blog/extintores-emmvira-guia-extintores/                  301
+/blog/extintores-olivos-tlahuac-guia-tecnica/                  /blog/extintores-olivos-tlahuac-guia-extintores/           301
+/blog/extintores-omega-alvaro-obregon-guia-tecnica/            /blog/extintores-omega-alvaro-obregon-guia-extintores/     301
+/blog/extintores-plasa-guia-tecnica/                           /blog/extintores-plasa-guia-extintores/                    301
+/blog/grupo-bam-extintores-guia-tecnica/                       /blog/grupo-bam-extintores-guia-extintores/                301
+/blog/monyza-equipos-contra-incendio-guia-tecnica/             /blog/monyza-equipos-contra-incendio-guia-extintores/      301
+/blog/multifire-systems-cuauhtemoc-guia-tecnica/               /blog/multifire-systems-cuauhtemoc-guia-extintores/        301
+/blog/recarga-extintores-iztapalapa-guia-tecnica/              /blog/recarga-extintores-iztapalapa-guia-extintores/       301
+/blog/recarga-extintores-venta-nuevo-milpa-alta-guia-tecnica/  /blog/recarga-extintores-venta-nuevo-milpa-alta-guia-extintores/ 301
+/blog/todo-en-extintores-tlalpan-guia-tecnica/                 /blog/todo-en-extintores-tlalpan-guia-extintores/          301

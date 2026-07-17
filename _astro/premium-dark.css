@@ -4819,7 +4819,10 @@ img:hover, picture:hover, figure:hover, figure:hover * {
   text-decoration: none;
   transition: background 0.22s, transform 0.15s, box-shadow 0.22s, border-color 0.22s;
 }
-.ol-btn-primary { background: var(--case-accent, var(--gold, #C9A84C)); color: var(--case-accent-ink, #fff); }
+/* El acento por defecto es el dorado de marca #C9A84C, que con texto blanco da 2.29:1.
+   Por eso la tinta por defecto es oscura. Los casos con acento OSCURO declaran
+   --case-accent-ink:#fff en su :root. Verificado en ambos sentidos por _qa.py. */
+.ol-btn-primary { background: var(--case-accent, var(--gold, #C9A84C)); color: var(--case-accent-ink, #0A0A12); }
 .ol-btn-primary:hover { filter: brightness(1.08); transform: translateY(-1px); box-shadow: 0 8px 24px var(--case-accent-soft, rgba(201,168,76,0.35)); }
 .ol-btn-ghost { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); color: rgba(240,240,245,0.85); }
 .ol-btn-ghost:hover { background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.22); transform: translateY(-1px); }
