@@ -206,6 +206,29 @@ for p in pages:
 (bad if invisibles else ok)(f"CTA invisible (tinta oscura sobre acento oscuro): {len(invisibles)} {invisibles[:1] if invisibles else ''}")
 (bad if ilegibles else ok)(f"CTA con contraste <4.5:1: {len(ilegibles)} {ilegibles[:2] if ilegibles else ''}")
 
+# ── Identidad de marca ────────────────────────────────────────────────────
+h1("Identidad (origenlab.com — el único dominio del sitio)")
+
+# El sitio tuvo DOS identidades conviviendo hasta 2026-07-15: 124 páginas con
+# hola@origenlab.mx / +52 55 7415 0765, y 40 artículos cuyos botones de
+# compartir publicaban enlaces a https://origenlab.mx. Ver memoria
+# `origenlab-dos-identidades`. Esto lo impide de raíz.
+TEL_OK, MAIL_OK = '525547868402', 'hola@origenlab.com'
+
+mx = [(p, len(re.findall(r'origenlab\.mx', leer(p), re.I))) for p in pages]
+n = sum(c for _, c in mx)
+(bad if n else ok)(f"rastros de origenlab.mx: {n} {[p for p, c in mx if c][:2] if n else ''}")
+
+# El contacto de OrigenLab en el chrome. Los teléfonos de los directorios son
+# de CLIENTES y son legítimos: solo se mira el que va en mailto/tel del chrome.
+malmail = [p for p in pages if re.search(r'mailto:hola@origenlab\.(?!com)', leer(p))]
+(bad if malmail else ok)(f"email de OrigenLab distinto de {MAIL_OK}: {len(malmail)} {malmail[:2] if malmail else ''}")
+
+maltel = [p for p in pages if 'ol-topbar' in leer(p)
+          and (m := re.search(r'ol-topbar.{0,400}?tel:\+(\d{12})', leer(p), re.S))
+          and m.group(1) != TEL_OK]
+(bad if maltel else ok)(f"teléfono del topbar distinto de +{TEL_OK}: {len(maltel)} {maltel[:2] if maltel else ''}")
+
 # ── Higiene: internos que no deben publicarse ─────────────────────────────
 h1("Internos (Cloudflare Pages sirve el repo TAL CUAL)")
 patron = r'(^|/)(CLAUDE|AGENTS)\.md$|\.(xlsx|docx|csv|env)$|(^|/)_docs/|(^|/)CONSULTORIO-WEB/|(^|/)MASTER WEB|(^|/)_tools/|(^|/)_AUDITORIA/'
