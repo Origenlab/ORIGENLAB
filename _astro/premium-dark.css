@@ -6037,3 +6037,105 @@ img:hover, picture:hover, figure:hover, figure:hover * {
   border: 1px solid rgba(255,255,255,0.14); border-radius: 999px; background: rgba(255,255,255,0.04);
   display: inline-flex; align-items: center; gap: 0.4rem; }
 .ol-clisvc-foot-tag svg { color: var(--case-accent, #C9A84C); flex-shrink: 0; }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   CHROME COMPACTO — el CSS que nunca se escribió                 2026-07-17
+   ══════════════════════════════════════════════════════════════════════════
+   El sitio arrastra DOS marcados para las mismas piezas. Uno tiene CSS aquí;
+   el otro se generó con clases cuyas reglas no se escribieron NUNCA — ni en
+   este repo ni en ORIGENLAB-ASTRO (comprobado: 0 coincidencias en su src/).
+
+   Efecto en producción, durante meses:
+     · 154 páginas con el footer apilado a ancho completo, sin columnas
+     · 130 con el breadcrumb como lista vertical con viñetas
+     · 124 con el artículo de borde a borde y el sidebar debajo, no al lado
+
+   Medido en navegador, no deducido del HTML: se comprobó clase por clase
+   cuáles daban un defecto real. De 99 clases sin regla, solo estas producen
+   uno. El resto hereda estilos aceptables y NO se tocan.
+     · `.ol-cta-hero-section` salió como falso positivo: es una banda
+       full-bleed a propósito y su contenedor ya va centrado con estilo inline.
+     · `.ol-container` también: lleva max-width inline en cada uso.
+
+   Los valores NO se inventan: replican `.ol-case-*` y `.ol-footer-top`, que
+   resuelven este mismo layout. Bloque aditivo — las clases son disjuntas de
+   las del chrome que ya funciona, así que las 125 páginas sanas no se tocan.
+   La migración a Astro unificará ambos marcados; hasta entonces, esto es lo
+   que hace que la mitad del sitio se vea como se diseñó.
+   ────────────────────────────────────────────────────────────────────────── */
+
+/* ── Footer compacto (154 páginas) ────────────────────────────────────── */
+.ol-footer-inner {
+  width: 90%; max-width: 1600px; margin: 0 auto;
+  padding: 2.75rem 0 2rem;
+  display: grid; grid-template-columns: minmax(240px, 1fr) 2fr; gap: 3rem;
+  align-items: start;
+  border-bottom: 1px solid rgba(201,168,76,0.08);
+}
+@media (max-width: 900px) { .ol-footer-inner { grid-template-columns: 1fr; gap: 2rem; } }
+.ol-footer-brand { display: flex; flex-direction: column; gap: 0.8rem; }
+.ol-footer-nav { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+@media (max-width: 640px) { .ol-footer-nav { grid-template-columns: 1fr 1fr; gap: 1.5rem; } }
+.ol-footer-col { display: flex; flex-direction: column; gap: 0.4rem; }
+/* alpha .58 y no .42: a .42 el ratio es 3.74:1 y no pasa AA (ver nota abajo) */
+.ol-footer-link {
+  font-size: 13.5px; color: rgba(240,240,245,0.58);
+  text-decoration: none; line-height: 1.5;
+}
+.ol-footer-link:hover { color: #C9A84C; }
+.ol-footer-link:focus-visible { outline: 2px solid #C9A84C; outline-offset: 2px; border-radius: 3px; }
+
+/* Logotipo del footer compacto */
+.ol-logo { display: inline-flex; align-items: center; gap: 0.6rem; text-decoration: none; }
+.ol-logo-mark {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px; border-radius: 9px; flex-shrink: 0;
+  background: linear-gradient(135deg, #C9A84C, #8B7236);
+  color: #08080E; font-size: 13px; font-weight: 800;
+}
+.ol-logo-text { font-size: 1.15rem; font-weight: 800; color: #F0F0F5; letter-spacing: -0.03em; }
+
+/* ── Breadcrumb compacto (130 páginas) ────────────────────────────────── */
+/* El contenedor ya viene acotado por su padre; lo que falta es que la lista
+   deje de ser un <ol> con viñetas apilado en vertical. */
+.ol-breadcrumb-list {
+  list-style: none; margin: 0; padding: 0;
+  display: flex; align-items: center; flex-wrap: wrap;
+  gap: 0.5rem; font-size: 12.5px;
+}
+.ol-breadcrumb-item { display: inline-flex; align-items: center; color: rgba(240,240,245,0.58); }
+.ol-breadcrumb-item + .ol-breadcrumb-item::before {
+  content: '\203A'; margin-right: 0.5rem; color: rgba(240,240,245,0.3);
+}
+.ol-breadcrumb-item a { color: rgba(240,240,245,0.58); text-decoration: none; }
+.ol-breadcrumb-item a:hover { color: #C9A84C; }
+.ol-breadcrumb-item a:focus-visible { outline: 2px solid #C9A84C; outline-offset: 2px; border-radius: 3px; }
+.ol-breadcrumb-item[aria-current="page"] { color: #F0F0F5; font-weight: 500; }
+
+/* ── Artículo: cuerpo + sidebar (124 páginas) ─────────────────────────── */
+/* Espejo exacto de .ol-case-shell / .ol-case-grid / .ol-case-sidebar. */
+.ol-art-shell { background: #04040A; padding: 3.5rem 0 5rem; position: relative; }
+.ol-art-grid {
+  width: 90%; max-width: 1600px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 320px; gap: 3.5rem; align-items: start;
+}
+@media (max-width: 1080px) { .ol-art-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
+.ol-art-grid > .ol-art-body { min-width: 0; }
+@media (max-width: 1080px) { .ol-art-grid > .ol-art-sidebar { position: static; } }
+
+/* Índice del sidebar */
+.ol-art-toc { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+.ol-art-toc li a { font-size: 13px; color: rgba(240,240,245,0.58); text-decoration: none; line-height: 1.45; }
+.ol-art-toc li a:hover { color: var(--case-accent, #C9A84C); }
+.ol-art-toc li a:focus-visible { outline: 2px solid var(--case-accent, #C9A84C); outline-offset: 2px; border-radius: 3px; }
+.ol-side-card-head {
+  font-size: 10.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--case-accent, #C9A84C); margin: 0 0 1rem;
+}
+
+/* ── Contraste AA que el pase de junio no vio ─────────────────────────── */
+/* .ol-footer-col-list li a iba a alpha .42 sobre el footer #0F0C07: 3.74:1,
+   por debajo del 4.5:1 de AA. Afecta a las 125 páginas del footer "bueno".
+   A .58 son 6.15:1. El pase de a11y de jun-2026 subió otros muted a .58 y
+   este se quedó fuera. Calculado, no estimado. */
+.ol-footer-col-list li a { color: rgba(240,240,245,0.58); }
