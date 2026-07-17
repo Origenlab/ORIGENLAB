@@ -33,7 +33,11 @@ def sin_comentarios(s):
     return re.sub(r'<!--.*?-->', '', s, flags=re.S)
 
 tracked = set(subprocess.check_output(['git', 'ls-files'], text=True).split('\n'))
-pages   = sorted(p for p in tracked if p.endswith('index.html'))
+# `dist/` es el build de Astro, no fuente: si se cuela, duplica todos los
+# canonicals contra sus propias páginas. Se excluye igual que _backup.
+pages = sorted(p for p in tracked
+               if p.endswith('index.html')
+               and not p.startswith(('dist/', '_backup', 'node_modules/')))
 def leer(p): return open(p, encoding='utf-8', errors='ignore').read()
 
 reales, redirects = [], []
