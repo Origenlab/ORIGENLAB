@@ -23,6 +23,7 @@
 /_branding/*                                    /   302
 /_reports/*                                     /   302
 /_tools/*                                       /   302
+/_qa.py                                         /   302
 /_backup-2026-04-21/*                           /   302
 
 # ── 301 de artículos renombrados (antes eran páginas HTML con meta-refresh) ──
