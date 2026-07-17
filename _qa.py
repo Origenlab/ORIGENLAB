@@ -136,6 +136,30 @@ for p in pages:
 (bad if noalt else ok)(f"sin alt: {noalt}/{tot}")
 (bad if nodim else ok)(f"sin width/height (CLS): {nodim}/{tot}")
 
+# ── Integridad del HTML ───────────────────────────────────────────────────
+# El 2026-04-26, el renombrado masivo .ol-article-* → .ol-art-* se comió la
+# etiqueta <style> de apertura en 5 artículos. Resultado: el navegador pintó
+# ~170 líneas de CSS como TEXTO VISIBLE encima del artículo, en producción,
+# durante casi 3 meses. Ninguna auditoría lo vio porque todas leían el HTML;
+# solo se cayó al abrir la página en un navegador de verdad.
+h1("Integridad del HTML")
+for etiqueta in ('style', 'script'):
+    mal = [p for p in reales
+           if sin_comentarios(leer(p)).count(f'<{etiqueta}') !=
+              sin_comentarios(leer(p)).count(f'</{etiqueta}>')]
+    (bad if mal else ok)(f"<{etiqueta}> sin pareja: {len(mal)} {mal[:3] if mal else ''}")
+
+# CSS que el navegador pintaría como texto: reglas fuera de TODO <style>.
+# Ojo: un <style> dentro del <body> es HTML5 válido y el sitio lo usa a
+# propósito (portafolio/index.html). Hay que descontar los bloques <style>
+# completos ANTES de buscar CSS suelto, o se marca como roto lo que funciona.
+def css_desnudo(s):
+    s = re.sub(r'<style\b[^>]*>.*?</style>', '', sin_comentarios(s), flags=re.S)
+    s = re.sub(r'<script\b[^>]*>.*?</script>', '', s, flags=re.S)
+    return re.search(r'^\s{2,}\.[a-z-]+[^\n{]*\{[^\n]*\}\s*$', s, re.M)
+suelto = [p for p in reales if css_desnudo(leer(p))]
+(bad if suelto else ok)(f"CSS que se pintaría como texto: {len(suelto)} {suelto[:3] if suelto else ''}")
+
 # ── Assets ────────────────────────────────────────────────────────────────
 h1("Assets")
 for nombre, patron in [('premium-dark.css', r'premium-dark\.css\?v[0-9a-z]+'),
