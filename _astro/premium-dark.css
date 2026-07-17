@@ -1372,7 +1372,7 @@ body { padding-top: calc(42px + 88px) !important; }
 }
 .ol-svc-list li {
   font-size: 12px;
-  color: rgba(240,240,245,0.32);
+  color: rgba(240,240,245,0.58);
   padding-left: 1.1rem;
   position: relative;
   line-height: 1.5;
@@ -1904,7 +1904,7 @@ body { padding-top: calc(42px + 88px) !important; }
 }
 .ol-footer-copy {
   font-size: 12.5px;
-  color: rgba(240,240,245,0.2);
+  color: rgba(240,240,245,0.58);
 }
 .ol-footer-legal {
   display: flex;
@@ -1912,7 +1912,7 @@ body { padding-top: calc(42px + 88px) !important; }
 }
 .ol-footer-legal a {
   font-size: 12.5px;
-  color: rgba(240,240,245,0.2);
+  color: rgba(240,240,245,0.58);
   text-decoration: none;
 }
 .ol-footer-legal a:hover { color: rgba(240,240,245,0.45); }
@@ -2681,7 +2681,7 @@ select:focus-visible,
 .ol-blog-card:hover .ol-blog-card-title { color: #C9A84C; }
 .ol-blog-card-excerpt {
   font-size: 13px;
-  color: rgba(240,240,245,0.42);
+  color: rgba(240,240,245,0.58);
   line-height: 1.7;
   margin: 0;
   flex: 1;
@@ -5414,7 +5414,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 }
 .ol-about-sig-role {
   font-size: 12.5px;
-  color: rgba(240,240,245,0.38);
+  color: rgba(240,240,245,0.58);
   margin: 0;
 }
 .ol-about-values {
@@ -5838,7 +5838,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-pkg-name { font-size:1.5rem; font-weight:800; color:#F0F0F5; letter-spacing:-0.02em; margin:0; }
 
 .ol-pkg-price { font-size:2.2rem; font-weight:800; color:#C9A84C; letter-spacing:-0.01em; margin:0.55rem 0 0.9rem; line-height:1; text-align:center; }
-.ol-pkg-price-cur { font-size:0.75rem; font-weight:700; color:rgba(201,168,76,0.65); letter-spacing:0.08em; margin-left:0.25rem; }
+.ol-pkg-price-cur { font-size:0.75rem; font-weight:700; color:rgba(201,168,76,0.85); letter-spacing:0.08em; margin-left:0.25rem; }
 
 /* Precio destacado — card "Más elegido" (Profesional). Diseño tipo chip
    con fondo, borde y sombra estática (sin animación, regla 4). */
@@ -5887,13 +5887,13 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-pkg-cta--full { display:flex; width:100%; background:#C9A84C; border-color:#C9A84C; color:#08080E; font-size:14px; padding:0.85rem 1.25rem; }
 .ol-pkg-cta--full:hover { background:#E0C169; border-color:#E0C169; color:#08080E; }
 
-.ol-pkg-note { margin:2.5rem 0 0; font-size:13px; color:rgba(240,240,245,0.45); text-align:center; line-height:1.6; }
+.ol-pkg-note { margin:2.5rem 0 0; font-size:13px; color:rgba(240,240,245,0.58); text-align:center; line-height:1.6; }
 .ol-pkg-note a { color:#C9A84C; font-weight:600; text-decoration:underline; text-underline-offset:2px; }
 
 /* Interlinking card → detalle / detalle → volver (home + /paquetes/) */
-.ol-pkg-more { display:block; text-align:center; margin-top:0.65rem; font-size:12px; font-weight:600; color:rgba(240,240,245,0.4); text-decoration:none; }
+.ol-pkg-more { display:block; text-align:center; margin-top:0.65rem; font-size:12px; font-weight:600; color:rgba(240,240,245,0.58); text-decoration:none; }
 .ol-pkg-more:hover { color:#C9A84C; text-decoration:underline; text-underline-offset:2px; }
-.ol-pkg-detail-back { display:inline-flex; align-items:center; gap:0.35rem; font-size:12px; font-weight:600; color:rgba(240,240,245,0.4); text-decoration:none; margin-bottom:1.1rem; }
+.ol-pkg-detail-back { display:inline-flex; align-items:center; gap:0.35rem; font-size:12px; font-weight:600; color:rgba(240,240,245,0.58); text-decoration:none; margin-bottom:1.1rem; }
 .ol-pkg-detail-back:hover { color:#C9A84C; }
 
 @media (max-width:1100px){ .ol-pkg-grid{ grid-template-columns:1fr; } .ol-pkg-featured{ order:-1; } }
@@ -5908,7 +5908,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-pkg-detail-row { display:grid; grid-template-columns:1.05fr 0.95fr; gap:3.5rem; align-items:center; padding:3.5rem 0; border-top:1px solid rgba(255,255,255,0.07); }
 .ol-pkg-detail-row:first-child { border-top:none; padding-top:0; }
 
-.ol-pkg-detail-kicker { display:block; font-size:11px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:rgba(201,168,76,0.55); margin-bottom:0.6rem; }
+.ol-pkg-detail-kicker { display:block; font-size:11px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#C9A84C; margin-bottom:0.6rem; }
 
 /* Fila destacada (paquete "Más elegido") — mismo layout, divisor más cálido
    + tag inline junto al kicker. Sin reordenar columnas (regla: sin zig zag). */
@@ -5928,7 +5928,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-pkg-detail-tagline { font-size:15px; font-weight:600; color:rgba(240,240,245,0.75); margin:0 0 1rem; line-height:1.4; }
 .ol-pkg-detail-desc { font-size:14.5px; color:rgba(240,240,245,0.58); line-height:1.8; margin:0 0 1.25rem; }
 
-.ol-pkg-detail-feat-label { font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:rgba(240,240,245,0.4); margin:1.75rem 0 1rem; padding-top:1.5rem; border-top:1px solid rgba(255,255,255,0.07); }
+.ol-pkg-detail-feat-label { font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:rgba(240,240,245,0.58); margin:1.75rem 0 1rem; padding-top:1.5rem; border-top:1px solid rgba(255,255,255,0.07); }
 .ol-pkg-detail-feat-list { list-style:none; margin:0 0 1.75rem; padding:0; display:flex; flex-direction:column; gap:1.1rem; }
 .ol-pkg-detail-feat-list li { padding-left:1.15rem; position:relative; }
 .ol-pkg-detail-feat-list li::before { content:''; position:absolute; left:0; top:0.5em; width:6px; height:6px; border-radius:50%; background:#C9A84C; }
@@ -5938,7 +5938,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-pkg-detail-visual { display:flex; flex-direction:column; align-items:center; }
 .ol-pkg-detail-visual .mk-frame { width:100%; max-width:460px; margin-top:0.9rem; }
 .ol-pkg-detail-visual .mk { box-shadow:0 30px 60px -20px rgba(0,0,0,0.5); }
-.ol-pkg-detail-caption { margin:1.1rem 0 0; font-size:12.5px; color:rgba(240,240,245,0.4); text-align:center; font-style:italic; max-width:380px; }
+.ol-pkg-detail-caption { margin:1.1rem 0 0; font-size:12.5px; color:rgba(240,240,245,0.58); text-align:center; font-style:italic; max-width:380px; }
 
 @media (max-width:900px){
   .ol-pkg-detail-row { grid-template-columns:1fr; gap:2rem; padding:2.75rem 0; }
