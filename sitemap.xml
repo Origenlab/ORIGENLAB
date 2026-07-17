@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
   <url><loc>https://origenlab.com/</loc><lastmod>2026-06-04</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/blog/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/blog/5-errores-sitios-web-pymes-mexico/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/blog/astro-vs-wordpress-cual-elegir/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/blog/como-medir-resultados-sitio-web/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/blog/core-web-vitals-que-son/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/blog/cuanto-cuesta-sitio-web-mexico-2026/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/blog/landing-page-vs-sitio-corporativo/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/blog/mercado-pago-vs-stripe-ecommerce-mexico/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/blog/por-que-tu-sitio-lento-cuesta-clientes/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/blog/rediseno-web-cuando-es-momento/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/contacto/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/cotizar/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/directorio/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/nosotros/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/portafolio/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/servicios/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/servicios/desarrollo-web/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/servicios/landing-pages/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/servicios/rediseno-web/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/servicios/tiendas-en-linea/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://origenlab.com/aviso-de-privacidad/</loc><lastmod>2026-04-21</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://origenlab.com/blog/</loc><lastmod>2026-04-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://origenlab.com/blog/5-errores-sitios-web-pymes-mexico/</loc><lastmod>2026-04-21</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
@@ -315,4 +295,14 @@
   <url><loc>https://origenlab.com/servicios/rediseno-web/</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://origenlab.com/servicios/tiendas-en-linea/</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://origenlab.com/terminos/</loc><lastmod>2026-04-21</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipos-contra-incendios/directorio/albatros-recargadores/</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipos-contra-incendios/directorio/diafa-sistemas-ci/</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipos-contra-incendios/directorio/eci-extintores/</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipos-contra-incendios/directorio/emergencias-integrales/</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipos-contra-incendios/directorio/extin-torr/</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipos-contra-incendios/directorio/extintores-del-sur/</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipos-contra-incendios/directorio/extintores-y-sistemas/</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipos-contra-incendios/directorio/flamers-protec/</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipos-contra-incendios/directorio/grupo-extintores-mexico/</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipos-contra-incendios/directorio/vidal-extintores/</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
