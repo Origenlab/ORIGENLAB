@@ -1,0 +1,41 @@
+# OrigenLab
+
+> Estudio mexicano de diseño y desarrollo web. Construimos sitios rápidos, claros y orientados a conversión para negocios y empresas en México. Enfoque en diseño original a medida, velocidad de carga y experiencias que convierten visitantes en clientes.
+
+OrigenLab diseña y desarrolla sitios web estáticos de alto rendimiento: HTML/CSS optimizado, tiempos de carga mínimos y estabilidad visual (CLS 0.00). Trabajamos con negocios locales, empresas B2B e industrias técnicas en México. Cada proyecto incluye un calendario de trabajo por escrito desde el inicio, diseño original sin plantillas genéricas y acompañamiento directo con el cliente.
+
+## Servicios
+- [Servicios](https://origenlab.com/servicios/): panorama completo de lo que hacemos.
+- [Desarrollo web](https://origenlab.com/servicios/desarrollo-web/): sitios corporativos y de negocio a medida, rápidos y optimizados.
+- [Tiendas en línea](https://origenlab.com/servicios/tiendas-en-linea/): e-commerce con pasarelas de pago para México.
+- [Landing pages](https://origenlab.com/servicios/landing-pages/): páginas de campaña enfocadas en conversión.
+- [Rediseño web](https://origenlab.com/servicios/rediseno-web/): modernización de sitios lentos o desactualizados.
+- [Páginas en renta](https://origenlab.com/servicios/paginas-en-renta/): sitios profesionales con modelo de renta mensual.
+
+## Paquetes y precios
+- [Paquetes](https://origenlab.com/paquetes/): comparativa de los tres planes.
+- [Esencial — $2,000 MXN](https://origenlab.com/paquetes/esencial/): presencia web profesional para negocios que arrancan.
+- [Profesional — $3,000 MXN](https://origenlab.com/paquetes/profesional/): sitio completo para negocios en crecimiento.
+- [Élite — $5,000 MXN](https://origenlab.com/paquetes/elite/): solución integral para empresas que necesitan el máximo.
+
+## Portafolio (casos reales por sector)
+- [Portafolio](https://origenlab.com/portafolio/): todos los casos de estudio.
+- [Equipos contra incendios](https://origenlab.com/portafolio/equipos-contra-incendios/): sitios B2B para distribuidores y fabricantes de equipo contra incendios (NOM/NFPA).
+- [Seguridad privada](https://origenlab.com/portafolio/seguridad-privada/): sitios para empresas de seguridad privada.
+- [Equipo para eventos](https://origenlab.com/portafolio/equipo-para-eventos/): sitios para renta de equipo y producción de eventos.
+
+## Guías y recursos
+- [Cómo elegir una agencia de diseño web en México](https://origenlab.com/blog/como-elegir-agencia-diseno-web-mexico/): los criterios para elegir bien tu agencia web.
+- [Agencia vs. Freelancer para tu sitio web](https://origenlab.com/blog/agencia-vs-freelancer-sitio-web/): costo, continuidad, alcance y riesgo comparados.
+- [8 señales de una buena agencia de desarrollo web](https://origenlab.com/blog/senales-buena-agencia-desarrollo-web-mexico/): cómo distinguir una agencia que sí entrega.
+- [Astro vs WordPress: cuál elegir](https://origenlab.com/blog/astro-vs-wordpress-cual-elegir/): comparativa de tecnologías para tu sitio.
+- [Landing page vs sitio corporativo](https://origenlab.com/blog/landing-page-vs-sitio-corporativo/): cuál necesita tu negocio.
+- [Mercado Pago vs Stripe para e-commerce en México](https://origenlab.com/blog/mercado-pago-vs-stripe-ecommerce-mexico/): qué pasarela conviene.
+- [Cómo medir los resultados de tu sitio web](https://origenlab.com/blog/como-medir-resultados-sitio-web/): las métricas que de verdad importan.
+- [Por qué un sitio lento te cuesta clientes](https://origenlab.com/blog/por-que-tu-sitio-lento-cuesta-clientes/): el impacto de la velocidad en las ventas.
+- [Blog](https://origenlab.com/blog/): más de 190 artículos sobre diseño, desarrollo y negocio digital en México.
+
+## Contacto
+- [Contacto](https://origenlab.com/contacto/): formulario y datos directos.
+- [Cotizar](https://origenlab.com/cotizar/): solicita una cotización.
+- [Nosotros](https://origenlab.com/nosotros/): quiénes somos y cómo trabajamos.

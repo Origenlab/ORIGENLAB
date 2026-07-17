@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "titulo": {
+      "type": "string",
+      "minLength": 10
+    },
+    "descripcion": {
+      "type": "string",
+      "minLength": 50,
+      "maxLength": 160
+    },
+    "imagen": {
+      "type": "string"
+    },
+    "noindex": {
+      "default": false,
+      "type": "boolean"
+    },
+    "caso": {
+      "type": "string"
+    },
+    "h1": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "lineas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string"
+          },
+          "kicker": {
+            "type": "string"
+          },
+          "descripcion": {
+            "type": "string"
+          },
+          "imagen": {
+            "type": "string"
+          },
+          "imagenAlt": {
+            "type": "string",
+            "minLength": 10
+          },
+          "specs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "clave": {
+                  "type": "string"
+                },
+                "valor": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "clave",
+                "valor"
+              ]
+            }
+          },
+          "chips": {
+            "default": [],
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "nombre",
+          "kicker",
+          "descripcion",
+          "imagen",
+          "imagenAlt",
+          "specs",
+          "url"
+        ]
+      }
+    },
+    "incluye": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "faq": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "pregunta": {
+            "type": "string"
+          },
+          "respuesta": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "pregunta",
+          "respuesta"
+        ]
+      }
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "titulo",
+    "descripcion",
+    "caso",
+    "h1",
+    "lineas"
+  ]
+}

@@ -50,9 +50,12 @@ largos = [(p, len(re.search(r'<title>(.*?)</title>', leer(p), re.S).group(1).str
 n = len([1 for _, l in largos if l > 60])
 (warn if n else ok)(f"titles >60 car: {n}/{len(largos)}" + (" (prioriza por Search Console, no a ciegas)" if n else ""))
 
+# OJO con el regex: usar [^"]* y NO (.*?)">.
+# El sitio mezcla `content="…">` y `content="…" />`. Con (.*?)"> se escaparon
+# 10 metas >160 en 5 páginas — y la verificación dio verde igual (falso verde).
 metas = [(p, len(html.unescape(m)))
          for p in pages
-         for m in re.findall(r'<meta (?:name|property)="(?:description|og:description|twitter:description)" content="(.*?)">', leer(p))]
+         for m in re.findall(r'<meta (?:name|property)="(?:description|og:description|twitter:description)" content="([^"]*)"', leer(p))]
 n = len([1 for _, l in metas if l > 160])
 (bad if n else ok)(f"metas >160 car: {n}/{len(metas)}")
 

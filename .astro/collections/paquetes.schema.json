@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "titulo": {
+      "type": "string",
+      "minLength": 10
+    },
+    "descripcion": {
+      "type": "string",
+      "minLength": 50,
+      "maxLength": 160
+    },
+    "imagen": {
+      "type": "string"
+    },
+    "noindex": {
+      "default": false,
+      "type": "boolean"
+    },
+    "h1": {
+      "type": "string"
+    },
+    "orden": {
+      "type": "integer",
+      "minimum": -9007199254740991,
+      "maximum": 9007199254740991
+    },
+    "precio": {
+      "type": "integer",
+      "exclusiveMinimum": 0,
+      "maximum": 9007199254740991
+    },
+    "moneda": {
+      "default": "MXN",
+      "type": "string",
+      "const": "MXN"
+    },
+    "faq": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "pregunta": {
+            "type": "string"
+          },
+          "respuesta": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "pregunta",
+          "respuesta"
+        ]
+      }
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "titulo",
+    "descripcion",
+    "h1",
+    "orden",
+    "precio"
+  ]
+}

@@ -1,0 +1,545 @@
+---
+titulo: "SCBA para Bomberos en México: Equipos de Respiración Autónoma NFPA 1981 | BOMBERO.MX | OrigenLab"
+descripcion: "Guía completa sobre equipos autónomos de respiración (SCBA) certificados NFPA 1981 para bomberos en México. MSA y Honeywell disponibles en BOMBERO.MX con…"
+h1: "SCBA para bomberos en México: NFPA 1981"
+categoria: pci
+categoriaLabel: "Sector PCI"
+fecha: 2026-06-05
+minutos: 15
+thumb: "/og-image.jpg"
+thumbAlt: "SCBA para bomberos en México: NFPA 1981"
+acento: "#B91C1C"
+faq:
+  - pregunta: "¿Cuál es la diferencia entre un ERA de presión positiva y uno de presión negativa?"
+    respuesta: "Un ERA de presión positiva"
+  - pregunta: "¿Cuánto dura realmente un cilindro de ERA en una operación de combate?"
+    respuesta: "La autonomía nominal de 30 o 45 minutos se mide en condiciones de laboratorio a esfuerzo moderado. En una operación real de combate estructural, con el bombero realizando esfuerzo físico intenso bajo calor, la autonomía real puede reducirse significativamente: un cilindro de 30 minutos puede durar 15-20 minutos en operaciones de alta exigencia física."
+  - pregunta: "¿Puede un cuerpo de bomberos municipal en México comprar SCBA MSA o Honeywell directamente a BOMBERO.MX?"
+    respuesta: "Sí. BOMBERO.MX atiende directamente a cuerpos de bomberos municipales en toda la República Mexicana, tanto en adquisiciones directas como en procesos de licitación pública. Para las licitaciones, BOMBERO.MX puede proporcionar las especificaciones técnicas necesarias para el procedimiento de compra, las fichas técnicas y certificados de los equipos, y toda la documentación de soporte que requiera el área de compras o la Contraloría Municipal."
+  - pregunta: "¿Es posible mezclar ERA de distintas marcas en el mismo cuerpo de bomberos?"
+    respuesta: "Técnicamente es posible operar ERA de distintas marcas en el mismo cuerpo de bomberos, siempre que todos sean NFPA 1981. Sin embargo, operativamente genera complejidades: distintos procedimientos de colocación y revisión, distintos sistemas de refacciones, distintas interfaces de alarma. Cuando un bombero opera bajo estrés, la inconsistencia en el equipo puede generar errores."
+estilos: |
+  :root { --blog-accent: #B91C1C; --blog-accent-dim: rgba(185,28,28,0.12); }
+      .ol-art-stat-row{display:flex;gap:1.5rem;margin:2rem 0;flex-wrap:wrap}
+      .ol-art-stat{flex:1;min-width:120px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:1.25rem 1rem;text-align:center}
+      .ol-art-stat-num{font-size:1.75rem;font-weight:700;color:#B91C1C;line-height:1}
+      .ol-art-stat-label{font-size:.75rem;color:rgba(240,240,245,.5);margin-top:.4rem;letter-spacing:.04em;text-transform:uppercase}
+      .ol-art-table-wrap{overflow-x:auto;border-radius:12px;border:1px solid rgba(255,255,255,.08);margin:2.5rem 0;background:#0C0C18}
+      .ol-art-table-wrap table{width:100%;border-collapse:collapse;font-size:.9rem}
+      .ol-art-table-wrap table th{background:rgba(185,28,28,.08);color:rgba(240,240,245,.85);font-weight:700;padding:.85rem 1rem;text-align:left;border-bottom:1px solid rgba(255,255,255,.1);white-space:nowrap}
+      .ol-art-table-wrap table td{padding:.75rem 1rem;color:rgba(240,240,245,.75);border-bottom:1px solid rgba(255,255,255,.05)}
+      .ol-art-table-wrap table tr:last-child td{border-bottom:none}
+      .ol-art-cta-inline{background:linear-gradient(135deg,rgba(185,28,28,.08),rgba(185,28,28,.04));border:1px solid rgba(185,28,28,.2);border-radius:14px;padding:1.75rem 2rem;margin:2.5rem 0;display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap}
+      .ol-art-cta-inline>div{flex:1;min-width:200px}
+      .ol-art-cta-inline-label{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:#B91C1C;font-weight:600;display:block;margin-bottom:.3rem}
+      .ol-art-cta-inline h3{font-size:1.1rem;font-weight:700;color:rgba(240,240,245,.9);margin:0 0 .4rem}
+      .ol-art-cta-inline p{font-size:.88rem;color:rgba(240,240,245,.55);margin:0}
+      .ol-art-cta-inline-btn{display:inline-flex;align-items:center;gap:.5rem;background:#B91C1C;color:#fff;font-weight:700;font-size:.88rem;padding:.75rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;flex-shrink:0}
+      .ol-art-cta-inline-btn:hover{background:#A31919}
+      .ol-art-faq{margin:1.5rem 0}
+      .ol-art-faq-item{border:1px solid rgba(255,255,255,.07);border-radius:10px;margin-bottom:.6rem;background:rgba(255,255,255,.02)}
+      .ol-art-faq-q{padding:1rem 1.25rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:.95rem;color:rgba(240,240,245,.85);list-style:none;gap:.75rem}
+      .ol-art-faq-q::-webkit-details-marker{display:none}
+      .ol-art-faq-q svg{flex-shrink:0;color:#B91C1C;transition:transform .2s}
+      details[open] .ol-art-faq-q svg{transform:rotate(180deg)}
+      .ol-art-faq-a{padding:.25rem 1.25rem 1rem;color:rgba(240,240,245,.65);font-size:.9rem;line-height:1.7}
+      .ol-art-author-card{display:flex;gap:1rem;align-items:flex-start;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:1.5rem;margin:2.5rem 0;flex-wrap:wrap}
+      .ol-art-author-avatar{width:3rem;height:3rem;border-radius:50%;background:linear-gradient(135deg,#B91C1C,#A31919);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.9rem;color:#fff;flex-shrink:0}
+      .ol-art-author-info{flex:1;min-width:180px}
+      .ol-art-author-info .label{font-size:.7rem;text-transform:uppercase;letter-spacing:.07em;color:rgba(240,240,245,.35)}
+      .ol-art-author-info .name{font-size:.95rem;font-weight:700;color:rgba(240,240,245,.85)}
+      .ol-art-author-info .bio{font-size:.82rem;color:rgba(240,240,245,.5);line-height:1.55;margin-top:.2rem}
+      .progress-bar{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,#B91C1C,#F87171);z-index:999;transition:width .1s linear;pointer-events:none}
+      .ol-art-highlight{background:rgba(185,28,28,.07);border-left:3px solid #B91C1C;border-radius:0 8px 8px 0;padding:1rem 1.25rem;margin:1.5rem 0;color:rgba(240,240,245,.8);font-size:.92rem;line-height:1.7}
+      .ol-art-norm-badge{display:inline-block;background:var(--blog-accent-dim);color:var(--blog-accent);border:1px solid var(--blog-accent);border-radius:4px;font-size:.78rem;font-weight:700;padding:.2rem .55rem;margin:.2rem .15rem}
+      .ol-art-spec-table{width:100%;border-collapse:collapse;font-size:.88rem;margin:1.5rem 0}
+      .ol-art-spec-table th{background:rgba(185,28,28,.08);color:rgba(240,240,245,.85);font-weight:700;text-align:left;padding:.6rem .9rem;border-bottom:2px solid rgba(185,28,28,.35)}
+      .ol-art-spec-table td{padding:.55rem .9rem;border-bottom:1px solid rgba(255,255,255,.06);color:rgba(240,240,245,.75);vertical-align:top}
+      .ol-art-spec-table tr:last-child td{border-bottom:none}
+      .ol-art-contact-card{background:rgba(185,28,28,.07);border:1px solid rgba(185,28,28,.2);border-radius:12px;padding:1.75rem 2rem;margin:2.5rem 0}
+      .ol-art-contact-card h3{color:#B91C1C;font-size:1.05rem;font-weight:700;margin:0 0 1.25rem;text-transform:uppercase;letter-spacing:.06em}
+      .ol-art-contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem 2rem}
+      .ol-art-contact-item strong{display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:rgba(240,240,245,.4);margin-bottom:.3rem}
+      .ol-art-contact-item span,.ol-art-contact-item a{font-size:.92rem;color:rgba(240,240,245,.8)}
+      .ol-art-contact-item a{color:#B91C1C;text-decoration:none}
+      .ol-art-contact-item a:hover{text-decoration:underline}
+      @media(max-width:640px){.ol-art-cta-inline{flex-direction:column}.ol-art-stat-row{gap:1rem}}
+---
+
+<div class="ol-art-stat-row">
+        <div class="ol-art-stat">
+          <div class="ol-art-stat-num">NFPA 1981</div>
+          <div class="ol-art-stat-label">Norma de referencia</div>
+        </div>
+        <div class="ol-art-stat">
+          <div class="ol-art-stat-num">MSA &amp; Honeywell</div>
+          <div class="ol-art-stat-label">Marcas disponibles</div>
+        </div>
+        <div class="ol-art-stat">
+          <div class="ol-art-stat-num">+500</div>
+          <div class="ol-art-stat-label">Estaciones equipadas</div>
+        </div>
+        <div class="ol-art-stat">
+          <div class="ol-art-stat-num">32</div>
+          <div class="ol-art-stat-label">Estados de cobertura</div>
+        </div>
+      </div>
+
+      <!-- SECCIÓN 1 -->
+      <section class="ol-art-section" id="s1">
+        <h2>Qué es un SCBA y por qué ningún bombero puede operar sin él</h2>
+        <p>
+          El <strong>SCBA</strong> (Self-Contained Breathing Apparatus), conocido en español como <strong>Equipo Autónomo de Respiración (ERA)</strong>, es el sistema que suministra aire comprimido limpio al bombero cuando la atmósfera en la que opera es inmediatamente peligrosa para la vida y la salud (IDLH, por sus siglas en inglés). En un incendio estructural, el bombero se mueve dentro de una nube de humo que contiene monóxido de carbono, dióxido de carbono, ácido cianhídrico, benzeno y decenas de compuestos orgánicos volátiles generados por la combustión de plásticos, pinturas y materiales sintéticos modernos.
+        </p>
+        <p>
+          La exposición a esa mezcla de gases durante solo segundos puede causar pérdida de conciencia. Sin un SCBA funcionando correctamente, el bombero que entra a un edificio en llamas tiene un margen de supervivencia que se mide en minutos, no en horas. Por eso el SCBA no es un equipo opcional ni de reserva: es el primer equipo que el bombero se coloca y el último que abandona.
+        </p>
+
+        <div class="ol-art-highlight">
+          En incendios estructurales modernos, el humo generado por materiales sintéticos puede ser letal en menos de dos minutos de exposición sin protección respiratoria. El SCBA certificado bajo NFPA 1981 es la barrera que garantiza que el bombero respira aire limpio durante toda la operación.
+        </div>
+
+        <p>
+          La situación en México presenta particularidades que hacen aún más crítico el acceso a SCBA de calidad certificada. Muchos cuerpos de bomberos municipales operan con equipos de segunda mano importados o con ERA cuya vida útil ha vencido. Otros adquieren equipos sin certificación NFPA por razones de presupuesto, desconociendo que las consecuencias de una falla en un ERA dentro de un edificio en llamas no tienen segunda oportunidad.
+        </p>
+        <p>
+          BOMBERO.MX existe para que los cuerpos de bomberos en los 32 estados de México tengan acceso a SCBA certificados bajo NFPA 1981 de las marcas de referencia mundial: <strong>MSA Safety</strong> y <strong>Honeywell</strong>. Con presencia en todo el territorio nacional y más de 500 estaciones de bomberos equipadas desde su fundación en 2010, BOMBERO.MX es el canal confiable para este tipo de adquisición.
+        </p>
+      </section>
+
+      <!-- SECCIÓN 2 -->
+      <section class="ol-art-section" id="s2">
+        <h2>NFPA 1981: la norma que rige los SCBA en servicio</h2>
+        <p>
+          La norma <strong>NFPA 1981</strong> (Standard on Open-Circuit Self-Contained Breathing Apparatus for Emergency Services) es el documento técnico que establece los requisitos mínimos de diseño, rendimiento, prueba y certificación de los equipos de respiración autónoma de circuito abierto utilizados en servicios de emergencia. Su versión más reciente contempla los escenarios operativos actuales, incluyendo incendios de alta temperatura generados por materiales sintéticos.
+        </p>
+        <p>
+          Un SCBA que no está certificado bajo NFPA 1981 no puede garantizar la protección que el bombero necesita. La norma cubre aspectos que no son evidentes a simple vista pero que son determinantes en condiciones de emergencia:
+        </p>
+        <ul>
+          <li><strong>Presión positiva:</strong> El ERA debe mantener presión positiva dentro de la máscara facial en todo momento, de modo que cualquier fuga sea hacia afuera (aire limpio saliendo) y no hacia adentro (gases tóxicos entrando).</li>
+          <li><strong>Resistencia térmica de la máscara:</strong> La lente panorámica debe resistir la exposición al calor radiante sin deformarse ni fracturarse.</li>
+          <li><strong>Integridad del sello facial:</strong> La máscara debe mantener sello hermético con el rostro del usuario bajo condiciones de temperatura elevada.</li>
+          <li><strong>Alarma de baja presión:</strong> El equipo debe activar una alarma audible cuando el cilindro llega al 25% de su capacidad nominal, alertando al bombero de que debe comenzar el retiro del área peligrosa.</li>
+          <li><strong>Dispositivo PASS integrado:</strong> La NFPA 1981 exige que el ERA incluya o sea compatible con un dispositivo PASS (Personal Alert Safety System), regulado por NFPA 1982, que activa una alarma cuando el bombero permanece inmóvil más de 30 segundos.</li>
+          <li><strong>Compatibilidad con comunicaciones:</strong> Los modelos de gama alta deben tener integración con sistemas de comunicación de voz, permitiendo al bombero comunicarse con el exterior sin retirar la máscara.</li>
+        </ul>
+
+        <div class="ol-art-highlight">
+          La NFPA 1981 se actualiza periódicamente para reflejar los cambios en los escenarios de incendio modernos. Los equipos de circuito abierto certificados bajo ediciones anteriores pueden seguir en servicio según las políticas de cada corporación, pero la adquisición de nuevos equipos debe referenciar la edición vigente.
+        </div>
+
+        <p>
+          En México, la adopción de NFPA 1981 como estándar de compra para ERA en cuerpos de bomberos ha crecido significativamente en la última década, impulsada por los programas de modernización de cuerpos municipales y por las exigencias de las brigadas de emergencia industrial que deben cumplir con los estándares de sus aseguradoras internacionales.
+        </p>
+
+        <div style="margin:1.25rem 0">
+          <span class="ol-art-norm-badge">NFPA 1981</span>
+          <span class="ol-art-norm-badge">NFPA 1982 (PASS)</span>
+          <span class="ol-art-norm-badge">NIOSH</span>
+          <span class="ol-art-norm-badge">EN 137</span>
+          <span class="ol-art-norm-badge">UL Listed</span>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 3 — TABLA COMPONENTES -->
+      <section class="ol-art-section" id="s3">
+        <h2>Componentes del SCBA</h2>
+        <p>
+          Un equipo de respiración autónoma de circuito abierto es un sistema integrado por múltiples componentes, cada uno con función específica y con requisitos de mantenimiento propios. Conocer estos componentes es fundamental para el operador que usa el ERA y para el jefe de material que lo administra.
+        </p>
+
+        <div class="ol-art-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Componente</th>
+                <th>Función</th>
+                <th>Norma aplicable</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Cilindro de aire comprimido</strong></td>
+                <td>Almacena aire respirable a alta presión (300 bar / 4,500 psi). Disponible en aluminio, acero o fibra de carbono. Capacidades típicas: 30 o 45 minutos a esfuerzo moderado.</td>
+                <td>NFPA 1981 / DOT / NOM-028</td>
+              </tr>
+              <tr>
+                <td><strong>Válvula de cilindro</strong></td>
+                <td>Controla el flujo de aire desde el cilindro. Incluye mecanismo de abertura manual y cierre automático de seguridad.</td>
+                <td>NFPA 1981</td>
+              </tr>
+              <tr>
+                <td><strong>Regulador de presión / primera etapa</strong></td>
+                <td>Reduce la presión del cilindro (300 bar) a presión intermedia (~7 bar) para alimentar la válvula de demanda.</td>
+                <td>NFPA 1981</td>
+              </tr>
+              <tr>
+                <td><strong>Válvula de demanda / segunda etapa</strong></td>
+                <td>Suministra aire al usuario solo cuando inhala (demanda), manteniendo presión positiva constante en la máscara. En modelos de presión positiva, mantiene leve sobrepresión continua.</td>
+                <td>NFPA 1981</td>
+              </tr>
+              <tr>
+                <td><strong>Máscara facial panorámica</strong></td>
+                <td>Sella el aire respirable alrededor del rostro del usuario. Lente de policarbonato o vidrio resistente al calor para visión amplia. Silicona o goma como material de sello.</td>
+                <td>NFPA 1981</td>
+              </tr>
+              <tr>
+                <td><strong>Arnés de espalda (backframe)</strong></td>
+                <td>Sostiene el cilindro sobre la espalda del bombero distribuyendo el peso. Diseño ergonómico con ajustes de hombro, cintura y pecho. Materiales resistentes al calor y llama.</td>
+                <td>NFPA 1981</td>
+              </tr>
+              <tr>
+                <td><strong>Manómetro de presión</strong></td>
+                <td>Indica la presión residual del cilindro. Disponible en versión análoga y digital con retroiluminación para visión en oscuridad total.</td>
+                <td>NFPA 1981</td>
+              </tr>
+              <tr>
+                <td><strong>Alarma de baja presión</strong></td>
+                <td>Alarma audible (≥95 dB) que se activa cuando el cilindro llega al 25% de capacidad, indicando al bombero que debe iniciar el retiro del área peligrosa.</td>
+                <td>NFPA 1981</td>
+              </tr>
+              <tr>
+                <td><strong>Dispositivo PASS integrado</strong></td>
+                <td>Activa alarma sonora y visual cuando el bombero permanece inmóvil más de 30 segundos, indicando posible incapacitación. Activación automática al abrir el cilindro.</td>
+                <td>NFPA 1982</td>
+              </tr>
+              <tr>
+                <td><strong>Sistema de comunicación de voz (HUD)</strong></td>
+                <td>En modelos avanzados, permite comunicación de voz a través de la máscara y visualización de datos (presión, tiempo restante) en pantalla integrada al visor.</td>
+                <td>NFPA 1981 (optional)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 4 — TABLA TIPOS -->
+      <section class="ol-art-section" id="s4">
+        <h2>Tipos de SCBA según la operación</h2>
+        <p>
+          No todos los SCBA son iguales ni sirven para el mismo tipo de operación. La selección del ERA correcto depende del escenario en el que se va a operar, la duración estimada de la intervención y las condiciones ambientales específicas. BOMBERO.MX puede asesorar a cualquier cuerpo de bomberos en la selección del modelo adecuado según su perfil operativo.
+        </p>
+
+        <div class="ol-art-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Tipo de operación</th>
+                <th>SCBA recomendado</th>
+                <th>Autonomía típica</th>
+                <th>Característica clave</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Combate estructural (interior)</strong></td>
+                <td>SCBA presión positiva, cilindro 45 min, HUD opcional</td>
+                <td>30–45 min</td>
+                <td>Presión positiva, sello facial de alta integridad, resistencia térmica de máscara</td>
+              </tr>
+              <tr>
+                <td><strong>Operaciones HAZMAT</strong></td>
+                <td>SCBA presión positiva + traje nivel A o B</td>
+                <td>45–60 min</td>
+                <td>Compatible con vestimenta encapsulada, mayor autonomía, resistencia química</td>
+              </tr>
+              <tr>
+                <td><strong>Rescate en espacios confinados</strong></td>
+                <td>SCBA compacto de perfil reducido o combinado ERA/EEBD</td>
+                <td>30–45 min</td>
+                <td>Perfil reducido para paso en espacios estrechos, arnés ajustable</td>
+              </tr>
+              <tr>
+                <td><strong>Operaciones de larga duración</strong></td>
+                <td>SCBA con cilindro de 60 min o sistema de recarga en línea</td>
+                <td>60 min o continuo</td>
+                <td>Mayor capacidad de cilindro, sistemas de recarga por manguera de suministro</td>
+              </tr>
+              <tr>
+                <td><strong>Rescate aéreo / ARFF</strong></td>
+                <td>SCBA de alta autonomía compatible con traje de proximidad</td>
+                <td>45–60 min</td>
+                <td>Resistencia a calor radiante extremo, compatibilidad con casco ARFF</td>
+              </tr>
+              <tr>
+                <td><strong>Entrenamiento / ejercicios</strong></td>
+                <td>SCBA estándar en buenas condiciones o unidades de simulación</td>
+                <td>30 min</td>
+                <td>Unidades de entrenamiento con monitores de consumo de aire para instructores</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- CTA INLINE 1 -->
+      <div class="ol-art-cta-inline">
+        <div>
+          <span class="ol-art-cta-inline-label">BOMBERO.MX · Distribuidor certificado</span>
+          <h3>SCBA MSA y Honeywell disponibles para los 32 estados</h3>
+          <p>Más de 500 estaciones de bomberos equipadas desde 2010. Asesoría técnica incluida en cada cotización.</p>
+        </div>
+        <a href="https://origenlab.com/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-art-cta-inline-btn">Ver caso BOMBERO.MX →</a>
+      </div>
+
+      <!-- SECCIÓN 5 — MSA G1 -->
+      <section class="ol-art-section" id="s5">
+        <h2>MSA G1 SCBA: el equipo de referencia para cuerpos de bomberos</h2>
+        <p>
+          El <strong>MSA G1 SCBA</strong> es el equipo de respiración autónoma insignia de MSA Safety, una de las empresas de seguridad industrial más antiguas del mundo (fundada en Pittsburgh en 1914). El G1 representa el estado del arte en el diseño de ERA para bomberos estructurales y es ampliamente considerado el estándar de referencia en Norteamérica.
+        </p>
+
+        <h3>Diseño y ergonomía</h3>
+        <p>
+          Uno de los principales diferenciadores del G1 respecto a equipos anteriores es su sistema de arnés de bajo perfil. El backframe del G1 fue diseñado específicamente para reducir la silueta del bombero, permitiéndole pasar por aberturas estrechas y operar en espacios confinados con mayor facilidad. El ajuste del arnés se realiza con una sola mano mediante el sistema QuickFit, crítico cuando el bombero necesita colocarse el equipo rápidamente bajo presión.
+        </p>
+        <p>
+          El centro de gravedad del cilindro fue diseñado para mantenerse cercano al cuerpo del bombero, reduciendo la fatiga en operaciones largas. Los puntos de ajuste del arnés de hombro y la cincha de cintura permiten una distribución ergonómica del peso del cilindro en cuerpos de distintas complexiones.
+        </p>
+
+        <h3>Máscara G1 — Vista panorámica y sello de silicona</h3>
+        <p>
+          La máscara del G1 utiliza una lente panorámica que proporciona campo de visión superior al de diseños anteriores. El sello facial es de silicona de alta resistencia térmica y está diseñado para mantener hermeticidad en un rango amplio de morfologías faciales. El sistema de ajuste por correas permite asegurar el sello en cuestión de segundos incluso con guantes puestos.
+        </p>
+        <p>
+          La lente está fabricada en policarbonato resistente a impacto y calor radiante, con un recubrimiento anti-empañante. Esto es crítico en operaciones de interior donde el contraste térmico entre el aire interior del ERA (frío) y la lente (caliente por el entorno) puede generar condensación que reduzca la visibilidad.
+        </p>
+
+        <h3>Sistema HUD (Head-Up Display)</h3>
+        <p>
+          El G1 incorpora un sistema HUD integrado a la máscara que muestra al bombero, sin apartar la vista, la presión residual del cilindro y el tiempo estimado de operación restante. Los indicadores del HUD son LEDs visibles incluso en condiciones de humo denso y oscuridad total. El HUD también muestra el estado del dispositivo PASS y puede integrarse con sistemas de telemetría del IC (Comandante de Incidente) para monitoreo remoto en tiempo real.
+        </p>
+
+        <h3>Dispositivo PASS integrado — NFPA 1982</h3>
+        <p>
+          El dispositivo PASS del G1 se activa automáticamente al abrir la válvula del cilindro, sin necesidad de activación manual. Emite una alarma de pre-alerta a los 20 segundos de inmovilidad y la alarma de evacuación completa a los 30 segundos. El bombero puede también activar el PASS manualmente en cualquier momento. La intensidad sonora cumple con el mínimo de 95 dB a 3 metros exigido por NFPA 1982.
+        </p>
+
+        <h3>Especificaciones clave del MSA G1</h3>
+        <table class="ol-art-spec-table">
+          <thead>
+            <tr>
+              <th>Especificación</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Presión de operación</td><td>4,500 psi (300 bar)</td></tr>
+            <tr><td>Materiales cilindro</td><td>Fibra de carbono con liner de aluminio</td></tr>
+            <tr><td>Autonomía disponible</td><td>30 o 45 minutos (NFPA 1981)</td></tr>
+            <tr><td>Tipo de máscara</td><td>Panorámica, silicona, lente policarbonato</td></tr>
+            <tr><td>PASS</td><td>Integrado, activación automática, NFPA 1982</td></tr>
+            <tr><td>HUD</td><td>LED integrado a máscara, lectura de presión y tiempo</td></tr>
+            <tr><td>Sistema de comunicación</td><td>Interfaz de voz opcional compatible</td></tr>
+            <tr><td>Certificación</td><td>NFPA 1981, NIOSH, CE</td></tr>
+            <tr><td>Peso total (sin cilindro)</td><td>Aproximadamente 6.8 kg</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- SECCIÓN 6 — HONEYWELL -->
+      <section class="ol-art-section" id="s6">
+        <h2>Honeywell: innovación en sistemas de respiración autónoma</h2>
+        <p>
+          La línea de equipos de respiración autónoma de <strong>Honeywell</strong> (que integra la histórica marca <strong>Scott Aviation / Scott Safety</strong> desde su adquisición en 2017) tiene una presencia consolidada en México. Los ERA Scott han sido equipo estándar en numerosos cuerpos de bomberos municipales del país durante décadas, lo que implica que muchos equipos de bomberos ya conocen la interfaz de usuario, el sistema de refacciones y los procedimientos de mantenimiento de esta línea.
+        </p>
+
+        <h3>Scott Air-Pak X3 Pro</h3>
+        <p>
+          El <strong>Air-Pak X3 Pro</strong> es el modelo tope de línea de Honeywell para combate estructural. Incorpora el sistema <strong>RIC/UAC</strong> (Rapid Intervention Crew / Universal Air Connection), que permite suministrar aire de emergencia a un bombero incapacitado desde el ERA de un compañero o desde una línea de suministro, sin necesidad de quitar la máscara. Esta característica, exigida por muchos departamentos de bomberos como requisito de seguridad operativa, está integrada de fábrica en el X3 Pro.
+        </p>
+        <p>
+          El arnés del X3 Pro utiliza un sistema de ajuste tipo "H" con tirantes de hombro independientes y cincha de cintura con bloqueo rápido. El backframe está fabricado en nylon reforzado con fibra de vidrio, lo que reduce el peso manteniendo la rigidez estructural necesaria.
+        </p>
+
+        <h3>Máscara AV-3000 SureSeal</h3>
+        <p>
+          La máscara <strong>AV-3000 SureSeal</strong> es el componente facial más utilizado con los ERA Scott en México. Fabricada en silicona de alta resistencia térmica, utiliza un mecanismo de sello de doble reborde que facilita la prueba de ajuste en campo y reduce la dependencia de la morfología facial del usuario para garantizar hermeticidad. La lente es de policarbonato tratado, con un área de visión que supera los requisitos de NFPA 1981.
+        </p>
+
+        <h3>Ventajas de la línea Honeywell/Scott en el mercado mexicano</h3>
+        <p>
+          Más allá de las especificaciones técnicas, la ventaja práctica de la línea Honeywell/Scott en México es la <strong>base instalada</strong>. Un cuerpo de bomberos que ya opera con ERA Scott puede modernizar su flota al X3 Pro con la certeza de que el personal ya conoce la lógica del sistema, que los cilindros existentes (si están en buen estado) pueden ser compatibles, y que los técnicos locales de mantenimiento ya tienen experiencia con la marca.
+        </p>
+        <p>
+          BOMBERO.MX, como distribuidor autorizado de Honeywell, puede también gestionar la revisión y certificación de ERA Scott existentes en servicio, verificando si continúan dentro de su vida útil certificada y si cumplen con los requisitos de la edición vigente de NFPA 1981.
+        </p>
+      </section>
+
+      <!-- SECCIÓN 7 — MANTENIMIENTO -->
+      <section class="ol-art-section" id="s7">
+        <h2>Inspección y mantenimiento del SCBA — frecuencia y puntos críticos</h2>
+        <p>
+          La NFPA 1852 (Standard on Selection, Care, and Maintenance of Open-Circuit Self-Contained Breathing Apparatus) establece el marco de inspección y mantenimiento que debe seguirse para mantener los ERA en condiciones operativas certificadas. BOMBERO.MX puede apoyar a los cuerpos de bomberos en la implementación de este programa de mantenimiento.
+        </p>
+
+        <h3>Inspección diaria (antes de cada turno)</h3>
+        <p>
+          Cada bombero que tiene asignado un ERA debe realizar una inspección visual y funcional antes de cada turno de servicio. Los puntos críticos de la inspección diaria incluyen:
+        </p>
+        <ul>
+          <li>Presión del cilindro (debe estar al 100% de carga). Una presión inferior al 90% requiere recarga antes de que el equipo entre en servicio.</li>
+          <li>Apertura del cilindro y verificación de flujo de aire: abrir, comprobar que la máscara presuriza correctamente, y cerrar.</li>
+          <li>Activación del PASS: verificar que la alarma de inmovilidad funciona correctamente y que la alarma se cancela al mover el equipo.</li>
+          <li>Integridad visual del arnés: correas sin cortes, hebillas sin deformación, tirantes ajustados pero sin enredos.</li>
+          <li>Estado de la máscara: lente sin rayaduras profundas ni fisuras, sello facial sin cortes ni deformación, válvulas de exhalación sin obstrucciones.</li>
+          <li>Prueba de ajuste del sello facial (fit check): el bombero coloca la máscara y realiza una inhalación forzada con la válvula de demanda bloqueada; si la máscara colapsa ligeramente y se mantiene así, el sello es correcto.</li>
+        </ul>
+
+        <h3>Inspección mensual</h3>
+        <p>
+          El responsable de material del cuerpo de bomberos debe realizar una inspección más detallada mensualmente, que incluye:
+        </p>
+        <ul>
+          <li>Prueba de la alarma de baja presión: verificar que se activa al nivel correcto (25% de presión nominal).</li>
+          <li>Revisión de fecha de vencimiento del cilindro: los cilindros de fibra de carbono tienen vida útil de 15 años desde fabricación; los de aluminio de 12 años.</li>
+          <li>Prueba de estanqueidad del circuito: verificar que no existen fugas en conexiones, mangueras y regulador.</li>
+          <li>Limpieza y desinfección de la máscara facial con soluciones aprobadas por el fabricante.</li>
+          <li>Registro en bitácora de cada equipo.</li>
+        </ul>
+
+        <h3>Inspección anual y mantenimiento mayor</h3>
+        <p>
+          Anualmente, cada ERA debe ser inspeccionado por un técnico certificado por el fabricante. Este mantenimiento mayor incluye la prueba hidrostática del cilindro (requerida cada 3 años para fibra de carbono y cada 5 años para aluminio según normativa DOT/NOM), la calibración del regulador de presión y la prueba de la válvula de demanda en banco de pruebas.
+        </p>
+
+        <div class="ol-art-highlight">
+          Un ERA que supera su vida útil certificada no debe seguir en servicio, aunque aparente estar en buenas condiciones. El deterioro de las juntas de silicona, el cilindro y los reguladores no siempre es visible. La vida útil del ERA completo según NFPA 1852 es de 15 años desde fabricación para la mayoría de los componentes.
+        </div>
+
+        <h3>Programa de reemplazo</h3>
+        <p>
+          BOMBERO.MX puede desarrollar con cada cuerpo de bomberos un programa de reemplazo escalonado que distribuya la inversión en nuevos ERA a lo largo del tiempo, priorizando los equipos con mayor antigüedad o con historial de fallas, sin dejar al cuerpo sin cobertura operativa durante el proceso de modernización.
+        </p>
+      </section>
+
+      <!-- SECCIÓN 8 — CÓMO ADQUIRIR -->
+      <section class="ol-art-section" id="s8">
+        <h2>Cómo adquirir SCBA certificados a través de BOMBERO.MX</h2>
+        <p>
+          BOMBERO.MX ha desarrollado un proceso de adquisición diseñado para la realidad de los cuerpos de bomberos en México: presupuestos variables, requisitos técnicos específicos y necesidad de documentación para justificar la compra ante autoridades municipales o corporativas. El proceso tiene cuatro etapas:
+        </p>
+
+        <p><strong>1. Diagnóstico operativo:</strong> El equipo técnico de BOMBERO.MX realiza un levantamiento del estado actual de los ERA en servicio: número de equipos, marca y modelo, antigüedad, estado general y perfil operativo del cuerpo de bomberos. Este diagnóstico permite priorizar el reemplazo y determinar qué modelo de SCBA se adapta mejor a las necesidades operativas reales.</p>
+
+        <p><strong>2. Propuesta técnica y económica:</strong> Con base en el diagnóstico, BOMBERO.MX prepara una propuesta que incluye las especificaciones técnicas del ERA recomendado (modelo, configuración, accesorios), el comparativo entre MSA G1 y Honeywell X3 Pro cuando aplica, la documentación de certificación NFPA 1981 de cada equipo y la estructura de pago según las posibilidades del cuerpo.</p>
+
+        <p><strong>3. Capacitación:</strong> La entrega de los ERA incluye una sesión de capacitación para los operadores en el uso correcto del equipo: colocación, prueba de ajuste, operación del PASS, procedimiento ante alarma de baja presión y protocolo de retiro seguro del área peligrosa. Esta capacitación puede realizarse en las instalaciones del cuerpo de bomberos o en las instalaciones de BOMBERO.MX.</p>
+
+        <p><strong>4. Soporte postventa y mantenimiento:</strong> BOMBERO.MX ofrece soporte técnico en los 32 estados para el mantenimiento de los ERA suministrados, incluyendo la provisión de refacciones originales de MSA y Honeywell, la calibración de reguladores y la prueba hidrostática de cilindros. El soporte postventa es parte integral de la propuesta, no un servicio separado.</p>
+
+        <div class="ol-art-contact-card">
+          <h3>Información de BOMBERO.MX</h3>
+          <div class="ol-art-contact-grid">
+            <div class="ol-art-contact-item">
+              <strong>Modelo</strong>
+              <span>Distribuidor multi-marca desde 2010</span>
+            </div>
+            <div class="ol-art-contact-item">
+              <strong>Cobertura</strong>
+              <span>32 estados de la República Mexicana</span>
+            </div>
+            <div class="ol-art-contact-item">
+              <strong>SCBA disponibles</strong>
+              <span>MSA G1 SCBA · Honeywell Air-Pak X3 Pro</span>
+            </div>
+            <div class="ol-art-contact-item">
+              <strong>Marcas adicionales</strong>
+              <span>Globe · Bullard · Holmatro · Genesis</span>
+            </div>
+            <div class="ol-art-contact-item">
+              <strong>Normas</strong>
+              <span>NFPA 1981 · NFPA 1982 · NFPA 1971</span>
+            </div>
+            <div class="ol-art-contact-item">
+              <strong>Caso en OrigenLab</strong>
+              <a href="https://origenlab.com/portafolio/equipos-contra-incendios/bombero-mx/" rel="noopener">Ver caso completo →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 9 — FAQ -->
+      <section class="ol-art-section" id="faq">
+        <h2>Preguntas frecuentes sobre SCBA para bomberos</h2>
+
+        <div class="ol-art-faq">
+
+          <details class="ol-art-faq-item">
+            <summary class="ol-art-faq-q">
+              ¿Cuál es la diferencia entre un ERA de presión positiva y uno de presión negativa?
+              <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="ol-art-faq-a">
+              <p>Un ERA de <strong>presión positiva</strong> mantiene una sobrepresión leve dentro de la máscara en todo momento, incluso entre respiraciones. Esto significa que cualquier fuga en el sello facial resulta en salida de aire limpio, no en entrada de gases tóxicos del entorno. La NFPA 1981 exige presión positiva para todos los ERA de servicio estructural.</p>
+              <p>Un ERA de <strong>presión negativa</strong> (obsoleto para uso estructural) solo suministra aire cuando el usuario inhala, creando presión negativa momentánea en la inhalación. Si hay alguna fuga en el sello, los gases del entorno pueden ingresar. Los ERA de presión negativa no cumplen NFPA 1981 y no deben usarse en operaciones de combate de incendios.</p>
+            </div>
+          </details>
+
+          <details class="ol-art-faq-item">
+            <summary class="ol-art-faq-q">
+              ¿Cuánto dura realmente un cilindro de ERA en una operación de combate?
+              <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="ol-art-faq-a">
+              <p>La autonomía nominal de 30 o 45 minutos se mide en condiciones de laboratorio a esfuerzo moderado. En una operación real de combate estructural, con el bombero realizando esfuerzo físico intenso bajo calor, la autonomía real puede reducirse significativamente: un cilindro de 30 minutos puede durar 15-20 minutos en operaciones de alta exigencia física.</p>
+              <p>Por esta razón, la planificación operativa de los cuerpos de bomberos debe considerar la autonomía real, no la nominal. La regla general es que el bombero debe iniciar el retiro cuando la alarma de baja presión se activa (25% restante), lo que en un cilindro de 45 minutos nominal ocurre aproximadamente a los 22-25 minutos de operación intensa.</p>
+            </div>
+          </details>
+
+          <details class="ol-art-faq-item">
+            <summary class="ol-art-faq-q">
+              ¿Puede un cuerpo de bomberos municipal en México comprar SCBA MSA o Honeywell directamente a BOMBERO.MX?
+              <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="ol-art-faq-a">
+              <p>Sí. BOMBERO.MX atiende directamente a cuerpos de bomberos municipales en toda la República Mexicana, tanto en adquisiciones directas como en procesos de licitación pública. Para las licitaciones, BOMBERO.MX puede proporcionar las especificaciones técnicas necesarias para el procedimiento de compra, las fichas técnicas y certificados de los equipos, y toda la documentación de soporte que requiera el área de compras o la Contraloría Municipal.</p>
+              <p>Las compras por licitación tienen tiempos de planeación más largos; BOMBERO.MX puede iniciar el proceso de diagnóstico y especificación técnica con varios meses de anticipación para alinear los tiempos del proceso de compra con los tiempos de importación del equipo.</p>
+            </div>
+          </details>
+
+          <details class="ol-art-faq-item">
+            <summary class="ol-art-faq-q">
+              ¿Es posible mezclar ERA de distintas marcas en el mismo cuerpo de bomberos?
+              <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="ol-art-faq-a">
+              <p>Técnicamente es posible operar ERA de distintas marcas en el mismo cuerpo de bomberos, siempre que todos sean NFPA 1981. Sin embargo, operativamente genera complejidades: distintos procedimientos de colocación y revisión, distintos sistemas de refacciones, distintas interfaces de alarma. Cuando un bombero opera bajo estrés, la inconsistencia en el equipo puede generar errores.</p>
+              <p>La recomendación general es estandarizar la marca de ERA dentro de cada estación o unidad operativa. BOMBERO.MX, al distribuir tanto MSA como Honeywell, puede ayudar a planificar una transición ordenada a una sola marca sin necesidad de reemplazar toda la flota de golpe, por ejemplo manteniendo los ERA Honeywell existentes en servicio hasta su fecha de retiro mientras los nuevos equipos que se incorporan son todos MSA G1.</p>
+            </div>
+          </details>
+
+        </div>
+      </section>
+
+      <!-- CTA FINAL -->
+      <div class="ol-art-cta-inline">
+        <div>
+          <span class="ol-art-cta-inline-label">Caso de estudio · OrigenLab</span>
+          <h3>BOMBERO.MX: distribuidor multi-marca para bomberos en México</h3>
+          <p>Conoce el sitio web que diseñó OrigenLab para BOMBERO.MX — catálogo de +500 productos, 13 categorías y cobertura nacional.</p>
+        </div>
+        <a href="https://origenlab.com/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-art-cta-inline-btn">Ver caso completo →</a>
+      </div>
+
+      <!-- SHARE -->
+      <div class="ol-art-share">
+        <span class="ol-art-share-label">Compartir artículo:</span>
+        <a href="https://twitter.com/intent/tweet?url=https://origenlab.com/blog/bombero-mx-scba-equipos-respiracion-autonoma-nfpa-1981/&text=SCBA+para+bomberos+en+México:+guía+NFPA+1981" target="_blank" rel="noopener" class="ol-art-share-btn" aria-label="Compartir en Twitter">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>Twitter / X
+        </a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://origenlab.com/blog/bombero-mx-scba-equipos-respiracion-autonoma-nfpa-1981/" target="_blank" rel="noopener" class="ol-art-share-btn" aria-label="Compartir en LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn
+        </a>
+      </div>
+
+      <!-- AUTHOR -->
+      <div class="ol-art-author-card">
+        <div class="ol-art-author-avatar" aria-hidden="true">OL</div>
+        <div class="ol-art-author-info">
+          <div class="label">Autor</div>
+          <div class="name">OrigenLab Editorial</div>
+          <div class="bio">Agencia mexicana de desarrollo web para distribuidores industriales, empresas de seguridad y negocios B2B con operación técnica especializada.</div>
+        </div>
+      </div>

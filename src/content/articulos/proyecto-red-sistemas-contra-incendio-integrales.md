@@ -1,0 +1,373 @@
+---
+titulo: "Proyecto Red — Sistemas Integrales Contra Incendio: Diseño, Instalación y Mantenimiento PCI en México"
+descripcion: "Perfil completo de Proyecto Red: integrador de sistemas de protección contra incendio (PCI) en México. Diseño, instalación y mantenimiento de sistemas de…"
+h1: "Proyecto Red: integrador de sistemas PCI en México"
+categoria: pci
+categoriaLabel: "Sector PCI"
+fecha: 2026-06-04
+minutos: 13
+thumb: "/img/blog/proyecto-red-perfil-og.jpg"
+thumbAlt: "Proyecto Red: integrador de sistemas PCI en México"
+estilos: |
+  :root { --blog-accent: #7F1D1D; --blog-accent-dim: rgba(127,29,29,0.14); }
+      .ol-art-contact-card { background: var(--surface-2,#1a1a1a); border: 1px solid var(--border,#2a2a2a); border-left: 4px solid var(--blog-accent); border-radius: 10px; padding: 1.75rem 2rem; margin: 2.5rem 0; }
+      .ol-art-contact-card h3 { color: var(--blog-accent); font-size: 1.1rem; font-weight: 700; margin: 0 0 1.25rem; text-transform: uppercase; letter-spacing: .06em; }
+      .ol-art-contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem 2rem; }
+      @media (max-width:640px) { .ol-art-contact-grid { grid-template-columns: 1fr; } }
+      .ol-art-contact-item strong { display: block; font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted,#888); margin-bottom: .3rem; }
+      .ol-art-contact-item span, .ol-art-contact-item a { font-size: .95rem; color: var(--text,#e8e8e8); text-decoration: none; }
+      .ol-art-contact-item a:hover { color: var(--blog-accent); text-decoration: underline; }
+      .ol-art-spec-table { width: 100%; border-collapse: collapse; font-size: .88rem; margin: 1.5rem 0; }
+      .ol-art-spec-table th { background: var(--blog-accent-dim); color: var(--blog-accent); font-weight: 700; text-align: left; padding: .6rem .9rem; border-bottom: 2px solid var(--blog-accent); }
+      .ol-art-spec-table td { padding: .55rem .9rem; border-bottom: 1px solid var(--border,#2a2a2a); color: var(--text,#e8e8e8); vertical-align: top; }
+      .ol-art-spec-table tr:last-child td { border-bottom: none; }
+      .ol-art-norm-badge { display: inline-block; background: var(--blog-accent-dim); color: var(--blog-accent); border: 1px solid var(--blog-accent); border-radius: 4px; font-size: .78rem; font-weight: 700; padding: .2rem .55rem; margin: .2rem .15rem; }
+      .ol-phase-block { display: flex; gap: 1rem; align-items: flex-start; background: var(--surface-2,#161616); border: 1px solid var(--border,#2a2a2a); border-radius: 8px; padding: 1.1rem 1.4rem; margin: .8rem 0; }
+      .ol-phase-num { flex-shrink: 0; width: 34px; height: 34px; background: var(--blog-accent); color: #fff; font-weight: 900; font-size: .9rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+      .ol-phase-body h4 { margin: 0 0 .3rem; font-size: .95rem; color: var(--text,#e8e8e8); font-weight: 700; }
+      .ol-phase-body p { margin: 0; font-size: .87rem; color: var(--text-muted,#ccc); }
+        .ol-art-featured { position:relative; border-radius:16px; overflow:hidden; border:1px solid rgba(185,28,28,.18); background:#0C0C18; box-shadow:0 30px 80px rgba(0,0,0,.45); margin:0 0 1rem; }
+      .ol-art-featured.inline { margin:2.75rem 0; }
+      .ol-art-featured img { width:100%; height:auto; display:block; aspect-ratio:21/9; object-fit:cover; }
+      @media (max-width:760px){ .ol-art-featured img { aspect-ratio:16/10; } }
+      .ol-art-featured-caption { position:absolute; left:1.25rem; bottom:1.25rem; display:inline-flex; align-items:center; gap:.45rem; font-size:11px; font-weight:700; letter-spacing:.06em; padding:.45rem .9rem; border-radius:999px; background:rgba(8,8,14,.72); border:1px solid rgba(185,28,28,.3); color:#F08A7E; backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); }
+---
+
+<figure class="ol-art-featured">
+      <picture>
+        <source srcset="../../img/equipos-contra-incendios/sistema-alarma-deteccion-contra-incendios-03.avif" type="image/avif">
+        <img src="../../img/equipos-contra-incendios/sistema-alarma-deteccion-contra-incendios-03.webp" alt="Sistema de detección y alarma contra incendios bajo norma NFPA 72" loading="lazy" decoding="async" width="768" height="429">
+      </picture>
+      <figcaption class="ol-art-featured-caption">Sistema de detección y alarma contra incendios bajo norma NFPA 72.</figcaption>
+    </figure>
+
+
+    <section class="ol-art-section">
+      <h2>¿Qué es un integrador de sistemas PCI y por qué es distinto a un distribuidor?</h2>
+      <p>
+        En el ecosistema de la protección contra incendios, existen dos perfiles de empresa fundamentalmente distintos: el distribuidor de equipo —que vende productos— y el integrador de sistemas —que diseña, instala y pone en marcha sistemas completos. Proyecto Red opera como integrador.
+      </p>
+      <p>
+        La diferencia es significativa para el cliente. Un distribuidor puede venderle los rociadores, las válvulas y la bomba correctos. Pero sin el diseño hidráulico que garantice que el sistema cubre el área con la densidad de descarga requerida por NFPA 13, sin la ingeniería que asegure que la bomba tiene la curva de presión-caudal correcta para el sistema, y sin la instalación que siga los procedimientos reglamentarios, el equipo correcto instalado incorrectamente puede ser peor que no tener nada —porque da una falsa sensación de protección.
+      </p>
+      <p>
+        Proyecto Red cubre todo el ciclo: desde la revisión de planos y la memoria de cálculo hidráulico hasta la prueba de aceptación final y el contrato de mantenimiento que mantiene el sistema en cumplimiento NFPA 25 año tras año.
+      </p>
+      <div class="ol-art-callout" style="border-color: var(--blog-accent);">
+        <strong>Integrador vs. distribuidor: la distinción que importa</strong>
+        <p>Un distribuidor vende equipo. Un integrador entrega un sistema funcional, certificado y documentado que cumple con las normas aplicables. Para proyectos de mediana y gran escala, el cliente necesita un integrador — no solo proveedores de materiales.</p>
+      </div>
+    </section>
+
+    <section class="ol-art-section">
+      <h2>El portafolio de sistemas que Proyecto Red diseña e instala</h2>
+      <p>
+        Proyecto Red tiene capacidad de ingeniería e instalación para los cuatro sistemas activos de protección contra incendios reconocidos por NFPA:
+      </p>
+
+      <h3>Sistemas de rociadores automáticos (NFPA 13)</h3>
+      <p>
+        El sistema de rociadores es la instalación más frecuente en el portafolio de Proyecto Red. Cubre desde pequeños edificios de oficinas con sistemas húmedos sencillos hasta complejos industriales con diseños especiales:
+      </p>
+      <ul>
+        <li><strong>Sistemas húmedos (wet pipe):</strong> La configuración más común. Las tuberías siempre están llenas de agua a presión. Cuando el rociador se activa, el agua descarga inmediatamente. Más sencillo de instalar y mantener.</li>
+        <li><strong>Sistemas secos (dry pipe):</strong> Para espacios donde las tuberías podrían congelarse (cámaras de refrigeración, estacionamientos descubiertos en climas fríos). Las tuberías contienen aire comprimido; cuando el rociador se activa, el aire se libera y el agua llena las tuberías antes de descargar.</li>
+        <li><strong>Sistemas de preacción (preaction):</strong> Para CPD, archivos y museos donde una descarga accidental de agua sería tan dañina como el incendio. Requieren señal eléctrica de detección para abrir la válvula antes de que el agua llegue a las tuberías.</li>
+        <li><strong>Sistemas de diluvio (deluge):</strong> Para riesgos de incendio de expansión muy rápida (hangares, terminales de combustibles). Todos los rociadores de la zona están siempre abiertos; el agua se libera al abrir la válvula de diluvio por señal del sistema de detección.</li>
+        <li><strong>Sistemas ESFR (Early Suppression Fast Response):</strong> Para bodegas de alto rack con altas cargas de fuego. Diseño especial que elimina la necesidad de rociadores en rack intermedios.</li>
+      </ul>
+
+      <h3>Sistemas de tubería vertical y mangueras (NFPA 14)</h3>
+      <p>
+        Los sistemas de hidrantes e mangueras son la segunda línea de ataque para incendios de gran magnitud. Proyecto Red diseña e instala sistemas de tubería vertical (standpipe) en edificios de múltiples pisos, con gabinetes contraincendios en cada nivel, conexiones para carro bomba en el exterior y uniones Siamesas para el cuerpo de bomberos.
+      </p>
+
+      <h3>Sistemas de detección y alarma (NFPA 72)</h3>
+      <p>
+        La detección temprana es el factor que más impacta el resultado de un incendio. Proyecto Red diseña e instala sistemas de detección analógicos/direccionables completos: detectores de humo, calor y llama por zona, paneles de control con capacidad para cientos o miles de puntos, dispositivos de notificación (sirenas, estrobos, altavoces), estaciones manuales y monitoreo remoto.
+      </p>
+
+      <h3>Sistemas de supresión especial</h3>
+      <p>
+        Para riesgos donde el agua no es el agente adecuado, Proyecto Red diseña e instala sistemas de supresión por inundación total con agentes limpios (FM-200, Novec 1230, CO₂) y sistemas de espuma para hangares y terminales de combustible.
+      </p>
+    </section>
+
+    <section class="ol-art-section">
+          <figure class="ol-art-featured inline">
+      <picture>
+        <source srcset="../../img/equipos-contra-incendios/bomberos-respuesta-emergencia-incendio-04.avif" type="image/avif">
+        <img src="../../img/equipos-contra-incendios/bomberos-respuesta-emergencia-incendio-04.webp" alt="Brigada de bomberos en respuesta a una emergencia con equipo contra incendios" loading="lazy" decoding="async" width="768" height="429">
+      </picture>
+      <figcaption class="ol-art-featured-caption">Brigada de bomberos respondiendo a una emergencia con equipo certificado.</figcaption>
+    </figure>
+
+    <h2>El marco normativo de Proyecto Red</h2>
+      <div style="margin: 1rem 0 1.5rem;">
+        <span class="ol-art-norm-badge">NFPA 13</span>
+        <span class="ol-art-norm-badge">NFPA 13R</span>
+        <span class="ol-art-norm-badge">NFPA 14</span>
+        <span class="ol-art-norm-badge">NFPA 20</span>
+        <span class="ol-art-norm-badge">NFPA 24</span>
+        <span class="ol-art-norm-badge">NFPA 25</span>
+        <span class="ol-art-norm-badge">NFPA 72</span>
+        <span class="ol-art-norm-badge">NFPA 2001</span>
+        <span class="ol-art-norm-badge">NFPA 11</span>
+        <span class="ol-art-norm-badge">NOM-002-STPS</span>
+      </div>
+      <p>
+        Cada sistema que Proyecto Red instala se diseña bajo la norma NFPA aplicable y se documenta con la memoria de cálculo, planos de diseño y protocolos de prueba que las autoridades de protección civil y las aseguradoras requieren. Esta documentación completa es lo que convierte una instalación de tubería en un sistema certificado.
+      </p>
+
+      <h3>NFPA 13 — Instalación de sistemas de rociadores</h3>
+      <p>
+        El estándar de referencia global para el diseño e instalación de sistemas de rociadores automáticos. Define las densidades de descarga mínimas por tipo de ocupación (ligero, ordinario, extra riesgo), las áreas de operación del sistema, los tipos de rociadores aplicables, los requisitos de tuberías y soportería, y los criterios de aceptación de la prueba hidrostática del sistema.
+      </p>
+
+      <h3>NFPA 20 — Instalación de bombas para protección contra incendios</h3>
+      <p>
+        La bomba contra incendios es el corazón de cualquier sistema de rociadores o hidrantes. NFPA 20 define los requisitos de la bomba: tipo (centrífuga de eje horizontal o vertical), potencia mínima, curva presión-caudal, fuente de energía (eléctrica + diésel de respaldo), y las pruebas de aceptación y mantenimiento periódico.
+      </p>
+
+      <h3>NFPA 25 — Inspección, prueba y mantenimiento de sistemas de protección contra incendio</h3>
+      <p>
+        Esta es la norma que rige el trabajo de mantenimiento de Proyecto Red en los sistemas que instala y que mantiene para terceros. Define intervalos de inspección por componente (semanal, mensual, trimestral, anual y quinquenal), procedimientos de prueba y los formularios de registro que deben conservarse en el expediente del sistema.
+      </p>
+    </section>
+
+    <section class="ol-art-section">
+      <h2>El proceso de trabajo de Proyecto Red: de planos a sistema operativo</h2>
+      <p>Un proyecto de sistema PCI con Proyecto Red sigue una secuencia de fases bien definidas que garantizan el cumplimiento normativo en cada etapa:</p>
+
+      <div class="ol-phase-block">
+        <div class="ol-phase-num">1</div>
+        <div class="ol-phase-body">
+          <h4>Levantamiento y diagnóstico</h4>
+          <p>El equipo de ingeniería de Proyecto Red visita el sitio, revisa los planos arquitectónicos y estructurales existentes, y evalúa el tipo de ocupación, la carga de fuego y los requerimientos de protección específicos del cliente o de la aseguradora. Se documenta el estado de las instalaciones existentes si aplica.</p>
+        </div>
+      </div>
+
+      <div class="ol-phase-block">
+        <div class="ol-phase-num">2</div>
+        <div class="ol-phase-body">
+          <h4>Ingeniería de detalle y memoria de cálculo</h4>
+          <p>El área de ingeniería elabora el diseño del sistema: layout de rociadores, red de tuberías, selección de válvulas, cálculo hidráulico del sistema, selección de la bomba. La memoria de cálculo hidráulico verifica que el sistema puede suministrar la densidad de descarga mínima NFPA 13 en el área de operación más desfavorable del sistema.</p>
+        </div>
+      </div>
+
+      <div class="ol-phase-block">
+        <div class="ol-phase-num">3</div>
+        <div class="ol-phase-body">
+          <h4>Planos constructivos y aprobación</h4>
+          <p>Los planos constructivos del sistema —con isométricos de tuberías, detalles de gabinetes, soportería y accesibilidad— se entregan al cliente para revisión interna y, cuando aplica, para aprobación ante autoridades de protección civil o aseguradora antes de iniciar la instalación.</p>
+        </div>
+      </div>
+
+      <div class="ol-phase-block">
+        <div class="ol-phase-num">4</div>
+        <div class="ol-phase-body">
+          <h4>Suministro de materiales</h4>
+          <p>Proyecto Red gestiona el suministro de todos los materiales: rociadores, tuberías, válvulas, colgantes, soportería, bomba, panel de alarma, detectores y gabinetes. Todo el equipo proviene de fabricantes con listado UL o aprobación FM, con la documentación de certificación correspondiente.</p>
+        </div>
+      </div>
+
+      <div class="ol-phase-block">
+        <div class="ol-phase-num">5</div>
+        <div class="ol-phase-body">
+          <h4>Instalación con personal certificado</h4>
+          <p>El personal instalador de Proyecto Red está capacitado en los procedimientos reglamentarios de NFPA para instalación de rociadores: corte y roscado de tuberías, torque de uniones roscadas, colgantes certificados bajo NFPA 13, posicionamiento correcto de rociadores y distancias mínimas a obstáculos.</p>
+        </div>
+      </div>
+
+      <div class="ol-phase-block">
+        <div class="ol-phase-num">6</div>
+        <div class="ol-phase-body">
+          <h4>Prueba hidrostática del sistema</h4>
+          <p>El sistema completo se somete a prueba hidrostática a 1.7 MPa (250 PSI) o 1.1 veces la presión de trabajo (el mayor de los dos valores) durante 2 horas, según NFPA 13. Esta prueba verifica la hermeticidad de todas las uniones. El resultado se documenta en el protocolo de prueba.</p>
+        </div>
+      </div>
+
+      <div class="ol-phase-block">
+        <div class="ol-phase-num">7</div>
+        <div class="ol-phase-body">
+          <h4>Pruebas funcionales y de flujo</h4>
+          <p>Prueba de flujo de la bomba (curva presión-caudal verificada en campo), prueba funcional del panel de alarma, prueba de las válvulas de alarma, verificación de dispositivos de notificación y prueba de la estación de inspección y drenaje.</p>
+        </div>
+      </div>
+
+      <div class="ol-phase-block">
+        <div class="ol-phase-num">8</div>
+        <div class="ol-phase-body">
+          <h4>Entrega y documentación final</h4>
+          <p>Se entrega al cliente el expediente completo del sistema: planos as-built (planos del sistema tal como quedó instalado), memoria de cálculo final, protocolos de prueba firmados, manuales de operación y mantenimiento, y el programa de inspecciones NFPA 25 para el primer año.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ol-art-section">
+      <h2>Sectores y tipos de proyecto en el portafolio de Proyecto Red</h2>
+      <p>La experiencia de Proyecto Red como integrador cubre una amplia variedad de tipos de proyecto, cada uno con sus propios desafíos técnicos y normativos:</p>
+
+      <h3>Bodegas y centros de distribución</h3>
+      <p>
+        Las bodegas de distribución son de los proyectos más técnicamente exigentes para un integrador PCI. La altura del rack, el tipo de mercancía almacenada, la densidad de carga de fuego y el tipo de estantería (selectiva, drive-in, drive-through, push-back) son variables que determinan el tipo de sistema de rociadores apropiado. Proyecto Red diseña sistemas ESFR para alto rack y sistemas de rociadores en rack para instalaciones que no califican para ESFR.
+      </p>
+
+      <h3>Edificios corporativos y de oficinas</h3>
+      <p>
+        Los edificios de oficinas tienen sistemas de rociadores húmedos de baja o media densidad combinados con detección analógica que cubre la totalidad de los espacios, incluyendo cielos rasos, cuartos de TI y áreas de archivo. Proyecto Red coordina con el arquitecto y el contratista general para integrar el sistema de rociadores sin afectar la estética del plafón.
+      </p>
+
+      <h3>Plantas industriales y manufactureras</h3>
+      <p>
+        Las plantas industriales combinan frecuentemente múltiples tipos de sistema: rociadores húmedos para áreas de producción estándar, sistemas de diluvio para zonas de pintura o procesamiento con solventes, supresión con CO₂ para cuartos de control, y detección de gas en áreas con riesgo de fuga. Proyecto Red diseña el sistema integral con la coordinación de todos estos subsistemas.
+      </p>
+
+      <h3>Hospitales y clínicas</h3>
+      <p>
+        Los hospitales son las instalaciones de mayor exigencia normativa en NFPA 101 (Código de Seguridad Humana). El sistema PCI debe funcionar sin interrumpir la operación de áreas críticas, las pruebas deben realizarse con mínimo impacto para pacientes, y el sistema de detección debe integrarse con el sistema de evacuación y el BMS (Building Management System). Proyecto Red tiene experiencia en proyectos hospitalarios con estos requerimientos.
+      </p>
+
+      <h3>Centros de datos y cuartos de TI</h3>
+      <p>
+        Los CPD (centros de procesamiento de datos) requieren supresión por inundación total con agente limpio —donde el agua dañaría el equipo irreversiblemente— con detección muy sensible (detectores de humo de doble polaridad o aspiración VESDA) y sistemas de preacción que evitan la descarga accidental. Proyecto Red diseña e instala estos sistemas con los protocolos de prueba requeridos por las aseguradoras de equipos TI.
+      </p>
+
+      <h3>Hoteles y desarrollos inmobiliarios</h3>
+      <p>
+        El boom de construcción inmobiliaria en México ha generado una demanda significativa de sistemas de rociadores en edificios de vivienda vertical y hotelería. Proyecto Red trabaja con desarrolladoras y constructoras desde la etapa de proyecto, integrando el sistema PCI en la coordinación de instalaciones (coordinación con fontanería, electricidad y HVAC).
+      </p>
+
+      <h3>Actualización de sistemas existentes</h3>
+      <p>
+        Muchos edificios existentes tienen sistemas de rociadores instalados hace 20 o 30 años que ya no cumplen con la edición vigente de NFPA 13 o que tienen deficiencias operativas documentadas en inspecciones previas. Proyecto Red realiza diagnósticos de sistemas existentes y diseña las actualizaciones necesarias para llevarlos al cumplimiento normativo actual.
+      </p>
+    </section>
+
+    <section class="ol-art-section">
+      <h2>Mantenimiento NFPA 25: el compromiso post-instalación</h2>
+      <p>
+        La instalación de un sistema PCI es el inicio de una relación normativa de largo plazo. NFPA 25 establece que los sistemas de protección contra incendio deben inspeccionarse, probarse y mantenerse periódicamente para garantizar que estarán operativos cuando se necesiten. Proyecto Red ofrece contratos de mantenimiento que cubren el ciclo completo NFPA 25:
+      </p>
+      <table class="ol-art-spec-table">
+        <thead>
+          <tr>
+            <th>Componente</th>
+            <th>Inspección semanal</th>
+            <th>Prueba mensual</th>
+            <th>Inspección anual</th>
+            <th>Prueba quinquenal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Válvulas de control</td>
+            <td>Visual (posición abierta)</td>
+            <td>—</td>
+            <td>Operación completa</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>Bomba contra incendios</td>
+            <td>—</td>
+            <td>Arranque sin carga</td>
+            <td>Prueba de flujo completo</td>
+            <td>Curva P-Q verificada</td>
+          </tr>
+          <tr>
+            <td>Rociadores</td>
+            <td>—</td>
+            <td>—</td>
+            <td>Inspección visual todos</td>
+            <td>Prueba de muestra (lab)</td>
+          </tr>
+          <tr>
+            <td>Detectores de humo</td>
+            <td>—</td>
+            <td>—</td>
+            <td>Prueba funcional + limpieza</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>Panel de alarma</td>
+            <td>—</td>
+            <td>Prueba de batería</td>
+            <td>Prueba completa todos los puntos</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>Mangueras (GCI)</td>
+            <td>—</td>
+            <td>—</td>
+            <td>Inspección física</td>
+            <td>Prueba hidrostática</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Para cada visita de inspección o prueba, Proyecto Red genera el formato de registro NFPA 25 correspondiente, firmado por el técnico responsable. Estos registros forman el expediente del sistema que el propietario presenta ante autoridades de protección civil o aseguradoras en auditorías de cumplimiento.
+      </p>
+    </section>
+
+    <section class="ol-art-section">
+      <h2>Por qué el integrador importa tanto como el equipo</h2>
+      <p>
+        Un error frecuente en proyectos PCI es tratar el sistema de protección contra incendios como un insumo —como si especificar el rociador correcto y comprar la tubería fuera suficiente. La realidad es que el 80% del desempeño de un sistema de rociadores en un incendio real depende del diseño y la instalación, no del equipo.
+      </p>
+      <p>
+        Un rociador del tipo incorrecto instalado en la posición equivocada puede no activarse cuando debe, o activarse fuera del área del incendio desperdiciando agua mientras el fuego avanza. Un sistema de detección instalado sin considerar las corrientes de aire del HVAC puede dar alarma tardía o fallar completamente. Una bomba subdimensionada o instalada con una curva de operación incorrecta puede no mantener la presión necesaria durante una descarga sostenida.
+      </p>
+      <p>
+        Proyecto Red, como integrador con experiencia en diseño hidráulico, ingeniería de detalle e instalación certificada, garantiza que el sistema entregado no solo cumple con la norma en papel sino que funciona correctamente en campo.
+      </p>
+    </section>
+
+    <div class="ol-art-contact-card">
+      <h3>Contacto Proyecto Red — Integrador de Sistemas PCI</h3>
+      <div class="ol-art-contact-grid">
+        <div class="ol-art-contact-item">
+          <strong>Tipo de empresa</strong>
+          <span>Integrador de sistemas PCI</span>
+        </div>
+        <div class="ol-art-contact-item">
+          <strong>Cobertura</strong>
+          <span>República Mexicana</span>
+        </div>
+        <div class="ol-art-contact-item">
+          <strong>Sitio web</strong>
+          <a href="https://proyectored.mx" target="_blank" rel="noopener">proyectored.mx</a>
+        </div>
+        <div class="ol-art-contact-item">
+          <strong>Normas</strong>
+          <span>NFPA 13 · 14 · 20 · 24 · 25 · 72 · 2001 · 11</span>
+        </div>
+        <div class="ol-art-contact-item">
+          <strong>Sistemas</strong>
+          <span>Rociadores · Hidrantes · Detección · Supresión especial</span>
+        </div>
+        <div class="ol-art-contact-item">
+          <strong>Servicio completo</strong>
+          <span>Ingeniería · Suministro · Instalación · Mantenimiento NFPA 25</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="ol-art-section">
+      <h2>Conclusión: por qué México necesita más integradores como Proyecto Red</h2>
+      <p>
+        El mercado mexicano de protección contra incendios tiene abundancia de distribuidores de equipo y escasez de integradores con capacidad técnica real. La instalación incorrecta de sistemas PCI —por falta de memoria de cálculo, por instaladores sin capacitación NFPA o por ausencia de pruebas de aceptación— crea una situación peligrosa: edificios que parecen protegidos pero cuyos sistemas no funcionarán correctamente en el peor momento.
+      </p>
+      <p>
+        Proyecto Red representa el modelo correcto: empresa con ingeniería de detalle, instalación bajo norma verificable y compromiso de mantenimiento de largo plazo. Para desarrolladores inmobiliarios, constructoras, gerencias de planta y administradoras de propiedades que necesitan garantizar el cumplimiento real —no solo el aparente— de sus sistemas PCI, trabajar con un integrador como Proyecto Red es la diferencia entre un sistema certificado y uno que solo parece estarlo.
+      </p>
+    </section>
+
+    <div class="ol-art-share">
+      <span class="ol-art-share-label">Compartir artículo:</span>
+      <a href="https://twitter.com/intent/tweet?url=https://origenlab.com/blog/proyecto-red-sistemas-contra-incendio-integrales/&text=Proyecto+Red:+integrador+de+sistemas+PCI+en+México" target="_blank" rel="noopener" class="ol-art-share-btn" aria-label="Compartir en Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>Twitter / X</a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://origenlab.com/blog/proyecto-red-sistemas-contra-incendio-integrales/" target="_blank" rel="noopener" class="ol-art-share-btn" aria-label="Compartir en LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
+    </div>
+    <div class="ol-art-author-card">
+      <div class="ol-art-author-avatar" aria-hidden="true">OL</div>
+      <div class="ol-art-author-info"><strong class="ol-art-author-name">OrigenLab Editorial</strong><p class="ol-art-author-bio">Agencia mexicana de desarrollo web para integradores de sistemas, constructoras y empresas industriales.</p></div>
+    </div>
