@@ -1,0 +1,49 @@
+# ORIGENLAB main = output Astro committeado (source perdido); publisher =
+# CF Pages Git integration (proyecto origenlab, sin build command).
+# Gate: este workflow committea build-id.txt con el SHA del push (marker),
+# CF publica ese commit, y luego se verifica que el DOMINIO lo sirva.
+# paths-ignore evita el loop con el propio marker.
+name: Gate de deploy (marker + verificacion de dominio)
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['build-id.txt']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gate-origenlab
+  cancel-in-progress: true
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Sellar y pushear build-id (marker)
+        run: |
+          echo "${{ github.sha }}" > build-id.txt
+          git config user.name "gate-bot"
+          git config user.email "gate-bot@users.noreply.github.com"
+          git add build-id.txt
+          git commit -m "gate: build-id ${GITHUB_SHA:0:8}"
+          git push origin main
+      - name: Verificar que el dominio sirve este push
+        run: |
+          DOMINIO="origenlab.com"
+          for i in $(seq 1 32); do
+            sleep 15
+            LIVE=$(curl -fsSL --max-time 15 "https://$DOMINIO/build-id.txt?cb=${RANDOM}${i}" 2>/dev/null | tr -d '[:space:]' || echo "")
+            if [ "$LIVE" = "${{ github.sha }}" ]; then
+              echo "OK - $DOMINIO sirve ${GITHUB_SHA:0:12}"
+              exit 0
+            fi
+            echo "intento $i/32 - dominio devuelve '${LIVE:0:12}', esperado '${GITHUB_SHA:0:12}'"
+          done
+          echo "::error::$DOMINIO NO sirve este push tras 8 min. Revisar build CF (proyecto origenlab)."
+          exit 1
